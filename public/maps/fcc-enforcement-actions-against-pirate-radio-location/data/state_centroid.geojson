@@ -1,0 +1,118 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 1, "properties": { "fips": "01", "abbrname": "AL", "name": "Alabama" }, "geometry": { "type": "Point", "coordinates": [ -86.844520997487024, 32.756879980661957 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "fips": "02", "abbrname": "AK", "name": "Alaska" }, "geometry": { "type": "Point", "coordinates": [ -151.59341834103205, 63.742991414910229 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "fips": "04", "abbrname": "AZ", "name": "Arizona" }, "geometry": { "type": "Point", "coordinates": [ -111.66438991979834, 34.29306523933657 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "fips": "05", "abbrname": "AR", "name": "Arkansas" }, "geometry": { "type": "Point", "coordinates": [ -92.439236910270296, 34.89977245938104 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "fips": "06", "abbrname": "CA", "name": "California" }, "geometry": { "type": "Point", "coordinates": [ -119.66383673079444, 37.21529736188026 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "fips": "08", "abbrname": "CO", "name": "Colorado" }, "geometry": { "type": "Point", "coordinates": [ -105.54782587087681, 38.998544033245757 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "fips": "09", "abbrname": "CT", "name": "Connecticut" }, "geometry": { "type": "Point", "coordinates": [ -72.738269375797543, 41.575151324656836 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "fips": "10", "abbrname": "DE", "name": "Delaware" }, "geometry": { "type": "Point", "coordinates": [ -75.452491933651103, 38.994974956439464 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "fips": "11", "abbrname": "DC", "name": "District of Columbia" }, "geometry": { "type": "Point", "coordinates": [ -77.016288880792573, 38.904772358219084 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "fips": "12", "abbrname": "FL", "name": "Florida" }, "geometry": { "type": "Point", "coordinates": [ -82.46641840126081, 28.477058430201211 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "fips": "13", "abbrname": "GA", "name": "Georgia" }, "geometry": { "type": "Point", "coordinates": [ -83.427139997930894, 32.638610861413049 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "fips": "15", "abbrname": "HI", "name": "Hawaii" }, "geometry": { "type": "Point", "coordinates": [ -158.06484077616437, 20.978847045503798 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "fips": "16", "abbrname": "ID", "name": "Idaho" }, "geometry": { "type": "Point", "coordinates": [ -114.65937639730856, 44.389071316197068 ] } }
+,
+{ "type": "Feature", "id": 14, "properties": { "fips": "17", "abbrname": "IL", "name": "Illinois" }, "geometry": { "type": "Point", "coordinates": [ -89.14863219123589, 40.124198508399878 ] } }
+,
+{ "type": "Feature", "id": 15, "properties": { "fips": "18", "abbrname": "IN", "name": "Indiana" }, "geometry": { "type": "Point", "coordinates": [ -86.281824829694358, 39.919881366484368 ] } }
+,
+{ "type": "Feature", "id": 16, "properties": { "fips": "19", "abbrname": "IA", "name": "Iowa" }, "geometry": { "type": "Point", "coordinates": [ -93.50008123434398, 42.074649647855075 ] } }
+,
+{ "type": "Feature", "id": 17, "properties": { "fips": "20", "abbrname": "KS", "name": "Kansas" }, "geometry": { "type": "Point", "coordinates": [ -98.380160516515332, 38.484725239157257 ] } }
+,
+{ "type": "Feature", "id": 18, "properties": { "fips": "21", "abbrname": "KY", "name": "Kentucky" }, "geometry": { "type": "Point", "coordinates": [ -85.290563499836182, 37.526618283064394 ] } }
+,
+{ "type": "Feature", "id": 19, "properties": { "fips": "22", "abbrname": "LA", "name": "Louisiana" }, "geometry": { "type": "Point", "coordinates": [ -91.814093296825178, 30.909037663057887 ] } }
+,
+{ "type": "Feature", "id": 20, "properties": { "fips": "23", "abbrname": "ME", "name": "Maine" }, "geometry": { "type": "Point", "coordinates": [ -69.20276045153031, 45.274328097376603 ] } }
+,
+{ "type": "Feature", "id": 21, "properties": { "fips": "24", "abbrname": "MD", "name": "Maryland" }, "geometry": { "type": "Point", "coordinates": [ -76.687174845140689, 38.946492915996039 ] } }
+,
+{ "type": "Feature", "id": 22, "properties": { "fips": "25", "abbrname": "MA", "name": "Massachusetts" }, "geometry": { "type": "Point", "coordinates": [ -71.503987267191206, 42.160089690676223 ] } }
+,
+{ "type": "Feature", "id": 23, "properties": { "fips": "26", "abbrname": "MI", "name": "Michigan" }, "geometry": { "type": "Point", "coordinates": [ -85.730952912687698, 44.874773594689124 ] } }
+,
+{ "type": "Feature", "id": 24, "properties": { "fips": "27", "abbrname": "MN", "name": "Minnesota" }, "geometry": { "type": "Point", "coordinates": [ -94.1983064630803, 46.349110659347929 ] } }
+,
+{ "type": "Feature", "id": 25, "properties": { "fips": "28", "abbrname": "MS", "name": "Mississippi" }, "geometry": { "type": "Point", "coordinates": [ -89.653479953840517, 32.713343737775418 ] } }
+,
+{ "type": "Feature", "id": 26, "properties": { "fips": "29", "abbrname": "MO", "name": "Missouri" }, "geometry": { "type": "Point", "coordinates": [ -92.477425805200568, 38.367630142855774 ] } }
+,
+{ "type": "Feature", "id": 27, "properties": { "fips": "30", "abbrname": "MT", "name": "Montana" }, "geometry": { "type": "Point", "coordinates": [ -109.64513988252973, 47.033517130248597 ] } }
+,
+{ "type": "Feature", "id": 28, "properties": { "fips": "31", "abbrname": "NE", "name": "Nebraska" }, "geometry": { "type": "Point", "coordinates": [ -99.810855865661352, 41.527151131115993 ] } }
+,
+{ "type": "Feature", "id": 29, "properties": { "fips": "32", "abbrname": "NV", "name": "Nevada" }, "geometry": { "type": "Point", "coordinates": [ -116.65523090372037, 39.356204042810056 ] } }
+,
+{ "type": "Feature", "id": 30, "properties": { "fips": "33", "abbrname": "NH", "name": "New Hampshire" }, "geometry": { "type": "Point", "coordinates": [ -71.571225043568433, 43.680183004718785 ] } }
+,
+{ "type": "Feature", "id": 31, "properties": { "fips": "34", "abbrname": "NJ", "name": "New Jersey" }, "geometry": { "type": "Point", "coordinates": [ -74.655607664829219, 40.110128374696934 ] } }
+,
+{ "type": "Feature", "id": 32, "properties": { "fips": "35", "abbrname": "NM", "name": "New Mexico" }, "geometry": { "type": "Point", "coordinates": [ -106.10837965108696, 34.421362153202679 ] } }
+,
+{ "type": "Feature", "id": 33, "properties": { "fips": "36", "abbrname": "NY", "name": "New York" }, "geometry": { "type": "Point", "coordinates": [ -75.596536645572044, 42.921226814856489 ] } }
+,
+{ "type": "Feature", "id": 34, "properties": { "fips": "37", "abbrname": "NC", "name": "North Carolina" }, "geometry": { "type": "Point", "coordinates": [ -79.130908698900043, 35.526023272975223 ] } }
+,
+{ "type": "Feature", "id": 35, "properties": { "fips": "38", "abbrname": "ND", "name": "North Dakota" }, "geometry": { "type": "Point", "coordinates": [ -100.46933363678876, 47.446315026281326 ] } }
+,
+{ "type": "Feature", "id": 36, "properties": { "fips": "39", "abbrname": "OH", "name": "Ohio" }, "geometry": { "type": "Point", "coordinates": [ -82.709377637085623, 40.415487141116408 ] } }
+,
+{ "type": "Feature", "id": 37, "properties": { "fips": "40", "abbrname": "OK", "name": "Oklahoma" }, "geometry": { "type": "Point", "coordinates": [ -97.508220793618761, 35.583460209213762 ] } }
+,
+{ "type": "Feature", "id": 38, "properties": { "fips": "41", "abbrname": "OR", "name": "Oregon" }, "geometry": { "type": "Point", "coordinates": [ -120.60527284033935, 43.940438859822564 ] } }
+,
+{ "type": "Feature", "id": 39, "properties": { "fips": "42", "abbrname": "PA", "name": "Pennsylvania" }, "geometry": { "type": "Point", "coordinates": [ -77.838916817282723, 40.896700235964779 ] } }
+,
+{ "type": "Feature", "id": 40, "properties": { "fips": "44", "abbrname": "RI", "name": "Rhode Island" }, "geometry": { "type": "Point", "coordinates": [ -71.524742473643954, 41.594629084102664 ] } }
+,
+{ "type": "Feature", "id": 41, "properties": { "fips": "45", "abbrname": "SC", "name": "South Carolina" }, "geometry": { "type": "Point", "coordinates": [ -80.864595859507304, 33.877856163690097 ] } }
+,
+{ "type": "Feature", "id": 42, "properties": { "fips": "46", "abbrname": "SD", "name": "South Dakota" }, "geometry": { "type": "Point", "coordinates": [ -100.2304614063048, 44.436136827924145 ] } }
+,
+{ "type": "Feature", "id": 43, "properties": { "fips": "47", "abbrname": "TN", "name": "Tennessee" }, "geometry": { "type": "Point", "coordinates": [ -86.343404821433126, 35.84298166912113 ] } }
+,
+{ "type": "Feature", "id": 44, "properties": { "fips": "48", "abbrname": "TX", "name": "Texas" }, "geometry": { "type": "Point", "coordinates": [ -99.317136664459767, 31.447214593290674 ] } }
+,
+{ "type": "Feature", "id": 45, "properties": { "fips": "49", "abbrname": "UT", "name": "Utah" }, "geometry": { "type": "Point", "coordinates": [ -111.67822398685632, 39.323782366429924 ] } }
+,
+{ "type": "Feature", "id": 46, "properties": { "fips": "50", "abbrname": "VT", "name": "Vermont" }, "geometry": { "type": "Point", "coordinates": [ -72.662532802126279, 44.075288543159964 ] } }
+,
+{ "type": "Feature", "id": 47, "properties": { "fips": "51", "abbrname": "VA", "name": "Virginia" }, "geometry": { "type": "Point", "coordinates": [ -78.666360530325619, 37.510867237531485 ] } }
+,
+{ "type": "Feature", "id": 48, "properties": { "fips": "53", "abbrname": "WA", "name": "Washington" }, "geometry": { "type": "Point", "coordinates": [ -120.59251654357602, 47.411711290277516 ] } }
+,
+{ "type": "Feature", "id": 49, "properties": { "fips": "54", "abbrname": "WV", "name": "West Virginia" }, "geometry": { "type": "Point", "coordinates": [ -80.613706033243631, 38.642567770667299 ] } }
+,
+{ "type": "Feature", "id": 50, "properties": { "fips": "55", "abbrname": "WI", "name": "Wisconsin" }, "geometry": { "type": "Point", "coordinates": [ -89.732933011747107, 44.639945982622436 ] } }
+,
+{ "type": "Feature", "id": 51, "properties": { "fips": "56", "abbrname": "WY", "name": "Wyoming" }, "geometry": { "type": "Point", "coordinates": [ -107.55145146524701, 42.999626590519568 ] } }
+,
+{ "type": "Feature", "id": 52, "properties": { "fips": "60", "abbrname": "AS", "name": "American Samoa" }, "geometry": { "type": "Point", "coordinates": [ -170.07959179187014, -13.966019247669745 ] } }
+,
+{ "type": "Feature", "id": 53, "properties": { "fips": "66", "abbrname": "GU", "name": "Guam" }, "geometry": { "type": "Point", "coordinates": [ 144.76945169725892, 13.442759547934781 ] } }
+,
+{ "type": "Feature", "id": 54, "properties": { "fips": "69", "abbrname": "MP", "name": "Commonwealth of the Northern Mariana Islands" }, "geometry": { "type": "Point", "coordinates": [ 145.59572243618408, 16.817085397244004 ] } }
+,
+{ "type": "Feature", "id": 55, "properties": { "fips": "72", "abbrname": "PR", "name": "Puerto Rico" }, "geometry": { "type": "Point", "coordinates": [ -66.414666786223506, 18.215698337738495 ] } }
+,
+{ "type": "Feature", "id": 56, "properties": { "fips": "78", "abbrname": "VI", "name": "United States Virgin Islands" }, "geometry": { "type": "Point", "coordinates": [ -64.839036872235312, 18.059817831329873 ] } }
+
+]
+}

@@ -1,0 +1,39 @@
+<section class="map-legend">
+  <table class="table table-legend table-data">
+    <caption>
+    Model Landscape
+    </caption>
+    <thead>
+      <tr>
+        <th width="50%">Cost per location</th>
+        <th align="center" width="25%">Served<sup>1</sup></th>
+        <th align="center" width="25%">Unserved<sup>1</sup></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan="3"><sup>1</sup> This map only shows Price-Cap areas.</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td {% if page.frame != 'frame' %}style="white-space: nowrap;"{% endif %}><strong>Above</strong><br>
+            Price cap: &ge; $207.81</td>
+        <td align="center"><span class="key-symbol" style="background-color:#F4C3BD"></span></td>
+        <td align="center"><span class="key-symbol" style="background-color:#DD6C5F"></span></td>
+      </tr>
+      <tr>
+        <td {% if page.frame != 'frame' %}style="white-space: nowrap;"{% endif %}><strong>Between</strong> <br>
+            Price cap: &gt; $52.50 and &lt; $207.81</td>
+        <td align="center"><span class="key-symbol" style="background-color:#CBF09B"></span></td>
+        <td align="center"><span class="key-symbol" style="background-color:#89BEA2"></span></td>
+      </tr>
+      <tr>
+        <td {% if page.frame != 'frame' %}style="white-space: nowrap;"{% endif %}><strong>Below</strong> <br>
+            Price cap: &le; $52.50</td>
+        <td align="center"><span class="key-symbol" style="background-color:#F4DD8D"></span></td>
+        <td align="center"><span class="key-symbol" style="background-color:#DEBC93"></span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>

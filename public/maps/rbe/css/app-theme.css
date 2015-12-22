@@ -1,0 +1,51 @@
+
+/* =============================================================================
+   Global Styles
+   ========================================================================== */
+
+body { color: #333; font-family: Arial, Helvetica, sans-serif; }
+h1 { color: #FFF; font-size: 22px; margin: 13px 0 0 15px; padding: 0 0 0 35px; }
+
+a, a:hover, a:focus { text-decoration: none; }
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+header { background-color: #373b41; margin-bottom: 10px; }
+header a { margin-top: 15px; }
+.logo { float: left; margin: 15px 10px; }
+/* =============================================================================
+   Footer
+   ========================================================================== */
+footer { border-top: 1px solid #CCC; color: #333; margin-top: 20px; padding-bottom: 25px; padding-top: 25px }
+footer a, footer a:hover, footer a:focus { color: #456da5; }
+footer a { font-weight: bold; }
+footer a:hover { text-decoration: underline; }
+footer .bull { font-size: 16px; margin: 0 10px; }
+
+/* =============================================================================
+   Map
+   ========================================================================== */
+.leaflet-container a, .leaflet-container a:focus, .leaflet-container a:hover { color: #456DA5; }
+.map-container { position: relative; }
+.btn-geoLocation { border: 1px solid rgba(0, 0, 0, 0.4); border-radius: 3px; left: 10px; padding: 5px 4px 2px; position: absolute; top: 70px; z-index: 9; }
+.btn-nationLocation { border: 1px solid rgba(0, 0, 0, 0.4); border-radius: 3px; left: 10px; padding: 3px 4px 0px; position: absolute; top: 105px; z-index: 10; }
+
+/* =============================================================================
+   Icons
+   ========================================================================== */
+@font-face { font-family: 'icomoon'; src:url('../fonts/icomoon.eot?fzuetc'); src:url('fonts/icomoon.eot?#iefixfzuetc') format('embedded-opentype'), url('../fonts/icomoon.woff?fzuetc') format('woff'), url('../fonts/icomoon.ttf?fzuetc') format('truetype'), url('../fonts/icomoon.svg?fzuetc#icomoon') format('svg'); font-weight: normal; font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+ font-family: 'icomoon';
+ speak: none;
+ font-style: normal;
+ font-weight: normal;
+ font-variant: normal;
+ text-transform: none;
+ line-height: 1;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+.icon-search:before { content: "\e600"; }
+.icon-locate-1:before { content: "\e602"; }
+.icon-nation-1:before { content: url('../img/globe.png'); }

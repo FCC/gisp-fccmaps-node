@@ -1,0 +1,334 @@
+/*ol,ul{ list-style:none; }
+table{ border-collapse:separate; border-spacing:0; vertical-align:middle; }
+caption,th,td{ text-align:left; font-weight:normal; vertical-align:middle; }
+a img{ border:none; }
+*{ -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; }
+body{ font-family:'Dosis','Tahoma',sans-serif }
+.container{margin:15px auto;width:80%}
+h1{margin:40px 0 20px;font-weight:700;font-size:38px;line-height:32px;color:#fb565e}
+h2{font-size:18px;padding:0 0 21px 5px;margin:45px 0 0 0;text-transform:uppercase;font-weight:500}
+.small{font-size:14px;color:#a5adb4;}
+.small a{color:#a5adb4;}
+.small a:hover{color:#fb565e}*/
+.glyphs.character-mapping{margin:0 0 20px 0;padding:20px 0 20px 30px;color:rgba(0,0,0,0.5);border:1px solid #d8e0e5;-webkit-border-radius:3px;border-radius:3px;}
+.glyphs.character-mapping li{margin:0 30px 20px 0;display:inline-block;width:90px;}
+.glyphs.character-mapping .opif-icon:before{margin:10px 0 10px 15px;padding:15px;position:relative;width:55px;height:55px;color:#111 !important;overflow:hidden;-webkit-border-radius:3px;border-radius:3px;font-size:24px;}
+.glyphs.character-mapping .opif-icon svg{fill:#111;}
+.glyphs.character-mapping input{margin:0;padding:5px 0;line-height:12px;font-size:12px;display:block;width:100%;border:1px solid #d8e0e5;-webkit-border-radius:5px;border-radius:5px;text-align:center;outline:0;}
+.glyphs.character-mapping input:focus{border:1px solid #fbde4a;-webkit-box-shadow:inset 0 0 3px #fbde4a;box-shadow:inset 0 0 3px #fbde4a;}
+.glyphs.character-mapping input:hover{-webkit-box-shadow:inset 0 0 3px #fbde4a;box-shadow:inset 0 0 3px #fbde4a;}
+.glyphs.css-mapping{margin:0 0 60px 0;padding:30px 0 20px 30px;color:rgba(0,0,0,0.5);border:1px solid #d8e0e5;-webkit-border-radius:3px;border-radius:3px;}
+.glyphs.css-mapping li{margin:0 30px 20px 0;padding:0;display:inline-block;overflow:hidden;}
+.glyphs.css-mapping .opif-icon:before{margin:0;margin-right:10px;padding:13px;height:50px;width:50px;color:#111 !important;overflow:hidden;float:left;font-size:24px;}
+.glyphs.css-mapping input{margin:0;margin-top:5px;padding:8px;line-height:16px;font-size:16px;display:block;width:150px;height:40px;border:1px solid #d8e0e5;-webkit-border-radius:5px;border-radius:5px;background:#fff;outline:0;float:right;}
+.glyphs.css-mapping input:focus{border:1px solid #fbde4a;-webkit-box-shadow:inset 0 0 3px #fbde4a;box-shadow:inset 0 0 3px #fbde4a;}
+.glyphs.css-mapping input:hover{-webkit-box-shadow:inset 0 0 3px #fbde4a;box-shadow:inset 0 0 3px #fbde4a;}
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "opif-icons";
+  src:url("../fonts/opif-icons.eot");
+  src:url("../fonts/opif-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/opif-icons.woff") format("woff"),
+    url("../fonts/opif-icons.ttf") format("truetype"),
+    url("../fonts/opif-icons.svg#opif-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "opif-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "opif-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =============================================================================
+   Icons Fonts Classes
+   ========================================================================== */
+
+.icon-bag-dollar-money:before {
+  content: "a";
+}
+.icon-briefcase-work-1:before {
+  content: "b";
+}
+.icon-nodes-4:before {
+  content: "c";
+}
+.icon-letter-mail-1:before {
+  content: "d";
+}
+.icon-inbox-mail-incoming:before {
+  content: "e";
+}
+.icon-advertising-megaphone-1:before {
+  content: "f";
+}
+.icon-phone-wireless-1:before {
+  content: "g";
+}
+.icon-phone-wireless-2:before {
+  content: "h";
+}
+.icon-phone-speaker:before {
+  content: "i";
+}
+.icon-book-spiral:before {
+  content: "j";
+}
+.icon-bubbles-talk-1:before {
+  content: "k";
+}
+.icon-book-hardcover:before {
+  content: "l";
+}
+.icon-book-open-2:before {
+  content: "m";
+}
+.icon-chain-link-1:before {
+  content: "n";
+}
+.icon-antenna-signal:before {
+  content: "o";
+}
+.icon-briefcase-work-2:before {
+  content: "p";
+}
+.icon-book-note-1:before {
+  content: "q";
+}
+.icon-bank-court:before {
+  content: "r";
+}
+.icon-death-skull:before {
+  content: "{";
+}
+.icon-eye-view-1:before {
+  content: "t";
+}
+.icon-certificate-file:before {
+  content: "u";
+}
+.icon-add-file-1:before {
+  content: "v";
+}
+.icon-delete-trash-1:before {
+  content: "w";
+}
+.icon-folder-2:before {
+  content: "x";
+}
+.icon-folder-upload:before {
+  content: "y";
+}
+.icon-edit-file-1:before {
+  content: "z";
+}
+.icon-stack-files-documents:before {
+  content: "A";
+}
+.icon-invisible-folder:before {
+  content: "B";
+}
+.icon-attention-3:before {
+  content: "C";
+}
+.icon-attention-2:before {
+  content: "D";
+}
+.icon-pacman:before {
+  content: "}";
+}
+.icon-television-tv:before {
+  content: "F";
+}
+.icon-map-pin-5:before {
+  content: "G";
+}
+.icon-skyscraper-tower-2:before {
+  content: "H";
+}
+.icon-earth:before {
+  content: "I";
+}
+.icon-close-4:before {
+  content: "J";
+}
+.icon-script:before {
+  content: "K";
+}
+.icon-disc-floppy:before {
+  content: "L";
+}
+.icon-stop-watch:before {
+  content: "M";
+}
+.icon-cloud-upload-1:before {
+  content: "N";
+}
+.icon-refresh-reload-repeat:before {
+  content: "O";
+}
+.icon-male-user-1:before {
+  content: "P";
+}
+.icon-bubble-speech-user-1:before {
+  content: "Q";
+}
+.icon-badge-medal-prize:before {
+  content: "R";
+}
+.icon-hour-medal:before {
+  content: "S";
+}
+.icon-beveled-medium-4-01:before {
+  content: "T";
+}
+.icon-beveled-medium-3-01:before {
+  content: "U";
+}
+.icon-beveled-medium-2-01:before {
+  content: "V";
+}
+.icon-beveled-medium-1-01:before {
+  content: "W";
+}
+.icon-rounded-medium-1-01:before {
+  content: "X";
+}
+.icon-rounded-medium-2-01:before {
+  content: "Y";
+}
+.icon-rounded-medium-3-01:before {
+  content: "Z";
+}
+.icon-rounded-medium-4-01:before {
+  content: "0";
+}
+.icon-triangle-small-2-01:before {
+  content: "1";
+}
+.icon-triangle-small-1-01:before {
+  content: "2";
+}
+.icon-triangle-small-4-01:before {
+  content: "3";
+}
+.icon-triangle-small-3-01:before {
+  content: "4";
+}
+.icon-date:before {
+  content: "5";
+}
+.icon-help-question-1:before {
+  content: "6";
+}
+.icon-folder-1:before {
+  content: "7";
+}
+.icon-delete-file-secure:before {
+  content: "8";
+}
+.icon-powerpoint-presentation:before {
+  content: "9";
+}
+.icon-dashboard:before {
+  content: "!";
+}
+.icon-social-dropbox:before {
+  content: "#";
+}
+.icon-search:before {
+  content: "$";
+}
+.icon-globe:before {
+  content: "%";
+}
+.icon-hammer-judge:before {
+  content: "&";
+}
+.icon-dot-3:before {
+  content: "'";
+}
+.icon-binoculars:before {
+  content: "(";
+}
+.icon-tx-texas:before {
+  content: ")";
+}
+.icon-rss:before {
+  content: "*";
+}
+.icon-file-document:before {
+  content: "+";
+}
+.icon-document:before {
+  content: ",";
+}
+.icon-chair1:before {
+  content: "-";
+}
+.icon-chair2:before {
+  content: ".";
+}
+.icon-circle-arrow-down:before {
+  content: "/";
+}
+.icon-circle-arrow-up:before {
+  content: ":";
+}
+.icon-folder-badge:before {
+  content: ";";
+}
+.icon-folder-capital:before {
+  content: "<";
+}
+.icon-folder-chair:before {
+  content: "=";
+}
+.icon-folder-city:before {
+  content: ">";
+}
+.icon-folder-texas:before {
+  content: "?";
+}
+.icon-folder-user:before {
+  content: "@";
+}
+.icon-trash-restore:before {
+  content: "[";
+}
+.icon-user-star:before {
+  content: "]";
+}
+.icon-user-script:before {
+  content: "^";
+}
+.icon-user-badge:before {
+  content: "_";
+}
+.icon-social-drive:before {
+  content: "\"";
+}

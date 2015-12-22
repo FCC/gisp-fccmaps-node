@@ -1,0 +1,175 @@
+/* Global Elements */
+body {	
+	background: url("../img/page-bg.png") no-repeat scroll center 10px #010103;
+	padding:0;
+	-webkit-text-size-adjust: none;
+}
+
+a {
+	text-decoration:none;
+	color: #005BBA;
+}
+
+a:hover {
+	color: #2B7818;
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: outline;
+}
+
+/* Headings */
+h1 {
+	color:#FFF;
+	float: left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:normal;	
+}
+
+/* Links */
+#skip { position:absolute; left:35%; top:0; z-index:900; width:50%; }
+#skip a { display:block; width:50%; padding:5px; border-width:0 1px 1px; border-style:solid; border-color:#8cdb78; background:#000; color:#bfe9ff; text-align:center; }
+#skip a:hover, #skip a:focus, #skip a:active { color:#9cf285; text-decoration:none; }
+
+
+/* Header */
+#header p {
+	color: #CCC;
+	float: right;
+	margin: 0;
+	padding: 25px 0;
+}
+
+#header a {
+	color:#CCC;
+	border-left: 1px solid #DDD;
+	margin-left: 10px;
+	padding-left: 10px;		
+}
+
+#header a:hover {
+	text-decoration: none;
+}
+
+#fcc-banner {
+	background:transparent url("../img/bgNav.png") repeat-x scroll 0 0;
+	display: block;
+	overflow: hidden;
+}
+
+
+/* Main Wrapper */
+#main-wrapper {
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	color: #EBEBEB;
+	font-size: 11px;
+	margin: 0 0 100px;
+	padding: 0;
+}
+
+#footer .container_12 {
+	background-color: #505050;
+	overflow: hidden;	
+}
+
+#footer-nav {
+	overflow: hidden;
+	padding: 20px 0 50px 20px;	
+}
+
+#footer-nav .col {
+	display: inline;
+	float: left;
+	margin: 0;
+	width: 220px;	
+}
+
+#footer ul {
+	margin:0;
+	padding-top:10px;
+}
+
+#footer li {
+	list-style-type:none;
+	margin:0 0 3px;
+	padding-right:19px;
+}
+
+#footer a {
+	color:#EBEBEB;
+	height:30px;
+	padding-top:2px;	
+	text-shadow: 0 1px 0 #000000;
+}
+
+/* Map */
+#map-container {
+	position: relative
+}
+
+#map {
+	height: 600px;
+	margin-bottom:10px;
+	width: 100%;
+}
+
+ul.macro {	
+	background: rgb(0, 60, 136); /* fallback for IE 7/8 */
+	background: none repeat scroll 0 0 rgba(0, 60, 136, 0.5);	
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+	margin: 0;
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .3);	
+	z-index:999;
+}
+
+ul.macro li {	
+	list-style-type:none;
+	margin-bottom: 0;	
+}
+
+ul.macro li a {
+	color: white;
+	font-weight: bold;
+	padding: 6px 5px;
+	background: transparent;
+	color: white;
+	width: 100px;
+	display: block;
+}
+
+ul.macro li a.active {
+	color: #fff;
+	background-color: #1F90FF;
+}
+
+#map-footer {
+	border-top: 1px solid #CCC;
+	clear: both;
+	padding: 10px;
+}
+
+
+
+#test li {
+	float: left;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+#test label {
+	display: inline-block;
+	padding-top: 3px;
+	vertical-align: middle;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Super PAC Spending</title>
+<link rel='stylesheet' href='css/reset.css' type='text/css' />
+<link rel='stylesheet' href='css/style.css' type='text/css' />
+</head>
+<body>
+
+<div id="header"> 
+    <h1>Fueling the <span class='red-title'>Hate</span> Against 2012 Candidates: </h1>
+    <ul id='map-navigation'>
+        <li><a id='totals' class='candidate-tab active' href='#' data-layer='djohnson.superpacs_march_05'>All</a></li>
+        <li><a id='santorum' class='candidate-tab' href='#' data-layer='djohnson.santorum-march5'>SANTORUM</a></li>
+        <li><a id='romney' class='candidate-tab' href='#' data-layer='djohnson.romney-march5' >ROMNEY</a></li>
+        <li><a id='gingrich' class='candidate-tab' href='#' data-layer='djohnson.gingrich-march5'>GINGRICH</a></li>
+        <li><a id='obama' class='candidate-tab' href='#' data-layer='' >OBAMA</a></li>
+        <li><a id='paul' class='candidate-tab' href='#' data-layer='' >PAUL</a></li>
+    </ul>
+</div>
+
+<div id="about">
+    <div class='description' id='description-totals'>
+        <h1>Super PAC Funds Spent <span class="red-title">Against</span>  Candidates in the 2012 Election </h1>
+        <h4>As of March 5, 2012, <span class='red'>$35,253,552</span> has been spent in opposition, mostly in the form of attack ads against other candidates. This is <span class='red'>54% </span> of all money spent by Super PACs.</h4>
+        <h4>Besides fueling a more divisive political climate, Super PAC spending reveals how the US elections are being dominated by the funding of by super rich, making the overall political process less about free speech and more about hate speech.</h4>
+       
+	    </div>
+	    <div class='description' id='description-gingrich'>
+	        <h3>Total spent against Gingrich: <span class='red'> $18,002,428</span></h3>
+            <table>
+                <th>Super PAC</th><th>Amount</th><th>% Spending by SuperPAC on Opposition </th>
+                <tr><td>Americans for a Better Tomorrow, Tomorrow, Inc.</td><td>$63,643</td><td>54%</td></tr>
+                <tr><td>Endorse Liberty Inc.</td><td> $66,564</td><td>2%</td></tr>
+                <tr><td>Red White and Blue Fund</td><td> $78,386</td><td>1%</td></tr>
+                <tr><td>Restore Our Future, Inc</td><td>$18,706,036</td><td>97%</td></tr>
+            </table>
+        </div>
+
+	  <div class='description' id='description-obama'><h3>Total spent against Obama: <span class='red'> $220,905</span></h3><br/><em>No geographic data was associated with this spending.</em>
+		<table>
+	       <th>Super PAC</th><th>Amount</th><th>% Spending by SuperPAC on Opposition </th>
+	       	<tr><td>American Crossroads</td><td>$47,890</td><td>100%</td></tr>
+		    <tr><td>Freedomworks For America</td><td>$173,015</td><td>100%</td></tr>
+		</table>	
+	  </div>
+
+		<div class='description' id='description-paul'><h3>Total spent against Paul: <span class='red'>$1,729</span></h3><br/><em>No geographic data was associated with this spending. All opposition spending paid to Google or Facebook for online advertising.</em>
+		<table>
+		<th>Super PAC</th><th>Amount</th><th>% Spending by SuperPAC on Opposition </th>
+		<tr><td>DGA Action</td><td>$1,729</td><td>62%</td></tr>
+		</table>
+		</div>
+
+		<div class='description' id='description-romney'><h3>Total spent against Romney: <span class='red'>$4,765,980</span></h3>
+		<table>
+			<th>Super PAC</th><th>Amount</th><th>% Spending by SuperPAC on Opposition </th>
+		<tr><td>Americans for a Better Tomorrow, Tomorrow, Inc.</td><td>$52,918</td><td>54%</td></tr>
+		<tr><td>DGA Action</td><td>$4,084</td><td>62%</td></tr>
+		<tr><td>Priorities USA Action</td><td>$688,990</td><td>100%</td></tr>
+		<tr><td>Winning Our Future</td><td>$4,019,988</td><td>35%</td></tr>
+		</table>
+		</div>
+
+		<div class='description' id='description-santorum'><h3>Total spent against Santorum: <span class='red'>$11,349,410</span></h3>
+		<table>
+			<th>Super PAC</th><th>Amount</th><th>% Spending by SuperPAC on Opposition </th>
+		<tr><td>DGA Action</td><td>$2,347</td><td>62%</td></tr>
+		<tr><td>Restore Our Future, Inc.</td><td>$11,347,063</td><td>97%</td></tr>
+		</table>
+		</div>
+
+
+  <div id="tooltips">
+ 
+	
+</div>
+	
+</div>
+
+  
+   <div id='map'></div>
+    <div id='controls'>
+     <a href='#' class='share'>Share</a>
+    </div>
+  <div id='overlay'></div>
+  <div id='share'>
+      <a href='#' class='close okay' title='Press ESC to close'>X</a>
+      <h2>Share this map</h2>
+      <p>
+        <a id='facebook' target='_blank'>Facebook</a>
+        <a id='twitter' target='_blank'>Twitter</a>
+      </p>
+      <h5>Get the embed code</h5>
+      <small>Copy and paste this HTML into your website or blog.</small>
+      <div id='embed-code-field'><textarea id='embed-code' rows='4' readonly></textarea></div>
+    </div>
+  </div>
+
+  <script src='js/ender.min.js'></script>
+  <script src='js/underscore.js'></script> 
+  <script src='js/modestmaps.min.js'></script>
+  <script src='js/wax.mm.min.js'></script>
+  <script src='js/app1.js'></script>
+</body>
+</html>

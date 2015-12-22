@@ -1,0 +1,32 @@
+
+.click-callsign {cursor: pointer, color: #aaaaff}
+#text-display {font-size: 12px}
+.available-table  {border: solid 0px #000; border-radius: 5px; font-size: 11px; border-collapse: collapse;}
+.available-table td {height: 18px; text-align: center}
+.legend-table  td { padding: 2px; font-size: 11px;}
+.location-text {font-size: 9px;}
+#location-title, .available-table caption {font-size: 12px; font-weight: bold; color: #000}
+.no {color: #fff; border: solid 1px #000; cursor: pointer; background-color: #aa0000; text-decoration:line-through}
+.yes {color: #fff; border: solid 1px #000; cursor: pointer; background-color: #00aa00}
+.yes:hover, .no:hover {text-decoration: underline}
+
+#map {cursor: default}
+#text-display {font-size: 11px;}
+.channel-list-table { font-size: 10px; width: 100%; 	border-collapse: collapse; border: solid 1px #000}
+.channel-list-table tr, .channel-list-table td {border: solid 1px #ddd; height: 18px; text-align: center}
+.channel-list-table tr:first-of-type {border-bottom: solid 1px #000; height: 18px; font-size: 12px; background-color: #eee}
+.channel-list-span {color: #4444dd; cursor: pointer}
+.channel-list-span:hover {text-decoration: underline}
+#table-latlon-dms {width: 100%; height: 100%; }
+#table-latlon-dms td{vertical-align: center }
+.country-language {font-size: 10px; color: #a00; font-weight: bold; font-style: italic}
+.available {color: #fff; border: solid 0px #000; cursor: pointer; background-color: #0a0}
+.available-with-waiver {color: #fff; border: solid 0px #000; cursor: pointer; background-color: #00a}
+.unavailable {color: #fff; border: solid 0px #000; cursor: pointer; background-color: #999; text-decoration:line-through}
+.available-legend {width: 22px; height: 14px; font-size: 11px; color: #fff; border: solid 0px #000; background-color: #0a0; text-align: center}
+.available-with-waiver-legend {width: 22px; height: 14px; font-size: 11px; color: #fff; border: solid 0px #000; background-color: #00a; text-align: center}
+.unavailable-legend {width: 22px; height: 14px; font-size: 11px; color: #fff; border: solid 0px #000; background-color: #999; text-align: center; text-decoration:line-through}
+
+#translator-alert-text {font-size: 11px;}
+
+body {font-size: 12px; font-family: arial; font-color: #000; cursor: default; margin: 0px; line-height: 100%}

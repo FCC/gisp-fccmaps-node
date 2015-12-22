@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    __________________   __  ___                
+   / ____/ ____/ ____/  /  |/  /___ _____  _____
+  / /_  / /   / /      / /|_/ / __ `/ __ \/ ___/
+ / __/ / /___/ /___   / /  / / /_/ / /_/ (__  ) 
+/_/    \____/\____/  /_/  /_/\__,_/ .___/____/  
+                                 /_/            
+-->
+<html>
+<head>
+<meta charset=utf-8 />
+<title>CAF-2 Final Areas Map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="map"></div>
+
+    <div id='legend-content' style='display: none;'>
+    <div class='legend'>
+    <div class='legend-title'>Connect America Phase II Offer</div>
+    <div class='legend-scale'>
+        <ul class='legend-labels'>
+            <li><span style='background:#88B99C;'></span>Eligible</li>
+            <li><span style='background:#E09392;'></span>Ineligible - Exceeds Threshold</li>
+            <li><span style='background:#E4D094;'></span>Ineligible - Below Benchmark</li>
+            <li><span style='background:#C3F098;'></span>Ineligible - Other</li>
+            <li><span style='background:#506AA6;'></span>Elected Frozen</li>
+        </ul>
+    </div>
+    </div>
+
+</div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg';
+var map = L.mapbox.map('map', 'fcc.k74ed5ge', {
+	maxZoom: 13,
+	minZoom: 4
+}).setView([38.00, -98.00], 4);
+
+// top layer (always on)
+L.mapbox.tileLayer('fcc.kr8dunmi', {
+	maxZoom: 13,
+	minZoom: 4
+}).setZIndex(1000).addTo(map);
+
+// basemap layer controls
+L.control.layers({
+    'Street Map': L.mapbox.tileLayer('fcc.k74ed5ge').addTo(map),
+    'Satellite Map': L.mapbox.tileLayer('fcc.k74d7n0g'),
+    'Terrain Map': L.mapbox.tileLayer('fcc.k74cm3ol')
+	}, null, {position: 'topleft'}).addTo(map);
+
+// legend location
+map.legendControl
+	.addLegend(document.getElementById('legend-content').innerHTML)
+	.setPosition('bottomleft');
+
+// add interactive elements
+var gridlayer = L.mapbox.gridLayer('fcc.kr8dunmi').addTo(map);
+var gridControl = L.mapbox.gridControl(gridlayer).addTo(map);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>U.S. Census Map</title>
+    <meta charset=utf-8 />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta name='apple-mobile-web-app-status-bar-style' content='black' /> 
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta property='og:title' content='US Census' />
+    <meta property='og:type' content='website' />
+    <meta property='og:image' content='http://b.tiles.mapbox.com/devseed/1.0.0/externals.streetlevel,mapbox.natural-earth-1,usa1-census-state-z2-5,usa2-census-counties-z6-9,usa3-census-tracts-contusa-z10-13,usa4-census-tracts-AK-z10-13,usa5-census-HI-z10-14,usa6-census-tracts-contusa-z14,usa7-census-tracts-AK-z14,world-borders-dark-0-6/14/4825/10227.png' />
+    <meta property='og:site_name' content='US Census' />
+    <meta property='fb:admins' content='8806219' />
+    <meta property='og:description' content='A US Census Map by Development Seed' />
+    <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
+    <link rel='apple-touch-startup-image' href='images/ios-bg.png' />
+    <link rel='stylesheet' href='css/reset.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='screen, projection' />
+  </head>
+<body>
+
+<div id='header'>
+  <a href='/' class='title'><h1>U.S. Census <span>2010</span></h1></a>
+  <div id='share'>
+    <a href='#' class='link-pop'>Share</a>
+    <div>
+      <p>Facebook share or Tweet this</p>
+      <ul class='clearfix'>
+        <li><a class='facebook' href='http://facebook.com/sharer.php?t=US%20Census%20Map&amp;u=http%3A%2F%2Fcensus.sites.devseed.com%2F'>Share</a></li>
+        <li><a class='twitter' href='http://twitter.com/share?via=developmentseed&amp;text=US%20Census%20Map&amp;url=http%3A%2F%2Fcensus.sites.devseed.com%2F'></a></li>
+      </ul>
+    </div>
+  </div>
+  <form class='location-search'>
+    <input type='text' class='search'>
+  </form>
+</div>
+<div id='map'></div>
+<div id='controls'>
+  <div id='embed'>
+    <a href='#' class='embed control' title='Embed a version of this map on a site.'></a>
+  </div>
+  <a href='#' id='bwtoggle' class='hq control active' title='For low bandwidth conditions, toggle on or off a higher qualiy version of the map.'>HQ</a>
+</div>
+<ul class='macro'>
+  <li class='population'><a id='total-pop' href='#'>Total Population</a></li>
+  <li class='population hispanic'><a id='hispanic-pop' class='active' href='#'>Hispanic Population</a></li>
+</ul>
+<div id='layerswitch'>
+  <h4>Change in Hispanic population<br /> by city</h4>
+  <ul class='cities'>
+      <li><a href='#' class='ca' id='los-angeles'>Los Angeles</a></li>
+      <li><a href='#' class='ny' id='new-york'>New York</a></li>
+      <li><a href='#' class='il' id='chicago'>Chicago</a></li>
+      <li><a href='#' class='ca' id='san-francisco'>San Francisco</a></li>
+      <li><a href='#' class='dc' id='washington-dc'>Washington, DC</a></li>
+  </ul>
+</div>
+
+<!-- Modal Overlays -->
+<div id='overlay'></div>
+<div id='modal-embed' class='modal'>
+  <div class='popup' id='popup-embed'>
+    <a href='#' class='icon close'>Close</a>
+    <div class='viewport'>
+      <div class='overview'>
+        <h2>Embed this map</h2>
+        <p>Copy and paste this code into any blog or web page to embed a view of the map:</p>
+        <div class='col'>
+          <div id='embed-code-field'>
+            <input type='text' length='30' value='' id='embed-code' readonly />
+          </div>
+          <p><em>Press <code>Ctrl+C</code> or <code>Command+C</code> to copy the embed code.</em></p>
+          <p>Some blogs or website CMSs filter certain HTML from your content. You may need to set your <code>format</code> or <code>input filter</code>  to <code>none</code> or <code>full HTML</code>.</p>
+          <p>Adjust the map's size by editing the 'width' and 'height' values in the code.</p>
+        </div>
+        <div class='col'>        
+          <div id='embed-ex-image'><img src='images/embed.jpg' alt='Example of a map embedded on a webpage' /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Libraries -->
+<script src='ender.min.js'></script>
+<script src='libs/modestmaps.min.js'></script>
+<script src='libs/easey.min.js'></script>
+<script src='libs/wax.mm.min.js'></script>
+
+<!-- Application code -->
+<script src='app1.js'></script>
+</body>
+</html>

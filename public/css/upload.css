@@ -1,0 +1,74 @@
+#upload-desc {
+    margin-top: 15px;
+}
+
+#upload-drop-area {
+    margin: 25px;
+    height: 350px;
+    background: #eee;
+    border: 1px dashed #aaa;
+    text-align: center;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+#upload-drop-area.dragover {
+    border: 5px solid #BADA55;
+    opacity: .75;
+}
+
+#upload-drop-area.dragover * {
+    pointer-events: none;
+}
+
+#upload-drop-area:before {
+    content: 'Drag & Drop';
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 1;
+    color: #ccc;
+    vertical-align: middle;
+    margin-top: -50px;
+    display: inline-block;
+}
+
+#upload-drop-area:after {
+    content: '\00a0';
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fileinput-button {
+  	position: relative;
+  	overflow: hidden;
+}
+.fileinput-button input {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	margin: 0;
+  	border: solid transparent;
+  	border-width: 0 0 100px 200px;
+  	opacity: 0;
+  	filter: alpha(opacity=0);
+  	-moz-transform: translate(-300px, 0) scale(4);
+  	direction: ltr;
+  	cursor: pointer;
+}
+
+.upload-files .file-status {
+    width: 120px;
+    text-align: center;
+}
+
+.upload-files .file-status.processing:before {
+    content: url('../img/loading.gif');
+    vertical-align: middle;
+    display: inline-block;
+    opacity: .9;
+    margin-top: 2px;
+    margin-right: 5px;
+}
