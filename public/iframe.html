@@ -29,17 +29,303 @@
 Map List:<p>
 GISP-86:<br>
 <a href="maps/fixed-25-mbps3-mbps-broadband-deployment-map-2015-broadband-progress-report">
-Fixed 25 Mbps/3 Mbps Broadband Deployment
+fixed-25-mbps3-mbps-broadband-deployment-map-2015-broadband-progress-report
 </a>
 <p>
 GISP-87:<br>
 <a href="maps/mobile-10-mbps768-kbps-deployment-map-2015-broadband-progress-report">
-Mobile 10 Mbps/768 kbps Deployment
+mobile-10-mbps768-kbps-deployment-map-2015-broadband-progress-report
 </a>
 <p>
+GISP-88:<br>
+<a href="maps/100pct-overlap-map">
+100pct-overlap-map
+</a>
+<p>
+GISP-89:<br>
+<a href="maps/caf-2-accepted-map">
+caf-2-accepted-map
+</a>
+<p>
+GISP-90:<br>
+<a href="maps/fcc-enforcement-actions-against-pirate-radio-location">
+fcc-enforcement-actions-against-pirate-radio-location
+</a>
+<p>
+GISP-91:<br>
+<a href="maps/erate-map">
+erate-map
+</a>
+<p>
+<pre>
+==============
+GISP-92:
+Migrate Terrestrial Wireless Coverage by Number of Providers to Node
+terrestrial-wireless-coverage-number-providers
+original iframe page: https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-broadband-map.html
+L.mapbox.accessToken = 'pk.eyJ1IjoiZmNjMjA1NTQiLCJhIjoiVHlCZGNNUSJ9.-Io09_10w_Ziyx-RUSB_cQ';
+var map = L.mapbox.map('map', 'fcc20554.lk1mdek5',{attributionControl: true}).setView([35,-96], 4);
+
+==
+GISP-93:
+Migrate Nationwide 4G Coverage to Node
+original iframe: https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-4G-map.html
+url: nationwide-4g-coverage
+
+===============
+GISP-94:
+Migrate Terrestrial Mobile Broadband Network Coverage by Number of Providers to Node
+original iframe: https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-broadband-map.html
+url: terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level
+=================
+
+GISP-95:
+
+Migrate Terrestrial Mobile Wireless Digital Coverage to Node
+
+original iframe page: https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-digital-map.html 
+L.mapbox.accessToken = 'pk.eyJ1IjoiZmNjMjA1NTQiLCJhIjoiVHlCZGNNUSJ9.-Io09_10w_Ziyx-RUSB_cQ';
+
+var map = L.mapbox.map('map','', {attributionControl: true}).setView([35,-96], 4);
+
+
+
+L.control.layers({
+    'Base Map': L.mapbox.tileLayer('fcc20554.lk1mdek5').addTo(map),
+	'High Contrast': L.mapbox.tileLayer('fcc20554.lk1mm5ga')
+}, {
+    'GSM': L.mapbox.tileLayer('fcc20554.n4we9udi').addTo(map),
+    'CDMA': L.mapbox.tileLayer('fcc20554.a8y6i529').addTo(map),
+    'IDEN': L.mapbox.tileLayer('fcc20554.jmt8d7vi').addTo(map),
+	'States': L.mapbox.tileLayer('fcc20554.WLB_State').addTo(map)
+URL: terrestrial-mobile-wireless-digital-coverage
+============
+GISP-96:
+Migrate Connect America Phase II - Final Eligible Areas Map to Node
+
+url:caf-2-final-map (slow, need big machine to work on)
+connect-america-phase-ii-final-eligible-areas-map
+
+====================
+GISP-97:
+Migrate Alternative Connect America Cost Model (A-CAM) - Rate-of-Return Areas for Download to Node
+
+hosted on NBM box (do later)
+url: 
+=====================
+GISP-98:
+Migrate Connect America Phase II - Initial Eligible Areas Map to Node
+
+url: connect-america-phase-ii-initial-eligible-areas-map
+==
+GISP-99:
+Migrate Connect America Fund Phase II - Cam v4.0 Illustrative Map with Funding Threshold of $52 to Node
+
+url: fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0
+=========
+GISP-100:
+Migrate Connect America Fund Phase II - CAM v4.0 Illustrative Map with Funding Threshold of $48 to Node
+
+url: connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48
+
+=======
+GISP-101:
+Migrate Connect America Fund (CAF) Phase I Round Two to Node
+
+url: connect-america-fund-caf-phase-i-round-two
+
+=========
+GISP-102:
+Migrate Connect America Fund (CAF) Phase I to Node
+
+url:connect-america-fund-caf-phase-i
+
+===
+GISP-103:
+Migrate Rural Health Care Pilot Program to Node
+
+url: rural-health-care-pilot-program
+
+===
+GISP-104:
+Migrate Net USF Received Per Voice Line to Node
+
+url: net-usf-received-voice-line
+
+====
+GISP-105:
+Migrate Total Per Line USF High-Cost Distributions in Rate-of-Return Study Areas to Node
+
+url: total-line-usf-high-cost-distributions-rate-return-study-areas
+
+==
+GISP-106:
+Migrate Total High-Cost Distributions in Rate-of-Return Study Area to Node
+url: total-high-cost-distributions-rate-return-study-areas
+
+
+===
+GISP-107:
+Migrate Regulatory Type at the Holding Company Level by Study Area to Node
+url: regulatory-type-holding-company-level-study-area
+
+====
+GISP-108:
+Migrate Connect to Compete Home Broadband Coverage Map to Node
+url: connect-compete-home-broadband-coverage-map
+
+======
+GISP-109:
+Migrate Connect America Phase II - Final Eligible Areas Map to Node
+
+url:fcc-connect-america-phase-ii-final-eligible-areas-map
+
+==
+GISP-110:
+Migrate Locations Unserved by Fixed Broadband to Node
+
+url: locations-unserved-fixed-broadband
+=========
+GISP-111:
+Migrate Wireline Maximum Advertised Download Speed to Node
+url: wireline-maximum-advertised-download-speed
+===========
+GISP-112:
+Migrate Section 706 Mobile Deployment Map to Node
+
+url:section-706-mobile-deployment-map
+===
+GISP-113:
+Migrate Section 706 Fixed Broadband Deployment Map to Node
+url: section-706-fixed-broadband-deployment-map
+====
+GISP-114
+Migrate Broadband Availability to Node
+url: broadband-availability
+===
+GISP-115:
+Migrate Broadband Availability Hawaii to Node
+url: broadband-availability-hawaii
+===
+GISP-116:
+Migrate Broadband Availability Alaska to Node
+url: broadband-availability-alaska
+
+==
+GISP-117:
+Migrate Evolution of LPFM Stations to Node
+
+url: evolution-lpfm-stations/lpfmpoint.html
+===
+GISP-118:
+Migrate Low Power FM Opportunities Without 2nd Adjacent Spacing Applied to Node
+
+url: low-power-fm-opportunities-without-2nd-adjacent-spacings-applied
+===
+
+GISP-119:
+Migrate Tribal Mobility Fund Phase I Eligible Areas to Node
+url: tribal-mobility-fund-phase-i-eligible-areas
+=====
+GISP-120:
+Migrate Tribal Mobility Fund Phase I Potentially Eligible Areas to Node
+
+url: tribal-mobility-fund-phase-i-potentially-eligible-areas
+===
+GISP-121:
+Migrate Mobility Fund Phase 1 Eligible Areas to Node
+url: mobility-fund-phase-1-eligible-areas
+
+=======
+
+
+GISP-131:
+Migrate CMA Results Map to Node
+url: cma
+
+============
+GISP-130:
+Migrate 2010 Phone and Message Service - Traffic Billed in US to Node
+url: calltraffic
+
+================
+GISP-129:
+Migrate 2002-2010 Phone and Message Service - Traffic Billed in US to Node
+
+url: calltraffic/trafficbyyear.html
+===
+GISP-128:
+Migrate Find Interfering LPFM Stations to Node
+
+
+url: swatgis/lpfm-demo/index.html
+BUG
+====
+GISP-127:
+Migrate Coverage Right Boundary Data to Node
+
+url: coverageright
+==========
+GISP-126:
+Migrate Rural Broadband Experiment Auction to Node
+
+url: TO BE DONE
+===========
+GISP-125:
+Migrate Connect2Health Phase II Maps to Node
+
+url: to be done
+=============
+GISP-124:
+Migrate Mobility Fund Phase 1 Potentially Eligible Areas to Node
+original iframe: https://a.tiles.mapbox.com/v3/fcc.mobility-fund-phase-1-potentially-eligible-areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html
+url: mobility-fund-phase-1-potentially-eligible-area
+============
+GISP-123:
+Migrate 800 MHz Cellular - B Block CGSAs to Node
+original iframe: https://a.tiles.mapbox.com/v3/fcc.p3lhm2t9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39/-99.9887"
+url: 800-mhz-cellular-–-b-block-cgsas
+=========
+GISP-122:
+Migrate 800 MHz Cellular - A Block CGSAs to Node
+original iframe: https://a.tiles.mapbox.com/v3/fcc.800-mhz-cellular-a-block-cgsa/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39/-99.9887
+url: 800-mhz-cellular-–-b-block-cgsas/#5/3
+
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 GISP-109:<br>
 <a href="maps/fcc-connect-america-phase-ii-final-eligible-areas-map">
-Connect America Phase II - Final Eligible Areas
+fcc-connect-america-phase-ii-final-eligible-areas-map
 </a>
 <p>
 
