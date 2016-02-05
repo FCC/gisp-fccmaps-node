@@ -1,0 +1,465 @@
+/* Table of Content
+==================================================
+	
+	#Basic Styles
+	#Site Styles
+	#Header
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc 
+	#Footer */
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+
+body {
+ background-color: #505050; 
+	margin: 0 auto; 
+}
+
+h1 { color: #FFF; font-size: 26px; font-weight: normal; line-height: normal; padding: 10px 0 0 10px; }
+.hd-pgTitle { color: #6E3F19; font: 26px/1 Cambria,"Times New Roman",Times,serif; line-height: 32px; margin-bottom: 0; }
+.hd-pgSubTitle { color: #BB6633; font-size: 16px; font-weight: 700; margin: 0; }
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+header { margin-bottom: 0; }
+#fcc-banner {
+    background: url("../img/bgNav.png") repeat-x scroll 0 0 transparent;
+    display: block;
+    overflow: hidden;
+}
+
+/* =============================================================================
+   Page Heading
+   ========================================================================== */
+#pg-head { border-bottom: 1px dotted #CCC; margin: 10px 0 35px; overflow: hidden; }
+
+/* =============================================================================
+   Utility Navigation
+   ========================================================================== */
+#nav-utility {
+	padding: 20px 0 0;
+	text-align: right;	
+}
+
+#nav-utility a {
+	font-weight: bold;	
+}
+
+.hd-sections { display: none; visibility: hidden; }
+.hd-sections a
+{
+	background-color: #000;
+	border-color: #000;
+	border-radius: 6px 6px 0 0;
+	border-style: solid;
+	border-width: 1px 1px 0;
+	padding: 11px 14px 13px;
+}
+
+
+/* =============================================================================
+   Main Container
+   ========================================================================== */
+/*.login, .upload { text-align: right; }
+.login { padding: 25px 0 0; }*/
+
+#site-content { 
+	 background-color: #FFFFFF;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+		margin: 0 auto;
+		padding-bottom: 100px;
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+footer {
+	background-color: #505050;
+	clear: both;
+	color: #EBEBEB;
+	font-size: 11px;
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+#footer-nav {
+	overflow: hidden;
+	padding: 20px 0 50px 0;	
+}
+
+#footer-nav .col {
+	display: inline;
+	float: left;
+	margin: 0;
+	width: 220px;	
+}
+
+footer ul {
+	margin:0;
+	padding-top:10px;
+}
+
+footer li {
+	list-style-type:none;
+	line-height: 18px;
+	margin:0 0 3px;
+	padding-right:19px;
+}
+
+footer a {
+	color:#EBEBEB;
+	height:30px;
+	padding-top:2px;	
+	text-shadow: 0 1px 0 #000000;
+}
+
+footer a:hover {
+		color: #FFF;	
+}
+
+.ft-help {
+    background-color: #444444;
+    padding: 5px;
+    text-align: center;
+}
+.ft-help a, .ft-help a:hover {
+ color: #B0D67E;
+}
+
+.ft-help a:hover
+{
+	text-decoration: underline;	
+}
+
+.ft-help p {
+	margin-bottom: 0;	
+}
+
+.ft-help .icon {
+    background: url("../img/icons-sprite.png") no-repeat scroll -304px 0 transparent;
+    display: inline-block;
+    float: none;
+    height: 16px;
+    margin-right: 10px;
+				vertical-align: bottom;
+    width: 16px;
+}
+
+.ft-map { margin-top: 0; }
+
+/* =============================================================================
+   Log In
+   ========================================================================== */
+
+
+#frm-login {
+	border: 1px solid #CCC;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 3px 3px 5px #CCC;
+	clear: both;
+	margin: 30px auto;
+	padding: 10px 25px 10px;
+	position: relative;
+	width: 325px;	
+}
+
+#frm-login legend { 
+	border: none;
+	margin-bottom: 10px;
+}
+
+#frm-login h2 {
+	font-size: inherit;
+	font-weight: normal;
+	margin: 0;
+}
+
+.nav-loginType { 
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#frm-login  ul {
+	margin-bottom: 0;	
+}
+
+#frm-login  li {
+	margin-bottom: 5px;	
+}
+
+
+#frm-login  label { color: #444; display: block; margin-bottom: 0; }
+
+#frm-login .alert { margin-bottom: 10px; }
+
+.nav-login { font-size: 12px; margin-top: 15px; }
+.nav-login li { margin-bottom: 5px; }
+.glyph-raquo { color: #0088CC; position: relative; top:-3px; vertical-align: text-top; }
+.nav-login p { margin-left: 17px; }
+
+/* =============================================================================
+   File Upload
+   ========================================================================== */
+#upload { background-color: #edf0f5; padding: 15px 0; text-align: center; }
+
+
+/* =============================================================================
+   Map
+   ========================================================================== */
+#map-container {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+#map-body {
+	float: left;
+	height: 700px;
+	position: relative;
+	width: 65%;
+}
+
+#map {
+	height: 100%;
+	min-height: 700px;
+	width: 100%;	
+}
+
+#map img {
+	max-width: none; 	
+}
+
+
+
+#map-layerSwitch ul {
+    background: none repeat scroll 0 0 rgba(0, 60, 136, 0.5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 999;
+}
+			
+#map-layerSwitch li {
+	 list-style-type: none;
+    margin-bottom: 0;	
+}
+
+#map-layerSwitch a.active {
+    background-color: #1F90FF;
+    color: #FFFFFF;
+}
+#map-layerSwitch a {
+    background: none repeat scroll 0 0 transparent;
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 6px 5px;
+    width: 100px;
+}
+
+/* =============================================================================
+   Map Sidebar
+   ========================================================================== */
+
+/*#map-sidebar { background-color: #FFF; border: 1px solid #CCC; border-radius: 6px 6px 6px 6px; box-shadow: 3px 3px 5px #CCCCCC; min-height: 330px; padding: 15px; position: absolute; right: 10px; top: 10px; width: 350px; z-index: 999; }*/
+
+#map-attr { padding: 10px; }
+
+#map-sidebar {
+	background-color: #F6F6F6;
+	float: left;
+	/*border: 1px solid #CCC;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 3px 3px 5px #CCCCCC;*/
+	height: 700px;
+	/*padding: 15px;
+	position: absolute;*/
+	right: 0;
+	top: 0;
+	width: 35%;
+}
+
+.nav-sidebar { padding: 20px 10px 10px; }
+
+.panel-scroll {
+    border: 1px solid #CCCCCC;
+    height: 200px;
+    overflow: scroll;
+    padding: 5px;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+.form-label150 label, .label-text { width: 175px; }
+
+.form-label150 input[type="submit"], .form-label150 .frm-radioGrp div { margin-left: 175px; }
+fieldset label { display: inline-block; *float: left; *padding: 3px 0 0; position: relative; top: -3px; *top: 0; }
+
+label.inline { *float: none; *display: inline; margin: 0 5px 0 10px; width: auto; }
+label.top { vertical-align: top; }
+.placeholder { color: #CCC; font-style: italic; }
+
+#frm-contactInfo label { margin-right: 15px; width: 135px; }
+#frm-contactInfo .inline { width: auto; }
+#frm-contactInfo li { margin-bottom: 10px; }
+#frm-contactInfo h3 { display: inline-block; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+#skip { position:absolute; left:35%; top:0; z-index:900; width:50%; }
+#skip a { display:block; width:50%; padding:5px; border-width:0 1px 1px; border-style:solid; border-color:#8cdb78; background:#000; color:#bfe9ff; text-align:center; }
+#skip a:hover, #skip a:focus, #skip a:active { color:#9cf285; text-decoration:none; }
+
+/*.login a, .logout a {
+    background: url("../img/login-icon.png") no-repeat scroll 0 -1px transparent;
+    font-weight: bold;
+}*/
+
+.collapsible-section {
+    background: url("../img/toggle.png") no-repeat scroll 0 1px transparent;
+    padding: 0 0 0 17px;
+}
+
+.collapsible-section.collapsed {
+    background-image: url("../img/toggle-expand.png");
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+.breadcrumb li { display: block; margin-bottom: 5px; }
+
+.nav-sidebar li { font-size: 14px; }
+
+#map-sidebar ul { font-size: 14px; margin: 10px 0 0; }
+
+
+
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+#frm-certify .btn { margin-left: 175px; }
+#frm-contactInfo button { margin-left: 155px; }
+
+.btn-fileAction { padding: 8px 20px; margin-right: 10px; }
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+    border-bottom: 1px solid #D3D3D3;
+    width: 100%;
+}
+
+.tbl-data th, .tbl-data th {
+    border-bottom: 2px solid #D3D3D3;
+    color: #999999;
+    font-weight: bold;
+    padding: 5px 15px 0 5px;
+    text-align: left;
+}
+
+.sort-wrapper {
+    cursor: pointer;
+		position: relative;
+}
+
+.sorting .sort  {
+    background: url("../img/dt-arrows.png") no-repeat scroll right center transparent;
+}
+
+.sorting_asc .sort {
+    background: url("../img/dt-arrow-up.png") no-repeat scroll right center transparent;
+}
+
+.sorting_desc .sort {
+    background: url("../img/dt-arrow-dn.png") no-repeat scroll right center transparent;
+}
+
+.sort {
+    height: 20px;
+    position: absolute;
+    width: 17px;
+}
+
+.tbl-data td {
+    font-size: 11.5px;
+    padding: 5px 15px 5px 5px;
+		white-space: nowrap;
+}
+
+.odd td { background-color: #F3F6FB; }
+
+.tbl-data tr:hover td { background-color: #FFFFE6; }
+
+/* =============================================================================
+   File Upload
+   ========================================================================== */
+.fileupload-drag
+{
+	background-color: #7ab428;
+	display: none;
+	opacity: 0.8;
+	position: fixed;
+	z-index: 9;
+}
+.fileupload-drag.topBorder
+{
+	height: 10px;
+	top: 0;
+	left: 10px;
+	width: 100%;
+}
+.fileupload-drag.rightBorder
+{
+	height: 100%;
+	top: 10px;
+	right: 0;
+	width: 10px;
+}
+.fileupload-drag.bottomBorder
+{
+	height: 10px;
+	bottom: 0;
+	right: 10px;
+	width: 100%;
+}
+.fileupload-drag.leftBorder
+{
+	height: 100%;
+	bottom: 10px;
+	left: 0;
+	width: 10px;
+}
+.fileupload-complete
+{
+	border: 3px dashed #CECECE;
+	padding: 20px;
+	background: #f2f2ff;
+}
+
+#tbl-fileUpload {
+	width: auto;	
+}
+
+/* =============================================================================
+   Misc.
+   ========================================================================== */
+.center { text-align: center; }

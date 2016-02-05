@@ -1,0 +1,53 @@
+<div class="container clearfix"> 
+  <!-- Skip target for footer content -->
+  
+  <p class="visuallyhidden"><a id="skiptarget3" name="skiptarget3" tabindex="-1"></a></p>
+  <!-- END skip target 3 -->
+  
+  <div class="eleven columns alpha omega">
+    <div id="footer-nav" class="left clearfix">
+		<div class="four columns alpha omega">
+			<ul>
+        <li>Federal Communications Commission</li>
+        <li>445 12th Street SW</li>
+				<li>Washington, DC 20554<br><br></li>
+        <li>Phone: 1-888-225-5322</li>
+        <li>TTY:  1-888-835-5322</li>
+        <li>Fax: 1-866-418-0232</li>
+        <li>E-mail: <a href="mailto:fccinfo@fcc.gov">fccinfo@fcc.gov</a></li>
+      </ul>
+		</div>
+      <div class="three columns alpha omega">
+			<ul>
+        <li><a href="http://www.fcc.gov/rss">RSS</a></li>
+        <li><a href="http://www.fcc.gov/encyclopedia/privacy-policy">Privacy Policy</a></li>
+				<li><a href="http://www.fcc.gov/comment-policy">Moderation Policy</a></li>
+				<li><a href="http://www.fcc.gov/encyclopedia/website-notices">Website Policies &amp; Notices</a></li>
+				<li><a href="http://www.fcc.gov/encyclopedia/required-plug-ins-players-and-readers">Required Browser &amp; Plug-ins</a></li>
+      </ul>
+		</div>
+		<div class="four columns alpha omega">
+			<ul>
+        <li><a href="http://www.fcc.gov/foia">FOIA</a></li>
+				<li><a href="http://www.fcc.gov/encyclopedia/no-fear-act-data">No Fear Act Data</a></li>
+				<li><a href="http://www.fcc.gov/open">Open Government Directive</a></li>
+				<li><a href="http://www.fcc.gov/encyclopedia/plain-writing-fcc">Plain Writing Act</a></li>
+				<li><a href="http://www.fcc.gov/encyclopedia/american-recovery-and-reinvestment-act-2009">2009 Recovery and Reinvestment Act</a></li>
+      </ul>
+		</div>
+      
+      
+    </div><!-- /left --> 
+      
+    </div>
+    
+    
+
+	
+  <div class="six columns alpha omega clearfix">
+    
+  </div>
+  <!-- /right --> 
+</div>
+
+  

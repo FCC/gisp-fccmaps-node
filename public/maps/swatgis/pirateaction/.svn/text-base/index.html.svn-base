@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Pirate Action FCC 2011</title>
+<link rel='stylesheet' href='css/reset.css' type='text/css' />
+<link rel='stylesheet' href='css/style.css' type='text/css' />
+</head>
+<body>
+
+<div id="header"> 
+    <h1>Summary <span class='red-title'>Pirate</span> Actions in 2011: </h1>
+    <ul id='map-navigation'>
+        <li><a id='all' class='candidate-tab active' href='#' data-layer='xmgeo.pirate'>All</a></li>
+        <li><a id='nal' class='candidate-tab' href='#' data-layer='xmgeo.pirate_NAL'>NAL</a></li>
+        <li><a id='nouo' class='candidate-tab' href='#' data-layer='xmgeo.pirate_NOUO' >NOUO</a></li>
+        <li><a id='forforder' class='candidate-tab' href='#' data-layer='xmgeo.pirate_FORF_ORDER'>FORFEITURE ORDER</a></li>
+        <li><a id='other' class='candidate-tab' href='#' data-layer='xmgeo.pirate_OTHER' >OTHER</a></li>
+    </ul>
+</div>
+
+<div id="about">
+    <div class='description' id='description-all'>
+        <h1>Pirate Action in 2011</h1>
+        <h4>some descriptions here</h4>    
+	</div>
+	 <div class='description' id='description-forforder'>
+	    <h1>Pirate Action in 2011 - Forfeiture Order</h1>
+	     <h3>some description goes here</span></h3>
+      </div>
+
+	  <div class='description' id='description-other'>
+	  	<h1>Pirate Action in 2011 - Other</h1>
+	  	<h3>some description goes here</h3>	
+	  </div>
+
+		<div class='description' id='description-nouo'>
+			<h1>Pirate Action in 2011 - NOUO</h1>
+			<h3>description goes here</h3>	
+		</div>
+
+		<div class='description' id='description-nal'>
+		<h1>Pirate Action in 2011 - NAL</h1>
+		<h3>description goes here</h3>
+		</div>
+
+
+  <div id="tooltips">
+ 
+	
+</div>
+	
+</div>
+
+  
+   <div id='map'></div>
+    <div id='controls'>
+<!--      <a href='#' class='share'>Share</a> -->
+    </div>
+  <div id='overlay'></div>
+  <div id='share' style="display:none;">
+      <a href='#' class='close okay' title='Press ESC to close'>X</a>
+      <h2>Share this map</h2>
+      <p>
+        <a id='facebook' target='_blank'>Facebook</a>
+        <a id='twitter' target='_blank'>Twitter</a>
+      </p>
+      <h5>Get the embed code</h5>
+      <small>Copy and paste this HTML into your website or blog.</small>
+      <div id='embed-code-field'><textarea id='embed-code' rows='4' readonly></textarea></div>
+    </div>
+  </div>
+
+  <script src='js/pirate.geojson'></script>
+  <script src='js/ender.min.js'></script>
+  <script src='js/underscore.js'></script> 
+  <script src='js/modestmaps.min.js'></script>
+  <script src='js/wax.mm.min.js'></script>
+  <script src='js/app.js'></script>
+</body>
+</html>

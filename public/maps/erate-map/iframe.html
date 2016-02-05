@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FCC - E-rate</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" - ">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+      <link href="//api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.ie.css' rel='stylesheet'>
+    <![endif]-->
+    <link href="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.1/leaflet.fullscreen.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!--[if lte IE 9]>
+      <script src="js/libs/html5shiv.js" type="text/javascript"></script>
+      <script src="js/libs/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+    
+
+<div id="content-main" class="container">
+    <section>
+        <div class="map-box">
+            <div id="map"></div>
+            <div class="map-footer"> View Data By:
+                <ul class="list-layerSwitch list-unstyled list-inline">
+                    <li><a href="#schoolDist" id="schoolDist">School Districts</a></li>
+					<li><a href="#library" id="library">Libraries</a></li>
+                </ul>
+                <p class="help-block">Click/hover to display results.</p>
+            </div>
+        </div>
+    </section>
+    <div class="row map-stats hide" id="stats-schoolDist">
+        <section class="col-xs-6 col-sm-4">
+            <dl class="dl-stats">                
+                <!--<dt>State:</dt>
+                <dd><span id="stat-state">----</span></dd>-->
+                <dt>Geography Description</dt>
+                <dd><span id="stat-geoDesc">----</span></dd>
+                <!--
+                <dt>FIPS Code</dt>
+                <dd><span id="stat-geoID">----</span></dd>
+                -->
+                <dt>Total Students in School District</dt>
+                <dd><span id="stat-totStudents">----</span></dd>
+            </dl>
+        </section>
+        <section class="col-xs-6 col-sm-4">            
+            <dl class="dl-stats dl-inline">                
+                <dt>% of Schools with Fiber Access</dt>
+                <dd><span id="stat-pctFiberTrue">----</span></dd>
+                <dt>% of Schools without Fiber Access</dt>
+                <dd><span id="stat-pctFiberFalse">----</span></dd>
+                <dt>% of Schools not reporting Fiber Access</dt>
+                <dd><span id="stat-pctFiberNull">----</span></dd>
+            </dl>
+        </section>
+        <div class="col-xs-6 col-sm-4">
+            <table class="map-legend table">
+                <caption>
+                % of Schools with Fiber
+                </caption>
+                <tbody>
+                    <tr>
+                        <th>Mostly Connected (> 50% Fiber)</th>
+                        <td><span style="background-color: #aeba88"> </span></td>
+                    </tr>
+                    <tr>
+                        <th>Mostly Unconnected (< 50% Fiber)</th>
+                        <td><span style="background-color: #8da5c0"> </span></td>
+                    </tr>
+                    <tr>
+                        <th>Mostly Unknown (Not Enough Data)</th>
+                        <td><span style="background-color: #b1b1b1"> </span></td>
+                    </tr>
+                    <tr><td colspan="2"><p class="help-block">Updated: Jun 16, 2015</p></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	<div class="row map-stats hide" id="stats-library">
+        <section class="col-xs-6 col-sm-4">
+            <dl class="dl-stats"> 
+            	<dt>Library System</dt>
+                <dd><span id="stat-librarySystemName">----</span></dd>
+                <dt>Library Name</dt>
+                <dd><span id="stat-libraryName">----</span></dd>
+            </dl>
+        </section>
+        <section class="col-xs-6 col-sm-4">            
+            <dl class="dl-stats dl-inline">   
+                <dt>Total Annual System Visits</dt>
+                <dd><span id="stat-libraryPopulation">----</span></dd>
+                <dt>Library Type</dt>
+                <dd><span id="stat-libraryType">----</span></dd>
+            </dl>
+        </section>
+        <div class="col-xs-6 col-sm-4">
+            <table class="map-legend table">
+                <caption>
+                Libraries with Fiber
+                </caption>
+                <tbody>
+                    <tr>
+                        <th>Connected</th>
+                        <td><span style="background-color: #aeba88"> </span></td>
+                    </tr>
+                    <tr>
+                        <th>Unconnected</th>
+                        <td><span style="background-color: #8da5c0"> </span></td>
+                    </tr>
+                    <tr>
+                        <th>Unknown (No Data)</th>
+                        <td><span style="background-color: #b1b1b1"> </span></td>
+                        <tr><td colspan="2"><p class="help-block">Updated: Jun 16, 2015</p></td></tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	<div id="about"></div>
+    <div id="desc-schoolDist" class="map-desc hide">
+  <h4 id="school-districts">School Districts</h4>
+
+  <p>This is an interactive map that shows, by School District, the percent of public schools with fiber connectivity sized by number of students. It does not show what percent of schools within a district actually subscribe to high-speed fiber. The universe of public schools is defined using 2011-2012 NCES Public School Data available at <a href="http://nces.ed.gov/ccd/pubschuniv.asp" target="eratemap">http://nces.ed.gov/ccd/pubschuniv.asp</a>.</p>
+
+  <p>Connectivity status is compiled from data from the National Broadband Map (June 2013) and data submitted to the FCC in WC Docket Number 13-184 and posted at <a href="http://www.fcc.gov/encyclopedia/E-rate-modernization-data" target="_top">http://www.fcc.gov/encyclopedia/E-rate-modernization-data</a>. Fiber connectivity is determined from either notation of “fiber” as the specific connection technology (at any speed) or a connection speed of at least 100 Mbps.</p>
+
+  <h4 id="about">About</h4>
+
+  <p>When Congress passed the Telecommunications Act of 1996 authorizing the creation of the E-rate program (more formally known as the schools and libraries universal service support mechanism), only 14 percent of classrooms had access to the Internet, and most schools with access (74 percent) used dial-up connections.  Today, virtually all schools and libraries have Internet access.</p>
+
+  <p>But learning is changing.  Teachers and students want to use innovative digital learning technologies in the classroom and the Internet connects library patrons to information, jobs, and promotes life-long learning.  Demand for bandwidth in schools and libraries continues to increase.  In an FCC survey of E-rate recipients, nearly half of respondents reported lower speed Internet connectivity than the average American home - despite having, on average, 200 times as many users.</p>
+
+  <p>The FCC began updating E-rate in 2010, and on July 23, 2014, released the E-rate Modernization Order, expanding wi-fi networks in schools and libraries across America while ensuring support continues to be available for broadband connectivity to schools and libraries.  In the Further Notice released in conjunction with the E-Rate Modernization Order, the Commission sought input on  the program’s long-term, overall funding needs, particularly in light of general industry trends in broadband pricing and the likelihood that demand for category one services providing connectivity to school and library premises will continue to grow.</p>
+
+  <p>Consistent with that effort, and to better understand the current state of fiber connectivity, the FCC seeks further community engagement to refine this map as well as a companion map on connectivity to libraries, which can be found by selecting the Libraries tab on the map selector above.</p>
+
+  <p>We recognize that the current version of this map only identifies connectivity to public school districts.  We intend to augment it with information about fiber connectivity to private and parochial schools that are eligible for E-rate support.</p>
+
+  <h4 id="community-engagement">Community Engagement</h4>
+
+  <p>Can you help improve the data that drives this map?  The Commission has asked for comment to help identify the gap between schools’ and libraries’ current connectivity and the specific connectivity targets the Commission adopted in its E-Rate Modernization Order.  Can you help by providing a district or school name that is not identified?  A school’s NCES ID (found at <a href="http://nces.ed.gov/ccd/schoolsearch/" target="eratemap">http://nces.ed.gov/ccd/schoolsearch/</a>)?  An individual school’s connection technology (e.g., fiber, cable, T-1, wireless) or advertised download speed?</p>
+
+  <p>Please submit your comments, which will be included in the public record for WC Docket Number 13-184, to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#099;&#104;&#111;&#111;&#108;&#102;&#105;&#098;&#101;&#114;&#109;&#097;&#112;&#064;&#102;&#099;&#099;&#046;&#103;&#111;&#118;">&#115;&#099;&#104;&#111;&#111;&#108;&#102;&#105;&#098;&#101;&#114;&#109;&#097;&#112;&#064;&#102;&#099;&#099;&#046;&#103;&#111;&#118;</a>.  Those e-mailed comments will be used to periodically update this map.  All information submitted to that e-mail address, including names and e-mail and street addresses, will be publicly available via the web.</p>
+</div>
+<div id="desc-library" class="map-desc hide">
+  <h4 id="libraries">Libraries</h4>
+
+  <p>This is an interactive map that shows which public libraries (central and branch) are connected to fiber. It does not show what percent of libraries actually subscribe to high-speed fiber. The universe of public libraries is defined using the 2011-2012 IMLS Public Libraries Survey available from <a href="https://www.imls.gov/research-evaluation/data-collection/public-libraries-united-states-survey" target="eratemap">https://www.imls.gov/research-evaluation/data-collection/public-libraries-united-states-survey</a>.</p>
+
+  <p>Connectivity status is compiled from data from the National Broadband Map (June 2013) and data submitted to the FCC in WC Docket Number 13-184 and posted at <a href="http://www.fcc.gov/encyclopedia/E-rate-modernization-data" target="_top">http://www.fcc.gov/encyclopedia/E-rate-modernization-data</a>. Fiber connectivity is determined from either notation of “fiber” as the specific connection technology (at any speed) or a connection speed of at least 100 Mbps.</p>
+
+  <h4 id="about-1">About</h4>
+
+  <p>When Congress passed the Telecommunications Act of 1996 authorizing the creation of the E-rate program (more formally known as the schools and libraries universal service support mechanism), only 14 percent of classrooms had access to the Internet, and most schools with access (74 percent) used dial-up connections.  Today, virtually all schools and libraries have Internet access.</p>
+
+  <p>But learning is changing.  Teachers and students want to use innovative digital learning technologies in the classroom and the Internet connects library patrons to information, jobs, and promotes life-long learning.  Demand for bandwidth in schools and libraries continues to increase.  In an FCC survey of E-rate recipients, nearly half of respondents reported lower speed Internet connectivity than the average American home - despite having, on average, 200 times as many users.</p>
+
+  <p>The FCC began updating E-rate in 2010, and on July 23, 2014, released the E-rate Modernization Order, expanding wi-fi networks in schools and libraries across America while ensuring support continues to be available for broadband connectivity to schools and libraries.  In the Further Notice released in conjunction with the E-Rate Modernization Order, the Commission sought input on  the program’s long-term, overall funding needs, particularly in light of general industry trends in broadband pricing and the likelihood that demand for category one services providing connectivity to school and library premises will continue to grow.</p>
+
+  <p>Consistent with that effort, and to better understand the current state of fiber connectivity, the FCC seeks further community engagement to refine this map as well as a companion map on connectivity to schools, which can be found by selecting the School Districts tab on the map selector above.</p>
+
+  <h4 id="community-engagement-1">Community Engagement</h4>
+
+  <p>Can you help improve the data that drives this map?  The Commission has asked for comment to help identify the gap between schools’ and libraries’ current connectivity and the specific connectivity targets the Commission adopted in its E-rate Modernization Order.  Can you help by providing the name of a library that is not identified?  A library’s FSCS ID (found at <a href="http://harvester.census.gov/imls/search/" target="eratemap">http://harvester.census.gov/imls/search/</a>)?  An individual library’s connection technology (e.g., fiber, cable, T-1, wireless) or advertised download speed?</p>
+
+  <p>Please submit your comments, which will be included in the public record for WC Docket Number 13-184, to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#108;&#105;&#098;&#114;&#097;&#114;&#121;&#102;&#105;&#098;&#101;&#114;&#109;&#097;&#112;&#064;&#102;&#099;&#099;&#046;&#103;&#111;&#118;">&#108;&#105;&#098;&#114;&#097;&#114;&#121;&#102;&#105;&#098;&#101;&#114;&#109;&#097;&#112;&#064;&#102;&#099;&#099;&#046;&#103;&#111;&#118;</a>. Those e-mailed comments will be used to periodically update this map. All information submitted to that e-mail address, including names and e-mail and street addresses, will be publicly available via the web.</p>
+
+</div>
+ 
+</div>
+<script src="//code.jquery.com/jquery-1.10.2.min.js" type="application/javascript"></script>  
+<script src="//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js"></script>
+<!--<script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js"></script>-->
+<script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.1/Leaflet.fullscreen.min.js"></script> 
+<script src="js/l-hash.js"></script>
+<script src="js/map.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        // nav
+        $("#large a").click(function (event) {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 80
+            }, 1000);
+        });
+
+        $("nav a").click(function (event) {
+            event.preventDefault();
+            if ($("#small").css("display") != "none") {
+                $("#large").animate({
+                    right: "-200px",
+                    top: "0"
+                }, 500);
+                $(".container").animate({
+                    right: "0"
+                }, 500);
+            }
+
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 80
+            }, 1000);
+
+            $("#small").toggleClass('closed');
+        });
+
+        $("#small").click(function () {
+            if ($("#small").hasClass('closed')) {
+                $("#large").animate({
+                    right: "0",
+                    top: "0"
+                }, 500);
+                $(".container").animate({
+                    right: "200px"
+                }, 500);
+            } else {
+                $("#large").animate({
+                    right: "-200px",
+                    top: "0"
+                }, 500);
+                $(".container").animate({
+                    right: "0"
+                }, 500);
+            }
+            $("#small").toggleClass('closed');
+        })
+
+        $(".back-top").click(function (event) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        });
+    });
+</script> 
+</body>
+</html>

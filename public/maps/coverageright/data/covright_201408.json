@@ -1,0 +1,4477 @@
+[
+    {
+        "property": [
+            {
+                "companyName": "ACS Wireless", 
+                "extent": [
+                    -165.973996, 
+                    54.68192, 
+                    -130.332866, 
+                    71.40634
+                ], 
+                "id": 1, 
+                "serviceName": "ACS_Wireless_1X"
+            }, 
+            {
+                "companyName": "All West Wireless", 
+                "extent": [
+                    -118.289979, 
+                    36.685857, 
+                    -106.577132, 
+                    45.230773
+                ], 
+                "id": 2, 
+                "serviceName": "All_West_Wireless_1X"
+            }, 
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.276317, 
+                    17.915102, 
+                    -65.24128, 
+                    18.519101
+                ], 
+                "id": 3, 
+                "serviceName": "America_Movil_1X"
+            }, 
+            {
+                "companyName": "Appalachian Wireless", 
+                "extent": [
+                    -84.205285, 
+                    36.730469, 
+                    -81.970208, 
+                    38.264323
+                ], 
+                "id": 4, 
+                "serviceName": "Appalachian_Wireless_1X"
+            }, 
+            {
+                "companyName": "ASTCA", 
+                "extent": [
+                    -170.866238, 
+                    -14.40828, 
+                    -170.529593, 
+                    -14.205411
+                ], 
+                "id": 5, 
+                "serviceName": "ASTCA_1X"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -117.462622, 
+                    30.467721, 
+                    -79.185322, 
+                    46.533369
+                ], 
+                "id": 6, 
+                "serviceName": "ATT_1X"
+            }, 
+            {
+                "companyName": "Blanca Telephone Company", 
+                "extent": [
+                    -106.234148, 
+                    36.885931, 
+                    -105.224643, 
+                    37.56227
+                ], 
+                "id": 7, 
+                "serviceName": "Blanca_Telephone_Company_1X"
+            }, 
+            {
+                "companyName": "Bluegrass Cellular", 
+                "extent": [
+                    -87.755787, 
+                    36.226563, 
+                    -83.503472, 
+                    38.453993
+                ], 
+                "id": 8, 
+                "serviceName": "Bluegrass_Cellular_1X"
+            }, 
+            {
+                "companyName": "C Spire Wireless", 
+                "extent": [
+                    -91.764789, 
+                    29.896755, 
+                    -85.690972, 
+                    35.867462
+                ], 
+                "id": 9, 
+                "serviceName": "C_Spire_Wireless_1X"
+            }, 
+            {
+                "companyName": "Carolina West Wireless", 
+                "extent": [
+                    -82.086319, 
+                    35.543569, 
+                    -80.439214, 
+                    36.588853
+                ], 
+                "id": 10, 
+                "serviceName": "Carolina_West_Wireless_1X"
+            }, 
+            {
+                "companyName": "Cellcom", 
+                "extent": [
+                    -91.079721, 
+                    43.373468, 
+                    -86.669076, 
+                    47.26474
+                ], 
+                "id": 11, 
+                "serviceName": "Cellcom_1X"
+            }, 
+            {
+                "companyName": "Cellular 29 Plus", 
+                "extent": [
+                    -95.888907, 
+                    40.57074, 
+                    -94.470504, 
+                    41.160372
+                ], 
+                "id": 12, 
+                "serviceName": "Cellular_29_Plus_1X"
+            }, 
+            {
+                "companyName": "Chariton Valley Cellular", 
+                "extent": [
+                    -93.761029, 
+                    39.131088, 
+                    -91.444853, 
+                    40.207386
+                ], 
+                "id": 13, 
+                "serviceName": "Chariton_Valley_Cellular_1X"
+            }, 
+            {
+                "companyName": "Cleartalk", 
+                "extent": [
+                    -116.102515, 
+                    31.29836, 
+                    -80.832297, 
+                    39.337847
+                ], 
+                "id": 14, 
+                "serviceName": "Cleartalk_1X"
+            }, 
+            {
+                "companyName": "Commnet Wireless", 
+                "extent": [
+                    -119.924713, 
+                    29.168691, 
+                    -99.015646, 
+                    48.099404
+                ], 
+                "id": 15, 
+                "serviceName": "Commnet_Wireless_1X"
+            }, 
+            {
+                "companyName": "Copper Valley Wireless", 
+                "extent": [
+                    -148.870101, 
+                    60.127592, 
+                    -141.746997, 
+                    63.467679
+                ], 
+                "id": 16, 
+                "serviceName": "Copper_Valley_Wireless_1X"
+            }, 
+            {
+                "companyName": "Cross Wireless", 
+                "extent": [
+                    -96.318063, 
+                    33.59477, 
+                    -94.313536, 
+                    36.206567
+                ], 
+                "id": 17, 
+                "serviceName": "Cross_Wireless_1X"
+            }, 
+            {
+                "companyName": "CTC Telecom", 
+                "extent": [
+                    -117.225933, 
+                    43.734057, 
+                    -116.088669, 
+                    45.253315
+                ], 
+                "id": 18, 
+                "serviceName": "CTC_Telecom_1X"
+            }, 
+            {
+                "companyName": "Custer Telephone", 
+                "extent": [
+                    -115.160892, 
+                    43.859419, 
+                    -113.606356, 
+                    44.676521
+                ], 
+                "id": 19, 
+                "serviceName": "Custer_Telephone_1X"
+            }, 
+            {
+                "companyName": "DoCoMo", 
+                "extent": [
+                    144.61111, 
+                    13.224881, 
+                    145.801586, 
+                    15.271853
+                ], 
+                "id": 20, 
+                "serviceName": "DoCoMo_1X"
+            }, 
+            {
+                "companyName": "Eagle Telephone", 
+                "extent": [
+                    -118.255489, 
+                    44.301374, 
+                    -116.826274, 
+                    45.633154
+                ], 
+                "id": 21, 
+                "serviceName": "Eagle_Telephone_1X"
+            }, 
+            {
+                "companyName": "Element Mobile", 
+                "extent": [
+                    -90.692443, 
+                    43.375212, 
+                    -88.441053, 
+                    44.827425
+                ], 
+                "id": 22, 
+                "serviceName": "Element_Mobile_1X"
+            }, 
+            {
+                "companyName": "FMTC", 
+                "extent": [
+                    -118.097098, 
+                    43.300737, 
+                    -115.843425, 
+                    45.136701
+                ], 
+                "id": 23, 
+                "serviceName": "FMTC_1X"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -152.771861, 
+                    55.101274, 
+                    -131.250975, 
+                    70.512167
+                ], 
+                "id": 24, 
+                "serviceName": "GCI_Communication_Corp_1X"
+            }, 
+            {
+                "companyName": "Illinois Valley Cellular", 
+                "extent": [
+                    -89.992687, 
+                    40.385441, 
+                    -87.52627, 
+                    41.63821
+                ], 
+                "id": 25, 
+                "serviceName": "Illinois_Valley_Cellular_1X"
+            }, 
+            {
+                "companyName": "Inland Cellular", 
+                "extent": [
+                    -119.369368, 
+                    45.471673, 
+                    -115.227448, 
+                    47.955493
+                ], 
+                "id": 26, 
+                "serviceName": "Inland_Cellular_1X"
+            }, 
+            {
+                "companyName": "James Valley Wireless", 
+                "extent": [
+                    -99.117467, 
+                    44.657241, 
+                    -97.572692, 
+                    45.997689
+                ], 
+                "id": 27, 
+                "serviceName": "James_Valley_Wireless_1X"
+            }, 
+            {
+                "companyName": "Leaco Rural Telephone", 
+                "extent": [
+                    -104.228301, 
+                    31.943133, 
+                    -103.022182, 
+                    33.66816
+                ], 
+                "id": 28, 
+                "serviceName": "Leaco_Rural_Telephone_1X"
+            }, 
+            {
+                "companyName": "Lyrix Wireless", 
+                "extent": [
+                    -94.471757, 
+                    40.570825, 
+                    -93.097297, 
+                    41.162019
+                ], 
+                "id": 29, 
+                "serviceName": "Lyrix_Wireless_1X"
+            }, 
+            {
+                "companyName": "Manti Telephone Company", 
+                "extent": [
+                    -111.976332, 
+                    38.999623, 
+                    -111.332363, 
+                    39.857617
+                ], 
+                "id": 30, 
+                "serviceName": "Manti_Telephone_Company_1X"
+            }, 
+            {
+                "companyName": "Mid River Cellular", 
+                "extent": [
+                    -109.99875, 
+                    44.33375, 
+                    -103.219583, 
+                    48.58125
+                ], 
+                "id": 31, 
+                "serviceName": "Mid_River_Cellular_1X"
+            }, 
+            {
+                "companyName": "Mobi PCS", 
+                "extent": [
+                    -158.23967, 
+                    18.909959, 
+                    -154.841509, 
+                    21.723209
+                ], 
+                "id": 32, 
+                "serviceName": "Mobi_PCS_1X"
+            }, 
+            {
+                "companyName": "MTA Wireless", 
+                "extent": [
+                    -152.354564, 
+                    61.03293, 
+                    -146.407381, 
+                    63.249548
+                ], 
+                "id": 33, 
+                "serviceName": "MTA_Wireless_1X"
+            }, 
+            {
+                "companyName": "NexTech Wireless", 
+                "extent": [
+                    -104.413275, 
+                    37.619594, 
+                    -97.249056, 
+                    40.154791
+                ], 
+                "id": 34, 
+                "serviceName": "NexTech_Wireless_1X"
+            }, 
+            {
+                "companyName": "Northwest Missouri Cellular", 
+                "extent": [
+                    -95.773997, 
+                    39.551593, 
+                    -94.214026, 
+                    40.584701
+                ], 
+                "id": 35, 
+                "serviceName": "Northwest_Missouri_Cellular_1X"
+            }, 
+            {
+                "companyName": "Ntelos", 
+                "extent": [
+                    -83.120405, 
+                    35.758181, 
+                    -75.514206, 
+                    40.008276
+                ], 
+                "id": 36, 
+                "serviceName": "Ntelos_1X"
+            }, 
+            {
+                "companyName": "Nucla Naturita Telephone", 
+                "extent": [
+                    -109.304866, 
+                    37.725617, 
+                    -107.905236, 
+                    38.760866
+                ], 
+                "id": 37, 
+                "serviceName": "Nucla_Naturita_Telephone_1X"
+            }, 
+            {
+                "companyName": "Pacific Telecom Inc", 
+                "extent": [
+                    144.607278, 
+                    13.221162, 
+                    145.812697, 
+                    15.295737
+                ], 
+                "id": 38, 
+                "serviceName": "Pacific_Telecom_Inc_1X"
+            }, 
+            {
+                "companyName": "Panhandle Telecommunication Systems", 
+                "extent": [
+                    -103.066403, 
+                    36.043646, 
+                    -99.899006, 
+                    37.177515
+                ], 
+                "id": 39, 
+                "serviceName": "Panhandle_Telecommunication_Systems_1X"
+            }, 
+            {
+                "companyName": "Pine Belt Wireless", 
+                "extent": [
+                    -88.648357, 
+                    31.615347, 
+                    -86.597707, 
+                    32.900738
+                ], 
+                "id": 40, 
+                "serviceName": "Pine_Belt_Wireless_1X"
+            }, 
+            {
+                "companyName": "Pioneer Cellular", 
+                "extent": [
+                    -100.410061, 
+                    33.647321, 
+                    -95.016768, 
+                    38.524756
+                ], 
+                "id": 41, 
+                "serviceName": "Pioneer_Cellular_1X"
+            }, 
+            {
+                "companyName": "PR Wireless", 
+                "extent": [
+                    -67.277686, 
+                    17.910026, 
+                    -65.244429, 
+                    18.523676
+                ], 
+                "id": 42, 
+                "serviceName": "PR_Wireless_1X"
+            }, 
+            {
+                "companyName": "Sagebrush Cellular", 
+                "extent": [
+                    -111.296111, 
+                    44.859174, 
+                    -102.383184, 
+                    49.000992
+                ], 
+                "id": 43, 
+                "serviceName": "Sagebrush_Cellular_1X"
+            }, 
+            {
+                "companyName": "SI Wireless", 
+                "extent": [
+                    -89.934672, 
+                    34.659637, 
+                    -84.838811, 
+                    37.416749
+                ], 
+                "id": 44, 
+                "serviceName": "SI_Wireless_1X"
+            }, 
+            {
+                "companyName": "Silver Star PCS", 
+                "extent": [
+                    -111.849218, 
+                    42.447411, 
+                    -109.711853, 
+                    44.351617
+                ], 
+                "id": 45, 
+                "serviceName": "Silver_Star_PCS_1X"
+            }, 
+            {
+                "companyName": "South Central Communications", 
+                "extent": [
+                    -114.148217, 
+                    36.61833, 
+                    -110.997168, 
+                    38.95373
+                ], 
+                "id": 46, 
+                "serviceName": "South_Central_Communications_1X"
+            }, 
+            {
+                "companyName": "Sprint Affiliates", 
+                "extent": [
+                    -160.094807, 
+                    17.654664, 
+                    -64.62672, 
+                    49.016319
+                ], 
+                "id": 47, 
+                "serviceName": "Sprint_Affiliates_1X"
+            }, 
+            {
+                "companyName": "SRT Communications", 
+                "extent": [
+                    -103.068157, 
+                    46.935919, 
+                    -99.595828, 
+                    48.99967
+                ], 
+                "id": 48, 
+                "serviceName": "SRT_Communications_1X"
+            }, 
+            {
+                "companyName": "Standing Rock Telecom", 
+                "extent": [
+                    -102.000667, 
+                    45.502753, 
+                    -100.364224, 
+                    46.429294
+                ], 
+                "id": 49, 
+                "serviceName": "Standing_Rock_Telecom_1X"
+            }, 
+            {
+                "companyName": "Syringa Wireless", 
+                "extent": [
+                    -115.349122, 
+                    41.60889, 
+                    -110.881333, 
+                    44.989605
+                ], 
+                "id": 50, 
+                "serviceName": "Syringa_Wireless_1X"
+            }, 
+            {
+                "companyName": "Thumb Cellular", 
+                "extent": [
+                    -83.805005, 
+                    43.048222, 
+                    -82.415704, 
+                    44.163052
+                ], 
+                "id": 51, 
+                "serviceName": "Thumb_Cellular_1X"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -124.364002, 
+                    24.532799, 
+                    -69.9108, 
+                    43.772963
+                ], 
+                "id": 52, 
+                "serviceName": "TMobile_1X"
+            }, 
+            {
+                "companyName": "UBET Wireless", 
+                "extent": [
+                    -111.645091, 
+                    39.203685, 
+                    -106.636618, 
+                    42.760646
+                ], 
+                "id": 53, 
+                "serviceName": "UBET_Wireless_1X"
+            }, 
+            {
+                "companyName": "United States Cellular", 
+                "extent": [
+                    -124.597083, 
+                    33.250675, 
+                    -66.918257, 
+                    47.735995
+                ], 
+                "id": 54, 
+                "serviceName": "United_States_Cellular_1X"
+            }, 
+            {
+                "companyName": "United Wireless", 
+                "extent": [
+                    -102.102569, 
+                    36.911372, 
+                    -99.094382, 
+                    38.425493
+                ], 
+                "id": 55, 
+                "serviceName": "United_Wireless_1X"
+            }, 
+            {
+                "companyName": "Verizon", 
+                "extent": [
+                    -160.102459, 
+                    18.906224, 
+                    -67.750309, 
+                    49.384408
+                ], 
+                "id": 56, 
+                "serviceName": "Verizon_1X"
+            }, 
+            {
+                "companyName": "West Central Cellular", 
+                "extent": [
+                    -100.180891, 
+                    29.677967, 
+                    -98.260298, 
+                    31.729609
+                ], 
+                "id": 57, 
+                "serviceName": "West_Central_Cellular_1X"
+            }
+        ], 
+        "techType": "1X"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "Arctic Slope", 
+                "extent": [
+                    -144.055356, 
+                    69.958238, 
+                    -143.168212, 
+                    70.080301
+                ], 
+                "id": 58, 
+                "serviceName": "Arctic_Slope_ANALOG"
+            }, 
+            {
+                "companyName": "Bristol Bay Cellular", 
+                "extent": [
+                    -159.33933, 
+                    57.307795, 
+                    -155.610937, 
+                    59.872324
+                ], 
+                "id": 59, 
+                "serviceName": "Bristol_Bay_Cellular_ANALOG"
+            }, 
+            {
+                "companyName": "DoCoMo", 
+                "extent": [
+                    144.61111, 
+                    13.224881, 
+                    145.831059, 
+                    15.291125
+                ], 
+                "id": 60, 
+                "serviceName": "DoCoMo_ANALOG"
+            }, 
+            {
+                "companyName": "GTA Wireless", 
+                "extent": [
+                    144.595531, 
+                    13.208609, 
+                    144.974936, 
+                    13.676771
+                ], 
+                "id": 61, 
+                "serviceName": "GTA_Wireless_ANALOG"
+            }, 
+            {
+                "companyName": "OTZ Communications", 
+                "extent": [
+                    -163.050932, 
+                    66.705893, 
+                    -162.097941, 
+                    67.105143
+                ], 
+                "id": 62, 
+                "serviceName": "OTZ_Communications_ANALOG"
+            }, 
+            {
+                "companyName": "TelAlaska", 
+                "extent": [
+                    -169.002679, 
+                    53.747662, 
+                    -145.067544, 
+                    66.667395
+                ], 
+                "id": 63, 
+                "serviceName": "TelAlaska_ANALOG"
+            }
+        ], 
+        "techType": "ANALOG"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "Accessible Wireless", 
+                "extent": [
+                    -114.90969, 
+                    33.247096, 
+                    -114.653039, 
+                    33.434523
+                ], 
+                "id": 64, 
+                "serviceName": "Accessible_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "ACS Wireless", 
+                "extent": [
+                    -165.973996, 
+                    54.68192, 
+                    -130.332866, 
+                    71.40634
+                ], 
+                "id": 65, 
+                "serviceName": "ACS_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "All West Wireless", 
+                "extent": [
+                    -118.289979, 
+                    36.685857, 
+                    -106.577132, 
+                    45.230773
+                ], 
+                "id": 66, 
+                "serviceName": "All_West_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.276317, 
+                    17.915102, 
+                    -65.24128, 
+                    18.519101
+                ], 
+                "id": 67, 
+                "serviceName": "America_Movil_CDMA"
+            }, 
+            {
+                "companyName": "Appalachian Wireless", 
+                "extent": [
+                    -84.205285, 
+                    36.730469, 
+                    -81.970208, 
+                    38.264323
+                ], 
+                "id": 68, 
+                "serviceName": "Appalachian_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "ASTCA", 
+                "extent": [
+                    -170.866238, 
+                    -14.40828, 
+                    -170.529593, 
+                    -14.205411
+                ], 
+                "id": 69, 
+                "serviceName": "ASTCA_CDMA"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -117.462622, 
+                    30.467721, 
+                    -79.185322, 
+                    46.533369
+                ], 
+                "id": 70, 
+                "serviceName": "ATT_CDMA"
+            }, 
+            {
+                "companyName": "Blanca Telephone Company", 
+                "extent": [
+                    -106.234148, 
+                    36.885931, 
+                    -105.224643, 
+                    37.56227
+                ], 
+                "id": 71, 
+                "serviceName": "Blanca_Telephone_Company_CDMA"
+            }, 
+            {
+                "companyName": "Blue Wireless", 
+                "extent": [
+                    -80.529147, 
+                    40.886181, 
+                    -75.426336, 
+                    43.224758
+                ], 
+                "id": 72, 
+                "serviceName": "Blue_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Bluegrass Cellular", 
+                "extent": [
+                    -87.755787, 
+                    36.226563, 
+                    -83.503472, 
+                    38.453993
+                ], 
+                "id": 73, 
+                "serviceName": "Bluegrass_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "C Spire Wireless", 
+                "extent": [
+                    -91.764789, 
+                    29.896755, 
+                    -85.690972, 
+                    35.867462
+                ], 
+                "id": 74, 
+                "serviceName": "C_Spire_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Cache Valley Wireless", 
+                "extent": [
+                    -112.139247, 
+                    41.533277, 
+                    -111.753087, 
+                    42.01133
+                ], 
+                "id": 75, 
+                "serviceName": "Cache_Valley_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Carolina West Wireless", 
+                "extent": [
+                    -82.086319, 
+                    35.543569, 
+                    -80.439214, 
+                    36.588853
+                ], 
+                "id": 76, 
+                "serviceName": "Carolina_West_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Cellcom", 
+                "extent": [
+                    -91.079721, 
+                    43.373468, 
+                    -86.669076, 
+                    47.26474
+                ], 
+                "id": 77, 
+                "serviceName": "Cellcom_CDMA"
+            }, 
+            {
+                "companyName": "Cellular 29 Plus", 
+                "extent": [
+                    -95.888907, 
+                    40.57074, 
+                    -94.470504, 
+                    41.160372
+                ], 
+                "id": 78, 
+                "serviceName": "Cellular_29_Plus_CDMA"
+            }, 
+            {
+                "companyName": "Chariton Valley Cellular", 
+                "extent": [
+                    -93.761029, 
+                    39.131088, 
+                    -91.444853, 
+                    40.207386
+                ], 
+                "id": 79, 
+                "serviceName": "Chariton_Valley_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "Cleartalk", 
+                "extent": [
+                    -116.102515, 
+                    31.29836, 
+                    -80.832297, 
+                    39.337847
+                ], 
+                "id": 80, 
+                "serviceName": "Cleartalk_CDMA"
+            }, 
+            {
+                "companyName": "Commnet Wireless", 
+                "extent": [
+                    -119.924713, 
+                    29.168691, 
+                    -99.015646, 
+                    48.099404
+                ], 
+                "id": 81, 
+                "serviceName": "Commnet_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Copper Valley Wireless", 
+                "extent": [
+                    -148.870101, 
+                    60.127592, 
+                    -141.746997, 
+                    63.467679
+                ], 
+                "id": 82, 
+                "serviceName": "Copper_Valley_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Cross Wireless", 
+                "extent": [
+                    -96.318063, 
+                    33.59477, 
+                    -94.313536, 
+                    36.206567
+                ], 
+                "id": 83, 
+                "serviceName": "Cross_Wireless_CDMA"
+            }, 
+			{
+                "companyName": "CTC Telecom", 
+                "extent": [
+					-117.24266684431673,
+					44.04704067803445,
+					-116.03229262994088,
+					45.19288786683767                    
+                ], 
+                "id": 84, 
+                "serviceName": "CTC_Telecom_CDMA"
+            },
+            {
+                "companyName": "Custer Telephone", 
+                "extent": [
+                    -115.160892, 
+                    43.859419, 
+                    -113.606356, 
+                    44.676521
+                ], 
+                "id": 85, 
+                "serviceName": "Custer_Telephone_CDMA"
+            }, 
+            {
+                "companyName": "DoCoMo", 
+                "extent": [
+                    144.61111, 
+                    13.224881, 
+                    145.801586, 
+                    15.271853
+                ], 
+                "id": 86, 
+                "serviceName": "DoCoMo_CDMA"
+            }, 
+            {
+                "companyName": "Eagle Telephone", 
+                "extent": [
+                    -118.255489, 
+                    44.301374, 
+                    -116.826274, 
+                    45.633154
+                ], 
+                "id": 87, 
+                "serviceName": "Eagle_Telephone_CDMA"
+            }, 
+            {
+                "companyName": "Element Mobile", 
+                "extent": [
+                    -90.692443, 
+                    43.375212, 
+                    -88.441053, 
+                    44.827425
+                ], 
+                "id": 88, 
+                "serviceName": "Element_Mobile_CDMA"
+            }, 
+            {
+                "companyName": "Farmers Mutual Cooperative Tel Co", 
+                "extent": [
+                    -95.587598, 
+                    41.295307, 
+                    -95.05144, 
+                    41.919982
+                ], 
+                "id": 89, 
+                "serviceName": "Farmers_Mutual_Cooperative_Tel_Co_CDMA"
+            }, 
+            {
+                "companyName": "FMTC", 
+                "extent": [
+                    -118.097098, 
+                    43.300737, 
+                    -115.843425, 
+                    45.136701
+                ], 
+                "id": 90, 
+                "serviceName": "FMTC_CDMA"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -152.771861, 
+                    55.101274, 
+                    -131.250975, 
+                    70.512167
+                ], 
+                "id": 91, 
+                "serviceName": "GCI_Communication_Corp_CDMA"
+            }, 
+            {
+                "companyName": "Inland Cellular", 
+                "extent": [
+                    -119.369368, 
+                    45.471673, 
+                    -115.227448, 
+                    47.955493
+                ], 
+                "id": 92, 
+                "serviceName": "Inland_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "James Valley Wireless", 
+                "extent": [
+                    -99.117467, 
+                    44.657241, 
+                    -97.572692, 
+                    45.997689
+                ], 
+                "id": 93, 
+                "serviceName": "James_Valley_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Leaco Rural Telephone", 
+                "extent": [
+                    -104.228301, 
+                    31.943133, 
+                    -103.022182, 
+                    33.66816
+                ], 
+                "id": 94, 
+                "serviceName": "Leaco_Rural_Telephone_CDMA"
+            }, 
+            {
+                "companyName": "Lyrix Wireless", 
+                "extent": [
+                    -94.471757, 
+                    40.570825, 
+                    -93.097297, 
+                    41.162019
+                ], 
+                "id": 95, 
+                "serviceName": "Lyrix_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Manti Telephone Company", 
+                "extent": [
+                    -111.976332, 
+                    38.999623, 
+                    -111.332363, 
+                    39.857617
+                ], 
+                "id": 96, 
+                "serviceName": "Manti_Telephone_Company_CDMA"
+            }, 
+            {
+                "companyName": "Mid River Cellular", 
+                "extent": [
+                    -109.99875, 
+                    44.33375, 
+                    -103.219583, 
+                    48.58125
+                ], 
+                "id": 97, 
+                "serviceName": "Mid_River_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "Mobi PCS", 
+                "extent": [
+                    -159.77993, 
+                    18.900808, 
+                    -154.801604, 
+                    22.252117
+                ], 
+                "id": 98, 
+                "serviceName": "Mobi_PCS_CDMA"
+            }, 
+            {
+                "companyName": "MTA Wireless", 
+                "extent": [
+                    -152.354564, 
+                    61.03293, 
+                    -146.407381, 
+                    63.249548
+                ], 
+                "id": 99, 
+                "serviceName": "MTA_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "MTPCS LLC", 
+                "extent": [
+                    -95.941958, 
+                    30.812098, 
+                    -93.351734, 
+                    32.688891
+                ], 
+                "id": 100, 
+                "serviceName": "MTPCS_LLC_CDMA"
+            }, 
+            {
+                "companyName": "NexTech Wireless", 
+                "extent": [
+                    -104.413275, 
+                    37.619594, 
+                    -97.249056, 
+                    40.154791
+                ], 
+                "id": 101, 
+                "serviceName": "NexTech_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Northwest Missouri Cellular", 
+                "extent": [
+                    -95.773997, 
+                    39.551593, 
+                    -94.214026, 
+                    40.584701
+                ], 
+                "id": 102, 
+                "serviceName": "Northwest_Missouri_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "Ntelos", 
+                "extent": [
+                    -83.120405, 
+                    35.758181, 
+                    -75.514206, 
+                    40.008276
+                ], 
+                "id": 103, 
+                "serviceName": "Ntelos_CDMA"
+            }, 
+            {
+                "companyName": "Nucla Naturita Telephone", 
+                "extent": [
+                    -109.304866, 
+                    37.725617, 
+                    -107.905236, 
+                    38.760866
+                ], 
+                "id": 104, 
+                "serviceName": "Nucla_Naturita_Telephone_CDMA"
+            }, 
+            {
+                "companyName": "OTZ Communications", 
+                "extent": [
+                    -163.050932, 
+                    66.705893, 
+                    -162.097941, 
+                    67.105143
+                ], 
+                "id": 105, 
+                "serviceName": "OTZ_Communications_CDMA"
+            }, 
+            {
+                "companyName": "Pacific Telecom Inc", 
+                "extent": [
+                    144.607278, 
+                    13.221162, 
+                    145.812697, 
+                    15.295737
+                ], 
+                "id": 106, 
+                "serviceName": "Pacific_Telecom_Inc_CDMA"
+            }, 
+            {
+                "companyName": "Panhandle Telecommunication Systems", 
+                "extent": [
+                    -103.066403, 
+                    36.043646, 
+                    -99.899006, 
+                    37.177515
+                ], 
+                "id": 107, 
+                "serviceName": "Panhandle_Telecommunication_Systems_CDMA"
+            }, 
+            {
+                "companyName": "Peoples Wireless", 
+                "extent": [
+                    -95.965965, 
+                    32.549304, 
+                    -95.108391, 
+                    33.014251
+                ], 
+                "id": 108, 
+                "serviceName": "Peoples_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Pine Belt Wireless", 
+                "extent": [
+                    -88.648357, 
+                    31.615347, 
+                    -86.597707, 
+                    32.900738
+                ], 
+                "id": 109, 
+                "serviceName": "Pine_Belt_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Pioneer Cellular", 
+                "extent": [
+                    -100.410061, 
+                    33.647321, 
+                    -95.016768, 
+                    38.524756
+                ], 
+                "id": 110, 
+                "serviceName": "Pioneer_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "PR Wireless", 
+                "extent": [
+                    -67.277686, 
+                    17.910026, 
+                    -65.244429, 
+                    18.523676
+                ], 
+                "id": 111, 
+                "serviceName": "PR_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Proximity Mobility LLC", 
+                "extent": [
+                    -106.129811, 
+                    31.61277, 
+                    -105.583637, 
+                    31.970352
+                ], 
+                "id": 112, 
+                "serviceName": "Proximity_Mobility_LLC_CDMA"
+            }, 
+            {
+                "companyName": "Rural Telephone Company", 
+                "extent": [
+                    -116.222595, 
+                    42.732883, 
+                    -114.998835, 
+                    43.296646
+                ], 
+                "id": 113, 
+                "serviceName": "Rural_Telephone_Company_CDMA"
+            }, 
+            {
+                "companyName": "Sagebrush Cellular", 
+                "extent": [
+                    -111.296111, 
+                    44.859174, 
+                    -102.383184, 
+                    49.000992
+                ], 
+                "id": 114, 
+                "serviceName": "Sagebrush_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "SI Wireless", 
+                "extent": [
+                    -89.934672, 
+                    34.659637, 
+                    -84.838811, 
+                    37.416749
+                ], 
+                "id": 115, 
+                "serviceName": "SI_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Silver Star PCS", 
+                "extent": [
+                    -111.849218, 
+                    42.447411, 
+                    -109.711853, 
+                    44.351617
+                ], 
+                "id": 116, 
+                "serviceName": "Silver_Star_PCS_CDMA"
+            }, 
+            {
+                "companyName": "South Central Communications", 
+                "extent": [
+                    -114.148217, 
+                    36.61833, 
+                    -110.997168, 
+                    38.95373
+                ], 
+                "id": 117, 
+                "serviceName": "South_Central_Communications_CDMA"
+            }, 
+            {
+                "companyName": "Sprint Affiliates", 
+                "extent": [
+                    -160.094807, 
+                    17.654664, 
+                    -64.62672, 
+                    49.016319
+                ], 
+                "id": 118, 
+                "serviceName": "Sprint_Affiliates_CDMA"
+            }, 
+            {
+                "companyName": "SRT Communications", 
+                "extent": [
+                    -103.068157, 
+                    46.935919, 
+                    -99.595828, 
+                    48.99967
+                ], 
+                "id": 119, 
+                "serviceName": "SRT_Communications_CDMA"
+            }, 
+            {
+                "companyName": "Standing Rock Telecom", 
+                "extent": [
+                    -102.000667, 
+                    45.502753, 
+                    -100.364224, 
+                    46.429294
+                ], 
+                "id": 120, 
+                "serviceName": "Standing_Rock_Telecom_CDMA"
+            }, 
+            {
+                "companyName": "Syringa Wireless", 
+                "extent": [
+                    -115.349122, 
+                    41.60889, 
+                    -110.881333, 
+                    44.989605
+                ], 
+                "id": 121, 
+                "serviceName": "Syringa_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Thumb Cellular", 
+                "extent": [
+                    -83.805005, 
+                    43.048222, 
+                    -82.415704, 
+                    44.163052
+                ], 
+                "id": 122, 
+                "serviceName": "Thumb_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -124.364002, 
+                    24.532799, 
+                    -69.9108, 
+                    43.772963
+                ], 
+                "id": 123, 
+                "serviceName": "TMobile_CDMA"
+            }, 
+            {
+                "companyName": "UBET Wireless", 
+                "extent": [
+                    -111.645091, 
+                    39.203685, 
+                    -106.636618, 
+                    42.760646
+                ], 
+                "id": 124, 
+                "serviceName": "UBET_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "United States Cellular", 
+                "extent": [
+                    -124.597083, 
+                    33.250675, 
+                    -66.918257, 
+                    47.735995
+                ], 
+                "id": 125, 
+                "serviceName": "United_States_Cellular_CDMA"
+            }, 
+            {
+                "companyName": "United Wireless", 
+                "extent": [
+                    -102.102569, 
+                    36.911372, 
+                    -99.094382, 
+                    38.425493
+                ], 
+                "id": 126, 
+                "serviceName": "United_Wireless_CDMA"
+            }, 
+            {
+                "companyName": "Verizon", 
+                "extent": [
+                    -160.102459, 
+                    18.906224, 
+                    -67.750309, 
+                    49.384408
+                ], 
+                "id": 127, 
+                "serviceName": "Verizon_CDMA"
+            }, 
+            {
+                "companyName": "West Central Cellular", 
+                "extent": [
+                    -100.187939, 
+                    29.677967, 
+                    -97.932467, 
+                    32.512831
+                ], 
+                "id": 128, 
+                "serviceName": "West_Central_Cellular_CDMA"
+            }
+        ], 
+        "techType": "CDMA"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "Advantage", 
+                "extent": [
+                    -86.285723, 
+                    35.211483, 
+                    -85.230416, 
+                    36.417857
+                ], 
+                "id": 129, 
+                "serviceName": "Advantage_EDGE"
+            }, 
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.29299, 
+                    17.911599, 
+                    -65.239348, 
+                    18.525035
+                ], 
+                "id": 130, 
+                "serviceName": "America_Movil_EDGE"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -165.975775, 
+                    17.651218, 
+                    -64.544012, 
+                    70.561701
+                ], 
+                "id": 131, 
+                "serviceName": "ATT_EDGE"
+            }, 
+            {
+                "companyName": "Blue Sky PCS", 
+                "extent": [
+                    -170.846645, 
+                    -14.388367, 
+                    -170.540447, 
+                    -14.241075
+                ], 
+                "id": 132, 
+                "serviceName": "Blue_Sky_PCS_EDGE"
+            }, 
+            {
+                "companyName": "Cellular Properties", 
+                "extent": [
+                    -88.769886, 
+                    38.470982, 
+                    -87.315341, 
+                    40.524554
+                ], 
+                "id": 133, 
+                "serviceName": "Cellular_Properties_EDGE"
+            }, 
+            {
+                "companyName": "Chariton Valley Cellular", 
+                "extent": [
+                    -93.757878, 
+                    39.051542, 
+                    -91.444853, 
+                    40.761769
+                ], 
+                "id": 134, 
+                "serviceName": "Chariton_Valley_Cellular_EDGE"
+            }, 
+            {
+                "companyName": "Choice Wireless", 
+                "extent": [
+                    -100.084661, 
+                    32.988114, 
+                    -97.583567, 
+                    34.48969
+                ], 
+                "id": 135, 
+                "serviceName": "Choice_Wireless_EDGE"
+            }, 
+            {
+                "companyName": "Cincinnati Bell Telephone", 
+                "extent": [
+                    -85.400797, 
+                    38.471542, 
+                    -83.506373, 
+                    40.486694
+                ], 
+                "id": 136, 
+                "serviceName": "Cincinnati_Bell_Telephone_EDGE"
+            }, 
+            {
+                "companyName": "Cordova Wireless", 
+                "extent": [
+                    -148.071793, 
+                    60.258793, 
+                    -144.684271, 
+                    61.011688
+                ], 
+                "id": 137, 
+                "serviceName": "Cordova_Wireless_EDGE"
+            }, 
+            {
+                "companyName": "Gaia Sagir", 
+                "extent": [
+                    -78.124678, 
+                    41.006546, 
+                    -75.709399, 
+                    42.080995
+                ], 
+                "id": 138, 
+                "serviceName": "Gaia_Sagir_EDGE"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -171.876174, 
+                    53.671232, 
+                    -131.251609, 
+                    71.40634
+                ], 
+                "id": 139, 
+                "serviceName": "GCI_Communication_Corp_EDGE"
+            }, 
+            {
+                "companyName": "GTA Wireless", 
+                "extent": [
+                    144.595531, 
+                    13.208609, 
+                    144.974936, 
+                    13.676771
+                ], 
+                "id": 140, 
+                "serviceName": "GTA_Wireless_EDGE"
+            }, 
+            {
+                "companyName": "Iowa Wireless Services", 
+                "extent": [
+                    -96.656133, 
+                    40.141043, 
+                    -89.553329, 
+                    43.624271
+                ], 
+                "id": 141, 
+                "serviceName": "Iowa_Wireless_Services_EDGE"
+            }, 
+            {
+                "companyName": "iSmart Mobile", 
+                "extent": [
+                    -113.05833, 
+                    45.310625, 
+                    -110.04931, 
+                    46.253971
+                ], 
+                "id": 142, 
+                "serviceName": "ISmart_Mobile_EDGE"
+            }, 
+            {
+                "companyName": "Kankakee Cellular", 
+                "extent": [
+                    -88.251609, 
+                    40.994752, 
+                    -87.526502, 
+                    41.298064
+                ], 
+                "id": 143, 
+                "serviceName": "Kankakee_Cellular_EDGE"
+            }, 
+            {
+                "companyName": "Long Lines Wireless", 
+                "extent": [
+                    -97.677162, 
+                    41.373897, 
+                    -93.864064, 
+                    44.016466
+                ], 
+                "id": 144, 
+                "serviceName": "Long_Lines_Wireless_EDGE"
+            }, 
+            {
+                "companyName": "MTPCS LLC", 
+                "extent": [
+                    -115.576865, 
+                    27.805806, 
+                    -87.392325, 
+                    48.998524
+                ], 
+                "id": 145, 
+                "serviceName": "MTPCS_LLC_EDGE"
+            }, 
+            {
+                "companyName": "NE Colorado Cellular", 
+                "extent": [
+                    -106.795626, 
+                    36.747622, 
+                    -94.983372, 
+                    43.218804
+                ], 
+                "id": 146, 
+                "serviceName": "NE_Colorado_Cellular_EDGE"
+            }, 
+            {
+                "companyName": "NEP Wireless", 
+                "extent": [
+                    -76.046397, 
+                    41.57889, 
+                    -75.338715, 
+                    42.005171
+                ], 
+                "id": 147, 
+                "serviceName": "NEP_Wireless_EDGE"
+            }, 
+            {
+                "companyName": "Oklahoma Western Telephone", 
+                "extent": [
+                    -95.877643, 
+                    34.367782, 
+                    -94.750382, 
+                    35.473661
+                ], 
+                "id": 148, 
+                "serviceName": "Oklahoma_Western_Telephone_EDGE"
+            }, 
+            {
+                "companyName": "Pace Communications", 
+                "extent": [
+                    -93.174479, 
+                    29.477214, 
+                    -91.419271, 
+                    30.375651
+                ], 
+                "id": 149, 
+                "serviceName": "Pace_Communications_EDGE"
+            }, 
+            {
+                "companyName": "Pacific Telecom Inc", 
+                "extent": [
+                    144.60921, 
+                    13.222232, 
+                    144.964266, 
+                    13.613095
+                ], 
+                "id": 150, 
+                "serviceName": "Pacific_Telecom_Inc_EDGE"
+            }, 
+            {
+                "companyName": "Pine Cellular Phones", 
+                "extent": [
+                    -96.397884, 
+                    33.601352, 
+                    -94.296588, 
+                    35.066911
+                ], 
+                "id": 151, 
+                "serviceName": "Pine_Cellular_Phones_EDGE"
+            }, 
+            {
+                "companyName": "Plateau Wireless", 
+                "extent": [
+                    -106.598717, 
+                    31.790959, 
+                    -101.279269, 
+                    37.010437
+                ], 
+                "id": 152, 
+                "serviceName": "Plateau_Wireless_EDGE"
+            }, 
+            {
+                "companyName": "Smith Bagley", 
+                "extent": [
+                    -111.625, 
+                    33.544444, 
+                    -105.498962, 
+                    37.6125
+                ], 
+                "id": 153, 
+                "serviceName": "Smith_Bagley_EDGE"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -159.780063, 
+                    17.919174, 
+                    -65.237277, 
+                    49.006679
+                ], 
+                "id": 154, 
+                "serviceName": "TMobile_EDGE"
+            }, 
+            {
+                "companyName": "Union Cellular", 
+                "extent": [
+                    -112.941883, 
+                    38.394972, 
+                    -103.711122, 
+                    45.082206
+                ], 
+                "id": 155, 
+                "serviceName": "Union_Cellular_EDGE"
+            }, 
+            {
+                "companyName": "Verizon", 
+                "extent": [
+                    -122.623452, 
+                    30.848264, 
+                    -67.709529, 
+                    47.476251
+                ], 
+                "id": 156, 
+                "serviceName": "Verizon_EDGE"
+            }, 
+            {
+                "companyName": "West Central Cellular", 
+                "extent": [
+                    -101.848903, 
+                    29.677967, 
+                    -98.399672, 
+                    32.374299
+                ], 
+                "id": 157, 
+                "serviceName": "West_Central_Cellular_EDGE"
+            }, 
+            {
+                "companyName": "Westlink Communications", 
+                "extent": [
+                    -102.102334, 
+                    36.4398, 
+                    -99.369345, 
+                    38.661686
+                ], 
+                "id": 158, 
+                "serviceName": "Westlink_Communications_EDGE"
+            }
+        ], 
+        "techType": "EDGE"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "ACS Wireless", 
+                "extent": [
+                    -153.615833, 
+                    54.683032, 
+                    -130.364001, 
+                    70.512167
+                ], 
+                "id": 159, 
+                "serviceName": "ACS_Wireless_EVDO"
+            }, 
+			{
+                "companyName": "All West Wireless", 
+                "extent": [
+					-111.80798515925335,
+					40.18854127095733,
+					-110.62355097812015,
+					41.10691818398304
+                ], 
+                "id": 160, 
+                "serviceName": "All_West_Wireless_EVDO"
+            },
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.276317, 
+                    17.915102, 
+                    -65.24128, 
+                    18.519101
+                ], 
+                "id": 161, 
+                "serviceName": "America_Movil_EVDO"
+            }, 
+            {
+                "companyName": "Appalachian Wireless", 
+                "extent": [
+                    -84.205285, 
+                    36.730469, 
+                    -81.970208, 
+                    38.264323
+                ], 
+                "id": 162, 
+                "serviceName": "Appalachian_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "ASTCA", 
+                "extent": [
+                    -170.866238, 
+                    -14.40828, 
+                    -170.529593, 
+                    -14.205411
+                ], 
+                "id": 163, 
+                "serviceName": "ASTCA_EVDO"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -117.462622, 
+                    30.467721, 
+                    -79.185322, 
+                    46.533369
+                ], 
+                "id": 164, 
+                "serviceName": "ATT_EVDO"
+            }, 
+            {
+                "companyName": "Blanca Telephone Company", 
+                "extent": [
+                    -106.234148, 
+                    36.885931, 
+                    -105.224643, 
+                    37.56227
+                ], 
+                "id": 165, 
+                "serviceName": "Blanca_Telephone_Company_EVDO"
+            }, 
+            {
+                "companyName": "Bluegrass Cellular", 
+                "extent": [
+                    -87.755787, 
+                    36.226563, 
+                    -83.53125, 
+                    38.453993
+                ], 
+                "id": 166, 
+                "serviceName": "Bluegrass_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "C Spire Wireless", 
+                "extent": [
+                    -91.764789, 
+                    29.896755, 
+                    -85.941889, 
+                    35.749695
+                ], 
+                "id": 167, 
+                "serviceName": "C_Spire_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Carolina West Wireless", 
+                "extent": [
+                    -82.086319, 
+                    35.543569, 
+                    -80.439214, 
+                    36.588853
+                ], 
+                "id": 168, 
+                "serviceName": "Carolina_West_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Cellcom", 
+                "extent": [
+                    -91.079721, 
+                    43.373468, 
+                    -86.669076, 
+                    47.26474
+                ], 
+                "id": 169, 
+                "serviceName": "Cellcom_EVDO"
+            }, 
+            {
+                "companyName": "Cellular 29 Plus", 
+                "extent": [
+                    -95.888907, 
+                    40.57074, 
+                    -94.470504, 
+                    41.160372
+                ], 
+                "id": 170, 
+                "serviceName": "Cellular_29_Plus_EVDO"
+            }, 
+            {
+                "companyName": "Chariton Valley Cellular", 
+                "extent": [
+                    -93.761029, 
+                    39.131088, 
+                    -91.444853, 
+                    40.207386
+                ], 
+                "id": 171, 
+                "serviceName": "Chariton_Valley_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "Cleartalk", 
+                "extent": [
+                    -108.993386, 
+                    32.935609, 
+                    -80.832297, 
+                    39.337847
+                ], 
+                "id": 172, 
+                "serviceName": "Cleartalk_EVDO"
+            }, 
+            {
+                "companyName": "Commnet Wireless", 
+                "extent": [
+                    -119.924713, 
+                    33.98921, 
+                    -104.373576, 
+                    43.001116
+                ], 
+                "id": 173, 
+                "serviceName": "Commnet_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Copper Valley Wireless", 
+                "extent": [
+                    -148.870101, 
+                    60.127592, 
+                    -141.746997, 
+                    63.467679
+                ], 
+                "id": 174, 
+                "serviceName": "Copper_Valley_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Cross Wireless", 
+                "extent": [
+                    -96.318063, 
+                    33.59477, 
+                    -94.313536, 
+                    36.206567
+                ], 
+                "id": 175, 
+                "serviceName": "Cross_Wireless_EVDO"
+            }, 
+			{
+                "companyName": "CTC Telecom", 
+                "extent": [
+					-117.24266684431673,
+					44.04704067803445,
+					-116.03229262994088,
+					45.19288786683767                    
+                ], 
+                "id": 176, 
+                "serviceName": "CTC_Telecom_EVDO"
+            },
+            {
+                "companyName": "Custer Telephone", 
+                "extent": [
+                    -115.160892, 
+                    43.859419, 
+                    -113.606356, 
+                    44.676521
+                ], 
+                "id": 177, 
+                "serviceName": "Custer_Telephone_EVDO"
+            }, 
+            {
+                "companyName": "Element Mobile", 
+                "extent": [
+                    -90.692443, 
+                    43.375212, 
+                    -88.441053, 
+                    44.827425
+                ], 
+                "id": 178, 
+                "serviceName": "Element_Mobile_EVDO"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -152.493348, 
+                    55.170825, 
+                    -131.386018, 
+                    70.508089
+                ], 
+                "id": 179, 
+                "serviceName": "GCI_Communication_Corp_EVDO"
+            }, 
+            {
+                "companyName": "Illinois Valley Cellular", 
+                "extent": [
+                    -89.992687, 
+                    40.385441, 
+                    -87.52627, 
+                    41.63821
+                ], 
+                "id": 180, 
+                "serviceName": "Illinois_Valley_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "Inland Cellular", 
+                "extent": [
+                    -119.369246, 
+                    45.471673, 
+                    -115.227448, 
+                    47.925809
+                ], 
+                "id": 181, 
+                "serviceName": "Inland_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "James Valley Wireless", 
+                "extent": [
+                    -99.117467, 
+                    44.657241, 
+                    -97.572692, 
+                    45.997689
+                ], 
+                "id": 182, 
+                "serviceName": "James_Valley_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Leaco Rural Telephone", 
+                "extent": [
+                    -104.228301, 
+                    31.943133, 
+                    -103.022182, 
+                    33.66816
+                ], 
+                "id": 183, 
+                "serviceName": "Leaco_Rural_Telephone_EVDO"
+            }, 
+            {
+                "companyName": "Lyrix Wireless", 
+                "extent": [
+                    -94.471757, 
+                    40.570825, 
+                    -93.097297, 
+                    41.162019
+                ], 
+                "id": 184, 
+                "serviceName": "Lyrix_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Manti Telephone Company", 
+                "extent": [
+                    -111.976332, 
+                    38.999623, 
+                    -111.332363, 
+                    39.857617
+                ], 
+                "id": 185, 
+                "serviceName": "Manti_Telephone_Company_EVDO"
+            }, 
+            {
+                "companyName": "Mid River Cellular", 
+                "extent": [
+                    -109.99875, 
+                    44.33375, 
+                    -103.219583, 
+                    48.58125
+                ], 
+                "id": 186, 
+                "serviceName": "Mid_River_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "Mobi PCS", 
+                "extent": [
+                    -158.239667, 
+                    19.276299, 
+                    -154.841509, 
+                    21.674149
+                ], 
+                "id": 187, 
+                "serviceName": "Mobi_PCS_EVDO"
+            }, 
+            {
+                "companyName": "MTA Wireless", 
+                "extent": [
+                    -152.006686, 
+                    61.03293, 
+                    -148.084288, 
+                    63.148248
+                ], 
+                "id": 188, 
+                "serviceName": "MTA_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "NexTech Wireless", 
+                "extent": [
+                    -104.413275, 
+                    37.619594, 
+                    -97.249056, 
+                    40.154791
+                ], 
+                "id": 189, 
+                "serviceName": "NexTech_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Northwest Missouri Cellular", 
+                "extent": [
+                    -95.773997, 
+                    39.551593, 
+                    -94.214026, 
+                    40.584701
+                ], 
+                "id": 190, 
+                "serviceName": "Northwest_Missouri_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "Ntelos", 
+                "extent": [
+                    -83.004226, 
+                    36.388109, 
+                    -75.877264, 
+                    39.754335
+                ], 
+                "id": 191, 
+                "serviceName": "Ntelos_EVDO"
+            }, 
+            {
+                "companyName": "Nucla Naturita Telephone", 
+                "extent": [
+                    -109.264069, 
+                    37.740029, 
+                    -107.905236, 
+                    38.760866
+                ], 
+                "id": 192, 
+                "serviceName": "Nucla_Naturita_Telephone_EVDO"
+            }, 
+            {
+                "companyName": "Pacific Telecom Inc", 
+                "extent": [
+                    144.607278, 
+                    13.221162, 
+                    145.812697, 
+                    15.295737
+                ], 
+                "id": 193, 
+                "serviceName": "Pacific_Telecom_Inc_EVDO"
+            }, 
+            {
+                "companyName": "Panhandle Telecommunication Systems", 
+                "extent": [
+                    -103.066403, 
+                    36.043646, 
+                    -99.899006, 
+                    37.177515
+                ], 
+                "id": 194, 
+                "serviceName": "Panhandle_Telecommunication_Systems_EVDO"
+            }, 
+			{
+                "companyName": "Peoples Wireless", 
+                "extent": [
+					-95.96596470100538,
+					32.549304236903524,
+					-95.1083909791645,
+					33.01425148427517                    
+                ], 
+                "id": 195, 
+                "serviceName": "Peoples_Wireless_EVDO"
+            },
+            {
+                "companyName": "Pine Belt Wireless", 
+                "extent": [
+                    -88.639322, 
+                    31.669194, 
+                    -86.762611, 
+                    32.7887
+                ], 
+                "id": 196, 
+                "serviceName": "Pine_Belt_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Pioneer Cellular", 
+                "extent": [
+                    -100.410061, 
+                    33.647321, 
+                    -95.016768, 
+                    38.524756
+                ], 
+                "id": 197, 
+                "serviceName": "Pioneer_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "PR Wireless", 
+                "extent": [
+                    -67.274176, 
+                    17.910026, 
+                    -65.2592, 
+                    18.519502
+                ], 
+                "id": 198, 
+                "serviceName": "PR_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Sagebrush Cellular", 
+                "extent": [
+                    -111.296111, 
+                    44.859174, 
+                    -102.383184, 
+                    49.000992
+                ], 
+                "id": 199, 
+                "serviceName": "Sagebrush_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "SI Wireless", 
+                "extent": [
+                    -89.934672, 
+                    34.659637, 
+                    -84.838811, 
+                    37.416749
+                ], 
+                "id": 200, 
+                "serviceName": "SI_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Silver Star PCS", 
+                "extent": [
+                    -111.703309, 
+                    42.447411, 
+                    -110.499912, 
+                    43.990111
+                ], 
+                "id": 201, 
+                "serviceName": "Silver_Star_PCS_EVDO"
+            }, 
+			{
+                "companyName": "South Central Communications", 
+                "extent": [
+					-112.26448464577307,
+					37.26329441314507,
+					-111.60576304517959,
+					37.96032917404592                    
+                ], 
+                "id": 202, 
+                "serviceName": "South_Central_Communications_EVDO"
+            },
+            {
+                "companyName": "Sprint Affiliates", 
+                "extent": [
+                    -160.094807, 
+                    17.654664, 
+                    -64.62672, 
+                    49.016319
+                ], 
+                "id": 203, 
+                "serviceName": "Sprint_Affiliates_EVDO"
+            }, 
+            {
+                "companyName": "SRT Communications", 
+                "extent": [
+                    -103.068157, 
+                    46.935919, 
+                    -99.595828, 
+                    48.99967
+                ], 
+                "id": 204, 
+                "serviceName": "SRT_Communications_EVDO"
+            }, 
+            {
+                "companyName": "Syringa Wireless", 
+                "extent": [
+                    -115.199331, 
+                    42.083822, 
+                    -111.152213, 
+                    44.989069
+                ], 
+                "id": 205, 
+                "serviceName": "Syringa_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Thumb Cellular", 
+                "extent": [
+                    -83.805005, 
+                    43.048222, 
+                    -82.415704, 
+                    44.163052
+                ], 
+                "id": 206, 
+                "serviceName": "Thumb_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -124.364002, 
+                    24.532799, 
+                    -69.9108, 
+                    43.772963
+                ], 
+                "id": 207, 
+                "serviceName": "TMobile_EVDO"
+            }, 
+            {
+                "companyName": "UBET Wireless", 
+                "extent": [
+                    -111.645091, 
+                    39.384284, 
+                    -108.6382, 
+                    42.025799
+                ], 
+                "id": 208, 
+                "serviceName": "UBET_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "United States Cellular", 
+                "extent": [
+                    -124.597083, 
+                    33.250675, 
+                    -66.918257, 
+                    47.735995
+                ], 
+                "id": 209, 
+                "serviceName": "United_States_Cellular_EVDO"
+            }, 
+            {
+                "companyName": "United Wireless", 
+                "extent": [
+                    -102.102569, 
+                    36.911372, 
+                    -99.094382, 
+                    38.425493
+                ], 
+                "id": 210, 
+                "serviceName": "United_Wireless_EVDO"
+            }, 
+            {
+                "companyName": "Verizon", 
+                "extent": [
+                    -160.100599, 
+                    18.906224, 
+                    -67.750309, 
+                    49.384408
+                ], 
+                "id": 211, 
+                "serviceName": "Verizon_EVDO"
+            }
+        ], 
+        "techType": "EVDO"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "ACS Wireless", 
+                "extent": [
+                    -153.615833, 
+                    54.683032, 
+                    -130.364001, 
+                    70.512167
+                ], 
+                "id": 212, 
+                "serviceName": "ACS_Wireless_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Appalachian Wireless", 
+                "extent": [
+                    -84.205285, 
+                    36.730469, 
+                    -81.970208, 
+                    38.264323
+                ], 
+                "id": 213, 
+                "serviceName": "Appalachian_Wireless_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -117.462622, 
+                    30.467721, 
+                    -79.185322, 
+                    46.533369
+                ], 
+                "id": 214, 
+                "serviceName": "ATT_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Blanca Telephone Company", 
+                "extent": [
+                    -106.234148, 
+                    36.885931, 
+                    -105.224643, 
+                    37.56227
+                ], 
+                "id": 215, 
+                "serviceName": "Blanca_Telephone_Company_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Cellular 29 Plus", 
+                "extent": [
+                    -95.888907, 
+                    40.57074, 
+                    -94.470504, 
+                    41.160372
+                ], 
+                "id": 216, 
+                "serviceName": "Cellular_29_Plus_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Cleartalk", 
+                "extent": [
+                    -108.993386, 
+                    32.935609, 
+                    -80.832297, 
+                    39.337847
+                ], 
+                "id": 217, 
+                "serviceName": "Cleartalk_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Custer Telephone", 
+                "extent": [
+                    -115.160892, 
+                    43.859419, 
+                    -113.606356, 
+                    44.676521
+                ], 
+                "id": 218, 
+                "serviceName": "Custer_Telephone_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -152.493348, 
+                    55.170825, 
+                    -131.386018, 
+                    70.508089
+                ], 
+                "id": 219, 
+                "serviceName": "GCI_Communication_Corp_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Leaco Rural Telephone", 
+                "extent": [
+                    -104.228301, 
+                    31.943133, 
+                    -103.022182, 
+                    33.66816
+                ], 
+                "id": 220, 
+                "serviceName": "Leaco_Rural_Telephone_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Lyrix Wireless", 
+                "extent": [
+                    -94.471757, 
+                    40.570825, 
+                    -93.097297, 
+                    41.162019
+                ], 
+                "id": 221, 
+                "serviceName": "Lyrix_Wireless_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Mobi PCS", 
+                "extent": [
+                    -158.239667, 
+                    19.276299, 
+                    -154.841509, 
+                    21.674149
+                ], 
+                "id": 222, 
+                "serviceName": "Mobi_PCS_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Pacific Telecom Inc", 
+                "extent": [
+                    144.607278, 
+                    13.221162, 
+                    145.812697, 
+                    15.295737
+                ], 
+                "id": 223, 
+                "serviceName": "Pacific_Telecom_Inc_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Panhandle Telecommunication Systems", 
+                "extent": [
+                    -103.066403, 
+                    36.043646, 
+                    -99.899006, 
+                    37.177515
+                ], 
+                "id": 224, 
+                "serviceName": "Panhandle_Telecommunication_Systems_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Sprint Affiliates", 
+                "extent": [
+                    -160.094807, 
+                    17.654664, 
+                    -64.62672, 
+                    49.016319
+                ], 
+                "id": 225, 
+                "serviceName": "Sprint_Affiliates_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "United States Cellular", 
+                "extent": [
+                    -124.597083, 
+                    33.250675, 
+                    -66.918257, 
+                    47.735995
+                ], 
+                "id": 226, 
+                "serviceName": "United_States_Cellular_EVDO_REV_A"
+            }, 
+            {
+                "companyName": "Verizon", 
+                "extent": [
+                    -160.100599, 
+                    18.906224, 
+                    -67.750309, 
+                    49.384408
+                ], 
+                "id": 227, 
+                "serviceName": "Verizon_EVDO_REV_A"
+            }
+        ], 
+        "techType": "EVDO_REV_A"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "Advantage", 
+                "extent": [
+                    -86.285723, 
+                    35.211483, 
+                    -85.230416, 
+                    36.417857
+                ], 
+                "id": 228, 
+                "serviceName": "Advantage_GPRS"
+            }, 
+            {
+                "companyName": "Airadigm Einstein", 
+                "extent": [
+                    -92.163659, 
+                    42.488919, 
+                    -86.865394, 
+                    46.039354
+                ], 
+                "id": 229, 
+                "serviceName": "Airadigm_Einstein_GPRS"
+            }, 
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.29299, 
+                    17.911599, 
+                    -65.239348, 
+                    18.525035
+                ], 
+                "id": 230, 
+                "serviceName": "America_Movil_GPRS"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -165.975775, 
+                    17.651218, 
+                    -64.544012, 
+                    70.561701
+                ], 
+                "id": 231, 
+                "serviceName": "ATT_GPRS"
+            }, 
+            {
+                "companyName": "Blue Sky PCS", 
+                "extent": [
+                    -170.846645, 
+                    -14.388367, 
+                    -170.540447, 
+                    -14.241075
+                ], 
+                "id": 232, 
+                "serviceName": "Blue_Sky_PCS_GPRS"
+            }, 
+            {
+                "companyName": "Bug Tussel Wireless", 
+                "extent": [
+                    -92.172649, 
+                    42.351893, 
+                    -86.812494, 
+                    45.425456
+                ], 
+                "id": 233, 
+                "serviceName": "Bug_Tussel_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Cellular Properties", 
+                "extent": [
+                    -88.769886, 
+                    38.470982, 
+                    -87.315341, 
+                    40.524554
+                ], 
+                "id": 234, 
+                "serviceName": "Cellular_Properties_GPRS"
+            }, 
+            {
+                "companyName": "Chariton Valley Cellular", 
+                "extent": [
+                    -93.757878, 
+                    39.051542, 
+                    -91.444853, 
+                    40.761769
+                ], 
+                "id": 235, 
+                "serviceName": "Chariton_Valley_Cellular_GPRS"
+            }, 
+            {
+                "companyName": "Choice Wireless", 
+                "extent": [
+                    -100.084661, 
+                    32.988114, 
+                    -97.583567, 
+                    34.48969
+                ], 
+                "id": 236, 
+                "serviceName": "Choice_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Cincinnati Bell Telephone", 
+                "extent": [
+                    -85.400797, 
+                    38.471542, 
+                    -83.506373, 
+                    40.486694
+                ], 
+                "id": 237, 
+                "serviceName": "Cincinnati_Bell_Telephone_GPRS"
+            }, 
+            {
+                "companyName": "Commnet Wireless", 
+                "extent": [
+                    -119.67381, 
+                    29.114571, 
+                    -93.429598, 
+                    48.362086
+                ], 
+                "id": 238, 
+                "serviceName": "Commnet_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Cordova Wireless", 
+                "extent": [
+                    -148.071793, 
+                    60.258793, 
+                    -144.684271, 
+                    61.011688
+                ], 
+                "id": 239, 
+                "serviceName": "Cordova_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Core Wireless Group", 
+                "extent": [
+                    -94.98674, 
+                    45.355909, 
+                    -93.760902, 
+                    45.949847
+                ], 
+                "id": 240, 
+                "serviceName": "Core_Wireless_Group_GPRS"
+            }, 
+            {
+                "companyName": "Corr Wireless Communications", 
+                "extent": [
+                    -87.178789, 
+                    33.449451, 
+                    -84.96513, 
+                    35.088654
+                ], 
+                "id": 241, 
+                "serviceName": "Corr_Wireless_Communications_GPRS"
+            }, 
+            {
+                "companyName": "DoCoMo", 
+                "extent": [
+                    144.628419, 
+                    13.248936, 
+                    145.831059, 
+                    15.291125
+                ], 
+                "id": 242, 
+                "serviceName": "DoCoMo_GPRS"
+            }, 
+            {
+                "companyName": "Epic Touch Co", 
+                "extent": [
+                    -102.345094, 
+                    36.319096, 
+                    -100.097048, 
+                    37.482551
+                ], 
+                "id": 243, 
+                "serviceName": "Epic_Touch_Co_GPRS"
+            }, 
+            {
+                "companyName": "Gaia Sagir", 
+                "extent": [
+                    -78.124678, 
+                    41.006546, 
+                    -75.709399, 
+                    42.080995
+                ], 
+                "id": 244, 
+                "serviceName": "Gaia_Sagir_GPRS"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -171.876174, 
+                    53.671232, 
+                    -131.251609, 
+                    71.40634
+                ], 
+                "id": 245, 
+                "serviceName": "GCI_Communication_Corp_GPRS"
+            }, 
+            {
+                "companyName": "GTA Wireless", 
+                "extent": [
+                    144.595531, 
+                    13.208609, 
+                    144.974936, 
+                    13.676771
+                ], 
+                "id": 246, 
+                "serviceName": "GTA_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Immix Wireless", 
+                "extent": [
+                    -78.146158, 
+                    40.131335, 
+                    -75.507192, 
+                    41.324223
+                ], 
+                "id": 247, 
+                "serviceName": "Immix_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Innovative Wireless", 
+                "extent": [
+                    -65.339392, 
+                    17.651218, 
+                    -64.54399, 
+                    18.435948
+                ], 
+                "id": 248, 
+                "serviceName": "Innovative_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Iowa Wireless Services", 
+                "extent": [
+                    -96.656133, 
+                    40.141043, 
+                    -89.553329, 
+                    43.624271
+                ], 
+                "id": 249, 
+                "serviceName": "Iowa_Wireless_Services_GPRS"
+            }, 
+            {
+                "companyName": "iSmart Mobile", 
+                "extent": [
+                    -113.05833, 
+                    45.310625, 
+                    -110.04931, 
+                    46.253971
+                ], 
+                "id": 250, 
+                "serviceName": "ISmart_Mobile_GPRS"
+            }, 
+            {
+                "companyName": "Kankakee Cellular", 
+                "extent": [
+                    -88.251609, 
+                    40.994752, 
+                    -87.526502, 
+                    41.298064
+                ], 
+                "id": 251, 
+                "serviceName": "Kankakee_Cellular_GPRS"
+            }, 
+            {
+                "companyName": "Long Lines Wireless", 
+                "extent": [
+                    -97.677162, 
+                    41.373897, 
+                    -93.864064, 
+                    44.016466
+                ], 
+                "id": 252, 
+                "serviceName": "Long_Lines_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "MTPCS LLC", 
+                "extent": [
+                    -115.576865, 
+                    27.805806, 
+                    -87.392325, 
+                    48.998524
+                ], 
+                "id": 253, 
+                "serviceName": "MTPCS_LLC_GPRS"
+            }, 
+            {
+                "companyName": "NE Colorado Cellular", 
+                "extent": [
+                    -106.795626, 
+                    36.747622, 
+                    -94.983372, 
+                    43.218804
+                ], 
+                "id": 254, 
+                "serviceName": "NE_Colorado_Cellular_GPRS"
+            }, 
+            {
+                "companyName": "NEP Wireless", 
+                "extent": [
+                    -76.046397, 
+                    41.57889, 
+                    -75.338715, 
+                    42.005171
+                ], 
+                "id": 255, 
+                "serviceName": "NEP_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Oklahoma Western Telephone", 
+                "extent": [
+                    -95.877643, 
+                    34.367782, 
+                    -94.750382, 
+                    35.473661
+                ], 
+                "id": 256, 
+                "serviceName": "Oklahoma_Western_Telephone_GPRS"
+            }, 
+            {
+                "companyName": "Pace Communications", 
+                "extent": [
+                    -93.174479, 
+                    29.477214, 
+                    -91.419271, 
+                    30.375651
+                ], 
+                "id": 257, 
+                "serviceName": "Pace_Communications_GPRS"
+            }, 
+            {
+                "companyName": "Pacific Telecom Inc", 
+                "extent": [
+                    144.60921, 
+                    13.222232, 
+                    144.964266, 
+                    13.613095
+                ], 
+                "id": 258, 
+                "serviceName": "Pacific_Telecom_Inc_GPRS"
+            }, 
+            {
+                "companyName": "Pine Cellular Phones", 
+                "extent": [
+                    -96.397884, 
+                    33.601352, 
+                    -94.296588, 
+                    35.066911
+                ], 
+                "id": 259, 
+                "serviceName": "Pine_Cellular_Phones_GPRS"
+            }, 
+            {
+                "companyName": "Plateau Wireless", 
+                "extent": [
+                    -106.598717, 
+                    31.790959, 
+                    -101.279269, 
+                    37.010437
+                ], 
+                "id": 260, 
+                "serviceName": "Plateau_Wireless_GPRS"
+            }, 
+            {
+                "companyName": "Proximity Mobility LLC", 
+                "extent": [
+                    -106.129811, 
+                    31.61277, 
+                    -105.583637, 
+                    31.970352
+                ], 
+                "id": 261, 
+                "serviceName": "Proximity_Mobility_LLC_GPRS"
+            }, 
+            {
+                "companyName": "Smith Bagley", 
+                "extent": [
+                    -111.625, 
+                    33.544444, 
+                    -105.498962, 
+                    37.6125
+                ], 
+                "id": 262, 
+                "serviceName": "Smith_Bagley_GPRS"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -159.780063, 
+                    17.919174, 
+                    -65.237277, 
+                    49.006679
+                ], 
+                "id": 263, 
+                "serviceName": "TMobile_GPRS"
+            }, 
+            {
+                "companyName": "Union Cellular", 
+                "extent": [
+                    -112.941883, 
+                    38.394972, 
+                    -103.711122, 
+                    45.082206
+                ], 
+                "id": 264, 
+                "serviceName": "Union_Cellular_GPRS"
+            }, 
+            {
+                "companyName": "Verizon", 
+                "extent": [
+                    -122.623452, 
+                    29.372898, 
+                    -67.709529, 
+                    48.828686
+                ], 
+                "id": 265, 
+                "serviceName": "Verizon_GPRS"
+            }, 
+            {
+                "companyName": "West Central Cellular", 
+                "extent": [
+                    -101.848903, 
+                    29.677967, 
+                    -97.932467, 
+                    32.512831
+                ], 
+                "id": 266, 
+                "serviceName": "West_Central_Cellular_GPRS"
+            }, 
+            {
+                "companyName": "Westlink Communications", 
+                "extent": [
+                    -102.102334, 
+                    36.4398, 
+                    -99.369345, 
+                    38.661686
+                ], 
+                "id": 267, 
+                "serviceName": "Westlink_Communications_GPRS"
+            }
+        ], 
+        "techType": "GPRS"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "Advantage", 
+                "extent": [
+                    -86.285723, 
+                    35.211483, 
+                    -85.230416, 
+                    36.417857
+                ], 
+                "id": 268, 
+                "serviceName": "Advantage_GSM"
+            }, 
+            {
+                "companyName": "Airadigm Einstein", 
+                "extent": [
+                    -92.163659, 
+                    42.488919, 
+                    -86.865394, 
+                    46.039354
+                ], 
+                "id": 269, 
+                "serviceName": "Airadigm_Einstein_GSM"
+            }, 
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.29299, 
+                    17.911599, 
+                    -65.239348, 
+                    18.525035
+                ], 
+                "id": 270, 
+                "serviceName": "America_Movil_GSM"
+            }, 
+            {
+                "companyName": "Arctic Slope", 
+                "extent": [
+                    -160.575072, 
+                    69.958238, 
+                    -143.168212, 
+                    71.40634
+                ], 
+                "id": 271, 
+                "serviceName": "Arctic_Slope_GSM"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -165.975775, 
+                    17.651218, 
+                    -64.544012, 
+                    70.561701
+                ], 
+                "id": 272, 
+                "serviceName": "ATT_GSM"
+            }, 
+            {
+                "companyName": "Blue Sky PCS", 
+                "extent": [
+                    -170.846645, 
+                    -14.388367, 
+                    -170.540447, 
+                    -14.241075
+                ], 
+                "id": 273, 
+                "serviceName": "Blue_Sky_PCS_GSM"
+            }, 
+            {
+                "companyName": "Bristol Bay Cellular", 
+                "extent": [
+                    -159.33933, 
+                    57.307795, 
+                    -155.610937, 
+                    59.872324
+                ], 
+                "id": 274, 
+                "serviceName": "Bristol_Bay_Cellular_GSM"
+            }, 
+            {
+                "companyName": "Bug Tussel Wireless", 
+                "extent": [
+                    -92.172649, 
+                    42.351893, 
+                    -86.812494, 
+                    45.425456
+                ], 
+                "id": 275, 
+                "serviceName": "Bug_Tussel_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Cellular Properties", 
+                "extent": [
+                    -88.769886, 
+                    38.470982, 
+                    -87.315341, 
+                    40.524554
+                ], 
+                "id": 276, 
+                "serviceName": "Cellular_Properties_GSM"
+            }, 
+            {
+                "companyName": "Chariton Valley Cellular", 
+                "extent": [
+                    -93.757878, 
+                    39.051542, 
+                    -91.444853, 
+                    40.761769
+                ], 
+                "id": 277, 
+                "serviceName": "Chariton_Valley_Cellular_GSM"
+            }, 
+            {
+                "companyName": "Choice Wireless", 
+                "extent": [
+                    -100.084661, 
+                    32.988114, 
+                    -97.583567, 
+                    34.48969
+                ], 
+                "id": 278, 
+                "serviceName": "Choice_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Cincinnati Bell Telephone", 
+                "extent": [
+                    -85.400797, 
+                    38.471542, 
+                    -83.506373, 
+                    40.486694
+                ], 
+                "id": 279, 
+                "serviceName": "Cincinnati_Bell_Telephone_GSM"
+            }, 
+            {
+                "companyName": "Commnet Wireless", 
+                "extent": [
+                    -119.67381, 
+                    29.114571, 
+                    -93.429598, 
+                    48.362086
+                ], 
+                "id": 280, 
+                "serviceName": "Commnet_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Cordova Wireless", 
+                "extent": [
+                    -148.071793, 
+                    60.258793, 
+                    -144.684271, 
+                    61.011688
+                ], 
+                "id": 281, 
+                "serviceName": "Cordova_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Core Wireless Group", 
+                "extent": [
+                    -94.98674, 
+                    45.355909, 
+                    -93.760902, 
+                    45.949847
+                ], 
+                "id": 282, 
+                "serviceName": "Core_Wireless_Group_GSM"
+            }, 
+            {
+                "companyName": "Corr Wireless Communications", 
+                "extent": [
+                    -87.178789, 
+                    33.449451, 
+                    -84.96513, 
+                    35.088654
+                ], 
+                "id": 283, 
+                "serviceName": "Corr_Wireless_Communications_GSM"
+            }, 
+            {
+                "companyName": "DoCoMo", 
+                "extent": [
+                    144.628419, 
+                    13.248936, 
+                    145.831059, 
+                    15.291125
+                ], 
+                "id": 284, 
+                "serviceName": "DoCoMo_GSM"
+            }, 
+            {
+                "companyName": "Epic Touch Co", 
+                "extent": [
+                    -102.345094, 
+                    36.319096, 
+                    -100.097048, 
+                    37.482551
+                ], 
+                "id": 285, 
+                "serviceName": "Epic_Touch_Co_GSM"
+            }, 
+            {
+                "companyName": "Gaia Sagir", 
+                "extent": [
+                    -78.124678, 
+                    41.006546, 
+                    -75.709399, 
+                    42.080995
+                ], 
+                "id": 286, 
+                "serviceName": "Gaia_Sagir_GSM"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -171.876174, 
+                    53.671232, 
+                    -131.251609, 
+                    71.40634
+                ], 
+                "id": 287, 
+                "serviceName": "GCI_Communication_Corp_GSM"
+            }, 
+            {
+                "companyName": "GTA Wireless", 
+                "extent": [
+                    144.595531, 
+                    13.208609, 
+                    144.974936, 
+                    13.676771
+                ], 
+                "id": 288, 
+                "serviceName": "GTA_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Immix Wireless", 
+                "extent": [
+                    -78.146158, 
+                    40.131335, 
+                    -75.507192, 
+                    41.324223
+                ], 
+                "id": 289, 
+                "serviceName": "Immix_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Innovative Wireless", 
+                "extent": [
+                    -65.339392, 
+                    17.651218, 
+                    -64.54399, 
+                    18.435948
+                ], 
+                "id": 290, 
+                "serviceName": "Innovative_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Iowa Wireless Services", 
+                "extent": [
+                    -96.656133, 
+                    40.141043, 
+                    -89.553329, 
+                    43.624271
+                ], 
+                "id": 291, 
+                "serviceName": "Iowa_Wireless_Services_GSM"
+            }, 
+            {
+                "companyName": "iSmart Mobile", 
+                "extent": [
+                    -113.05833, 
+                    45.310625, 
+                    -110.04931, 
+                    46.253971
+                ], 
+                "id": 292, 
+                "serviceName": "ISmart_Mobile_GSM"
+            }, 
+            {
+                "companyName": "Kankakee Cellular", 
+                "extent": [
+                    -88.251609, 
+                    40.994752, 
+                    -87.526502, 
+                    41.298064
+                ], 
+                "id": 293, 
+                "serviceName": "Kankakee_Cellular_GSM"
+            }, 
+            {
+                "companyName": "Long Lines Wireless", 
+                "extent": [
+                    -97.677162, 
+                    41.373897, 
+                    -93.864064, 
+                    44.016466
+                ], 
+                "id": 294, 
+                "serviceName": "Long_Lines_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Mosaic Telecom", 
+                "extent": [
+                    -92.66194, 
+                    44.976089, 
+                    -90.787302, 
+                    46.003136
+                ], 
+                "id": 295, 
+                "serviceName": "Mosaic_Telecom_GSM"
+            }, 
+            {
+                "companyName": "MTPCS LLC", 
+                "extent": [
+                    -115.576865, 
+                    27.805806, 
+                    -87.392325, 
+                    48.998524
+                ], 
+                "id": 296, 
+                "serviceName": "MTPCS_LLC_GSM"
+            }, 
+            {
+                "companyName": "NE Colorado Cellular", 
+                "extent": [
+                    -106.795626, 
+                    36.747622, 
+                    -94.983372, 
+                    43.218804
+                ], 
+                "id": 297, 
+                "serviceName": "NE_Colorado_Cellular_GSM"
+            }, 
+            {
+                "companyName": "NEP Wireless", 
+                "extent": [
+                    -76.046397, 
+                    41.57889, 
+                    -75.338715, 
+                    42.005171
+                ], 
+                "id": 298, 
+                "serviceName": "NEP_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Oklahoma Western Telephone", 
+                "extent": [
+                    -95.877643, 
+                    34.367782, 
+                    -94.750382, 
+                    35.473661
+                ], 
+                "id": 299, 
+                "serviceName": "Oklahoma_Western_Telephone_GSM"
+            }, 
+            {
+                "companyName": "OTZ Communications", 
+                "extent": [
+                    -164.898823, 
+                    65.809323, 
+                    -156.454218, 
+                    67.896267
+                ], 
+                "id": 300, 
+                "serviceName": "OTZ_Communications_GSM"
+            }, 
+            {
+                "companyName": "Pace Communications", 
+                "extent": [
+                    -93.174479, 
+                    29.477214, 
+                    -91.419271, 
+                    30.375651
+                ], 
+                "id": 301, 
+                "serviceName": "Pace_Communications_GSM"
+            }, 
+            {
+                "companyName": "Pacific Telecom Inc", 
+                "extent": [
+                    144.60921, 
+                    13.222232, 
+                    144.964266, 
+                    13.613095
+                ], 
+                "id": 302, 
+                "serviceName": "Pacific_Telecom_Inc_GSM"
+            }, 
+            {
+                "companyName": "Pine Cellular Phones", 
+                "extent": [
+                    -96.397884, 
+                    33.601352, 
+                    -94.296588, 
+                    35.066911
+                ], 
+                "id": 303, 
+                "serviceName": "Pine_Cellular_Phones_GSM"
+            }, 
+            {
+                "companyName": "PinPoint Wireless", 
+                "extent": [
+                    -100.97986, 
+                    39.705686, 
+                    -99.61009, 
+                    40.360653
+                ], 
+                "id": 304, 
+                "serviceName": "PinPoint_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Plateau Wireless", 
+                "extent": [
+                    -106.598717, 
+                    31.790959, 
+                    -101.279269, 
+                    37.010437
+                ], 
+                "id": 305, 
+                "serviceName": "Plateau_Wireless_GSM"
+            }, 
+            {
+                "companyName": "Proximity Mobility LLC", 
+                "extent": [
+                    -106.129811, 
+                    31.61277, 
+                    -105.583637, 
+                    31.970352
+                ], 
+                "id": 306, 
+                "serviceName": "Proximity_Mobility_LLC_GSM"
+            }, 
+            {
+                "companyName": "Smith Bagley", 
+                "extent": [
+                    -111.625, 
+                    33.544444, 
+                    -105.498962, 
+                    37.6125
+                ], 
+                "id": 307, 
+                "serviceName": "Smith_Bagley_GSM"
+            }, 
+            {
+                "companyName": "TelAlaska", 
+                "extent": [
+                    -169.002679, 
+                    53.747662, 
+                    -145.067544, 
+                    66.667395
+                ], 
+                "id": 308, 
+                "serviceName": "TelAlaska_GSM"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -159.780063, 
+                    17.919174, 
+                    -65.237277, 
+                    49.006679
+                ], 
+                "id": 309, 
+                "serviceName": "TMobile_GSM"
+            }, 
+            {
+                "companyName": "Union Cellular", 
+                "extent": [
+                    -112.941883, 
+                    38.394972, 
+                    -103.711122, 
+                    45.082206
+                ], 
+                "id": 310, 
+                "serviceName": "Union_Cellular_GSM"
+            }, 
+            {
+                "companyName": "United States Cellular", 
+                "extent": [
+                    -72.054557, 
+                    43.7552, 
+                    -67.555589, 
+                    47.360373
+                ], 
+                "id": 311, 
+                "serviceName": "United_States_Cellular_GSM"
+            }, 
+            {
+                "companyName": "Verizon", 
+                "extent": [
+                    -122.623452, 
+                    29.372898, 
+                    -67.709529, 
+                    48.828686
+                ], 
+                "id": 312, 
+                "serviceName": "Verizon_GSM"
+            }, 
+            {
+                "companyName": "West Central Cellular", 
+                "extent": [
+                    -101.848903, 
+                    29.677967, 
+                    -97.932467, 
+                    32.512831
+                ], 
+                "id": 313, 
+                "serviceName": "West_Central_Cellular_GSM"
+            }, 
+            {
+                "companyName": "Westlink Communications", 
+                "extent": [
+                    -102.102334, 
+                    36.4398, 
+                    -99.369345, 
+                    38.661686
+                ], 
+                "id": 314, 
+                "serviceName": "Westlink_Communications_GSM"
+            }, 
+            {
+                "companyName": "Windy City Cellular", 
+                "extent": [
+                    -176.915033, 
+                    51.703242, 
+                    -176.410812, 
+                    51.937731
+                ], 
+                "id": 315, 
+                "serviceName": "Windy_City_Cellular_GSM"
+            }
+        ], 
+        "techType": "GSM"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.29299, 
+                    17.903645, 
+                    -65.239348, 
+                    18.525855
+                ], 
+                "id": 316, 
+                "serviceName": "America_Movil_HSPA"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -160.133923, 
+                    17.651218, 
+                    -64.544012, 
+                    70.476969
+                ], 
+                "id": 317, 
+                "serviceName": "ATT_HSPA"
+            }, 
+            {
+                "companyName": "Blue Sky PCS", 
+                "extent": [
+                    -170.846645, 
+                    -14.388367, 
+                    -170.540447, 
+                    -14.241075
+                ], 
+                "id": 318, 
+                "serviceName": "Blue_Sky_PCS_HSPA"
+            }, 
+            {
+                "companyName": "Cincinnati Bell Telephone", 
+                "extent": [
+                    -84.956509, 
+                    38.800581, 
+                    -83.907995, 
+                    40.081393
+                ], 
+                "id": 319, 
+                "serviceName": "Cincinnati_Bell_Telephone_HSPA"
+            }, 
+            {
+                "companyName": "Core Wireless Group", 
+                "extent": [
+                    -94.98674, 
+                    45.355909, 
+                    -93.760902, 
+                    45.949847
+                ], 
+                "id": 320, 
+                "serviceName": "Core_Wireless_Group_HSPA"
+            }, 
+            {
+                "companyName": "DoCoMo", 
+                "extent": [
+                    144.618397, 
+                    13.245447, 
+                    144.955807, 
+                    13.646773
+                ], 
+                "id": 321, 
+                "serviceName": "DoCoMo_HSPA"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -152.775887, 
+                    54.993116, 
+                    -131.296367, 
+                    70.512167
+                ], 
+                "id": 322, 
+                "serviceName": "GCI_Communication_Corp_HSPA"
+            }, 
+            {
+                "companyName": "GTA Wireless", 
+                "extent": [
+                    144.595531, 
+                    13.241649, 
+                    144.974936, 
+                    13.653938
+                ], 
+                "id": 323, 
+                "serviceName": "GTA_Wireless_HSPA"
+            }, 
+            {
+                "companyName": "Innovative Wireless", 
+                "extent": [
+                    -65.339392, 
+                    17.651218, 
+                    -64.54399, 
+                    18.435948
+                ], 
+                "id": 324, 
+                "serviceName": "Innovative_Wireless_HSPA"
+            }, 
+            {
+                "companyName": "Iowa Wireless Services", 
+                "extent": [
+                    -96.384257, 
+                    40.247324, 
+                    -90.223428, 
+                    43.528875
+                ], 
+                "id": 325, 
+                "serviceName": "Iowa_Wireless_Services_HSPA"
+            }, 
+            {
+                "companyName": "Mosaic Telecom", 
+                "extent": [
+                    -92.66194, 
+                    44.976089, 
+                    -90.787302, 
+                    46.003136
+                ], 
+                "id": 326, 
+                "serviceName": "Mosaic_Telecom_HSPA"
+            }, 
+            {
+                "companyName": "NE Colorado Cellular", 
+                "extent": [
+                    -106.789751, 
+                    36.863996, 
+                    -96.644156, 
+                    43.328435
+                ], 
+                "id": 327, 
+                "serviceName": "NE_Colorado_Cellular_HSPA"
+            }, 
+            {
+                "companyName": "Pace Communications", 
+                "extent": [
+                    -93.174479, 
+                    29.477214, 
+                    -91.419271, 
+                    30.375651
+                ], 
+                "id": 328, 
+                "serviceName": "Pace_Communications_HSPA"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -159.793313, 
+                    17.919843, 
+                    -65.299813, 
+                    49.010745
+                ], 
+                "id": 329, 
+                "serviceName": "TMobile_HSPA"
+            }, 
+			{
+                "companyName": "Union Cellular", 
+                "extent": [
+					-111.69988266719616,
+					39.84756933998427,
+					-104.04148093493147,
+					44.69513825923852                    
+                ], 
+                "id": 330, 
+                "serviceName": "Union_Cellular_HSPA"
+            },
+            {
+                "companyName": "Windy City Cellular", 
+                "extent": [
+                    -176.915033, 
+                    51.703242, 
+                    -176.410812, 
+                    51.937731
+                ], 
+                "id": 331, 
+                "serviceName": "Windy_City_Cellular_HSPA"
+            }
+        ], 
+        "techType": "HSPA"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.281559, 
+                    17.903645, 
+                    -65.568229, 
+                    18.525855
+                ], 
+                "id": 332, 
+                "serviceName": "America_Movil_HSPA_PLUS"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -160.133923, 
+                    17.651218, 
+                    -64.544012, 
+                    70.458372
+                ], 
+                "id": 333, 
+                "serviceName": "ATT_HSPA_PLUS"
+            }, 
+            {
+                "companyName": "Blue Sky PCS", 
+                "extent": [
+                    -170.846645, 
+                    -14.388367, 
+                    -170.540447, 
+                    -14.241075
+                ], 
+                "id": 334, 
+                "serviceName": "Blue_Sky_PCS_HSPA_PLUS"
+            }, 
+            {
+                "companyName": "Cincinnati Bell Telephone", 
+                "extent": [
+                    -84.936378, 
+                    38.80532, 
+                    -84.091099, 
+                    39.571016
+                ], 
+                "id": 335, 
+                "serviceName": "Cincinnati_Bell_Telephone_HSPA_PLUS"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -152.775597, 
+                    54.993116, 
+                    -131.297299, 
+                    70.511572
+                ], 
+                "id": 336, 
+                "serviceName": "GCI_Communication_Corp_HSPA_PLUS"
+            }, 
+            {
+                "companyName": "GTA Wireless", 
+                "extent": [
+                    144.62015, 
+                    13.309045, 
+                    144.884199, 
+                    13.562502
+                ], 
+                "id": 337, 
+                "serviceName": "GTA_Wireless_HSPA_PLUS"
+            }, 
+            {
+                "companyName": "Iowa Wireless Services", 
+                "extent": [
+                    -96.384257, 
+                    40.247324, 
+                    -90.223428, 
+                    43.528875
+                ], 
+                "id": 338, 
+                "serviceName": "Iowa_Wireless_Services_HSPA_PLUS"
+            }, 
+            {
+                "companyName": "Mosaic Telecom", 
+                "extent": [
+                    -92.66194, 
+                    44.976089, 
+                    -90.787302, 
+                    46.003136
+                ], 
+                "id": 339, 
+                "serviceName": "Mosaic_Telecom_HSPA_PLUS"
+            }, 
+            {
+                "companyName": "NE Colorado Cellular", 
+                "extent": [
+                    -106.789751, 
+                    36.863996, 
+                    -96.644156, 
+                    43.328435
+                ], 
+                "id": 340, 
+                "serviceName": "NE_Colorado_Cellular_HSPA_PLUS"
+            }, 
+            { 
+                "companyName": "TMobile", 
+                "extent": [
+                    -158.240829, 
+                    17.931317, 
+                    -65.773676, 
+                    49.010745
+                ], 
+                "id": 341, 
+                "serviceName": "TMobile_HSPA_PLUS"
+            },
+			{
+                "companyName": "Union Cellular", 
+                "extent": [
+					-111.69988266719616,
+					39.84756933998427,
+					-104.04148093493147,
+					44.69513825923852                    
+                ], 
+                "id": 342, 
+                "serviceName": "Union_Cellular_HSPA_PLUS"
+            }
+        ], 
+        "techType": "HSPA_PLUS"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "Choice Phone, LLC", 
+                "extent": [
+					144.61782018003038,
+					13.228209033620837,
+					144.95139178835245,
+					13.654289562211668                    
+                ], 
+                "id": 343, 
+                "serviceName": "Choice_Phone_LLC_IDEN"
+            },
+			{
+                "companyName": "Southern Linc", 
+                "extent": [
+                    -90.008013, 
+                    29.841033, 
+                    -80.786859, 
+                    35.330163
+                ], 
+                "id": 344, 
+                "serviceName": "Southern_Linc_IDEN"
+            }
+        ], 
+        "techType": "IDEN"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "ACS Wireless", 
+                "extent": [
+                    -151.8825, 
+                    58.152973, 
+                    -134.1845, 
+                    65.298447
+                ], 
+                "id": 345, 
+                "serviceName": "ACS_Wireless_LTE"
+            }, 
+			{
+                "companyName": "Adams Telephone", 
+                "extent": [
+					-91.494981,
+					39.55945461504171,
+					-90.73970756265098,
+					40.43505909148653                    
+                ], 
+                "id": 346, 
+                "serviceName": "Adams_Telephone_LTE"
+            },
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.29299, 
+                    17.938633, 
+                    -65.791155, 
+                    18.51173
+                ], 
+                "id": 347, 
+                "serviceName": "America_Movil_LTE"
+            }, 
+            {
+                "companyName": "Appalachian Wireless", 
+                "extent": [
+                    -84.245, 
+                    36.89, 
+                    -81.978333, 
+                    38.215
+                ], 
+                "id": 348, 
+                "serviceName": "Appalachian_Wireless_LTE"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -160.127342, 
+                    17.651218, 
+                    -64.544012, 
+                    64.962802
+                ], 
+                "id": 349, 
+                "serviceName": "ATT_LTE"
+            }, 
+            {
+                "companyName": "Bluegrass Cellular", 
+                "extent": [
+                    -87.75463, 
+                    36.263021, 
+                    -83.962963, 
+                    38.292535
+                ], 
+                "id": 350, 
+                "serviceName": "Bluegrass_Cellular_LTE"
+            }, 
+            {
+                "companyName": "C Spire Wireless", 
+                "extent": [
+                    -91.548712, 
+                    30.270306, 
+                    -88.182594, 
+                    35.104723
+                ], 
+                "id": 351, 
+                "serviceName": "C_Spire_Wireless_LTE"
+            }, 
+            {
+                "companyName": "Carolina West Wireless", 
+                "extent": [
+                    -81.510833, 
+                    36.0175, 
+                    -80.470833, 
+                    36.645833
+                ], 
+                "id": 352, 
+                "serviceName": "Carolina_West_Wireless_LTE"
+            }, 
+            {
+                "companyName": "Cellcom", 
+                "extent": [
+                    -90.501667, 
+                    44.3675, 
+                    -86.862712, 
+                    45.853333
+                ], 
+                "id": 353, 
+                "serviceName": "Cellcom_LTE"
+            }, 
+            {
+                "companyName": "Cellular 29 Plus", 
+                "extent": [
+                    -96.146667, 
+                    40.248333, 
+                    -94.470533, 
+                    41.398333
+                ], 
+                "id": 354, 
+                "serviceName": "Cellular_29_Plus_LTE"
+            }, 
+            {
+                "companyName": "Chariton Valley Cellular", 
+                "extent": [
+                    -93.5425, 
+                    39.155, 
+                    -91.608333, 
+                    40.1275
+                ], 
+                "id": 355, 
+                "serviceName": "Chariton_Valley_Cellular_LTE"
+            }, 
+			{
+                "companyName": "Choice Phone, LLC", 
+                "extent": [
+					144.6268218099734,
+					13.351320987514788,
+					144.9557140540384,
+					13.620291037532681
+            ], 
+                "id": 356, 
+                "serviceName": "Choice_Phone_LLC_LTE"
+            },
+            {
+                "companyName": "Copper Valley Wireless", 
+                "extent": [
+                    -148.075833, 
+                    60.288333, 
+                    -144.985833, 
+                    61.296667
+                ], 
+                "id": 357, 
+                "serviceName": "Copper_Valley_Wireless_LTE"
+            }, 
+            {
+                "companyName": "Cross Wireless", 
+                "extent": [
+                    -96.243333, 
+                    33.573333, 
+                    -94.323333, 
+                    36.126667
+                ], 
+                "id": 358, 
+                "serviceName": "Cross_Wireless_LTE"
+            }, 
+            {
+                "companyName": "Custer Telephone", 
+                "extent": [
+                    -114.456667, 
+                    43.75, 
+                    -113.316667, 
+                    44.811667
+                ], 
+                "id": 359, 
+                "serviceName": "Custer_Telephone_LTE"
+            }, 
+            {
+                "companyName": "GreenFly", 
+                "extent": [
+                    -81.184105, 
+                    39.879584, 
+                    -80.523748, 
+                    40.199327
+                ], 
+                "id": 360, 
+                "serviceName": "GreenFly_LTE"
+            }, 
+			{
+                "companyName": "GTA Wireless", 
+                "extent": [
+					144.62047953103541,
+					13.338150404551948,
+					144.9306709493782,
+					13.642195950202408                    
+                ], 
+                "id": 361, 
+                "serviceName": "GTA_Wireless_LTE"
+            },
+			{
+                "companyName": "Infrastructure Networks", 
+                "extent": [
+                    -104.44782568985649,
+					27.49806046087935,
+					-97.92419586992217,
+					36.54056868281743
+                ], 
+                "id": 362, 
+                "serviceName": "Infrastructure_Networks_LTE"
+            },
+            {
+                "companyName": "Lyrix Wireless", 
+                "extent": [
+                    -94.470585, 
+                    40.296667, 
+                    -92.848333, 
+                    41.426667
+                ], 
+                "id": 363, 
+                "serviceName": "Lyrix_Wireless_LTE"
+            }, 
+            {
+                "companyName": "Mid River Cellular", 
+                "extent": [
+                    -106.519167, 
+                    44.799167, 
+                    -103.844167, 
+                    48.128333
+                ], 
+                "id": 364, 
+                "serviceName": "Mid_River_Cellular_LTE"
+            }, 
+            {
+                "companyName": "MTA Wireless", 
+                "extent": [
+                    -152.296667, 
+                    61.458333, 
+                    -148.121667, 
+                    63.446667
+                ], 
+                "id": 365, 
+                "serviceName": "MTA_Wireless_LTE"
+            }, 
+			{
+                "companyName": "NexTech Windows", 
+                "extent": [
+					-101.2186809445124,
+					38.19844406595877,
+					-97.43621543848698,
+					39.97588820550058                    
+                ], 
+                "id": 366, 
+                "serviceName": "NexTech_Wireless_LTE"
+            },
+            {
+                "companyName": "Northwest Missouri Cellular", 
+                "extent": [
+                    -96.01, 
+                    39.685833, 
+                    -94.1775, 
+                    40.800833
+                ], 
+                "id": 367, 
+                "serviceName": "Northwest_Missouri_Cellular_LTE"
+            }, 
+            {
+                "companyName": "Panhandle Telecommunication Systems", 
+                "extent": [
+                    -103.064096, 
+                    36.182587, 
+                    -99.816071, 
+                    37.242655
+                ], 
+                "id": 368, 
+                "serviceName": "Panhandle_Telecommunication_Systems_LTE"
+            }, 
+            {
+                "companyName": "Peoples Wireless", 
+                "extent": [
+                    -96.129362, 
+                    32.367271, 
+                    -94.864847, 
+                    33.212947
+                ], 
+                "id": 369, 
+                "serviceName": "Peoples_Wireless_LTE"
+            }, 
+            {
+                "companyName": "Pioneer Cellular", 
+                "extent": [
+                    -99.883333, 
+                    34.37, 
+                    -96.19, 
+                    37.153333
+                ], 
+                "id": 370, 
+                "serviceName": "Pioneer_Cellular_LTE"
+            }, 
+            {
+                "companyName": "PR Wireless", 
+                "extent": [
+                    -67.274953, 
+                    17.91288, 
+                    -65.271339, 
+                    18.519509
+                ], 
+                "id": 371, 
+                "serviceName": "PR_Wireless_LTE"
+            }, 
+            {
+                "companyName": "S and R Communications", 
+                "extent": [
+                    -87.0075, 
+                    40.416667, 
+                    -85.260833, 
+                    41.165
+                ], 
+                "id": 372, 
+                "serviceName": "S_and_R_Communications_LTE"
+            }, 
+            {
+                "companyName": "Sprint Affiliates", 
+                "extent": [
+                    -123.430216, 
+                    17.920512, 
+                    -65.241333, 
+                    47.905388
+                ], 
+                "id": 373, 
+                "serviceName": "Sprint_Affiliates_LTE"
+            }, 
+			{
+                "companyName": "Syringa Wireless", 
+                "extent": [
+					-114.9360292064874,
+					42.478215748459064,
+					-111.68094933175769,
+					43.90012041268212                    
+                ], 
+                "id": 374, 
+                "serviceName": "Syringa_Wireless_LTE"
+            },
+            {
+                "companyName": "Thumb Cellular", 
+                "extent": [
+                    -83.806667, 
+                    43.14, 
+                    -82.498718, 
+                    44.077274
+                ], 
+                "id": 375, 
+                "serviceName": "Thumb_Cellular_LTE"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -158.24642, 
+                    17.911989, 
+                    -65.558506, 
+                    49.007071
+                ], 
+                "id": 376, 
+                "serviceName": "TMobile_LTE"
+            }, 
+            {
+                "companyName": "UBET Wireless", 
+                "extent": [
+                    -110.770646, 
+                    39.881596, 
+                    -109.050741, 
+                    40.754842
+                ], 
+                "id": 377, 
+                "serviceName": "UBET_Wireless_LTE"
+            }, 
+			{
+                "companyName": "Union Cellular", 
+                "extent": [
+					-111.21177911717206,
+					41.02264149526674,
+					-107.49515994584311,
+					43.480592695494686                    
+                ], 
+                "id": 378, 
+                "serviceName": "Union_Cellular_LTE"
+            },
+            {
+                "companyName": "United States Cellular", 
+                "extent": [
+                    -124.597059, 
+                    33.353095, 
+                    -67.529471, 
+                    47.126815
+                ], 
+                "id": 379, 
+                "serviceName": "United_States_Cellular_LTE"
+            }, 
+            {
+                "companyName": "Verizon", 
+                "extent": [
+                    -160.100124, 
+                    18.90631, 
+                    -67.707231, 
+                    65.038499
+                ], 
+                "id": 380, 
+                "serviceName": "Verizon_LTE"
+            }
+        ], 
+        "techType": "LTE"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "Arctic Slope", 
+                "extent": [
+                    -151.504837, 
+                    70.022848, 
+                    -147.832898, 
+                    70.512167
+                ], 
+                "id": 381, 
+                "serviceName": "Arctic_Slope_TDMA"
+            }, 
+            {
+                "companyName": "OTZ Communications", 
+                "extent": [
+                    -163.050932, 
+                    66.705893, 
+                    -162.097941, 
+                    67.105143
+                ], 
+                "id": 382, 
+                "serviceName": "OTZ_Communications_TDMA"
+            }
+        ], 
+        "techType": "TDMA"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "America Movil", 
+                "extent": [
+                    -67.29299, 
+                    17.903645, 
+                    -65.239348, 
+                    18.525855
+                ], 
+                "id": 383, 
+                "serviceName": "America_Movil_UMTS"
+            }, 
+            {
+                "companyName": "ATT", 
+                "extent": [
+                    -160.133923, 
+                    17.651218, 
+                    -64.544012, 
+                    70.476969
+                ], 
+                "id": 384, 
+                "serviceName": "ATT_UMTS"
+            }, 
+            {
+                "companyName": "Blue Sky PCS", 
+                "extent": [
+                    -170.846645, 
+                    -14.388367, 
+                    -170.540447, 
+                    -14.241075
+                ], 
+                "id": 385, 
+                "serviceName": "Blue_Sky_PCS_UMTS"
+            }, 
+            {
+                "companyName": "Cincinnati Bell Telephone", 
+                "extent": [
+                    -84.956509, 
+                    38.800581, 
+                    -83.907995, 
+                    40.081393
+                ], 
+                "id": 386, 
+                "serviceName": "Cincinnati_Bell_Telephone_UMTS"
+            }, 
+            {
+                "companyName": "Commnet Wireless", 
+                "extent": [
+                    -94.870252, 
+                    32.759024, 
+                    -93.892439, 
+                    33.321453
+                ], 
+                "id": 387, 
+                "serviceName": "Commnet_Wireless_UMTS"
+            }, 
+            {
+                "companyName": "Core Wireless Group", 
+                "extent": [
+                    -94.98674, 
+                    45.355909, 
+                    -93.760902, 
+                    45.949847
+                ], 
+                "id": 388, 
+                "serviceName": "Core_Wireless_Group_UMTS"
+            }, 
+            {
+                "companyName": "DoCoMo", 
+                "extent": [
+                    144.618397, 
+                    13.245447, 
+                    144.955807, 
+                    13.646773
+                ], 
+                "id": 389, 
+                "serviceName": "DoCoMo_UMTS"
+            }, 
+            {
+                "companyName": "GCI Communication Corp", 
+                "extent": [
+                    -152.775887, 
+                    54.993116, 
+                    -131.296367, 
+                    70.512167
+                ], 
+                "id": 390, 
+                "serviceName": "GCI_Communication_Corp_UMTS"
+            }, 
+            {
+                "companyName": "GTA Wireless", 
+                "extent": [
+                    144.595531, 
+                    13.241649, 
+                    144.974936, 
+                    13.653938
+                ], 
+                "id": 391, 
+                "serviceName": "GTA_Wireless_UMTS"
+            }, 
+            {
+                "companyName": "Innovative Wireless", 
+                "extent": [
+                    -65.339392, 
+                    17.651218, 
+                    -64.54399, 
+                    18.435948
+                ], 
+                "id": 392, 
+                "serviceName": "Innovative_Wireless_UMTS"
+            }, 
+            {
+                "companyName": "Iowa Wireless Services", 
+                "extent": [
+                    -96.384257, 
+                    40.247324, 
+                    -90.223428, 
+                    43.528875
+                ], 
+                "id": 393, 
+                "serviceName": "Iowa_Wireless_Services_UMTS"
+            }, 
+            {
+                "companyName": "Mosaic Telecom", 
+                "extent": [
+                    -92.66194, 
+                    44.976089, 
+                    -90.787302, 
+                    46.003136
+                ], 
+                "id": 394, 
+                "serviceName": "Mosaic_Telecom_UMTS"
+            }, 
+            {
+                "companyName": "NE Colorado Cellular", 
+                "extent": [
+                    -106.789751, 
+                    36.863996, 
+                    -96.644156, 
+                    43.328435
+                ], 
+                "id": 395, 
+                "serviceName": "NE_Colorado_Cellular_UMTS"
+            }, 
+            {
+                "companyName": "Pace Communications", 
+                "extent": [
+                    -93.174479, 
+                    29.477214, 
+                    -91.419271, 
+                    30.375651
+                ], 
+                "id": 396, 
+                "serviceName": "Pace_Communications_UMTS"
+            }, 
+            {
+                "companyName": "TMobile", 
+                "extent": [
+                    -159.793313, 
+                    17.919843, 
+                    -65.299813, 
+                    49.010745
+                ], 
+                "id": 397, 
+                "serviceName": "TMobile_UMTS"
+            }, 
+			{
+                "companyName": "Union Cellular", 
+                "extent": [
+                    -111.69988266719616,
+					39.84756933998427,
+					-104.04148093493147,
+					44.69513825923852
+                ], 
+                "id": 398, 
+                "serviceName": "Union_Cellular_UMTS"
+            },
+            {
+                "companyName": "Windy City Cellular", 
+                "extent": [
+                    -176.915033, 
+                    51.703242, 
+                    -176.410812, 
+                    51.937731
+                ], 
+                "id": 399, 
+                "serviceName": "Windy_City_Cellular_UMTS"
+            }
+        ], 
+        "techType": "UMTS"
+    }, 
+    {
+        "property": [
+            {
+                "companyName": "Sprint Affiliates", 
+                "extent": [
+                    -158.25575, 
+                    20.615106, 
+                    -70.760746, 
+                    49.000066
+                ], 
+                "id": 400, 
+                "serviceName": "Sprint_Affiliates_WIMAX"
+            }
+        ], 
+        "techType": "WIMAX"
+    }
+]

@@ -1,0 +1,32 @@
+<div id="dlg-external" class="hidden" title="You are leaving the FCC Accessibility Clearinghouse">
+	<p>You are about to leave the FCC website and visit a third-party, non-governmental website that the FCC does not maintain or control.</p>
+	<p>Click the following link to proceed:</p>
+	<div id="dlg-external-link"><p class="center"><a id="extLink" href="#"></a></p></div>
+	<p>The FCC does not endorse any product or service, and is not responsible for, nor can it guarantee the validity or timeliness of the content on the page you are about to visit. Additionally, the privacy policies of this third-party page may differ from those of the FCC.</p>
+</div>
+<div id="dlg-emailPg" class="hidden" title="Email a link to this page">
+	<form id="frm-email" name="frm-email">
+		<fieldset>
+<h4>Email this page</h4>
+		<p><em>All fields are required.</em></p>
+		<ol>
+			<li><label for="senderName">Your Name:</label>
+				
+				<input class="required" type="text" id="senderName" name="senderName" size="40">
+			</li>
+			<li>
+				<label for="emailFrom">Your Email Address:</label>
+				
+				<input class="required email" type="email" id="emailFrom" name="emailFrom" size="40">
+			</li>
+			<li>
+				<label id="emailToID" for="emailTo">Send To:</label>				
+				<textarea class="required multiemail" id="emailTo" name="emailTo" cols="64" aria-labelledby="emailToID emailFormat"></textarea>
+				<p id="emailFormat"><em>(up to 10 comma seperated email addresses)</em></p>
+			</li>			
+		</ol>
+		<input type="submit" accesskey="s" value="Send" class="button btn-search">
+		<a class="button btn-dlg-close" href="#void">Cancel</a>
+</fieldset>
+	</form>
+</div>

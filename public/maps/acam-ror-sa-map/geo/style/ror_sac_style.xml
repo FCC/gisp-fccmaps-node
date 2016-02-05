@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" 
+xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+xmlns="http://www.opengis.net/sld" 
+xmlns:ogc="http://www.opengis.net/ogc" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+  <Name>ror_sac</Name>
+    <UserStyle>
+    <Title>ror_sac</Title>
+      <FeatureTypeStyle>
+        <Rule>        
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">
+                <ogc:Function name="Interpolate">
+                  <!-- Property to transform -->
+                  <ogc:PropertyName>color_id</ogc:PropertyName>
+                  
+                  <!-- Mapping curve definition pairs (input, output) -->
+                  <ogc:Literal>1</ogc:Literal>
+                  <ogc:Literal>#ff0000</ogc:Literal> 
+                  
+                  <ogc:Literal>2</ogc:Literal>
+                  <ogc:Literal>#ff0080</ogc:Literal>  
+                  
+                  <ogc:Literal>3</ogc:Literal>
+                  <ogc:Literal>#ff00ff</ogc:Literal>  
+                  
+                  <ogc:Literal>4</ogc:Literal>
+                  <ogc:Literal>#8000ff</ogc:Literal>  
+                  
+                  <ogc:Literal>5</ogc:Literal>
+                  <ogc:Literal>#0000ff</ogc:Literal>  
+                  
+                  <ogc:Literal>6</ogc:Literal>
+                  <ogc:Literal>#0080ff</ogc:Literal>  
+                  
+                  <ogc:Literal>7</ogc:Literal>
+                  <ogc:Literal>#00ffff</ogc:Literal>  
+
+                  <!-- Interpolation method -->
+                  <ogc:Literal>color</ogc:Literal>
+                  
+                  <!-- Interpolation mode - defaults to linear -->
+                  </ogc:Function>
+              </CssParameter>
+              <CssParameter name="fill-opacity">0.25</CssParameter> 
+            </Fill>
+           </PolygonSymbolizer>
+        </Rule>
+        <Rule>
+          <MaxScaleDenominator>6000000</MaxScaleDenominator>
+          <PolygonSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>
+            </Stroke>
+           </PolygonSymbolizer>
+        </Rule> 
+        <Rule>
+          <MinScaleDenominator>6000000</MinScaleDenominator>
+          <MaxScaleDenominator>12000000</MaxScaleDenominator>          
+          <PolygonSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+            </Stroke>
+           </PolygonSymbolizer>
+        </Rule>
+        <Rule>
+          <MinScaleDenominator>12000000</MinScaleDenominator>
+          <MaxScaleDenominator>50000000</MaxScaleDenominator>          
+          <PolygonSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">0.5</CssParameter>
+              <CssParameter name="stroke-opacity">0.3</CssParameter> 
+            </Stroke>
+           </PolygonSymbolizer>
+        </Rule> 
+        <Rule>
+          <MinScaleDenominator>50000000</MinScaleDenominator>
+          <PolygonSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#0000ff</CssParameter>
+              <CssParameter name="stroke-width">0.5</CssParameter>
+              <CssParameter name="stroke-opacity">0.1</CssParameter> 
+            </Stroke>
+           </PolygonSymbolizer>
+        </Rule> 
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>

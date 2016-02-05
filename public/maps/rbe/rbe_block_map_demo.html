@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://nelson:7028/rbe/ -->
+<html class="no-js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="FCC Rural Broadband Experiment">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rural Broadband Experiment « FCC</title>
+<link rel="shortcut icon" href="http://nelson:7028/rbe/img/fcc_favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="http://nelson:7028/rbe/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://nelson:7028/rbe/css/app-theme.css">
+<style type="text/css">
+html, body { width: 100%; height: 100%; padding: 0; margin: 0; }
+main { margin-top: 20px; }
+#map { height: 600px; top: 0; bottom: 0; border: solid 1px #000; max-width: 100%; width: 100%; }
+#type-switch { position: absolute; top: 70px; left: 10px; width: 100px; height: 170px; border-radius: 3px; border: solid 1px; background-color: #FFFFFF; padding: 5px; z-index: 999; }
+#hr-type { width: 85%; color: #999999; }
+#span_title { color: #000055; font-size: 45px; }
+.legend label,
+.legend span {
+  display:block;
+  float:left;
+  height:20px;
+  width:30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align:center;
+  font-size:9px;
+  color:#808080;
+  }
+
+.legend span {
+  border: solid 1px #000000;
+  }
+  #legend_title {
+  margin-left: 20px;
+  font-weight: bold;
+  }
+.bid_legend {
+    display:inline-block;
+    width: 30px;
+    height: 15px;
+    }
+
+</style>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="js/libs/selectivizr-min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<header>
+    <nav class="container" role="navigation">
+        <div class="row">
+            <div class="col-xs-10 col-sm-9"> <a href="http://www.fcc.gov/"><img class="logo" src="img/logo-fcc.png" alt="Go to the Federal Communications Commission homepage at www.fcc.gov" title="Go to the Federal Communications Commission homepage at www.fcc.gov"></a>
+                <h1>Rural Broadband Experiment</h1>
+            </div>
+            <div class="col-xs-2 col-sm-3"> <a class="pull-right" href="javascript: void(0);" data-toggle="modal" data-target="#modal-about"><span class="icon-help-2"></span><span class="sr-only">About/Help</span></a> </div>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <div class="row">
+        
+            <div class="col-md-10">
+                <form action="http://nelson:7028/">
+                    <div id="search-field" class="input-group" style="margin-bottom: 10px;">
+                        <input id="input-location" class="form-control" type="search" placeholder="Enter Location">
+                        <span class="input-group-btn">
+                        <button id="input-search" class="btn btn-primary" type="submit">Search</button>
+                        </span> </div>
+                </form>
+                <div class="map-container">
+                <button title="" data-placement="right" data-toggle="tooltip" id="btn-geoLocation" type="button" class="btn-geoLocation btn btn-default st" data-original-title="Get Current Location"><span class="icon-locate-1"></span><span class="sr-only">Get Current Location</span></button>
+                <button title="" data-placement="right" data-toggle="tooltip" id="btn-nationLocation" type="button" class="btn-nationLocation btn btn-default st" data-original-title="Nationwide"><span class="icon-nation-1"></span><span class="sr-only">Nationwide</span></button>
+                <div id="map" class="leaflet-container leaflet-fade-anim" tabindex="0" style="position: relative;"><div class="leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-tile-pane"><div class="leaflet-layer"><div class="leaflet-tile-container"></div><div class="leaflet-tile-container leaflet-zoom-animated"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565.png" style="height: 256px; width: 256px; left: 337px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566.png" style="height: 256px; width: 256px; left: 337px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(1).png" style="height: 256px; width: 256px; left: 81px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(2).png" style="height: 256px; width: 256px; left: 593px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(1).png" style="height: 256px; width: 256px; left: 81px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(2).png" style="height: 256px; width: 256px; left: 593px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567.png" style="height: 256px; width: 256px; left: 337px; top: 518px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564.png" style="height: 256px; width: 256px; left: 337px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(1).png" style="height: 256px; width: 256px; left: 81px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(2).png" style="height: 256px; width: 256px; left: 593px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(1).png" style="height: 256px; width: 256px; left: 81px; top: 518px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(2).png" style="height: 256px; width: 256px; left: 593px; top: 518px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(3).png" style="height: 256px; width: 256px; left: 849px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(3).png" style="height: 256px; width: 256px; left: 849px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(4).png" style="height: 256px; width: 256px; left: -175px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(4).png" style="height: 256px; width: 256px; left: -175px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(3).png" style="height: 256px; width: 256px; left: -175px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(4).png" style="height: 256px; width: 256px; left: 849px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(3).png" style="height: 256px; width: 256px; left: -175px; top: 518px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(4).png" style="height: 256px; width: 256px; left: 849px; top: 518px;"></div></div><div class="leaflet-layer" style="z-index: 1;"><div class="leaflet-tile-container"></div><div class="leaflet-tile-container leaflet-zoom-animated"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(5).png" style="height: 256px; width: 256px; left: 337px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(5).png" style="height: 256px; width: 256px; left: 337px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(6).png" style="height: 256px; width: 256px; left: 81px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(7).png" style="height: 256px; width: 256px; left: 593px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(6).png" style="height: 256px; width: 256px; left: 81px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(7).png" style="height: 256px; width: 256px; left: 593px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(5).png" style="height: 256px; width: 256px; left: 337px; top: 518px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(5).png" style="height: 256px; width: 256px; left: 337px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(6).png" style="height: 256px; width: 256px; left: 81px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(7).png" style="height: 256px; width: 256px; left: 593px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(6).png" style="height: 256px; width: 256px; left: 81px; top: 518px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(7).png" style="height: 256px; width: 256px; left: 593px; top: 518px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(8).png" style="height: 256px; width: 256px; left: 849px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(8).png" style="height: 256px; width: 256px; left: 849px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1565(9).png" style="height: 256px; width: 256px; left: -175px; top: 6px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1566(9).png" style="height: 256px; width: 256px; left: -175px; top: 262px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(8).png" style="height: 256px; width: 256px; left: -175px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1564(9).png" style="height: 256px; width: 256px; left: 849px; top: -250px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(8).png" style="height: 256px; width: 256px; left: -175px; top: 518px;"><img class="leaflet-tile leaflet-tile-loaded" src="./rbe_block_map_demo_files/1567(9).png" style="height: 256px; width: 256px; left: 849px; top: 518px;"></div></div></div><div class="leaflet-objects-pane"><div class="leaflet-shadow-pane"></div><div class="leaflet-overlay-pane"></div><div class="leaflet-marker-pane"></div><div class="leaflet-popup-pane"></div></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://nelson:7028/rbe/#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://nelson:7028/rbe/#" title="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-grid map-tooltip leaflet-control" style="display: none;"><a class="close" href="http://nelson:7028/rbe/#" title="close">close</a><div class="map-tooltip-content"></div></div><div class="leaflet-control-layers leaflet-control" aria-haspopup="true"><a class="leaflet-control-layers-toggle" href="http://nelson:7028/rbe/#" title="Layers"></a><form class="leaflet-control-layers-list"><div class="leaflet-control-layers-base"><label><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers" checked="checked"><span> Street</span></label><label><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers"><span> Satellite</span></label><label><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers"><span> Terrain</span></label></div><div class="leaflet-control-layers-separator"></div><div class="leaflet-control-layers-overlays"><label><input type="checkbox" class="leaflet-control-layers-selector"><span> Type 1</span></label><label><input type="checkbox" class="leaflet-control-layers-selector"><span> Type 2</span></label><label><input type="checkbox" class="leaflet-control-layers-selector"><span> Type 3</span></label><label><input type="checkbox" class="leaflet-control-layers-selector"><span> Tribal Land</span></label></div></form></div></div><div class="leaflet-bottom leaflet-left"><div class="leaflet-control-scale leaflet-control"><div class="leaflet-control-scale-line" style="width: 57px;">2 km</div><div class="leaflet-control-scale-line" style="width: 44px;">1 mi</div></div></div><div class="leaflet-bottom leaflet-right"><div class="map-legends wax-legends leaflet-control" style="display: none;"></div></div></div></div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default" style="margin-top: 45px;">
+                    <div class="panel-heading">Bid ID's</div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled" style="margin-top: 10px;">
+                            <li>
+                                <input type="checkbox" id="box_1" class="bid_box" value="1-111">
+                                <label for="box_1">1-111</label> <span class="bid_legend" style="background:#ff0000;"></span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="box_2" class="bid_box" value="1-112">
+                                <label for="box_2">1-112</label> <span class="bid_legend" style="background:#0000ff;"></span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="box_3" class="bid_box" value="3-122"> 
+                                <label for="box_3">3-122</label> <span class="bid_legend" style="background:#00ff00;"></span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="box_4" class="bid_box" value="4-1231">
+                                <label for="box_4">4-1231</label> <span class="bid_legend" style="background:#ff00ff;"></span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="box_5" class="bid_box" value="6-131">
+                                <label for="box_4">6-131</label> <span class="bid_legend" style="background:#ffff00;"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"> <em>*** Non-Public:  For Internal Use Only ***</em> </div>
+        </div>
+    </div>
+</footer>
+
+<div id='legend' style='display:none;'>
+  <span id='legend_title'>Block Type Legend</span>
+  <nav class='legend clearfix'>
+    <span style='background:#1FA8ED;'></span>
+    <span style='background:#13EB66;'></span>
+    <span style='background:#4637E6;'></span>
+    <span style='background:#ffffff; background-image:url("img/bg_triballand.png")'></span><br />
+    <label>Type 1</label>
+    <label>Type 2</label>
+    <label>Type 3</label>
+    <label>Tribal</label>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+<link href='http://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+
+
+<script type="text/javascript">
+
+        var map;
+        var type1;
+        var type2;
+        var type3;
+        var triballand;
+        var precipitation;
+        var baseMapLayer;
+        var streetMap;
+        var satelliteMap;
+        var numBids = 0;
+        var bidLayer = {};
+        var currentBidId = "";
+        var fillColor = {'1-111': '#ff0000', '1-112': '#0000ff', '3-122': '#00ff00', '4-1231': '#ff00ff', '6-131': '#ffff00'};
+
+        function createMap() {
+            L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
+            map = L.mapbox.map('map', 'nbm.i2op87g0', { attributionControl: false})
+                .setView([38, -95], 4);
+
+            L.control.scale().addTo(map);
+
+            geocoder = L.mapbox.geocoder('mapbox.places-v1');
+
+
+            var wms_type1 = L.tileLayer.wms('http://ldevtm-geo02:8080/geoserver/wms', {
+                format: 'image/png',
+                transparent: true,
+                layers: 'geo_swat:rbe_block_map_type1'
+            });
+
+            var wms_type2 = L.tileLayer.wms('http://ldevtm-geo02:8080/geoserver/wms', {
+                format: 'image/png',
+                transparent: true,
+                layers: 'geo_swat:rbe_block_map_type2'
+            });
+
+
+            var wms_type3 = L.tileLayer.wms('http://ldevtm-geo02:8080/geoserver/wms', {
+                format: 'image/png',
+                transparent: true,
+                layers: 'geo_swat:rbe_block_map_type3'
+            });
+
+
+            var wms_triballand = L.tileLayer.wms('http://ldevtm-geo02:8080/geoserver/wms', {
+                format: 'image/png',
+                transparent: true,
+                layers: 'geo_swat:rbe_block_map_triballand'
+            });
+
+            L.control.layers({
+                'Street': L.mapbox.tileLayer('computech.j86bnb99').addTo(map),
+                'Satellite': L.mapbox.tileLayer('computech.jh7ic2j0'),
+                'Terrain': L.mapbox.tileLayer('computech.jh7ih1gk')
+            }, {
+                'Type 1': wms_type1,
+                'Type 2': wms_type2,
+                'Type 3': wms_type3,
+                'Tribal Land': wms_triballand
+            }).addTo(map);
+
+            map.legendControl.addLegend(document.getElementById('legend').innerHTML);
+        }
+
+
+        function setListener() {
+
+
+            $("#input-search").on("click", function(e){
+                e.preventDefault();
+				locChange();
+            });
+
+            $("#box_1").on("click", function(){
+                action_checkbox('box_1');
+            });
+
+            $("#box_2").on("click", function(){
+                action_checkbox('box_2');
+            });
+
+            $("#box_3").on("click", function(){
+                action_checkbox('box_3');
+            });
+
+            $("#box_4").on("click", function(){
+                action_checkbox('box_4');
+            });
+
+            $("#box_5").on("click", function(){
+                action_checkbox('box_5');
+            });
+
+
+
+            $('#btn-geoLocation').click(function (event) {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        var geo_lat = position.coords.latitude;
+                        var geo_lon = position.coords.longitude;
+                        var geo_acc = position.coords.accuracy;
+
+                        map.setView([geo_lat, geo_lon], 12);
+
+                    }, function (error) {
+                        //alert('Error occurred. Error code: ' + error.code);    
+                        alert('Sorry, your current location could not be found. \nPlease use the search box to enter your location.');
+                    }, { timeout: 4000 });
+                }
+                else {
+                    alert('Sorry, your current location could not be found. \nPlease use the search box to enter your location.');
+                }
+
+                return false;
+            });
+
+            $("#btn-nationLocation").on("click", function(){
+                map.setView([38, -95], 4);
+            });
+
+
+        }
+
+        function action_checkbox(id) {
+            var bid_id = document.getElementById(id).value;
+            currentBidId = bid_id;
+
+            var isChecked = document.getElementById(id).checked;
+
+            if (isChecked) {
+                callAJAX(bid_id);
+            }
+            else {
+                map.removeLayer(bidLayer[currentBidId]);
+            }
+
+        }
+
+        function callAJAX(bid_id) {
+
+                var url0 = "http://ldevtm-geo02:8080/geoserver/geo_swat/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geo_swat:rbe_block_bid&maxFeatures=500&outputFormat=text/javascript&cql_filter=bid_id=" + "'" + bid_id + "'";
+
+                $.ajax({
+                  type: "GET",
+                  url: url0,
+                  dataType: "jsonp",
+
+                  success: function(data){
+                    //alert(data)
+                  }
+                });
+
+        }
+
+        function geocodeSearch() {
+            var keyword = $("#input-location").val();
+
+
+        }
+
+        function getBidInfo() {
+           var bid_box = $("input[class='bid_box']:checked");
+
+           alert(bid_box[0].prop('id'))
+        }
+
+
+
+        function locChange() {
+
+            var loc = $("#input-location").val();
+
+
+            geocoder.query(loc, codeMap);
+        }
+
+        function codeMap(err, data) {
+            //alert(JSON.stringify(data));
+
+            var lat = data.latlng[0];
+            var lon = data.latlng[1];
+
+            if (data.lbounds) {
+                map.fitBounds(data.lbounds);
+            }
+
+            else if (data.latlng) {
+                map.setView([lat, lon], 15);
+            }
+
+        }
+
+        function geoReverse(lat, lon) {
+
+            //alert('lat : ' + lat);
+            //alert('lon : ' + lon);
+
+            geocoder.reverseQuery([lon, lat], reverseMap);
+        }
+
+        function parseResponse (json) {
+
+            bidLayer[currentBidId] = L.mapbox.featureLayer(json).addTo(map);
+            bidLayer[currentBidId].setStyle({'color': fillColor[currentBidId], 'fillColor': fillColor[currentBidId]});
+            var bounds = bidLayer[currentBidId].getBounds();
+            map.fitBounds(bounds);
+        }
+
+
+        $(document).ready(function(){
+            createMap();
+            setListener();
+            //createWMSLayers();
+        });
+
+    </script>
+
+
+
+
+
+</body></html>

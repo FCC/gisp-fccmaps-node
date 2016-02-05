@@ -1,0 +1,5 @@
+  <link href='js/vendor/swagger/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='js/vendor/swagger/css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='js/vendor/swagger/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+  <link href='js/vendor/swagger/css/reset.css' media='print' rel='stylesheet' type='text/css'/>
+  <link href='js/vendor/swagger/css/print.css' media='print' rel='stylesheet' type='text/css'/>

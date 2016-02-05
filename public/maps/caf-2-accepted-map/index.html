@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+    __________________   __  ___                
+   / ____/ ____/ ____/  /  |/  /___ _____  _____
+  / /_  / /   / /      / /|_/ / __ `/ __ \/ ___/
+ / __/ / /___/ /___   / /  / / /_/ / /_/ (__  ) 
+/_/    \____/\____/  /_/  /_/\__,_/ .___/____/  
+                                 /_/            
+-->
+<html>
+<head>
+<meta charset=utf-8 />
+<title>CAF-2 Accepted Areas</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="map"></div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg';
+var map = L.mapbox.map('map', 'fcc.0j21k0bh', {
+	maxZoom: 12,
+	minZoom: 4, 
+    legendControl: {
+        position: 'bottomleft'
+    }
+}).setView([38.00, -98.00], 4);
+
+// top layer (always on)
+L.mapbox.tileLayer('fcc.0j21k0bh', {
+	maxZoom: 12,
+	minZoom: 4
+}).setZIndex(1000).addTo(map);
+
+// basemap layer controls
+L.control.layers({
+    'Street Map': L.mapbox.tileLayer('fcc.k74ed5ge').addTo(map),
+    'Satellite Map': L.mapbox.tileLayer('fcc.k74d7n0g'),
+    'Terrain Map': L.mapbox.tileLayer('fcc.k74cm3ol')
+	}, null, {position: 'topleft'}).addTo(map);
+
+</script>
+</body>
+</html>

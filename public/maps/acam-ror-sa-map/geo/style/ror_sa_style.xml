@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" 
+xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+xmlns="http://www.opengis.net/sld" 
+xmlns:ogc="http://www.opengis.net/ogc" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+  <Name>ror_sa</Name>
+    <UserStyle>
+    <Title>ror_sa</Title>
+      <FeatureTypeStyle>  
+        <Rule> 
+          <PolygonSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">0</CssParameter>
+              <CssParameter name="stroke-opacity">0.0</CssParameter>              
+            </Stroke>
+            <Fill>
+              <CssParameter name="fill">#818181</CssParameter>
+              <CssParameter name="fill-opacity">0.4</CssParameter>
+            </Fill>
+           </PolygonSymbolizer>
+        </Rule> 
+        <Rule>
+          <MaxScaleDenominator>10000000</MaxScaleDenominator>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>central_office</ogc:PropertyName>
+              <ogc:Literal>false</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <PolygonSymbolizer>
+            <Fill>
+               <GraphicFill>
+                 <Graphic>
+                   <Mark>
+                     <WellKnownName>shape://slash</WellKnownName>
+                     <Stroke>
+                       <CssParameter name="stroke">#ffffff</CssParameter>
+                       <CssParameter name="stroke-width">1</CssParameter>
+                       <CssParameter name="stroke-opacity">1.0</CssParameter> 
+                     </Stroke>
+                   </Mark>
+                   <Size>6</Size>
+                 </Graphic>
+               </GraphicFill>
+             </Fill>
+           </PolygonSymbolizer>
+        </Rule>
+        <Rule>
+          <MaxScaleDenominator>2000000</MaxScaleDenominator>
+          <TextSymbolizer>  
+             <Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>geom</ogc:PropertyName>
+              </ogc:Function>
+            </Geometry>
+            <Label>
+              <ogc:PropertyName>sac</ogc:PropertyName>
+              <ogc:PropertyName>sa</ogc:PropertyName>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Nimbus Sans L Regular</CssParameter>
+              <CssParameter name="font-size">16</CssParameter>
+              <CssParameter name="font-style">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>           
+            </Font>
+            <Fill>
+              <CssParameter name="fill">#3f3f3f</CssParameter>
+              <CssParameter name="fill-opacity">0.5</CssParameter>
+            </Fill>
+            <Halo>
+              <Radius>2</Radius>
+              <Fill>
+                <CssParameter name="fill">#FFFFFF</CssParameter>
+                <CssParameter name="fill-opacity">0.5</CssParameter>
+              </Fill>
+            </Halo>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+              </PointPlacement>           
+            </LabelPlacement>            
+            <VendorOption name="autoWrap">100</VendorOption>
+            <VendorOption name="maxDisplacement">100</VendorOption>
+            <VendorOption name="spaceAround">100</VendorOption>     
+            <VendorOption name="goodnessOfFit">0.2</VendorOption>  
+          </TextSymbolizer> 
+         <PolygonSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#ffffff</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>
+            </Stroke>
+           </PolygonSymbolizer>       
+        </Rule>
+        <Rule>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
+          <MaxScaleDenominator>10000000</MaxScaleDenominator>
+          <PolygonSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#ffffff</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+            </Stroke>
+           </PolygonSymbolizer>
+        </Rule>          
+        <Rule> 
+          <MinScaleDenominator>10000000</MinScaleDenominator>
+          <PolygonSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">0</CssParameter>
+              <CssParameter name="stroke-opacity">0.0</CssParameter>              
+            </Stroke>
+           </PolygonSymbolizer>
+        </Rule> 
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>

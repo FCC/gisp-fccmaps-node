@@ -1,0 +1,74 @@
+<div class="data">
+  <h5 class="tract">Selected Tract: <span id="stat-tract">---</span>    
+  </h5>
+  <small><span id="stat-cnty">---</span> County, <span id="stat-state">--</span></small>  
+  <table class="table table-bordered">
+    <caption>Price Cap Between</caption>
+    <thead>
+      <tr>
+        <th>Total Locations</th>
+        <th>Annual Support</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span id="stat-pclocbtwn">---</span></td>
+        <td>$ <span id="stat-pcannsup">---</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered">
+    <caption>Price Cap Above</caption>
+    <thead>
+      <tr>
+        <th>Total Locations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span id="stat-pclocabv">---</span></td>
+      </tr>
+    </tbody>
+  </table>  
+  <!--<dl class="dl-statTract dl-inline">
+    <dt>Price cap Between<sup>1</sup></dt>
+    <dd>&nbsp;total locations: </dd>
+    <dd>&nbsp;annual support: $ <span id="stat-pcannsup">---</span></dd>
+    <hr class="small">
+    <dt>Price cap Above</dt>
+    <dd>&nbsp;total locations: </dd>
+  </dl>-->
+  <div id="download-geo">	
+	The <a href="http://www.fcc.gov/encyclopedia/rural-broadband-experiments" target="_blank">Rural Broadband Experiments page</a> provides information and a list of Eligible Census Blocks.
+	<br/><br/>	
+	Geospatial data users can use the controls below to download a Shapefile, GeoJSON, KML or CSV for the selected County or Tract:
+	<br/>
+	<table id="download-table">
+		<tr>
+			<td>
+				County
+				<br/>
+				<select id="download-county">
+					<option value="">(Download)</option>
+					<option value="shape-zip">Shapefile</option>
+					<option value="json">GeoJSON</option>					
+					<option value="kml">KML</option>
+					<option value="csv">CSV</option>
+				</select>
+			</td>
+			<td>
+				Tract
+				<br/>
+				<select id="download-tract">
+					<option value="">(Download)</option>
+					<option value="shape-zip">Shapefile</option>
+					<option value="json">GeoJSON</option>					
+					<option value="kml">KML</option>
+					<option value="csv">CSV</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+  </div>
+  <hr class="small">
+</div>

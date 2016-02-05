@@ -1,0 +1,143 @@
+/*
+    __________________   __  ___                
+   / ____/ ____/ ____/  /  |/  /___ _____  _____
+  / /_  / /   / /      / /|_/ / __ `/ __ \/ ___/
+ / __/ / /___/ /___   / /  / / /_/ / /_/ (__  ) 
+/_/    \____/\____/  /_/  /_/\__,_/ .___/____/  
+                                 /_/            
+*/
+
+/* =============================================================================
+   Global
+   ========================================================================== */
+
+ /*
+@media (min-width: 1200px) {
+  .container { max-width: 900px; }
+}
+@media (min-width: 900px) {
+  .container { max-width: 900px; }
+}   
+*/
+.container { width: 930px; }
+      
+body { color: #333; font-family: Arial, Helvetica, sans-serif;}
+main { margin-top: 20px; }
+h1 {  }
+h2 {  }
+a, a:hover, a:focus { text-decoration: none; }    
+    
+/* =============================================================================
+   Header
+   ========================================================================== */
+header { background-color: #373b41; margin-bottom: 10px; }
+header a { margin-top: 15px; }
+.logo { float: left; margin: 15px 10px; }
+
+.map-title {font-size: 22px; margin: 8px 0 8px; font-weight: normal; }
+.map-subtitle {font-size: 18px; margin: 4px 0 4px; font-weight: normal; font-style: none; }
+
+.map-about {font-size: 20px;}
+.map-date {float: right; font-size: 12px; font-style: italic;}
+
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+footer { border-top: 1px solid #CCC; color: #333; margin-top: 20px; padding-bottom: 25px; padding-top: 25px }
+footer a, footer a:hover, footer a:focus { color: #456da5; }
+footer a { font-weight: bold; }
+footer a:hover { text-decoration: underline; }
+footer .bull { font-size: 16px; margin: 0 10px; }
+
+/* =============================================================================
+   Search
+   ========================================================================== */
+
+#search-field { margin-top: 15px; margin-bottom: 10px; }
+   
+.ui-autocomplete { z-index:9999999 !important;}  
+
+.search-bar, .search-btns { display: inline; }
+
+/* =============================================================================
+   Map
+   ========================================================================== */
+#map { height: 550px; top: 0; bottom: 0; max-width: 100%; width: 100%; }
+
+.leaflet-control-layers { top: -64px; left: 40px;}
+
+.leaflet-container a, .leaflet-container a:focus, .leaflet-container a:hover { color: #456DA5; }
+.map-container { position: relative; }
+
+.map-legend { bottom: 15px; left: 10px; position: absolute; z-index: 1001; width: 400px; }
+.map-legend-hd { border-top-left-radius: 3px; border-top-right-radius: 3px; font-size: 12px; font-weight: bold; padding: 5px 0 5px 5px; }
+.map-legend-hd .btn { background-color: transparent; font-size: 10px; }
+.map-legend-hd .icon-legends-2 { background-color: transparent; font-size: 10px; }
+.map-legend-hd .map-legend-name { font-size: 13px; font-weight: bold; }
+.map-legend-desc { font-size: 13px; font-style: italic; text-align: center; width: 100%; }
+.legend { background-color: rgba(255, 255, 255, 0.9); border: 1px solid #888888; border-radius: 3px; bottom: -5px; color: #333; width: 150px; }
+.dl-legend { margin: 10px; margin-bottom: 5px; }
+.dl-legend dt { float: left; margin-bottom: 5px; font-size: 13px; text-align: left; width: 20px; }
+.dl-legend dd { color: #000; font-size: 13px; margin-bottom: 5px; margin-left: 25px; position: relative; top: -2px; }
+
+.map-download-hd { border-top-left-radius: 3px; border-top-right-radius: 3px; font-size: 12px; font-weight: bold; padding: 5px 0 5px 5px; }
+.map-download-hd .btn { background-color: transparent; font-size: 10px; }
+.map-download-hd .icon-legends-2 { background-color: transparent; font-size: 10px; }
+.map-download-hd .map-download-name { font-size: 13px; font-weight: bold; }
+
+.download-menu { position: absolute; top: 80px; left: 10px; background-color: rgba(255, 255, 255, 0.9); border: solid 1px #888888; border-radius: 3px; padding: 5px; display: none; cursor: pointer; width: 260px; z-index: 1001 }
+.download-menu .btn { font-size: 10px;}
+
+.map-toolTip { background-color: #FFF; border: 1px solid #999999; border-radius: 2px; display: none; padding: 10px; position: absolute; right:10px; top: 10px; width: 270px; z-index: 999; }
+
+.btn-group { display: table-cell; }
+.btn-search { border-bottom-left-radius: 0; border-top-left-radius: 0; margin: 0 0px 0 -1px; }
+
+/*.btn-legend { border: 1px solid rgba(0, 0, 0, 0.4); border-radius: 3px; display: none; padding-bottom: 2px; padding-top: 4px; bottom: 15px; left: 10px; }*/
+.btn-legend { font-size: 16px; padding: 3px 5px 2px; bottom: 15px; }
+
+.btn-mapCtrl { border: 1px solid rgba(0, 0, 0, 0.4); border-radius: 3px; left: 10px; display: inline; padding: 5px 4px 2px; position: absolute; z-index: 9;}
+
+.btn-nationLocation { padding: 5px 12px 4px; }
+.btn-download { font-size: 16px; padding: 4px 5px 1px; top: 80px; margin: 3px 0 0 0;}
+.btn-baselayer-control { margin-right: 3px; width: 100px; height: 25px;	background-color: #FFFFFF; font-family: Arial; border-radius: 3px; color: #000000; cursor: pointer;	font-weight: normal; border: solid 1px #CCCCCC;	outline:none; }
+
+.btn-baselayer-control-selected { font-weight: bold; border: solid 2px #777777;	outline:none; }
+
+#search-field .btn-geoLocation { border-top-left-radius: 4px; border-bottom-left-radius: 4px; padding: 7px 12px 5px;}
+.search-group { display: table-row; }
+.search-input, .btn-group-loc { display: table-cell; }
+.search-input { width: 100%; }
+.search-input .input-group { width: 98%; }
+#search-field .btn-nationLocation { border-bottom-right-radius: 4px; border-top-right-radius: 4px;}
+
+.dropdown-menu { z-index: 1001; }
+
+/* =============================================================================
+   Icons
+   ========================================================================== */
+@font-face { font-family: 'icomoon'; src:url('../fonts/icomoon.eot?fzuetc'); src:url('fonts/icomoon.eot?#iefixfzuetc') format('embedded-opentype'), url('../fonts/icomoon.woff?fzuetc') format('woff'), url('../fonts/icomoon.ttf?fzuetc') format('truetype'), url('../fonts/icomoon.svg?fzuetc#icomoon') format('svg'); font-weight: normal; font-style: normal; }
+[class^="icon-"], [class*=" icon-"] { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.icon-search:before { content: "\e600"; }
+.icon-locate-1:before { content: "\e602"; }
+.icon-nation-1:before { content: url('../img/globe.png'); }
+.icon-download:before { content: "\e603"; top: 5px;}
+.icon-upload:before { content: "\e604"; }
+.icon-latency:before { content: "\e605"; }
+.icon-packet:before { content: "\e606"; }
+.icon-down-arrow:before { content: "\e607"; }
+.icon-check:before { content: "\e608"; }
+.icon-help-2:before { content: "\e609"; }
+.icon-help-1:before { content: "\e601"; }
+.icon-about-1:before { content: "\e602"; }
+.icon-hexagon-fill:before { content: "\e60a"; }
+.icon-hexagon-outline:before { content: "\e60b"; }
+.icon-legends-1:before { content: "\e60c"; }
+.icon-legends-2:before { content: "\e60d"; }
+.icon-map-layers-1:before { content: "\e60e"; }
+.icon-map-layers-2:before { content: "\e60f"; position: relative; top: 2px; }
+.glyphicon-ok { color: #85c12e; margin-left: -20px; margin-right: 5px; }
+.icon-hexagon-fill { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+
+.glyphicon-download {top: 1px;}

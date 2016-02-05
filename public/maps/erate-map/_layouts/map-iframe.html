@@ -1,0 +1,106 @@
+{% include header-iframe.html %}
+<div id="content-main" class="container">
+    <section>
+        <div class="map-box">
+            <div id="map"></div>
+            <div class="map-footer"> View Data By:
+                <ul class="list-layerSwitch list-unstyled list-inline">
+                    <li><a href="#schoolDist" id="schoolDist">School Districts</a></li>
+					<li><a href="#library" id="library">Libraries</a></li>
+                </ul>
+                <p class="help-block">Click/hover to display results.</p>
+            </div>
+        </div>
+    </section>
+    <div class="row map-stats hide" id="stats-schoolDist">
+        <section class="col-xs-6 col-sm-4">
+            <dl class="dl-stats">                
+                <!--<dt>State:</dt>
+                <dd><span id="stat-state">----</span></dd>-->
+                <dt>Geography Description</dt>
+                <dd><span id="stat-geoDesc">----</span></dd>
+                <!--
+                <dt>FIPS Code</dt>
+                <dd><span id="stat-geoID">----</span></dd>
+                -->
+                <dt>Total Students in School District</dt>
+                <dd><span id="stat-totStudents">----</span></dd>
+            </dl>
+        </section>
+        <section class="col-xs-6 col-sm-4">            
+            <dl class="dl-stats dl-inline">                
+                <dt>% of Schools with Fiber Access</dt>
+                <dd><span id="stat-pctFiberTrue">----</span></dd>
+                <dt>% of Schools without Fiber Access</dt>
+                <dd><span id="stat-pctFiberFalse">----</span></dd>
+                <dt>% of Schools not reporting Fiber Access</dt>
+                <dd><span id="stat-pctFiberNull">----</span></dd>
+            </dl>
+        </section>
+        <div class="col-xs-6 col-sm-4">
+            <table class="map-legend table">
+                <caption>
+                % of Schools with Fiber
+                </caption>
+                <tbody>
+                    <tr>
+                        <th>Mostly Connected (> 50% Fiber)</th>
+                        <td><span style="background-color: #aeba88"> </span></td>
+                    </tr>
+                    <tr>
+                        <th>Mostly Unconnected (< 50% Fiber)</th>
+                        <td><span style="background-color: #8da5c0"> </span></td>
+                    </tr>
+                    <tr>
+                        <th>Mostly Unknown (Not Enough Data)</th>
+                        <td><span style="background-color: #b1b1b1"> </span></td>
+                    </tr>
+                    <tr><td colspan="2"><p class="help-block">Updated: {{site.update}}</p></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	<div class="row map-stats hide" id="stats-library">
+        <section class="col-xs-6 col-sm-4">
+            <dl class="dl-stats"> 
+            	<dt>Library System</dt>
+                <dd><span id="stat-librarySystemName">----</span></dd>
+                <dt>Library Name</dt>
+                <dd><span id="stat-libraryName">----</span></dd>
+            </dl>
+        </section>
+        <section class="col-xs-6 col-sm-4">            
+            <dl class="dl-stats dl-inline">   
+                <dt>Total Annual System Visits</dt>
+                <dd><span id="stat-libraryPopulation">----</span></dd>
+                <dt>Library Type</dt>
+                <dd><span id="stat-libraryType">----</span></dd>
+            </dl>
+        </section>
+        <div class="col-xs-6 col-sm-4">
+            <table class="map-legend table">
+                <caption>
+                Libraries with Fiber
+                </caption>
+                <tbody>
+                    <tr>
+                        <th>Connected</th>
+                        <td><span style="background-color: #aeba88"> </span></td>
+                    </tr>
+                    <tr>
+                        <th>Unconnected</th>
+                        <td><span style="background-color: #8da5c0"> </span></td>
+                    </tr>
+                    <tr>
+                        <th>Unknown (No Data)</th>
+                        <td><span style="background-color: #b1b1b1"> </span></td>
+                        <tr><td colspan="2"><p class="help-block">Updated: {{site.update}}</p></td></tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	<div id="about"></div>
+    {{ content }} 
+</div>
+{% include footer-iframe.html %}

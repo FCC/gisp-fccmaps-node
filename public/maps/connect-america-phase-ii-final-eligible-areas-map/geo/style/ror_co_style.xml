@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" 
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+    xmlns="http://www.opengis.net/sld" 
+    xmlns:ogc="http://www.opengis.net/ogc" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+    <Name>ror_co</Name>
+    <UserStyle>   
+      <FeatureTypeStyle>
+          <Rule>
+            <MaxScaleDenominator>2000000</MaxScaleDenominator>
+            <PointSymbolizer>
+              <Graphic>
+                <Mark>
+                  <WellKnownName>circle</WellKnownName>
+                  <Fill>
+                    <CssParameter name="fill">#FFFFFF</CssParameter>
+                  </Fill>
+                  <Stroke>
+                    <CssParameter name="stroke">#000000</CssParameter>
+                  </Stroke>
+                </Mark>
+                <Size>14</Size>
+              </Graphic>
+            </PointSymbolizer>
+          </Rule>
+          <Rule>
+            <MinScaleDenominator>2000000</MinScaleDenominator>
+            <MaxScaleDenominator>5000000</MaxScaleDenominator>
+           <PointSymbolizer>
+              <Graphic>
+                <Mark>
+                  <WellKnownName>circle</WellKnownName>
+                  <Fill>
+                    <CssParameter name="fill">#FFFFFF</CssParameter>
+                  </Fill>
+                  <Stroke>
+                    <CssParameter name="stroke">#000000</CssParameter>
+                  </Stroke>
+                </Mark>
+                <Size>8</Size>
+              </Graphic>
+            </PointSymbolizer>
+          </Rule>          
+          <Rule> 
+            <MinScaleDenominator>5000000</MinScaleDenominator>           
+          </Rule> 
+        </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>

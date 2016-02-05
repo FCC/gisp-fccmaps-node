@@ -1,0 +1,123 @@
+
+/**
+ * style.css
+ * Mobility Auction
+ */
+
+#logo {
+	float: left;
+}
+
+#map {
+	float: left;
+	height: 600px;
+	margin-bottom:10px;
+	width: 100%;
+	
+
+}
+
+#map-sidebar {
+	background-color: #F2F2F2;
+	float: left;
+	height: 600px;
+	width: 35%;
+	position: relative;
+}
+
+#map-footer {
+	border-top: 1px solid #CCC;
+	clear: both;
+	padding: 10px;
+}
+
+.auctionList {
+	border: 1px solid #ccc;
+	height: 150px;
+	margin: 0 10px 15px;
+	overflow-y:scroll;
+	overflow-x: hidden;
+	padding: 10px;
+}
+
+#map-sidebar a:hover {
+	background-color: yellow;
+}
+
+#map-sidebar h3 {
+	margin: 10px 0 0 10px;
+	padding-left: 0;
+}
+
+#map-sidebar ul {
+	margin-left: 10px;
+}
+
+#map-sidebar li {
+	list-style-type: none;
+	margin-bottom: 3px;
+}
+
+#sidebar-footer {
+	bottom: 10px;
+	position: absolute;
+	width: 100%
+}
+
+#btn-resetMap {
+	margin: 50px 30px 0 10px;
+	border: 2px solid #CCC;
+	padding: 5px;
+}
+
+.legend {
+	border:1px solid #CCC;
+	float: left;
+	margin:0px;
+	margin: 0 30px 0 15px;
+	overflow: hidden;
+	padding: 10px;
+	
+	width: 150px;
+}
+
+.legend .title {
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 90%;
+}
+
+.legend .scale ul {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+
+.legend .scale ul li {
+	float: left;
+	font-size: 80%;
+	list-style: none;
+	margin: 0 10px 0 0;
+	line-height: 18px;
+	margin-bottom: 2px;
+}
+
+.legend ul.labels li span {
+	float: left;
+	height: 16px;
+	width: 30px;
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+.legend ul li span {
+	display: block;
+	margin-left: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}

@@ -1,0 +1,17 @@
+
+<div class="widget">
+				<h3 class="heading-dataSource section-heading">Data Source</h3>
+				<div id="dataFormats">
+					<ul class="nav" role="navigation">
+						<li><a target="_blank" href="#void" title="Link to this API" class="api"><span>API</span></a></li>
+						<li class="dropdown">							
+							<a class="dropdown-toggle xls" data-toggle="dropdown" href="#" title="Download data in Excel format"><span>Excel</span></a> <b class="caret"></b>
+							<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+								<li><a class="xlsData" href="#void">Download Data Currently Displayed</a></li>
+								<li><a class="xlsDataAll" href="#void">Download All Data</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="dataSourceInfo" class="widget-content"></div>
+			</div>
