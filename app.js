@@ -12,12 +12,12 @@ var morgan = require('morgan');
 var cors = require('cors');
 var bodyparser = require('body-parser');
 var package_json = require('./package.json');
+var maps = require('./controllers/maps.js');
 
 // **********************************************************
 // config
 
 var configEnv = require('./config/env.json');
-console.log('cwd" ' + process.cwd())
 
 var NODE_ENV = process.env.NODE_ENV || "NONE";
 var NODE_PORT =  process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
@@ -163,3 +163,7 @@ var server = app.listen(NODE_PORT, function () {
 });
 
 module.exports = app;
+
+maps.mapDeploy();
+
+
