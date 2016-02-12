@@ -29,10 +29,16 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "file-stream-rotator": "0.0.6",
+    "fs-extra": "^0.26.5",
+    "github": "^0.2.4",
+    "https": "^1.0.0",
     "js2xmlparser": "^1.0.0",
     "moment": "^2.10.6",
     "morgan": "^1.6.1",
+    "node-fs-extra": "^0.8.1",
+    "pg": "^4.4.4",
     "pg-query": "^0.11.0",
+    "unzip": "^0.1.11",
     "uuid": "^2.0.1"
   }
 }
