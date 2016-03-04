@@ -346,7 +346,7 @@ function processMap(m) {
 				fs.mkdirSync(dirPath);
 				copyFromTemplates(m, dirPath);
 				writeMapOptions(m, dirPath);
-				writeToTable(nid, vid);
+				//writeToTable(nid, vid);
 				checkGithubRepo(m);
 				
 			}
