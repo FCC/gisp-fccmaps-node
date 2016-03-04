@@ -439,6 +439,7 @@ function copyFromTemplates(m, dirPath) {
 		});
 }
 
+
 function writeMapOptions(m, dirPath) {
 	var filePath = dirPath + "/mapOptions.js";
 	var file = fs.createWriteStream(filePath);
