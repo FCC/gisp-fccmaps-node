@@ -25,6 +25,7 @@ var PG_DB = configEnv[NODE_ENV].PG_DB;
 var PG_SCHEMA = configEnv[NODE_ENV].PG_SCHEMA;
 var GEO_HOST = configEnv[NODE_ENV].GEO_HOST;
 var GEO_SPACE = configEnv[NODE_ENV].GEO_SPACE;
+var DRUPAL_API = configEnv[NODE_ENV].DRUPAL_API;
 
 console.log('NODE_ENV : '+ NODE_ENV );
 console.log('NODE_PORT : '+ NODE_PORT );
@@ -32,6 +33,7 @@ console.log('PG_DB : '+ PG_DB );
 console.log('PG_SCHEMA : '+ PG_SCHEMA );
 console.log('GEO_HOST : '+ GEO_HOST );
 console.log('GEO_SPACE : '+ GEO_SPACE );
+console.log('DRUPAL_API : '+ DRUPAL_API );
 
 // **********************************************************
 // console start
@@ -164,6 +166,6 @@ var server = app.listen(NODE_PORT, function () {
 
 module.exports = app;
 
-maps.mapDeploy();
+maps.mapDeploy2();
 
 
