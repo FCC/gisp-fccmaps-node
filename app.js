@@ -65,8 +65,6 @@ var accessLogStream = fsr.getStream({
 app.use(morgan('combined', {stream: accessLogStream}))
 
 
-// Default date added using file pattern 
-
 
 // **********************************************************
 // parser

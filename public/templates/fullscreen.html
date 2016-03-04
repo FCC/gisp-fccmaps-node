@@ -29,10 +29,10 @@
     <main class="container" style="width: 930px; margin: 0px">
 
         <div class="row" style="">
-            <div class="col-md-12" style="width: 820px;">
+            <div class="col-md-12" style="">
 				
 				<div id="search-field-holder">
-                <div id="search-field" class="input-group" style="width: 1500px">
+                <div id="search-field" class="input-group" >
                     <div class="search-group">
                         <div class="search-input">
                             <div class="input-group">
@@ -89,9 +89,9 @@
 		</div>
 		
 		
-		<div class="map-holder" id="map-holder" style="width: 1500px">
+		<div class="map-holder" id="map-holder" style="width: 1000px">
 		
-			<div id="map" style="width: 100%; height: 500px">
+			<div id="map" style="width: 5000px; height: 700px">
 			
 			<div id="div-legend-holder">
 
@@ -671,7 +671,7 @@
 			$('#search-field').css("width", map_info.mapwidth);
 			$('#map-holder').css("width", map_info.mapwidth);
 			//$('#map').css("width", map_info.mapwidth);
-			console.log("chnaged")
+			console.log("changed");
 		}
 		if (map_info.mapheight) {
 			$('#map-holder').css("height", map_info.mapheight);
@@ -686,7 +686,6 @@
 	function getMapInfo() {
 		map_info = mapOptions.fields.field_description.und[0].value;
 		console.log(map_info);
-		console.log(typeof(map_info));
 		
 		map_info = JSON.parse(map_info);
 		layers_info = map_info.layers;
