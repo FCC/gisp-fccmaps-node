@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+<title>GISP Admin</title>
+
+	
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+<script>
+	function getMapList() {
+		var url = "/getExistingMaps";
+		$.ajax(url, {
+			type: "GET",
+			url: url,
+			dataType: "json",
+			success: function(data){
+			console.log(data);
+				var urls = data.urls;
+				var titles = data.titles;
+				var vids = data.vids;
+				var create_tss = data.create_tss;
+				
+				var text = "<table border=1 cellspacing=0 cellpadding=3><tr><td>Map Title</td><td>Version</td><td>URL</td><td>Last Updated</td><tr>";
+				
+				for (var i = 0; i < urls.length; i++) {
+				
+				text += "<tr><td>" + titles[i] + "</td><td>" + vids[i] + "</td><td>" + urls[i] + "</td><td>" + create_tss[i] + "</td></tr>";
+				
+				
+				}
+				
+				text += "</table>";
+				
+				$('#map-list-display').html(text);
+
+			
+			}
+		});
+	
+	
+	}
+
+
+	function pullDrupal() {
+		var url = "/pullDrupal";
+		
+		$.ajax(url, {
+			type: "GET",
+			url: url,
+			dataType: "json",
+			success: function(data){
+				if (data.status == "ok") {
+					alert("Drupal API has been pulled");
+				}
+				else {
+					alert("error occured during API pull");
+				}
+			}
+		});
+	
+	}
+	
+
+	
+$(document).ready(function() {
+getMapList();
+
+$('#pull-drupal').on("click", function(e) {
+	pullDrupal();
+});
+
+$('#refresh-map-list').on("click", function(e) {
+	getMapList();
+
+});
+
+
+});
+
+</script>
+
+
+
+
+	
+</head>
+
+<body>
+
+<h3>
+<span id="pull-drupal" style="color: #0000ff; cursor: pointer">Pull Drupal API</span>
+</h3>
+
+<div id="map-list-display">
+</div>
+<span id="refresh-map-list" style="color: #0000ff; cursor: pointer">Refresh Map List</span>
+
+
+
+
+</body>
+
+</html>

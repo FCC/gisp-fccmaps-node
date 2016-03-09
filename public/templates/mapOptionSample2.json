@@ -1,7 +1,7 @@
 
 { 
-	"title": "NBM Speed",
-	"description": "This National Broadband Map speed layers.",
+	"title": "NBM Technology",
+	"description": "National Broadband Map technology layers.",
 	"mapcenter": {"latitude": "50","longitude":"-105"},
 	"mapzoom":{"initialzoom":"3", "maxzoom":"15","minzoom": "3"}, 
 	"basemap": ["street", "satellite", "terrain"],
@@ -12,17 +12,17 @@
 
 				{
 				"layertype": "mapbox",
-				"mapid": "fcc.a6335c39", 
-				"legendcolor": "#ffffcc",
-				"legendtext": "No residential services at 200 kbps or above",
+				"mapid": "fcc.976b85c3", 
+				"legendcolor": "#6e016b",
+				"legendtext": "No fixed providers at 25 Mbps/3 Mbps",
 				"checked": "yes" 
 				},
 				
 				{
 				"layertype": "mapbox",
-				"mapid": "fcc.0376ced1",
-				"legendcolor": "#c7e9b4", 
-				"legendtext": "Residential services of at least 200 kbps",
+				"mapid": "fcc.49bb0203",
+				"legendcolor": "#6e016b", 
+				"legendtext": "FTTP",
 				"checked": "yes" 
 				}, 
 				

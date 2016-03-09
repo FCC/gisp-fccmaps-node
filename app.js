@@ -108,6 +108,13 @@ app.get('/', function(req, res){
   res.sendfile('./public/index.html');
 });
 
+app.get('/getExistingMaps/', function(req, res){
+maps.getExistingMaps(req, res);
+});
+
+app.get('/pullDrupal/', function(req, res){
+maps.pullDrupal(req, res);
+});
 
 // **********************************************************
 // error
@@ -164,6 +171,6 @@ var server = app.listen(NODE_PORT, function () {
 
 module.exports = app;
 
-maps.mapDeploy2();
+maps.mapDeploy2("repeat");
 
 

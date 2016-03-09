@@ -256,7 +256,7 @@ function getDrupalData(repoName) {
 
 
 
-function mapDeploy2() {
+function mapDeploy2(type) {
 
 	try {
 	
@@ -297,18 +297,27 @@ function mapDeploy2() {
 			
 			});
 		});
-		setTimeout(function() {
-			mapDeploy2();
+		
+		if (type == "repeat") {
+			setTimeout(function() {
+				mapDeploy2("repeat");
 			}, deployInterval);
+			console.log((new Date()).toString() + " wait...");
+		}
+		else {
+			console.log("one time run to pull Drupal");
+		}
 
-		console.log((new Date()).toString() + " wait...");
+
 	}
 	catch (e) {
 		console.error('Exception in mapDeploy:'+e);
-		console.log('resumme mapDeploy loop');
-		setTimeout(function() {
-			mapDeploy2();
-		}, deployInterval);
+		if (type == "repeat") {
+			console.log('resumme mapDeploy loop');
+			setTimeout(function() {
+				mapDeploy2("repeat");
+			}, deployInterval);
+		}
 	}
 }
 
@@ -316,20 +325,30 @@ function mapDeploy2() {
 function processMap(m) {
 	var nid = m.nid;
 	var vid = m.vid;
-	var map_repository = "";
+	var title = m.title;
+	var map_repository_title = "";
+	var map_repository_url = "";
+	var map_page_url = "";
+	var map_page_title = "";
 	
-	if (m.fields.field_map_repository.und) {
-		map_repository = m.fields.field_map_repository.und[0].title;
+	if (m.fields.field_map_page_url.und) {
+		map_page_url = m.fields.field_map_page_url.und[0].url;
+		map_page_title = m.fields.field_map_page_url.und[0].title;
 	}
 	
-	console.log("nid=" + nid + " vid=" + vid + " map_repository=" + map_repository);
-	if (map_repository == "") {
-		console.log("no map repository name");
+	if (m.fields.field_map_repository.und) {
+		map_repository_title = m.fields.field_map_repository.und[0].title;
+		map_repository_url = m.fields.field_map_repository.und[0].url;
+	}
+	
+	console.log("nid=" + nid + " vid=" + vid + " map_repository_title=" + map_repository_title + " map_repository_url=" + map_repository_url + " map_page_url=" + map_page_url + " map_page_title=" + map_page_title);
+	if (map_page_url == "") {
+		console.log("no map page url");
 		return;
 	}
 	else {
 		//check if is new map/version
-		var dirPath = "./public/maps/" + map_repository;
+		var dirPath = "./public/" + map_page_url;
 		var q = "SELECT nid, vid FROM fcc.gisp_map_list WHERE nid = $1 ORDER BY create_ts DESC";
 		var vals = [nid];
 		pg_query(q, vals, function(pg_err, pg_rows, pg_res){
@@ -339,14 +358,14 @@ function processMap(m) {
 		else {
 			if (pg_rows.length == 0) {
 				//new map - create directory and write files
-				console.log("new map: " + map_repository);
+				console.log("new map: " + map_page_url);
 				if (fs.existsSync(dirPath)) {
 					fs.removeSync(dirPath);
 				}
 				fs.mkdirSync(dirPath);
 				copyFromTemplates(m, dirPath);
 				writeMapOptions(m, dirPath);
-				//writeToTable(nid, vid);
+				writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
 				checkGithubRepo(m);
 				
 			}
@@ -358,7 +377,7 @@ function processMap(m) {
 					//new version - write new json file to directory
 					console.log("new version")
 					writeMapOptions(m, dirPath);
-					//writeToTable(nid, vid);
+					writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
 				}
 				
 				checkGithubRepo(m);
@@ -427,7 +446,7 @@ function checkGithubRepo(m) {
 function copyFromTemplates(m, dirPath) {
 	console.log(m)
 	console.log(dirPath);
-	var templatePath = "./public/templates";
+	var templatePath = "./public/map_templates";
 	fs.copy(templatePath, dirPath, function (err) {
 		if (err) {
 			console.error(err);
@@ -449,10 +468,10 @@ function writeMapOptions(m, dirPath) {
 	console.log("updating mapOptions");
 }
 
-function writeToTable(nid, vid) {
-	var q = "INSERT INTO fcc.gisp_map_list (nid, vid, create_ts) \
-			VALUES ($1, $2, now())";
-	var vals = [nid, vid];
+function writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title) {
+	var q = "INSERT INTO fcc.gisp_map_list (nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title, create_ts) \
+			VALUES ($1, $2, $3, $4, $5, $6, $7, now())";
+	var vals = [nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title];
 	pg_query(q, vals, function(pg_err, pg_rows, pg_res){
 		if (pg_err){
 			console.error('error running pg_query', pg_err);
@@ -465,5 +484,59 @@ function writeToTable(nid, vid) {
 }
 
 
+function getExistingMaps(req, res) {
+	q = "SELECT nid, vid, title, map_page_url, create_ts FROM fcc.gisp_map_list ORDER BY create_ts desc, nid, vid";
+	vals = [];
+	pg_query(q, vals, function(pg_err, pg_rows, pg_res){
+		if (pg_err){
+			console.error('error running pg_query', pg_err);
+		}
+		else {
+			var urls = [];
+			var titles = [];
+			var vids = [];
+			var create_tss = [];
+			for (var i = 0; i < pg_rows.length; i++) {
+				var url = pg_rows[i].map_page_url;
+				var title = pg_rows[i].title;
+				var vid = pg_rows[i].vid;
+				var create_ts = pg_rows[i].create_ts;
+				if (url != "" && urls.indexOf(url)== -1) {
+					urls.push(url);
+					titles.push(title);
+					vids.push(vid);
+					create_tss.push(create_ts);
+				}
+			}
+			
+			console.log(urls)
+			res.send({"urls": urls, "titles": titles, "vids": vids, "create_tss": create_tss});
+		}
+	});
+	
+
+}
+
+function pullDrupal(req, res) {
+
+	try {
+	
+		console.log("Manual pull of Drupal API");
+		mapDeploy2("onetime");
+		res.send({"status": "ok"});
+		
+	}
+	catch (e) {
+		console.error('Exception in pullDrupal: ' + e);
+		res.send({"status": "error"});
+	}	
+}
+
+
+
+
+
 module.exports.mapDeploy = mapDeploy;
 module.exports.mapDeploy2 = mapDeploy2;
+module.exports.getExistingMaps = getExistingMaps;
+module.exports.pullDrupal = pullDrupal;
