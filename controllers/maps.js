@@ -341,9 +341,9 @@ function processMap(m) {
 		map_repository_url = m.fields.field_map_repository.und[0].url;
 	}
 	
-	console.log("nid=" + nid + " vid=" + vid + " map_repository_title=" + map_repository_title + " map_repository_url=" + map_repository_url + " map_page_url=" + map_page_url + " map_page_title=" + map_page_title);
+	//console.log("nid=" + nid + " vid=" + vid + " map_repository_title=" + map_repository_title + " map_repository_url=" + map_repository_url + " map_page_url=" + map_page_url + " map_page_title=" + map_page_title);
 	if (map_page_url == "") {
-		console.log("no map page url");
+		//console.log("no map page url");
 		return;
 	}
 	else {
@@ -363,6 +363,7 @@ function processMap(m) {
 					fs.removeSync(dirPath);
 				}
 				fs.mkdirSync(dirPath);
+				console.log("new dir created");
 				copyFromTemplates(m, dirPath);
 				writeMapOptions(m, dirPath);
 				writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
