@@ -1,0 +1,37 @@
+
+{ 
+	"title": "Tribal mobility fund phase I",
+	"description": "Tribal mobility fund phase I",
+	"mapcenter": {"latitude": "50","longitude":"-105"},
+	"mapzoom":{"initialzoom":"3", "maxzoom":"15","minzoom": "3"}, 
+	"basemap": ["street", "satellite", "terrain"],
+	"scalecontrol": "no", 
+	"search": "yes",
+	"attribution": "FCC Maps",
+	"layers": [ 
+
+				{
+				"layertype": "mapbox",
+				"mapid": "fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas", 
+				"legendcolor": "#000000",
+				"legendtext": "Tribal mobility fund phase I potentially eligible areas",
+				"checked": "yes" 
+				}, 
+				
+				{
+				"layertype": "geoserver", 
+				"geohost": "http://www.broadbandmap.gov", 
+				"geospace": "fcc",
+				"layername": "fcc:bpr_tribal",
+				"style": "bpr_tribal", 
+				"legendcolor": "#999999",
+				"legendbackgroundimage": "",
+				"legendtext": "Tribal land", 
+				"checked": "no" 
+				} 
+				
+			]
+			
+}
+
+			

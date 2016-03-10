@@ -326,6 +326,8 @@ function processMap(m) {
 	var nid = m.nid;
 	var vid = m.vid;
 	var title = m.title;
+	var subtitle = m.fields.field_subtitle.und[0].value;
+	var description = "This is description";
 	var map_repository_title = "";
 	var map_repository_url = "";
 	var map_page_url = "";
@@ -366,7 +368,7 @@ function processMap(m) {
 				console.log("new dir created");
 				copyFromTemplates(m, dirPath);
 				writeMapOptions(m, dirPath);
-				//writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
+				writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title);
 				checkGithubRepo(m);
 				
 			}
@@ -378,7 +380,7 @@ function processMap(m) {
 					//new version - write new json file to directory
 					console.log("new version")
 					writeMapOptions(m, dirPath);
-					//writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
+					writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title);
 				}
 				
 				checkGithubRepo(m);
@@ -469,10 +471,10 @@ function writeMapOptions(m, dirPath) {
 	console.log("updating mapOptions");
 }
 
-function writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title) {
-	var q = "INSERT INTO fcc.gisp_map_list (nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title, create_ts) \
-			VALUES ($1, $2, $3, $4, $5, $6, $7, now())";
-	var vals = [nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title];
+function writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title) {
+	var q = "INSERT INTO fcc.gisp_map_list (nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title, create_ts) \
+			VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, now())";
+	var vals = [nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title];
 	pg_query(q, vals, function(pg_err, pg_rows, pg_res){
 		if (pg_err){
 			console.error('error running pg_query', pg_err);
@@ -486,7 +488,7 @@ function writeToTable(nid, vid, title, map_page_url, map_page_title, map_reposit
 
 
 function getExistingMaps(req, res) {
-	q = "SELECT nid, vid, title, map_page_url, create_ts FROM fcc.gisp_map_list ORDER BY create_ts desc, nid, vid";
+	q = "SELECT nid, vid, title, subtitle, description, map_page_url, create_ts FROM fcc.gisp_map_list ORDER BY create_ts desc, nid, vid";
 	vals = [];
 	pg_query(q, vals, function(pg_err, pg_rows, pg_res){
 		if (pg_err){
@@ -495,23 +497,31 @@ function getExistingMaps(req, res) {
 		else {
 			var urls = [];
 			var titles = [];
+			var subtitles = [];
+			var descriptions = [];
 			var vids = [];
 			var create_tss = [];
+			console.log('rows=')
+			console.log(pg_rows)
 			for (var i = 0; i < pg_rows.length; i++) {
 				var url = pg_rows[i].map_page_url;
 				var title = pg_rows[i].title;
+				var subtitle = pg_rows[i].subtitle;
+				var description = pg_rows[i].description;
 				var vid = pg_rows[i].vid;
 				var create_ts = pg_rows[i].create_ts;
 				if (url != "" && urls.indexOf(url)== -1) {
 					urls.push(url);
 					titles.push(title);
+					subtitles.push(subtitle);
+					descriptions.push(description);
 					vids.push(vid);
 					create_tss.push(create_ts);
 				}
 			}
 			
 			console.log(urls)
-			res.send({"urls": urls, "titles": titles, "vids": vids, "create_tss": create_tss});
+			res.send({"urls": urls, "titles": titles, "subtitles": subtitles, "descriptions": description, "vids": vids, "create_tss": create_tss});
 		}
 	});
 	

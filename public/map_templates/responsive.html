@@ -90,11 +90,12 @@
 	
     L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
      map = L.mapbox.map('map', 'fcc.k74ed5ge', {
-             attributionControl: true,
+             attributionControl: false,
+			 zoomControl: false,
              maxZoom: maxzoom,
 			 minZoom: minzoom
          })
-         .setView([center_lat, center_lon], initialzoom);
+         .setView([39, -96], initialzoom);
 		 
 
 	var zindex1 = 10;
@@ -172,13 +173,13 @@
      }, {
 		position: 'topleft'
 	 }
-	 ).addTo(map);
+	 );
 		
 	
 	if (map_info.scalecontrol == "yes") {
 		 L.control.scale({
 			 position: 'bottomright'
-		 }).addTo(map);
+		 });
 	 }
 
 	}
