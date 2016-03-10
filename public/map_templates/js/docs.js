@@ -187,7 +187,7 @@
         sortBy: 'date',
         sortAscending: false
     });
-
+    
     $('#sel-sort').change(function() {
 
         var selectedVal = this.value;
@@ -211,7 +211,9 @@
             }
         };
 
-        $('.map-cards').isotope(sortOpts[selectedVal]);
+        $('.map-cards')	        
+	        .isotope(sortOpts[selectedVal])
+	        .isotope('updateSortData').isotope();
     });
 
     $('#sel-filter').change(function() {
@@ -239,7 +241,9 @@
             }
         };
 
-        $('.map-cards').isotope(filterOpts[selectedVal]);
+        $('.map-cards')	        
+	        .isotope(filterOpts[selectedVal])
+	        .isotope('updateSortData').isotope();
 
     });
 
