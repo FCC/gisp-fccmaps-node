@@ -366,7 +366,7 @@ function processMap(m) {
 				console.log("new dir created");
 				copyFromTemplates(m, dirPath);
 				writeMapOptions(m, dirPath);
-				writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
+				//writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
 				checkGithubRepo(m);
 				
 			}
@@ -378,7 +378,7 @@ function processMap(m) {
 					//new version - write new json file to directory
 					console.log("new version")
 					writeMapOptions(m, dirPath);
-					writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
+					//writeToTable(nid, vid, title, map_page_url, map_page_title, map_repository_url, map_repository_title);
 				}
 				
 				checkGithubRepo(m);
