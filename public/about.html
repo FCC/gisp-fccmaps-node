@@ -71,6 +71,9 @@
                                  If you have questions or comments, please email us at <a href="mailto:maps@fcc.gov">maps@fcc.gov</a>!
                             </div>
                         </div>
+						<div id="map-container" style="width: 275px; height: 150px">
+						
+						</div>
                     </div>
                 </div>
             </div>
@@ -147,7 +150,20 @@
     <script src="map_templates/js/vendor/vendor.js"></script>
     <script src="map_templates/js/vendor/plugins.js"></script>
     <script src="map_templates/js/docs.js"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
     <script>
+	
+	L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
+     map = L.mapbox.map('map-container', 'fcc.k74d7n0g', {
+             zoomControl: false,
+             maxZoom: 22,
+			 minZoom: 5
+         })
+         .setView([38.883494, -77.029021], 16);
+	
+	
+	
+	
     </script>
 </body>
 
