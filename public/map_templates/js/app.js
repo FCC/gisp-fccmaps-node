@@ -148,16 +148,16 @@ var map;
 		 var legend_text =	'<div id="div-legend" style="position: absolute; bottom: 10px; left: 10px; background-color: #FFFFFF; border: solid 1px #999999; z-index: 2; visibility: visible: none">' +
 				'<table style="margin: 5px">' +
 				'<tr><td colspan=3>' +
-                 '<span class="glyphicon glyphicon-th-list"></span> <span class="map-legend-name">Map Legend</span>' +
+                 '<span class="icon icon-bars"></span> <span class="map-legend-name">Map Legend</span>' +
 								'<button class="btn-closeLegend btn btn-xs pull-right">' +
-									'<span class="glyphicon glyphicon-remove"></span> <span class="sr-only">Hide legend</span>' +
+									'<span class="icon icon-close"></span> <span class="sr-only">Hide legend</span>' +
 								'</button>' +
 				'</td></tr>' +
 				legend_text1 +
 				'</table>' +
 			'</div>' +
 			'<div id="div-legend-icon"  style="position: absolute; bottom: 10px; left: 10px;z-index: 1; cursor: pointer;" title="Map Legend">' +
-			'<span class="glyphicon glyphicon-th-list"></span>' +
+			'<span class="icon icon-bars"></span>' +
 			'</div>';
 	 	 console.log(legend_text);
 		 $('#div-legend-holder').html(legend_text);
@@ -588,6 +588,11 @@ var map;
 	
 	function updateText() {
 
+		var json_obj = JSON.parse(mapOptions.fields.field_description.und[0].value);
+		var bureau = "NA"
+		if (json_obj.bureau) {
+			bureau = json_obj.bureau;
+		}
 		var title = mapOptions.title;
 		var subtitle = mapOptions.fields.field_subtitle.und[0].value;
 		var created = mapOptions.created;
@@ -598,6 +603,7 @@ var map;
 		$('#span-subtitle').html(subtitle);
 		$('#dd-published').html(created);
 		$('#dd-updated').html(changed);
+		$('#span-bureau').html(bureau);
 		
 		map_info = mapOptions.fields.field_description.und[0].value;
 		map_info = JSON.parse(map_info);
@@ -618,7 +624,7 @@ var map;
 				var map_list_text = "";
 				for (var i = 0; i < urls.length; i++) {
 					map_list_text += '<li><a href="/' + urls[i] + '" class=""> \
-					<iframe width="75" height="75" src="/' + urls[i] + '/responsive.html"></iframe> \
+					<iframe width="150" height="125" src="/' + urls[i] + '/responsive.html"></iframe> \
 					<p>' + titles[i] + '</p> \
 					</a></li>';
 				}

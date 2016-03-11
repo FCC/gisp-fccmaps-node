@@ -1,5 +1,6 @@
 
-{ 
+{
+	"bureau": "OSP",
 	"title": "NBM Speed",
 	"description": "This National Broadband Map speed layers.",
 	"mapcenter": {"latitude": "50","longitude":"-105"},

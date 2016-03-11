@@ -45,20 +45,22 @@
 				var create_tss = data.create_tss;
 				
 				var text = "";
+				var bureaus = ["OSP", "OSP", "OSP", "OET", "OET", "OET", "WCB", "WCB", "MB", "MB", "MB"];
+				var dates = ["03/06/2016", "03/06/2016", "03/07/2016", "03/07/2016", "03/07/2016", "03/11/2016","03/08/2016", "03/11/2016", "03/11/2016", "03/11/2016", "03/11/2016", "03/11/2016", "03/11/2016", "03/11/2016"];
 				for (var i = 0; i < urls.length; i++) {
 					var dum = create_tss[i].replace(/T.*$/, '').split('-');
 					var date_str = dum[1] + "/" + dum[2] + "/" + dum[0];
 				
 					var url = urls[i] + "/responsive.html";
-					text += '<li class="card bureau-wireline tag-data-maps-reports tag-maps"> \
+					text += '<li class="card bureau-' + bureaus[i] + ' tag-data-maps-reports tag-maps"> \
 							<div class="mapThumb-btns"> \
 								<a class="btn btn-xs btn-default" href="' + urls[i] + '"><span class="sr-only">View map</span> <span class="icon icon-external-link-square"></span></a> \
 							</div> \
 							<iframe src="' + url + '"></iframe> \
 							<p class="card__title text-overflow"><a href="' + urls[i] + '"><span >' + titles[i] + '</span></a></p> \
 							<div class="card__meta"> \
-								<div class="pull-left">Wireline Competition</div> \
-								<div class="pull-right data-date">' + date_str + '</div> \
+								<div class="pull-left">' + bureaus[i] + '</div> \
+								<div class="pull-right data-date">' + dates[i] + '</div> \
 							</div> \
 							<div class="card__body" style="display: none;"> \
 								<p class="card__subTitle text-overflow">' + subtitles[i] + '</p> \
@@ -78,7 +80,7 @@
 				
 				}
 				
-				//console.log($(text));
+				console.log(text);
 				var $items = $(text);
 				
 				$('.map-cards').append($items).isotope('appended', $items);
@@ -145,11 +147,11 @@
                     <label class="control-label" for="sel-filter">Bureau:</label>
                     <select id="sel-filter" class="form-control form-control-width-sm">
                         <option value="all">Show all</option>
-                        <option value="media">Media Bureau</option>
-                        <option value="wtb">Wireless Telecommunications</option>
-                        <!-- <option value="enforcement">Enforcement</option>
-                                    <option value="strategicPlan">Strategic Planning &amp; Policy Analyis</option> -->
-                        <option value="wireline">Wireline Competition</option>
+                        <option value="MB">Media Bureau</option>
+                        <option value="OSP">Office of Strategic Planning and Policy Analysis</option> -->
+						<option value="OET">Office Engineering and Technology</option> -->
+                        <option value="WCB">Wireline Competition</option>
+						<option value="WTB">Wireless Communication Bureau</option>
                     </select>
                     &nbsp;&nbsp;
                     <label class="control-label" for="sel-sort">Sort:</label>

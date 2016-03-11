@@ -1,7 +1,8 @@
 
-{ 
-	"title": "Section 706 Mobile Data Deployment Map",
-	"description": "Section 706 Mobile Data Deployment Map",
+{
+	"bureau": "WCB",
+	"title": "Section-706-Fixed-Broadband",
+	"description": "Section 706 Fixed Data Deployment Map",
 	"mapcenter": {"latitude": "50","longitude":"-105"},
 	"mapzoom":{"initialzoom":"3", "maxzoom":"15","minzoom": "3"}, 
 	"basemap": ["street", "satellite", "terrain"],
@@ -12,9 +13,9 @@
 
 				{
 				"layertype": "mapbox",
-				"mapid": "fcc.Section-706-Mobile-Data-Deployment-Map", 
-				"legendcolor": "#999999",
-				"legendtext": "Section 706 Mobile Data Deployment Map",
+				"mapid": "fcc.Section-706-Fixed-Broadband-Deployment-Map", 
+				"legendcolor": "#99ff00",
+				"legendtext": "Section 706 Fixed Data Deployment Map",
 				"checked": "yes" 
 				}, 
 				

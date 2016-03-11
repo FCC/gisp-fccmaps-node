@@ -1,22 +1,22 @@
 
 {
-	"bureau": "OET",
-	"title": "Tribal mobility fund phase I",
-	"description": "Tribal mobility fund phase I",
+	"bureau": "OSP",
+	"title": "CAF-2 Accepted Areas",
+	"description": "Connect America Fund Phase I",
 	"mapcenter": {"latitude": "50","longitude":"-105"},
 	"mapzoom":{"initialzoom":"3", "maxzoom":"15","minzoom": "3"}, 
 	"basemap": ["street", "satellite", "terrain"],
-	"scalecontrol": "no", 
+	"scalecontrol": "no",
 	"search": "yes",
 	"attribution": "FCC Maps",
 	"layers": [ 
 
 				{
 				"layertype": "mapbox",
-				"mapid": "fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas", 
-				"legendcolor": "#000000",
-				"legendtext": "Tribal mobility fund phase I potentially eligible areas",
-				"checked": "yes" 
+				"mapid": "fcc.0j21k0bh", 
+				"legendcolor": "#999900",
+				"legendtext": "CAF-2 Accepted Areas",
+				"checked": "yes"
 				}, 
 				
 				{

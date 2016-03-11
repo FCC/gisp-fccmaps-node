@@ -326,7 +326,10 @@ function processMap(m) {
 	var nid = m.nid;
 	var vid = m.vid;
 	var title = m.title;
-	var subtitle = m.fields.field_subtitle.und[0].value;
+	var subtitle = "";
+	if (m.fields.field_subtitle.und) {
+		var subtitle = m.fields.field_subtitle.und[0].value;
+	}
 	var description = "This is description";
 	var map_repository_title = "";
 	var map_repository_url = "";
@@ -368,7 +371,7 @@ function processMap(m) {
 				console.log("new dir created");
 				copyFromTemplates(m, dirPath);
 				writeMapOptions(m, dirPath);
-				//writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title);
+				writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title);
 				checkGithubRepo(m);
 				
 			}
@@ -380,7 +383,7 @@ function processMap(m) {
 					//new version - write new json file to directory
 					console.log("new version")
 					writeMapOptions(m, dirPath);
-					//writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title);
+					writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title);
 				}
 				
 				checkGithubRepo(m);

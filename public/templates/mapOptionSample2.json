@@ -1,5 +1,6 @@
 
-{ 
+{
+	"bureau": "OSP",
 	"title": "NBM Technology",
 	"description": "National Broadband Map technology layers.",
 	"mapcenter": {"latitude": "50","longitude":"-105"},

@@ -224,20 +224,20 @@
             all: {
                 filter: '*'
             },
-            media: {
-                filter: '.bureau-media'
+            MB: {
+                filter: '.bureau-MB'
             },
-            wireline: {
-                filter: '.bureau-wireline'
+            WCB: {
+                filter: '.bureau-WCB'
             },
-            wtb: {
-                filter: '.bureau-wtb'
+            WTB: {
+                filter: '.bureau-WTB'
             },
-            enforcement: {
-                filter: '.bureau-enforcement'
+            OSP: {
+                filter: '.bureau-OSP'
             },
-            strategicPlan: {
-                filter: '.bureau-strategicPlan'
+            OET: {
+                filter: '.bureau-OET'
             }
         };
 

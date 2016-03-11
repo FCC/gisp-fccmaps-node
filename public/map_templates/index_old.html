@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Maps | FCC GISP Design Standards</title>
+    <title>Map</title>
     	<link rel="shortcut icon" href="https://www.fcc.gov/sites/all/themes/fcc/favicon.ico" type="image/vnd.microsoft.icon" />
 
 	<meta name="MobileOptimized" content="width">
@@ -14,7 +14,7 @@
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" rel="stylesheet" />
 	<link href="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.css" rel="stylesheet" />
 	<link href="css/gisp-theme.min.css" rel="stylesheet" />
-
+	
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 	<link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
 	<script src="js/app.js"></script>
 	<script src="mapOptions.js"></script>
-	
+
 	<style>
 	#map-container {
 	    height: 400px;
@@ -37,8 +37,7 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 <header class="navbar navbar-primary site-header">
-    <div class="container">
-        <div class="jumpLinks"> <a href="#skiptarget1" class="sr-only focusable">Skip to main content</a> <a href="#skiptarget3" class="sr-only focusable">Skip to footer and contact information</a> </div>
+    <div class="container"><div class="jumpLinks"> <a href="#skiptarget1" class="sr-only focusable">Skip to main content</a> <a href="#skiptarget3" class="sr-only focusable">Skip to footer and contact information</a> </div>
         <nav role="navigation">
             <div class="navbar-header">
                 <h1 class="navbar-brand">
@@ -54,12 +53,10 @@
                         <strong class="title-emphasis">Maps</strong>
                     </a>
                 </li>
+				
             </ul>
-            <div class="pull-right"><a class="navbar-about" href="about.html">About <span class="icon icon-info-circle"></span></a>
-                <button type="button" class="nav-collapse btn btn-link" aria-controls="browse-by-category"><i class="icon icon-bars"></i></button>
-            </div>
-        </nav>
-    </div>
+            <button type="button" class="nav-collapse btn btn-link" aria-controls="browse-by-category"><i class="icon icon-bars"></i></button>
+        </nav></div>
 </header>
 
     <main class="container">
@@ -69,8 +66,10 @@
                     <div class="col-grid">
                         <section class="docs-content">
                             <div class="pg-header">
-                                <h1><span id="span-title">Title</span> <small><span id="span-subtitle">Subtitle</span></small></h1>
+                                <h1><span id="span-title">Title </span><small><span id="span-subtitle">Subtitle</span></small></h1>
                             </div>
+							
+							
 							
 							<div id="search-field-holder">
                             <div class="search-field input-group">
@@ -80,7 +79,7 @@
                                             <div class="input-group-btn">
                                                 <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span id="btn-label">Address</span> <span class="caret"></span></button>
                                                 <ul id="input-search-switch" role="menu" class="dropdown-menu">
-                                                    <li><a href="#" data-value="loc">Street</a></li>
+                                                    <li><a href="#" data-value="loc">Address</a></li>
                                                     <li><a href="#" data-value="latlon-decimal">Coordinates</a></li>
                                                 </ul>
                                             </div>
@@ -101,10 +100,10 @@
                                                 </table>
                                             </div>
                                             <span class="input-group-btn" id="span-location-search" style="display: table-cell">                        
-                                    <button class="btn__search btn btn-default" type="submit" id="input-loc-search" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Location Search</span></button>
+												<button class="btn-search btn btn-default" type="submit" id="input-loc-search" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Location Search</span></button>
                                             </span>
                                             <span class="input-group-btn" id="span-latlon-decimal-search" style="display: none">                        
-                                    <button class="btn-search btn btn-default" id="input-latlon-decimal-search" title="Decimal Latlon Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Decimal Lat/Lon Search</span></button>
+												<button class="btn-search btn btn-default" id="input-latlon-decimal-search" title="Decimal Latlon Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Decimal Lat/Lon Search</span></button>
                                             </span>
                                         </div>
                                     </div>
@@ -119,49 +118,68 @@
                             </div>
 							</div>
 							
+							
                             <div id="map-container">
 								<div id="div-legend-holder">
 								</div>
 							</div>
-                            <div class="map-pubMeta row">
-                                <dl class="dl-inline">
-                                        <dt>Bureau:</dt>
-                                        <dd><span id="span-bureau">Bureau</span></dd>                                        
-                                    </dl>
+                            
+                            <div class="docs-pub-meta row">
+                                <div class="col-sm-6">
                                     <dl class="dl-inline">
+                                        <dt>Created by:</dt>
+                                        <dd>John Cartographer, Wireline Competition</dd>
+                                        
+                                        <!-- <dt>Last updated:</dt>
+                                    <dd>03/07/16</dd> -->
+                                    </dl>
+                                </div>
+                                <div class="col-sm-6">
+                                    <dl class="dl-inline pull-right">
+                                        <dt>Published:</dt>
+                                        <dd id="dd-published"></dd>
                                         <dt>Updated:</dt>
                                         <dd id="dd-updated"></dd>
-                                    </dl>                               
+                                    </dl>
+                                    <!-- <div class="pull-right">
+                                    <button class="btn btn-default btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: -10px;"><span class="icon icon-list" style="color: #2C75D6; font-size: 14px;"></span> Related <!-- <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Data, Maps, Reports</a></li>
+                                        <li><a href="#">Maps</a></li>
+                                        <li><a href="#">Universal Service</a></li>
+                                        <li><a href="#">Connect America Fund (High Cost) - Rate of Return Carriers</a></li>
+                                        <li><a href="#">Connect America Fund (High Cost)</a></li>
+                                    </ul>
+                                </div> -->
+                                </div>
                             </div>
                             <p>
 							<span id="span-description">
-							Description:
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</span>
 							</p>
                             <br>
-                            <div class="tag-list-inline">
-                                <span class="h6">Tags</span>
-                            <ul id="ul-tag-list" class="list-unstyled">
-                                <li class="tag"><a href="#">Data</a></li>
-                                <li class="tag"><a href="#">Maps</a></li>
-                                <li class="tag"><a href="#">Universal Service</a></i></li>
-                                <li class="tag"><a href="#">Connect America Fund (High Cost) - Rate of Return Carriers</a></i></li>
-                                <li class="tag"><a href="#">Connect America Fund (High Cost)</a></li>
-                            </ul>
-                            </div>
-                            
+                    <span>Tags</span>
+                    <ul class="list-unstyled">
+                        <li class="tag"><a href="#">Data, Maps, Reports</a></li>
+                        <li class="tag"><a href="#">Maps</a></li>
+                        <li class="tag"><a href="#">Universal Service</a></i>
+                        </li>
+                        <li class="tag"><a href="#">Connect America Fund (High Cost) - Rate of Return Carriers</a></i>
+                        </li>
+                        <li class="tag"><a href="#">Connect America Fund (High Cost)</a></i>
+                        </li>
+                    </ul>
                         </section>
                     </div>
-                    <div class="maps-sidebar col-grid">                        
-                        <nav class="docs-sidebar">
-    <div class="btn-group-vertical" role="group" aria-label="...">
-    <button class="btn-scrollUp btn btn-default btn-sm btn-block">
-        <span class="icon icon-angle-up"></span>
+                    <div class="col-grid">
+                        
+                            <nav class="docs-sidebar">
+    
+<button class="btn-scrollUp btn btn-default btn-sm btn-block">
+        <span class="icon icon-arrow-up"></span>
     </button>
-    <button class="btn-scrollDown btn btn-default btn-sm btn-block">
-        <span class="icon icon-angle-down"></span>
-    </button>
-    </div>
+    
     <ul id = "ul-map-list" class="nav nav-stacked">
         <li>
             <a href="#" class="thumbnail">
@@ -230,8 +248,12 @@
             </a>
         </li>
     </ul>
+    <button class="btn-scrollDown btn btn-default btn-sm btn-block">
+        <span class="icon icon-arrow-down"></span>
+    </button>
 </nav>
 
+                        
                     </div>
                 </div>
                 
@@ -305,10 +327,11 @@
             </div>
         </div>
     </main>
-    <script src="js/vendor/vendor.js"></script>
-	<script src="js/vendor/plugins.js"></script>
-	<script src="js/docs.js"></script>
-	<script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
+
+<script src="js/vendor/plugins.js"></script>
+<script src="js/docs.js"></script>
+<script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
+
 
 
 </body>
