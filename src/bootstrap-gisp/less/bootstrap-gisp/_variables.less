@@ -1,0 +1,54 @@
+@import "@{bootstrap-path}/less/variables.less";
+
+// Bootstrap variable overrides
+//
+// To reduce the number of actual rule overrides, bootstrap variables are utilized as much as possible.
+
+// actual brand colors
+@brand-primary: #2c75d6;
+@brand-success: #008139;
+@brand-danger: #AC2B37;
+@brand-warning: #f3d54e;
+@brand-info: #1596D1;
+
+@font-family-sans-serif:            "Open Sans", Helvetica, Arial, sans-serif;
+@headings-font-family:              "Open Sans", Helvetica, Arial, sans-serif;
+
+
+@btn-default-color:                 @text-color;
+@btn-warning-color: 				@text-color;
+
+@state-success-text:                @brand-success;
+@state-success-bg:                  mix(#88A620, #fff, 15%);
+@state-success-border:              mix(@state-success-bg, #000, 90%);
+
+@state-info-text:                   @brand-info;
+@state-info-bg:                     mix(@brand-info, #fff, 10%);
+@state-info-border:                 mix(@state-info-bg, #000, 90%);
+
+@state-warning-text:                #F2A900;
+@state-warning-bg:                  mix(@brand-warning, #fff, 20%);
+@state-warning-border:              mix(@state-warning-bg, #000, 90%);
+
+@state-danger-text:                 @brand-danger;
+@state-danger-bg:                   mix(@brand-danger, #fff, 15%);
+@state-danger-border:               mix(@state-danger-bg, #000, 90%);
+
+@alert-padding:                     6px;
+@alert-warning-text:                #ce8f22;
+
+@alert-success-text:                @text-color;
+@alert-success-bg:                  @state-success-bg;
+@alert-success-border:              @state-success-border;
+
+@alert-info-text:                   @text-color;
+@alert-info-bg:                     @state-info-bg;
+@alert-info-border:                 @state-info-border;
+
+@alert-warning-text:                @text-color;
+@alert-warning-bg:                  @state-warning-bg;
+@alert-warning-border:              @state-warning-border;
+
+@alert-danger-text:                 @text-color;
+@alert-danger-bg:                   @state-danger-bg;
+@alert-danger-border:               @state-danger-border;
