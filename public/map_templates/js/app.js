@@ -145,10 +145,10 @@ var map;
 
 		 }
 		 
-		 var legend_text =	'<div id="div-legend" style="position: absolute; bottom: 10px; left: 10px; background-color: #FFFFFF; border: solid 1px #999999; z-index: 2; visibility: visible: none">' +
-				'<table style="margin: 5px">' +
+		 var legend_text =	'<div id="div-legend" class="map-legend">' +
+				'<table>' +
 				'<tr><td colspan=3>' +
-                 '<span class="icon icon-bars"></span> <span class="map-legend-name">Map Legend</span>' +
+                 '<span class="icon icon-list"></span> <span class="map-legend-name">Map Legend</span>' +
 								'<button class="btn-closeLegend btn btn-xs pull-right">' +
 									'<span class="icon icon-close"></span> <span class="sr-only">Hide legend</span>' +
 								'</button>' +
@@ -156,8 +156,8 @@ var map;
 				legend_text1 +
 				'</table>' +
 			'</div>' +
-			'<div id="div-legend-icon"  style="position: absolute; bottom: 10px; left: 10px;z-index: 1; cursor: pointer;" title="Map Legend">' +
-			'<span class="icon icon-bars"></span>' +
+			'<div id="div-legend-icon" class="legend__icon" title="Map Legend">' +
+			'<span class="icon icon-list"></span>' +
 			'</div>';
 	 	 console.log(legend_text);
 		 $('#div-legend-holder').html(legend_text);
@@ -400,15 +400,14 @@ var map;
 			}
 		});
 		
+		// hide legend		
 		$('.btn-closeLegend').on("click", function(e) {
-			$//hide legend
-			$('#div-legend').css("visibility", "hidden");
+			$('#div-legend').hide('fast');
 		});
 		
-		$('#div-legend-icon').on("click", function(e) {
-		$//show legend
-		$('#div-legend').css("visibility", "visible");
-		
+		// show legend
+		$('#div-legend-icon').on("click", function(e) {	
+			$('#div-legend').show('fast');		
 		});
 		
 		
