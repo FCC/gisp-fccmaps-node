@@ -1,0 +1,70 @@
+/* html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    overflow-y: auto;
+    // background-color: @pl-background-color;
+}
+
+ */
+
+.row-grid {
+    display: table;
+    width: 100%;
+}
+
+.col-grid {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.pg-header {
+    margin-bottom: 30px;
+    h1 {
+        margin-bottom: 10px;
+        small {
+            display: block;
+            margin-top: 5px;
+            font-size: 18px;
+        }
+    }
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dl-inline {
+    dt,
+    dd {
+        display: inline-block;
+    }
+    dd + dt {
+        margin-left: 10px;
+    }
+}
+
+.docs-collapsed-nav {
+    .docs-sidebar {
+        display: none;
+    }
+    .docs-content {
+        margin-right: 0;
+    }
+}
+
+.docs-content {
+    margin-right: 40px;
+     @media screen and (max-width: @screen-md-min) {
+      margin-right: 0;
+    } 
+}
+
+.panel-contactUs {
+     width: 275px;
+}
