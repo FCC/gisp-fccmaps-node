@@ -1,32 +1,30 @@
 (function(window, document, $) {
     'use strict';
 
-    var filters = '',
-        bureauFilters = '',
-        tagFilters = '';
-
-    $('.map-cards').isotope({
-        masonry: {
-            columnWidth: 265,
-            gutter: 25
+    var mapGallery = {
+        filters: {
+            bureau: '*',
+            tag: ''
         },
-        getSortData: {
-            // date: '.data-date',
-            date: function(itemElem) {
-                return Date.parse($(itemElem).find('.data-date').text());
-            },
-            cardTitle: '.card__title'
+        filterOpts: {
+            all: '*',
+
+            MB: '.bureau-MB',
+
+            WCB: '.bureau-WCB',
+
+            WTB: '.bureau-WTB',
+
+            OSP: '.bureau-OSP',
+
+            OET: '.bureau-OET'
+
         },
-        itemSelector: '.card',
-        sortBy: 'date',
-        sortAscending: false
-    });
-
-    $('#sel-sort').change(function() {
-
-        var selectedVal = this.value;
-
-        var sortOpts = {
+        sortList: {
+            sortBy: 'date',
+            sortAscending: false
+        },
+        sortOpts: {
             dateAsc: {
                 sortBy: 'date',
                 sortAscending: true
@@ -43,50 +41,43 @@
                 sortBy: 'cardTitle',
                 sortAscending: false
             }
-        };
+        },
+        selectedTags: [],
+        isIsotopeInit: false,
 
-        $('.map-cards')
-            .isotope(sortOpts[selectedVal])
-            .isotope('updateSortData').isotope();
-    });
+        init: function() {
+            mapGallery.initGrid();
 
-    $('#sel-filter').change(function() {
+            $('.map-cards')
+                .on('click', '.btn-details', mapGallery.showCardDetails)
+                .on('click', '.tag a', mapGallery.addTag);
 
-        var selectedVal = this.value;
+            $('#sel-filter').on('change', mapGallery.filterByBureau);
+            $('#sel-sort').on('change', mapGallery.sorting);
 
-        var filterOpts = {
-            all: {
-                filter: '*'
-            },
-            MB: {
-                filter: '.bureau-MB'
-            },
-            WCB: {
-                filter: '.bureau-WCB'
-            },
-            WTB: {
-                filter: '.bureau-WTB'
-            },
-            OSP: {
-                filter: '.bureau-OSP'
-            },
-            OET: {
-                filter: '.bureau-OET'
-            }
-        };
+            $('.tag-list-inline').on('click', '.link-removeTag', mapGallery.removeTag);
+        },
 
-        bureauFilters = filterOpts[selectedVal].filter;
-        filters = '';
-        filters = tagFilters + bureauFilters;
+        initGrid: function() {
+            $('.map-cards').isotope({
+                masonry: {
+                    columnWidth: 265,
+                    gutter: 25
+                },
+                getSortData: {
+                    // date: '.data-date',
+                    date: function(itemElem) {
+                        return Date.parse($(itemElem).find('.data-date').text());
+                    },
+                    cardTitle: '.card__title'
+                },
+                itemSelector: '.card',
+                sortBy: mapGallery.sortList.sortBy,
+                sortAscending: mapGallery.sortList.sortAscending
+            });
+        },
 
-        $('.map-cards')
-            .isotope({ filter: filters })
-            .isotope('updateSortData').isotope();
-
-    });
-
-    $('.map-cards')
-        .on('click', '.btn-details', function(e) {
+        showCardDetails: function(e) {
             var thisBtn = $(this),
                 thisCard = thisBtn.closest('.card').find('.card__body'),
                 thisCardBody = thisBtn.closest('.card').find('.card__body');
@@ -107,72 +98,141 @@
                     $('.map-cards').isotope('layout');
                 });
             }
-        });
+        },
 
-    var tagFilter = {
-        selectedTags: [],
-        init: function() {
-            $('.map-cards').on('click', '.tag a', this.addTag);
+        sorting: function() {
+            var selectedVal = this.value;           
 
-            $('.tag-list-inline').on('click', '.link-removeTag', this.removeTag);
-        },        
+            mapGallery.sortList.sortBy = mapGallery.sortOpts[selectedVal].sortBy;
+            mapGallery.sortList.sortAscending = mapGallery.sortOpts[selectedVal].sortAscending;
+
+            mapGallery.locationHash();
+
+        },
+
+        filterByBureau: function() {
+            var selectedVal = this.value;
+
+            mapGallery.filters.bureau = mapGallery.filterOpts[selectedVal];            
+            mapGallery.filter();
+        },
+
         removeTag: function(e) {
             var $tagLink = $(this),
                 $tag = $tagLink.parent('span').attr('data-tag');
 
-            var index = tagFilter.selectedTags.indexOf($tag);
+            var index = mapGallery.selectedTags.indexOf($tag);
+
             e.preventDefault();
 
-            tagFilter.selectedTags.splice(index, 1);
+            mapGallery.selectedTags.splice(index, 1);
+
             $tagLink.closest('.tag').remove();
-            tagFilter.filterByTags(); 
+
+            mapGallery.filterByTags();
         },
+
         addTag: function(e) {
             e.preventDefault();
 
             var $tagLink = $(this),
                 $tag = $tagLink.attr('data-tag'),
                 $tagText = $tagLink.text(),
-                newTag = $tagLink.parent('li').clone();          
+                newTag = $tagLink.parent('li').clone();
 
-            if (tagFilter.selectedTags.indexOf($tag) < 0) {
+            if (mapGallery.selectedTags.indexOf($tag) < 0) {
 
-                tagFilter.selectedTags.push($tag);
-                
+                mapGallery.selectedTags.push($tag);            
+
                 newTag.find('a').replaceWith('<span data-tag="' + $tag + '">' + $tagText + '<a class="link-removeTag" href="#void"><span class="icon icon-remove"></span></span></a>');
 
-                if(!$('.tag-list-inline').is(':visible')) {
+                if (!$('.tag-list-inline').is(':visible')) {
                     $('.tag-list-inline').removeClass('hide');
-                }                
-                
-                $('.tag-list-inline').find('ul').append(newTag);  
+                }
 
-                tagFilter.filterByTags();              
+                $('.tag-list-inline').find('ul').append(newTag);
+
+                mapGallery.filterByTags();
             }
 
-        }, 
+        },
+
         filterByTags: function() {
-            var allTags = '',
-                numTags = this.selectedTags.length;
+            var numTags = mapGallery.selectedTags.length;
 
             if (numTags === 0) {
-                allTags = '';
+                mapGallery.filters.tag = '';
                 $('.tag-list-inline').addClass('hide');
             } else {
-                allTags = '.tag-' + tagFilter.selectedTags.join('.tag-');
+                mapGallery.filters.tag = '.tag-' + mapGallery.selectedTags.join('.tag-');
             }
 
-            tagFilters = allTags;
-            filters = '';            
-            filters = tagFilters + bureauFilters;
+            mapGallery.filter();
+        },
 
-            $('.map-cards').isotope({
-                filter: filters
-            }).isotope('updateSortData').isotope();
+        filter: function() {
+            mapGallery.locationHash();            
+        },
+
+        locationHash: function() {
+            var filters = 'filter=' + mapGallery.filters.bureau,
+                tags = 'tags=' + mapGallery.filters.tag,
+                sortBy = 'sortBy=' + mapGallery.sortList.sortBy + '&sortAscending=' + mapGallery.sortList.sortAscending;
+
+            location.hash = encodeURIComponent(filters) +  '&' + encodeURIComponent(tags) + '&' + encodeURIComponent(sortBy);
+        },
+
+        getHashFilter: function() {
+            var hash = decodeURIComponent(location.hash),        
+                bureauHash = hash.match(/filter=([^&]+)/i),
+                tagHash = hash.match(/tags=([^&]+)/i),
+                sortByHash = hash.match(/sortBy=([^&]+)/i),
+                sortAscHash = hash.match(/sortAscending=([^&]+)/i);
+
+            mapGallery.filters.bureau = bureauHash === null ? mapGallery.filters.bureau : bureauHash[1];
+            mapGallery.filters.tag = tagHash === null ? mapGallery.filters.tag : tagHash[1];
+            mapGallery.sortList.sortBy = sortByHash === null ? mapGallery.sortList.sortBy : sortByHash[1];
+            mapGallery.sortList.sortAscending = sortAscHash === null ? mapGallery.sortList.sortAscending : sortAscHash[1];
+            mapGallery.sortList.sortAscending = mapGallery.sortList.sortAscending === 'true';            
+        },
+
+        onHashchange: function() {
+
+            var filters = '';
+
+            mapGallery.getHashFilter();
+            filters = mapGallery.filters.tag + mapGallery.filters.bureau;
+
+            mapGallery.isIsotopeInit = true;
+
+            $('.map-cards')
+                .isotope({
+                    filter: filters,
+                    sortBy: mapGallery.sortList.sortBy,
+                    sortAscending: mapGallery.sortList.sortAscending
+                })
+                .isotope('updateSortData');
+
+            for (var k in mapGallery.filterOpts) {
+                if (mapGallery.filterOpts[k] === mapGallery.filters.bureau) {
+                    $('#sel-filter').val(k);
+                }
+            }
+
+            for (var i in mapGallery.sortOpts) {
+                if (mapGallery.sortOpts[i].sortBy === mapGallery.sortList.sortBy && mapGallery.sortOpts[i].sortAscending === mapGallery.sortList.sortAscending) {
+                    $('#sel-sort').val(i);
+                }
+            }
+
         }
-
     };
 
-    tagFilter.init();
+    mapGallery.init();
+
+    $(window).on('hashchange', mapGallery.onHashchange);
+    // trigger event handler to init Isotope
+    mapGallery.onHashchange();
+
 
 }(window, document, jQuery));

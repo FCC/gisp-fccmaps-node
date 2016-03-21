@@ -66,8 +66,8 @@
                     &nbsp;&nbsp;
                     <label class="control-label" for="sel-sort">Sort:</label>
                     <select id="sel-sort" class="form-control">
-                        <option value="dateDesc" selected>Date (desc)</option>
-                        <option value="dateAsc">Date (asc)</option>
+                        <option value="dateDesc" selected>Newest</option>
+                        <option value="dateAsc">Oldest</option>
                         <option value="titleAsc">Title (A-Z)</option>
                         <option value="titleDesc">Title (Z-A)</option>
                     </select>
@@ -155,7 +155,7 @@
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="map_templates/js/vendor/isotope.min.js"></script>
-    <script src="map_templates/js/map-gallery-new.js"></script>
+    <script src="map_templates/js/map-gallery.js"></script>
     <script src="map_templates/js/apps.js"></script>
     <script>
     function populateMaps() {
@@ -212,6 +212,7 @@
                 var $items = $(text);
 
                 $('.map-cards').append($items).isotope('insert', $items);
+                
                 /* for testing only */
                 $('.map-cards > li').eq(2).addClass('tag-Fall2014 tag-multiLayer');
                 $('.map-cards > li').eq(2).find('.card__body .list-unstyled').append('<li class="tag"><a href="#" data-tag="multiLayer">multiLayer</a></li>');
@@ -219,6 +220,8 @@
 
                 $('.map-cards > li').eq(5).addClass('tag-Fall2014');
                 $('.map-cards > li').eq(5).find('.card__body .list-unstyled').append('<li class="tag"><a href="#" data-tag="Fall2014">Fall 2014</a></li>');
+
+                $('.map-cards').isotope('updateSortData');
             }
         });
 
