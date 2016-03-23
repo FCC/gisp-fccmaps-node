@@ -621,8 +621,72 @@ function updateMapList() {
         url: url,
         dataType: "json",
         success: function(data) {
-            var urls = data.urls;
-            var titles = data.titles;
+		
+			console.log(data);
+			var urls = [];
+			var titles = [];
+			var subtitles = [];
+			var descriptions = [];
+			var vids = [];
+			var create_tss = [];
+			var zooms = [];
+			var center_lats = [];
+			var center_lons = [];
+			var searches = [];
+			
+			for (var i = 1; i < data.length; i++) {
+
+				var title = data[i].title;
+				var nid = data[i].nid;
+				var vid = data[i].vid;
+				var created = data[i].created;
+				var changed = data[i].changed;
+				var updated = ""
+				if (data[i].fields.field_date_updated_reviewed.und) {
+				updated = data[i].fields.field_date_updated_reviewed.und[0].value;
+				}
+				var url = "";
+				if (data[i].fields.field_map_page_url.und) {
+					url = data[i].fields.field_map_page_url.und[0].url;
+				}
+				var repo = "";
+				if (data[i].fields.field_map_repository.und) {
+					repo = data[i].fields.field_map_repository.und[0].url;
+				}
+				var subtitle = "";
+				if (data[i].fields.field_subtitle.und) {
+					repo = data[i].fields.field_subtitle.und[0].value;
+				}
+				
+				if ( url+repo != "") {
+					urls.push(url);
+					titles.push(title);
+					subtitles.push(subtitle);
+					descriptions.push("Descriptions go here");
+					vids.push(vid);
+					create_tss.push(created);
+					
+					var map_info = "";
+					if (data[i].fields.field_description.und) {
+						var value_str = data[i].fields.field_description.und[0].value;
+						var map_info = JSON.parse(value_str);
+					}
+					if (map_info != "") {
+					zooms.push(map_info.mapzoom.initialzoom);
+					center_lats.push(map_info.mapcenter.latitude);
+					center_lons.push(map_info.mapcenter.longitude);
+					}
+					else {
+					zooms.push(3);
+					center_lats.push(40);
+					center_lons.push(-105);
+					}
+				}
+			
+			}
+		
+            //var urls = data.urls;
+            //var titles = data.titles;
             var map_list_text = "";
             for (var i = 0; i < urls.length; i++) {
                 map_list_text += '<li><a href="/' + urls[i] + '" class=""> \
