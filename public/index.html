@@ -173,8 +173,13 @@
 				var descriptions = [];
 				var vids = [];
 				var create_tss = [];
+				var zooms = [];
+				var center_lats = [];
+				var center_lons = [];
+				var searches = [];
 				
 				for (var i = 1; i < data.length; i++) {
+
 					var title = data[i].title;
 					var nid = data[i].nid;
 					var vid = data[i].vid;
@@ -204,6 +209,22 @@
 						descriptions.push("Descriptions go here");
 						vids.push(vid);
 						create_tss.push(created);
+						
+						var map_info = "";
+						if (data[i].fields.field_description.und) {
+							var value_str = data[i].fields.field_description.und[0].value;
+							var map_info = JSON.parse(value_str);
+						}
+						if (map_info != "") {
+						zooms.push(map_info.mapzoom.initialzoom);
+						center_lats.push(map_info.mapcenter.latitude);
+						center_lons.push(map_info.mapcenter.longitude);
+						}
+						else {
+						zooms.push(3);
+						center_lats.push(40);
+						center_lons.push(-105);
+						}
 					}
 				
 				}
@@ -216,12 +237,13 @@
                     var date_str = dum[1] + "/" + dum[2] + "/" + dum[0];
 
                     var url = urls[i] + "/responsive.html";
+					var url_bookmark = urls[i] + "/#" + zooms[i] + "/" + center_lats[i] + "/" + center_lons[i] + "/zoom,attr,layers,key,search";
                     text += '<li class="card bureau-' + bureaus[i] + ' tag-data-maps-reports tag-maps"> \
                             <div class="mapThumb-btns"> \
-                                <a class="btn btn-xs btn-default" href="' + urls[i] + '"><span class="sr-only">View map</span> <span class="icon icon-external-link-square"></span></a> \
+                                <a class="btn btn-xs btn-default" href="' + url_bookmark + '"><span class="sr-only">View map</span> <span class="icon icon-external-link-square"></span></a> \
                             </div> \
                             <iframe src="' + url + '"></iframe> \
-                            <p class="card__title text-overflow"><a href="' + urls[i] + '"><span >' + titles[i] + '</span></a></p> \
+                            <p class="card__title text-overflow"><a href="' + url_bookmark + '"><span >' + titles[i] + '</span></a></p> \
                             <div class="card__meta"> \
                                 <div class="pull-left">' + bureaus[i] + '</div> \
                                 <div class="pull-right data-date">' + dates[i] + '</div> \
@@ -238,7 +260,7 @@
                             </div> \
                             <div class="card__footer"> \
                                 <a class="btn-details btn btn-link btn-xs" href="#void"><span class="icon icon-caret-right"></span>View details</a> \
-                                <a class="btn btn-link btn-xs pull-right" href="' + urls[i] + '"><span class="icon icon-external-link-square"></span>View map</a> \
+                                <a class="btn btn-link btn-xs pull-right" href="' + url_bookmark + '"><span class="icon icon-external-link-square"></span>View map</a> \
                             </div> \
                         </li>';
 
