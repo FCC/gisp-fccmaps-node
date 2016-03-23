@@ -1,5 +1,4 @@
 
-
 var config = getConfig();
 var geo_host = config.GEO_HOST;
 var geo_space = config.GEO_SPACE;
@@ -7,7 +6,7 @@ var PG_DB = config.PG_DB;
 var pg_schema = config.PG_SCHEMA;
 var drupal_api = config.DRUPAL_API;
 
-var deployInterval = 60000; //microseconds
+var deployInterval = 300000; //microseconds
 var drupalData;
 
 //db
@@ -20,7 +19,11 @@ var fs = require('fs-extra');
 var unzip = require('unzip');
 var github = require('github');
 var request = require('request');
+var cache = require('memory-cache');
+var async = require('async');
 
+cache.put('drupal_current', []);
+cache.put('drupal_new', []);
 
 var mapDataJson;
 
@@ -241,24 +244,82 @@ function mapDeploy() {
 
 }
 
-function getDrupalData(repoName) {
-	for (var i = 1; i < drupalData.length; i++) {
-		if (drupalData[i].fields.field_map_repository.und && drupalData[i].fields.field_map_repository.und[0].title == repoName) {
-			return drupalData[i];
-		}
+
+
+var task = function(mm) { return function(callback) {
+
+	var nid = mm.nid;
+	var vid = mm.vid;
+	var map_repository_title = "";
+	var map_repository_url = "";
+	var map_page_url = "";
+	var map_page_title = "";
 	
+	console.log(nid);
+	
+	//compare with drupal_current to see if they are different
+
+	var map_status = is_new(mm);
+	
+	//map_status.is_new_map = false;
+	//map_status.is_new_version = true;
+	
+	console.log('is new map or version=' + JSON.stringify(map_status));
+	
+	
+	if (!map_status.is_new_map && !map_status.is_new_version) {
+		callback();
+		return;
 	}
 	
-	return null;
-
-
+	if (mm.fields.field_map_page_url.und) {
+		map_page_url = mm.fields.field_map_page_url.und[0].url;
+		map_page_title = mm.fields.field_map_page_url.und[0].title;
+	}
+	
+	if (mm.fields.field_map_repository.und) {
+		map_repository_title = mm.fields.field_map_repository.und[0].title;
+		map_repository_url = mm.fields.field_map_repository.und[0].url;
+	}
+	
+	//console.log("nid=" + nid + " vid=" + vid + " map_repository_title=" + map_repository_title + " map_repository_url=" + map_repository_url + " map_page_url=" + map_page_url + " map_page_title=" + map_page_title);
+	if (map_page_url == "") {
+		console.log("no map page url");
+		callback();
+		return;
+	}
+	else {
+		var dirPath = "./public/" + map_page_url;
+		//new map - create directory and write files
+		if (map_status.is_new_map) {
+			console.log("new Map");
+			console.log("new map: " + map_page_url);
+			if (fs.existsSync(dirPath)) {
+				fs.removeSync(dirPath);
+			}
+			fs.mkdirSync(dirPath);
+			console.log("new dir created");
+			copyFromTemplates(mm, dirPath);
+			callback();
+		}
+		else if (map_status.is_new_version) {
+			//new version - write new json file to directory
+			console.log("new version")
+			writeMapOptions(mm, dirPath);
+			callback();
+		}
+		
+	//checkGithubRepo(m);
+	}
 }
-
-
+}
 
 function mapDeploy2(type) {
 
 	try {
+	
+		//console.log('--------------------------- mapOptions=');
+		//console.log(cache.get('drupal_current'));
 	
 		var url = drupal_api;
 
@@ -280,7 +341,13 @@ function mapDeploy2(type) {
 			mapDataJson = JSON.parse(mapData);
 
 			console.log("Drupal API data received.");
+			if (Object.keys(cache.get('drupal_current')).length == 0) {
+				//cache.put('drupal_current', mapDataJson);
+			}
+			
 			m = mapDataJson;
+			
+			var asyncTasks = [];
 			
 			for (var i = 1; i < m.length; i++) {
 				var nid = m[i].nid;
@@ -290,13 +357,24 @@ function mapDeploy2(type) {
 				if (m[i].fields.field_map_repository.und) {
 					map_repository = m[i].fields.field_map_repository.und[0].title;
 				}
-			
-				processMap(m[i]);
+				
+				asyncTasks.push(task(m[i]));
 				
 			}
 			
+			async.parallel(asyncTasks, function() {
+			
+			console.log("all maps done");
+			cache.put('drupal_current', mapDataJson);
 			});
-		});
+				
+				
+				//processMap(m[i]);
+				
+			});
+			
+			});
+
 		
 		if (type == "repeat") {
 			setTimeout(function() {
@@ -336,6 +414,21 @@ function processMap(m) {
 	var map_page_url = "";
 	var map_page_title = "";
 	
+	//compare with drupal_current to see if they are different
+
+	map_status = is_new(m);
+	
+	//map_status.is_new_map = false;
+	//map_status.is_new_version = true;
+	
+	console.log('is new map or version=' + JSON.stringify(map_status));
+	
+	
+	if (!map_status.is_new_map && !map_status.is_new_version) {
+		return;
+	}
+	
+	
 	if (m.fields.field_map_page_url.und) {
 		map_page_url = m.fields.field_map_page_url.und[0].url;
 		map_page_title = m.fields.field_map_page_url.und[0].title;
@@ -348,52 +441,51 @@ function processMap(m) {
 	
 	//console.log("nid=" + nid + " vid=" + vid + " map_repository_title=" + map_repository_title + " map_repository_url=" + map_repository_url + " map_page_url=" + map_page_url + " map_page_title=" + map_page_title);
 	if (map_page_url == "") {
-		//console.log("no map page url");
+		console.log("no map page url");
 		return;
 	}
 	else {
-		//check if is new map/version
 		var dirPath = "./public/" + map_page_url;
-		var q = "SELECT nid, vid FROM fcc.gisp_map_list WHERE nid = $1 ORDER BY create_ts DESC";
-		var vals = [nid];
-		pg_query(q, vals, function(pg_err, pg_rows, pg_res){
-		if (pg_err){
-			console.error('error running pg_query', pg_err);
-		}
-		else {
-			if (pg_rows.length == 0) {
-				//new map - create directory and write files
-				console.log("new map: " + map_page_url);
-				if (fs.existsSync(dirPath)) {
-					fs.removeSync(dirPath);
-				}
-				fs.mkdirSync(dirPath);
-				console.log("new dir created");
-				copyFromTemplates(m, dirPath);
-				writeMapOptions(m, dirPath);
-				writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title);
-				checkGithubRepo(m);
-				
+		//new map - create directory and write files
+		if (map_status.is_new_map) {
+			console.log("new Map");
+			console.log("new map: " + map_page_url);
+			if (fs.existsSync(dirPath)) {
+				fs.removeSync(dirPath);
 			}
-			else {
-				if (pg_rows[0].vid == vid) {
-					//no update - do nothing
-				}
-				else {
-					//new version - write new json file to directory
-					console.log("new version")
-					writeMapOptions(m, dirPath);
-					writeToTable(nid, vid, title, subtitle, description, map_page_url, map_page_title, map_repository_url, map_repository_title);
-				}
-				
-				checkGithubRepo(m);
-			}
+			fs.mkdirSync(dirPath);
+			console.log("new dir created");
+			copyFromTemplates(m, dirPath);
 		}
-
-		});
-	
-	
+		else if (map_status.is_new_version) {
+			//new version - write new json file to directory
+			console.log("new version")
+			writeMapOptions(m, dirPath);
+		}
+		
+	//checkGithubRepo(m);
 	}
+}
+
+
+function is_new(m) {
+var nid_new = m.nid;
+var vid_new = m.vid;
+var maps = cache.get('drupal_current');
+var is_new_map = true;
+var is_new_version = true;
+for (var i = 1; i < maps.length; i++) {
+	var nid_current = maps[i].nid;
+	var vid_current = maps[i].vid;
+	if (nid_new == nid_current) {
+		is_new_map = false;
+		if (vid_new == vid_current) {
+			is_new_version = false;
+		}
+	}
+}
+
+return {"is_new_map": is_new_map, "is_new_version": is_new_version}
 }
 
 
@@ -450,15 +542,13 @@ function checkGithubRepo(m) {
 
 
 function copyFromTemplates(m, dirPath) {
-	console.log(m)
-	console.log(dirPath);
 	var templatePath = "./public/map_templates";
 	fs.copy(templatePath, dirPath, function (err) {
 		if (err) {
 			console.error(err);
 			}
 		else {
-			console.log("templates copied to map directory");
+			//console.log("templates copied to map directory");
 			writeMapOptions(m, dirPath);
 		}
 		});
@@ -491,44 +581,8 @@ function writeToTable(nid, vid, title, subtitle, description, map_page_url, map_
 
 
 function getExistingMaps(req, res) {
-	q = "SELECT nid, vid, title, subtitle, description, map_page_url, create_ts FROM fcc.gisp_map_list ORDER BY create_ts desc, nid, vid";
-	vals = [];
-	pg_query(q, vals, function(pg_err, pg_rows, pg_res){
-		if (pg_err){
-			console.error('error running pg_query', pg_err);
-		}
-		else {
-			var urls = [];
-			var titles = [];
-			var subtitles = [];
-			var descriptions = [];
-			var vids = [];
-			var create_tss = [];
-			console.log('rows=')
-			console.log(pg_rows)
-			for (var i = 0; i < pg_rows.length; i++) {
-				var url = pg_rows[i].map_page_url;
-				var title = pg_rows[i].title;
-				var subtitle = pg_rows[i].subtitle;
-				var description = pg_rows[i].description;
-				var vid = pg_rows[i].vid;
-				var create_ts = pg_rows[i].create_ts;
-				if (url != "" && urls.indexOf(url)== -1) {
-					urls.push(url);
-					titles.push(title);
-					subtitles.push(subtitle);
-					descriptions.push(description);
-					vids.push(vid);
-					create_tss.push(create_ts);
-				}
-			}
-			
-			console.log(urls)
-			res.send({"urls": urls, "titles": titles, "subtitles": subtitles, "descriptions": description, "vids": vids, "create_tss": create_tss});
-		}
-	});
-	
-
+	var drupal = cache.get('drupal_current');
+	res.send(drupal);
 }
 
 function pullDrupal(req, res) {
