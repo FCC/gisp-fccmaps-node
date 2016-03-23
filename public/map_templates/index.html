@@ -59,7 +59,7 @@
                             <div class="pg-header">
                                 <h1><span id="span-title">Title</span> <small><span id="span-subtitle">Subtitle</span></small></h1>
                             </div>
-                            <div id="search-field-holder">
+                            <div id="search-field-holder" style="display: none">
                                 <div class="search-field input-group">
                                     <div class="search__group">
                                         <div class="search__input">
@@ -119,11 +119,25 @@
                                     <dd id="dd-updated"></dd>
                                 </dl>
                             </div>
-                            <p>
-                                <span id="span-description">
-                            Description:
-                            </span>
-                            </p>
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <p><span id="span-description">Description:</span></p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            Related Links
+                                        </div>           
+                                        <div class="panel-body">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#void">Related link</a></li>
+                                                <li><a href="#void">Related link</a></li>
+                                                <li><a href="#void">Related link</a></li>
+                                            </ul>
+                                        </div>                             
+                                    </div>
+                                </div>
+                            </div>
                             <br>
                             <div class="tag-list-inline">
                                 <a class="link-tags" href="#void">View Tags</a>
@@ -231,6 +245,8 @@
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
+    <script src='js/vendor/l-hash.js'></script>
+    <!-- <script src='js/vendor/leaflet-hash.js'></script> -->
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/map-template.js"></script>
     <script src="js/app.js"></script>

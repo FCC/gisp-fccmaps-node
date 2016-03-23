@@ -56,6 +56,8 @@
             $('#sel-sort').on('change', mapGallery.sorting);
 
             $('.tag-list-inline').on('click', '.link-removeTag', mapGallery.removeTag);
+
+            $('.link-clearFilters').on('click', mapGallery.clearFilters);
         },
 
         initGrid: function() {
@@ -101,7 +103,7 @@
         },
 
         sorting: function() {
-            var selectedVal = this.value;           
+            var selectedVal = this.value;
 
             mapGallery.sortList.sortBy = mapGallery.sortOpts[selectedVal].sortBy;
             mapGallery.sortList.sortAscending = mapGallery.sortOpts[selectedVal].sortAscending;
@@ -113,7 +115,7 @@
         filterByBureau: function() {
             var selectedVal = this.value;
 
-            mapGallery.filters.bureau = mapGallery.filterOpts[selectedVal];            
+            mapGallery.filters.bureau = mapGallery.filterOpts[selectedVal];
             mapGallery.filter();
         },
 
@@ -142,8 +144,8 @@
 
             if (mapGallery.selectedTags.indexOf($tag) < 0) {
 
-                mapGallery.selectedTags.push($tag);            
-
+                mapGallery.selectedTags.push($tag);
+                // console.log(mapGallery.selectedTags);
                 newTag.find('a').replaceWith('<span data-tag="' + $tag + '">' + $tagText + '<a class="link-removeTag" href="#void"><span class="icon icon-remove"></span></span></a>');
 
                 if (!$('.tag-list-inline').is(':visible')) {
@@ -171,7 +173,27 @@
         },
 
         filter: function() {
-            mapGallery.locationHash();            
+            mapGallery.locationHash();
+        },
+
+        clearFilters: function(e) {
+            e.preventDefault();
+
+            mapGallery.filters.bureau = '*';
+            mapGallery.filters.tag = '';
+
+            mapGallery.sortList.sortBy = 'date';
+            mapGallery.sortList.sortAscending = false;
+
+            if ($('.tag-list-inline').is(':visible')) {
+                $('.tag-list-inline')
+                    .find('li')
+                    .remove()
+                    .end()
+                    .addClass('hide');
+            }
+
+            mapGallery.locationHash();
         },
 
         locationHash: function() {
@@ -179,11 +201,11 @@
                 tags = 'tags=' + mapGallery.filters.tag,
                 sortBy = 'sortBy=' + mapGallery.sortList.sortBy + '&sortAscending=' + mapGallery.sortList.sortAscending;
 
-            location.hash = encodeURIComponent(filters) +  '&' + encodeURIComponent(tags) + '&' + encodeURIComponent(sortBy);
+            location.hash = encodeURIComponent(filters) + '&' + encodeURIComponent(tags) + '&' + encodeURIComponent(sortBy);
         },
 
         getHashFilter: function() {
-            var hash = decodeURIComponent(location.hash),        
+            var hash = decodeURIComponent(location.hash),
                 bureauHash = hash.match(/filter=([^&]+)/i),
                 tagHash = hash.match(/tags=([^&]+)/i),
                 sortByHash = hash.match(/sortBy=([^&]+)/i),
@@ -193,7 +215,7 @@
             mapGallery.filters.tag = tagHash === null ? mapGallery.filters.tag : tagHash[1];
             mapGallery.sortList.sortBy = sortByHash === null ? mapGallery.sortList.sortBy : sortByHash[1];
             mapGallery.sortList.sortAscending = sortAscHash === null ? mapGallery.sortList.sortAscending : sortAscHash[1];
-            mapGallery.sortList.sortAscending = mapGallery.sortList.sortAscending === 'true';            
+            mapGallery.sortList.sortAscending = mapGallery.sortList.sortAscending === 'true';
         },
 
         onHashchange: function() {
@@ -224,6 +246,31 @@
                     $('#sel-sort').val(i);
                 }
             }
+
+            /*console.log('selected tags = ' + mapGallery.selectedTags);
+
+            var selectedTags = mapGallery.filters.tag.split('.');
+            var numTags = selectedTags.length - 1;
+
+            selectedTags.shift();
+
+            var LI = '';
+
+            for (var j = 0; j < numTags; j++) {
+                LI += '<li class="tag"><span data-tag="' + selectedTags[j] + '">' + selectedTags[j] + '<a class="link-removeTag" href="#void"><span class="icon icon-remove"></span></span></a></li>';
+
+                if (mapGallery.selectedTags.indexOf(selectedTags[j]) < 0) {
+                    mapGallery.selectedTags.push(selectedTags[j].split('tag-')[1]);
+                }
+            }
+
+            console.log(mapGallery.selectedTags);
+
+            if (!$('.tag-list-inline').is(':visible')) {
+                $('.tag-list-inline').removeClass('hide');
+            }
+
+            $('.tag-list-inline').find('ul').append(LI);*/
 
         }
     };
