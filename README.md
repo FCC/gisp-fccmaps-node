@@ -29,6 +29,12 @@ GIS Platform Node Webapp
         ```
         grunt
         ```
+
+    *   run the watch task to automatically run grunt everytime a file in the ```src``` folder changes  
+        ```
+        grunt watch
+        ```
+
         
     *   run the app  
         ```
