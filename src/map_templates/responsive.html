@@ -82,11 +82,7 @@
 		if (map_info.mapcenter.center_longitude) {
 			center_lon = map_info.mapcenter.longitude;
 		}
-	}
-
-	
-	console.log(initialzoom + ' ' + maxzoom + ' ' + minzoom + ' ' + center_lat + ' ' + center_lon);
-	
+	}	
 	
     L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
      map = L.mapbox.map('map', 'fcc.k74ed5ge', {
@@ -101,7 +97,7 @@
 	var zindex1 = 10;
 	for (var i = 0; i < layers_info.length; i++) {
 		zindex1++;
-		console.log(layers_info[i]);
+		
 		if (layers_info[i].layertype == "mapbox") {
 			if (layers_info[i].checked == "yes") {
 				mapLayers.push(L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1).addTo(map));
@@ -109,10 +105,10 @@
 			else {
 				mapLayers.push(L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1));
 			}
-			console.log("layer " + i);
+			
 		}
 		else if (layers_info[i].layertype == "geoserver") {
-			console.log("layer " + i);
+			
 			if (layers_info[i].checked == "yes") {
 				mapLayers.push(L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
 					format: 'image/png',
@@ -132,8 +128,7 @@
 		
 		}
 	}
-		 
-	console.log(map_info);
+		 	
 	baseStreet = L.mapbox.tileLayer('fcc.k74ed5ge');
 	baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
 	baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');
