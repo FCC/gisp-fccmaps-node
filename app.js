@@ -116,6 +116,10 @@ app.get('/pullDrupal/', function(req, res){
 maps.pullDrupal(req, res);
 });
 
+app.get('/pullRepo/:nid', function(req, res){
+maps.pullRepo(req, res);
+});
+
 // **********************************************************
 // error
 
