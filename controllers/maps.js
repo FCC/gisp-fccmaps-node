@@ -51,9 +51,6 @@ function getConfig() {
 }
 
 
-
-
-
 var task = function(mm) { return function(callback) {
 
 	var nid = mm.nid;
@@ -201,8 +198,18 @@ function copyFromTemplates(m, dirPath) {
 			console.error(err);
 			}
 		else {
-			//console.log("templates copied to map directory");
+			console.log("templates copied to map directory");
 			writeMapOptions(m, dirPath);
+			//get repo if exists
+			var repo = "";
+			if (m.fields.field_map_repository.und) {
+				repo = m.fields.field_map_repository.und[0].url;
+			}
+			var nid = m.nid;
+			if (repo != "") {
+				pullRepo1(nid);
+			}
+			
 		}
 		});
 }
@@ -222,6 +229,7 @@ function getExistingMaps(req, res) {
 	var drupal = cache.get('drupal_current');
 	res.send(drupal);
 }
+
 
 function pullDrupal(req, res) {
 
@@ -255,15 +263,8 @@ function pullRepo(req, res) {
 			var dirPath = "./public/" + mapUrl;
 			var zipName = repoName + ".zip";
 			var filePath = dirPath + "/" + zipName;
-			//if (fs.existsSync(dirPath)) {
-				//fs.removeSync(dirPath);
-			//}
-			//fs.mkdirSync(dirPath);
 
-			console.log('zip url =', url_repo);
 			var file = fs.createWriteStream(filePath);
-			
-			console.log('file=', filePath);
 			
 			https.get(url_repo, function(res1) {
 				var data = "";
@@ -282,9 +283,7 @@ function pullRepo(req, res) {
 					//unzip
 					fs.createReadStream(filePath).pipe(unzip.Extract({ path: dirPath }).on("close", function() {
 					
-						console.log("unzip closed");
-						//var files = fs.readdirSync(dirPath);
-						//console.log(files);
+						console.log("unzip");
 						console.log('copying...');
 						var unzipped_dir = repoName + "-gh-pages";
 						var zipPath = dirPath + '/' + unzipped_dir;
@@ -331,6 +330,83 @@ function pullRepo(req, res) {
 }
 
 
+function pullRepo1(nid) {
+	try {
+		var repoName = getRepoName(nid);
+		var mapUrl = getMapUrl(nid);
+		
+		console.log('nid=', nid, 'repo=', repoName, 'url=', mapUrl);
+		
+		if (repoName != "" && mapUrl != "") {
+			//get repo zip file
+			var url_repo = "https://codeload.github.com/FCC/" +repoName + "/zip/gh-pages";
+			var dirPath = "./public/" + mapUrl;
+			var zipName = repoName + ".zip";
+			var filePath = dirPath + "/" + zipName;
+
+			var file = fs.createWriteStream(filePath);
+			
+			https.get(url_repo, function(res1) {
+				var data = "";
+				
+				res1.on('data', function(chunk) {
+					data += chunk;
+					file.write(chunk);
+				});
+				
+				res1.on("end", function() {
+				
+					file.end();
+				
+					console.log("repo downloaded");
+
+					//unzip
+					fs.createReadStream(filePath).pipe(unzip.Extract({ path: dirPath }).on("close", function() {
+					
+						console.log("unzip");
+						console.log('copying...');
+						var unzipped_dir = repoName + "-gh-pages";
+						var zipPath = dirPath + '/' + unzipped_dir;
+						fs.copy(zipPath, dirPath, true, function (err) {
+							if (err) {
+								console.error(err);
+								}
+							else {
+								console.log("zip dir copied");
+								try {
+									fs.removeSync(zipPath);
+									console.log("zip directory deleted");
+								}
+								catch (e) {
+									console.log(e);
+								}
+								try {
+									fs.removeSync(filePath);
+									console.log("zip file deleted");
+								}
+								catch (e) {
+									console.log(e);
+								}
+								
+							}
+						});
+				
+					}));
+				
+				});
+				
+			});
+		
+		}
+	}
+	catch (e) {
+	console.error('Exception in pullRepo1: ' + e);
+	}
+	
+}
+
+
+
 function getRepoName(nid) {
 	var repoName = "";
 	var map_info = cache.get('drupal_current');
@@ -343,7 +419,6 @@ function getRepoName(nid) {
 	}
 	
 	return repoName;
-
 }
 
 function getMapUrl(nid) {
@@ -358,7 +433,6 @@ function getMapUrl(nid) {
 	}
 	
 	return url;
-
 }
 
 module.exports.mapDeploy = mapDeploy;
