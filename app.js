@@ -173,8 +173,10 @@ var server = app.listen(NODE_PORT, function () {
 
 });
 
+maps.mapDeploy("repeat");
+
 module.exports = app;
 
-maps.mapDeploy2("repeat");
+
 
 
