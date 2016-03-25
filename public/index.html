@@ -177,6 +177,8 @@
 				var center_lats = [];
 				var center_lons = [];
 				var searches = [];
+				var bureaus = [];
+				var dates = [];
 				
 				for (var i = 1; i < data.length; i++) {
 
@@ -199,7 +201,7 @@
 					}
 					var subtitle = "";
 					if (data[i].fields.field_subtitle.und) {
-						repo = data[i].fields.field_subtitle.und[0].value;
+						subtitle = data[i].fields.field_subtitle.und[0].value;
 					}
 					
 					if ( url+repo != "") {
@@ -209,6 +211,14 @@
 						descriptions.push("Descriptions go here");
 						vids.push(vid);
 						create_tss.push(created);
+						var bureau = "";
+						if (data[i].fields.field_description.und) {
+							var desc_str = data[i].fields.field_description.und[0].value;
+							var desc_json = JSON.parse(desc_str);
+							bureau = desc_json.bureau;
+						}
+						bureaus.push(bureau);
+						dates.push(changed);
 						
 						var map_info = "";
 						if (data[i].fields.field_description.und) {
@@ -230,11 +240,7 @@
 				}
 				
                 var text = "";
-                var bureaus = ["OSP", "OSP", "OSP", "OET", "OET", "OET", "WCB", "WCB", "MB", "MB", "MB"];
-                var dates = ["03/06/2016", "03/06/2016", "03/07/2016", "03/07/2016", "03/07/2016", "03/11/2016", "03/08/2016", "03/11/2016", "03/11/2016", "03/11/2016", "03/11/2016", "03/11/2016", "03/11/2016", "03/11/2016"];
                 for (var i = 0; i < urls.length; i++) {
-                    var dum = create_tss[i].replace(/T.*$/, '').split('-');
-                    var date_str = dum[1] + "/" + dum[2] + "/" + dum[0];
 
                     var url = urls[i] + "/responsive.html";
 					var url_bookmark = urls[i] + "/#" + zooms[i] + "/" + center_lats[i] + "/" + center_lons[i] + "/zoom,attr,layers,key,search";
