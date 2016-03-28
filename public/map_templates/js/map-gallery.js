@@ -60,6 +60,10 @@
             $('.link-clearFilters').on('click', mapGallery.clearFilters);
 
             $('.link-ext').on('click', mapGallery.extLinks);
+
+            $('.map-cards').on('arrangeComplete', function(event, filteredItems) {
+                $('#numMaps').html(filteredItems.length);
+            });
         },
 
         initGrid: function() {
@@ -103,7 +107,7 @@
                 thisBtn
                     .html('<span class="icon icon-caret-right"></span>View details')
                     .attr('aria-pressed', false);
-                    
+
                 thisCardBody.slideUp(function() {
                     thisCardBody.attr('aria-expanded', false);
                     thisBtn.closest('.card').css('z-index', 0);

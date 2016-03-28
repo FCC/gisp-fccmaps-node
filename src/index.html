@@ -12,7 +12,7 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" rel="stylesheet" />
     <link href="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.css" rel="stylesheet" />
     <link href="map_templates/css/gisp-theme.min.css" rel="stylesheet" />
-    <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">   
+    <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
 </head>
 
 <body class="docs-collapsed-nav">
@@ -38,7 +38,6 @@
                         </a>
                     </li>
                 </ul>
-                
             </nav>
         </div>
     </header>
@@ -50,21 +49,23 @@
                         <h1>Maps</h1>
                     </div>
                     <div class="col-sm-6">
-                        <div class="pull-right"><a class="navbar-about" href="about.html">About <span class="icon icon-info-circle"></span></a>
-                </div>
+                        <div class="pull-right">
+                            <a class="navbar-about" href="about.html">About</a>
+                        </div>
                     </div>
                 </div>
-                
-
-                <div class="row">
-                    <div class="col-sm-6">                        
-                        <div class="btn-group" role="group" aria-label="View Options">
+                <div class="gallery-filters row">
+                    <div class="col-sm-3">
+                        <div class="gallery-numResults">Showing: <span id="numMaps"></span> maps</div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="btn-group btn-group-sm" role="group" aria-label="View Options">
                             <button type="button" class="btn btn-default">All</button>
                             <button type="button" class="btn btn-default active">Current</button>
                             <button type="button" class="btn btn-default">Archive</button>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-5">
                         <div class="form-filters form-inline pull-right">
                             <label class="control-label" for="sel-filter">Bureau:</label>
                             <select id="sel-filter" class="form-control form-control-width-sm">
@@ -84,7 +85,7 @@
                                 <option value="titleDesc">Title (Z-A)</option>
                             </select>
                             &nbsp;&nbsp;
-                            <a href="#void" class="link-clearFilters">Clear All</a>
+                            <a href="#void" class="link-clearFilters">Reset Filters</a>
                         </div>
                     </div>
                 </div>
