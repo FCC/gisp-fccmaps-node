@@ -1,0 +1,35 @@
+.row-grid {
+    display: table;
+    width: 100%;
+}
+
+.col-grid {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.pg-header {
+    margin-bottom: 30px;
+    h1 {
+        margin-bottom: 10px;
+        small {
+            display: block;
+            margin-top: 5px;
+            font-size: 18px;
+        }
+    }
+}
+
+.docs-content {
+    margin-right: 40px;
+    @media screen and (max-width: @screen-md-min) {
+        margin-right: 0;
+    }
+    .docs-collapsed-nav & {
+        margin-right: 0;
+    }
+}
+
+.panel-contactUs {
+    width: 275px;
+}
