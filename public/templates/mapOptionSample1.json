@@ -38,7 +38,23 @@
 				"legendtext": "Tribal land", 
 				"checked": "no" 
 				} 
+			],
+			
+	"legend": [
+				{
+				"legendcolor": "#ffffcc",
+				"legendtext": "No residential services at 200 kbps or above"
+				},
 				
+				{
+				"legendcolor": "#c7e9b4", 
+				"legendtext": "Residential services of at least 200 kbps"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Tribal land"
+				}
 			]
 			
 }

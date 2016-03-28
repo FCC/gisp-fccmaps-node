@@ -122,8 +122,8 @@ function mapDeploy(type) {
 			});
 			res.on("end", function() {
 		
-				drupalData = JSON.parse(data);
-				mapData = data;
+				//drupalData = JSON.parse(data);
+				var mapData = data;
 				mapData = mapData.replace(/\\n/g, '');
 				mapData = mapData.replace(/\\r/g, '');
 		
@@ -171,6 +171,7 @@ function mapDeploy(type) {
 
 
 function is_new(m) {
+	//check if is new map and/or version
 	var nid_new = m.nid;
 	var vid_new = m.vid;
 	var maps = cache.get('drupal_current');
