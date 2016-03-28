@@ -12,35 +12,31 @@
 	"layers": [ 
 
 				{
+				"title": "No Service",
 				"layertype": "mapbox",
 				"mapid": "fcc.a6335c39", 
-				"legendcolor": "#ffffcc",
-				"legendtext": "No residential services at 200 kbps or above",
 				"checked": "yes" 
 				},
 				
 				{
+				"title": "At Least 200 kbps",
 				"layertype": "mapbox",
 				"mapid": "fcc.0376ced1",
-				"legendcolor": "#c7e9b4", 
-				"legendtext": "Residential services of at least 200 kbps",
 				"checked": "yes" 
 				}, 
 				
 				{
+				"title": "Tribal Land",
 				"layertype": "geoserver", 
 				"geohost": "http://www.broadbandmap.gov", 
 				"geospace": "fcc",
 				"layername": "fcc:bpr_tribal",
 				"style": "bpr_tribal", 
-				"legendcolor": "#999999",
-				"legendbackgroundimage": "",
-				"legendtext": "Tribal land", 
 				"checked": "no" 
 				} 
 			],
-			
-	"legend": [
+	
+	"legends": [
 				{
 				"legendcolor": "#ffffcc",
 				"legendtext": "No residential services at 200 kbps or above"

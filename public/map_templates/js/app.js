@@ -74,40 +74,6 @@ function createMap() {
 
     this.hash = L.hash(map);
 
-    // location.replace = urlHash;
-
-    var zindex1 = 10;
-    for (var i = 0; i < layers_info.length; i++) {
-        zindex1++;
-
-        if (layers_info[i].layertype == "mapbox") {
-            if (layers_info[i].checked == "yes") {
-                mapLayers.push(L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1).addTo(map));
-            } else {
-                mapLayers.push(L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1));
-            }
-
-        } else if (layers_info[i].layertype == "geoserver") {
-
-            if (layers_info[i].checked == "yes") {
-                mapLayers.push(L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
-                    format: 'image/png',
-                    transparent: true,
-                    layers: layers_info[i].layername,
-                    styles: layers_info[i].style
-                }).setZIndex(zindex1).addTo(map));
-            } else {
-                mapLayers.push(L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
-                    format: 'image/png',
-                    transparent: true,
-                    layers: layers_info[i].layername,
-                    styles: layers_info[i].style
-                }).setZIndex(zindex1));
-            }
-
-        }
-    }
-
     baseStreet = L.mapbox.tileLayer('fcc.k74ed5ge');
     baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
     baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');
@@ -133,12 +99,39 @@ function createMap() {
         }
 
     }
+	
+	//map layers
+	mapLayer = {};
+	zindex1 = 10;
+	if (layers_info.length > 0) {
+		for (var i = 0; i < layers_info.length; i++) {
+			zindex1++;
+			if (layers_info[i].layertype == "mapbox") {
+				if (layers_info[i].checked == "yes") {
+					mapLayer[layers_info[i].title] = L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1).addTo(map);
+				}
+				else {
+					mapLayer[layers_info[i].title] = L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1);
+				}
+			}
+			else if (layers_info[i].layertype == "geoserver") {
+				mapLayer[layers_info[i].title] = L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
+                    format: 'image/png',
+                    transparent: true,
+                    layers: layers_info[i].layername,
+                    styles: layers_info[i].style
+                }).setZIndex(zindex1);
+				if (layers_info[i].checked == "yes") {
+					mapLayer[layers_info[i].title].addTo(map);
+				}
+			}
+		}
+	}
+		
 
     if (hasLayers) {
         layerControl = new L.Control.Layers(
-            baseLayer, {
-
-            }, {
+            baseLayer, mapLayer, {
                 position: 'topleft'
             }
         ).addTo(map);
@@ -154,10 +147,11 @@ function createMap() {
     geocoder = L.mapbox.geocoder('mapbox.places-v1');
 
     //make legend
-    if (layers_info.length > 0 && hasLegend) {
+
+    if (hasLegend && map_info.legends && map_info.legends.length > 0) {
         var legend_text1 = "";
-        for (var i = 0; i < layers_info.length; i++) {
-            legend_text1 += '<tr><td><input type="checkbox" id="' + i + '" class="checkbox-provider" checked>&nbsp;</td><td style="width: 28px; height: 28px;"><div style="width: 20px; height: 20px; background-color:' + layers_info[i].legendcolor + '; opacity: 1.0; border: solid 1px #999999"></div></td><td>' + layers_info[i].legendtext + '</td></tr>' + "\n";
+        for (var i = 0; i < map_info.legends.length; i++) {
+            legend_text1 += '<tr><td style="width: 28px; height: 28px;"><div style="width: 20px; height: 20px; background-color:' + map_info.legends[i].legendcolor + '; opacity: 1.0; border: solid 1px #999999"></div></td><td>' + map_info.legends[i].legendtext + '</td></tr>' + "\n";
 
         }
 

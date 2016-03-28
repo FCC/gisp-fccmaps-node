@@ -12,32 +12,47 @@
 	"layers": [ 
 
 				{
+				"title": "No fixed providers",
 				"layertype": "mapbox",
 				"mapid": "fcc.976b85c3", 
-				"legendcolor": "#6e016b",
-				"legendtext": "No fixed providers at 25 Mbps/3 Mbps",
 				"checked": "yes" 
 				},
 				
 				{
+				"title": "FTTP",
 				"layertype": "mapbox",
 				"mapid": "fcc.49bb0203",
-				"legendcolor": "#6e016b", 
-				"legendtext": "FTTP",
 				"checked": "yes" 
 				}, 
 				
 				{
+				"title": "Tribal Land",
 				"layertype": "geoserver", 
 				"geohost": "http://www.broadbandmap.gov", 
 				"geospace": "fcc",
 				"layername": "fcc:bpr_tribal",
 				"style": "bpr_tribal", 
-				"legendcolor": "#999999",
-				"legendbackgroundimage": "",
-				"legendtext": "Tribal land", 
 				"checked": "no" 
 				} 
+				
+			],
+			
+	"legends": [
+	
+				{
+				"legendcolor": "#6e016b",
+				"legendtext": "No fixed Providers"
+				},
+				
+				{
+				 "legendcolor": "#6e016b",
+				 "legendtext": "FTTP"
+				},
+				
+				{
+				 "legendcolor": "#999999",
+				 "legendtext": "Tribal land"
+				}
 				
 			]
 			
