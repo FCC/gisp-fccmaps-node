@@ -12,25 +12,37 @@
 	"layers": [ 
 
 				{
+				"title": "Section 706 Fixed Data",
 				"layertype": "mapbox",
 				"mapid": "fcc.Section-706-Fixed-Broadband-Deployment-Map", 
-				"legendcolor": "#99ff00",
-				"legendtext": "Section 706 Fixed Data Deployment Map",
 				"checked": "yes" 
 				}, 
 				
 				{
+				"title": "Tribal Land",
 				"layertype": "geoserver", 
 				"geohost": "http://www.broadbandmap.gov", 
 				"geospace": "fcc",
 				"layername": "fcc:bpr_tribal",
-				"style": "bpr_tribal", 
-				"legendcolor": "#999999",
-				"legendbackgroundimage": "",
-				"legendtext": "Tribal land", 
+				"style": "bpr_tribal",  
 				"checked": "no" 
 				} 
 				
+			],
+			
+	"legends": [
+	
+				{
+				"legendcolor": "#99ff00",
+				"legendtext": "Section 706 Fixed Data Deployment Map"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendbackgroundimage": "",
+				"legendtext": "Tribal land"
+				}
+
 			]
 			
 }

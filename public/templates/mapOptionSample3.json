@@ -12,32 +12,47 @@
 	"layers": [ 
 
 				{
+				"title": "Zero fixed Providers",
 				"layertype": "mapbox",
 				"mapid": "fcc.976b85c3", 
-				"legendcolor": "#ffffcc",
-				"legendtext": "Zero fixed 25 Mbps/3 Mbps providers",
 				"checked": "yes" 
 				},
 				
 				{
+				"title": "One fixed provider",
 				"layertype": "mapbox",
 				"mapid": "fcc.3494a500",
-				"legendcolor": "#fdcc8a", 
-				"legendtext": "One fixed 25 Mbps/3 Mbps provider",
 				"checked": "yes" 
 				}, 
 				
 				{
+				"title": "Tribal Land",
 				"layertype": "geoserver", 
 				"geohost": "http://www.broadbandmap.gov", 
 				"geospace": "fcc",
 				"layername": "fcc:bpr_tribal",
 				"style": "bpr_tribal", 
-				"legendcolor": "#999999",
-				"legendbackgroundimage": "",
-				"legendtext": "Tribal land", 
 				"checked": "no" 
 				} 
+				
+			],
+			
+	"legends": [
+	
+				{
+				"legendcolor": "#ffffcc",
+				"legendtext": "Zero fixed 25 Mbps/3 Mbps providers"
+				},
+
+				{
+				"legendcolor": "#fdcc8a", 
+				"legendtext": "One fixed 25 Mbps/3 Mbps provider"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Tribal land"
+				}
 				
 			]
 			

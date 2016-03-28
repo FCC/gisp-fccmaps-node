@@ -12,27 +12,38 @@
 	"layers": [ 
 
 				{
+				"title": "Accepted Areas",
 				"layertype": "mapbox",
 				"mapid": "fcc.0j21k0bh", 
-				"legendcolor": "#999900",
-				"legendtext": "CAF-2 Accepted Areas",
 				"checked": "yes"
 				}, 
 				
 				{
+				"title": "Tribal Land",
 				"layertype": "geoserver", 
 				"geohost": "http://www.broadbandmap.gov", 
 				"geospace": "fcc",
 				"layername": "fcc:bpr_tribal",
-				"style": "bpr_tribal", 
-				"legendcolor": "#999999",
-				"legendbackgroundimage": "",
-				"legendtext": "Tribal land", 
+				"style": "bpr_tribal",  
 				"checked": "no" 
 				} 
 				
-			]
+			],
 			
+	"legends": [
+	
+				{
+				"legendcolor": "#999900",
+				"legendtext": "CAF-2 Accepted Areas"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Tribal land"
+				}
+
+			]
+
 }
 
 			

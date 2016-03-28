@@ -12,25 +12,36 @@
 	"layers": [ 
 
 				{
+				"title": "Eligible Areas",
 				"layertype": "mapbox",
 				"mapid": "fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas", 
-				"legendcolor": "#000000",
-				"legendtext": "Tribal mobility fund phase I potentially eligible areas",
 				"checked": "yes" 
 				}, 
 				
 				{
+				"title": "Tribal Land",
 				"layertype": "geoserver", 
 				"geohost": "http://www.broadbandmap.gov", 
 				"geospace": "fcc",
 				"layername": "fcc:bpr_tribal",
-				"style": "bpr_tribal", 
-				"legendcolor": "#999999",
-				"legendbackgroundimage": "",
-				"legendtext": "Tribal land", 
+				"style": "bpr_tribal",  
 				"checked": "no" 
 				} 
 				
+			],
+			
+	"legends": [
+	
+				{
+				"legendcolor": "#000000",
+				"legendtext": "Tribal mobility fund phase I potentially eligible areas"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Tribal land"
+				}
+
 			]
 			
 }

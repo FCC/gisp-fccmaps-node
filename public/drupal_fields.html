@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+New map-related fields to be added to the Drupal form.<p>
 <form>
+Bureau: <input id="bureau" value=""><br>
 Map center latitude: <input id="map_center_latitude" value="50"><br>
 Map center longitude: <input id="map_center_longitude" value="-105"><br>
 Map initial zoom: <input id="map_initial_zoom" value="3"><br>
@@ -11,29 +12,30 @@ Scale Control: <select id="scale_control">
 				<option value="yes">Yes</option>
 				<option value="no">No</option>
 				</select><br>
-Search by address: <select id="search_address">
+Search bar: <select id="search">
 				<option value="yes">Yes</option>
 				<option value="no">No</option>
 				</select><br>
-Search by coordinate: <select id="search_coordinate">
-				<option value="yes">Yes</option>
-				<option value="no">No</option>
-				</select><br>
+
 Attribution: <input id="attribution" value="<a href=https://maps.fcc.gov/>FCC Maps</a>">
+<br>
+Base maps: <input type="checkbox" id="base-map-street" value="street" checked>Street
+<input type="checkbox" id="base-map-satellite" value="satellite" checked>Satellite
+<input type="checkbox" id="base-map-terrain" value="terrain" checked>Terrain
+
 <p>
 
 
 
 Layers:
 <br>
-Note: there are unknown number of layers for each submission, please design the form to allow this, with different IDs for each layer. And in the return JSON from Drupal API, please make layer info into arrays.
+Note: there will be unknown number of layers for each submission, please design the form to allow this, with different IDs for each layer.
 
 
 <p>
 Layer 1:<br>
 Layer URL: <input id="layer_url"><br>
-Legend color: <input id="legend_color"><br>
-Legend text: <input id="legend_text"><br>
+
 Layer on by default: <select id="layer_auto_on">
 				<option value="yes">Yes</option>
 				<option value="no">No</option>
@@ -41,14 +43,37 @@ Layer on by default: <select id="layer_auto_on">
 <p>
 Layer 2:<br>
 Layer URL: <input id="layer_url"><br>
-Legend color: <input id="legend_color"><br>
-Legend text: <input id="legend_text"><br>
 Layer on by default: <select id="layer_auto_on">
 				<option value="yes">Yes</option>
 				<option value="no">No</option>
 				</select>
 <p>
-Layer 3 ...
+Layer 3: ...
+<p>
+
+
+<br>
+Legends:
+<br>
+Note: there will be unknown number of legends, please design the form to allow this.
+<p>
+Legend 1:<br>
+Color: <input id=legend-color>
+<br>
+Text: <input id=legend-text>
+<p>
+Legend 2:<br>
+Color: <input id=legend-color>
+<br>
+Text: <input id=legend-text>
+<p>
+Legend 3: ...
+
+
+
+
+
+
 				
 
 

@@ -12,25 +12,36 @@
 	"layers": [ 
 
 				{
+				"title": "States Receiving Support",
 				"layertype": "mapbox",
 				"mapid": "fcc.CAF-Phase-1-States", 
-				"legendcolor": "#999900",
-				"legendtext": "States Receiving Connect America Phase I Support",
 				"checked": "yes" 
 				}, 
 				
 				{
+				"title": "Tribal Land",
 				"layertype": "geoserver", 
 				"geohost": "http://www.broadbandmap.gov", 
 				"geospace": "fcc",
 				"layername": "fcc:bpr_tribal",
 				"style": "bpr_tribal", 
-				"legendcolor": "#999999",
-				"legendbackgroundimage": "",
-				"legendtext": "Tribal land", 
 				"checked": "no" 
 				} 
 				
+			],
+			
+	"legends": [
+
+				{
+				"legendcolor": "#999900",
+				"legendtext": "States Receiving Connect America Phase I Support"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Tribal land"
+				}
+
 			]
 			
 }

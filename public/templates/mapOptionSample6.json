@@ -12,24 +12,34 @@
 	"layers": [ 
 
 				{
+				"title": "Unserved Areas",
 				"layertype": "mapbox",
-				"mapid": "fcc.unserved_fixed_broadband", 
-				"legendcolor": "#999999",
-				"legendtext": "Unserved by Fixed Broadband",
+				"mapid": "fcc.unserved_fixed_broadband",
 				"checked": "yes" 
 				}, 
 				
 				{
+				"title": "Tribal Land",
 				"layertype": "geoserver", 
 				"geohost": "http://www.broadbandmap.gov", 
 				"geospace": "fcc",
 				"layername": "fcc:bpr_tribal",
 				"style": "bpr_tribal", 
-				"legendcolor": "#999999",
-				"legendbackgroundimage": "",
-				"legendtext": "Tribal land", 
 				"checked": "no" 
 				} 
+				
+			],
+			
+	"legends": [
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Unserved by Fixed Broadband"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Tribal land"
+				}
 				
 			]
 			
