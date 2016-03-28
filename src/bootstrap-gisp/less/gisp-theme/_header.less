@@ -16,15 +16,9 @@
 }
 
 .navbar {
-    margin-bottom: 0;
     border: 0;
+    margin-bottom: 0;    
 }
-
-/* .dropdown-menu {
-    .content-flush & {
-        padding: 0;
-    }
-} */
 
 .navbar-primary {
     height: 58px;
@@ -32,46 +26,34 @@
     box-shadow: inset 0px -11px 30px 0px rgba(0, 0, 0, 0.3);
     @media screen and (min-width: 768px) {
         height: 73px;
-    }
-    /* @media screen and (min-width: 992px) {
-        height: 76px;
-    } */
+    }    
 }
 
 .navbar-header {
-    float: left;
-    /* @media screen and (min-width: 992px) {
-        width: 19%;
-    } */
+    float: left;    
 }
 
 .navbar-brand {
-    margin: 0;
     height: auto;
+    margin: 0;    
     padding-left: 10px;
     padding-right: 10px;
     @media screen and (min-width: 768px) {
         padding-top: 18px;
         padding-bottom: 18px;
-    }
-    /* @media screen and (max-width: 767px) {
-        padding-top: 13px;
-        padding-bottom: 13px;
-    } */
+    }    
 }
 
 .navbar-logo {
     background-image: url('../images/icons-sa0dc29a632.png');
     background-position: 0 -2440px;
     background-repeat: no-repeat;
-    overflow: hidden;
     display: inline-block;
-    vertical-align: middle;
-    height: 30px;
-    width: 137px;
     font-size: 1em;
-    display: block;
-    display: block;
+    height: 30px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 137px;
     @media screen and (min-width: 768px) {
         width: 175px;
         height: 38px;
@@ -80,9 +62,7 @@
 }
 
 .navbar-about {
-    color: #fff;
-    float: left;
-    margin: 27px 0 0;
+    margin: 40px 0 0;
     display: block;
     &:hover, &:focus {
         color: #fff;
@@ -93,7 +73,6 @@
 }
 
 .btn.nav-collapse {
-    color: #fff;
     display: none;
     float: right;
     margin: 5px 0 5px 30px;
@@ -102,23 +81,22 @@
     padding-right: 6px;
     &:hover,
     &:focus {
-        color: #fff;
+        color: #1e5298;
     }
     @media screen and (min-width: @screen-md-min) {
         display: block;
-        margin-top: 10px;
+        margin-top: 30px;
         padding-left: 12px;
         padding-right: 12px;
     }
 }
 
 #menu-primary {
-    float: left;
-    text-align: center;
-    height: 58px;
     background: #13428b url(../images/bg-pattern-header.png);
-    -webkit-box-shadow: inset 10px -40px 80px rgba(0, 0, 0, 0.3);
     box-shadow: inset 10px -40px 80px rgba(0, 0, 0, 0.3);
+    float: left;
+    height: 58px;
+    text-align: center;
     a {
         color: #fff;
         height: 100%;
