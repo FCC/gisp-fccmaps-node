@@ -58,6 +58,8 @@
             $('.tag-list-inline').on('click', '.link-removeTag', mapGallery.removeTag);
 
             $('.link-clearFilters').on('click', mapGallery.clearFilters);
+
+            $('.link-ext').on('click', mapGallery.extLinks);
         },
 
         initGrid: function() {
@@ -79,6 +81,16 @@
             });
         },
 
+        extLinks: function(e) {
+            var alertText = 'You are about to leave the FCC website and visit a third-party, non-governmental website that the FCC does not maintain or control. The FCC does not endorse any product or service, and is not responsible for, nor can it guarantee the validity or timeliness of the content on the page you are about to visit. Additionally, the privacy policies of this third-party page may differ from those of the FCC.';
+
+            var confirm = window.confirm(alertText);
+
+            if (!confirm) {
+                e.preventDefault();
+            }
+        },
+
         showCardDetails: function(e) {
             var thisBtn = $(this),
                 thisCard = thisBtn.closest('.card').find('.card__body'),
@@ -88,14 +100,22 @@
             thisCard.closest('.card').css('z-index', 1);
 
             if (thisCard.is(':visible')) {
-                thisBtn.html('<span class="icon icon-caret-right"></span>View details');
+                thisBtn
+                    .html('<span class="icon icon-caret-right"></span>View details')
+                    .attr('aria-pressed', false);
+                    
                 thisCardBody.slideUp(function() {
+                    thisCardBody.attr('aria-expanded', false);
                     thisBtn.closest('.card').css('z-index', 0);
                     $('.map-cards').isotope('layout');
                 });
             } else {
-                thisBtn.html('<span class="icon icon-caret-down"></span>Hide details');
+                thisBtn
+                    .html('<span class="icon icon-caret-down"></span>Hide details')
+                    .attr('aria-pressed', true);
+
                 thisCardBody.slideDown(function() {
+                    thisCardBody.attr('aria-expanded', true);
                     thisBtn.closest('.card').css('z-index', 0);
                     $('.map-cards').isotope('layout');
                 });

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Maps | FCC GISP</title>
+    <title>Maps - FCC GIS</title>
     <link rel="shortcut icon" href="https://www.fcc.gov/sites/all/themes/fcc/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
@@ -44,9 +44,6 @@
                         </a>
                     </li>
                 </ul>
-                <div class="pull-right"><a class="navbar-about" href="../about.html">About <span class="icon icon-info-circle"></span></a>
-                    <button type="button" class="nav-collapse btn btn-link" aria-controls="browse-by-category"><i class="icon icon-bars"></i></button>
-                </div>
             </nav>
         </div>
     </header>
@@ -56,8 +53,17 @@
                 <div class="row-grid">
                     <div class="col-grid">
                         <section class="docs-content">
-                            <div class="pg-header">
-                                <h1><span id="span-title">Title</span> <small><span id="span-subtitle">Subtitle</span></small></h1>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="pg-header">
+                                        <h1><span id="span-title">Title</span> <small><span id="span-subtitle">Subtitle</span></small></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="pull-right">
+                                        <button type="button" class="nav-collapse btn btn-link" aria-controls="browse-by-category"><i class="icon icon-bars"></i></button>
+                                    </div>
+                                </div>
                             </div>
                             <div id="search-field-holder" style="display: none">
                                 <div class="search-field input-group">
@@ -127,14 +133,14 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             Related Links
-                                        </div>           
+                                        </div>
                                         <div class="panel-body">
                                             <ul class="list-unstyled">
                                                 <li><a href="#void">Related link</a></li>
                                                 <li><a href="#void">Related link</a></li>
                                                 <li><a href="#void">Related link</a></li>
                                             </ul>
-                                        </div>                             
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -164,11 +170,10 @@
                                 </button>
                             </div>
                             <ul id="ul-map-list" class="nav nav-stacked">
-                                
                             </ul>
                         </nav>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </main>
@@ -190,11 +195,11 @@
                                 <a class="contactus" href="/about/contact">Contact Us</a>
                             </ul>
                             <ul class="socialmediaicons">
-                                <li><a class="social-media twitter" href="https://twitter.com/fcc">Twitter</a></li>
-                                <li><a class="social-media facebook" href="https://www.facebook.com/FCC">Facebook</a></li>
-                                <li><a class="social-media youtube" href="https://www.youtube.com/user/fccdotgovvideo">Youtube</a></li>
-                                <li><a class="social-media flickr" href="https://www.flickr.com/photos/fccdotgov">Flickr</a></li>
-                                <li><a class="social-media instagram" href="https://www.instagram.com/fcc">Instagram</a></li>
+                                <li><a class="link-ext social-media twitter" href="https://twitter.com/fcc">Twitter</a></li>
+                                <li><a class="link-ext social-media facebook" href="https://www.facebook.com/FCC">Facebook</a></li>
+                                <li><a class="link-ext social-media youtube" href="https://www.youtube.com/user/fccdotgovvideo">Youtube</a></li>
+                                <li><a class="link-ext social-media flickr" href="https://www.flickr.com/photos/fccdotgov">Flickr</a></li>
+                                <li><a class="link-ext social-media instagram" href="https://www.instagram.com/fcc">Instagram</a></li>
                             </ul>
                         </div>
                         <div class="grid-item">
@@ -243,9 +248,13 @@
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <script>window.jQuery.ui || document.write('<script src="js/vendor/jquery-ui.min.js"><\/script>')</script>
+    <script>
+    window.jQuery.ui || document.write('<script src="js/vendor/jquery-ui.min.js"><\/script>')
+    </script>
     <script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
     <script src='js/vendor/l-hash.js'></script>
     <!-- <script src='js/vendor/leaflet-hash.js'></script> -->
