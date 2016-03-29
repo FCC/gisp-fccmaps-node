@@ -61,8 +61,16 @@
 
             $('.link-ext').on('click', mapGallery.extLinks);
 
-            $('.map-cards').on('arrangeComplete', function(event, filteredItems) {
-                $('#numMaps').html(filteredItems.length);
+            $('.map-cards').on('layoutComplete', function(event, filteredItems) {
+                $('.gallery__numResults')
+                    .html('Showing: ' + filteredItems.length + ' maps')
+                    .focus();
+
+                if (filteredItems.length === 0) {
+                    $('.alert-noResults').removeClass('hide');
+                } else {
+                    $('.alert-noResults').addClass('hide');
+                }
             });
         },
 
