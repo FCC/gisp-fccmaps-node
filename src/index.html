@@ -64,12 +64,7 @@
                         <div class="form-inline">
                             <label class="control-label" for="sel-filter">Bureau:</label>
                             <select id="sel-filter" class="form-control form-control-width-sm">
-                                <option value="all">Show all</option>
-                                <!-- <option value="MB">Media Bureau</option>
-                                <option value="OSP">Office of Strategic Planning and Policy Analysis</option>
-                                <option value="OET">Office Engineering and Technology</option>
-                                <option value="WCB">Wireline Competition</option>
-                                <option value="WTB">Wireless Telecommunications Bureau</option> -->
+                                <option value="all">Show all</option>                                
                             </select>
                             <label class="control-label" for="sel-sort">Sort:</label>
                             <select id="sel-sort" class="form-control form-control-width-sm">
@@ -86,8 +81,8 @@
                     <a class="link-removeTags h6" href="#void">Tags</a>
                     <ul class="list-tags list-unstyled"></ul>
                 </div>
-                <div class="alert-noResults h4 hide">
-                    There selected filters did not match any maps. Please revise your selections and try again.
+                <div class="alert-noResults h4 hide" role="alert">
+                    The selected filters did not match any maps. Please revise your selections and try again.
                 </div>
                 <ul id="map-list-holder" class="map-cards list-unstyled"></ul>
             </div>
