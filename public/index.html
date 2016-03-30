@@ -53,35 +53,34 @@
                     </div>
                 </div>
                 <div class="gallery-filters row">
-                    <div class="gallery__numResults">Showing: 0 maps</div>                  
-                     <div class="gallery__filterOpts">
-                            <div class="btn-group btn-group-sm" role="group" aria-label="Map view options">
-                                <button type="button" class="btn btn-default">All</button>
-                                <button type="button" class="btn btn-default active">Current</button>
-                                <button type="button" class="btn btn-default">Archive</button>
-                            </div>
-                            <div class="form-inline">
-                                <label class="control-label" for="sel-filter">Bureau:</label>
-                                <select id="sel-filter" class="form-control form-control-width-sm">
-                                    <option value="all">Show all</option>
-                                    <option value="MB">Media Bureau</option>
-                                    <option value="OSP">Office of Strategic Planning and Policy Analysis</option>
-                                    <option value="OET">Office Engineering and Technology</option>
-                                    <option value="WCB">Wireline Competition</option>
-                                    <option value="WTB">Wireless Telecommunications Bureau</option>
-                                </select>
-                                
-                                <label class="control-label" for="sel-sort">Sort:</label>
-                                <select id="sel-sort" class="form-control form-control-width-sm">
-                                    <option value="dateDesc" selected>Newest</option>
-                                    <option value="dateAsc">Oldest</option>
-                                    <option value="titleAsc">Title (A-Z)</option>
-                                    <option value="titleDesc">Title (Z-A)</option>
-                                </select>
-                                
-                                <a href="#void" class="link-clearFilters">Reset Filters</a>
-                            </div>
+                    <div class="gallery__numResults">Showing: 0 maps</div>
+                    <div class="gallery__filterOpts">
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Map view options">
+                            <button type="button" class="btn btn-default">All</button>
+                            <button type="button" class="btn btn-default active">Current</button>
+                            <button type="button" class="btn btn-default">Featured</button>
+                            <button type="button" class="btn btn-default">Archive</button>
                         </div>
+                        <div class="form-inline">
+                            <label class="control-label" for="sel-filter">Bureau:</label>
+                            <select id="sel-filter" class="form-control form-control-width-sm">
+                                <option value="all">Show all</option>
+                                <!-- <option value="MB">Media Bureau</option>
+                                <option value="OSP">Office of Strategic Planning and Policy Analysis</option>
+                                <option value="OET">Office Engineering and Technology</option>
+                                <option value="WCB">Wireline Competition</option>
+                                <option value="WTB">Wireless Telecommunications Bureau</option> -->
+                            </select>
+                            <label class="control-label" for="sel-sort">Sort:</label>
+                            <select id="sel-sort" class="form-control form-control-width-sm">
+                                <option value="dateDesc" selected>Newest</option>
+                                <option value="dateAsc">Oldest</option>
+                                <option value="titleAsc">Title (A-Z)</option>
+                                <option value="titleDesc">Title (Z-A)</option>
+                            </select>
+                            <a href="#void" class="link-clearFilters">Reset Filters</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="tag-list-inline hide">
                     <a class="link-removeTags h6" href="#void">Tags</a>
@@ -254,9 +253,56 @@
                         }
                     }
 
+
+
+
                 }
 
-                var text = "";
+                // populate bureau filter dropdown
+                function getBureauFilters() {
+                    var bureauFilters = [],
+                        options = '',
+                        bureauAbbr = {
+                            'MB': 'Media Bureau',
+                            'OSP': 'Office of Strategic Policy and Planning Analysis',
+                            'WTB': 'Wireless Telecommunications',
+                            'OET': 'Office of Engineering and Technology',
+                            'WCB': 'Wireline Competition',
+                            'PSHSB': ' Public Safety and Homeland Security',
+                            'IB': 'International Bureau',
+                            'EB': 'Enforcement Bureau',
+                            'CGB': 'Consumer and Governmental Affairs Bureau'
+                        };
+
+                    function arrUnique(arr) {
+                        var i,
+                            len = arr.length,
+                            unique = [],
+                            obj = {};
+
+                        for (i = 0; i < len; i++) {
+                            obj[arr[i]] = 0;
+                        }
+                        for (i in obj) {
+                            unique.push(i);
+                        }
+                        return unique;
+                    }
+
+                    bureauFilters = arrUnique(bureaus).sort();
+
+                    for (var k = 0; k < bureauFilters.length; k++) {
+                        options += '<option value="' + bureauFilters[k] + '">' + bureauAbbr[bureauFilters[k]] + '</option>';
+                    }
+
+                    $('#sel-filter').find('option').eq(0).after(options);
+
+                }
+
+                getBureauFilters();
+
+
+                var text = '';
                 for (var i = 0; i < urls.length; i++) {
 
                     var url = urls[i] + "/responsive.html";
