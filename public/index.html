@@ -191,6 +191,9 @@
                 var searches = [];
                 var bureaus = [];
                 var dates = [];
+				var archiveds = [];
+				var featureds = [];
+				var lives = [];
 
                 for (var i = 1; i < data.length; i++) {
 
@@ -215,6 +218,20 @@
                     if (data[i].fields.field_subtitle.und) {
                         subtitle = data[i].fields.field_subtitle.und[0].value;
                     }
+					var archived = "0";
+					if (data[i].fields.field_archived && data[i].fields.field_archived.und) {
+						archived = data[i].fields.field_archived.und[0].value;
+					}
+					if (archived == "0") {
+						var live = "1";
+					}
+					else {
+						var live = "0";
+					}
+					var featured = "0";
+					if (data[i].fields.field_featured && data[i].fields.field_featured.und) {
+						featured = data[i].fields.field_featured.und[0].value;
+					}
 
                     if (url + repo != "") {
                         urls.push(url);
@@ -231,6 +248,9 @@
                         }
                         bureaus.push(bureau);
                         dates.push(changed);
+						archiveds.push(archived);
+						lives.push(live);
+						featureds.push(featured);
 
                         var map_info = "";
                         if (data[i].fields.field_description.und) {
@@ -248,10 +268,9 @@
                         }
                     }
 
-
-
-
                 }
+				
+				//console.log('archiveds=' + archiveds + ' lives=' + lives + ' featureds=' + featureds)
 
                 // populate bureau filter dropdown
                 function getBureauFilters() {
@@ -302,7 +321,22 @@
 
                     var url = urls[i] + "/responsive.html";
                     var url_bookmark = urls[i] + "/#" + zooms[i] + "/" + center_lats[i] + "/" + center_lons[i] + "/zoom,attr,layers,key,search";
-                    text += '<li class="card bureau-' + bureaus[i] + ' tag-data-maps-reports tag-maps"> \
+					
+					var add_class = "";
+					if (lives[i] == "1") {
+						add_class += "data-live ";
+					}
+					if (archiveds[i] == "1") {
+						add_class += "data-archived ";
+					}
+					if (featureds[i] == "1") {
+						add_class += "data-featured";
+					}
+					
+					console.log(i + ' ' + titles[i] + ' addclass=' + add_class);
+					
+					
+                    text += '<li class="card bureau-' + bureaus[i] + ' ' + add_class + ' tag-data-maps-reports tag-maps"> \
                             <div class="mapThumb-btns"> \
                                 <a class="btn btn-xs btn-default" href="' + url_bookmark + '"><span class="sr-only">View map</span> <span class="icon icon-external-link-square"></span></a> \
                             </div> \
@@ -329,6 +363,8 @@
                         </li>';
 
                 }
+				
+				//console.log(text);
 
                 var $items = $(text);
 
