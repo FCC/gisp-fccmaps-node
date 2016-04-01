@@ -33,3 +33,28 @@
 .panel-contactUs {
     width: 275px;
 }
+
+.navbar-about {
+    float: right;
+    margin: 50px 0 0;
+    display: block;        
+}
+
+.btn.nav-collapse {
+    display: none;
+    float: right;
+    margin: 5px 0 5px 30px;
+    font-size: 26px;
+    padding-left: 6px;
+    padding-right: 6px;
+    &:hover,
+    &:focus {
+        color: #1e5298;
+    }
+    @media screen and (min-width: @screen-md-min) {
+        display: block;
+        margin-top: 30px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

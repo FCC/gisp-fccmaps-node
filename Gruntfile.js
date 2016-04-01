@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                     dot: true,
                     src: [
                         '<%= paths.tmp %>',
-                        '<%= paths.assets %>'                        
+                        './dist'                        
                     ]
                 }]
             }
