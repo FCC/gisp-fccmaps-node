@@ -3,8 +3,9 @@
 
     var mapGallery = {
         filters: {
-            bureau: '*',
-            tag: ''
+            bureau: '',
+            tag: '',
+            status: '.data-live'
         },
         filterOpts: {
             all: '*',
@@ -19,7 +20,7 @@
 
             OET: '.bureau-OET'
 
-        },
+        },        
         sortList: {
             sortBy: 'date',
             sortAscending: false
@@ -56,6 +57,8 @@
             $('#sel-sort').on('change', mapGallery.sorting);
 
             $('.tag-list-inline').on('click', '.link-removeTag', mapGallery.removeTag);
+
+            $('.map-status').on('click', '.btn', mapGallery.filterByStatus);
 
             $('.link-clearFilters').on('click', mapGallery.clearFilters);
 
@@ -151,6 +154,18 @@
             mapGallery.filter();
         },
 
+        filterByStatus: function() { console.log(this);
+            var selectedBtn = $(this).attr('data-filter'),
+                btnGroup = $(this).closest('.map-status');
+
+            btnGroup.find('.active').removeClass('active');
+            $(this).addClass('active');
+
+            mapGallery.filters.status = '.' + selectedBtn;
+console.log(mapGallery.filters.status);
+            mapGallery.filter();
+        },
+
         removeTag: function(e) {
             var $tagLink = $(this),
                 $tag = $tagLink.parent('span').attr('data-tag');
@@ -213,9 +228,16 @@
 
             mapGallery.filters.bureau = '*';
             mapGallery.filters.tag = '';
+            mapGallery.filters.status = '.data-live';
 
             mapGallery.sortList.sortBy = 'date';
             mapGallery.sortList.sortAscending = false;
+
+            $('.map-status')
+                .find('.active')
+                .removeClass('active')
+                .end()
+                .find('.btn').eq(1).addClass('active');
 
             if ($('.tag-list-inline').is(':visible')) {
                 $('.tag-list-inline')
@@ -230,20 +252,23 @@
 
         locationHash: function() {
             var filters = 'filter=' + mapGallery.filters.bureau,
+                status = 'status=' + mapGallery.filters.status,
                 tags = 'tags=' + mapGallery.filters.tag,
                 sortBy = 'sortBy=' + mapGallery.sortList.sortBy + '&sortAscending=' + mapGallery.sortList.sortAscending;
 
-            location.hash = encodeURIComponent(filters) + '&' + encodeURIComponent(tags) + '&' + encodeURIComponent(sortBy);
+            location.hash = encodeURIComponent(filters) + '&' + encodeURIComponent(status) + '&' + encodeURIComponent(tags) + '&' + encodeURIComponent(sortBy);
         },
 
         getHashFilter: function() {
             var hash = decodeURIComponent(location.hash),
                 bureauHash = hash.match(/filter=([^&]+)/i),
+                statusHash = hash.match(/status=([^&]+)/i),
                 tagHash = hash.match(/tags=([^&]+)/i),
                 sortByHash = hash.match(/sortBy=([^&]+)/i),
                 sortAscHash = hash.match(/sortAscending=([^&]+)/i);
 
             mapGallery.filters.bureau = bureauHash === null ? mapGallery.filters.bureau : bureauHash[1];
+            mapGallery.filters.status = bureauHash === null ? mapGallery.filters.status : statusHash[1];
             mapGallery.filters.tag = tagHash === null ? mapGallery.filters.tag : tagHash[1];
             mapGallery.sortList.sortBy = sortByHash === null ? mapGallery.sortList.sortBy : sortByHash[1];
             mapGallery.sortList.sortAscending = sortAscHash === null ? mapGallery.sortList.sortAscending : sortAscHash[1];
@@ -255,8 +280,9 @@
             var filters = '';
 
             mapGallery.getHashFilter();
-            filters = mapGallery.filters.tag + mapGallery.filters.bureau;
 
+            filters = mapGallery.filters.bureau + mapGallery.filters.status + mapGallery.filters.tag;
+console.log(filters)         ;
             mapGallery.isIsotopeInit = true;
 
             $('.map-cards')
@@ -267,8 +293,8 @@
                 })
                 .isotope('updateSortData');
 
-            for (var k in mapGallery.filterOpts) {
-                if (mapGallery.filterOpts[k] === mapGallery.filters.bureau) {
+            for (var k in mapGallery.filterOpts) { console.log(k);
+                if (mapGallery.filterOpts[k] === mapGallery.filters.bureau) { 
                     $('#sel-filter').val(k);
                 }
             }
@@ -278,6 +304,25 @@
                     $('#sel-sort').val(i);
                 }
             }
+
+            console.log(mapGallery.filters.status);
+
+            $('.map-status')
+                .find('.active')
+                .removeClass('active')
+                .end()
+                .find('.btn')
+                .each(function(index, element) {
+                    var btn = $(element),
+                        btnAttr = btn.attr('data-filter'),
+                        btnClass = '.' + btnAttr;
+                    
+
+                    if (mapGallery.filters.status === btnClass) { console.log(btnClass);
+                        btn.addClass('active');
+                    }
+
+                });
 
             /*console.log('selected tags = ' + mapGallery.selectedTags);
 
