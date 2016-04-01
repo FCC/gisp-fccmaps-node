@@ -1,0 +1,123 @@
+.site-header {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: 992px) {
+        background: #266ad0;
+    }
+}
+
+.navbar {
+    border: 0;
+    margin-bottom: 0;
+}
+
+.navbar-primary {
+    background: rgb(19, 66, 139) url(https://www.fcc.gov/sites/all/themes/fcc/images/bg-pattern-header.png);
+    box-shadow: inset 0px -11px 30px 0px rgba(0, 0, 0, 0.3);
+    &:after,
+    &:before {
+        content: "";
+        display: table;
+    }
+    .nav-primary {
+        float: left;
+        @media (min-width: @screen-md-min) {
+            float: none;
+        }
+    }
+    .navbar-logo {
+        float: left;
+        margin: 19px 0;
+    }
+    .navbar-nav {
+        display: none;
+        min-width: 70px;
+        margin-left: 110px;
+        text-align: center;
+        width: 50%;
+        @media (min-width: @screen-md-min) {
+            display: block;
+            margin-left: 130px;
+        }
+        a {
+            color: #fff;
+        }
+        & > li >a:hover,
+        & > li > a:focus {
+            background-color: transparent;
+        }
+        li {
+            display: inline-block;
+            font-weight: normal;
+            height: 76px;
+            width: 49%;
+            &:first-child {
+                max-width: 170px;
+            }
+            &.active {
+                background: rgba(0, 0, 0, 0.2)
+            }
+        }
+        .text-prefix {
+            font-style: italic;
+        }
+        strong {
+            font-size: 20px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        .pointer {
+            left: ~"calc(50% - 49px)";
+            background-image: url(../images/menu-active-pointer.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            height: 45px;
+            position: absolute;
+            // pointer-events: none;
+            top: 64px;
+            width: 98px;
+        }
+    }
+}
+
+.nav-secondary {
+    background-color: #2c75d6;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    @media (min-width: @screen-md-min) {
+        display: block;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    li {
+        height: 4.2em;
+        padding: 20px 0;
+    }
+    a {
+        color: #fff;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+.hamburger {
+    background-image: url(../images/icons-2x-s4a93a70c85.png);
+    background-size: 185px 2138px;
+    background-position: 0px -1156px;
+    height: 23px;
+    width: 28px;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: 27px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    @media (min-width: @screen-md-min) {
+        display: none;
+    }
+}
