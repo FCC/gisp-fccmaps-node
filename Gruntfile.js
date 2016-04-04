@@ -21,15 +21,15 @@ module.exports = function(grunt) {
         watch: {
             html: {
                 files: ['./src/**/*.html'],
-                tasks: ['copy']
+                tasks: ['copy', 'clean:delTempFolders']
             },
             js: {
                 files: ['./src/map_templates/js/**/*.js'],
-                tasks: ['copy']
+                tasks: ['copy', 'clean:delTempFolders']
             },
             less: {
                 files: ['./src/bootstrap-gisp/less/**/*.less'],
-                tasks: ['less', 'usebanner', 'autoprefixer', 'copy']
+                tasks: ['less', 'usebanner', 'autoprefixer', 'copy', 'clean:delTempFolders']
             }
         },
 
@@ -196,7 +196,7 @@ module.exports = function(grunt) {
                 files: [{ // map home page to public
                     expand: true,
                     cwd: './src',
-                    src: ['index.html'],
+                    src: ['index.html', 'about.html'],
                     dest: './public'
                 }]
             },
