@@ -142,7 +142,7 @@
             mapGallery.filter();
         },
 
-        filterByStatus: function() { console.log(this);
+        filterByStatus: function() { 
             var selectedBtn = $(this).attr('data-filter'),
                 btnGroup = $(this).closest('.map-status');
 
@@ -150,7 +150,7 @@
             $(this).addClass('active');
 
             mapGallery.filters.status = '.' + selectedBtn;
-console.log(mapGallery.filters.status);
+
             mapGallery.filter();
         },
 
@@ -180,7 +180,7 @@ console.log(mapGallery.filters.status);
             if (mapGallery.selectedTags.indexOf($tag) < 0) {
 
                 mapGallery.selectedTags.push($tag);
-                // console.log(mapGallery.selectedTags);
+                
                 newTag.find('a').replaceWith('<span data-tag="' + $tag + '">' + $tagText + '<a class="link-removeTag" href="#void"><span class="icon icon-remove"></span></span></a>');
 
                 if (!$('.tag-list-inline').is(':visible')) {
@@ -256,21 +256,21 @@ console.log(mapGallery.filters.status);
                 sortAscHash = hash.match(/sortAscending=([^&]+)/i);
 
             mapGallery.filters.bureau = bureauHash === null ? mapGallery.filters.bureau : bureauHash[1];
-            mapGallery.filters.status = bureauHash === null ? mapGallery.filters.status : statusHash[1];
+            mapGallery.filters.status = statusHash === null ? mapGallery.filters.status : statusHash[1];
             mapGallery.filters.tag = tagHash === null ? mapGallery.filters.tag : tagHash[1];
             mapGallery.sortList.sortBy = sortByHash === null ? mapGallery.sortList.sortBy : sortByHash[1];
             mapGallery.sortList.sortAscending = sortAscHash === null ? mapGallery.sortList.sortAscending : sortAscHash[1];
             mapGallery.sortList.sortAscending = mapGallery.sortList.sortAscending === 'true';
         },
 
-        onHashchange: function() {
+        onHashchange: function() { 
 
             var filters = '';
 
             mapGallery.getHashFilter();
 
             filters = mapGallery.filters.bureau + mapGallery.filters.status + mapGallery.filters.tag;
-console.log(filters)         ;
+
             mapGallery.isIsotopeInit = true;
 
             $('.map-cards')
@@ -281,7 +281,7 @@ console.log(filters)         ;
                 })
                 .isotope('updateSortData');
 
-            for (var k in mapGallery.filterOpts) { console.log(k);
+            for (var k in mapGallery.filterOpts) { 
                 if (mapGallery.filterOpts[k] === mapGallery.filters.bureau) { 
                     $('#sel-filter').val(k);
                 }
@@ -291,9 +291,7 @@ console.log(filters)         ;
                 if (mapGallery.sortOpts[i].sortBy === mapGallery.sortList.sortBy && mapGallery.sortOpts[i].sortAscending === mapGallery.sortList.sortAscending) {
                     $('#sel-sort').val(i);
                 }
-            }
-
-            console.log(mapGallery.filters.status);
+            }            
 
             $('.map-status')
                 .find('.active')
@@ -306,7 +304,7 @@ console.log(filters)         ;
                         btnClass = '.' + btnAttr;
                     
 
-                    if (mapGallery.filters.status === btnClass) { console.log(btnClass);
+                    if (mapGallery.filters.status === btnClass) { 
                         btn.addClass('active');
                     }
 
