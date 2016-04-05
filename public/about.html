@@ -24,69 +24,97 @@
 
 </head>
 
-<body class="docs-collapsed-nav">
+<body class="docs-collapsed-nav js-ready">
     <!--[if lt IE 9]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div class="outer-container">
+        <div class="inner-container">
     <header class="navbar site-header">
-        <div class="navbar-primary">
-            <div class="container">
-                <div class="jumpLinks"> <a href="#skiptarget1" class="sr-only focusable">Skip to main content</a> <a href="#skiptarget3" class="sr-only focusable">Skip to footer and contact information</a> </div>
-                <nav role="navigation">
-                    <div class="nav-primary">
-                        <div class="navbar-header">
-                            <a title="Home" href="http://fcc.gov" class="navbar-logo">
-                                <img src="http://www.fcc.gov/sites/all/themes/fcc/images/fcc-logo-lg.png" alt="Home" class="img-responsive">
-                                <span class="sr-only">Federal Communications Commission</span>
-                            </a>
-                        </div>
-                        <ul class="nav navbar-nav" aria-hidden="false">
-                            <li class="active">
-                                <a class="" href="/">
-                                    <div class="text-prefix">Browse by</div>
-                                    <strong class="title-emphasis">Category</strong>
-                                    <div class="pointer"></div>
-                                </a>
+                <div class="navbar-primary">
+                    <div class="container">
+                        <div class="jumpLinks"> <a href="#skiptarget1" class="sr-only focusable">Skip to main content</a> <a href="#skiptarget3" class="sr-only focusable">Skip to footer and contact information</a> </div>
+                        <nav role="navigation">
+                            <div class="nav-primary">
+                                <div class="navbar-header">
+                                    <a title="Home" href="http://fcc.gov" class="navbar-logo">
+                                        <img src="http://www.fcc.gov/sites/all/themes/fcc/images/fcc-logo-lg.png" alt="Home" class="img-responsive">
+                                        <span class="sr-only">Federal Communications Commission</span>
+                                    </a>
+                                </div>
+                                <ul class="nav-browseBy nav navbar-nav" aria-hidden="false">
+                                    <li class="active">
+                                        <a class="" href="#browseCategory">
+                                            <div class="text-prefix">Browse by</div>
+                                            <strong class="title-emphasis">Category</strong>
+                                            <div class="pointer"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="#browseBureau">
+                                            <div class="text-prefix">Browse by</div>
+                                            <strong class="title-emphasis">Bureaus &amp; Offices</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn hamburger" type="button"><span class="sr-only">Menu</span></button>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="nav-secondary">
+                <div class="container">
+                    <nav role="navigation">                        
+                        <ul id="browseCategory" class="menu js-browseBy">
+                            <li>
+                                <a href="https://www.fcc.gov/about/overview"><span class="link-title">About the FCC</span></a>
                             </li>
                             <li>
-                                <a class="" href="/">
-                                    <div class="text-prefix">Browse by</div>
-                                    <strong class="title-emphasis">Bureaus &amp; Offices</strong>
-                                </a>
+                                <a href="https://www.fcc.gov/proceedings-actions">Proceedings &amp; Actions</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/licensing">Licensing &amp; Databases</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/reports-research">Reports &amp; Research</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/news-events">News &amp; Events</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/consumers">For Consumers</a>
                             </li>
                         </ul>
-                    </div>
-                    <button class="btn hamburger" type="button"><span class="sr-only">Menu</span></button>
-                </nav>
+                        <ul id="browseBureau" class="menu js-browseBy hide">
+                            <li>
+                                <a href="https://www.fcc.gov/consumer-governmental-affairs#block-menu-block-4"><span class="link-title">Consumer</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/enforcement#block-menu-block-4">Enforcement</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/international#block-menu-block-4">International</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/media#block-menu-block-4">Media</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/public-safety-and-homeland-security#block-menu-block-4">Public Safety</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/wireless-telecommunications#block-menu-block-4">Wireless</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/wireline-competition#block-menu-block-4">Wireline</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fcc.gov/offices-bureaus#block-menu-block-4">Offices</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-        <div class="nav-secondary">
-            <div class="container">
-                <nav role="navigation">
-                    <ul class="nav-secondary">
-                        <li>
-                            <a href="https://www.fcc.gov/about/overview">About the FCC</a>
-                        </li>
-                        <li>
-                            <a href="https://www.fcc.gov/proceedings-actions">Proceedings &amp; Actions</a>
-                        </li>
-                        <li>
-                            <a href="https://www.fcc.gov/licensing">Licensing &amp; Databases</a>
-                        </li>
-                        <li>
-                            <a href="https://www.fcc.gov/reports-research">Reports &amp; Research</a>
-                        </li>
-                        <li>
-                            <a href="https://www.fcc.gov/news-events">News &amp; Events</a>
-                        </li>
-                        <li>
-                            <a href="https://www.fcc.gov/consumers">For Consumers</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
     <main class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -185,10 +213,16 @@
             </div>
         </div>
     </footer>
-
+</div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
     <script src="map_templates/js/vendor/vendor.js"></script>
     <script src="map_templates/js/vendor/plugins.js"></script>
-    <script src="map_templates/js/docs.js"></script>
+    <script src="map_templates/js/pg-common.js"></script>
+    <!-- <script src="map_templates/js/docs.js"></script> -->
 	<script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
     <script>
 	
