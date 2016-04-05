@@ -34,7 +34,6 @@
         display: none;
         min-width: 70px;
         margin-left: 110px;
-        text-align: center;
         width: 50%;
         @media (min-width: @screen-md-min) {
             display: block;
@@ -43,69 +42,126 @@
         a {
             color: #fff;
         }
-        & > li >a:hover,
-        & > li > a:focus {
-            background-color: transparent;
+    }
+}
+
+.nav-browseBy {
+    margin: 0;
+    .nav-secondary & {
+        @media (min-width: @screen-md-min) {
+            display: none;
         }
-        li {
-            display: inline-block;
-            font-weight: normal;
-            height: 76px;
+        a {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    li {
+        display: inline-block;
+        font-weight: normal;
+        height: 76px;
+        text-align: center;
+        width: 35%;
+        @media (min-width: @screen-md-min) {
             width: 49%;
-            &:first-child {
-                max-width: 170px;
+        }
+        &:first-child {
+            max-width: 170px;
+        }
+        &.active {
+            background: transparent;
+            @media (min-width: @screen-md-min) {
+                background: rgba(0, 0, 0, 0.2);
             }
-            &.active {
-                background: rgba(0, 0, 0, 0.2)
-            }
         }
-        .text-prefix {
-            font-style: italic;
-        }
-        strong {
-            font-size: 20px;
-            font-weight: normal;
-            text-transform: uppercase;
-        }
-        .pointer {
-            left: ~"calc(50% - 49px)";
-            background-image: url(../images/menu-active-pointer.png);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            height: 45px;
-            position: absolute;
-            // pointer-events: none;
-            top: 64px;
-            width: 98px;
-        }
+    }
+    & > li > a:hover,
+    & > li > a:focus {
+        background-color: transparent;
+    }
+    strong {
+        font-size: 20px;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .text-prefix {
+        font-style: italic;
+    }
+    .pointer {
+        left: ~"calc(50% - 49px)";
+        background-image: url(../images/menu-active-pointer.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 45px;
+        position: absolute;
+        // pointer-events: none;
+        top: 63px;
+        width: 98px;
+        z-index: 1;
     }
 }
 
 .nav-secondary {
     background-color: #2c75d6;
     display: none;
-    list-style-type: none;
-    padding: 0;
+    height: 100%;
     @media (min-width: @screen-md-min) {
         display: block;
     }
-    ul {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 0;
+    .js-nav & {
+        display: block;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        @media (min-width: @screen-md-min) {
+            position: relative;
+            right: 0;
+            width: auto;
+        }
     }
-    li {
-        height: 4.2em;
-        padding: 20px 0;
+    .container {
+        @media (max-width: @screen-sm-max) {
+            padding-left: 0;
+            padding-right: 0;
+            width: auto;
+        }
+    }
+    .menu {
+        display: block;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding: 0;
+        @media (min-width: @screen-md-min) {
+            display: flex;
+            justify-content: space-between;
+        }
+        @media (min-width: @screen-md-min) {
+            width: auto;
+        }
+        li {
+            border-bottom: 1px solid #aac7f1;
+            height: 4.2em;
+            padding: 20px 0;
+            @media (min-width: @screen-md-min) {
+                border: none;
+            }
+        }
     }
     a {
         color: #fff;
         font-size: 16px;
         padding: 0 10px;
     }
+    .navbar-nav {
+        background: #13428b url(https://www.fcc.gov/sites/all/themes/fcc/images/bg-pattern-header.png);
+        float: none;
+        width: 100%;
+    }
 }
 
-.hamburger {
+.hamburger,
+.hamburger:active {
     background-image: url(../images/icons-2x-s4a93a70c85.png);
     background-size: 185px 2138px;
     background-position: 0px -1156px;
@@ -117,6 +173,10 @@
     background-color: transparent;
     border: none;
     border-radius: 0;
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
     @media (min-width: @screen-md-min) {
         display: none;
     }
