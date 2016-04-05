@@ -20,7 +20,7 @@
 
             OET: '.bureau-OET'
 
-        },        
+        },
         sortList: {
             sortBy: 'date',
             sortAscending: false
@@ -60,7 +60,7 @@
 
             $('.map-status').on('click', '.btn', mapGallery.filterByStatus);
 
-            $('.link-clearFilters').on('click', mapGallery.clearFilters);          
+            $('.link-clearFilters').on('click', mapGallery.clearFilters);
 
             $('.map-cards').on('layoutComplete', function(event, filteredItems) {
                 $('.gallery__numResults')
@@ -76,23 +76,26 @@
         },
 
         initGrid: function() {
-            $('.map-cards').isotope({
-                masonry: {
-                    columnWidth: 265,
-                    gutter: 25
-                },
-                getSortData: {
-                    // date: '.data-date',
-                    date: function(itemElem) {
-                        return Date.parse($(itemElem).find('.data-date').text());
+            $('.map-cards')
+                .isotope({
+                    masonry: {
+                        columnWidth: 265,
+                        gutter: 25
                     },
-                    cardTitle: '.card__title'
-                },
-                itemSelector: '.card',
-                sortBy: mapGallery.sortList.sortBy,
-                sortAscending: mapGallery.sortList.sortAscending
-            });
-        },      
+                    getSortData: {
+                        // date: '.data-date',
+                        date: function(itemElem) {
+                            return Date.parse($(itemElem).find('.data-date').text());
+                        },
+                        cardTitle: '.card__title'
+                    },
+                    itemSelector: '.card',
+                    sortBy: mapGallery.sortList.sortBy,
+                    sortAscending: mapGallery.sortList.sortAscending
+                })
+                .append(window.allMaps)
+                .isotope('insert', window.allMaps);
+        },
 
         showCardDetails: function(e) {
             var thisBtn = $(this),
@@ -142,7 +145,7 @@
             mapGallery.filter();
         },
 
-        filterByStatus: function() { 
+        filterByStatus: function() {
             var selectedBtn = $(this).attr('data-filter'),
                 btnGroup = $(this).closest('.map-status');
 
@@ -180,7 +183,7 @@
             if (mapGallery.selectedTags.indexOf($tag) < 0) {
 
                 mapGallery.selectedTags.push($tag);
-                
+
                 newTag.find('a').replaceWith('<span data-tag="' + $tag + '">' + $tagText + '<a class="link-removeTag" href="#void"><span class="icon icon-remove"></span></span></a>');
 
                 if (!$('.tag-list-inline').is(':visible')) {
@@ -263,7 +266,7 @@
             mapGallery.sortList.sortAscending = mapGallery.sortList.sortAscending === 'true';
         },
 
-        onHashchange: function() { 
+        onHashchange: function() {
 
             var filters = '';
 
@@ -281,8 +284,8 @@
                 })
                 .isotope('updateSortData');
 
-            for (var k in mapGallery.filterOpts) { 
-                if (mapGallery.filterOpts[k] === mapGallery.filters.bureau) { 
+            for (var k in mapGallery.filterOpts) {
+                if (mapGallery.filterOpts[k] === mapGallery.filters.bureau) {
                     $('#sel-filter').val(k);
                 }
             }
@@ -291,7 +294,7 @@
                 if (mapGallery.sortOpts[i].sortBy === mapGallery.sortList.sortBy && mapGallery.sortOpts[i].sortAscending === mapGallery.sortList.sortAscending) {
                     $('#sel-sort').val(i);
                 }
-            }            
+            }
 
             $('.map-status')
                 .find('.active')
@@ -302,9 +305,9 @@
                     var btn = $(element),
                         btnAttr = btn.attr('data-filter'),
                         btnClass = '.' + btnAttr;
-                    
 
-                    if (mapGallery.filters.status === btnClass) { 
+
+                    if (mapGallery.filters.status === btnClass) {
                         btn.addClass('active');
                     }
 
@@ -338,11 +341,15 @@
         }
     };
 
-    mapGallery.init();
+    $(document).ajaxStop(function() {        
+        mapGallery.init();
 
-    $(window).on('hashchange', mapGallery.onHashchange);
-    // trigger event handler to init Isotope
-    mapGallery.onHashchange();
+        $(window).on('hashchange', mapGallery.onHashchange);
+        // trigger event handler to init Isotope
+        mapGallery.onHashchange();
+    });
+
+
 
 
 }(window, document, jQuery));

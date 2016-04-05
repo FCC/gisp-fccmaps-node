@@ -99,35 +99,35 @@ function createMap() {
         }
 
     }
-	
-	//map layers
-	mapLayer = {};
-	zindex1 = 10;
-	if (layers_info.length > 0) {
-		for (var i = 0; i < layers_info.length; i++) {
-			zindex1++;
-			if (layers_info[i].layertype == "mapbox") {
-				if (layers_info[i].checked == "yes") {
-					mapLayer[layers_info[i].title] = L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1).addTo(map);
-				}
-				else {
-					mapLayer[layers_info[i].title] = L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1);
-				}
-			}
-			else if (layers_info[i].layertype == "geoserver") {
-				mapLayer[layers_info[i].title] = L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
+    
+    //map layers
+    mapLayer = {};
+    zindex1 = 10;
+    if (layers_info.length > 0) {
+        for (var i = 0; i < layers_info.length; i++) {
+            zindex1++;
+            if (layers_info[i].layertype == "mapbox") {
+                if (layers_info[i].checked == "yes") {
+                    mapLayer[layers_info[i].title] = L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1).addTo(map);
+                }
+                else {
+                    mapLayer[layers_info[i].title] = L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1);
+                }
+            }
+            else if (layers_info[i].layertype == "geoserver") {
+                mapLayer[layers_info[i].title] = L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
                     format: 'image/png',
                     transparent: true,
                     layers: layers_info[i].layername,
                     styles: layers_info[i].style
                 }).setZIndex(zindex1);
-				if (layers_info[i].checked == "yes") {
-					mapLayer[layers_info[i].title].addTo(map);
-				}
-			}
-		}
-	}
-		
+                if (layers_info[i].checked == "yes") {
+                    mapLayer[layers_info[i].title].addTo(map);
+                }
+            }
+        }
+    }
+        
 
     if (hasLayers) {
         layerControl = new L.Control.Layers(
@@ -226,15 +226,15 @@ function createSearchFields1() {
         }
 
         var field_text = '<div id="search-field" class="input-group" style="width: 920px"> \
-							<div class="search-group"> \
-								<div class="search-input"> \
-									<div class="input-group"> \
-										<div class="input-group-btn"> \
-											<button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span id="btn-label">Address</span> <span class="caret"></span></button> \
-											<ul id="input-search-switch" role="menu" class="dropdown-menu">' +
+                            <div class="search-group"> \
+                                <div class="search-input"> \
+                                    <div class="input-group"> \
+                                        <div class="input-group-btn"> \
+                                            <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span id="btn-label">Address</span> <span class="caret"></span></button> \
+                                            <ul id="input-search-switch" role="menu" class="dropdown-menu">' +
             field_dropdown +
             '</ul> \
-							</div>';
+                            </div>';
 
         for (var i = 0; i < map_info.search.length; i++) {
             if (map_info.search[i] == "address") {
@@ -242,32 +242,32 @@ function createSearchFields1() {
             }
             if (map_info.search[i] == "coordinate") {
                 field_text += '<div id="input-latlon-decimal" class="form-control" type="search" placeholder="Enter Latlon decimal" style="display: none"> \
-										<table id="table-latlon-decimal"><tr> \
-										<td>Latitude: <input id="latitude"   placeholder="41.234567" style="width: 150px; height: 20px; border: solid 1px #eee"></td> \
-										<td width=75></td> \
-										<td>Longitude: <input id="longitude"   placeholder="-91.234567" style="width: 150px; height: 20px; border: solid 1px #eee"></td> \
-										</tr></table> \
-										</div>';
+                                        <table id="table-latlon-decimal"><tr> \
+                                        <td>Latitude: <input id="latitude"   placeholder="41.234567" style="width: 150px; height: 20px; border: solid 1px #eee"></td> \
+                                        <td width=75></td> \
+                                        <td>Longitude: <input id="longitude"   placeholder="-91.234567" style="width: 150px; height: 20px; border: solid 1px #eee"></td> \
+                                        </tr></table> \
+                                        </div>';
             }
         }
 
         field_text += '<span class="input-group-btn" id="span-location-search" style="display: table-cell"> \
-											<button class="btn-search btn btn-default" type="submit" id="input-loc-search" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Location Search</span></button> \
-										</span> \
-										<span class="input-group-btn" id="span-latlon-decimal-search" style="display: none"> \
-											<button class="btn-search btn btn-default" id="input-latlon-decimal-search" title="Decimal Latlon Search" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Decimal Lat/Lon Search</span></button> \
-										</span> \
-										</div> \
-								</div> \
-								<div class="btn-group-loc"> \
-									<span class="input-group-btn"> \
-										<button class="btn-geoLocation btn btn-default st" title="Get Current Location" data-toggle="tooltip" data-placement="top" id="btn-geoLocation" type="button" data-original-title="Get Current Location"> \
-										<span class="fa fa-location-arrow"></span><span class="sr-only">Get Current Location</span></button> \
-									<button class="btn-nationLocation btn btn-default st" title="Nationwide" data-toggle="tooltip" data-placement="top" id="btn-nationLocation" type="button" data-original-title="Nationwide"><span class="icon-nation-1"></span><span class="sr-only">Nationwide</span></button> \
-									</span> \
-								</div> \
-							</div> \
-						</div>';
+                                            <button class="btn-search btn btn-default" type="submit" id="input-loc-search" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Location Search</span></button> \
+                                        </span> \
+                                        <span class="input-group-btn" id="span-latlon-decimal-search" style="display: none"> \
+                                            <button class="btn-search btn btn-default" id="input-latlon-decimal-search" title="Decimal Latlon Search" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Decimal Lat/Lon Search</span></button> \
+                                        </span> \
+                                        </div> \
+                                </div> \
+                                <div class="btn-group-loc"> \
+                                    <span class="input-group-btn"> \
+                                        <button class="btn-geoLocation btn btn-default st" title="Get Current Location" data-toggle="tooltip" data-placement="top" id="btn-geoLocation" type="button" data-original-title="Get Current Location"> \
+                                        <span class="fa fa-location-arrow"></span><span class="sr-only">Get Current Location</span></button> \
+                                    <button class="btn-nationLocation btn btn-default st" title="Nationwide" data-toggle="tooltip" data-placement="top" id="btn-nationLocation" type="button" data-original-title="Nationwide"><span class="icon-nation-1"></span><span class="sr-only">Nationwide</span></button> \
+                                    </span> \
+                                </div> \
+                            </div> \
+                        </div>';
 
 
         $('#search-field-holder').html(field_text).css("display", "block");
@@ -403,7 +403,7 @@ function setupListener() {
         }
     });
 
-    // hide legend		
+    // hide legend      
     $('.btn-closeLegend').on("click", function(e) {
         $('#div-legend').hide('fast');
     });
@@ -508,7 +508,7 @@ function setupListener() {
                 map.setView([geo_lat, geo_lon], 14);
 
             }, function(error) {
-                //alert('Error occurred. Error code: ' + error.code);			 
+                //alert('Error occurred. Error code: ' + error.code);            
                 alert('Sorry, your current location could not be found. \nPlease use the search box to enter your location.');
             }, {
                 timeout: 4000
@@ -615,74 +615,74 @@ function updateMapList() {
         url: url,
         dataType: "json",
         success: function(data) {
-		
-			console.log(data);
-			var urls = [];
-			var titles = [];
-			var subtitles = [];
-			var descriptions = [];
-			var vids = [];
-			var create_tss = [];
-			var zooms = [];
-			var center_lats = [];
-			var center_lons = [];
-			var searches = [];
-			
-			for (var i = 1; i < data.length; i++) {
+        
+            console.log(data);
+            var urls = [];
+            var titles = [];
+            var subtitles = [];
+            var descriptions = [];
+            var vids = [];
+            var create_tss = [];
+            var zooms = [];
+            var center_lats = [];
+            var center_lons = [];
+            var searches = [];
+            
+            for (var i = 1; i < data.length; i++) {
 
-				var title = data[i].title;
-				var nid = data[i].nid;
-				var vid = data[i].vid;
-				var created = data[i].created;
-				var changed = data[i].changed;
-				var updated = ""
-				if (data[i].fields.field_date_updated_reviewed.und) {
-				updated = data[i].fields.field_date_updated_reviewed.und[0].value;
-				}
-				var url = "";
-				if (data[i].fields.field_map_page_url.und) {
-					url = data[i].fields.field_map_page_url.und[0].url;
-				}
-				var repo = "";
-				if (data[i].fields.field_map_repository.und) {
-					repo = data[i].fields.field_map_repository.und[0].url;
-				}
-				var subtitle = "";
-				if (data[i].fields.field_subtitle.und) {
-					repo = data[i].fields.field_subtitle.und[0].value;
-				}
-				
-				if ( url+repo != "") {
-					urls.push(url);
-					titles.push(title);
-					subtitles.push(subtitle);
-					descriptions.push("Descriptions go here");
-					vids.push(vid);
-					create_tss.push(created);
-					
-					var map_info = "";
-					if (data[i].fields.field_description.und) {
-						var value_str = data[i].fields.field_description.und[0].value;
-						if(value_str){
+                var title = data[i].title;
+                var nid = data[i].nid;
+                var vid = data[i].vid;
+                var created = data[i].created;
+                var changed = data[i].changed;
+                var updated = ""
+                if (data[i].fields.field_date_updated_reviewed.und) {
+                updated = data[i].fields.field_date_updated_reviewed.und[0].value;
+                }
+                var url = "";
+                if (data[i].fields.field_map_page_url.und) {
+                    url = data[i].fields.field_map_page_url.und[0].url;
+                }
+                var repo = "";
+                if (data[i].fields.field_map_repository.und) {
+                    repo = data[i].fields.field_map_repository.und[0].url;
+                }
+                var subtitle = "";
+                if (data[i].fields.field_subtitle.und) {
+                    repo = data[i].fields.field_subtitle.und[0].value;
+                }
+                
+                if ( url+repo != "") {
+                    urls.push(url);
+                    titles.push(title);
+                    subtitles.push(subtitle);
+                    descriptions.push("Descriptions go here");
+                    vids.push(vid);
+                    create_tss.push(created);
+                    
+                    var map_info = "";
+                    if (data[i].fields.field_description.und) {
+                        var value_str = data[i].fields.field_description.und[0].value;
+                        if(value_str){
                             var isJson = isJsonString(value_str);
                             if(isJson){
                                 map_info = JSON.parse(value_str);   
                             }
                         }
-					}
-					if (map_info != "") {
-					zooms.push(map_info.mapzoom.initialzoom);
-					center_lats.push(map_info.mapcenter.latitude);
-					center_lons.push(map_info.mapcenter.longitude);
-					}
-					else {
-					zooms.push(3);
-					center_lats.push(40);
-					center_lons.push(-105);
-					}
-				}
-			
-			}
+                    }
+                    if (map_info != "") {
+                    zooms.push(map_info.mapzoom.initialzoom);
+                    center_lats.push(map_info.mapcenter.latitude);
+                    center_lons.push(map_info.mapcenter.longitude);
+                    }
+                    else {
+                    zooms.push(3);
+                    center_lats.push(40);
+                    center_lons.push(-105);
+                    }
+                }
+            
+            }
 
             function isJsonString(str) {
                 try {
@@ -692,15 +692,15 @@ function updateMapList() {
                 }
                 return true;
             }
-		
+        
             //var urls = data.urls;
             //var titles = data.titles;
             var map_list_text = "";
             for (var i = 0; i < urls.length; i++) {
                 map_list_text += '<li><a href="/' + urls[i] + '" class=""> \
-					<iframe width="150" height="125" src="/' + urls[i] + '/responsive.html"></iframe> \
-					<p>' + titles[i] + '</p> \
-					</a></li>';
+                    <iframe width="150" height="125" src="/' + urls[i] + '/responsive.html"></iframe> \
+                    <p>' + titles[i] + '</p> \
+                    </a></li>';
             }
 
             $('#ul-map-list').html(map_list_text);
