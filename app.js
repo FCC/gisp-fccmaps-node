@@ -81,7 +81,7 @@ app.use('/api-docs', express.static(__dirname + '/public/api-docs.html'));
 app.param('uuid', function(req, res, next, uuid){
     // check format of uuid
     if(!serverCheck.checkUUID(uuid)){
-		return serverSend.sendErr(res, 'json', 'not_found');
+        return serverSend.sendErr(res, 'json', 'not_found');
     } else {
         next();
     }
@@ -89,19 +89,19 @@ app.param('uuid', function(req, res, next, uuid){
 
 app.param('ext', function(req, res, next, ext) {
     // check format of id
-	var route = req.route.path;
-	//console.log('\n  route : ' + route );
-	
-	if (!route === '/download/:uuid.:ext') {	// skip for downloads
-		if(!serverCheck.checkExt(ext)){
-			return serverSend.sendErr(res, 'json', 'invalid_ext');
-		} else {
-			next();
-		}
-	}
-	else {
-		next();
-	}
+    var route = req.route.path;
+    //console.log('\n  route : ' + route );
+    
+    if (!route === '/download/:uuid.:ext') {    // skip for downloads
+        if(!serverCheck.checkExt(ext)){
+            return serverSend.sendErr(res, 'json', 'invalid_ext');
+        } else {
+            next();
+        }
+    }
+    else {
+        next();
+    }
 });
 
 app.get('/', function(req, res){
@@ -176,7 +176,6 @@ var server = app.listen(NODE_PORT, function () {
 maps.mapDeploy("repeat");
 
 module.exports = app;
-
 
 
 
