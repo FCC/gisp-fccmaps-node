@@ -663,7 +663,12 @@ function updateMapList() {
 					var map_info = "";
 					if (data[i].fields.field_description.und) {
 						var value_str = data[i].fields.field_description.und[0].value;
-						var map_info = JSON.parse(value_str);
+						if(value_str){
+                            var isJson = isJsonString(value_str);
+                            if(isJson){
+                                map_info = JSON.parse(value_str);   
+                            }
+                        }
 					}
 					if (map_info != "") {
 					zooms.push(map_info.mapzoom.initialzoom);
@@ -678,6 +683,15 @@ function updateMapList() {
 				}
 			
 			}
+
+            function isJsonString(str) {
+                try {
+                    JSON.parse(str);
+                } catch (e) {
+                    return false;
+                }
+                return true;
+            }
 		
             //var urls = data.urls;
             //var titles = data.titles;

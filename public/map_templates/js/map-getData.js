@@ -60,8 +60,9 @@ function populateMaps() {
 					if (data[i].fields.field_featured && data[i].fields.field_featured.und) {
 						featured = data[i].fields.field_featured.und[0].value;
 					}
-
+                    //console.log('nid='+nid);
                     if (url + repo != "") {
+                        //console.log('getting nid='+nid);
                         urls.push(url);
                         titles.push(title);
                         subtitles.push(subtitle);
@@ -69,10 +70,17 @@ function populateMaps() {
                         vids.push(vid);
                         create_tss.push(created);
                         var bureau = "";
+                        var map_info = "";
                         if (data[i].fields.field_description.und) {
                             var desc_str = data[i].fields.field_description.und[0].value;
-                            var desc_json = JSON.parse(desc_str);
-                            bureau = desc_json.bureau;
+                            if(desc_str) {
+                               //console.log('desc_str='+desc_str);
+                                var isJson = isJsonString(desc_str);
+                                if(isJson){
+                                    map_info = JSON.parse(desc_str);
+                                    bureau = map_info.bureau;
+                                }
+                            }
                         }
                         bureaus.push(bureau);
                         dates.push(changed);
@@ -80,11 +88,11 @@ function populateMaps() {
 						lives.push(live);
 						featureds.push(featured);
 
-                        var map_info = "";
+                        /*var map_info = "";
                         if (data[i].fields.field_description.und) {
                             var value_str = data[i].fields.field_description.und[0].value;
                             var map_info = JSON.parse(value_str);
-                        }
+                        }*/
                         if (map_info != "") {
                             zooms.push(map_info.mapzoom.initialzoom);
                             center_lats.push(map_info.mapcenter.latitude);
@@ -139,6 +147,15 @@ function populateMaps() {
 
                     $('#sel-filter').find('option').eq(0).after(options);
 
+                }
+                
+                function isJsonString(str) {
+                    try {
+                        JSON.parse(str);
+                    } catch (e) {
+                        return false;
+                    }
+                    return true;
                 }
 
                 getBureauFilters();
