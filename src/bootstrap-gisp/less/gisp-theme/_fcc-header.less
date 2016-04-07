@@ -52,6 +52,7 @@
             display: none;
         }
         a {
+            max-height: 76px;
             padding-left: 0;
             padding-right: 0;
         }
@@ -70,7 +71,7 @@
             @media (min-width: @screen-md-min) {
                 max-width: 170px;
             }
-        }        
+        }
         &.active {
             background: transparent;
             @media (min-width: @screen-md-min) {
@@ -135,11 +136,12 @@
     .menu {
         display: block;
         list-style-type: none;
-        margin-bottom: 0;
+        margin: 5px 0 0;
         padding: 0;
         @media (min-width: @screen-md-min) {
             display: flex;
             justify-content: space-between;
+            margin-top: 0;
         }
         @media (min-width: @screen-md-min) {
             width: auto;
@@ -148,8 +150,21 @@
             border-bottom: 1px solid #aac7f1;
             height: 4.2em;
             padding: 20px 0;
+            white-space: nowrap;
             @media (min-width: @screen-md-min) {
                 border: none;
+            }
+        }
+        a {
+            display: block;
+            font-size: 11px;
+            padding-left: 30px;
+            @media (min-width: @screen-sm-min) {
+                font-size: 14px;
+            }
+            @media (min-width: @screen-md-min) {
+                font-size: 16px;
+                padding-left: 0;
             }
         }
     }
