@@ -13,7 +13,7 @@
 }
 
 .navbar-primary {
-    background: rgb(19, 66, 139) url(https://www.fcc.gov/sites/all/themes/fcc/images/bg-pattern-header.png);
+    background: rgb(19, 66, 139) url(../images/bg-pattern-header.png);
     box-shadow: inset 0px -11px 30px 0px rgba(0, 0, 0, 0.3);
     &:after,
     &:before {
@@ -61,13 +61,16 @@
         font-weight: normal;
         height: 76px;
         text-align: center;
-        width: 35%;
+        width: 49%;
         @media (min-width: @screen-md-min) {
             width: 49%;
         }
         &:first-child {
-            max-width: 170px;
-        }
+            max-width: none;
+            @media (min-width: @screen-md-min) {
+                max-width: 170px;
+            }
+        }        
         &.active {
             background: transparent;
             @media (min-width: @screen-md-min) {
@@ -93,11 +96,13 @@
         background-repeat: no-repeat;
         background-position: bottom;
         height: 45px;
-        position: absolute;
-        // pointer-events: none;
-        top: 63px;
+        position: relative;
+        top: 13px;
         width: 98px;
         z-index: 1;
+        @media (min-width: @screen-sm-min) {
+            top: 7px;
+        }
     }
 }
 
@@ -111,9 +116,9 @@
     .js-nav & {
         display: block;
         position: absolute;
-        right: -100%;
+        right: -80%;
         top: 0;
-        width: 100%;
+        width: 80%;
         @media (min-width: @screen-md-min) {
             position: relative;
             right: 0;
@@ -154,7 +159,7 @@
         padding: 0 10px;
     }
     .navbar-nav {
-        background: #13428b url(https://www.fcc.gov/sites/all/themes/fcc/images/bg-pattern-header.png);
+        background: #13428b url(../images/bg-pattern-header.png);
         float: none;
         width: 100%;
     }
