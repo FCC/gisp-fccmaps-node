@@ -176,7 +176,7 @@ function populateMaps() {
                                 <a class="btn btn-xs btn-default" href="' + url_bookmark + '"><span class="sr-only">View map</span> <span class="icon icon-external-link-square"></span></a> \
                             </div> \
                             <div class="ribbon"><span>Featured</span></div> \
-                            <iframe src="' + url + '"></iframe> \
+                            <iframe src="' + url + '" name="' + url.split('/')[0] + '"></iframe> \
                             <p class="card__title text-overflow"><a href="' + url_bookmark + '"><span >' + titles[i] + '</span></a></p> \
                             <div class="card__meta"> \
                                 <div class="pull-left">' + bureaus[i] + '</div> \
