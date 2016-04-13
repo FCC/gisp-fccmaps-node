@@ -103,6 +103,7 @@ function createMap() {
     //map layers
     mapLayer = {};
     zindex1 = 10;
+
     if (layers_info.length > 0) {
         for (var i = 0; i < layers_info.length; i++) {
             zindex1++;
@@ -115,7 +116,9 @@ function createMap() {
                 }
             }
             else if (layers_info[i].layertype == "geoserver") {
-                mapLayer[layers_info[i].title] = L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
+                var layerTitle = layers_info[i].title || layers_info[i].layername;
+            
+                mapLayer[layerTitle] = L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
                     format: 'image/png',
                     transparent: true,
                     layers: layers_info[i].layername,
