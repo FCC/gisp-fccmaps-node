@@ -616,7 +616,6 @@ function updateMapList() {
         dataType: "json",
         success: function(data) {
         
-            console.log(data);
             var urls = [];
             var titles = [];
             var subtitles = [];

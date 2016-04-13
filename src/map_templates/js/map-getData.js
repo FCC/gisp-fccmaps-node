@@ -6,7 +6,6 @@ function populateMaps() {
         url: url,
         dataType: "json",
         success: function(data) {
-            console.log(data);
             var urls = [];
             var titles = [];
             var subtitles = [];
@@ -59,9 +58,9 @@ function populateMaps() {
                 if (data[i].fields.field_featured && data[i].fields.field_featured.und) {
                     featured = data[i].fields.field_featured.und[0].value;
                 }
-                //console.log('nid='+nid);
+
                 if (url + repo != "") {
-                    //console.log('getting nid='+nid);
+
                     urls.push(url);
                     titles.push(title);
                     subtitles.push(subtitle);
@@ -73,7 +72,7 @@ function populateMaps() {
                     if (data[i].fields.field_description.und) {
                         var desc_str = data[i].fields.field_description.und[0].value;
                         if (desc_str) {
-                            //console.log('desc_str='+desc_str);
+
                             var isJson = isJsonString(desc_str);
                             if (isJson) {
                                 map_info = JSON.parse(desc_str);
@@ -87,11 +86,6 @@ function populateMaps() {
                     lives.push(live);
                     featureds.push(featured);
 
-                    /*var map_info = "";
-                    if (data[i].fields.field_description.und) {
-                        var value_str = data[i].fields.field_description.und[0].value;
-                        var map_info = JSON.parse(value_str);
-                    }*/
                     if (map_info != "") {
                         zooms.push(map_info.mapzoom.initialzoom);
                         center_lats.push(map_info.mapcenter.latitude);
@@ -105,7 +99,6 @@ function populateMaps() {
 
             }
 
-            //console.log('archiveds=' + archiveds + ' lives=' + lives + ' featureds=' + featureds)
 
             // populate bureau filter dropdown
             function getBureauFilters() {
@@ -177,8 +170,6 @@ function populateMaps() {
                     add_class += "data-featured";
                 }
 
-                console.log(i + ' ' + titles[i] + ' addclass=' + add_class);
-
 
                 text += '<li class="card data-all bureau-' + bureaus[i] + ' ' + add_class + ' tag-data-maps-reports tag-maps"> \
                             <div class="mapThumb-btns"> \
@@ -210,7 +201,7 @@ function populateMaps() {
             }
 
             window.allMaps = $(text);
-            
+
         }
     });
 
