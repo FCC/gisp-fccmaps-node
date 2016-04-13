@@ -99,7 +99,7 @@ function createMap() {
         }
 
     }
-    
+
     //map layers
     mapLayer = {};
     zindex1 = 10;
@@ -110,14 +110,12 @@ function createMap() {
             if (layers_info[i].layertype == "mapbox") {
                 if (layers_info[i].checked == "yes") {
                     mapLayer[layers_info[i].title] = L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1).addTo(map);
-                }
-                else {
+                } else {
                     mapLayer[layers_info[i].title] = L.mapbox.tileLayer(layers_info[i].mapid).setZIndex(zindex1);
                 }
-            }
-            else if (layers_info[i].layertype == "geoserver") {
+            } else if (layers_info[i].layertype == "geoserver") {
                 var layerTitle = layers_info[i].title || layers_info[i].layername;
-            
+
                 mapLayer[layerTitle] = L.tileLayer.wms(layers_info[i].geohost + '/geoserver/wms', {
                     format: 'image/png',
                     transparent: true,
@@ -130,7 +128,7 @@ function createMap() {
             }
         }
     }
-        
+
 
     if (hasLayers) {
         layerControl = new L.Control.Layers(
@@ -152,9 +150,18 @@ function createMap() {
     //make legend
 
     if (hasLegend && map_info.legends && map_info.legends.length > 0) {
-        var legend_text1 = "";
+        var legend_text1 = '';
+        var keyStyle = '';
+        var keyColor = 'background-color:';
+        var keyImg = 'background-image: url(images/legend-thumb-slash.png)';
+
         for (var i = 0; i < map_info.legends.length; i++) {
-            legend_text1 += '<tr><td style="width: 28px; height: 28px;"><div style="width: 20px; height: 20px; background-color:' + map_info.legends[i].legendcolor + '; opacity: 1.0; border: solid 1px #999999"></div></td><td>' + map_info.legends[i].legendtext + '</td></tr>' + "\n";
+            
+            keyStyle = map_info.legends[i].legendtext.search('Tribal land') > -1 
+                        ? keyImg 
+                        : keyColor + map_info.legends[i].legendcolor;
+
+            legend_text1 += '<tr><td style="width: 28px; height: 28px;"><div style="width: 20px; height: 20px;' + keyStyle + '"; opacity: 1.0; border: solid 1px #999999"></div></td><td>' + map_info.legends[i].legendtext + '</td></tr>' + '\n';
 
         }
 
@@ -618,7 +625,7 @@ function updateMapList() {
         url: url,
         dataType: "json",
         success: function(data) {
-        
+
             var urls = [];
             var titles = [];
             var subtitles = [];
@@ -629,7 +636,7 @@ function updateMapList() {
             var center_lats = [];
             var center_lons = [];
             var searches = [];
-            
+
             for (var i = 1; i < data.length; i++) {
 
                 var title = data[i].title;
@@ -639,7 +646,7 @@ function updateMapList() {
                 var changed = data[i].changed;
                 var updated = ""
                 if (data[i].fields.field_date_updated_reviewed.und) {
-                updated = data[i].fields.field_date_updated_reviewed.und[0].value;
+                    updated = data[i].fields.field_date_updated_reviewed.und[0].value;
                 }
                 var url = "";
                 if (data[i].fields.field_map_page_url.und) {
@@ -653,37 +660,36 @@ function updateMapList() {
                 if (data[i].fields.field_subtitle.und) {
                     repo = data[i].fields.field_subtitle.und[0].value;
                 }
-                
-                if ( url+repo != "") {
+
+                if (url + repo != "") {
                     urls.push(url);
                     titles.push(title);
                     subtitles.push(subtitle);
                     descriptions.push("Descriptions go here");
                     vids.push(vid);
                     create_tss.push(created);
-                    
+
                     var map_info = "";
                     if (data[i].fields.field_description.und) {
                         var value_str = data[i].fields.field_description.und[0].value;
-                        if(value_str){
+                        if (value_str) {
                             var isJson = isJsonString(value_str);
-                            if(isJson){
-                                map_info = JSON.parse(value_str);   
+                            if (isJson) {
+                                map_info = JSON.parse(value_str);
                             }
                         }
                     }
                     if (map_info != "") {
-                    zooms.push(map_info.mapzoom.initialzoom);
-                    center_lats.push(map_info.mapcenter.latitude);
-                    center_lons.push(map_info.mapcenter.longitude);
-                    }
-                    else {
-                    zooms.push(3);
-                    center_lats.push(40);
-                    center_lons.push(-105);
+                        zooms.push(map_info.mapzoom.initialzoom);
+                        center_lats.push(map_info.mapcenter.latitude);
+                        center_lons.push(map_info.mapcenter.longitude);
+                    } else {
+                        zooms.push(3);
+                        center_lats.push(40);
+                        center_lons.push(-105);
                     }
                 }
-            
+
             }
 
             function isJsonString(str) {
@@ -694,7 +700,7 @@ function updateMapList() {
                 }
                 return true;
             }
-        
+
             //var urls = data.urls;
             //var titles = data.titles;
             var map_list_text = "";
