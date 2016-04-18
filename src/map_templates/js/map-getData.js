@@ -187,6 +187,7 @@ function populateMaps() {
                                 <p class="card__desc"> \
                                     Map description goes here. Map description goes here. Map description goes here. Map description goes here. Map description goes here. \
                                 </p> \
+                                <a class="link-viewMore" href="' + url_bookmark + '">View more&#8230;</a> \
                                 <ul class="list-unstyled"> \
                                     <li class="tag"><a href="#" data-tag="data-maps-reports">Data, Maps, Reports</a></li> \
                                     <li class="tag"><a href="#" data-tag="maps">Maps</a></li> \
@@ -194,7 +195,7 @@ function populateMaps() {
                             </div> \
                             <div class="card__footer"> \
                                 <a class="btn-details btn btn-link btn-xs" href="#void" role="button" aria-pressed="false"><span class="icon icon-caret-right"></span>View details</a> \
-                                <a class="btn btn-link btn-xs pull-right" href="' + url_bookmark + '"><span class="icon icon-external-link-square"></span>View map</a> \
+                                \
                             </div> \
                         </li>';
 
