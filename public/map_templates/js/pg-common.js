@@ -30,12 +30,15 @@ var offCanvasMenu = {
     },
     toggleNav: function(e) {
         var target = $(this).attr('href'),
+            parent = $(this).closest('li'),
             pointer = $('.nav-browseBy').find('.pointer');
 
         e.preventDefault();
 
-        $(this).append(pointer);
-
+        $('.nav-browseBy').find('.active').removeClass('active');
+        parent.addClass('active');
+        $(this).append(pointer);              
+        
         $('.js-browseBy').addClass('hide');
         $(target).removeClass('hide');
     }
