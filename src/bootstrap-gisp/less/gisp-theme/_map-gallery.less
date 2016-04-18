@@ -92,8 +92,20 @@
         }
     }
     .card__desc {
-        max-height: 112px;
+        max-height: 115px;
+        margin-bottom: 5px;
         overflow: hidden;
+        position: relative;        
+        &:after {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, .25), #fff 100%);
+            bottom: 0px;
+            content: "";
+            height: 30px;
+            left: 0;
+            position: absolute;
+            text-align: right;
+            width: 100%;
+        }
     }
     .card__title,
     .card__subTitle {

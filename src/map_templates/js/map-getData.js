@@ -184,9 +184,11 @@ function populateMaps() {
                             </div> \
                             <div class="card__body" aria-expanded="false" style="display: none;"> \
                                 <p class="card__subTitle text-overflow">' + subtitles[i] + '</p> \
-                                <p class="card__desc"> \
+                                <div class="card__desc"> \
+                                <p> \
                                     Map description goes here. Map description goes here. Map description goes here. Map description goes here. Map description goes here. \
                                 </p> \
+                                </div> \
                                 <a class="link-viewMore" href="' + url_bookmark + '">View more&#8230;</a> \
                                 <ul class="list-unstyled"> \
                                     <li class="tag"><a href="#" data-tag="data-maps-reports">Data, Maps, Reports</a></li> \
