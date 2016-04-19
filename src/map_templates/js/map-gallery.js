@@ -48,10 +48,10 @@
 
         init: function() {
             mapGallery.initGrid();
-
-            $('.map-cards')
-                .on('click', '.btn-details', mapGallery.showCardDetails)
-                .on('click', '.tag a', mapGallery.addTag);
+            
+            $('.gallery__filterOpts')
+                .on('click', 'button, a', mapGallery.toggleAlert)
+                .on('change', 'select', mapGallery.toggleAlert);
 
             $('#sel-filter').on('change', mapGallery.filterByBureau);
             $('#sel-sort').on('change', mapGallery.sorting);
@@ -62,17 +62,9 @@
 
             $('.link-clearFilters').on('click', mapGallery.clearFilters);
 
-            $('.map-cards').on('layoutComplete', function(event, filteredItems) {
-                $('.gallery__numResults')
-                    .html('Showing: ' + filteredItems.length + ' maps')
-                    .focus();
+            $('header, .nav-secondary').find('a').add('.navbar-about').attr('tabindex', 10);
+            $('.gallery__filterOpts').find('button, select, a').add('.gallery__numResults').attr('tabindex', 20);
 
-                if (filteredItems.length === 0) {
-                    $('.alert-noResults').removeClass('hide');
-                } else {
-                    $('.alert-noResults').addClass('hide');
-                }
-            });
         },
 
         initGrid: function() {
@@ -82,8 +74,7 @@
                         columnWidth: 265,
                         gutter: 25
                     },
-                    getSortData: {
-                        // date: '.data-date',
+                    getSortData: {                        
                         date: function(itemElem) {
                             return Date.parse($(itemElem).find('.data-date').text());
                         },
@@ -94,7 +85,39 @@
                     sortAscending: mapGallery.sortList.sortAscending
                 })
                 .append(window.allMaps)
-                .isotope('insert', window.allMaps);
+                .isotope('insert', window.allMaps)
+                .on('layoutComplete', mapGallery.updateResults)
+                .on('arrangeComplete', mapGallery.showNumResults)
+                .on('click', '.btn-details', mapGallery.showCardDetails)
+                .on('click', '.tag a', mapGallery.addTag);  
+        },
+
+        updateResults: function(event, filteredItems) {
+            var idx = 100;
+console.log('layoutComplete updateResults');
+            if (filteredItems.length === 0) {                
+                mapGallery.toggleAlert('show');
+            } 
+
+            $('.gallery__numResults')
+                .html('Showing: ' + filteredItems.length + ' maps');
+
+            $('.card').removeAttr('tabindex');
+
+            for (var i = 0; i < filteredItems.length; i++) {
+                idx = idx + 10 + i;
+
+                $(filteredItems[i].element)
+                    .attr('tabindex', idx)
+                    .add()
+                    .find('a').attr('tabindex', idx)
+                    .end()
+                    .find('.link-viewMore').attr('tabindex', idx + 1);
+            }
+        },
+
+        toggleAlert: function(isShown) {
+            $('.alert-noResults').toggleClass('hide', (isShown !== 'show'));
         },
 
         showCardDetails: function(e) {
@@ -126,6 +149,10 @@
                     $('.map-cards').isotope('layout');
                 });
             }
+        },
+
+        showNumResults: function() {
+            $('.gallery__numResults').focus();
         },
 
         sorting: function() {
@@ -341,7 +368,7 @@
         }
     };
 
-    $(document).ajaxStop(function() {        
+    $(document).ajaxStop(function() {
         mapGallery.init();
 
         $(window).on('hashchange', mapGallery.onHashchange);
