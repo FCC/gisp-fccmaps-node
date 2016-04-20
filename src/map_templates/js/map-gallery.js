@@ -94,7 +94,7 @@
 
         updateResults: function(event, filteredItems) {
             var idx = 100;
-console.log('layoutComplete updateResults');
+
             if (filteredItems.length === 0) {                
                 mapGallery.toggleAlert('show');
             } 
