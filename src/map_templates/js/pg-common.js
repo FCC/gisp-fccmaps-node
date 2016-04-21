@@ -37,8 +37,8 @@ var offCanvasMenu = {
 
         $('.nav-browseBy').find('.active').removeClass('active');
         parent.addClass('active');
-        $(this).append(pointer);              
-        
+        $(this).append(pointer);
+
         $('.js-browseBy').addClass('hide');
         $(target).removeClass('hide');
     }
@@ -56,5 +56,7 @@ var extLinks = function(e) {
 
 };
 
-offCanvasMenu.init();
-$('.link-ext').on('click', extLinks);
+$(document).ready(function() {
+    offCanvasMenu.init();
+    $('.link-ext').on('click', extLinks);
+});
