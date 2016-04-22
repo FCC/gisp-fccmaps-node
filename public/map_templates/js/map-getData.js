@@ -188,7 +188,7 @@ function createMapCard(mapMeta) {
         // card += '<p class="card__desc">' + mapMeta.descriptions[i] + '</p>';
         card += '<p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi consectetur aliquid, excepturi aspernatur, libero porro ipsa omnis iusto autem, harum molestias dicta corrupti! Laudantium, autem, doloremque. Doloribus officia molestiae, praesentium.</p>';
         card += '<a class="link-viewMore" href="' + url_bookmark + '">View more&#8230;</a>';
-        card += '<ul class="list-unstyled"><li class="tag"><a href="#" data-tag="data-maps-reports">Data, Maps, Reports</a></li><li class="tag"><a href="#" data-tag="maps">Maps</a></li></ul></div>';
+        card += '<ul class="list-unstyled"><li class="tag"><span>Data, Maps, Reports</span></li><li class="tag"><span>Maps</span></li></ul></div>';
         card += '<div class="card__footer"><a class="btn-details btn btn-link btn-xs" href="#void" role="button" aria-pressed="false"><span class="icon icon-caret-right"></span>View details</a></div>';
         card += '</li>';
 

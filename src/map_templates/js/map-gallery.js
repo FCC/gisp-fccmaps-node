@@ -43,7 +43,7 @@
                 sortAscending: false
             }
         },
-        selectedTags: [],
+        // selectedTags: [],
         isIsotopeInit: false,
 
         init: function() {
@@ -56,7 +56,7 @@
             $('#sel-filter').on('change', mapGallery.filterByBureau);
             $('#sel-sort').on('change', mapGallery.sorting);
 
-            $('.tag-list-inline').on('click', '.link-removeTag', mapGallery.removeTag);
+            // $('.tag-list-inline').on('click', '.link-removeTag', mapGallery.removeTag);
 
             $('.map-status').on('click', '.btn', mapGallery.filterByStatus);
 
@@ -88,7 +88,7 @@
                 .on('layoutComplete', mapGallery.updateResults)
                 .on('arrangeComplete', mapGallery.showNumResults)
                 .on('click', '.btn-details', mapGallery.showCardDetails)
-                .on('click', '.tag a', mapGallery.addTag);  
+                // .on('click', '.tag a', mapGallery.addTag);  
         },
 
         updateResults: function(event, filteredItems) {
@@ -183,7 +183,7 @@
             mapGallery.filter();
         },
 
-        removeTag: function(e) {
+        /*removeTag: function(e) {
             var $tagLink = $(this),
                 $tag = $tagLink.parent('span').attr('data-tag');
 
@@ -221,9 +221,9 @@
                 mapGallery.filterByTags();
             }
 
-        },
+        },*/
 
-        filterByTags: function() {
+        /*filterByTags: function() {
             var numTags = mapGallery.selectedTags.length;
 
             if (numTags === 0) {
@@ -234,7 +234,7 @@
             }
 
             mapGallery.filter();
-        },
+        },*/
 
         filter: function() {
             mapGallery.locationHash();
@@ -244,7 +244,7 @@
             e.preventDefault();
 
             mapGallery.filters.bureau = '*';
-            mapGallery.filters.tag = '';
+            // mapGallery.filters.tag = '';
             mapGallery.filters.status = '.data-live';
 
             mapGallery.sortList.sortBy = 'date';
@@ -256,13 +256,13 @@
                 .end()
                 .find('.btn').eq(1).addClass('active');
 
-            if ($('.tag-list-inline').is(':visible')) {
+            /*if ($('.tag-list-inline').is(':visible')) {
                 $('.tag-list-inline')
                     .find('li')
                     .remove()
                     .end()
                     .addClass('hide');
-            }
+            }*/
 
             mapGallery.locationHash();
         },
@@ -270,23 +270,24 @@
         locationHash: function() {
             var filters = 'filter=' + mapGallery.filters.bureau,
                 status = 'status=' + mapGallery.filters.status,
-                tags = 'tags=' + mapGallery.filters.tag,
+                // tags = 'tags=' + mapGallery.filters.tag,
                 sortBy = 'sortBy=' + mapGallery.sortList.sortBy + '&sortAscending=' + mapGallery.sortList.sortAscending;
 
-            location.hash = encodeURIComponent(filters) + '&' + encodeURIComponent(status) + '&' + encodeURIComponent(tags) + '&' + encodeURIComponent(sortBy);
+            // location.hash = encodeURIComponent(filters) + '&' + encodeURIComponent(status) + '&' + encodeURIComponent(tags) + '&' + encodeURIComponent(sortBy);
+            location.hash = encodeURIComponent(filters) + '&' + encodeURIComponent(status) + '&' + encodeURIComponent(sortBy);
         },
 
         getHashFilter: function() {
             var hash = decodeURIComponent(location.hash),
                 bureauHash = hash.match(/filter=([^&]+)/i),
                 statusHash = hash.match(/status=([^&]+)/i),
-                tagHash = hash.match(/tags=([^&]+)/i),
+                // tagHash = hash.match(/tags=([^&]+)/i),
                 sortByHash = hash.match(/sortBy=([^&]+)/i),
                 sortAscHash = hash.match(/sortAscending=([^&]+)/i);
 
             mapGallery.filters.bureau = bureauHash === null ? mapGallery.filters.bureau : bureauHash[1];
             mapGallery.filters.status = statusHash === null ? mapGallery.filters.status : statusHash[1];
-            mapGallery.filters.tag = tagHash === null ? mapGallery.filters.tag : tagHash[1];
+            // mapGallery.filters.tag = tagHash === null ? mapGallery.filters.tag : tagHash[1];
             mapGallery.sortList.sortBy = sortByHash === null ? mapGallery.sortList.sortBy : sortByHash[1];
             mapGallery.sortList.sortAscending = sortAscHash === null ? mapGallery.sortList.sortAscending : sortAscHash[1];
             mapGallery.sortList.sortAscending = mapGallery.sortList.sortAscending === 'true';
@@ -298,7 +299,8 @@
 
             mapGallery.getHashFilter();
 
-            filters = mapGallery.filters.bureau + mapGallery.filters.status + mapGallery.filters.tag;
+            // filters = mapGallery.filters.bureau + mapGallery.filters.status + mapGallery.filters.tag;
+            filters = mapGallery.filters.bureau + mapGallery.filters.status;
 
             mapGallery.isIsotopeInit = true;
 
