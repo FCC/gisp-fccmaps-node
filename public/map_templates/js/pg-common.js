@@ -4,8 +4,8 @@
 var offCanvasMenu = {
     init: function() {
 
-        $('.nav-browseBy').on('click', 'a', offCanvasMenu.toggleNav);
-        $('.btn.hamburger').on('click', offCanvasMenu.toggleMenu)
+        $('#menu-primary').on('click', 'a', offCanvasMenu.toggleNav);
+        $('.btn.hamburger').on('click', offCanvasMenu.toggleMenu);
 
         $(window)
             .on('resize', offCanvasMenu.resizeWin)
@@ -31,11 +31,11 @@ var offCanvasMenu = {
     toggleNav: function(e) {
         var target = $(this).attr('href'),
             parent = $(this).closest('li'),
-            pointer = $('.nav-browseBy').find('.pointer');
+            pointer = $('#menu-primary').find('.pointer');
 
         e.preventDefault();
 
-        $('.nav-browseBy').find('.active').removeClass('active');
+        $('#menu-primary').find('.active').removeClass('active');
         parent.addClass('active');
         $(this).append(pointer);
 

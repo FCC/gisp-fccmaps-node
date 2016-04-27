@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">    
+    <meta charset="utf-8">
     <title>Maps - FCC GIS</title>
     <link rel="shortcut icon" href="https://www.fcc.gov/sites/all/themes/fcc/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta name="MobileOptimized" content="width">
@@ -23,98 +23,100 @@
     <div id="skip-link"> <a href="#main-content" class="sr-only focusable">Jump to main content</a></div>
     <div class="outer-container">
         <div class="inner-container">
-            <header class="navbar site-header">
-                <div class="navbar-primary">
-                    <div class="container">
-                        
-                        <nav role="navigation">
-                            <div class="nav-primary">
-                                <div class="navbar-header">
-                                    <a title="Home" href="http://fcc.gov" class="navbar-logo">
-                                        <img src="http://www.fcc.gov/sites/all/themes/fcc/images/fcc-logo-lg.png" alt="Home" class="img-responsive">
-                                        <span class="sr-only">Federal Communications Commission</span>
+            <header class="site-header">
+                <nav role="navigation">
+                    <div class="navbar navbar-default navbar-primary">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <h1 class="navbar-brand">
+                          <a title="Home" href="http://fcc.gov" class="navbar-logo">
+                            <span class="sr-only">Federal Communications Commission</span>
+                          </a>
+                        </h1>
+                            </div>
+                            <ul aria-hidden="true" id="menu-primary" class="nav navbar-nav nav-offcanvas-right">
+                                <li class="active">
+                                    <a aria-controls="browse-by-category" href="#browseCategory">
+                                        <div class="text-prefix">Browse by</div>
+                                        <strong class="title-emphasis">Category</strong>
                                     </a>
-                                </div>
-                                <ul class="nav-browseBy nav navbar-nav" aria-hidden="false">
-                                    <li class="active">
-                                        <a class="" href="#browseCategory">
-                                            <div class="text-prefix">Browse by</div>
-                                            <strong class="title-emphasis">Category</strong>
-                                            <div class="pointer"></div>
-                                        </a>
+                                </li>
+                                <li>
+                                    <a class="" href="#browseBureau" tabindex="10">
+                                        <div class="text-prefix">Browse by</div>
+                                        <strong class="title-emphasis">Bureaus &amp; Offices</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="navbar-controls">
+                                <a data-toggle-direction="right" data-toggle="offcanvas" class="btn hamburger navbar-btn btn-toggle-menu" type="button">
+                                    <span class="btn-inner btn-inner-menu"><span class="sr-only">Menu</span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="navbar-secondary navbar-default yamm nav-offcanvas nav-offcanvas-right">
+                        <div id="menu-secondary" class="tab-content">
+                            <div class="container tab-pane active" id="browse-by-category">
+                                <ul id="browseCategory" class="nav nav-tabs menu-secondary js-browseBy" role="navigation">
+                                    <li>
+                                        <a href="https://www.fcc.gov/about/overview" tabindex="10"><span class="link-title">About the FCC</span></a>
                                     </li>
                                     <li>
-                                        <a class="" href="#browseBureau">
-                                            <div class="text-prefix">Browse by</div>
-                                            <strong class="title-emphasis">Bureaus &amp; Offices</strong>
-                                        </a>
+                                        <a href="https://www.fcc.gov/proceedings-actions" tabindex="10">Proceedings &amp; Actions</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/licensing" tabindex="10">Licensing &amp; Databases</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/reports-research" tabindex="10">Reports &amp; Research</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/news-events" tabindex="10">News &amp; Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/consumers" tabindex="10">For Consumers</a>
                                     </li>
                                 </ul>
+                                <ul id="browseBureau" class="nav nav-tabs menu-secondary js-browseBy hide" role="navigation">
+                                    <li>
+                                        <a href="https://www.fcc.gov/consumer-governmental-affairs#block-menu-block-4"><span class="link-title">Consumer</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/enforcement#block-menu-block-4">Enforcement</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/international#block-menu-block-4">International</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/media#block-menu-block-4">Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/public-safety-and-homeland-security#block-menu-block-4">Public Safety</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/wireless-telecommunications#block-menu-block-4">Wireless</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/wireline-competition#block-menu-block-4">Wireline</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.fcc.gov/offices-bureaus#block-menu-block-4">Offices</a>
+                                    </li>
+                                </ul>
+                                <!--.nav-tabs -->
                             </div>
-                            <button class="btn hamburger" type="button"><span class="sr-only">Menu</span></button>
-                        </nav>
+                        </div>
+                        <!-- .secondary-menu -->
                     </div>
-                </div>
+                </nav>
             </header>
-            <div class="nav-secondary">
-                <div class="container">
-                    <nav role="navigation">                        
-                        <ul id="browseCategory" class="menu js-browseBy">
-                            <li>
-                                <a href="https://www.fcc.gov/about/overview"><span class="link-title">About the FCC</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/proceedings-actions">Proceedings &amp; Actions</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/licensing">Licensing &amp; Databases</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/reports-research">Reports &amp; Research</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/news-events">News &amp; Events</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/consumers">For Consumers</a>
-                            </li>
-                        </ul>
-                        <ul id="browseBureau" class="menu js-browseBy hide">
-                            <li>
-                                <a href="https://www.fcc.gov/consumer-governmental-affairs#block-menu-block-4"><span class="link-title">Consumer</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/enforcement#block-menu-block-4">Enforcement</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/international#block-menu-block-4">International</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/media#block-menu-block-4">Media</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/public-safety-and-homeland-security#block-menu-block-4">Public Safety</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/wireless-telecommunications#block-menu-block-4">Wireless</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/wireline-competition#block-menu-block-4">Wireline</a>
-                            </li>
-                            <li>
-                                <a href="https://www.fcc.gov/offices-bureaus#block-menu-block-4">Offices</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
             <main class="container">
-            <a id="main-content" tabindex="-1"></a>
+                <a id="main-content" tabindex="-1"></a>
                 <div class="grid-maps row">
                     <div class="col-sm-12">
                         <div class="row">
                             <div class="col-xs-6 col-sm-6">
-
                                 <h1>Maps</h1>
                             </div>
                             <div class="col-xs-6 col-sm-6">
@@ -240,7 +242,7 @@
     <script src="map_templates/js/vendor/isotope.min.js"></script>
     <script src="map_templates/js/pg-common.js"></script>
     <script src="map_templates/js/map-getData.js"></script>
-    <script src="map_templates/js/map-gallery.js"></script>     
+    <script src="map_templates/js/map-gallery.js"></script>
 </body>
 
 </html>

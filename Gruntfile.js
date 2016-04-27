@@ -88,7 +88,7 @@ module.exports = function(grunt) {
             options: {
                 paths: ['bootstrap-gisp/less', 'bower_components'],
                 compress: true,
-                sourceMap: true
+                sourceMap: false
             },
             dist: {
                 files: [{
