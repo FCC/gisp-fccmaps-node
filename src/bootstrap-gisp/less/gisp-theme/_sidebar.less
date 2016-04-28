@@ -44,6 +44,9 @@
         border: none;
         width: 100%;
     }
+    p {
+        margin-top: 10px;
+    }
     .docs-collapsed-nav & {
         display: none;
     }
@@ -57,19 +60,20 @@
         font-weight: 400;
         line-height: 16px;
         margin: 10px 0 10px;
-        > li > a {
+        
+        > li.active > a {
+            background: #13428b;
+            color: #fff;
+        }
+    }
+    li > a {
             &:hover,
             &:focus {
                 background: #13428b;
                 color: #fff;
             }
         }
-        > li.active > a {
-            background: #13428b;
-            color: #fff;
-        }
-        li + li {
-            margin-top: 0;
-        }
+    li + li {
+        margin-top: 0;
     }
 }
