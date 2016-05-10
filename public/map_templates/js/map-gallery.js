@@ -60,7 +60,7 @@
 
             $('.map-status').on('click', '.btn', mapGallery.filterByStatus);
 
-            $('.link-clearFilters').on('click', mapGallery.clearFilters);
+            $('.btn-resetFilters').on('click', mapGallery.clearFilters);
 
             $('#skip-link, header, .nav-secondary').find('a').add('.navbar-about').attr('tabindex', 10);
             $('.gallery__filterOpts').find('button, select, a').add('.gallery__numResults').attr('tabindex', 20);
@@ -130,20 +130,20 @@
             if (thisCard.is(':visible')) {
                 thisBtn
                     .html('<span class="icon icon-caret-right"></span>View details')
-                    .attr('aria-pressed', false);
+                    .attr('aria-expanded', false);
 
                 thisCardBody.slideUp(function() {
-                    thisCardBody.attr('aria-expanded', false);
+                    thisCardBody.attr('aria-hidden', true);
                     thisBtn.closest('.card').css('z-index', 0);
                     $('.map-cards').isotope('layout');
                 });
             } else {
                 thisBtn
                     .html('<span class="icon icon-caret-down"></span>Hide details')
-                    .attr('aria-pressed', true);
+                    .attr('aria-expanded', true);
 
                 thisCardBody.slideDown(function() {
-                    thisCardBody.attr('aria-expanded', true);
+                    thisCardBody.attr('aria-hidden', false);
                     thisBtn.closest('.card').css('z-index', 0);
                     $('.map-cards').isotope('layout');
                 });

@@ -41,16 +41,26 @@
     /* enable tooltips */
     $('[data-toggle="tooltip"]').tooltip({ container: 'body', delay: { show: 200, hide: 0 } });
 
-    $('.link-tags').click(function() {
+    $('.link-tags').click(function(e) {
         var thisLink = $(this),
-            tagsList = thisLink.closest('.tag-list-inline').find('.list-tags');
+            tagsList = $('.list-tags');
+
+        e.preventDefault();
 
         if (tagsList.is(':visible')) {
-            tagsList.addClass('hide');
+            tagsList
+                .addClass('hide')
+                .attr('aria-hidden', true);
+                
             thisLink.text('View Tags');
+            thisLink.attr('aria-expanded', false);
         } else {
-            $('.list-tags').removeClass('hide');
+            tagsList
+                .removeClass('hide')
+                .attr('aria-hidden', false);
+
             thisLink.text('Hide Tags');
+            thisLink.attr('aria-expanded', true);
         }
     });
 

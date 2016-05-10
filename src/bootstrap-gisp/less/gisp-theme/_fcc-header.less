@@ -13,6 +13,7 @@
     color: #fff;
 }
 
+
 /* ==========================================================================
        Navbar
        ========================================================================== */
@@ -60,7 +61,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {    
+@media screen and (max-width: 767px) {
     .nav-offcanvas-top {
         position: absolute;
         top: -64px;
@@ -200,10 +201,9 @@
     }
 }
 
-
 #menu-primary {
     text-align: center;
-    height: 58px;    
+    height: 58px;
 }
 
 @media screen and (max-width: 991px) {
@@ -219,7 +219,6 @@
 @media screen and (min-width: 768px) {
     #menu-primary {
         height: 129px;
-        
     }
 }
 
@@ -282,17 +281,16 @@
         margin-left: -61.5px;
         margin-top: -23px;
         background-image: url(../images/menu-active-pointer-lg.png);
-        
     }
 }
 
 #menu-primary > li a {
     line-height: normal;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: #fff;
     }
 }
-
 
 @media screen and (max-width: 991px) {
     #menu-primary > li a {
@@ -388,7 +386,7 @@
 (min--moz-device-pixel-ratio: 1.5),
 (-o-min-device-pixel-ratio: 3 / 2),
 (min-device-pixel-ratio: 1.5),
-(min-resolution: 2dppx) {    
+(min-resolution: 2dppx) {
     .navbar-btn .btn-inner-menu {
         background-image: url('../images/icons-2x-s4a93a70c85.png');
         -moz-background-size: 185px 2138px;
@@ -401,8 +399,7 @@
     }
 }
 
-
-@media screen and (max-width: 991px) {    
+@media screen and (max-width: 991px) {
     .btn-toggle-menu {
         display: inline-block;
         padding: 3px 0 6px;
@@ -410,7 +407,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {    
+@media screen and (max-width: 767px) {
     .btn-toggle-menu {
         padding: 8px 0;
         margin-right: -6px;
@@ -422,6 +419,7 @@
 /*
        Secondary Navbar
        ========================================================================== */
+
 .navbar-secondary {
     background: transparent;
     z-index: 1010;
@@ -632,12 +630,7 @@ screen and (max-width: 767px) and (min-resolution: 2dppx) {
     }
 }
 
-
-
-
-
 @media screen and (min-width: 992px) {
-    
     #menu-secondary .tab-pane {
         opacity: 0;
         -webkit-transition: opacity .5s ease, -webkit-transform .25s ease;
@@ -663,20 +656,23 @@ screen and (max-width: 767px) and (min-resolution: 2dppx) {
     }
 }
 
-
-.hamburger .btn-inner-menu {
-    background-image: url(../images/icons-2x-s4a93a70c85.png);
-    background-size: 185px 2138px;
-    background-position: 0px -1156px;
-    height: 23px;
-    width: 28px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: middle;
-    text-indent: 100%;
-    font-size: 1em;
+.hamburger {
+    background: none;
+    .btn-inner-menu {
+        background-image: url(../images/icons-2x-s4a93a70c85.png);
+        background-size: 185px 2138px;
+        background-position: 0px -1156px;
+        height: 23px;
+        width: 28px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        text-indent: 100%;
+        font-size: 1em;
+    }
 }
+
 
 /* =============================================================================
    =============================================================================

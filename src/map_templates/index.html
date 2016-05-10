@@ -73,9 +73,9 @@
                                 </li>
                             </ul>
                             <div class="navbar-controls">
-                                <a data-toggle-direction="right" data-toggle="offcanvas" class="btn hamburger navbar-btn btn-toggle-menu" type="button">
+                                <button class="btn hamburger navbar-btn btn-toggle-menu" type="button" data-toggle-direction="right" data-toggle="offcanvas">
                                     <span class="btn-inner btn-inner-menu"><span class="sr-only">Menu</span></span>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -146,12 +146,12 @@
                                         <div class="col-sm-10">
                                             <div class="pg-header">
                                                 <div class="nav-breadcrumb"><a href="../index.html">Maps</a> <span class="icon icon-angle-right"></span></div>
-                                                <h1><span id="span-title">Title</span> <small><span id="span-subtitle">Subtitle</span></small></h1>
+                                                <h1><span id="span-title">Title</span> <span id="span-subtitle" class="subtitle">Subtitle</span></h1>
                                             </div>
                                         </div>
                                         <div class="col-sm-2">
                                             <div class="pull-right">
-                                                <button type="button" class="nav-collapse btn btn-link" aria-controls="sidebar-maps"><i class="icon icon-th"></i><span class="sr-only">View map sidebar</span></button>
+                                                <button type="button" class="nav-collapse btn btn-link" aria-controls="sidebar-maps"><span class="icon icon-th"></span><span class="sr-only">View map sidebar</span></button>
                                             </div>
                                         </div>
                                     </div>
@@ -167,16 +167,16 @@
                                                                 <li><a href="#" data-value="latlon-decimal">Coordinates</a></li>
                                                             </ul>
                                                         </div>
-                                                        <input id="input-location" class="form-control ui-autocomplete-input ui-corner-all" type="search" placeholder="Enter Address" style="display: block" autocomplete="off">
+                                                        <input id="input-location" class="form-control ui-autocomplete-input ui-corner-all" type="search" placeholder="Enter Address" style="display: block" autocomplete="off" aria-label="Enter Address">
                                                         <div id="input-latlon-decimal" class="form-control" type="search" placeholder="Enter Latlon decimal" style="display: none">
                                                             <table id="table-latlon-decimal">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td>Latitude:
+                                                                        <td><label for="latitude">Latitude:</label>
                                                                             <input id="latitude" placeholder="41.234567" style="width: 150px; height: 20px; border: solid 1px #eee">
                                                                         </td>
                                                                         <td width="75"></td>
-                                                                        <td>Longitude:
+                                                                        <td><label for="longitude">Longitude:</label>
                                                                             <input id="longitude" placeholder="-91.234567" style="width: 150px; height: 20px; border: solid 1px #eee">
                                                                         </td>
                                                                     </tr>
@@ -236,8 +236,8 @@
                                     </div>
                                     <br>
                                     <div class="tag-list-inline">
-                                        <a class="link-tags" href="#void">View Tags</a>
-                                        <ul id="ul-tag-list" class="list-tags list-unstyled hide">
+                                        <a class="link-tags" href="#" role="button" aria-expanded="false">View Tags</a>
+                                        <ul id="ul-tag-list" class="list-tags list-unstyled hide" aria-hidden="true">
                                             <li class="tag"><span>Data</span></li>
                                             <li class="tag"><span>Maps</span></li>
                                             <li class="tag"><span>Universal Service</span></i>

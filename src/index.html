@@ -49,9 +49,9 @@
                                 </li>
                             </ul>
                             <div class="navbar-controls">
-                                <a data-toggle-direction="right" data-toggle="offcanvas" class="btn hamburger navbar-btn btn-toggle-menu" type="button">
+                                <button class="btn hamburger navbar-btn btn-toggle-menu" type="button" data-toggle-direction="right" data-toggle="offcanvas">
                                     <span class="btn-inner btn-inner-menu"><span class="sr-only">Menu</span></span>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                         <div class="gallery-filters row">
                             <div class="gallery__numResults">Showing: 0 maps</div>
                             <div class="gallery__filterOpts">
-                                <div class="map-status btn-group btn-group-sm" role="group" aria-label="Map view options">
+                                <div class="map-status btn-group btn-group-sm" role="toolbar" aria-controls="map-list-holder" aria-label="Map view options">
                                     <button type="button" class="btn btn-default" data-filter="data-all">All</button>
                                     <button type="button" class="btn btn-default active" data-filter="data-live">Current</button>
                                     <button type="button" class="btn btn-default" data-filter="data-featured">Featured</button>
@@ -144,14 +144,10 @@
                                         <option value="titleAsc">Title (A-Z)</option>
                                         <option value="titleDesc">Title (Z-A)</option>
                                     </select>
-                                    <a href="#void" class="link-clearFilters">Reset Filters</a>
+                                    <button class="btn-resetFilters btn-link" type="button">Reset Filters</button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tag-list-inline hide">
-                            <a class="link-removeTags h6" href="#void">Tags</a>
-                            <ul class="list-tags list-unstyled"></ul>
-                        </div>
+                        </div>                        
                         <div class="alert-noResults h4 hide" role="alert">
                             The selected filters did not match any maps. Please revise your selections and try again.
                         </div>
