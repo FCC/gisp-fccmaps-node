@@ -182,14 +182,14 @@ function createMapCard(mapMeta) {
         card += '<iframe src="' + url + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '"></iframe>';
         card += '<p class="card__title text-overflow"><a href="' + url_bookmark + '"><span >' + mapMeta.titles[i] + '</span></a></p>';
         card += '<div class="card__meta"><div class="pull-left">' + mapMeta.bureaus[i] + '</div><div class="pull-right data-date">' + mapMeta.dates[i] + '</div></div>';
-        card += '<div class="card__body" aria-hidden="true" style="display: none;">';
+        card += '<div class="card__body" id="t' + i + '"" aria-hidden="true" role="region" style="display: none;">';
         card += '<p class="card__subTitle text-overflow">' + mapMeta.subtitles[i] + '</p>';
         // TODO: populate description with actual text
         // card += '<p class="card__desc">' + mapMeta.descriptions[i] + '</p>';
         card += '<p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi consectetur aliquid, excepturi aspernatur, libero porro ipsa omnis iusto autem, harum molestias dicta corrupti! Laudantium, autem, doloremque. Doloribus officia molestiae, praesentium.</p>';
         card += '<a class="link-viewMore" href="' + url_bookmark + '">View more&#8230;</a>';
         card += '<ul class="list-unstyled"><li class="tag"><span>Data, Maps, Reports</span></li><li class="tag"><span>Maps</span></li></ul></div>';
-        card += '<div class="card__footer"><button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false"><span class="icon icon-caret-right"></span>View details</button></div>';
+        card += '<div class="card__footer"><button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false" aria-controls="t' + i + '"><span class="icon icon-caret-right"></span>View details</button></div>';
         card += '</li>';
 
     }
