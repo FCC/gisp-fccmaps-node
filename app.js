@@ -154,7 +154,8 @@ app.use(function(err, req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     
     res.status(500);
-    res.send(err_res);
+    // res.send(err_res);
+    res.sendfile('./public/500.html');
 });
 
 process.on('uncaughtException', function (err) {
