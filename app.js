@@ -134,7 +134,8 @@ app.use(function(req, res) {
     };
 
     res.status(404);
-    res.send(err_res);    
+    //res.send(err_res);    
+    res.sendfile('./public/404.html');
 });
 
 app.use(function(err, req, res, next) {

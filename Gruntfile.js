@@ -196,7 +196,7 @@ module.exports = function(grunt) {
                 files: [{ // map home page to public
                     expand: true,
                     cwd: './src',
-                    src: ['index.html', 'about.html'],
+                    src: ['*.html'],
                     dest: './public'
                 }]
             },
