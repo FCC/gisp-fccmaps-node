@@ -71,12 +71,14 @@ var task = function(mm) { return function(callback) {
 	
 	if (mm.fields.field_map_page_url.und) {
 		map_page_url = mm.fields.field_map_page_url.und[0].url;
+		map_page_url = map_page_url.replace(/.*\//, '')
 		map_page_title = mm.fields.field_map_page_url.und[0].title;
 	}
 	
 	if (mm.fields.field_map_repository.und) {
 		map_repository_title = mm.fields.field_map_repository.und[0].title;
 		map_repository_url = mm.fields.field_map_repository.und[0].url;
+		map_repository_url = map_repository_url.replace(/.*\//, '')
 	}
 	
 	if (map_page_url == "") {
