@@ -162,7 +162,7 @@ function createMapCard(mapMeta) {
     var card = '';
     for (var i = 0; i < urls.length; i++) {
 
-        var url = urls[i] + '/responsive.html';
+        var url = urls[i].substr(urls[i].lastIndexOf('/') + 1) + '/responsive.html';
         var url_bookmark = urls[i] + '/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i] + '/zoom,attr,layers,key,search';
 
         var add_class = '';
