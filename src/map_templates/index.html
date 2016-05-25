@@ -11,14 +11,14 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">    
+    <meta charset="utf-8">
     <link rel="canonical" href="https://www.fcc.gov/" />
-<link rel="shortlink" href="https://www.fcc.gov/" />
-<meta property="og:site_name" content="Federal Communications Commission GIS Program" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://maps.fcc.gov/" />
-<meta property="og:title" content="Federal Communications Commission GIS Program" />
-<meta property="og:description" content="The United States of America" />
+    <link rel="shortlink" href="https://www.fcc.gov/" />
+    <meta property="og:site_name" content="Federal Communications Commission GIS Program" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maps.fcc.gov/" />
+    <meta property="og:title" content="Federal Communications Commission GIS Program" />
+    <meta property="og:description" content="The United States of America" />
     <title>Maps - FCC GIS</title>
     <meta name="description" content="FCC GIS Program">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,6 @@
     <link href="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.css" rel="stylesheet" />
     <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
     <link href="css/gisp-theme.min.css" rel="stylesheet" />
-    
     <style>
     #map-container {
         height: 400px;
@@ -136,7 +135,7 @@
                 </nav>
             </header>
             <main class="container">
-            <a id="main-content" tabindex="-1"></a>
+                <a id="main-content" tabindex="-1"></a>
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="row-grid">
@@ -172,11 +171,13 @@
                                                             <table id="table-latlon-decimal">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td><label for="latitude">Latitude:</label>
+                                                                        <td>
+                                                                            <label for="latitude">Latitude:</label>
                                                                             <input id="latitude" placeholder="41.234567" style="width: 150px; height: 20px; border: solid 1px #eee">
                                                                         </td>
                                                                         <td width="75"></td>
-                                                                        <td><label for="longitude">Longitude:</label>
+                                                                        <td>
+                                                                            <label for="longitude">Longitude:</label>
                                                                             <input id="longitude" placeholder="-91.234567" style="width: 150px; height: 20px; border: solid 1px #eee">
                                                                         </td>
                                                                     </tr>
@@ -205,7 +206,7 @@
                                         <div id="div-legend-holder">
                                         </div>
                                     </div>
-                                    <div class="map-pubMeta row">
+                                    <!-- <div class="map-pubMeta row">
                                         <dl class="dl-inline">
                                             <dt>Bureau:</dt>
                                             <dd><span id="span-bureau">Bureau</span></dd>
@@ -246,7 +247,36 @@
                                             </li>
                                             <li class="tag"><span>Connect America Fund (High Cost)</span></li>
                                         </ul>
-                                    </div>
+                                    </div> -->
+                                    <dl class="dl-mapMeta dl-horizontal">
+                                        <dt>Published by:</dt>
+                                        <dd><span id="span-bureau">Bureau</span></dd>
+                                        <dt>Description:</dt>
+                                        <dd><span id="span-description"></span></dd>
+                                        <dt>Published:</dt>
+                                        <dd id="dd-published"></dd>
+                                        <dt>Updated:</dt>
+                                        <dd id="dd-updated"></dd>
+                                        
+                                        <dt>Related:</dt>
+                                        <dd>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#void">Related link</a></li>
+                                                <li><a href="#void">Related link</a></li>
+                                                <li><a href="#void">Related link</a></li>
+                                            </ul>
+                                        </dd>
+                                        <dt>Tags:</dt>
+                                        <dd>
+                                            <ul id="ul-tag-list" class="list-tags list-unstyled" aria-hidden="true">
+                                                <li class="tag"><span>Data, Maps, Reports</span></li>
+                                                <li class="tag"><span>Maps</span></li>
+                                                <li class="tag"><span>Universal Service</span></li>
+                                                <li class="tag"><span>Connect America Fund (High Cost) - Rate of Return Carriers</span></li>
+                                                <li class="tag"><span>Connect America Fund (High Cost)</span></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </section>
                             </div>
                             <div id="sidebar-maps" class="maps-sidebar col-grid">
