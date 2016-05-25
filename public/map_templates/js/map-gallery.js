@@ -69,9 +69,9 @@
         initGrid: function() {
             $('.map-cards')
                 .isotope({
-                    masonry: {
-                        columnWidth: 265,
-                        gutter: 25
+                    masonry: {                        
+                        columnWidth: '.card',
+                        gutter: 20
                     },
                     getSortData: {                        
                         date: function(itemElem) {
