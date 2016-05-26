@@ -465,6 +465,11 @@
 
 .menu-secondary {
     border: 0;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        &:first-child {
+            white-space: nowrap;
+        }
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -493,8 +498,7 @@
 
 .menu-secondary > li {
     display: inline-block;
-    float: none;
-    margin-right: 12px;
+    float: none;    
 }
 
 @media screen and (max-width: 991px) {
