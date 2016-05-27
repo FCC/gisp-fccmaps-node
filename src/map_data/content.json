@@ -1397,7 +1397,11 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "value": "https://fcc.github.io/overbuilt-map/"
+                "url": "https://fcc.github.io/overbuilt-map/",
+                "title": "100% Overlap Map",
+                "attributes": [
+
+                ]
             }]
         },
         "field_map_repository": [
@@ -1408,7 +1412,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "ext_iframe"
             }]
         },
         "field_related_links": [
@@ -1584,7 +1588,11 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "value": "http://maps.fcc.gov/caf-2"
+                "url": "http://maps.fcc.gov/caf2",
+                "title": "CAF2",
+                "attributes": [
+
+                ]
             }]
         },
         "field_map_repository": [
