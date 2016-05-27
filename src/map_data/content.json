@@ -1228,9 +1228,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "//a.tiles.mapbox.com/v4/fcc.0j21k0bh",
+                    "value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh",
                     "format": null,
-                    "safe_value": "//a.tiles.mapbox.com/v4/fcc.0j21k0bh"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh"
                 }]
             },
             "field_layer_format": {
