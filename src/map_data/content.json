@@ -1159,9 +1159,11 @@
         "field_search_exclude": [
 
         ],
-        "field_subtitle": [{
-            "value": "Accepted Areas Map"
-        }],
+        "field_subtitle": {            
+            "und": [{
+                "value": "Accepted Areas Map"
+            }]
+        },
         "field_featured": [
 
         ],
