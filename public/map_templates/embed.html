@@ -32,25 +32,40 @@
     <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
     <link href="css/gisp-theme.min.css" rel="stylesheet" />
     <style>
+    html, body {
+        height: 100%;
+    }
+    
     body {
         padding: 5px;
     }
     
     .map-embed {
-        height: 100vh;
+        height: 100%;
         position: relative;
     }
     
+    .search-field {
+        margin-top: 10px;
+    }
+
+    .hasSearch + .map-embed {
+        height: calc(100% - 55px);
+    }
+
     #map-container {
+        top: 0;
         height: 100%;
+        left: 0;        
+        position: absolute;
         width: 100%;
     }
     </style>
 </head>
 
 <body>
-    <div id="search-field-holder" style="display: none">
-        <div class="search-field input-group">
+    <div id="search-field-holder" class="search-field" style="display: none">
+        <div class="input-group">
             <div class="search__group">
                 <div class="search__input">
                     <div class="input-group">
@@ -62,18 +77,17 @@
                             </ul>
                         </div>
                         <input id="input-location" class="form-control ui-autocomplete-input ui-corner-all" type="search" placeholder="Enter Address" style="display: block" autocomplete="off" aria-label="Enter Address">
-                        <div id="input-latlon-decimal" class="form-control" type="search" placeholder="Enter Latlon decimal" style="display: none">
+                        <div id="input-latlon-decimal" class="table-srchCoords form-control" type="search" placeholder="Enter Latlon decimal" style="display: none">
                             <table id="table-latlon-decimal">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <label for="latitude">Latitude:</label>
-                                            <input id="latitude" placeholder="41.234567" style="width: 150px; height: 20px; border: solid 1px #eee">
-                                        </td>
-                                        <td width="75"></td>
+                                            <label for="latitude">Lat.</label>
+                                            <input id="latitude" class="form-control" placeholder="41.234567">
+                                        </td>                                        
                                         <td>
-                                            <label for="longitude">Longitude:</label>
-                                            <input id="longitude" placeholder="-91.234567" style="width: 150px; height: 20px; border: solid 1px #eee">
+                                            <label for="longitude">Long.</label>
+                                            <input id="longitude" class="form-control" placeholder="-91.234567">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -98,7 +112,7 @@
         </div>
     </div>
     <div class="map-embed">
-        <div id="map-container" style="position: absolute; top: 0; left: 0; bottom: 0; height: 100%;"></div>
+        <div id="map-container"></div>
     </div>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>

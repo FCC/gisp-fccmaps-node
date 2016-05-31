@@ -189,12 +189,18 @@ function createMap() {
 function createSearchFields() {
     if (hasSearch) {
         if (map_info.search && map_info.search.toLowerCase() == "no") {
-            $('#search-field-holder').css("display", "none");
+            $('#search-field-holder')
+                .removeClass('hasSearch')
+                .hide();
+
             return;
         }
 
         if (map_info.search && map_info.search.toLowerCase() == "yes") {
-            $('#search-field-holder').css("display", "block");
+            $('#search-field-holder')
+                .addClass('hasSearch')
+                .show();
+                
             return;
         }
     }
