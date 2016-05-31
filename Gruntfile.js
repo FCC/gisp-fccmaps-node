@@ -171,7 +171,7 @@ module.exports = function(grunt) {
                 { // map template page to dist 
                     expand: true,
                     cwd: './src/map_templates/',
-                    src: '*.*',
+                    src: '**/*',
                     dest: '<%= paths.assets %>'
                 }, 
                 { // JS 

@@ -9,13 +9,14 @@ var hash = null;
 
 // get url hash and display options
 var urlHash = window.location.hash,
+    isEmbed = window.location.pathname.split('/')[2] === 'embed',
     args = [],
     displayOpts = '',
-    hasZoom = false,
-    hasAttribution = false,
-    hasLayers = false,
-    hasLegend = false,
-    hasSearch = false;
+    hasZoom = true,
+    hasAttribution = true,
+    hasLayers = true,
+    hasLegend = true,
+    hasSearch = true;
 
 function createMap() {
 
@@ -48,9 +49,10 @@ function createMap() {
     if (urlHash.indexOf('#') === 0) {
         urlHash = urlHash.substr(1);
     }
-    args = urlHash.split('/');
 
-    if (args[3]) {
+    args = urlHash.split('/');    
+
+    if (isEmbed && args[3] !== undefined) {   
         displayOpts = args[3].split(',');
 
         hasZoom = displayOpts.indexOf('zoom') > -1;
@@ -59,7 +61,7 @@ function createMap() {
         hasLegend = displayOpts.indexOf('key') > -1;
         hasSearch = displayOpts.indexOf('search') > -1;
     }
-
+    
     L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
     map = L.mapbox.map('map-container', 'fcc.k74ed5ge', {
             attributionControl: hasAttribution,
@@ -200,7 +202,7 @@ function createSearchFields() {
             $('#search-field-holder')
                 .addClass('hasSearch')
                 .show();
-                
+
             return;
         }
     }
