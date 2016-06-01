@@ -60,6 +60,22 @@ var task = function(mm) { return function(callback) {
 	var map_page_url = "";
 	var map_page_title = "";
 	
+	//see if there is map_page_url
+	if ( !(mm.fields.field_map_page_url.und && mm.fields.field_map_page_url.und[0].url)) {
+		callback();
+		return;
+	}
+	
+	//see if map type is int_layers
+	var map_type = '';
+	if (mm.fields.field_map_type && mm.fields.field_map_type.und) {
+		map_type = mm.fields.field_map_type.und[0].value;
+	}
+	if (map_type != 'int_layers') {
+		callback();
+		return;
+	}
+	
 	//compare with drupal_current to see if they are different
 
 	var map_status = is_new(mm);
@@ -70,6 +86,9 @@ var task = function(mm) { return function(callback) {
 	}
 	
 	if (mm.fields.field_map_page_url.und) {
+	
+		console.log(mm.fields.field_map_page_url.und);
+	
 		map_page_url = mm.fields.field_map_page_url.und[0].url;
 		map_page_url = map_page_url.replace(/.*\//, '')
 		map_page_title = mm.fields.field_map_page_url.und[0].title;
@@ -115,8 +134,17 @@ function mapDeploy(type) {
 
 	try {
 
-		var url = drupal_api;
-
+		var source = 'static';
+		
+		if (source == 'static') {
+			var url = 'http://localhost:6479/content.json';
+		}
+		else {
+			var url = drupal_api;
+		}
+		
+		console.log(url);
+		
 		http.get(url, function(res) {
 			var data = "";
 			res.on('data', function(chunk) {
@@ -207,6 +235,7 @@ function copyFromTemplates(m, dirPath) {
 			var repo = "";
 			if (m.fields.field_map_repository.und) {
 				repo = m.fields.field_map_repository.und[0].url;
+				repo = repo.replace(/.*\//, '')
 			}
 			var nid = m.nid;
 			if (repo != "") {
