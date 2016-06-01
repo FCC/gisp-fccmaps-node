@@ -5,7 +5,7 @@ var geo_space = config.GEO_SPACE;
 var PG_DB = config.PG_DB;
 var pg_schema = config.PG_SCHEMA;
 var drupal_api = config.DRUPAL_API;
-var NODE_ENV = cinfig.NODE_ENV;
+var NODE_ENV = config.NODE_ENV;
 
 var deployInterval = 300000; //microseconds
 var drupalData;
@@ -141,7 +141,7 @@ function mapDeploy(type) {
 		if (source == 'static') {
 			if (NODE_ENV == 'LOCAL') {
 			var url = 'http://localhost:6479/content.json';
-			{
+			}
 			else {
 			var url = "http://gisp-fccmaps-node-dev.us-west-2.elasticbeanstalk.com/content.json";
 			}
