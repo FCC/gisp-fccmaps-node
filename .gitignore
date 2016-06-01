@@ -39,5 +39,6 @@ bower_components
 .ebextensions
 app.zip
 dist
-#public/*
+public/*
 !public/map_templates
+!public/content.json
