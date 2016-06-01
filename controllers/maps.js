@@ -269,8 +269,7 @@ function pullDrupal(req, res) {
 	
 		console.log("Manual pull of Drupal API");
 		mapDeploy("onetime");
-		res.send({"status": "ok"});
-		
+		res.send({"status": "ok"});	
 	}
 	catch (e) {
 		console.error('Exception in pullDrupal: ' + e);
