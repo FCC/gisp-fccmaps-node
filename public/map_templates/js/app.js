@@ -858,7 +858,7 @@ function getMapInfo() {
 		map_page_url_url = mapOptions.fields.field_map_page_url.und[0].url;
 		map_page_url_title = mapOptions.fields.field_map_page_url.und[0].title;
 	}
-	map_info_all.map_page_url_ulr = map_page_url_url;
+	map_info_all.map_page_url_url = map_page_url_url;
 	map_info_all.map_page_url_title = map_page_url_title;
 	
 	//map_repository
@@ -866,6 +866,11 @@ function getMapInfo() {
 	//map_status
 	
 	//map_type
+	var map_type = '';
+	if (mapOptions.fields.field_map_type && mapOptions.fields.field_map_type.und) {
+		map_type = mapOptions.fields.field_map_type.und[0].value;
+	}
+	map_info_all.map_type = map_type;
 	
 	//publishing_bureau_office
 	
@@ -899,41 +904,12 @@ function getMapInfo() {
 		subtitle = mapOptions.fields.field_subtitle.und[0].value;	
 	}
 	map_info_all.subtitle = subtitle;
-	
-	console.log(map_info_all);
 		
 }
 
 function updateText() {
 
-    // var json_obj = JSON.parse(mapOptions.fields.field_description.und[0].value);
-    // var bureau = "NA"
-    // if (json_obj.bureau) {
-        // bureau = json_obj.bureau;
-    // }
-    // var title = mapOptions.title;
-    // var subtitle = mapOptions.fields.field_subtitle.und[0].value;
-    // var created = mapOptions.created;
-    // var changed = mapOptions.changed;
-
-    // $(document).prop('title', title);
-    // $('#span-title').html(title);
-    // $('#span-subtitle').html(subtitle);
-    // $('#dd-published').html(created);
-    // $('#dd-updated').html(changed);
-    // $('#span-bureau').html(bureau);
-
-    // map_info = mapOptions.fields.field_description.und[0].value;
-    // map_info = JSON.parse(map_info);
-    // var description = map_info.description;
-    // $('#span-description').html(description);
-	
-	
-	//var json_obj = JSON.parse(mapOptions.fields.field_description.und[0].value);
-    //var title = mapOptions.title;
-    //var subtitle = mapOptions.fields.field_subtitle.und[0].value;
-    //var created = mapOptions.created;
-    //var changed = mapOptions.changed;
+console.log(map_info_all);
 
     $(document).prop('title', map_info_all.title);
     $('#span-title').html(map_info_all.title);
@@ -955,7 +931,7 @@ function updateMapList() {
         url: url,
         dataType: "json",
         success: function(data) {
-		
+			var map_types = [];
             var urls = [];
             var titles = [];
             var subtitles = [];
@@ -968,17 +944,23 @@ function updateMapList() {
             var searches = [];
 
             for (var i = 1; i < data.length; i++) {
-                var title = data[i].title;
-                var url = "";
-                if (data[i].fields.field_map_page_url.und) {
-                    url = data[i].fields.field_map_page_url.und[0].url;
-                }
-                var repo = "";
-                if (data[i].fields.field_map_repository.und) {
-                    repo = data[i].fields.field_map_repository.und[0].url;
-                }
+				var title = '';
+				if (data[i].title) {
+					title = data[i].title;
+				}
+				//map_type
+				var map_type = '';
+				if (data[i].fields.field_map_type && data[i].fields.field_map_type.und) {
+					map_type = data[i].fields.field_map_type.und[0].value;
+				}
+				//url
+				var url = '';
+				if (data[i].fields.field_map_page_url && data[i].fields.field_map_page_url.und) {
+					url = data[i].fields.field_map_page_url.und[0].url;
+				}
 
-                if (url + repo != "") {
+                if (url != "") {
+					map_types.push(map_type);
                     urls.push(url);
                     titles.push(title);
                 }
@@ -993,12 +975,10 @@ function updateMapList() {
                 return true;
             }
 
-            //var urls = data.urls;
-            //var titles = data.titles;
             var map_list_text = "";
             for (var i = 0; i < urls.length; i++) {
                 map_list_text += '<li><a href="/' + urls[i] + '" class=""> \
-                    <iframe width="150" height="125" src="/' + urls[i] + '/responsive.html"></iframe> \
+                    <iframe width="150" height="125" src="/' + urls[i] + '/embed"></iframe> \
                     <p>' + titles[i] + '</p> \
                     </a></li>';
             }
@@ -1013,7 +993,7 @@ function updateMapList() {
 
 
 $(document).ready(function() {
-    getMapInfo();
+    getMapInfo(mapOptions);
     //updateMapSize();
     updateMapList();
     updateText();

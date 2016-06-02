@@ -858,7 +858,7 @@ function getMapInfo() {
 		map_page_url_url = mapOptions.fields.field_map_page_url.und[0].url;
 		map_page_url_title = mapOptions.fields.field_map_page_url.und[0].title;
 	}
-	map_info_all.map_page_url_ulr = map_page_url_url;
+	map_info_all.map_page_url_url = map_page_url_url;
 	map_info_all.map_page_url_title = map_page_url_title;
 	
 	//map_repository
