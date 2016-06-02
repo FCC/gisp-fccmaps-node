@@ -113,27 +113,57 @@ function getMapMeta(data, mapMeta) {
 
 }
 
+
+function getMapMeta1(data, mapMeta) {   
+
+    var mapJSON = {};
+
+    for (var i = 1; i < data.length; i++) {
+	
+		var map_info_all = getMapInfo(data[i]);
+		mapJSON.map_type = map_info_all.map_type;
+        mapJSON.title = map_info_all.title;
+		mapJSON.description = map_info_all.description;
+        mapJSON.vid = map_info_all.vid;
+        mapJSON.created = map_info_all.date;
+        mapJSON.changed = map_info_all.date_updated_reviewed;
+        mapJSON.url = map_info_all.map_page_url_url;
+        mapJSON.repo = '';
+        mapJSON.subtitle = map_info_all.subtitle;     
+        mapJSON.archived = map_info_all.archived;
+        mapJSON.live = mapJSON.archived === '0' ? '1' : '0';
+        mapJSON.featured = map_info_all.featured;       
+        mapJSON.latitude = map_info_all.map_latitude || '50.00';
+        mapJSON.longitude = map_info_all.map_longitude || '-105.00';
+        mapJSON.initialzoom = map_info_all.map_initial_zoom || '3';
+        
+        if (mapJSON.url !== '') {
+            updateMapMeta(data[i], mapMeta, mapJSON);
+        }
+    }
+
+}
+
+
+
+
+
+
 function updateMapMeta(data, mapMeta, mapJSON) {
 
     var bureau = '';
     var map_info = '';
 
-    var desc_str = hasProp(mapJSON.fields.field_description.und, 'value') || '';
-    var isJson = isJsonString(desc_str);
+    //var desc_str = hasProp(mapJSON.fields.field_description.und, 'value') || '';
+    //var isJson = isJsonString(desc_str);
 
     mapMeta.urls.push(mapJSON.url);
     mapMeta.titles.push(mapJSON.title);
     mapMeta.subtitles.push(mapJSON.subtitle);
-    mapMeta.descriptions.push(mapJSON.fields.field_description.und[0].value);
+    mapMeta.descriptions.push(mapJSON.description);
     mapMeta.vids.push(mapJSON.vid);
     mapMeta.create_tss.push(mapJSON.created);    
-
-    if (isJson) {
-        map_info = JSON.parse(desc_str);
-        bureau = map_info.bureau;
-    } 
-
-    mapMeta.bureaus.push(bureau);
+    mapMeta.bureaus.push(mapJSON.bureau);
     mapMeta.dates.push(mapJSON.changed);
     mapMeta.archiveds.push(mapJSON.archived);
     mapMeta.lives.push(mapJSON.live);
@@ -162,7 +192,7 @@ function createMapCard(mapMeta) {
     var card = '';
     for (var i = 0; i < urls.length; i++) {
 
-        var url = urls[i].substr(urls[i].lastIndexOf('/') + 1) + '/responsive.html';
+        var url = urls[i].substr(urls[i].lastIndexOf('/') + 1) + '/embed';
         var url_bookmark = urls[i] + '/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i];
 
         var add_class = '';
@@ -218,7 +248,7 @@ function populateMaps(data) {
         lives: [],
     };
 
-    getMapMeta(data, mapMeta);
+    getMapMeta1(data, mapMeta);
     getBureauFilters(mapMeta.bureaus);
     createMapCard(mapMeta);
 }
@@ -233,6 +263,312 @@ function getMapData() {
         success: populateMaps
     });
 }
+
+
+
+function getMapInfo(mapOptions) {
+	var map_info_all = {};
+	
+	//title
+	var title = '';
+	if (mapOptions.title) {
+		title = mapOptions.title;
+	}
+	map_info_all.title = title;
+	
+	//webUrl
+	var webUrl = '';
+	if (mapOptions.webUrl) {
+		webUrl = mapOptions.webUrl;
+	}
+	map_info_all.webUrl = webUrl;
+	
+	//archived
+	var archived = '0';
+	if (mapOptions.fields.field_archived && mapOptions.fields.field_archived.und) {
+		archived = mapOptions.fields.field_archived.und[0].value;
+	}
+	map_info_all.archived = archived;
+	
+	//bureau_office
+	var bureau_office = '';
+	if (mapOptions.fields.field_bureau_office && mapOptions.fields.field_bureau_office.und) {
+		var bureau_office = mapOptions.fields.field_bureau_office.und[0].value;
+		//bureau_office = getBureau(tid);
+	}
+	map_info_all.bureau_office = bureau_office;
+	
+	//date
+	var date = ''
+	if (mapOptions.fields.field_date && mapOptions.fields.field_date.und) {
+		date = mapOptions.fields.field_date.und[0].value;
+	}
+	map_info_all.date = date;
+	
+	//date_updated_reviewed
+	var date_updated_reviewed = ''
+	if (mapOptions.fields.field_date_updated_reviewed && mapOptions.fields.field_date_updated_reviewed.und) {
+		date_updated_reviewed = mapOptions.fields.field_date_updated_reviewed.und[0].value;
+	}
+	map_info_all.date_updated_reviewed = date_updated_reviewed;
+	
+	//description
+	var description = ''
+	if (mapOptions.fields.field_description && mapOptions.fields.field_description.und) {
+		description = mapOptions.fields.field_description.und[0].value;
+	}
+	map_info_all.description = description;
+	
+	//featured
+	var featured = '0'
+	if (mapOptions.fields.field_featured && mapOptions.fields.field_featured.und) {
+		featured = mapOptions.fields.field_featured.und[0].value;
+	}
+	map_info_all.featured = featured;
+	
+	//image_thumbnail
+	var image_thumbnail = '';
+	if (mapOptions.fields.field_image_thumbnail && mapOptions.fields.field_image_thumbnail.und) {
+		image_thumbnail = mapOptions.fields.field_image_thumbnail.und[0].uri;
+	}
+	map_info_all.image_thumbnail = image_thumbnail;
+	
+	//link
+	var link = [];
+	
+	//map_address_search
+	var map_address_search = 'on';
+	if (mapOptions.fields.field_map_address_search && mapOptions.fields.field_map_address_search.und) {
+		map_address_search = mapOptions.fields.field_map_address_search.und[0].value;
+	}
+	map_info_all.map_address_search = map_address_search;
+	
+	//map_attribution
+	var map_attribution = '';
+	if (mapOptions.fields.field_map_attribution && mapOptions.fields.field_map_attribution.und) {
+		map_attribution = mapOptions.fields.field_map_attribution.und[0].value;
+	}
+	map_info_all.map_attribution = map_attribution;
+	
+	//map_basemap
+	
+	var map_basemap = []
+	if (mapOptions.fields.field_map_basemap && mapOptions.fields.field_map_basemap.und) {
+		for (var i = 0; i < mapOptions.fields.field_map_basemap.und.length; i++) {
+			map_basemap.push(mapOptions.fields.field_map_basemap.und[i].value);
+		}
+	}
+	map_info_all.map_basemap = map_basemap;
+	
+	//map_coordinate_search
+	var map_coordinate_search = 'on'
+	if (mapOptions.fields.field_map_coordinate_search && mapOptions.fields.field_map_coordinate_search.und) {
+		map_coordinate_search = mapOptions.fields.field_map_coordinate_search.und[0].value;
+	}
+	map_info_all.map_coordinate_search = map_coordinate_search;
+	
+	//map_display_date
+	var map_display_date = '';
+	if (mapOptions.fields.field_map_display_date && mapOptions.fields.field_map_display_date.und) {
+		map_display_date = mapOptions.fields.field_map_display_date.und[0].value;
+	}
+	map_info_all.map_display_date = map_display_date;
+	
+	//map_embedded_code
+	
+	
+	//map_initial_zoom
+	var map_initial_zoom = '';
+	if (mapOptions.fields.field_map_initial_zoom && mapOptions.fields.field_map_initial_zoom.und) {
+		map_initial_zoom = mapOptions.fields.field_map_initial_zoom.und[0].value;
+	}
+	map_info_all.map_initial_zoom = map_initial_zoom;
+	
+	//map_latitude
+	var map_latitude = '0';
+	if (mapOptions.fields.field_map_latitude && mapOptions.fields.field_map_latitude.und) {
+		map_latitude = mapOptions.fields.field_map_latitude.und[0].value;
+	}
+	map_info_all.map_latitude = map_latitude;
+	
+	//map_layer
+	var map_layer = [];
+	if (mapOptions.fields.field_map_layer) {
+		for (var i = 0; i < mapOptions.fields.field_map_layer.length; i++) {
+			var domain = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_domain && mapOptions.fields.field_map_layer[i].field_layer_domain.und) {
+				domain = mapOptions.fields.field_map_layer[i].field_layer_domain.und[0].value;
+			}
+			var format = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_format && mapOptions.fields.field_map_layer[i].field_layer_format.und) {
+				format = mapOptions.fields.field_map_layer[i].field_layer_format.und[0].value;
+			}
+			var name = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_name && mapOptions.fields.field_map_layer[i].field_layer_name.und) {
+				name = mapOptions.fields.field_map_layer[i].field_layer_name.und[0].value;
+			}
+			var opacity = 1.0;
+			if (mapOptions.fields.field_map_layer[i].field_layer_opacity && mapOptions.fields.field_map_layer[i].field_layer_opacity.und) {
+				opacity = mapOptions.fields.field_map_layer[i].field_layer_opacity.und[0].value;
+			}
+			var protocol = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_protocol && mapOptions.fields.field_map_layer[i].field_layer_protocol.und) {
+				protocol = mapOptions.fields.field_map_layer[i].field_layer_protocol.und[0].value;
+			}
+			var query_string = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_query_string && mapOptions.fields.field_map_layer[i].field_layer_query_string.und) {
+				query_string = mapOptions.fields.field_map_layer[i].field_layer_query_string.und[0].value;
+			}
+			var style = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_style && mapOptions.fields.field_map_layer[i].field_layer_style.und) {
+				style = mapOptions.fields.field_map_layer[i].field_layer_style.und[0].value;
+			}
+			var title = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_title && mapOptions.fields.field_map_layer[i].field_layer_title.und) {
+				title = mapOptions.fields.field_map_layer[i].field_layer_title.und[0].value;
+			}
+			var type = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_type && mapOptions.fields.field_map_layer[i].field_layer_type.und) {
+				type = mapOptions.fields.field_map_layer[i].field_layer_type.und[0].value;
+			}
+			var visibility = '';
+			if (mapOptions.fields.field_map_layer[i].field_layer_visibility && mapOptions.fields.field_map_layer[i].field_layer_visibility.und) {
+				visibility = mapOptions.fields.field_map_layer[i].field_layer_visibility.und[0].value;
+			}
+		
+			var entry = {
+				"domain": domain,
+				"format": format,
+				"name": name,
+				"opacity": opacity,
+				"protocol": protocol,
+				"query_string": query_string,
+				"style": style,
+				"title": title,
+				"type": type,
+				"visibility": visibility
+				};
+				
+			map_layer.push(entry);
+			
+		
+		}
+	
+	}
+	
+	map_info_all.map_layer = map_layer;
+	
+	//map_legend
+	var map_legend = [];
+	if (mapOptions.fields.field_map_legend) {
+		for (var i = 0; i < mapOptions.fields.field_map_legend.length; i++) {
+			var color = '#FFFFFF';
+			if (mapOptions.fields.field_map_legend[i].field_legend_color && mapOptions.fields.field_map_legend[i].field_legend_color.und) {
+				color = mapOptions.fields.field_map_legend[i].field_legend_color.und[0].value;
+			}
+			var text = '';
+			if (mapOptions.fields.field_map_legend[i].field_legend_text && mapOptions.fields.field_map_legend[i].field_legend_text.und) {
+				text = mapOptions.fields.field_map_legend[i].field_legend_text.und[0].value;
+			}
+			var entry = {
+				"color": color,
+				"text": text
+			};
+			map_legend.push(entry);
+			
+		}
+	}
+	map_info_all.map_legend = map_legend;
+			
+	
+	
+	//map_longitude
+	var map_longitude = '0';
+	if (mapOptions.fields.field_map_longitude && mapOptions.fields.field_map_longitude.und) {
+		map_longitude = mapOptions.fields.field_map_longitude.und[0].value;
+	}
+	map_info_all.map_longitude = map_longitude;
+	
+	//map_max_zoom
+	var map_max_zoom = '12';
+	if (mapOptions.fields.field_map_max_zoom && mapOptions.fields.field_map_max_zoom.und) {
+		map_max_zoom = mapOptions.fields.field_map_max_zoom.und[0].value;
+	}
+	map_info_all.map_max_zoom = map_max_zoom;
+	
+	//map_min_zoom
+	var map_min_zoom = '3';
+	if (mapOptions.fields.field_map_min_zoom && mapOptions.fields.field_map_min_zoom.und) {
+		map_min_zoom = mapOptions.fields.field_map_min_zoom.und[0].value;
+	}
+	map_info_all.map_min_zoom = map_min_zoom;
+	
+	//map_options
+	
+	//map_page_url
+	var map_page_url_url = '';
+	var map_page_url_title = '';
+	if (mapOptions.fields.field_map_page_url && mapOptions.fields.field_map_page_url.und) {
+		map_page_url_url = mapOptions.fields.field_map_page_url.und[0].url;
+		map_page_url_title = mapOptions.fields.field_map_page_url.und[0].title;
+	}
+	map_info_all.map_page_url_url = map_page_url_url;
+	map_info_all.map_page_url_title = map_page_url_title;
+	
+	//map_repository
+	
+	//map_status
+	
+	//map_type
+	var map_type = '';
+	if (mapOptions.fields.field_map_type && mapOptions.fields.field_map_type.und) {
+		map_type = mapOptions.fields.field_map_type.und[0].value;
+	}
+	map_info_all.map_type = map_type;
+	
+	//publishing_bureau_office
+	
+	//related content
+	
+	//related_link
+	
+	//related_links
+	var related_links = [];
+	if (mapOptions.fields.field_related_links && mapOptions.fields.field_related_links.und) {
+		for (var i = 0; i < mapOptions.fields.field_related_links.und.length; i++) {
+			var title = mapOptions.fields.field_related_links.und[i].title;
+			var url = mapOptions.fields.field_related_links.und[i].url;
+			entry = {"title": title, "url": url}
+			related_links.push(entry);
+			
+		}
+	}
+	map_info_all.related_links = related_links;
+	
+	//search_exclude
+	var search_exclude = "0";
+	if (mapOptions.fields.field_search_exclude && mapOptions.fields.field_search_exclude.und) {
+		search_exclude = mapOptions.fields.field_search_exclude.und[0].value;	
+	}
+	map_info_all.search_exclude = search_exclude;
+	
+	//subtitle
+	var subtitle = "0";
+	if (mapOptions.fields.field_subtitle && mapOptions.fields.field_subtitle.und) {
+		subtitle = mapOptions.fields.field_subtitle.und[0].value;	
+	}
+	map_info_all.subtitle = subtitle;
+	
+	return map_info_all;
+		
+}
+
+
+
+
+
+
+
 
 
 $(document).ready(function() {
