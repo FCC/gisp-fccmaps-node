@@ -884,6 +884,9 @@ function getMapInfo() {
 		for (var i = 0; i < mapOptions.fields.field_related_links.und.length; i++) {
 			var title = mapOptions.fields.field_related_links.und[i].title;
 			var url = mapOptions.fields.field_related_links.und[i].url;
+            if (!/^(f|ht)tps?:\/\//i.test(url)) {
+                url = "http://" + url;
+            }
 			entry = {"title": title, "url": url}
 			related_links.push(entry);
 			
@@ -918,6 +921,16 @@ console.log(map_info_all);
     $('#dd-updated').html(map_info_all.date_updated_reviewed);
     $('#span-bureau').html(map_info_all.bureau_office);
     $('#span-description').html(map_info_all.description);
+    if(map_info_all.related_links){
+        var related_links_html = '';
+        for (var i = 0; i < map_info_all.related_links.length; i++) {
+            var title = map_info_all.related_links[i].title;
+            var url = map_info_all.related_links[i].url;
+            related_links_html = related_links_html + '<li><a href="'+url+'" target="_blank">'+title+'</a></li>';
+        }
+        //console.log("related_links_html="+related_links_html);
+        $('#related-links').html(related_links_html);
+    }
 	
 	console.log('office=' + map_info_all.bureau_office);
 	

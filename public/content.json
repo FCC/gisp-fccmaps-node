@@ -1193,9 +1193,18 @@
                 "value": "int_layers"
             }]
         },
-        "field_related_links": [
-
-        ],
+        "field_related_links": {
+            "und": [{
+                "url": "https://www.fcc.gov/general/connect-america-fund-caf",
+                "title": "Connect America Fund",
+                "attributes": [ ]
+            },
+            {
+                "url": "www.fcc.gov/maps",
+                "title": "Maps",
+                "attributes": [ ]
+            }]
+        },
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB"
