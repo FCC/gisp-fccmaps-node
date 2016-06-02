@@ -1242,9 +1242,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "Accepted PC Funding",
+                    "value": "fcc.0j21k0bh",
                     "format": null,
-                    "safe_value": "Accepted PC Funding"
+                    "safe_value": "fcc.0j21k0bh"
                 }]
             },
             "field_layer_opacity": {
@@ -1257,9 +1257,13 @@
                     "value": "HTTP"
                 }]
             },
-            "field_layer_style": [
-
-            ],
+            "field_layer_title": {
+                "und": [{
+                    "value": "Accepted PC Funding",
+                    "format": null,
+                    "safe_value": "Accepted PC Funding"
+                }]
+            },
             "field_layer_type": {
                 "und": [{
                     "value": "XYZ"

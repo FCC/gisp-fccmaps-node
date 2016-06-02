@@ -943,6 +943,8 @@ function updateText() {
     $('#span-bureau').html(map_info_all.bureau_office);
     $('#span-description').html(map_info_all.description);
 	
+	console.log('office=' + map_info_all.bureau_office);
+	
 }
 
 
