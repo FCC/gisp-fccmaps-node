@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         // Watches files for changes and runs tasks based on the changed files
         watch: {
             html: {
-                files: ['./src/**/*.html'],
+                files: ['./src/**/*.*'],
                 tasks: ['copy', 'clean:delTempFolders']
             },
             js: {
@@ -196,7 +196,7 @@ module.exports = function(grunt) {
                 files: [{ // map home page to public
                     expand: true,
                     cwd: './src',
-                    src: ['*.html'],
+                    src: ['*.*'],
                     dest: './public'
                 }]
             },

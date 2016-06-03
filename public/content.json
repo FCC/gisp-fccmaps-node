@@ -30,8 +30,8 @@
             "und": [{
                 "fid": "3516",
                 "uid": "1162",
-                "filename": "logo.gif",
-                "uri": "http://www.broadbandmap.gov/img/logo.gif",
+                "filename": "thumb-nbm.png",
+                "uri": "thumb-nbm.png",
                 "filemime": "image/gif",
                 "filesize": "4198",
                 "status": "1",
@@ -893,56 +893,60 @@
             "format": "full_html",
             "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/overbuilt-map/\" width=\"920\"></iframe></p>\n"
         }],
-        "field_description": [{
-            "value": "<p>Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-15-868A1.pdf.</p>\r\n",
-            "summary": "",
-            "format": "full_html",
-            "safe_value": "<p>Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see <a href=\"http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-15-868A1.pdf\">http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-1...</a>.</p>\n",
-            "safe_summary": ""
-        }],
-        "field_image_thumbnail": [{
-            "fid": "3213",
-            "uid": "1283",
-            "filename": "100pct_overlap.png",
-            "uri": "http://10.154.68.187/sites/default/files/styles/media_thumbnail/100pct_overlap.png",
-            "filemime": "image/png",
-            "filesize": "56052",
-            "status": "1",
-            "timestamp": "1445374286",
-            "type": "image",
-            "uuid": "a4e4d98b-d5bd-4c6f-a395-b1e7c7477ed0",
-            "field_file_image_alt_text": {
-                "und": [{
-                    "value": "100 Percent Overlap Map",
-                    "format": null,
-                    "safe_value": "100 Percent Overlap Map"
-                }]
-            },
-            "field_file_image_title_text": {
-                "und": [{
-                    "value": "100 Percent Overlap Map",
-                    "format": null,
-                    "safe_value": "100 Percent Overlap Map"
-                }]
-            },
-            "field_caption": [
+        "field_description": {
+            "und": [{
+                "value": "Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-15-868A1.pdf.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see <a href=\"http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-15-868A1.pdf\">http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-1...</a>.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3213",
+                "uid": "1283",
+                "filename": "thumb-overbuilt-map.png",
+                "uri": "thumb-overbuilt-map.png",
+                "filemime": "image/png",
+                "filesize": "56052",
+                "status": "1",
+                "timestamp": "1445374286",
+                "type": "image",
+                "uuid": "a4e4d98b-d5bd-4c6f-a395-b1e7c7477ed0",
+                "field_file_image_alt_text": {
+                    "und": [{
+                        "value": "100 Percent Overlap Map",
+                        "format": null,
+                        "safe_value": "100 Percent Overlap Map"
+                    }]
+                },
+                "field_file_image_title_text": {
+                    "und": [{
+                        "value": "100 Percent Overlap Map",
+                        "format": null,
+                        "safe_value": "100 Percent Overlap Map"
+                    }]
+                },
+                "field_caption": [
 
-            ],
-            "field_bo_media": [
+                ],
+                "field_bo_media": [
 
-            ],
-            "rdf_mapping": [
+                ],
+                "rdf_mapping": [
 
-            ],
-            "metadata": {
-                "height": 256,
-                "width": 256
-            },
-            "alt": "100 Percent Overlap Map",
-            "title": "100 Percent Overlap Map",
-            "height": "256",
-            "width": "256"
-        }],
+                ],
+                "metadata": {
+                    "height": 256,
+                    "width": 256
+                },
+                "alt": "100 Percent Overlap Map",
+                "title": "100 Percent Overlap Map",
+                "height": "256",
+                "width": "256"
+            }]
+        },
         "field_link": [
 
         ],
@@ -1084,18 +1088,20 @@
             "format": "full_html",
             "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
         }],
-        "field_description": [{
-            "value": "<p>This map identifies the areas where some of the nation's largest phone companies, also known as price cap carriers, accepted Phase II support from the FCC’s Connect America Fund to provide broadband and voice service over the next six years. The offer of Connect America Phase II model-based support was targeted to price cap areas that are high-cost, but not extremely high-cost. An area was classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the Connect America Cost Model (CAM) (version 4.3), was above the $52.50 funding benchmark but below a $198.60 extremely high cost threshold, and not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. Eligible areas that were accepted are shown in bright green on the map. Declined funding will be made available at a future date through a competitive bidding process.</p>\r\n\r\n<p>Empty areas with no color are either areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but receive support from other universal service high-cost mechanisms; areas declined by price cap carriers; areas where the average monthly cost-per-location is above $52.50 but below $198.60, but the area was deemed served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments; areas where the average monthly cost-per-location was calculated by version 4.3 of the CAM as above $198.60; and/or areas reported as uninhabited.</p>\r\n\r\n<p>For more information about Connect America Phase II, refer to https://www.fcc.gov/encyclopedia/price-cap-resources.</p>\r\n\r\n<p><a href=\"https://www.fcc.gov/maps/connect-america-phase-ii-final-eligible-areas-map\">Click here for the version of the map identifying the areas subject to the offer of support</a>.</p>\r\n",
-            "summary": "",
-            "format": "full_html",
-            "safe_value": "<p>This map identifies the areas where some of the nation's largest phone companies, also known as price cap carriers, accepted Phase II support from the FCC’s Connect America Fund to provide broadband and voice service over the next six years. The offer of Connect America Phase II model-based support was targeted to price cap areas that are high-cost, but not extremely high-cost. An area was classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the Connect America Cost Model (CAM) (version 4.3), was above the $52.50 funding benchmark but below a $198.60 extremely high cost threshold, and not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. Eligible areas that were accepted are shown in bright green on the map. Declined funding will be made available at a future date through a competitive bidding process.</p>\n\n<p>Empty areas with no color are either areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but receive support from other universal service high-cost mechanisms; areas declined by price cap carriers; areas where the average monthly cost-per-location is above $52.50 but below $198.60, but the area was deemed served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments; areas where the average monthly cost-per-location was calculated by version 4.3 of the CAM as above $198.60; and/or areas reported as uninhabited.</p>\n\n<p>For more information about Connect America Phase II, refer to <a href=\"https://www.fcc.gov/encyclopedia/price-cap-resources\">https://www.fcc.gov/encyclopedia/price-cap-resources</a>.</p>\n\n<p><a href=\"https://www.fcc.gov/maps/connect-america-phase-ii-final-eligible-areas-map\">Click here for the version of the map identifying the areas subject to the offer of support</a>.</p>\n",
-            "safe_summary": ""
-        }],
+        "field_description": {
+            "und": [{
+                "value": "This map identifies the areas where some of the nation's largest phone companies, also known as price cap carriers, accepted Phase II support from the FCC’s Connect America Fund to provide broadband and voice service over the next six years. The offer of Connect America Phase II model-based support was targeted to price cap areas that are high-cost, but not extremely high-cost. An area was classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the Connect America Cost Model (CAM) (version 4.3), was above the $52.50 funding benchmark but below a $198.60 extremely high cost threshold, and not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. Eligible areas that were accepted are shown in bright green on the map. Declined funding will be made available at a future date through a competitive bidding process.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map identifies the areas where some of the nation's largest phone companies, also known as price cap carriers, accepted Phase II support from the FCC’s Connect America Fund to provide broadband and voice service over the next six years. The offer of Connect America Phase II model-based support was targeted to price cap areas that are high-cost, but not extremely high-cost. An area was classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the Connect America Cost Model (CAM) (version 4.3), was above the $52.50 funding benchmark but below a $198.60 extremely high cost threshold, and not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. Eligible areas that were accepted are shown in bright green on the map. Declined funding will be made available at a future date through a competitive bidding process.",
+                "safe_summary": ""
+            }]
+        },
         "field_image_thumbnail": [{
             "fid": "3214",
             "uid": "1283",
             "filename": "caf2-accepted.png",
-            "uri": "public://caf2-accepted_0.png",
+            "uri": "caf2-accepted.png",
             "filemime": "image/png",
             "filesize": "97120",
             "status": "1",
@@ -1159,7 +1165,7 @@
         "field_search_exclude": [
 
         ],
-        "field_subtitle": {            
+        "field_subtitle": {
             "und": [{
                 "value": "Accepted Areas Map"
             }]
@@ -1197,17 +1203,16 @@
             "und": [{
                 "url": "https://www.fcc.gov/general/connect-america-fund-caf",
                 "title": "Connect America Fund",
-                "attributes": [ ]
-            },
-            {
+                "attributes": []
+            }, {
                 "url": "www.fcc.gov/maps",
                 "title": "Maps",
-                "attributes": [ ]
+                "attributes": []
             }]
         },
         "field_bureau_office": {
             "und": [{
-                "tid": "WCB"
+                "value": "WCB"
             }]
         },
         "field_map_address_search_": [
@@ -1217,19 +1222,23 @@
 
         ],
         "field_map_basemap": {
-			"und": [
-				{"value": "street"}
-				]
+            "und": [
+                { "value": "street" }
+            ]
         },
         "field_map_coordinate_search_": [
 
         ],
-        "field_map_initial_zoom": [
-
-        ],
-        "field_map_latitude": [
-
-        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "4" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "38.908" }
+            ]
+        },
         "field_map_layer": [{
             "item_id": "2438",
             "revision_id": "3384",
@@ -1341,9 +1350,11 @@
 
             ]
         }],
-        "field_map_longitude": [
-
-        ],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-94.966" }
+            ]
+        },
         "field_map_max_zoom": [
 
         ],
@@ -1404,8 +1415,8 @@
             "und": [{
                 "fid": "3477",
                 "uid": "1798",
-                "filename": "fcc-logo-lg.png",
-                "uri": "https://www.fcc.gov/sites/all/themes/fcc/images/fcc-logo-lg.png",
+                "filename": "thumb-c2h.png",
+                "uri": "thumb-c2h.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",

@@ -10,7 +10,8 @@ var bureauAbbr = {
     'PSHSB': ' Public Safety and Homeland Security',
     'IB': 'International Bureau',
     'EB': 'Enforcement Bureau',
-    'CGB': 'Consumer and Governmental Affairs Bureau'
+    'CGB': 'Consumer and Governmental Affairs Bureau',
+    'OGC': 'Office of General Counsel'
 };
 
 function hasProp(obj, prop) {
@@ -124,6 +125,7 @@ function getMapMeta1(data, mapMeta) {
 		mapJSON.map_type = map_info_all.map_type;
         mapJSON.title = map_info_all.title;
 		mapJSON.description = map_info_all.description;
+        mapJSON.bureau = map_info_all.bureau_office;
         mapJSON.vid = map_info_all.vid;
         mapJSON.created = map_info_all.date;
         mapJSON.changed = map_info_all.date_updated_reviewed;
@@ -136,6 +138,7 @@ function getMapMeta1(data, mapMeta) {
         mapJSON.latitude = map_info_all.map_latitude || '50.00';
         mapJSON.longitude = map_info_all.map_longitude || '-105.00';
         mapJSON.initialzoom = map_info_all.map_initial_zoom || '3';
+        mapJSON.thumbnail = map_info_all.image_thumbnail;
         
         if (mapJSON.url !== '') {
             updateMapMeta(data[i], mapMeta, mapJSON);
@@ -173,6 +176,8 @@ function updateMapMeta(data, mapMeta, mapJSON) {
     mapMeta.center_lons.push(mapJSON.longitude);
 
     mapMeta.zooms.push(mapJSON.initialzoom);
+    mapMeta.mapTypes.push(mapJSON.map_type);
+    mapMeta.thumbnail.push(mapJSON.thumbnail);
 
     /*if (map_info !== '') { 
         mapMeta.zooms.push(map_info.mapzoom.initialzoom);        
@@ -190,10 +195,29 @@ function createMapCard(mapMeta) {
     var urls = mapMeta.urls;
     // var text = '';
     var card = '';
+    var url = '';
+    var isMapLayers = false;
+    var embedLink = '';
+    var url_bookmark = '';
+    var thumbImg = '';
+    var subtitle = '';
+    
     for (var i = 0; i < urls.length; i++) {
+console.log(mapMeta);
+// console.log(mapMeta.mapTypes[i]);
+		isMapLayers = mapMeta.mapTypes[i] === 'int_layers';
 
-        var url = urls[i].substr(urls[i].lastIndexOf('/') + 1) + '/embed';
-        var url_bookmark = urls[i] + '/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i];
+		if (isMapLayers) {			
+			url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
+			embedLink =  url + '/embed/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i] + '/';
+			url_bookmark = url + '/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i];
+			thumbImg = '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
+		} else {
+			url = urls[i];
+			embedLink = '/';
+			url_bookmark = url;
+			thumbImg = '<img src="../map_templates/images/' + mapMeta.thumbnail[i] + '" alt="' + mapMeta.titles[i] + '" class="img-responsive">';
+		}
 
         var add_class = '';
         if (mapMeta.lives[i] === '1') {
@@ -205,18 +229,25 @@ function createMapCard(mapMeta) {
         if (mapMeta.featureds[i] === '1') {
             add_class += 'data-featured';
         }
+
+        if (mapMeta.subtitles[i] !== "0") {
+        	subtitle = '<p class="card__subTitle text-overflow">' + mapMeta.subtitles[i] + '</p>'
+        } else {
+        	subtitle = '';
+        }
     
         card += '<li class="card data-all bureau-' + mapMeta.bureaus[i] + ' ' + add_class + ' tag-data-maps-reports tag-maps">';
         card += '<div class="mapThumb-btns">' + '<a class="btn btn-xs btn-default" href="' + url_bookmark + '"><span class="sr-only">View map</span> <span class="icon icon-external-link-square"></span></a>' + '</div>';
         card += '<div class="ribbon"><span>Featured</span></div>';
-        card += '<iframe src="' + url + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '"></iframe>';
+        card += thumbImg;
+        //card += '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '"></iframe>';
         card += '<p class="card__title text-overflow"><a href="' + url_bookmark + '"><span >' + mapMeta.titles[i] + '</span></a></p>';
-        card += '<div class="card__meta"><div class="pull-left">' + mapMeta.bureaus[i] + '</div><div class="pull-right data-date">' + mapMeta.dates[i] + '</div></div>';
+        card += '<div class="card__meta"><div class="pull-left">' + mapMeta.bureaus[i] + '</div><div class="pull-right data-date">' + mapMeta.dates[i].split(' ')[0] + '</div></div>';
         card += '<div class="card__body" id="t' + i + '"" aria-hidden="true" role="region" style="display: none;">';
-        card += '<p class="card__subTitle text-overflow">' + mapMeta.subtitles[i] + '</p>';
+        card += subtitle;
         // TODO: populate description with actual text
         // card += '<p class="card__desc">' + mapMeta.descriptions[i] + '</p>';
-        card += '<p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi consectetur aliquid, excepturi aspernatur, libero porro ipsa omnis iusto autem, harum molestias dicta corrupti! Laudantium, autem, doloremque. Doloribus officia molestiae, praesentium.</p>';
+        card += '<p class="card__desc">' + mapMeta.descriptions[i] + '</p>';
         card += '<a class="link-viewMore" href="' + url_bookmark + '">View more&#8230;</a>';
         card += '<ul class="list-unstyled"><li class="tag"><span>Data, Maps, Reports</span></li><li class="tag"><span>Maps</span></li></ul></div>';
         card += '<div class="card__footer"><button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false" aria-controls="t' + i + '"><span class="icon icon-caret-right"></span>View details</button></div>';
@@ -246,6 +277,8 @@ function populateMaps(data) {
         archiveds: [],
         featureds: [],
         lives: [],
+        mapTypes: [],
+        thumbnail: []
     };
 
     getMapMeta1(data, mapMeta);

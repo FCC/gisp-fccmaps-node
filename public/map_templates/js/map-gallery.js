@@ -6,21 +6,7 @@
             bureau: '',
             tag: '',
             status: '.data-live'
-        },
-        filterOpts: {
-            all: '*',
-
-            MB: '.bureau-MB',
-
-            WCB: '.bureau-WCB',
-
-            WTB: '.bureau-WTB',
-
-            OSP: '.bureau-OSP',
-
-            OET: '.bureau-OET'
-
-        },
+        },        
         sortList: {
             sortBy: 'date',
             sortAscending: false
@@ -167,7 +153,7 @@
         filterByBureau: function() {
             var selectedVal = this.value;
 
-            mapGallery.filters.bureau = mapGallery.filterOpts[selectedVal];
+            mapGallery.filters.bureau = selectedVal === 'all' ? '*' : '.bureau-' + selectedVal;
             mapGallery.filter();
         },
 
@@ -296,6 +282,7 @@
         onHashchange: function() {
 
             var filters = '';
+            var bureauVal = '';
 
             mapGallery.getHashFilter();
 
@@ -312,11 +299,14 @@
                 })
                 .isotope('updateSortData');
 
-            for (var k in mapGallery.filterOpts) {
-                if (mapGallery.filterOpts[k] === mapGallery.filters.bureau) {
-                    $('#sel-filter').val(k);
-                }
+            // set Bureau dropdown default value            
+            if (mapGallery.filters.bureau === '*') { 
+                bureauVal = 'all';
+            } else {
+                bureauVal = mapGallery.filters.bureau.split('-')[1];
             }
+
+            $('#sel-filter').val(bureauVal);            
 
             for (var i in mapGallery.sortOpts) {
                 if (mapGallery.sortOpts[i].sortBy === mapGallery.sortList.sortBy && mapGallery.sortOpts[i].sortAscending === mapGallery.sortList.sortAscending) {
