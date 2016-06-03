@@ -17,7 +17,6 @@
 			url: url,
 			dataType: "json",
 			success: function(data){
-			console.log(data);
 
 				var urls = [];
 				var titles = [];
@@ -31,6 +30,7 @@
 				var center_lats = [];
 				var center_lons = [];
 				var searches = [];
+				var map_types = [];
 				
 				for (var i = 1; i < data.length; i++) {
 
@@ -56,8 +56,12 @@
 					if (data[i].fields.field_subtitle.und) {
 					subtitle = data[i].fields.field_subtitle.und[0].value;
 					}
+					var map_type = "";
+					if (data[i].fields.field_map_type.und) {
+					map_type = data[i].fields.field_map_type.und[0].value;
+					}
 					
-					if ( url+repo != "") {
+					if ( url != "") {
 						urls.push(url);
 						titles.push(title);
 						subtitles.push(subtitle);
@@ -66,27 +70,14 @@
 						vids.push(vid);
 						create_tss.push(created);
 						repos.push(repo);
+						map_types.push(map_type);
 						
-						var map_info = "";
-						if (data[i].fields.field_description.und) {
-							var value_str = data[i].fields.field_description.und[0].value;
-							var map_info = JSON.parse(value_str);
-						}
-						if (map_info != "") {
-						zooms.push(map_info.mapzoom.initialzoom);
-						center_lats.push(map_info.mapcenter.latitude);
-						center_lons.push(map_info.mapcenter.longitude);
-						}
-						else {
-						zooms.push(3);
-						center_lats.push(40);
-						center_lons.push(-105);
-						}
+
 					}
 				
 				}
 				
-				var text = "<table border=1 cellspacing=0 cellpadding=3><tr><td>#</td><td>Map Title</td><td>Map ID</td><td>Version ID</td><td>URL</td><td>Repo</td><td>Last Updated</td><td>Action</td><tr>";
+				var text = "<table border=1 cellspacing=0 cellpadding=3><tr><td>#</td><td>Map Title</td><td>Map ID</td><td>Version ID</td><td>URL</td><td>Map Type</td><td>Last Updated</td><td>Action</td><tr>";
 				
 				for (var i = 0; i < urls.length; i++) {
 				var action_text = "";
@@ -94,10 +85,18 @@
 				action_text = "<span id=\"" + nids[i] + "\" class=\"span-pull-github\" style=\"cursor: pointer; color: #0000ff\">Pull Github Repo</span>";
 				}
 				
-				var url_bookmark = "/" + urls[i] + "/#" + zooms[i] + "/" + center_lats[i] + "/" + center_lons[i] + "/zoom,attr,layers,key,search";
+				
+				if (map_types[i] == 'int_layers') {
+					
+					var url_bookmark = "/" + urls[i].replace(/.*\//, '');
+				}
+				else {
+					var url_bookmark = urls[i];
+				}
+				
 				var ii = i + 1;
 				
-				text += "<tr><td>" + ii + "</td><td><a href=\"" + url_bookmark + "\">" +  titles[i] + "</a></td><td>" + nids[i] + "</td><td>" + vids[i] + "</td><td>" + urls[i] + "</td><td>" + repos[i] + "</td><td>" + create_tss[i] + "</td><td>" + action_text + "</td>" +  "</tr>";
+				text += "<tr><td>" + ii + "</td><td><a href=\"" + url_bookmark + "\">" +  titles[i] + "</a></td><td>" + nids[i] + "</td><td>" + vids[i] + "</td><td>" + urls[i] + "</td><td>" + map_types[i] + "</td><td>" + create_tss[i] + "</td><td>" + action_text + "</td>" +  "</tr>";
 				
 				
 				}
