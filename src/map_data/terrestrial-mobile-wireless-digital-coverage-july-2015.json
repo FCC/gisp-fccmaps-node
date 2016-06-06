@@ -35,7 +35,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "01-21-16 14:15:00",
+                "value": "2016-01-21 14:15:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
