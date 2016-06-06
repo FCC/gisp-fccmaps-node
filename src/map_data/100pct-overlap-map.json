@@ -77,12 +77,14 @@
         "field_related_content": [
 
         ],
-        "field_date_updated_reviewed": [{
-            "value": "2015-07-29 20:45:00",
-            "timezone": "America/New_York",
-            "timezone_db": "UTC",
-            "date_type": "datetime"
-        }],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2015-07-29 20:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
         "og_group_ref": [{
             "nid": "1639",
             "group": "Wireline Competition"

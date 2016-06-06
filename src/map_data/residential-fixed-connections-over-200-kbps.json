@@ -33,12 +33,14 @@
         "field_related_content": [
 
         ],
-        "field_date_updated_reviewed": [{
-            "value": "2015-09-01 21:00:00",
-            "timezone": "America/New_York",
-            "timezone_db": "UTC",
-            "date_type": "datetime"
-        }],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2015-09-01 21:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
         "og_group_ref": [{
             "nid": "1639",
             "group": "Wireline Competition"
@@ -166,9 +168,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "No residential services at 200 kbps or above",
+                    "value": "Connections per 1000 Households",
                     "format": null,
-                    "safe_value": "No residential services at 200 kbps or above"
+                    "safe_value": "Connections per 1000 Households"
                 }]
             },
             "field_layer_type": {

@@ -33,12 +33,14 @@
         "field_related_content": [
 
         ],
-        "field_date_updated_reviewed": [{
-            "value": "2015-09-01 21:00:00",
-            "timezone": "America/New_York",
-            "timezone_db": "UTC",
-            "date_type": "datetime"
-        }],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
         "og_group_ref": [{
             "nid": "1639",
             "group": "Wireline Competition"
@@ -503,9 +505,9 @@
             "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
             "field_layer_domain": {
                 "und": [{
-                    "value": "fcc:bpr_tribal",
+                    "value": "www.broadbandmap.gov/geoserver/wms",
                     "format": null,
-                    "safe_value": "fcc:bpr_tribal"
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
                 }]
             },
             "field_layer_format": {
@@ -515,14 +517,14 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "Tribal Land",
+                    "value": "bpr_tribal",
                     "format": null,
-                    "safe_value": "Tribal Land"
+                    "safe_value": "bpr_tribal"
                 }]
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "0.75"
                 }]
             },
             "field_layer_title": {
@@ -534,7 +536,7 @@
             },
             "field_layer_protocol": {
                 "und": [{
-                    "value": "HTTPS"
+                    "value": "HTTP"
                 }]
             },
             "field_layer_style": {
@@ -550,7 +552,7 @@
                 }]
             },
             "field_layer_query_string": {
-                
+
             },
             "field_layer_visibility": {
                 "und": [{
@@ -569,9 +571,9 @@
             "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
             "field_layer_domain": {
                 "und": [{
-                    "value": "fcc:bpr_county_layer_urban_only",
+                    "value": "www.broadbandmap.gov/geoserver/wms",
                     "format": null,
-                    "safe_value": "fcc:bpr_county_layer_urban_only"
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
                 }]
             },
             "field_layer_format": {
@@ -581,14 +583,21 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "Urban area",
+                    "value": "fcc:bpr_county_layer_urban_only",
                     "format": null,
-                    "safe_value": "Urban area"
+                    "safe_value": "fcc:bpr_county_layer_urban_only"
                 }]
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Urban",
+                    "format": null,
+                    "safe_value": "Urban"
                 }]
             },
             "field_layer_protocol": {
@@ -609,7 +618,7 @@
                 }]
             },
             "field_layer_query_string": {
-                
+
             },
             "field_layer_visibility": {
                 "und": [{

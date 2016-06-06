@@ -33,12 +33,14 @@
         "field_related_content": [
 
         ],
-        "field_date_updated_reviewed": [{
-            "value": "2015-09-01 21:00:00",
-            "timezone": "America/New_York",
-            "timezone_db": "UTC",
-            "date_type": "datetime"
-        }],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-21 14:30:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
         "og_group_ref": [{
             "nid": "1639",
             "group": "Wireline Competition"
@@ -129,67 +131,6 @@
             ]
         },
         "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc20554.lk1mdek5",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.lk1mdek5"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc20554.lk1mdek5",
-                    "format": null,
-                    "safe_value": "fcc20554.lk1mdek5"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1.0"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "Base Map",
-                    "format": null,
-                    "safe_value": "Base Map"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
             "item_id": "2438",
             "revision_id": "3384",
             "field_name": "field_map_layer",
