@@ -176,13 +176,22 @@ function createMap() {
         var legend_text1 = '';
         var keyStyle = '';
         var keyColor = 'background-color:';
-        var keyImg = 'background-image: url(images/legend-thumb-slash.png)';
+        var keyImgTribal = 'background-image: url(images/legend-thumb-slash.png)';
+        var keyImgUrban = 'background-image: url(images/legend-thumb-dot.png)';
 
         for (var i = 0; i < map_info_all.map_legend.length; i++) {
             
-            keyStyle = map_info_all.map_legend[i].text.search('Tribal land') > -1 
+            if (map_info_all.map_legend[i].text.search('Tribal land') > -1) {
+                keyStyle = keyImgTribal;
+            } else if (map_info_all.map_legend[i].text.search('Urban area') > -1) {
+                keyStyle = keyImgUrban;
+            } else {
+                keyStyle = keyColor + map_info_all.map_legend[i].color;
+            }
+
+            /*keyStyle = map_info_all.map_legend[i].text.search('Tribal land') > -1 
                         ? keyImg 
-                        : keyColor + map_info_all.map_legend[i].color;
+                        : keyColor + map_info_all.map_legend[i].color;*/
 
             legend_text1 += '<tr><td style="width: 28px; height: 28px;"><div style="width: 20px; height: 20px;' + keyStyle + '"; opacity: 1.0; border: solid 1px #999999"></div></td><td>' + map_info_all.map_legend[i].text + '</td></tr>' + '\n';
 
@@ -639,10 +648,10 @@ function getMapInfo() {
     //bureau_office
     var bureau_office = '';
     if (mapOptions.fields.field_bureau_office && mapOptions.fields.field_bureau_office.und) {
-        var tid = mapOptions.fields.field_bureau_office.und[0].tid;
-        bureau_office = getBureau(tid);
+        var bureau_office = mapOptions.fields.field_bureau_office.und[0];
+        // bureau_office = getBureau(tid);
     }
-    map_info_all.bureau_office = bureau_office;
+    map_info_all.bureau_office = bureau_office;    
     
     //date
     var date = ''
@@ -919,7 +928,7 @@ console.log(map_info_all);
     $('#span-subtitle').html(map_info_all.subtitle);
     $('#dd-published').html(map_info_all.date);
     $('#dd-updated').html(map_info_all.date_updated_reviewed);
-    $('#span-bureau').html(map_info_all.bureau_office);
+    $('#span-bureau').text(map_info_all.bureau_office.value);
     $('#span-description').html(map_info_all.description);
     if(map_info_all.related_links){
         var related_links_html = '';

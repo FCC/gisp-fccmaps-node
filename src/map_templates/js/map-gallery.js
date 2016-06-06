@@ -53,7 +53,7 @@
         },
 
         initGrid: function() {
-            $('.map-cards')
+            var $grid = $('.map-cards')
                 .isotope({
                     masonry: {                        
                         columnWidth: '.card',
@@ -73,8 +73,12 @@
                 .isotope('insert', window.allMaps)
                 .on('layoutComplete', mapGallery.updateResults)
                 .on('arrangeComplete', mapGallery.showNumResults)
-                .on('click', '.btn-details', mapGallery.showCardDetails)
+                .on('click', '.btn-details', mapGallery.showCardDetails);
                 // .on('click', '.tag a', mapGallery.addTag);  
+
+            $grid.imagesLoaded().progress( function() {
+              $grid.isotope('layout');
+            });
         },
 
         updateResults: function(event, filteredItems) {

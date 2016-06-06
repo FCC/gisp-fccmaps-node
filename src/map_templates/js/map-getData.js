@@ -61,9 +61,14 @@ function isJsonString(str) {
 // populate bureau filter dropdown
 function getBureauFilters(bureaus) {
     var bureauFilters = [],
+        bureauArr = [],
         options = '';        
+    
+    for (var j in bureaus) { 
+        bureauArr.push(bureaus[j].tid);
+    }
 
-    bureauFilters = arrUnique(bureaus).sort();
+    bureauFilters = arrUnique(bureauArr).sort();
 
     for (var k = 0; k < bureauFilters.length; k++) {
         options += '<option value="' + bureauFilters[k] + '">' + bureauAbbr[bureauFilters[k]] + '</option>';
@@ -216,7 +221,7 @@ console.log(mapMeta);
 			url = urls[i];
 			embedLink = '/';
 			url_bookmark = url;
-			thumbImg = '<img src="../map_templates/images/' + mapMeta.thumbnail[i] + '" alt="' + mapMeta.titles[i] + '" class="img-responsive">';
+			thumbImg = '<img src="../map_templates/images/' + mapMeta.thumbnail[i] + '" alt="' + mapMeta.titles[i] + '" class="mapThumb img-responsive">';
 		}
 
         var add_class = '';
@@ -236,13 +241,13 @@ console.log(mapMeta);
         	subtitle = '';
         }
     
-        card += '<li class="card data-all bureau-' + mapMeta.bureaus[i] + ' ' + add_class + ' tag-data-maps-reports tag-maps">';
+        card += '<li class="card data-all bureau-' + mapMeta.bureaus[i].tid + ' ' + add_class + ' tag-data-maps-reports tag-maps">';
         card += '<div class="mapThumb-btns">' + '<a class="btn btn-xs btn-default" href="' + url_bookmark + '"><span class="sr-only">View map</span> <span class="icon icon-external-link-square"></span></a>' + '</div>';
         card += '<div class="ribbon"><span>Featured</span></div>';
         card += thumbImg;
         //card += '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '"></iframe>';
         card += '<p class="card__title text-overflow"><a href="' + url_bookmark + '"><span >' + mapMeta.titles[i] + '</span></a></p>';
-        card += '<div class="card__meta"><div class="pull-left">' + mapMeta.bureaus[i] + '</div><div class="pull-right data-date">' + mapMeta.dates[i].split(' ')[0] + '</div></div>';
+        card += '<div class="card__meta"><div class="pull-left">' + mapMeta.bureaus[i].tid + '</div><div class="pull-right data-date">' + mapMeta.dates[i].split(' ')[0] + '</div></div>';
         card += '<div class="card__body" id="t' + i + '"" aria-hidden="true" role="region" style="display: none;">';
         card += subtitle;
         // TODO: populate description with actual text
@@ -326,7 +331,7 @@ function getMapInfo(mapOptions) {
 	//bureau_office
 	var bureau_office = '';
 	if (mapOptions.fields.field_bureau_office && mapOptions.fields.field_bureau_office.und) {
-		var bureau_office = mapOptions.fields.field_bureau_office.und[0].value;
+		var bureau_office = mapOptions.fields.field_bureau_office.und[0];
 		//bureau_office = getBureau(tid);
 	}
 	map_info_all.bureau_office = bureau_office;

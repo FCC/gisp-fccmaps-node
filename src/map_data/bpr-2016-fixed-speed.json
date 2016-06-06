@@ -1,0 +1,831 @@
+{
+    "nid": "28002",
+    "title": "Residential Fixed Broadband by Speed",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-speed",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": [{
+            "value": "0"
+        }],
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": [{
+            "value": "2015-09-01 21:00:00",
+            "timezone": "America/New_York",
+            "timezone_db": "UTC",
+            "date_type": "datetime"
+        }],
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": " 2016 Broadband Progress Report"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/bpr-2016-fixed-speed",
+                "title": "Residential Fixed Broadband by Speed",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": [{
+                "url": "https://www.fcc.gov/tags/broadband-progress-report",
+                "title": "Broadband Progress Report",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
+                "title": "Broadband Progress Reports",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
+                "title": "Broadband, Internet & IP",
+                "attributes": []
+            }]
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition Bureau"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.a6335c39",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.a6335c39"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.a6335c39",
+                    "format": null,
+                    "safe_value": "fcc.a6335c39"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "No residential services at 200 kbps or above",
+                    "format": null,
+                    "safe_value": "No residential services at 200 kbps or above"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.0376ced1",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.0376ced1"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.0376ced1",
+                    "format": null,
+                    "safe_value": "fcc.0376ced1"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Residential services of at least 200 kbps",
+                    "format": null,
+                    "safe_value": "Residential services of at least 200 kbps"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.4272cf6a",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.4272cf6a"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.4272cf6a",
+                    "format": null,
+                    "safe_value": "fcc.4272cf6a"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Residential services of at least 10 Mbps/1 Mbps",
+                    "format": null,
+                    "safe_value": "Residential services of at least 10 Mbps/1 Mbps"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.438e9976",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.438e9976"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.438e9976",
+                    "format": null,
+                    "safe_value": "fcc.438e9976"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Residential Broadband of at least 25 Mbps/3 Mbps",
+                    "format": null,
+                    "safe_value": "Residential Broadband of at least 25 Mbps/3 Mbps"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.fffd995f",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.fffd995f"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.fffd995f",
+                    "format": null,
+                    "safe_value": "fcc.fffd995f"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Residential Broadband of at least 50 Mbps/5 Mbps",
+                    "format": null,
+                    "safe_value": "Residential Broadband of at least 50 Mbps/5 Mbps"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.91a6e516",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.91a6e516"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.91a6e516",
+                    "format": null,
+                    "safe_value": "fcc.91a6e516"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Residential Broadband of at least 100 Mbps/5 Mbps",
+                    "format": null,
+                    "safe_value": "Residential Broadband of at least 100 Mbps/5 Mbps"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc:bpr_tribal",
+                    "format": null,
+                    "safe_value": "fcc:bpr_tribal"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "Tribal Land",
+                    "format": null,
+                    "safe_value": "Tribal Land"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_query_string": {
+                
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc:bpr_county_layer_urban_only",
+                    "format": null,
+                    "safe_value": "fcc:bpr_county_layer_urban_only"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "Urban area",
+                    "format": null,
+                    "safe_value": "Urban area"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_layer_urban",
+                    "format": null,
+                    "safe_value": "bpr_layer_urban"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_query_string": {
+                
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffffcc",
+                    "format": null,
+                    "safe_value": "#ffffcc"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "No residential services at 200 kbps or above",
+                    "format": null,
+                    "safe_value": "No residential services at 200 kbps or above"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#c7e9b4",
+                    "format": null,
+                    "safe_value": "#c7e9b4"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Residential services of at least 200 kbps",
+                    "format": null,
+                    "safe_value": "Residential services of at least 200 kbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#7fcdbb",
+                    "format": null,
+                    "safe_value": "#7fcdbb"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Residential services of at least 10 Mbps/1 Mbps",
+                    "format": null,
+                    "safe_value": "Residential services of at least 10 Mbps/1 Mbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#bdd7e7",
+                    "format": null,
+                    "safe_value": "#bdd7e7"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Residential Broadband of at least 25 Mbps/3 Mbps",
+                    "format": null,
+                    "safe_value": "Residential Broadband of at least 25 Mbps/3 Mbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#3182bd",
+                    "format": null,
+                    "safe_value": "#3182bd"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Residential Broadband of at least 50 Mbps/5 Mbps",
+                    "format": null,
+                    "safe_value": "Residential Broadband of at least 50 Mbps/5 Mbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#08306b",
+                    "format": null,
+                    "safe_value": "#08306b"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Residential Broadband of at least 100 Mbps/5 Mbps",
+                    "format": null,
+                    "safe_value": "Residential Broadband of at least 100 Mbps/5 Mbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#d7301f",
+                    "format": null,
+                    "safe_value": "#d7301f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Tribal land",
+                    "format": null,
+                    "safe_value": "Tribal land"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#FFFFFF",
+                    "format": null,
+                    "safe_value": "#FFFFFF"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Urban area",
+                    "format": null,
+                    "safe_value": "Urban area"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}

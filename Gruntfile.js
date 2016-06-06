@@ -20,12 +20,16 @@ module.exports = function(grunt) {
         // Watches files for changes and runs tasks based on the changed files
         watch: {
             html: {
-                files: ['./src/**/*.*'],
+                files: ['./src/*.*'],
                 tasks: ['copy', 'clean:delTempFolders']
             },
             js: {
                 files: ['./src/map_templates/js/**/*.js'],
                 tasks: ['copy', 'clean:delTempFolders']
+            },
+            json: {
+                files: ['./src/map_data/*.json'],
+                tasks: ['concat:contentjson','copy', 'clean:delTempFolders']
             },
             less: {
                 files: ['./src/bootstrap-gisp/less/**/*.less'],
@@ -147,7 +151,32 @@ module.exports = function(grunt) {
                     // 'bower_components/bootstrap/js/tab.js',
                 ],
                 dest: '<%= paths.assets %>/js/vendor/bootstrap.min.js'
-            }            
+            }, 
+            // content.json
+            contentjson: {
+                options: {
+                  footer: ']',
+                  separator: ','
+                },
+                src: [
+                    './src/map_data/mapdata-open.json',
+                    './src/map_data/connect-america-fund-phase-2.json',
+                    './src/map_data/bpr-2016-fixed-25mbps-3mbps-providers.json',
+                    './src/map_data/bpr-2016-fixed-25mbps-3mbps-technology.json',
+                    './src/map_data/bpr-2016-fixed-speed.json',
+                    './src/map_data/nbm.json',
+                    './src/map_data/100pct-overlap-map.json',
+                    './src/map_data/connect2healthfcc.json',
+                    './src/map_data/residential-fixed-connections-over-200-kbps.json',
+                    './src/map_data/residential-fixed-connections-3-mbps-768-kbps.json',
+                    './src/map_data/number-providers-residential-fixed-connections-over-200-kbps.json',
+                    './src/map_data/number-providers-residential-fixed-connections-10-1-mbps.json',
+                    './src/map_data/terrestrial-mobile-wireless-digital-coverage-july-2015.json',
+                    './src/map_data/nationwide-mobile-wireless-coverage-july-2015.json',
+                    './src/map_data/nationwide-lte-coverage-july-2015.json'                    
+                ],
+                dest: './src/content.json'
+            }           
         },
 
         // Add a banner to the top of the generated LESS file.
