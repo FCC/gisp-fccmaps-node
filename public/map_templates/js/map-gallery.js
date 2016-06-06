@@ -3,7 +3,7 @@
 
     var mapGallery = {
         filters: {
-            bureau: '',
+            bureau: '*',
             tag: '',
             status: '.data-live'
         },        
