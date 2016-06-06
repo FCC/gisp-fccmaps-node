@@ -7216,4 +7216,879 @@
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
-]
+,{
+    "nid": "179626",
+    "title": "FCC AM Revitalization Channel Finder",
+    "created": "2016-05-26",
+    "changed": "2016-05-26",
+    "type": "map",
+    "webUrl": "https://apps2.fcc.gov/amr-channel-finder/?",
+    "tnid": "0",
+    "body": null,
+    "vid": "187924",
+    "fields": {
+        "field_map_embed_code": [
+
+        ],
+        "field_description": {
+            "und": [{
+                "value": "",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3516",
+                "uid": "1162",
+                "filename": "thumb-nbm.png",
+                "uri": "thumb-amr-channel-finder.png",
+                "filemime": "image/gif",
+                "filesize": "4198",
+                "status": "1",
+                "timestamp": "1464290179",
+                "type": "image",
+                "uuid": "6b22d3f3-bf72-4d70-9bc3-6bf7c21daacc",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 333
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "333"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "0"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-05-26 19:15:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "field_date": {
+            "und": [{
+                "value": "2016-05-26 00:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "America/New_York",
+                "date_type": "datetime"
+            }]
+        },
+        "field_search_exclude": {
+            "und": [{
+                "value": "0"
+            }]
+        },
+        "field_subtitle": [
+
+        ],
+        "field_featured": {
+            "und": [{
+                "value": "0"
+            }]
+        },
+        "field_map_display_date": {
+            "und": [{
+                "value": "2016-05-26 00:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "America/New_York",
+                "date_type": "datetime",
+                "db": {
+                    "value": {
+                        "granularity": [
+                            "year",
+                            "month",
+                            "day",
+                            "hour",
+                            "minute",
+                            "second",
+                            "timezone"
+                        ],
+                        "errors": [
+
+                        ],
+                        "timeOnly": false,
+                        "dateOnly": false,
+                        "originalTime": "2016-05-26T00:00:00-04:00",
+                        "date": "2016-05-26 00:00:00.000000",
+                        "timezone_type": 3,
+                        "timezone": "America/New_York"
+                    },
+                    "value2": {
+                        "granularity": [
+                            "year",
+                            "month",
+                            "day",
+                            "hour",
+                            "minute",
+                            "second",
+                            "timezone"
+                        ],
+                        "errors": [
+
+                        ],
+                        "timeOnly": false,
+                        "dateOnly": false,
+                        "originalTime": "2016-05-26T00:00:00-04:00",
+                        "date": "2016-05-26 00:00:00.000000",
+                        "timezone_type": 3,
+                        "timezone": "America/New_York"
+                    }
+                }
+            }]
+        },
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://apps2.fcc.gov/amr-channel-finder/?",
+                "title": "FCC AM Revitalization Channel Finder",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "ext_window"
+            }]
+        },
+        "field_related_links": [
+
+        ],
+        "field_bureau_office": {
+            "und": [{
+                "tid": "MB",
+                "value": "Media Bureau"
+            }]
+        },
+        "field_map_address_search_": {
+            "und": [{
+                "value": "on"
+            }]
+        },
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [{
+                "value": "Street"
+            }]
+        },
+        "field_map_coordinate_search_": {
+            "und": [{
+                "value": "on"
+            }]
+        },
+        "field_map_initial_zoom": {
+            "und": [{
+                "value": "3"
+            }]
+        },
+        "field_map_latitude": {
+            "und": [{
+                "value": "50.00"
+            }]
+        },
+        "field_map_layer": [{
+            "item_id": "2421",
+            "revision_id": "3303",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "03af3530-fc81-4f89-a051-72c095949fbb",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc.a6335c39",
+                    "format": null,
+                    "safe_value": "fcc.a6335c39"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "No Service",
+                    "format": null,
+                    "safe_value": "No Service"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "key=value&key2=value2"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2423",
+            "revision_id": "3304",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "24e1ba23-3a97-4817-8379-b82135858c06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc.0376ced1",
+                    "format": null,
+                    "safe_value": "fcc.0376ced1"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "At Least 200 kbps",
+                    "format": null,
+                    "safe_value": "At Least 200 kbps"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2424",
+            "revision_id": "3240",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "401ba06d-55f5-43b2-b1a0-9f27c8f7ae54",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "mapbox.com",
+                    "format": null,
+                    "safe_value": "mapbox.com"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "Speed layer",
+                    "format": null,
+                    "safe_value": "Speed layer"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "speed-layer-name",
+                    "format": null,
+                    "safe_value": "speed-layer-name"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc:bpr_tribal",
+                    "format": null,
+                    "safe_value": "fcc:bpr_tribal"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "Tribal Land",
+                    "format": null,
+                    "safe_value": "Tribal Land"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2433",
+            "revision_id": "3323",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "03749931-f9d7-4f14-a6df-a9038c0ee8ca",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "www.broadbandmap.gov/geoserver",
+                    "format": null,
+                    "safe_value": "www.broadbandmap.gov/geoserver"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc:bpr_tribal",
+                    "format": null,
+                    "safe_value": "fcc:bpr_tribal"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2436",
+            "revision_id": "3329",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "7c796f48-6cbd-47c5-beed-52a433097e1d",
+            "field_layer_domain": [
+
+            ],
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": [
+
+            ],
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3324",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc.Section-706-Mobile-Data-Deployment-Map",
+                    "format": null,
+                    "safe_value": "fcc.Section-706-Mobile-Data-Deployment-Map"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.Section-706-Mobile-Data-Deployment-Map",
+                    "format": null,
+                    "safe_value": "fcc.Section-706-Mobile-Data-Deployment-Map"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2443",
+            "revision_id": "3345",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "be9f6ead-0c86-46bb-9f90-67dc30f5de25",
+            "field_layer_domain": [
+
+            ],
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": [
+
+            ],
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2422",
+            "revision_id": "3306",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "9cfb2388-b011-46be-ac99-e833f70b5664",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffffcc",
+                    "format": null,
+                    "safe_value": "#ffffcc"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "No residential services at 200 kbps or above",
+                    "format": null,
+                    "safe_value": "No residential services at 200 kbps or above"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2425",
+            "revision_id": "3241",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "71f067e5-2ed9-4f95-90de-33759df6fe4a",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#123456",
+                    "format": null,
+                    "safe_value": "#123456"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Speed < 3mbps",
+                    "format": null,
+                    "safe_value": "Speed &lt; 3mbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2426",
+            "revision_id": "3242",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "ebbea452-43a2-4375-a05f-9a3adb6dc6d0",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#654321",
+                    "format": null,
+                    "safe_value": "#654321"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Speed >= 3 mbps",
+                    "format": null,
+                    "safe_value": "Speed &gt;= 3 mbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2431",
+            "revision_id": "3307",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "234cc01f-c3ff-4898-8ceb-18f0dbdcc8eb",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#c7e9b4",
+                    "format": null,
+                    "safe_value": "#c7e9b4"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Residential services of at least 200 kbps",
+                    "format": null,
+                    "safe_value": "Residential services of at least 200 kbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2432",
+            "revision_id": "3308",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "05a9ae0d-aaf2-491a-92fb-b9d15adba365",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#999999",
+                    "format": null,
+                    "safe_value": "#999999"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Tribal land",
+                    "format": null,
+                    "safe_value": "Tribal land"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3325",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffff99",
+                    "format": null,
+                    "safe_value": "#ffff99"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Section 706 Mobile Data 1",
+                    "format": null,
+                    "safe_value": "Section 706 Mobile Data 1"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3326",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#FF0000",
+                    "format": null,
+                    "safe_value": "#FF0000"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Section 706 Mobile Data 2",
+                    "format": null,
+                    "safe_value": "Section 706 Mobile Data 2"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2437",
+            "revision_id": "3330",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "fdc72419-a96c-4321-95a1-3b2a33aaa6a8",
+            "field_legend_color": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2444",
+            "revision_id": "3346",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "269e1d70-1314-410a-8b9d-be49c0ac7a0a",
+            "field_legend_color": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [{
+                "value": "-105.00"
+            }]
+        },
+        "field_map_max_zoom": {
+            "und": [{
+                "value": "15"
+            }]
+        },
+        "field_map_min_zoom": {
+            "und": [{
+                "value": "3"
+            }]
+        }
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports"
+    }, {
+        "tid": "534",
+        "vid": "7",
+        "name": "Strategic Planning & Policy Analysis"
+    }],
+    "uri": "http://10.154.68.187/api/content/179626"
+}]

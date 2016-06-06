@@ -173,7 +173,9 @@ module.exports = function(grunt) {
                     './src/map_data/number-providers-residential-fixed-connections-10-1-mbps.json',
                     './src/map_data/terrestrial-mobile-wireless-digital-coverage-july-2015.json',
                     './src/map_data/nationwide-mobile-wireless-coverage-july-2015.json',
-                    './src/map_data/nationwide-lte-coverage-july-2015.json'                    
+                    './src/map_data/nationwide-lte-coverage-july-2015.json',
+                    './src/map_data/amr-channel-finder.json'
+                    //'./src/map_data/acam-ror-sa-map.json'
                 ],
                 dest: './src/content.json'
             }           
