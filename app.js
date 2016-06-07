@@ -26,6 +26,8 @@ var PG_SCHEMA = configEnv[NODE_ENV].PG_SCHEMA;
 var GEO_HOST = configEnv[NODE_ENV].GEO_HOST;
 var GEO_SPACE = configEnv[NODE_ENV].GEO_SPACE;
 var DRUPAL_API = configEnv[NODE_ENV].DRUPAL_API;
+var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
+
 
 console.log('NODE_ENV : '+ NODE_ENV );
 console.log('NODE_PORT : '+ NODE_PORT );
@@ -34,6 +36,7 @@ console.log('PG_SCHEMA : '+ PG_SCHEMA );
 console.log('GEO_HOST : '+ GEO_HOST );
 console.log('GEO_SPACE : '+ GEO_SPACE );
 console.log('DRUPAL_API : '+ DRUPAL_API );
+console.log('ALLOWED_IP : '+ ALLOWED_IP );
 
 // **********************************************************
 // console start
@@ -112,9 +115,7 @@ app.get('/getExistingMaps/', function(req, res){
 maps.getExistingMaps(req, res);
 });
 
-app.get('/pullDrupal/', function(req, res){
-maps.pullDrupal(req, res);
-});
+
 
 app.get('/pullRepo/:nid', function(req, res){
 maps.pullRepo(req, res);
@@ -122,14 +123,31 @@ maps.pullRepo(req, res);
 
 app.get('/admin/pull', function(req, res){
     var ip = req.headers['x-forwarded-for'] || 
-     req.connection.remoteAddress || 
-     req.socket.remoteAddress ||
-     req.connection.socket.remoteAddress;
-	 if (ip != undefined) {
-		ip = ip.replace(/ +/g, '').split(',')[0]
-	 }
-	res.send({'ip': ip});
+    req.connection.remoteAddress || 
+    req.socket.remoteAddress ||
+    req.connection.socket.remoteAddress;
 
+	//check allowed IP
+	var isAllowed = false;
+	if (ip != undefined) {
+		ip = ip.replace(/ +/g, '').split(',')[0]
+		for (var i = 0; i < ALLOWED_IP.length; i++) {
+			var re = new RegExp('^' + ALLOWED_IP[i].replace('*', ''));
+			if (ip.match(re)) {
+				isAllowed = true;
+			}
+		 }
+	 
+	 }
+	 
+	 if (isAllowed) {
+		maps.pullDrupal(req, res);
+	 }
+	 else {
+		console.log("IP not allowed");
+		res.send({"status": "error", "msg": "not allowed"});
+	 }
+	 
 });
 
 // **********************************************************

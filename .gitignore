@@ -42,3 +42,4 @@ dist
 public/*
 !public/map_templates
 !public/content.json
+!public/admin
