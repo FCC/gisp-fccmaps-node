@@ -273,14 +273,13 @@ function getExistingMaps(req, res) {
 function pullDrupal(req, res) {
 
 	try {
-	
 		console.log("Manual pull of Drupal API");
 		mapDeploy("onetime");
 		res.send({"status": "ok"});	
 	}
 	catch (e) {
 		console.error('Exception in pullDrupal: ' + e);
-		res.send({"status": "error"});
+		res.send({"status": "error", "msg": "Exception in pullDrupal: " + e});
 	}	
 }
 
