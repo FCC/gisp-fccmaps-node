@@ -1,4 +1,6 @@
 
+"use strict";
+
 // require 
 
 var http = require("http");
@@ -11,6 +13,7 @@ var fs = require('fs');
 var morgan = require('morgan');
 var cors = require('cors');
 var bodyparser = require('body-parser');
+var request = require('request');
 var package_json = require('./package.json');
 var maps = require('./controllers/maps.js');
 
@@ -37,6 +40,32 @@ console.log('GEO_HOST : '+ GEO_HOST );
 console.log('GEO_SPACE : '+ GEO_SPACE );
 console.log('DRUPAL_API : '+ DRUPAL_API );
 console.log('ALLOWED_IP : '+ ALLOWED_IP );
+
+var routetable = {
+	"c2h":	{
+			"name": "c2h",
+                                "route": "connect2health",
+                                "host": "https://apps2.fcc.gov/connect2health/"                                      
+                },
+                "amr" :      {
+                                "name": "amr",
+                                "route": "connect2health",
+                                "host": "http://amr-web-node-dev.us-west-2.elasticbeanstalk.com/"                                      
+                },
+
+                "yahoo" :      {
+                                "name": "yahoo",
+                                "route": "yahoo",
+                                "host": "http://www.yahoo.com/"                                      
+                },
+				                "google" :      {
+                                "name": "google",
+                                "route": "google",
+                                "host": "http://www.google.com/"                                      
+                }
+};
+
+console.log(routetable);
 
 // **********************************************************
 // console start
@@ -149,6 +178,32 @@ app.get('/admin/pull', function(req, res){
 	 }
 	 
 });
+
+
+//proxy routing
+app.use('/apps', function(req, res){
+	var appid = req.url.replace('/', '');
+	
+	console.log(appid);
+	if (routetable[appid]) {
+	var url = routetable[appid].host;
+	console.log(url);
+	req.pipe(request(url)).pipe(res);
+	}
+	else {
+	console.log('no id');
+	res.sendfile('./public/404.html');
+	}
+
+	
+	
+  //req.pipe(request(url)).pipe(res);
+//console.log(req.url);
+
+});
+
+
+
 
 // **********************************************************
 // error
