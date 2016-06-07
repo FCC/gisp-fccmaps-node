@@ -182,7 +182,8 @@ app.get('/admin/pull', function(req, res){
 
 //proxy routing
 app.use('/apps', function(req, res){
-	var appid = req.url.replace('/', '');
+
+	var appid = req.url.replace(/\//g, '');
 	
 	console.log(appid);
 	if (routetable[appid]) {
