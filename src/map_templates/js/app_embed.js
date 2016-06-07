@@ -77,32 +77,26 @@ function createMap() {
     baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
     baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');
     var baseLayer = {};
-
-    console.log(map_info_all.map_basemap);
-
-    for (var i = 0; i < map_info_all.map_basemap.length; i++) {
-        if (i == 0) {
-            if (map_info_all.map_basemap[i].toLowerCase() == "street") {
-                baseLayer["Street"] = baseStreet.addTo(map);
-            } else if (map_info_all.map_basemap[i].toLowerCase() == "satellite") {
-                baseLayer["Satellite"] = baseSatellite.addTo(map);
-            } else if (map_info_all.map_basemap[i].toLowerCase() == "terrain") {
-                baseLayer["Terrain"] = baseTerrain.addTo(map);
-            }
-        } else {
-            if (map_info_all.map_basemap[i].toLowerCase() == "street") {
-                baseLayer["Street"] = baseStreet;
-            } else if (map_info_all.map_basemap[i].toLowerCase() == "satellite") {
-                baseLayer["Satellite"] = baseSatellite;
-            } else if (map_info_all.map_basemap[i].toLowerCase() == "terrain") {
-                baseLayer["Terrain"] = baseTerrain;
-            }
-
-        }
-
-    }
-
-    console.log(baseLayer)
+	
+	//default
+	baseLayer["Street"] = baseStreet.addTo(map);
+	baseLayer["Satellite"] = baseSatellite;
+	baseLayer["Terrain"] = baseTerrain;
+	if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "street") {
+		baseLayer["Street"] = baseStreet.addTo(map);
+		baseLayer["Satellite"] = baseSatellite;
+		baseLayer["Terrain"] = baseTerrain;
+	}
+	else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "satellite") {
+		baseLayer["Street"] = baseStreet;
+		baseLayer["Satellite"] = baseSatellite.addTo(map);
+		baseLayer["Terrain"] = baseTerrain;
+	}
+	else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "terrain") {
+		baseLayer["Street"] = baseStreet;
+		baseLayer["Satellite"] = baseSatellite;
+		baseLayer["Terrain"] = baseTerrain.addTo(map);
+	}
 
     //map layers
     mapLayer = {};
