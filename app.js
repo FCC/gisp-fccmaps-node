@@ -124,7 +124,10 @@ app.get('/admin/pull', function(req, res){
     var ip = req.headers['x-forwarded-for'] || 
      req.connection.remoteAddress || 
      req.socket.remoteAddress ||
-     req.connection.socket.remoteAddress; 
+     req.connection.socket.remoteAddress;
+	 if (ip != undefined) {
+		ip = ip.replace(/ +/g, '').split(',')[0]
+	 }
 	res.send({'ip': ip});
 
 });
