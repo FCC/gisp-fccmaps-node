@@ -1,0 +1,362 @@
+{
+    "nid": "28002",
+    "title": "Number of Fixed Providers of Residential Internet Access Service over 200 kbps by Census Block",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/number-providers-residential-fixed-connections-over-200-kbps",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows the number of fixed providers of residential Internet Access Service over 200 kbps in at least one direction by census block based on December 2014 Form 477 fixed broadband deployment data.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows the number of fixed providers of residential Internet Access Service over 200 kbps in at least one direction by census block based on December 2014 Form 477 fixed broadband deployment data.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": [{
+            "value": "0"
+        }],
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2015-09-01 21:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "As of December 30, 2014"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/number-providers-residential-fixed-connections-over-200-kbps",
+                "title": "Number of Fixed Providers of Residential Internet Access Service over 200 kbps by Census Block",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": [{
+                "url": "https://www.fcc.gov/tags/broadband-progress-report",
+                "title": "Broadband Progress Report",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
+                "title": "Broadband Progress Reports",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
+                "title": "Broadband, Internet & IP",
+                "attributes": []
+            }]
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition Bureau"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "4" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.a02avl6b",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.a02avl6b"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.a02avl6b",
+                    "format": null,
+                    "safe_value": "fcc.a02avl6b"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "No residential services at 200 kbps or above",
+                    "format": null,
+                    "safe_value": "No residential services at 200 kbps or above"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#FFFFFF",
+                    "format": null,
+                    "safe_value": "#FFFFFF"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Zero",
+                    "format": null,
+                    "safe_value": "0"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#EDF8FB",
+                    "format": null,
+                    "safe_value": "#EDF8FB"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "1",
+                    "format": null,
+                    "safe_value": "1"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#B2E2E2",
+                    "format": null,
+                    "safe_value": "#B2E2E2"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "2",
+                    "format": null,
+                    "safe_value": "2"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#62C2A4",
+                    "format": null,
+                    "safe_value": "#62C2A4"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "3",
+                    "format": null,
+                    "safe_value": "3"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#2CA25F",
+                    "format": null,
+                    "safe_value": "#2CA25F"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "4",
+                    "format": null,
+                    "safe_value": "4"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#006D2C",
+                    "format": null,
+                    "safe_value": "#006D2C"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "5 or more",
+                    "format": null,
+                    "safe_value": "5 or more"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}

@@ -1,0 +1,399 @@
+
+footer,
+.docs-attribution {
+    padding: 6px;
+
+    @media (min-width: @screen-sm-min) {        
+        padding: 0 40px;
+    }
+    @media print {
+        display: none;
+    }
+}
+
+footer {
+    margin-left: 0;
+    @media (min-width: @screen-sm-min) {        
+        margin-left: 200px;
+    }
+    // .docs-collapsed-nav & {
+    //     margin-left: 0;
+    // }
+}
+
+.footer {
+    clear: both;
+    overflow: hidden;
+    background: white;
+    color: #1d2b3e;
+    line-height: 1.2;
+}
+
+.footer a {
+    color: #2c75d6;
+}
+
+.nav-footer {
+    font-size: 1em;
+    margin-top: 50px;
+    padding: 44px 0 77px;
+    border-top: 1px solid #d2d2d2;
+    font-weight: 500;
+}
+
+.nav-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.docs-attribution {
+    background: #eee;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    .h5 {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (min-width: 46.8em) {
+    .nav-footer {
+        font-size: 1.15em;
+    }
+}
+
+
+/* line 26, ../sass/components/_footer.scss */
+
+.nav-footer:before {
+    content: " ";
+    display: block;
+    position: relative;
+    top: -42px;
+    width: 100%;
+    height: 0;
+}
+
+@media screen and (min-width: 66em) {
+    /* line 26, ../sass/components/_footer.scss */
+    .nav-footer:before {
+        border-top: 1px solid #d2d2d2;
+    }
+}
+
+@media all and (min-width: 46.8em) and (max-width: 66em) {
+    /* line 37, ../sass/components/_footer.scss */
+    .nav-footer .footergriditems {
+        float: left;
+    }
+}
+
+.nav-footer:before,
+.nav-footer:after {
+    content: "";
+    display: table;
+}
+
+.nav-footer:after {
+    clear: both;
+}
+
+.nav-footer .grid-item {
+    padding: 0 17.5px;
+}
+
+@media screen and (min-width: 66em) {
+    /* line 50, ../sass/components/_footer.scss */
+    .nav-footer .grid-item:nth-of-type(1) {
+        float: left;
+        width: 33.33333%;
+        margin-left: 0%;
+        margin-right: -33.33333%;
+        padding-left: 17px;
+        padding-right: 18px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .nav-footer .grid-item:nth-of-type(2) {
+        float: left;
+        width: 22.22222%;
+        margin-left: 33.33333%;
+        margin-right: -55.55556%;
+        padding-left: 17px;
+        padding-right: 18px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .nav-footer .grid-item:nth-of-type(3) {
+        float: left;
+        width: 22.22222%;
+        margin-left: 55.55556%;
+        margin-right: -77.77778%;
+        padding-left: 17px;
+        padding-right: 18px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .nav-footer .grid-item:nth-of-type(4) {
+        float: left;
+        width: 22.22222%;
+        margin-left: 77.77778%;
+        margin-right: -100%;
+        padding-left: 17px;
+        padding-right: 18px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 66em) {
+    /* line 64, ../sass/components/_footer.scss */
+    .nav-footer .grid-item:nth-of-type(1) {
+        float: left;
+    }
+    /* line 67, ../sass/components/_footer.scss */
+    .nav-footer .grid-item:not(:nth-of-type(1)) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    /* line 72, ../sass/components/_footer.scss */
+    .nav-footer .grid-item:nth-of-type(1) {
+        margin: 0 auto;
+        padding: 0 17.5px;
+        float: none;
+    }
+}
+
+
+/* line 81, ../sass/components/_footer.scss */
+
+.nav-footer ul.footermenu {
+    padding: 0;
+}
+
+@media all and (max-width: 46.8em) {
+    /* line 81, ../sass/components/_footer.scss */
+    .nav-footer ul.footermenu {
+        margin: 15px 0 0;
+    }
+}
+
+
+/* line 86, ../sass/components/_footer.scss */
+
+.nav-footer ul.footermenu a {
+    color: #134b96;
+}
+
+@media all and (min-width: 46.8em) {
+    /* line 89, ../sass/components/_footer.scss */
+    .nav-footer ul.footermenu a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width: 46.8em) {
+    .nav-footer ul.footermenu a {
+        color: #2c75d6;
+    }
+    .nav-footer ul.footermenu a.contactus {
+        display: inline-block;
+        background: #2c75d6;
+        color: white;
+        line-height: 1;
+        font-weight: bold;
+        padding: 11px 20px;
+        border: 0;
+        border-radius: 3px;
+        text-align: center;
+        width: 100%;
+        margin-top: 2em;
+        box-sizing: border-box;
+    }
+    .nav-footer ul.footermenu a.contactus:hover,
+    .nav-footer ul.footermenu a.contactus:focus {
+        background: #134b96;
+        color: white;
+    }
+    .nav-footer ul.footermenu a.contactus.disabled {
+        background: #eeeeee;
+        color: gray;
+    }
+}
+
+.nav-footer ul.footermenu li {
+    border-top: 1px solid #dddddd;
+    padding: 12px 10px 12px 8px;
+}
+
+.nav-footer ul.footermenu li:nth-last-of-type(1) {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/* Custom Icons */
+
+
+/* line 128, ../sass/components/_icons.scss */
+
+.fcc-seal,
+.social-media {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.fcc-seal {
+    // background-image: url("../images/icons-sa0dc29a632.png");
+    background-image: url("../images/icons-s0bc2f34441.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 184px;
+    width: 184px;
+    font-size: 1em;
+    width: 184px;
+    height: 184px;
+}
+
+.social-media {
+    display: inline-block;
+    float: left;
+    width: 52px;
+    height: 52px;
+    margin: 30px 4px;
+}
+
+.facebook {
+    background-position: 0 -2369px;
+}
+
+.flickr {
+    background-position: 0 -2694px;
+}
+
+.social-media.twitter {
+    background-image: url("../images/icons-s0bc2f34441.png");
+    background-position: 0 -346px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 51px;
+    width: 51px;
+    font-size: 1em;
+    margin-left: 0;
+}
+
+.social-media.facebook {
+    background-image: url("../images/icons-s0bc2f34441.png");
+    background-position: 0 -488px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 51px;
+    width: 51px;
+    font-size: 1em;
+}
+
+.social-media.youtube {
+    background-image: url("../images/icons-s0bc2f34441.png");
+    background-position: 0 -275px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 51px;
+    width: 51px;
+    font-size: 1em;
+}
+
+.social-media.flickr {
+    background-image: url("../images/icons-s0bc2f34441.png");
+    background-position: 0 -417px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 51px;
+    width: 51px;
+    font-size: 1em;
+}
+
+.social-media.instagram {
+    background-image: url("../images/icons-s0bc2f34441.png");
+    background-position: 0 -204px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 51px;
+    width: 51px;
+    font-size: 1em;
+}
+
+.youtube {
+    background-position: 0 -3689px;
+}
+
+@media all and (min-width: 46.8em) {
+    .nav-footer ul.footermenu li {
+        border: 0 !important;
+        padding: 0 0 12px 0;
+        line-height: 1.25em;
+    }
+}
+
+@media all and (max-width: 46.8em) {
+    .nav-footer ul.socialmediaicons {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+.nav-footer address {
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+@media all and (max-width: 46.8em) {
+    .fcc-seal {
+        display: block;
+        float: none;
+        clear: left;
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width: 46.8em) {
+    .fcc-seal {
+        clear: none;
+        float: right;
+        margin: 0 17.5px;
+    }
+}
+
+@media all and (min-width: 66em) {
+    .fcc-seal {
+        clear: both;
+        float: left;
+    }
+}

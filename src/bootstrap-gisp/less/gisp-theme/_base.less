@@ -1,0 +1,37 @@
+.dl-inline {
+    dt,
+    dd {
+        display: inline-block;
+    }
+    dd + dt {
+        margin-left: 10px;
+    }
+}
+
+.form-inline {
+    display: inline-block;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sr-only.focusable:focus {
+    position: static !important;
+    clip: auto;
+    overflow: visible;
+    height: auto;
+}
+
+a {
+    &:focus {
+        outline: thin dotted;
+    }
+    &[href]:after {
+        @media print {
+            content: none !important;
+        }
+    }
+}

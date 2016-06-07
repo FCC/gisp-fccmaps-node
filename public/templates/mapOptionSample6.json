@@ -1,0 +1,48 @@
+
+{
+	"bureau": "OET", 
+	"title": "Unserved by Fixed Broadband",
+	"description": "No access to fixed broadband",
+	"mapcenter": {"latitude": "50","longitude":"-105"},
+	"mapzoom":{"initialzoom":"3", "maxzoom":"15","minzoom": "3"}, 
+	"basemap": ["street", "satellite", "terrain"],
+	"scalecontrol": "no", 
+	"search": "yes",
+	"attribution": "FCC Maps",
+	"layers": [ 
+
+				{
+				"title": "Unserved Areas",
+				"layertype": "mapbox",
+				"mapid": "fcc.unserved_fixed_broadband",
+				"checked": "yes" 
+				}, 
+				
+				{
+				"title": "Tribal Land",
+				"layertype": "geoserver", 
+				"geohost": "http://www.broadbandmap.gov", 
+				"geospace": "fcc",
+				"layername": "fcc:bpr_tribal",
+				"style": "bpr_tribal", 
+				"checked": "no" 
+				} 
+				
+			],
+			
+	"legends": [
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Unserved by Fixed Broadband"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Tribal land"
+				}
+				
+			]
+			
+}
+
+			

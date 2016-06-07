@@ -1,0 +1,49 @@
+
+{
+	"bureau": "OET",
+	"title": "Mobility Fund Phase 1 Eligible Areas",
+	"description": "Mobility Fund Phase 1 Eligible Areas",
+	"mapcenter": {"latitude": "50","longitude":"-105"},
+	"mapzoom":{"initialzoom":"3", "maxzoom":"15","minzoom": "3"}, 
+	"basemap": ["street", "satellite", "terrain"],
+	"scalecontrol": "no", 
+	"search": "yes",
+	"attribution": "FCC Maps",
+	"layers": [ 
+
+				{
+				"title": "Eligible Areas",
+				"layertype": "mapbox",
+				"mapid": "fcc.Mobility-Fund-Phase-1-Eligible-Areas", 
+				"checked": "yes" 
+				}, 
+				
+				{
+				"title": "Tribal Land",
+				"layertype": "geoserver", 
+				"geohost": "http://www.broadbandmap.gov", 
+				"geospace": "fcc",
+				"layername": "fcc:bpr_tribal",
+				"style": "bpr_tribal", 
+				"checked": "no" 
+				} 
+				
+			],
+			
+	"legends": [
+	
+				{
+				"legendcolor": "#000000",
+				"legendtext": "Mobility Fund Phase 1 Eligible Areas"
+				},
+				
+				{
+				"legendcolor": "#999999",
+				"legendtext": "Tribal land"
+				}
+				
+				]
+			
+}
+
+			

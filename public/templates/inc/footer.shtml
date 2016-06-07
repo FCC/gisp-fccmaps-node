@@ -1,0 +1,146 @@
+<footer class="page-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-6">
+                                <a tabindex="-1" name="skiptarget3" id="skiptarget3" class="sr-only"></a>
+                                    <address class="contact-info">
+                                        Federal Communications Commission
+                                        <br> 445 12th Street SW, Washington, DC 20554
+                                        <br>
+                                    </address>
+                                    <ul class="contact-info contact-phone">
+                                        <li>
+                                            <a href="tel:+18882255322" class="phone-link">Phone: 1-888-225-5322</a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+18888355322" class="phone-link">TTY: 1-888-835-5322</a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+18444322275" class="phone-link">Videophone: 1-844-432-2275</a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+18884185322" class="phone-link">Fax: 1-866-418-0232</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="contact-link btn-mobile">
+                                        Contact Us
+                                    </a>
+                                    <ul class="footer-links social-media-links">
+                                        <li>
+                                            <a title="" href="#" class="social-media twitter">Twitter    </a>
+                                        </li>
+                                        <li>
+                                            <a title="" href="#" class="social-media facebook">
+                Facebook
+            </a>
+                                        </li>
+                                        <li>
+                                            <a title="" href="#" class="social-media youtube">
+                Youtube
+            </a>
+                                        </li>
+                                        <li>
+                                            <a title="" href="#" class="social-media flickr">
+                Flickr
+            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12 col-sm-6">
+                                    <span class="fcc-seal hide-text">
+                                        Federal Communications Commission
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 visible-md-block visible-lg-block">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <ul class="footer-links footer-links-sitemap">
+                                        <li>
+                                            <a href="#">Website Policies &amp; Notices</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FOIA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">No Fear Act Data</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FCC Digital Strategy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Open Government Directive</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Plain Writing Act</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">RSS Feeds &amp; Email Updates</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Disability Rights</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-4">
+                                    <h4 class="footer-heading">Categories</h4>
+                                    <ul class="footer-links footer-links-categories">
+                                        <li>
+                                            <a href="about.php">About the FCC</a>
+                                        </li>
+                                        <li>
+                                            <a href="proceedings.php">Proceedings &amp; Actions</a>
+                                        </li>
+                                        <li>
+                                            <a href="licensing.php">Licensing &amp; Databases</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Reports &amp; Research</a>
+                                        </li>
+                                        <li>
+                                            <a href="news-events.php">News &amp; Events</a>
+                                        </li>
+                                        <li>
+                                            <a href="consumer-landing.php">For Consumers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-4">
+                                    <h4 class="footer-heading">Bureaus &amp; Offices</h4>
+                                    <ul class="footer-links footer-links-bureaus-offices">
+                                        <li>
+                                            <a href="#">Consumer</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Enforcement</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">International</a>
+                                        </li>
+                                        <li>
+                                            <a href="media-bureau.php">Media</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Public Safety</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wireless</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wireline</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Offices</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>

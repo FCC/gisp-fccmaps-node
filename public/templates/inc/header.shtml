@@ -1,0 +1,89 @@
+<header class="site-header">
+<div class="jumpLinks"> <a href="#skiptarget1" class="sr-only focusable">Skip to main content</a> <a href="#skiptarget3" class="sr-only focusable">Skip to footer and contact information</a> </div>
+    <nav role="navigation">
+        <div class="navbar navbar-default navbar-primary">
+            <div class="container">
+                <div class="navbar-header">
+                    <h1 class="navbar-brand">
+                  <a title="Home" href="/" class="navbar-logo">
+                    <span class="sr-only">Federal Communications Commission</span>
+                  </a>
+                </h1>
+                </div>
+                <ul aria-hidden="true" id="menu-primary" class="nav navbar-nav nav-offcanvas-right">
+                    <li class="active">
+                        <a aria-controls="browse-by-category" data-toggle="tab" href="#browse-by-category">
+                            <div class="text-prefix">Licensing &amp; Databases</div>
+                            <strong class="title-emphasis">Public Inspection File</strong>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar-controls">
+                    <div class="navbar-search nav-offcanvas nav-offcanvas-top">
+                        <form role="search" id="search-form-header" class="navbar-form navbar-right form-search form-search-header">
+                            <div class="input-group">
+                                <label for="txt-search" class="sr-only">Find a station</label>
+                                <input type="text" placeholder="Find Station" id="txt-search" class="form-control">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default">
+                                        <span class="btn-search-inner"></span>
+                                        <span class="sr-only">Go</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </form>
+                    </div>
+                    <a data-toggle-direction="top" data-toggle="offcanvas" class="btn navbar-btn btn-toggle-search" type="button">
+                        <span class="btn-inner btn-inner-search">Search</span>
+                    </a>
+                    <a data-toggle-direction="right" data-toggle="offcanvas" class="btn navbar-btn btn-toggle-menu" type="button">
+                        <span class="btn-inner btn-inner-menu"><span class="sr-only">Menu</span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div aria-hidden="true" class="navbar-secondary navbar-default yamm nav-offcanvas nav-offcanvas-right">
+            <div id="menu-secondary" class="tab-content">
+                <div class="container tab-pane active" id="browse-by-category">
+                    <ul class="nav nav-tabs menu-secondary">
+                        <li class="dropdown dropdown-left yamm-fw" role="presentation">
+                            <a href="home.html" class="dropdown-toggle">
+                                <span class="link-title dropdown-link-title">Home</span>
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown-left yamm-fw" role="presentation">
+                            <a href="about-station-profiles.html" class="dropdown-toggle">
+                                <span class="link-title dropdown-link-title">About PIF</span>
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown-left yamm-fw" role="presentation">
+                            <a href="for-broadcasters.html" class="dropdown-toggle">
+                                <span class="link-title dropdown-link-title">For Broadcasters</span>
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown-left yamm-fw" role="presentation">
+                            <a href="for-developers.html" class="dropdown-toggle">
+                                <span class="link-title dropdown-link-title">For Developers</span>
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown-left yamm-fw" role="presentation">
+                            <a href="faq.html" class="dropdown-toggle">
+                                <span class="link-title dropdown-link-title">FAQ</span>
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown-left yamm-fw">
+                            <a href="public-help.html" class="dropdown-toggle">
+                                <span class="dropdown-link-title link-title">Help</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--.nav-tabs -->
+                </div>
+            </div>
+        </div>
+        <!-- .secondary-menu -->
+    </nav>
+</header>
+<div class="clearfix"></div>
+<a class="visuallyhidden" id="skiptarget1" tabindex="-1"></a>

@@ -1,4 +1,6 @@
 
+"use strict";
+
 // require 
 
 var http = require("http");
@@ -11,6 +13,7 @@ var fs = require('fs');
 var morgan = require('morgan');
 var cors = require('cors');
 var bodyparser = require('body-parser');
+var request = require('request');
 var package_json = require('./package.json');
 var maps = require('./controllers/maps.js');
 
@@ -25,6 +28,9 @@ var PG_DB = configEnv[NODE_ENV].PG_DB;
 var PG_SCHEMA = configEnv[NODE_ENV].PG_SCHEMA;
 var GEO_HOST = configEnv[NODE_ENV].GEO_HOST;
 var GEO_SPACE = configEnv[NODE_ENV].GEO_SPACE;
+var DRUPAL_API = configEnv[NODE_ENV].DRUPAL_API;
+var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
+
 
 console.log('NODE_ENV : '+ NODE_ENV );
 console.log('NODE_PORT : '+ NODE_PORT );
@@ -32,6 +38,34 @@ console.log('PG_DB : '+ PG_DB );
 console.log('PG_SCHEMA : '+ PG_SCHEMA );
 console.log('GEO_HOST : '+ GEO_HOST );
 console.log('GEO_SPACE : '+ GEO_SPACE );
+console.log('DRUPAL_API : '+ DRUPAL_API );
+console.log('ALLOWED_IP : '+ ALLOWED_IP );
+
+var routetable = {
+	"c2h":	{
+			"name": "c2h",
+                                "route": "connect2health",
+                                "host": "https://apps2.fcc.gov/connect2health/"                                      
+                },
+                "amr" :      {
+                                "name": "amr",
+                                "route": "connect2health",
+                                "host": "http://amr-web-node-dev.us-west-2.elasticbeanstalk.com/"                                      
+                },
+
+                "yahoo" :      {
+                                "name": "yahoo",
+                                "route": "yahoo",
+                                "host": "http://www.yahoo.com/"                                      
+                },
+				                "google" :      {
+                                "name": "google",
+                                "route": "google",
+                                "host": "http://www.google.com/"                                      
+                }
+};
+
+console.log(routetable);
 
 // **********************************************************
 // console start
@@ -63,8 +97,6 @@ var accessLogStream = fsr.getStream({
 app.use(morgan('combined', {stream: accessLogStream}))
 
 
-// Default date added using file pattern 
-
 
 // **********************************************************
 // parser
@@ -81,7 +113,7 @@ app.use('/api-docs', express.static(__dirname + '/public/api-docs.html'));
 app.param('uuid', function(req, res, next, uuid){
     // check format of uuid
     if(!serverCheck.checkUUID(uuid)){
-		return serverSend.sendErr(res, 'json', 'not_found');
+        return serverSend.sendErr(res, 'json', 'not_found');
     } else {
         next();
     }
@@ -89,24 +121,89 @@ app.param('uuid', function(req, res, next, uuid){
 
 app.param('ext', function(req, res, next, ext) {
     // check format of id
-	var route = req.route.path;
-	//console.log('\n  route : ' + route );
-	
-	if (!route === '/download/:uuid.:ext') {	// skip for downloads
-		if(!serverCheck.checkExt(ext)){
-			return serverSend.sendErr(res, 'json', 'invalid_ext');
-		} else {
-			next();
-		}
-	}
-	else {
-		next();
-	}
+    var route = req.route.path;
+    //console.log('\n  route : ' + route );
+    
+    if (!route === '/download/:uuid.:ext') {    // skip for downloads
+        if(!serverCheck.checkExt(ext)){
+            return serverSend.sendErr(res, 'json', 'invalid_ext');
+        } else {
+            next();
+        }
+    }
+    else {
+        next();
+    }
 });
 
 app.get('/', function(req, res){
   res.sendfile('./public/index.html');
 });
+
+app.get('/getExistingMaps/', function(req, res){
+maps.getExistingMaps(req, res);
+});
+
+
+
+app.get('/pullRepo/:nid', function(req, res){
+maps.pullRepo(req, res);
+});
+
+app.get('/admin/pull', function(req, res){
+    var ip = req.headers['x-forwarded-for'] || 
+    req.connection.remoteAddress || 
+    req.socket.remoteAddress ||
+    req.connection.socket.remoteAddress;
+
+	//check allowed IP
+	var isAllowed = false;
+	if (ip != undefined) {
+		ip = ip.replace(/ +/g, '').split(',')[0]
+		for (var i = 0; i < ALLOWED_IP.length; i++) {
+			var re = new RegExp('^' + ALLOWED_IP[i].replace('*', ''));
+			if (ip.match(re)) {
+				isAllowed = true;
+			}
+		 }
+	 
+	 }
+	 
+	 if (isAllowed) {
+		maps.pullDrupal(req, res);
+	 }
+	 else {
+		console.log("IP not allowed");
+		res.send({"status": "error", "msg": "not allowed"});
+	 }
+	 
+});
+
+
+//proxy routing
+app.use('/apps', function(req, res){
+
+	var appid = req.url.replace(/\//g, '');
+	
+	console.log(appid);
+	if (routetable[appid]) {
+	var url = routetable[appid].host;
+	console.log(url);
+	req.pipe(request(url)).pipe(res);
+	}
+	else {
+	console.log('no id');
+	res.sendfile('./public/404.html');
+	}
+
+	
+	
+  //req.pipe(request(url)).pipe(res);
+//console.log(req.url);
+
+});
+
+
 
 
 // **********************************************************
@@ -123,7 +220,8 @@ app.use(function(req, res) {
     };
 
     res.status(404);
-    res.send(err_res);    
+    //res.send(err_res);    
+    res.sendfile('./public/404.html');
 });
 
 app.use(function(err, req, res, next) {
@@ -142,7 +240,8 @@ app.use(function(err, req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     
     res.status(500);
-    res.send(err_res);
+    // res.send(err_res);
+    res.sendfile('./public/500.html');
 });
 
 process.on('uncaughtException', function (err) {
@@ -162,8 +261,9 @@ var server = app.listen(NODE_PORT, function () {
 
 });
 
+maps.mapDeploy("repeat");
+
 module.exports = app;
 
-maps.mapDeploy();
 
 

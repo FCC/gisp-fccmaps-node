@@ -1,0 +1,153 @@
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+@menu-primary-sidebar-height-tablet: 129px;
+@menu-primary-sidebar-height-mobile: 58px;
+@mobile-search-bar-height: 64px;
+.site-header {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: 992px) {
+        background: #266ad0;
+    }
+}
+
+.navbar {
+    border: 0;
+    margin-bottom: 0;    
+}
+
+.navbar-primary {
+    height: 58px;
+    background: #13428b url(../images/bg-pattern-header.png);
+    box-shadow: inset 0px -11px 30px 0px rgba(0, 0, 0, 0.3);
+    @media screen and (min-width: 768px) {
+        height: 73px;
+    }    
+}
+
+.navbar-header {
+    float: left;    
+}
+
+.navbar-brand {
+    height: auto;
+    margin: 0;    
+    padding-left: 10px;
+    padding-right: 10px;
+    @media screen and (min-width: 768px) {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }    
+}
+
+.navbar-logo {
+    background-image: url('../images/icons-sa0dc29a632.png');
+    background-position: 0 -2440px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-size: 1em;
+    height: 30px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 137px;
+    @media screen and (min-width: 768px) {
+        width: 175px;
+        height: 38px;
+        background: url(../images/fcc-logo-lg.png) 0 0 no-repeat;
+    }
+}
+
+.navbar-about {
+    float: right;
+    margin: 50px 0 0;
+    display: block;    
+    .icon {
+        margin-left: 5px;
+    }    
+}
+
+.btn.nav-collapse {
+    display: none;
+    float: right;
+    margin: 5px 0 5px 30px;
+    font-size: 26px;
+    padding-left: 6px;
+    padding-right: 6px;
+    &:hover,
+    &:focus {
+        color: #1e5298;
+    }
+    @media screen and (min-width: @screen-md-min) {
+        display: block;
+        margin-top: 30px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+#menu-primary {
+    background: #13428b url(../images/bg-pattern-header.png);
+    box-shadow: inset 10px -40px 80px rgba(0, 0, 0, 0.3);
+    float: left;
+    height: 58px;
+    text-align: center;
+    a {
+        color: #fff;
+        height: 100%;
+        padding-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        &:hover, &:focus {
+            background-color: transparent;
+        }
+        @media screen and (min-width: @screen-sm-min) {
+            padding-top: 27px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    > li {
+        float: none;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        @media screen and (min-width: 992px) {
+            &.active {
+                background: rgba(25, 43, 62, 0.3) url(../images/menu-active-bg.png) 50% 100% no-repeat;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        height: 73px;
+    }
+    @media screen and (max-width: 991px) {
+        margin: 0;
+        padding: 0 5px;
+    }
+    @media screen and (max-width: 991px) {
+        & > li {
+            float: left;
+        }
+        & > li:last-child {
+            width: auto;
+        }
+    }
+    .title-emphasis {
+        font-size: 1.5em;
+        font-weight: normal;
+        white-space: nowrap;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    .text-prefix {
+        font-style: italic;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+}

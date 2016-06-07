@@ -1,0 +1,262 @@
+{
+    "nid": "28002",
+    "title": "Tribal Mobility Fund Phase I Eligible Areas",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/tribal-mobility-fund-phase-i-eligible-areas",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows the areas identified as eligible for Tribal Mobility Fund Phase I support as of February 2014. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing 2010 US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible areas, including the bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows the areas identified as eligible for Tribal Mobility Fund Phase I support as of February 2014. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing 2010 US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible areas, including the bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/tribal-mobility-fund-phase-i-eligible-areas",
+                "title": "Tribal Mobility Fund Phase I Eligible Areas",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": [{
+                "url": "https://www.fcc.gov/tags/broadband-progress-report",
+                "title": "Broadband Progress Report",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
+                "title": "Broadband Progress Reports",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
+                "title": "Broadband, Internet & IP",
+                "attributes": []
+            }]
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.tribal-mobility-fund-phase-i-eligible-areas",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.tribal-mobility-fund-phase-i-eligible-areas"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.tribal-mobility-fund-phase-i-eligible-areas",
+                    "format": null,
+                    "safe_value": "fcc.tribal-mobility-fund-phase-i-eligible-areas"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Tribal Mobility Fund Phase I Eligible Areas",
+                    "format": null,
+                    "safe_value": "Tribal Mobility Fund Phase I Eligible Areas"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#080c0f",
+                    "format": null,
+                    "safe_value": "#080c0f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Eligible Areas",
+                    "format": null,
+                    "safe_value": "Eligible Areas"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Constituencies",
+        "url": "https://www.fcc.gov/tags/constituencies"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Native Nations",
+        "url": "https://www.fcc.gov/tags/native-nations"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Tribal Mobility Fund",
+        "url": "https://www.fcc.gov/tags/tribal-mobility-fund"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}

@@ -1,0 +1,44 @@
+.tag {
+    padding: 2px 8px;
+    border-radius: @border-radius-base;
+    background-color: #eee;
+    border: none;
+    font-size: 13px;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    &:hover,
+    &:focus {
+        background: darken(#eee, 5%);
+        cursor: pointer;
+        i {
+            opacity: 1;
+        }
+    }
+    i {
+        margin-left: 5px;
+    }
+    a, span {
+        color: #333;
+    }
+    &:hover {
+        cursor: default;
+    }
+    .icon-remove {
+        margin-left: 5px;
+    }
+}
+
+.tag-list-inline {
+    .link-tags, .link-removeTags, .list-tags {
+        display: inline-block;
+        font-size: 12px;
+    }
+    
+    .link-tags {
+        margin: 10px 0;
+    }
+
+    .tags-list {        
+        margin: 0 5px 0;
+    }
+}

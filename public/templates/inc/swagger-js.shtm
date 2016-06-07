@@ -1,0 +1,95 @@
+  <!-- Swagger Script -->
+
+  <!-- fix for unsupported jquery.ba-bbq.min.js (https://github.com/cowboy/jquery-bbq/issues/52) -->
+  <script type="text/javascript">
+    jQuery.browser = {};
+    (function () {
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+            jQuery.browser.msie = true;
+            jQuery.browser.version = RegExp.$1;
+        }
+    })();
+  </script>
+  <!-- end fix for unsupported jquery.ba-bbq.min.js -->
+
+  <script src='js/vendor/swagger/lib/jquery.slideto.min.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/lib/jquery.wiggle.min.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/lib/handlebars-2.0.0.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/lib/underscore-min.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/lib/backbone-min.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/swagger-ui.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/lib/highlight.7.3.pack.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/lib/marked.js' type='text/javascript'></script>
+  <script src='js/vendor/swagger/lib/swagger-oauth.js' type='text/javascript'></script>
+
+  <script type="text/javascript">
+  $(function (){
+
+    var baseULR = '/opif/ux/opif-new/';
+    $('.swagger-ui-wrap').each(function(){
+      initSwagger(baseULR+$(this).data('jsonurl'),$(this).attr('id'));
+    });
+    //initSwagger("<?=$_G->path;?>json/vpd_apis.json","swagger-ui-container-vpd");
+    //initSwagger("<?=$_G->path;?>json/ach_apis.json","swagger-ui-container");
+
+    function initSwagger(jsonURL,container) {
+      var url = window.location.search.match(/url=([^&]+)/);
+      if (url && url.length > 1) {
+        url = decodeURIComponent(url[1]);
+      } else {
+        url = jsonURL;
+      }
+      window.swaggerUi = new SwaggerUi({
+        url: url,
+        dom_id: container,
+        supportedSubmitMethods: ['get'],
+        onComplete: function(swaggerApi, swaggerUi){
+          if(typeof initOAuth == "function") {
+            /*
+            initOAuth({
+              clientId: "your-client-id",
+              realm: "your-realms",
+              appName: "your-app-name"
+            });
+            */
+          }
+          $('pre code').each(function(i, e) {
+            hljs.highlightBlock(e)
+          });
+        },
+        onFailure: function(data) {
+          log("Unable to Load SwaggerUI");
+        },
+        docExpansion: "list",
+        sorter : "alpha"
+      });
+
+      function addApiKeyAuthorization() {
+        var key = $('#input_apiKey')[0].value;
+        log("key: " + key);
+        if(key && key.trim() != "") {
+            log("added key " + key);
+            window.authorizations.add("api_key", new ApiKeyAuthorization("api_key", key, "query"));
+        }
+      }
+
+      $('#input_apiKey').change(function() {
+        addApiKeyAuthorization();
+      });
+
+      // if you have an apiKey you would like to pre-populate on the page for demonstration purposes...
+      /*
+        var apiKey = "myApiKeyXXXX123456789";
+        $('#input_apiKey').val(apiKey);
+        addApiKeyAuthorization();
+      */
+
+      window.swaggerUi.load();
+    }
+  });
+  </script>
+
+  <!-- End Swagger Script -->

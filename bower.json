@@ -1,0 +1,10 @@
+{
+  "name": "gisp-map-template",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0",
+    "font-awesome": "~4.5.0",
+    "bootstrap": "~3.3.6",
+    "imagesloaded": "^4.1.0"
+  }
+}
