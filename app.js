@@ -121,9 +121,11 @@ maps.pullRepo(req, res);
 });
 
 app.get('/admin/pull', function(req, res){
-var host = req.headers['host'] || '';
-var clientIP = req.connection.remoteAddress;
-res.send({'host': host, 'clientIP': clientIP});
+    var ip = req.headers['x-forwarded-for'] || 
+     req.connection.remoteAddress || 
+     req.socket.remoteAddress ||
+     req.connection.socket.remoteAddress; 
+	res.send({'ip': ip});
 
 });
 
