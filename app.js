@@ -120,6 +120,13 @@ app.get('/pullRepo/:nid', function(req, res){
 maps.pullRepo(req, res);
 });
 
+app.get('/admin/pull', function(req, res){
+var host = req.headers['host'] || '';
+var clientIP = req.connection.remoteAddress;
+res.send({'host': host, 'clientIP': clientIP});
+
+});
+
 // **********************************************************
 // error
 
