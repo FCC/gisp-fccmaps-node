@@ -227,6 +227,7 @@ function createMapCard(mapMeta) {
         if (mapMeta.lives[i] === '1') {
             add_class += 'data-live ';
         }
+        console.log('archived = ' + mapMeta.archiveds[i]);
         if (mapMeta.archiveds[i] === '1') {
             add_class += 'data-archived ';
         }
@@ -352,7 +353,7 @@ function getMapInfo(mapOptions) {
 	//description
 	var description = ''
 	if (mapOptions.fields.field_description && mapOptions.fields.field_description.und) {
-		description = mapOptions.fields.field_description.und[0].value;
+		description = mapOptions.fields.field_description.und[0].safe_value;
 	}
 	map_info_all.description = description;
 	

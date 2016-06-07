@@ -1865,10 +1865,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.",
+                "value": "This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report.\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.",
+                "safe_value": "This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report.\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.",
                 "safe_summary": ""
             }]
         },
@@ -8091,4 +8091,3037 @@
         "name": "Strategic Planning & Policy Analysis"
     }],
     "uri": "http://10.154.68.187/api/content/179626"
+},{
+    "nid": "28002",
+    "title": "Tribal Mobility Fund Phase I Eligible Areas",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/tribal-mobility-fund-phase-i-eligible-areas",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows the areas identified as eligible for Tribal Mobility Fund Phase I support as of February 2014. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing 2010 US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible areas, including the bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows the areas identified as eligible for Tribal Mobility Fund Phase I support as of February 2014. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing 2010 US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible areas, including the bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/tribal-mobility-fund-phase-i-eligible-areas",
+                "title": "Tribal Mobility Fund Phase I Eligible Areas",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": [{
+                "url": "https://www.fcc.gov/tags/broadband-progress-report",
+                "title": "Broadband Progress Report",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
+                "title": "Broadband Progress Reports",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
+                "title": "Broadband, Internet & IP",
+                "attributes": []
+            }]
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.tribal-mobility-fund-phase-i-eligible-areas",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.tribal-mobility-fund-phase-i-eligible-areas"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.tribal-mobility-fund-phase-i-eligible-areas",
+                    "format": null,
+                    "safe_value": "fcc.tribal-mobility-fund-phase-i-eligible-areas"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Tribal Mobility Fund Phase I Eligible Areas",
+                    "format": null,
+                    "safe_value": "Tribal Mobility Fund Phase I Eligible Areas"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#080c0f",
+                    "format": null,
+                    "safe_value": "#080c0f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Eligible Areas",
+                    "format": null,
+                    "safe_value": "Eligible Areas"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Constituencies",
+        "url": "https://www.fcc.gov/tags/constituencies"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Native Nations",
+        "url": "https://www.fcc.gov/tags/native-nations"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Tribal Mobility Fund",
+        "url": "https://www.fcc.gov/tags/tribal-mobility-fund"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/tribal-mobility-fund-phase-i-potentially-eligible-areas",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows the areas identified as potentially eligible for Tribal Mobility Fund Phase I support as of March 2013. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible areas, including the proposed bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows the areas identified as potentially eligible for Tribal Mobility Fund Phase I support as of March 2013. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible areas, including the proposed bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/tribal-mobility-fund-phase-i-potentially-eligible-areas",
+                "title": "Tribal Mobility Fund Phase I Eligible Areas",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": [{
+                "url": "https://www.fcc.gov/tags/broadband-progress-report",
+                "title": "Broadband Progress Report",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
+                "title": "Broadband Progress Reports",
+                "attributes": []
+            }, {
+                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
+                "title": "Broadband, Internet & IP",
+                "attributes": []
+            }]
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas",
+                    "format": null,
+                    "safe_value": "fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
+                    "format": null,
+                    "safe_value": "Tribal Mobility Fund Phase I Potentially Eligible Areas"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#080c0f",
+                    "format": null,
+                    "safe_value": "#080c0f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Eligible Areas",
+                    "format": null,
+                    "safe_value": "Eligible Areas"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Constituencies",
+        "url": "https://www.fcc.gov/tags/constituencies"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Native Nations",
+        "url": "https://www.fcc.gov/tags/native-nations"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Tribal Mobility Fund",
+        "url": "https://www.fcc.gov/tags/tribal-mobility-fund"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Mobility Fund Phase 1 Eligible Areas",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/mobility-fund-phase-1-eligible-areas",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows the areas identified as eligible for Mobility Fund Phase 1 support as of September 2012. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block and contain road miles in any of six road categories. These blocks were identified by analyzing US Census data, January 2012 American Roamer (now called Mosaik Solutions) data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible blocks, including population, road miles (S1100, S1200, S1400, S1500, S1640, and S1740 categories), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a>.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows the areas identified as potentially eligible for Tribal Mobility Fund Phase I support as of March 2013. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible areas, including the proposed bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/mobility-fund-phase-1-eligible-areas",
+                "title": "Mobility Fund Phase 1 Eligible Areas",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.Mobility-Fund-Phase-1-Eligible-Areas",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Mobility-Fund-Phase-1-Eligible-Areas"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.Mobility-Fund-Phase-1-Eligible-Areas",
+                    "format": null,
+                    "safe_value": "fcc.Mobility-Fund-Phase-1-Eligible-Areas"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
+                    "format": null,
+                    "safe_value": "Tribal Mobility Fund Phase I Potentially Eligible Areas"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#080c0f",
+                    "format": null,
+                    "safe_value": "#080c0f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Mobility Fund Phase 1 Eligible Areas",
+                    "format": null,
+                    "safe_value": "Mobility Fund Phase 1 Eligible Areas"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobile Broadband",
+        "url": "https://www.fcc.gov/tags/mobile-broadband"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobile Fund",
+        "url": "https://www.fcc.gov/tags/mobility-fund-0"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobility Fund Phase 1",
+        "url": "https://www.fcc.gov/tags/mobility-fund-phase-1"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Spectrum",
+        "url": "https://www.fcc.gov/tags/spectrum-0"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "800 MHz Cellular – A Block CGSAs",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/800-mhz-cellular-–-block-cgsas",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the A Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the A Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/800-mhz-cellular-–-block-cgsas",
+                "title": "800 MHz Cellular – A Block CGSAs",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.800-mhz-cellular-a-block-cgsa",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.800-mhz-cellular-a-block-cgsa"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.800-mhz-cellular-a-block-cgsa",
+                    "format": null,
+                    "safe_value": "fcc.800-mhz-cellular-a-block-cgsa"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "800 MHz Cellular – A Block CGSAs",
+                    "format": null,
+                    "safe_value": "800 MHz Cellular – A Block CGSAs"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#7a8d3b",
+                    "format": null,
+                    "safe_value": "#7a8d3b"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Licensed CGSAs",
+                    "format": null,
+                    "safe_value": "Licensed CGSAs"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#9a2221",
+                    "format": null,
+                    "safe_value": "#9a2221"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "CGSA boundary",
+                    "format": null,
+                    "safe_value": "CGSA boundary"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#F06c6c",
+                    "format": null,
+                    "safe_value": "#F06c6c"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "CMA boundary",
+                    "format": null,
+                    "safe_value": "CMA boundary"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobile Broadband",
+        "url": "https://www.fcc.gov/tags/mobile-broadband"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobile Fund",
+        "url": "https://www.fcc.gov/tags/mobility-fund-0"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobility Fund Phase 1",
+        "url": "https://www.fcc.gov/tags/mobility-fund-phase-1"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Spectrum",
+        "url": "https://www.fcc.gov/tags/spectrum-0"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Broadband Availability Hawaii",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/broadband-availability-hawaii",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows broadband availability in the United States. Availability is defined as at least 3 mbps download and 768 kbps upload speeds. Because of concerns with the accuracy of the data for mobile wireless broadband, this map shows only wireline technology availability. It also shows unpopulated areas. Under Available means that some, but not all, of the area identified is served by 3 Mbps down and 768 Kbps up. This map was created by the FCC.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows broadband availability in the United States. Availability is defined as at least 3 mbps download and 768 kbps upload speeds. Because of concerns with the accuracy of the data for mobile wireless broadband, this map shows only wireline technology availability. It also shows unpopulated areas. Under Available means that some, but not all, of the area identified is served by 3 Mbps down and 768 Kbps up. This map was created by the FCC.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/broadband-availability-hawaii",
+                "title": "Broadband Availability Hawaii",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "7" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "20.561" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.Unavail_HI",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Unavail_HI"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.Unavail_HI",
+                    "format": null,
+                    "safe_value": "fcc.Unavail_HI"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Broadband Availability Hawaii",
+                    "format": null,
+                    "safe_value": "Broadband Availability Hawaii"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#329000",
+                    "format": null,
+                    "safe_value": "#329000"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Available",
+                    "format": null,
+                    "safe_value": "Available"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#7aee3c",
+                    "format": null,
+                    "safe_value": "#7aee3c"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Under Available ",
+                    "format": null,
+                    "safe_value": "Under Available "
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ff8240",
+                    "format": null,
+                    "safe_value": "#ff8240"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Available",
+                    "format": null,
+                    "safe_value": "Available"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#fffde3",
+                    "format": null,
+                    "safe_value": "#fffde3"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Unpopulated",
+                    "format": null,
+                    "safe_value": "Unpopulated"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-157.555" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Broadband Availability Alaska",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/broadband-availability-alaska",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows broadband availability in the United States. Availability is defined as at least 3 mbps download and 768 kbps upload speeds. Because of concerns with the accuracy of the data for mobile wireless broadband, this map shows only wireline technology availability. It also shows unpopulated areas. Under Available means that some, but not all, of the area identified is served by 3 Mbps down and 768 Kbps up. This map was created by the FCC.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows broadband availability in the United States. Availability is defined as at least 3 mbps download and 768 kbps upload speeds. Because of concerns with the accuracy of the data for mobile wireless broadband, this map shows only wireline technology availability. It also shows unpopulated areas. Under Available means that some, but not all, of the area identified is served by 3 Mbps down and 768 Kbps up. This map was created by the FCC.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/broadband-availability-alaska",
+                "title": "Broadband Availability Alaska",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "5" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "63.5" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.Unavail_AK",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Unavail_AK"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.Unavail_AK",
+                    "format": null,
+                    "safe_value": "fcc.Unavail_AK"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Broadband Availability Alaska",
+                    "format": null,
+                    "safe_value": "Broadband Availability Alaska"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#329000",
+                    "format": null,
+                    "safe_value": "#329000"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Available",
+                    "format": null,
+                    "safe_value": "Available"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#7aee3c",
+                    "format": null,
+                    "safe_value": "#7aee3c"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Under Available ",
+                    "format": null,
+                    "safe_value": "Under Available "
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ff8240",
+                    "format": null,
+                    "safe_value": "#ff8240"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Available",
+                    "format": null,
+                    "safe_value": "Available"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#fffde3",
+                    "format": null,
+                    "safe_value": "#fffde3"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Unpopulated",
+                    "format": null,
+                    "safe_value": "Unpopulated"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-154.5" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Broadband Availability",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/broadband-availability",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows broadband availability in the United States. Availability is defined as at least 3 mbps download and 768 kbps upload speeds. Because of concerns with the accuracy of the data for mobile wireless broadband, this map shows only wireline technology availability. It also shows unpopulated areas. Under Available means that some, but not all, of the area identified is served by 3 Mbps down and 768 Kbps up. This map was created by the FCC.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows broadband availability in the United States. Availability is defined as at least 3 mbps download and 768 kbps upload speeds. Because of concerns with the accuracy of the data for mobile wireless broadband, this map shows only wireline technology availability. It also shows unpopulated areas. Under Available means that some, but not all, of the area identified is served by 3 Mbps down and 768 Kbps up. This map was created by the FCC.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/broadband-availability",
+                "title": "Broadband Availability",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "6" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "37" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.Unavail_20111007_2",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Unavail_20111007_2"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.Unavail_20111007_2",
+                    "format": null,
+                    "safe_value": "fcc.Unavail_20111007_2"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Broadband Availability",
+                    "format": null,
+                    "safe_value": "Broadband Availability"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#329000",
+                    "format": null,
+                    "safe_value": "#329000"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Available",
+                    "format": null,
+                    "safe_value": "Available"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#7aee3c",
+                    "format": null,
+                    "safe_value": "#7aee3c"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Under Available ",
+                    "format": null,
+                    "safe_value": "Under Available "
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ff8240",
+                    "format": null,
+                    "safe_value": "#ff8240"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Available",
+                    "format": null,
+                    "safe_value": "Available"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#fffde3",
+                    "format": null,
+                    "safe_value": "#fffde3"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Unpopulated",
+                    "format": null,
+                    "safe_value": "Unpopulated"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-96" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "179638",
+    "title": "FCC Enforcement Actions Against Pirate Radio by Location",
+    "created": "2016-05-27",
+    "changed": "2016-05-27",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/fcc-enforcement-actions-against-pirate-radio-location",
+    "tnid": "0",
+    "body": null,
+    "vid": "187946",
+    "fields": {
+        "field_map_embed_code": [
+
+        ],
+        "field_description": {
+            "und": [{
+                "value": "This map tracks the Enforcement Bureau’s efforts to shut down pirate stations and take aggressive enforcement action against the operators and those who assist them. It consists of Bureau or Commission orders related to pirate radio operations, but does not include unpublished informal warnings, which may be issued in appropriate circumstances.",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map tracks the Enforcement Bureau’s efforts to shut down pirate stations and take aggressive enforcement action against the operators and those who assist them. It consists of Bureau or Commission orders related to pirate radio operations, but does not include unpublished informal warnings, which may be issued in appropriate circumstances.",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-fcc-enforcement-actions.png",
+                "uri": "thumb-fcc-enforcement-actions.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "0"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-05-27 17:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "field_date": {
+            "und": [{
+                "value": "2016-05-27 00:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "America/New_York",
+                "date_type": "datetime"
+            }]
+        },
+        "field_search_exclude": {
+            "und": [{
+                "value": "0"
+            }]
+        },
+        "field_subtitle": [
+
+        ],
+        "field_featured": {
+            "und": [{
+                "value": "0"
+            }]
+        },
+        "field_map_display_date": {
+            "und": [{
+                "value": "2016-05-27 00:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "America/New_York",
+                "date_type": "datetime",
+                "db": {
+                    "value": {
+                        "granularity": [
+                            "year",
+                            "month",
+                            "day",
+                            "hour",
+                            "minute",
+                            "second",
+                            "timezone"
+                        ],
+                        "errors": [
+
+                        ],
+                        "timeOnly": false,
+                        "dateOnly": false,
+                        "originalTime": "2016-05-27T00:00:00-04:00",
+                        "date": "2016-05-27 00:00:00.000000",
+                        "timezone_type": 3,
+                        "timezone": "America/New_York"
+                    },
+                    "value2": {
+                        "granularity": [
+                            "year",
+                            "month",
+                            "day",
+                            "hour",
+                            "minute",
+                            "second",
+                            "timezone"
+                        ],
+                        "errors": [
+
+                        ],
+                        "timeOnly": false,
+                        "dateOnly": false,
+                        "originalTime": "2016-05-27T00:00:00-04:00",
+                        "date": "2016-05-27 00:00:00.000000",
+                        "timezone_type": 3,
+                        "timezone": "America/New_York"
+                    }
+                }
+            }]
+        },
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/reports-research/maps/fcc-enforcement-actions-against-pirate-radio-location",
+                "title": "FCC Enforcement Actions Against Pirate Radio by Location",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_iframe"
+            }]
+        },
+        "field_related_links": [
+
+        ],
+        "field_bureau_office": {
+            "und": [{
+                "tid": "OGC",
+                "value": "Wireline Competition Bureau"
+            }]
+        },
+        "field_map_address_search_": {
+            "und": [{
+                "value": "on"
+            }]
+        },
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [{
+                "value": "Street"
+            }]
+        },
+        "field_map_coordinate_search_": {
+            "und": [{
+                "value": "on"
+            }]
+        },
+        "field_map_initial_zoom": {
+            "und": [{
+                "value": "3"
+            }]
+        },
+        "field_map_latitude": {
+            "und": [{
+                "value": "50.00"
+            }]
+        },
+        "field_map_layer": [{
+            "item_id": "2421",
+            "revision_id": "3303",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "03af3530-fc81-4f89-a051-72c095949fbb",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc.a6335c39",
+                    "format": null,
+                    "safe_value": "fcc.a6335c39"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "No Service",
+                    "format": null,
+                    "safe_value": "No Service"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2423",
+            "revision_id": "3304",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "24e1ba23-3a97-4817-8379-b82135858c06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc.0376ced1",
+                    "format": null,
+                    "safe_value": "fcc.0376ced1"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "At Least 200 kbps",
+                    "format": null,
+                    "safe_value": "At Least 200 kbps"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2424",
+            "revision_id": "3240",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "401ba06d-55f5-43b2-b1a0-9f27c8f7ae54",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "mapbox.com",
+                    "format": null,
+                    "safe_value": "mapbox.com"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "Speed layer",
+                    "format": null,
+                    "safe_value": "Speed layer"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "speed-layer-name",
+                    "format": null,
+                    "safe_value": "speed-layer-name"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "fcc:bpr_tribal",
+                    "format": null,
+                    "safe_value": "fcc:bpr_tribal"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "Tribal Land",
+                    "format": null,
+                    "safe_value": "Tribal Land"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2433",
+            "revision_id": "3399",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "03749931-f9d7-4f14-a6df-a9038c0ee8ca",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "format": null,
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc:bpr_tribal",
+                    "format": null,
+                    "safe_value": "fcc:bpr_tribal"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2436",
+            "revision_id": "3329",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "7c796f48-6cbd-47c5-beed-52a433097e1d",
+            "field_layer_domain": [
+
+            ],
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": [
+
+            ],
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3400",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.Section-706-Mobile-Data-Deployment-Map",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Section-706-Mobile-Data-Deployment-Map"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "Section-706-Mobile",
+                    "format": null,
+                    "safe_value": "Section-706-Mobile"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2443",
+            "revision_id": "3369",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "be9f6ead-0c86-46bb-9f90-67dc30f5de25",
+            "field_layer_domain": [
+
+            ],
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": [
+
+            ],
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2445",
+            "revision_id": "3406",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "69c8d9f9-c2db-454e-bbfd-5cbec45e53f8",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.0j21k0bh",
+                    "format": null,
+                    "safe_value": "fcc.0j21k0bh"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2448",
+            "revision_id": "3415",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "720ed00f-7495-45a0-8757-19b50472b663",
+            "field_layer_domain": [
+
+            ],
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": [
+
+            ],
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2422",
+            "revision_id": "3306",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "9cfb2388-b011-46be-ac99-e833f70b5664",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffffcc",
+                    "format": null,
+                    "safe_value": "#ffffcc"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "No residential services at 200 kbps or above",
+                    "format": null,
+                    "safe_value": "No residential services at 200 kbps or above"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2425",
+            "revision_id": "3241",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "71f067e5-2ed9-4f95-90de-33759df6fe4a",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#123456",
+                    "format": null,
+                    "safe_value": "#123456"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Speed < 3mbps",
+                    "format": null,
+                    "safe_value": "Speed &lt; 3mbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2426",
+            "revision_id": "3242",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "ebbea452-43a2-4375-a05f-9a3adb6dc6d0",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#654321",
+                    "format": null,
+                    "safe_value": "#654321"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Speed >= 3 mbps",
+                    "format": null,
+                    "safe_value": "Speed &gt;= 3 mbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2431",
+            "revision_id": "3307",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "234cc01f-c3ff-4898-8ceb-18f0dbdcc8eb",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#c7e9b4",
+                    "format": null,
+                    "safe_value": "#c7e9b4"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Residential services of at least 200 kbps",
+                    "format": null,
+                    "safe_value": "Residential services of at least 200 kbps"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2432",
+            "revision_id": "3308",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "05a9ae0d-aaf2-491a-92fb-b9d15adba365",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#999999",
+                    "format": null,
+                    "safe_value": "#999999"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Tribal land",
+                    "format": null,
+                    "safe_value": "Tribal land"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3401",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffff99",
+                    "format": null,
+                    "safe_value": "#ffff99"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Section 706 Mobile Data 1",
+                    "format": null,
+                    "safe_value": "Section 706 Mobile Data 1"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3402",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#FF0000",
+                    "format": null,
+                    "safe_value": "#FF0000"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Section 706 Mobile Data 2",
+                    "format": null,
+                    "safe_value": "Section 706 Mobile Data 2"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2437",
+            "revision_id": "3330",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "fdc72419-a96c-4321-95a1-3b2a33aaa6a8",
+            "field_legend_color": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2444",
+            "revision_id": "3370",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "269e1d70-1314-410a-8b9d-be49c0ac7a0a",
+            "field_legend_color": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2446",
+            "revision_id": "3407",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c2afe2-8285-4055-bb95-58c877cccbdd",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#aaaa00",
+                    "format": null,
+                    "safe_value": "#aaaa00"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Accepted PC Funding",
+                    "format": null,
+                    "safe_value": "Accepted PC Funding"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2447",
+            "revision_id": "3408",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6ce7ad29-4ec6-4a75-b747-22175d2c9981",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#999999",
+                    "format": null,
+                    "safe_value": "#999999"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Areas Outside of Phase II Model-Based Support",
+                    "format": null,
+                    "safe_value": "Areas Outside of Phase II Model-Based Support"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2449",
+            "revision_id": "3416",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "9e280f8e-629c-4cce-b891-f65367a240f5",
+            "field_legend_color": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [{
+                "value": "-105.00"
+            }]
+        },
+        "field_map_max_zoom": {
+            "und": [{
+                "value": "15"
+            }]
+        },
+        "field_map_min_zoom": {
+            "und": [{
+                "value": "3"
+            }]
+        }
+    },
+    "taxonomy": [{
+        "tid": "527",
+        "vid": "7",
+        "name": "General Counsel"
+    }],
+    "uri": "http://10.154.68.187/api/content/179638"
 }]

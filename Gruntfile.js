@@ -174,7 +174,15 @@ module.exports = function(grunt) {
                     './src/map_data/terrestrial-mobile-wireless-digital-coverage-july-2015.json',
                     './src/map_data/nationwide-mobile-wireless-coverage-july-2015.json',
                     './src/map_data/nationwide-lte-coverage-july-2015.json',
-                    './src/map_data/amr-channel-finder.json'
+                    './src/map_data/amr-channel-finder.json',
+                    './src/map_data/tribal-mobility-fund-phase-i-eligible-areas.json',
+                    './src/map_data/tribal-mobility-fund-phase-i-potentially-eligible-areas.json',
+                    './src/map_data/mobility-fund-phase-1-eligible-areas.json',
+                    './src/map_data/800-mhz-cellular-–-block-cgsas.json',
+                    './src/map_data/broadband-availability-hawaii.json',
+                    './src/map_data/broadband-availability-alaska.json',
+                    './src/map_data/broadband-availability.json',
+                    './src/map_data/fcc-enforcement-actions-against-pirate-radio-location.json'
                     //'./src/map_data/acam-ror-sa-map.json'
                 ],
                 dest: './src/content.json'
