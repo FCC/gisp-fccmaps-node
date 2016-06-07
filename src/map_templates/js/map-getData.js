@@ -208,8 +208,7 @@ function createMapCard(mapMeta) {
     var subtitle = '';
     
     for (var i = 0; i < urls.length; i++) {
-console.log(mapMeta);
-// console.log(mapMeta.mapTypes[i]);
+
 		isMapLayers = mapMeta.mapTypes[i] === 'int_layers';
 
 		if (isMapLayers) {			

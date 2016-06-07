@@ -50,7 +50,7 @@ function createMap() {
     }
     args = urlHash.split('/');
 
-    if (isEmbed && args[3] !== undefined) {   
+    if (isEmbed && args[3] !== undefined) {
         displayOpts = args[3].split(',');
 
         hasZoom = displayOpts.indexOf('zoom') > -1;
@@ -100,7 +100,7 @@ function createMap() {
 	}
 	
     console.log(baseLayer)
-    
+
     //map layers
     mapLayer = {};
     zindex1 = 10;
@@ -108,32 +108,31 @@ function createMap() {
     if (map_info_all.map_layer.length > 0) {
         for (var i = 0; i < map_info_all.map_layer.length; i++) {
             console.log(i);
-            
+
             zindex1++;
             if (map_info_all.map_layer[i].type == 'XYZ') {
-                
+
                 var title = map_info_all.map_layer[i].title;
                 if (title == '') {
                     title = '' + i;
                 }
-                
+
                 var query_string = map_info_all.map_layer[i].query_string;
                 if (query_string == '') {
                     query_string = 'access_token=pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
                 }
-                
-                var url =  '//' + map_info_all.map_layer[i].domain + '/{z}/{x}/{y}.png?' + query_string;
+
+                var url = '//' + map_info_all.map_layer[i].domain + '/{z}/{x}/{y}.png?' + query_string;
                 console.log(url)
                 mapLayer[title] = L.tileLayer(url, {
                     opacity: map_info_all.map_layer[i].opacity,
                     zIndex: zindex1
                 });
-                
+
                 if (map_info_all.map_layer[i].visibility == 'on') {
                     mapLayer[title].addTo(map);
                 }
-            }
-            else if (map_info_all.map_layer[i].type == 'WMS'){
+            } else if (map_info_all.map_layer[i].type == 'WMS') {
                 var title = map_info_all.map_layer[i].title;
                 if (title == '') {
                     title = '' + i;
@@ -176,7 +175,7 @@ function createMap() {
         var keyImgUrban = 'background-image: url(images/legend-thumb-dot.png)';
 
         for (var i = 0; i < map_info_all.map_legend.length; i++) {
-            
+
             if (map_info_all.map_legend[i].text.search('Tribal land') > -1) {
                 keyStyle = keyImgTribal;
             } else if (map_info_all.map_legend[i].text.search('Urban area') > -1) {
@@ -216,10 +215,9 @@ function createMap() {
 
 function createSearchFields() {
     if (hasSearch) {
-        if ( (map_info_all.map_address_search && map_info_all.map_address_search.toLowerCase() == "on") || (map_info_all.map_coordinate_search && map_info_all.map_coordinate_search.toLowerCase() == "on") ) {
+        if ((map_info_all.map_address_search && map_info_all.map_address_search.toLowerCase() == "on") || (map_info_all.map_coordinate_search && map_info_all.map_coordinate_search.toLowerCase() == "on")) {
             $('#search-field-holder').css("display", "block");
-        }
-        else {
+        } else {
             $('#search-field-holder').css("display", "none");
         }
     }
@@ -606,9 +604,9 @@ function getBureau(tid) {
                 bureau = mapOptions.taxonomy[i].name;
             }
         }
-    
+
     }
-    
+
     return bureau;
 }
 
@@ -617,92 +615,92 @@ function getMapInfo() {
 
     //map_info = JSON.parse(map_info);
     //layers_info = map_info.layers;
-    
+
     console.log(mapOptions);
-    
+
     //title
     var title = '';
     if (mapOptions.title) {
         title = mapOptions.title;
     }
     map_info_all.title = title;
-    
+
     //webUrl
     var webUrl = '';
     if (mapOptions.webUrl) {
         webUrl = mapOptions.webUrl;
     }
     map_info_all.webUrl = webUrl;
-    
+
     //archived
     var archived = '0';
     if (mapOptions.fields.field_archived && mapOptions.fields.field_archived.und) {
         archived = mapOptions.fields.field_archived.und[0].value;
     }
     map_info_all.archived = archived;
-    
+
     //bureau_office
     var bureau_office = '';
     if (mapOptions.fields.field_bureau_office && mapOptions.fields.field_bureau_office.und) {
         var bureau_office = mapOptions.fields.field_bureau_office.und[0];
         // bureau_office = getBureau(tid);
     }
-    map_info_all.bureau_office = bureau_office;    
-    
+    map_info_all.bureau_office = bureau_office;
+
     //date
     var date = ''
     if (mapOptions.fields.field_date && mapOptions.fields.field_date.und) {
         date = mapOptions.fields.field_date.und[0].value;
     }
     map_info_all.date = date;
-    
+
     //date_updated_reviewed
     var date_updated_reviewed = ''
     if (mapOptions.fields.field_date_updated_reviewed && mapOptions.fields.field_date_updated_reviewed.und) {
         date_updated_reviewed = mapOptions.fields.field_date_updated_reviewed.und[0].value;
     }
     map_info_all.date_updated_reviewed = date_updated_reviewed;
-    
+
     //description
     var description = ''
     if (mapOptions.fields.field_description && mapOptions.fields.field_description.und) {
         description = mapOptions.fields.field_description.und[0].value;
     }
     map_info_all.description = description;
-    
+
     //featured
     var featured = '0'
     if (mapOptions.fields.field_featured && mapOptions.fields.field_featured.und) {
         featured = mapOptions.fields.field_featured.und[0].value;
     }
     map_info_all.featured = featured;
-    
+
     //image_thumbnail
     var image_thumbnail = '';
     if (mapOptions.fields.field_image_thumbnail && mapOptions.fields.field_image_thumbnail.und) {
         image_thumbnail = mapOptions.fields.field_image_thumbnail.und[0].uri;
     }
     map_info_all.image_thumbnail = image_thumbnail;
-    
+
     //link
     var link = [];
-    
+
     //map_address_search
     var map_address_search = 'on';
     if (mapOptions.fields.field_map_address_search && mapOptions.fields.field_map_address_search.und) {
         map_address_search = mapOptions.fields.field_map_address_search.und[0].value;
     }
     map_info_all.map_address_search = map_address_search;
-    
+
     //map_attribution
     var map_attribution = '';
     if (mapOptions.fields.field_map_attribution && mapOptions.fields.field_map_attribution.und) {
         map_attribution = mapOptions.fields.field_map_attribution.und[0].value;
     }
     map_info_all.map_attribution = map_attribution;
-    
+
     //map_basemap
-    
+
     var map_basemap = []
     if (mapOptions.fields.field_map_basemap && mapOptions.fields.field_map_basemap.und) {
         for (var i = 0; i < mapOptions.fields.field_map_basemap.und.length; i++) {
@@ -710,38 +708,38 @@ function getMapInfo() {
         }
     }
     map_info_all.map_basemap = map_basemap;
-    
+
     //map_coordinate_search
     var map_coordinate_search = 'on'
     if (mapOptions.fields.field_map_coordinate_search && mapOptions.fields.field_map_coordinate_search.und) {
         map_coordinate_search = mapOptions.fields.field_map_coordinate_search.und[0].value;
     }
     map_info_all.map_coordinate_search = map_coordinate_search;
-    
+
     //map_display_date
     var map_display_date = '';
     if (mapOptions.fields.field_map_display_date && mapOptions.fields.field_map_display_date.und) {
         map_display_date = mapOptions.fields.field_map_display_date.und[0].value;
     }
     map_info_all.map_display_date = map_display_date;
-    
+
     //map_embedded_code
-    
-    
+
+
     //map_initial_zoom
     var map_initial_zoom = '';
     if (mapOptions.fields.field_map_initial_zoom && mapOptions.fields.field_map_initial_zoom.und) {
         map_initial_zoom = mapOptions.fields.field_map_initial_zoom.und[0].value;
     }
     map_info_all.map_initial_zoom = map_initial_zoom;
-    
+
     //map_latitude
     var map_latitude = '0';
     if (mapOptions.fields.field_map_latitude && mapOptions.fields.field_map_latitude.und) {
         map_latitude = mapOptions.fields.field_map_latitude.und[0].value;
     }
     map_info_all.map_latitude = map_latitude;
-    
+
     //map_layer
     var map_layer = [];
     if (mapOptions.fields.field_map_layer) {
@@ -786,7 +784,7 @@ function getMapInfo() {
             if (mapOptions.fields.field_map_layer[i].field_layer_visibility && mapOptions.fields.field_map_layer[i].field_layer_visibility.und) {
                 visibility = mapOptions.fields.field_map_layer[i].field_layer_visibility.und[0].value;
             }
-        
+
             var entry = {
                 "domain": domain,
                 "format": format,
@@ -798,17 +796,17 @@ function getMapInfo() {
                 "title": title,
                 "type": type,
                 "visibility": visibility
-                };
-                
+            };
+
             map_layer.push(entry);
-            
-        
+
+
         }
-    
+
     }
-    
+
     map_info_all.map_layer = map_layer;
-    
+
     //map_legend
     var map_legend = [];
     if (mapOptions.fields.field_map_legend) {
@@ -826,36 +824,36 @@ function getMapInfo() {
                 "text": text
             };
             map_legend.push(entry);
-            
+
         }
     }
     map_info_all.map_legend = map_legend;
-            
-    
-    
+
+
+
     //map_longitude
     var map_longitude = '0';
     if (mapOptions.fields.field_map_longitude && mapOptions.fields.field_map_longitude.und) {
         map_longitude = mapOptions.fields.field_map_longitude.und[0].value;
     }
     map_info_all.map_longitude = map_longitude;
-    
+
     //map_max_zoom
     var map_max_zoom = '12';
     if (mapOptions.fields.field_map_max_zoom && mapOptions.fields.field_map_max_zoom.und) {
         map_max_zoom = mapOptions.fields.field_map_max_zoom.und[0].value;
     }
     map_info_all.map_max_zoom = map_max_zoom;
-    
+
     //map_min_zoom
     var map_min_zoom = '3';
     if (mapOptions.fields.field_map_min_zoom && mapOptions.fields.field_map_min_zoom.und) {
         map_min_zoom = mapOptions.fields.field_map_min_zoom.und[0].value;
     }
     map_info_all.map_min_zoom = map_min_zoom;
-    
+
     //map_options
-    
+
     //map_page_url
     var map_page_url_url = '';
     var map_page_url_title = '';
@@ -865,24 +863,24 @@ function getMapInfo() {
     }
     map_info_all.map_page_url_url = map_page_url_url;
     map_info_all.map_page_url_title = map_page_url_title;
-    
+
     //map_repository
-    
+
     //map_status
-    
+
     //map_type
     var map_type = '';
     if (mapOptions.fields.field_map_type && mapOptions.fields.field_map_type.und) {
         map_type = mapOptions.fields.field_map_type.und[0].value;
     }
     map_info_all.map_type = map_type;
-    
+
     //publishing_bureau_office
-    
+
     //related content
-    
+
     //related_link
-    
+
     //related_links
     var related_links = [];
     if (mapOptions.fields.field_related_links && mapOptions.fields.field_related_links.und) {
@@ -892,32 +890,32 @@ function getMapInfo() {
             if (!/^(f|ht)tps?:\/\//i.test(url)) {
                 url = "http://" + url;
             }
-            entry = {"title": title, "url": url}
+            entry = { "title": title, "url": url }
             related_links.push(entry);
-            
+
         }
     }
     map_info_all.related_links = related_links;
-    
+
     //search_exclude
     var search_exclude = "0";
     if (mapOptions.fields.field_search_exclude && mapOptions.fields.field_search_exclude.und) {
-        search_exclude = mapOptions.fields.field_search_exclude.und[0].value;   
+        search_exclude = mapOptions.fields.field_search_exclude.und[0].value;
     }
     map_info_all.search_exclude = search_exclude;
-    
+
     //subtitle
     var subtitle = "0";
     if (mapOptions.fields.field_subtitle && mapOptions.fields.field_subtitle.und) {
-        subtitle = mapOptions.fields.field_subtitle.und[0].value;   
+        subtitle = mapOptions.fields.field_subtitle.und[0].value;
     }
     map_info_all.subtitle = subtitle;
-        
+
 }
 
 function updateText() {
 
-console.log(map_info_all);
+    console.log(map_info_all);
 
     $(document).prop('title', map_info_all.title);
     $('#span-title').html(map_info_all.title);
@@ -926,19 +924,19 @@ console.log(map_info_all);
     $('#dd-updated').html(map_info_all.date_updated_reviewed.split(' ')[0]);
     $('#span-bureau').text(map_info_all.bureau_office.value);
     $('#span-description').html(map_info_all.description);
-    if(map_info_all.related_links){
+    if (map_info_all.related_links) {
         var related_links_html = '';
         for (var i = 0; i < map_info_all.related_links.length; i++) {
             var title = map_info_all.related_links[i].title;
             var url = map_info_all.related_links[i].url;
-            related_links_html = related_links_html + '<li><a href="'+url+'" target="_blank">'+title+'</a></li>';
+            related_links_html = related_links_html + '<li><a href="' + url + '" target="_blank">' + title + '</a></li>';
         }
         //console.log("related_links_html="+related_links_html);
         $('#related-links').html(related_links_html);
     }
-    
+
     console.log('office=' + map_info_all.bureau_office);
-    
+
 }
 
 
@@ -960,6 +958,9 @@ function updateMapList() {
             var center_lats = [];
             var center_lons = [];
             var searches = [];
+            var thumbs = [];
+            var center_lats = [];
+            var center_lons = [];
 
             for (var i = 1; i < data.length; i++) {
                 var title = '';
@@ -976,11 +977,35 @@ function updateMapList() {
                 if (data[i].fields.field_map_page_url && data[i].fields.field_map_page_url.und) {
                     url = data[i].fields.field_map_page_url.und[0].url;
                 }
+                //image_thumbnail
+                var image_thumbnail = '';
+                if (data[i].fields.field_image_thumbnail && data[i].fields.field_image_thumbnail.und) {
+                    image_thumbnail = data[i].fields.field_image_thumbnail.und[0].uri;
+                }
+                //map_latitude
+                var map_latitude = '0';
+                if (data[i].fields.field_map_latitude && data[i].fields.field_map_latitude.und) {
+                    map_latitude = data[i].fields.field_map_latitude.und[0].value;
+                }
+                //map_longitude
+                var map_longitude = '0';
+                if (data[i].fields.field_map_longitude && data[i].fields.field_map_longitude.und) {
+                    map_longitude = data[i].fields.field_map_longitude.und[0].value;
+                }
+                //map_initial_zoom
+                var map_initial_zoom = '';
+                if (data[i].fields.field_map_initial_zoom && data[i].fields.field_map_initial_zoom.und) {
+                    map_initial_zoom = data[i].fields.field_map_initial_zoom.und[0].value;
+                }
 
                 if (url != "") {
                     map_types.push(map_type);
                     urls.push(url);
                     titles.push(title);
+                    center_lats.push(map_latitude);
+                    center_lons.push(map_longitude);
+                    thumbs.push(image_thumbnail);
+                    zooms.push(map_initial_zoom);
                 }
             }
 
@@ -994,11 +1019,24 @@ function updateMapList() {
             }
 
             var map_list_text = "";
+
             for (var i = 0; i < urls.length; i++) {
-                map_list_text += '<li><a href="/' + urls[i] + '" class=""> \
-                    <iframe width="150" height="125" src="/' + urls[i] + '/embed"></iframe> \
-                    <p>' + titles[i] + '</p> \
-                    </a></li>';
+                isMapLayers = map_types[i] === 'int_layers';
+
+                if (isMapLayers) {
+                    url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
+                    embedLink = url + '/embed/#' + zooms[i] + '/' + center_lats[i] + '/' + center_lons[i] + '/';
+                    url_bookmark = '/' + url + '/#' + zooms[i] + '/' + center_lats[i] + '/' + center_lons[i];
+                    thumbImg = '<iframe width="150" height="125" src="/' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
+                } else {
+                    url = urls[i];                    
+                    url_bookmark = url;
+                    thumbImg = '<div class="mapThumb"><img src="../map_templates/images/' + thumbs[i] + '" alt="' + titles[i] + '" class="img-responsive"></div>';
+                }
+
+
+                map_list_text += '<li><a href="' + url_bookmark + '" class="">' +
+                    thumbImg + '</iframe><p>' + titles[i] + '</p></a></li>';
             }
 
             $('#ul-map-list').html(map_list_text);
