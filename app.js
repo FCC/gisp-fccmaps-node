@@ -87,24 +87,13 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
 
 // **********************************************************
-// route
-
-app.use('/', express.static(__dirname + '/public'));
-
-app.get('/api', function(req, res){
-	maps.getContentAPI(req, res);
-});
-app.get('/api.json', function(req, res){
-	maps.getContentAPI(req, res);
-});
-
-app.get('/admin/pull', function(req, res){
+// validate
+function checkAllowed(req, res, next) {
 	
-    var ip = req.headers['x-forwarded-for'] || 
+	var ip = req.headers['x-forwarded-for'] || 
 		req.connection.remoteAddress || 
 		req.socket.remoteAddress ||
-		req.connection.socket.remoteAddress;
-		
+		req.connection.socket.remoteAddress;		
 	console.log('ip : ' + ip );
 
 	//check allowed IP
@@ -122,17 +111,40 @@ app.get('/admin/pull', function(req, res){
 	 
 	 if (isAllowed) {
 		console.log('maps.pullMap isAllowed');
-		maps.pullMap(req, res);
+		next();
 	 }
 	 else {		
-		console.log('IP not allowed');
+		console.log('checkAllowed error : IP not allowed');
 		//res.send({'status': 'error', 'msg': 'not allowed'});
 		res.status(404);
 		//res.sendFile('/public/404.html');
 		res.sendFile('404.html', { root: __dirname + '/public' });
+		return;
 	 }
-	 
+}
+
+// **********************************************************
+// route
+
+app.get('/api', function(req, res){
+	maps.getContentAPI(req, res);
 });
+app.get('/api.json', function(req, res){
+	maps.getContentAPI(req, res);
+});
+
+app.use('/admin', function(req, res, next){
+		
+	checkAllowed(req, res, next);
+});
+
+app.get('/admin/pull', function(req, res, next){
+	maps.pullMap(req, res, next);
+});
+
+//static routing
+
+app.use('/', express.static(__dirname + '/public'));
 
 //proxy routing
 app.use('/:appId', function(req, res, next){
@@ -219,7 +231,7 @@ var server = app.listen(NODE_PORT, function () {
 
 // **********************************************************
 // deploy
-maps.deployMap(true);
+//maps.deployMap(true);
 
 // **********************************************************
 // export
