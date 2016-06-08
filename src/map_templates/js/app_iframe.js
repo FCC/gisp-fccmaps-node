@@ -905,7 +905,7 @@ function getMapInfo() {
     map_info_all.search_exclude = search_exclude;
 
     //subtitle
-    var subtitle = "0";
+    var subtitle = "";
     if (mapOptions.fields.field_subtitle && mapOptions.fields.field_subtitle.und) {
         subtitle = mapOptions.fields.field_subtitle.und[0].value;
     }
@@ -1049,7 +1049,7 @@ function updateMapList() {
 
 function iframeSetup() {
 var map_type = map_info_all.map_type;
-var url = map_info_all.map_page_url_url;
+var url = map_info_all.webUrl;
 
 $('.map-iframe').attr('src', url);
 
