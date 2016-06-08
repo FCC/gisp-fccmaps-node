@@ -292,7 +292,7 @@ function populateMaps(data) {
 }
 
 function getMapData() {
-    var url = '/getExistingMaps';
+    var url = '/api.json';
 
     $.ajax(url, {
         type: 'GET',
