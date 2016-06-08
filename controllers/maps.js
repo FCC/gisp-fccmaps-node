@@ -1,27 +1,43 @@
+/*
+ _______   ______   ______    .___  ___.      ___      .______     _______.
+ |   ____| /      | /      |   |   \/   |     /   \     |   _  \   /       |
+|  |__   |  ,----'|  ,----'   |  \  /  |    /  ^  \    |  |_)  | |   (----`
+|   __|  |  |     |  |        |  |\/|  |   /  /_\  \   |   ___/   \   \    
+|  |     |  `----.|  `----.   |  |  |  |  /  _____  \  |  |   .----)   |   
+|__|      \______| \______|   |__|  |__| /__/     \__\ | _|   |_______/    
 
+*/
+
+// **********************************************************
+
+"use strict";
+
+
+// **********************************************************
+//require
+var http = require("http");
+var https = require("https");
+var fs = require('fs-extra');
+var unzip = require('unzip');
+
+var request = require('request');
+var cache = require('memory-cache');
+var async = require('async');
+
+//config
 var config = getConfig();
 var geo_host = config.GEO_HOST;
 var geo_space = config.GEO_SPACE;
 var PG_DB = config.PG_DB;
 var pg_schema = config.PG_SCHEMA;
-var drupal_api = config.DRUPAL_API;
+var CONTENT_API = config.CONTENT_API;
 var NODE_ENV = config.NODE_ENV;
 
 var deployInterval = 300000; //microseconds
 var drupalData;
 
 //db
-var pg_query = require('pg-query');
-//pg_query.connectionParameters = PG_DB;
 
-var http = require("http");
-var https = require("https");
-var fs = require('fs-extra');
-var unzip = require('unzip');
-//var github = require('github');
-var request = require('request');
-var cache = require('memory-cache');
-var async = require('async');
 
 cache.put('drupal_current', []);
 
@@ -37,7 +53,7 @@ function getConfig() {
     var PG_SCHEMA = configEnv[NODE_ENV].PG_SCHEMA;
     var GEO_HOST = configEnv[NODE_ENV].GEO_HOST;
     var GEO_SPACE = configEnv[NODE_ENV].GEO_SPACE;
-	var DRUPAL_API = configEnv[NODE_ENV].DRUPAL_API;
+	var CONTENT_API = configEnv[NODE_ENV].CONTENT_API;
 	
     var ret = {
 		"NODE_ENV": NODE_ENV,
@@ -46,12 +62,13 @@ function getConfig() {
         "PG_SCHEMA": PG_SCHEMA,
         "GEO_HOST": GEO_HOST,
         "GEO_SPACE": GEO_SPACE,
-		"DRUPAL_API": DRUPAL_API
+		"CONTENT_API": CONTENT_API
     };
 
     return ret;
 }
 
+var mapDirPath = './public/map';
 
 var task = function(mm) { return function(callback) {
 
@@ -108,7 +125,7 @@ var task = function(mm) { return function(callback) {
 		return;
 	}
 	else {
-		var dirPath = "./public/" + map_page_url;
+		var dirPath = "./public/map/" + map_page_url;
 		//new map - create directory and write files
 		if (map_status.is_new_map) {
 			console.log("new Map");
@@ -135,7 +152,12 @@ var task = function(mm) { return function(callback) {
 function mapDeploy(type) {
 
 	try {
-
+	
+		if (!fs.existsSync(mapDirPath)) {
+			fs.mkdirSync(mapDirPath);
+		}
+		
+		
 		var source = 'static';
 		
 		if (source == 'static') {
@@ -147,7 +169,7 @@ function mapDeploy(type) {
 			}
 		}
 		else {
-			var url = drupal_api;
+			var url = CONTENT_API;
 		}
 		
 		console.log(url);
