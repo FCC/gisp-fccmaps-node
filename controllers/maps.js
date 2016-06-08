@@ -130,7 +130,7 @@ function createMap(mm) {
 }
 
 function forceMap() { // force will clear and rebuild
-	console.log('\n deployMap :  '  );
+	console.log('\n forceMap :  '  );
 	console.log('forceLock :  ' + forceLock );
 	try {
 		if (forceLock) {
@@ -139,6 +139,7 @@ function forceMap() { // force will clear and rebuild
 		}
 		else {
 			contentJson = '';
+			console.log('contentJson :  ' + contentJson );
 			
 			if (fs.existsSync(mapDirPath)) {
 				
@@ -159,10 +160,13 @@ function forceMap() { // force will clear and rebuild
 			
 				//fs.removeSync(mapDirPath);
 			}
+			else {
+				deployMap(false);	
+			}
 		}
 	}
 	catch (e) {
-		console.error('Exception in forceMap:'+e);		
+		console.error('Exception in forceMap : '+e);		
 	}
 }
 
