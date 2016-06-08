@@ -30,6 +30,13 @@ var package_json = require('./package.json');
 var maps = require('./controllers/maps.js');
 
 // **********************************************************
+// console start
+
+console.log('package_json.name : '+ package_json.name );
+console.log('package_json.version : '+ package_json.version );
+console.log('package_json.description : '+ package_json.description );
+
+// **********************************************************
 // config
 
 var configEnv = require('./config/env.json');
@@ -37,11 +44,13 @@ var configEnv = require('./config/env.json');
 var NODE_ENV = process.env.NODE_ENV;
 var NODE_PORT =  process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
 var CONTENT_API = configEnv[NODE_ENV].CONTENT_API || '/api.json';
+var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
 var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
 
 console.log('NODE_ENV : '+ NODE_ENV );
 console.log('NODE_PORT : '+ NODE_PORT );
 console.log('CONTENT_API : '+ CONTENT_API );
+console.log('DEPLOY_INTERVAL : '+ DEPLOY_INTERVAL );
 console.log('ALLOWED_IP : '+ ALLOWED_IP );
 
 var routetable = {
@@ -57,14 +66,7 @@ var routetable = {
 	}
 };
 
-console.log(routetable);
-
-// **********************************************************
-// console start
-
-console.log('package_json.name : '+ package_json.name );
-console.log('package_json.version : '+ package_json.version );
-console.log('package_json.description : '+ package_json.description );
+console.log('routetable : ' + routetable);
 
 // **********************************************************
 // app
@@ -124,7 +126,7 @@ app.get('/admin/pull', function(req, res){
 	 }
 	 
 	 if (isAllowed) {
-		maps.pullDrupal(req, res);
+		maps.pullMap(req, res);
 	 }
 	 else {		
 		console.log("IP not allowed");
@@ -197,7 +199,7 @@ var server = app.listen(NODE_PORT, function () {
 
 });
 
-maps.mapDeploy("repeat");
+maps.deployMap("repeat");
 
 module.exports = app;
 
