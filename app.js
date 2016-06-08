@@ -211,7 +211,7 @@ var server = app.listen(NODE_PORT, function () {
 
 // **********************************************************
 // deploy
-maps.deployMap(true, true);
+maps.deployMap(true);
 
 // **********************************************************
 // export

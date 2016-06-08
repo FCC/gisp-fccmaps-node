@@ -21,7 +21,7 @@ var fs = require('fs-extra');
 
 var request = require('request');
 
-var async = require('async');
+//var async = require('async');
 
 // **********************************************************
 //config
@@ -37,8 +37,9 @@ var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseco
 var contentJson = [];
 var newDataJson, oldDataJson;
 var mapDirPath = './public/map';
+var forceLock = false;
 
-function createMap(mm, callback) { 
+function createMap(mm) { 
 	//return function(callback) {
 
 		var nid = mm.nid;
@@ -104,7 +105,7 @@ function createMap(mm, callback) {
 					if (err) {
 						console.log('fs.mkdir err');
 						//callback(err);	
-						return
+						return;
 					}
 					else {
 						console.log('new dir created');
@@ -124,15 +125,46 @@ function createMap(mm, callback) {
 	//}
 }
 
-function deployMap(repeat, force) {
-
+function forceMap() { // force will clear and rebuild
+	console.log('\n deployMap :  '  );
+	console.log('forceLock :  ' + forceLock );
 	try {
-	
-		if (force) { // force will clear and rebuild
+		if (forceLock) {
+			console.error('forceLock err - wait');
+			return;
+		}
+		else {
+			contentJson = '';
+			
 			if (fs.existsSync(mapDirPath)) {
-				fs.removeSync(mapDirPath);
+				
+				forceLock = true;
+				console.log('forceLock t :  ' + forceLock );
+				fs.remove(mapDirPath, function(err){
+					if (err) {
+						console.error('fs.remove err' + err);
+						return;
+					}
+					else {
+						forceLock = false;
+						console.log('forceLock f :  ' + forceLock );
+						
+						deployMap(false);					
+					}
+				});
+			
+				//fs.removeSync(mapDirPath);
 			}
 		}
+	}
+	catch (e) {
+		console.error('Exception in forceMap:'+e);		
+	}
+}
+
+function deployMap(repeat) {
+	console.log('\n deployMap :  '  );
+	try {				
 		
 		if (!fs.existsSync(mapDirPath)) {
 			fs.mkdirSync(mapDirPath);
@@ -141,7 +173,7 @@ function deployMap(repeat, force) {
 		var contentProtocol = https;
 		if (CONTENT_API.indexOf('http://') == 0) {
 			contentProtocol = http;
-			console.log('contentProtocol : http ' );
+			//console.log('contentProtocol : http ' );
 		}		
 		console.log('CONTENT_API : ' + CONTENT_API);
 		
@@ -196,7 +228,7 @@ function deployMap(repeat, force) {
 
 		if (repeat) {
 			setTimeout(function() {
-				deployMap(true, false);
+				deployMap(true);
 			}, DEPLOY_INTERVAL);
 			console.log((new Date()).toString() + ' wait...');
 		}
@@ -210,7 +242,7 @@ function deployMap(repeat, force) {
 		if (repeat) {
 			console.log('resumme deployMap loop');
 			setTimeout(function() {
-				deployMap(true, false);
+				deployMap(true);
 			}, DEPLOY_INTERVAL);
 		}
 	}
@@ -259,7 +291,6 @@ function copyFromTemplates(m, dirPath) {
 	});
 }
 
-
 function writeMapOptions(m, dirPath) {
 	//console.log('\n writeMapOptions');
 	
@@ -293,21 +324,29 @@ function pullMap(req, res) {
 	console.log('\n pullMap ');
 	
 	try {
-		var reqMsg = 'Pull Map Requested';
-		
+
 		var forceType = req.query.force;
-		//console.log('forceType : ' + forceType);
-		
-		var force = false;
-		if (forceType == 'true') {
-			force = true;
-			reqMsg += ' with Force';
+		//console.log('forceType : ' + forceType);		
+
+		if (forceType == 'true') {			
+			
+			if (forceLock) {
+				res.status(500);
+				res.send({'status': 'error', 'msg': 'Pull Map Exception: Force Locked Please Wait'});
+				return;
+			}
+			else {
+				forceMap();	
+
+				res.send({'status': 'ok', 'msg': 'Pull Map Requested with Force'});	
+				return;
+			}
 		}
-		//console.log('force : ' + force);
-		
-		deployMap(false, force);
-		
-		res.send({'status': 'ok', 'msg': reqMsg});	
+		else {
+			deployMap(false);		
+			res.send({'status': 'ok', 'msg': 'Pull Map Requested'});	
+			return;
+		}		
 	}
 	catch (e) {
 		console.error('Exception in pullMap: ' + e);
