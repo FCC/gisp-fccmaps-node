@@ -54,14 +54,9 @@ console.log('CONTENT_API : '+ CONTENT_API );
 console.log('DEPLOY_INTERVAL : '+ DEPLOY_INTERVAL );
 console.log('ALLOWED_IP : '+ ALLOWED_IP );
 
-var routeTable = {
-	"c2h": {
-		"url": "https://apps2.fcc.gov/connect2health/"                                      
-	},
-	"amr": {
-		"url": "http://amr-web-node-dev.us-west-2.elasticbeanstalk.com"                                      
-	}
-};
+// **********************************************************
+// route
+var routeTable = require('./config/route.json');
 
 console.log('routeTable : ' + JSON.stringify(routeTable));
 
