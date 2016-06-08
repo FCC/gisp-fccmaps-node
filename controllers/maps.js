@@ -24,40 +24,30 @@ var request = require('request');
 
 var async = require('async');
 
+// **********************************************************
 //config
-var config = getConfig();
 
-var CONTENT_API = config.CONTENT_API;
-var NODE_ENV = config.NODE_ENV;
+var configEnv = require('../config/env.json');
 
-var deployInterval = 300000; //microseconds
-var drupalData;
+var NODE_ENV = process.env.NODE_ENV;
+var CONTENT_API = configEnv[NODE_ENV].CONTENT_API || '/api.json';
+var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
 
-
+// **********************************************************
 
 var contentJson = [];
 var mapDataJson;
-
 
 function getConfig() {
     var configEnv = require('../config/env.json');
 
     var NODE_ENV = process.env.NODE_ENV || "NONE";
     var NODE_PORT = process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
-    var PG_DB = configEnv[NODE_ENV].PG_DB;
-    var PG_SCHEMA = configEnv[NODE_ENV].PG_SCHEMA;
-    var GEO_HOST = configEnv[NODE_ENV].GEO_HOST;
-    var GEO_SPACE = configEnv[NODE_ENV].GEO_SPACE;
+
 	var CONTENT_API = configEnv[NODE_ENV].CONTENT_API;
 	
     var ret = {
-		"NODE_ENV": NODE_ENV,
-        "NODE_PORT": NODE_PORT,
-        "PG_DB": PG_DB,
-        "PG_SCHEMA": PG_SCHEMA,
-        "GEO_HOST": GEO_HOST,
-        "GEO_SPACE": GEO_SPACE,
-		"CONTENT_API": CONTENT_API
+
     };
 
     return ret;
@@ -175,7 +165,6 @@ function mapDeploy(type) {
 			});
 			res.on("end", function() {
 		
-				//drupalData = JSON.parse(data);
 				var mapData = data;
 				mapData = mapData.replace(/\\n/g, '');
 				mapData = mapData.replace(/\\r/g, '');
@@ -202,7 +191,7 @@ function mapDeploy(type) {
 		if (type == "repeat") {
 			setTimeout(function() {
 				mapDeploy("repeat");
-			}, deployInterval);
+			}, DEPLOY_INTERVAL);
 			console.log((new Date()).toString() + " wait...");
 		}
 		else {
@@ -217,7 +206,7 @@ function mapDeploy(type) {
 			console.log('resumme mapDeploy loop');
 			setTimeout(function() {
 				mapDeploy("repeat");
-			}, deployInterval);
+			}, DEPLOY_INTERVAL);
 		}
 	}
 }
