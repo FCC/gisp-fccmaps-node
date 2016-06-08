@@ -97,11 +97,14 @@ app.use(bodyparser.urlencoded({ extended: false }));
 
 app.use('/', express.static(__dirname + '/public'));
 
-/*
-app.get('/getExistingMaps/', function(req, res){
-	maps.getExistingMaps(req, res);
+app.get('/api', function(req, res){
+	maps.getContentAPI(req, res);
 });
-*/
+app.get('/api.json', function(req, res){
+	maps.getContentAPI(req, res);
+});
+
+
 
 /*
 app.get('/pullRepo/:nid', function(req, res){
@@ -162,48 +165,29 @@ app.use('/apps', function(req, res){
 });
 
 
-
-
 // **********************************************************
 // error
 
 app.use(function(req, res) {
 
-    var err_res = {};
-    
-    err_res.responseStatus = {
-        'status': 404,
-        'type': 'Not Found',
-        'err': req.url +' Not Found'        
-    };
+console.log('\napp.use file not found ' );
+    console.error('404 file not found'); 
 
     res.status(404);
-    //res.send(err_res);    
     res.sendFile('./public/404.html');
 });
 
 app.use(function(err, req, res, next) {
     
-    //console.log('\n app.use error: ' + err );
-    console.error(err.stack);
-    
-    var err_res = {};       
-    err_res.responseStatus = {
-        'status': 500,
-        'type': 'Internal Server Error',
-        'err': err.name +': '+ err.message      
-    };  
-    
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    console.log('\n app.use error: ' + err );
+    console.error(err.stack); 
     
     res.status(500);
-    // res.send(err_res);
     res.sendFile('./public/500.html');
 });
 
 process.on('uncaughtException', function (err) {
-    //console.log('\n uncaughtException: '+ err);
+    console.log('\n uncaughtException: '+ err);
     console.error(err.stack);
 });
 
