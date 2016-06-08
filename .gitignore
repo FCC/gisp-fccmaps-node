@@ -8,6 +8,10 @@ config
 config.json
 env.json
 
+# Dynamic Directory
+public/map
+public/maps
+
 # Runtime data
 pids
 *.pid
