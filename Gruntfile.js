@@ -189,8 +189,8 @@ module.exports = function(grunt) {
                     './src/map_data/total-high-cost-distributions-rate-return-study-areas.json',
                     './src/map_data/total-line-usf-high-cost-distributions-rate-return-study-areas.json',
                     './src/map_data/net-usf-received-voice-line.json',
-                    './src/map_data/rural-health-care-pilot-program.json'
-                    //'./src/map_data/acam-ror-sa-map.json'
+                    './src/map_data/rural-health-care-pilot-program.json',
+                    './src/map_data/acam-ror-sa-map.json'
                 ],
                 dest: './src/content.json'
             }           
