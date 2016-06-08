@@ -286,7 +286,7 @@ function writeMapOptions(m, dirPath) {
 }
 
 
-function getExistingMaps(req, res) {
+function getContentAPI(req, res) {
 	var drupal = cache.get('drupal_current');
 	res.send(drupal);
 }
@@ -495,6 +495,6 @@ function getMapUrl(nid) {
 }
 
 module.exports.mapDeploy = mapDeploy;
-module.exports.getExistingMaps = getExistingMaps;
+module.exports.getContentAPI = getContentAPI;
 module.exports.pullDrupal = pullDrupal;
 module.exports.pullRepo = pullRepo;
