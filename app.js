@@ -104,14 +104,6 @@ app.get('/api.json', function(req, res){
 	maps.getContentAPI(req, res);
 });
 
-
-
-/*
-app.get('/pullRepo/:nid', function(req, res){
-	maps.pullRepo(req, res);
-});
-*/
-
 app.get('/admin/pull', function(req, res){
     var ip = req.headers['x-forwarded-for'] || 
 		req.connection.remoteAddress || 
