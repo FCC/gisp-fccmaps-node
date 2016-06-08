@@ -48,6 +48,8 @@ function createMap(mm) {
 		var map_repository_url = '';
 		var map_page_url = '';
 		var map_page_title = '';
+	
+		console.log('\n\n=========== begin processing map ===========');
 		
 		//see if there is map_page_url
 		if ( !(mm.fields.field_map_page_url.und && mm.fields.field_map_page_url.und[0].url)) {
@@ -55,15 +57,17 @@ function createMap(mm) {
 			return;
 		}
 		
-		//see if map type is int_layers
+		//see if map type is int_layers or int_iframe
 		var map_type = '';
 		if (mm.fields.field_map_type && mm.fields.field_map_type.und) {
 			map_type = mm.fields.field_map_type.und[0].value;
 		}
-		if (map_type != 'int_layers') {
-			console.log('map_type invalid');
+		console.log('map_type: ' + map_type);
+		
+		if (map_type != 'int_layers' && map_type != 'int_iframe') {
 			//callback(new Error('map_type invalid '));
-			//return;
+			console.log('return - no need to create directory for this map type');
+			return;
 		}
 		
 		//compare with oldDataJson to see if they are different
@@ -286,7 +290,28 @@ function copyFromTemplates(m, dirPath) {
 			console.error('copyFromTemplates err' + err);
 		}
 		else {
-			//console.log('templates copied to map directory');
+			//copy correct index.html based om map_type
+			var map_type = '';
+			if (m.fields.field_map_type && m.fields.field_map_type.und) {
+				map_type = m.fields.field_map_type.und[0].value;
+			}
+			
+			var pathIndex = dirPath + '/index.html';
+			var pathIndexIframe = dirPath + '/index-iframe.html';
+			if (map_type == 'int_layers') {
+				//delete index-iframe.html
+				fs.remove(pathIndexIframe, function(err){
+					if (err) return console.error(err);
+				});
+			}
+			else if (map_type == 'int_iframe') {
+				//copy index-iframe.html to index.html
+				fs.rename(pathIndexIframe, pathIndex, function(err){
+					if (err) return console.error(err);
+				});
+			}
+			
+			
 			writeMapOptions(m, dirPath);	
 		}
 	});
