@@ -164,6 +164,8 @@ app.use('/apps', function(req, res){
 
 });
 
+app.use('/', express.static(__dirname + '/public/map'));
+
 
 // **********************************************************
 // error
