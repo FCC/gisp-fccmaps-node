@@ -23,7 +23,43 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-tribal-mobility-fund-phase-i-potentially-eligible-areas.png",
+                "uri": "thumb-tribal-mobility-fund-phase-i-potentially-eligible-areas.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -69,8 +105,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/tribal-mobility-fund-phase-i-potentially-eligible-areas",
-                "title": "Tribal Mobility Fund Phase I Eligible Areas",
+                "url": "https://www.fcc.gov/reports-research/maps/tribal-mobility-fund-phase-i-potentially-eligible-areas",
+                "title": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
                 "attributes": [
 
                 ]
@@ -84,23 +120,11 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            "und": []
         },
         "field_bureau_office": {
             "und": [{
@@ -233,20 +257,20 @@
         ]
     },
     "taxonomy": [{
-        "tid": "966",
+        "tid": "956",
         "vid": "1",
-        "name": "Maps",
-        "url": "https://www.fcc.gov/tags/maps"
+        "name": "Constituencies",
+        "url": "https://www.fcc.gov/tags/constituencies"
     }, {
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
     }, {
-        "tid": "956",
+        "tid": "966",
         "vid": "1",
-        "name": "Constituencies",
-        "url": "https://www.fcc.gov/tags/constituencies"
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "956",
         "vid": "1",

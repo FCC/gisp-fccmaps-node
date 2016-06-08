@@ -190,7 +190,16 @@ module.exports = function(grunt) {
                     './src/map_data/total-line-usf-high-cost-distributions-rate-return-study-areas.json',
                     './src/map_data/net-usf-received-voice-line.json',
                     './src/map_data/rural-health-care-pilot-program.json',
-                    './src/map_data/acam-ror-sa-map.json'
+                    './src/map_data/acam-ror-sa-map.json',
+                    './src/map_data/connect-america-phase-ii-final-eligible-areas-map.json',
+                    './src/map_data/connect-america-phase-ii-initial-eligible-areas-map.json',
+                    './src/map_data/fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0.json',
+                    './src/map_data/connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48.json',
+                    './src/map_data/connect-america-fund-caf-phase-i-round-two.json',
+                    './src/map_data/connect-america-fund-caf-phase-i.json',
+                    './src/map_data/wireline-maximum-advertised-download-speed.json',
+                    './src/map_data/regulatory-type-holding-company-level-study-area.json',
+                    './src/map_data/connect-compete-home-broadband-coverage-map.json'
                 ],
                 dest: './src/content.json'
             }           

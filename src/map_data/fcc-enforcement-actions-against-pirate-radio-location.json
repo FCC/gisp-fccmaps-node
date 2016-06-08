@@ -4,7 +4,7 @@
     "created": "2016-05-27",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/fcc-enforcement-actions-against-pirate-radio-location",
+    "webUrl": "https://fcc.github.io/pirateaction2/index.html",
     "tnid": "0",
     "body": null,
     "vid": "187946",
@@ -153,7 +153,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/fcc-enforcement-actions-against-pirate-radio-location",
+                "url": "https://maps.fcc.gov/fcc-enforcement-actions-against-pirate-radio-location",
                 "title": "FCC Enforcement Actions Against Pirate Radio by Location",
                 "attributes": [
 

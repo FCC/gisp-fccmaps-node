@@ -1,10 +1,10 @@
 {
     "nid": "28002",
-    "title": "Locations Unserved by Fixed Broadband ",
+    "title": "Connect America Fund (CAF) Phase I Round Two",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/locations-unserved-fixed-broadband",
+    "webUrl": "http://10.154.68.187/reports-research/maps/connect-america-fund-caf-phase-i-round-two",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16,14 +16,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map was created to fulfill the requirements of the Commission’s November 19 Further Notice of Proposed Rulemaking. It shows areas that are reported on the National Broadband Map as unserved by fixed broadband with advertised speeds of 3 Mbps downstream and 768 kbps upstream. The map relies on the current version of the National Broadband Map, using data as of December 31, 2011. ",
+                "value": "<p>This map shows the areas where new broadband may be deployed as a result of the second round of Connect America Phase I. In their initial elections, price cap carriers requested over $385 million in Connect America Phase I incremental support, committing to bring broadband to over 600,000 locations that previously lacked access by 2016. Some of these carrier acceptances are contingent upon the carriers prevailing in challenges regarding whether certain census blocks are unserved. Furthermore, after providing the Commission with notice, carriers have the ability to alter deployment plans to other unserved census blocks, which could result in more or less funding being allocated to any given area. The map shows where funding has been authorized to date; the map will be updated as the FCC completes its review of the challenges.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map was created to fulfill the requirements of the Commission’s November 19 Further Notice of Proposed Rulemaking. It shows areas that are reported on the National Broadband Map as unserved by fixed broadband with advertised speeds of 3 Mbps downstream and 768 kbps upstream. The map relies on the current version of the National Broadband Map, using data as of December 31, 2011. ",
+                "safe_value": "<p>This map shows the areas where new broadband may be deployed as a result of the second round of Connect America Phase I. In their initial elections, price cap carriers requested over $385 million in Connect America Phase I incremental support, committing to bring broadband to over 600,000 locations that previously lacked access by 2016. Some of these carrier acceptances are contingent upon the carriers prevailing in challenges regarding whether certain census blocks are unserved. Furthermore, after providing the Commission with notice, carriers have the ability to alter deployment plans to other unserved census blocks, which could result in more or less funding being allocated to any given area. The map shows where funding has been authorized to date; the map will be updated as the FCC completes its review of the challenges.</p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-connect-america-fund-caf-phase-i-round-two.png",
+                "uri": "thumb-connect-america-fund-caf-phase-i-round-two.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -55,7 +91,7 @@
         ],
         "field_subtitle": {
             "und": [{
-                "value": ""
+                "value": "as of Sept. 2014"
             }]
         },
         "field_featured": [
@@ -69,8 +105,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/locations-unserved-fixed-broadband",
-                "title": "Locations Unserved by Fixed Broadband ",
+                "url": "https://www.fcc.gov/reports-research/maps/connect-america-fund-caf-phase-i-round-two",
+                "title": "Connect America Fund (CAF) Phase I Round Two",
                 "attributes": [
 
                 ]
@@ -84,7 +120,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -93,7 +129,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition",
+                "value": "Wireline Communications",
                 "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
@@ -130,9 +166,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.unserved_fixed_broadband",
+                    "value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.unserved_fixed_broadband"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi"
                 }]
             },
             "field_layer_format": {
@@ -142,9 +178,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc.unserved_fixed_broadband",
+                    "value": "fcc.kr8dunmi",
                     "format": null,
-                    "safe_value": "fcc.unserved_fixed_broadbandp"
+                    "safe_value": "fcc.kr8dunmi"
                 }]
             },
             "field_layer_opacity": {
@@ -159,9 +195,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "Locations Unserved by Fixed Broadband ",
+                    "value": "Connect America Phase II - Final Eligible Areas Map",
                     "format": null,
-                    "safe_value": "Locations Unserved by Fixed Broadband "
+                    "safe_value": "Connect America Phase II - Final Eligible Areas Map"
                 }]
             },
             "field_layer_type": {
@@ -244,7 +280,12 @@
 
         ]
     },
-    "taxonomy": [{
+    "taxonomy": [{ 
+        "tid": "966",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
+    }, {
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
@@ -254,6 +295,11 @@
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service ",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
