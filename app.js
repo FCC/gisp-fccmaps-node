@@ -26,6 +26,7 @@ var morgan = require('morgan');
 var cors = require('cors');
 var bodyparser = require('body-parser');
 var request = require('request');
+
 var package_json = require('./package.json');
 var maps = require('./controllers/maps.js');
 
@@ -53,20 +54,16 @@ console.log('CONTENT_API : '+ CONTENT_API );
 console.log('DEPLOY_INTERVAL : '+ DEPLOY_INTERVAL );
 console.log('ALLOWED_IP : '+ ALLOWED_IP );
 
-var routetable = {
+var routeTable = {
 	"c2h": {
-		"name": "c2h",
-		"route": "connect2health",
-		"host": "https://apps2.fcc.gov/connect2health/"                                      
+		"url": "https://apps2.fcc.gov/connect2health/"                                      
 	},
 	"amr": {
-		"name": "amr",
-		"route": "connect2health",
-		"host": "http://amr-web-node-dev.us-west-2.elasticbeanstalk.com/"                                      
+		"url": "http://amr-web-node-dev.us-west-2.elasticbeanstalk.com"                                      
 	}
 };
 
-console.log('routetable : ' + routetable);
+console.log('routeTable : ' + JSON.stringify(routeTable));
 
 // **********************************************************
 // app
@@ -143,26 +140,42 @@ app.get('/admin/pull', function(req, res){
 });
 
 //proxy routing
-app.use('/apps', function(req, res){
-
-	var appid = req.url.replace(/\//g, '');	
-	console.log(appid);
+app.use('/:appId', function(req, res, next){
 	
-	if (routetable[appid]) {
-		var url = routetable[appid].host;
-		console.log(url);
-		req.pipe(request(url)).pipe(res);
+	//console.log('\n proxy routing ' );
+
+	var appId = req.params.appId; //req.url.replace(/\//g, '');	
+	console.log('appId ' + appId);
+	/*
+	console.log('req.url ' + req.url);
+	console.log('req.get host ' + req.get('host'));
+	console.log('req.originalUrl ' + req.originalUrl);
+	console.log('req.host ' + req.host);
+	console.log('req.path ' + req.path);
+	*/
+	
+	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
+		console.log('trailing slash redirect ');		
+		res.redirect(301, req.originalUrl + '/');
+	}
+	
+	if (routeTable[appId]) {
+		var appUrl = routeTable[appId].url;
+		console.log('appUrl : ' + appUrl);
+				
+		if (appUrl.slice(-1) == '/' ){
+			appUrl = appUrl.slice(0, -1);		
+		}
+		var proxyUrl = appUrl + req.url;
+		console.log('proxyUrl : ' + proxyUrl);
+		
+		req.pipe(request(proxyUrl)).pipe(res);
 	}
 	else {
 		console.log('no app id');
-		res.status(404);
-		//res.sendFile('/public/404.html');
-		res.sendFile('404.html', { root: __dirname + '/public' });
+		next(); 
 	}
-	
-	
-  //req.pipe(request(url)).pipe(res);
-//console.log(req.url);
+
 
 });
 

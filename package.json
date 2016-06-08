@@ -1,6 +1,6 @@
 {
   "name": "fccmaps",
-  "version": "0.0.9",
+  "version": "0.2.0",
   "description": "FCC GISP Maps - Node.js",
   "main": "app.js",
   "scripts": {
