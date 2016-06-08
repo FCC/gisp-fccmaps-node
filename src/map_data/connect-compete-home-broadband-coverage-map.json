@@ -1,10 +1,10 @@
 {
     "nid": "178553",
-    "title": "Section 706 Mobile Data Deployment Map",
+    "title": "Connect to Compete Home Broadband Coverage Map",
     "created": "2016-03-10",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/section-706-mobile-data-deployment-map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/connect-compete-home-broadband-coverage-map",
     "tnid": "0",
     "body": null,
     "vid": "187939",
@@ -14,10 +14,10 @@
         ],
         "field_description": {
             "und": [{
-                "value": "{ \"bureau\": \"WCB\", \"title\": \"Section-706-Mobile-Broadband\", \"description\": \"Section 706 Fixed Data Deployment Map\", \"mapcenter\": {\"latitude\": \"50\",\"longitude\":\"-105\"}, \"mapzoom\":{\"initialzoom\":\"3\", \"maxzoom\":\"15\",\"minzoom\": \"3\"}, \"basemap\": [\"street\", \"satellite\", \"terrain\"], \"scalecontrol\": \"no\", \"search\": \"yes\", \"attribution\": \"FCC Maps\", \"layers\": [ { \"title\": \"Section 706 Mobile\", \"layertype\": \"mapbox\", \"mapid\": \"fcc.Section-706-Mobile-Data-Deployment-Map\", \"checked\": \"yes\" }, { \"layertype\": \"geoserver\", \"geohost\": \"http://www.broadbandmap.gov\", \"geospace\": \"fcc\", \"layername\": \"fcc:bpr_tribal\", \"style\": \"bpr_tribal\", \"checked\": \"no\" } ], \"legends\": [ { \"legendcolor\": \"#99ff00\", \"legendtext\": \"Section 706 Fixed Data Deployment Map\" }, { \"legendcolor\": \"#999999\", \"legendtext\": \"Tribal land\" } ] }\r\n",
+                "value": "<p>Connect to Compete is a national private and nonprofit sector partnership created to increase broadband adoption and digital literacy training in disadvantaged communities throughout the United States. The initiative is designed to help residents improve outcomes in education, health, and employment through broadband opportunities and technology solutions. This map was created by selecting participating Internet Service Providers from the National Broadband Map. Providers participating in the Connect to Compete Home Broadband Coverage program are the following: Comcast, Time Warner Cable, Charter, Cablevision, Bright House Networks, Suddenlink, Insight, Midcontinent, GCI, Bend Cable, Mediacom, Eagle Communications, and Sjoberg. At smaller scales, all Connect to Compete coverage areas are depicted in bright green; users can zoom in to view individual provider coverage areas. Unpopulated areas are shown in grey. To learn more about Connect to Compete, visit <a href=\"http://www.fcc.gov/\">www.fcc.gov</a> or <a href=\"www.Connect2Compete.org\">www.Connect2Compete.org</a> (source data as of 12/2010).</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "{ \"bureau\": \"WCB\", \"title\": \"Section-706-Mobile-Broadband\", \"description\": \"Section 706 Fixed Data Deployment Map\", \"mapcenter\": {\"latitude\": \"50\",\"longitude\":\"-105\"}, \"mapzoom\":{\"initialzoom\":\"3\", \"maxzoom\":\"15\",\"minzoom\": \"3\"}, \"basemap\": [\"street\", \"satellite\", \"terrain\"], \"scalecontrol\": \"no\", \"search\": \"yes\", \"attribution\": \"FCC Maps\", \"layers\": [ { \"title\": \"Section 706 Mobile\", \"layertype\": \"mapbox\", \"mapid\": \"fcc.Section-706-Mobile-Data-Deployment-Map\", \"checked\": \"yes\" }, { \"layertype\": \"geoserver\", \"geohost\": \"<a href=\"http://www.broadbandmap.gov\">http://www.broadbandmap.gov</a>\", \"geospace\": \"fcc\", \"layername\": \"fcc:bpr_tribal\", \"style\": \"bpr_tribal\", \"checked\": \"no\" } ], \"legends\": [ { \"legendcolor\": \"#99ff00\", \"legendtext\": \"Section 706 Fixed Data Deployment Map\" }, { \"legendcolor\": \"#999999\", \"legendtext\": \"Tribal land\" } ] }\n",
+                "safe_value": "<p>Connect to Compete is a national private and nonprofit sector partnership created to increase broadband adoption and digital literacy training in disadvantaged communities throughout the United States. The initiative is designed to help residents improve outcomes in education, health, and employment through broadband opportunities and technology solutions. This map was created by selecting participating Internet Service Providers from the National Broadband Map. Providers participating in the Connect to Compete Home Broadband Coverage program are the following: Comcast, Time Warner Cable, Charter, Cablevision, Bright House Networks, Suddenlink, Insight, Midcontinent, GCI, Bend Cable, Mediacom, Eagle Communications, and Sjoberg. At smaller scales, all Connect to Compete coverage areas are depicted in bright green; users can zoom in to view individual provider coverage areas. Unpopulated areas are shown in grey. To learn more about Connect to Compete, visit <a href=\"http://www.fcc.gov/\">www.fcc.gov</a> or <a href=\"www.Connect2Compete.org\">www.Connect2Compete.org</a> (source data as of 12/2010).</p>",
                 "safe_summary": ""
             }]
         },
@@ -25,8 +25,8 @@
             "und": [{
                 "fid": "3477",
                 "uid": "1798",
-                "filename": "fcc-logo-lg.png",
-                "uri": "https://www.fcc.gov/sites/all/themes/fcc/images/fcc-logo-lg.png",
+                "filename": "thumb-connect-compete-home-broadband-coverage-map.png",
+                "uri": "thumb-connect-compete-home-broadband-coverage-map.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -63,7 +63,7 @@
         ],
         "field_archived": {
             "und": [{
-                "value": "0"
+                "value": "1"
             }]
         },
         "field_related_content": [
@@ -96,14 +96,14 @@
         },
         "field_subtitle": {
             "und": [{
-                "value": "Showing section 706 mobile data deployment",
+                "value": "",
                 "format": null,
-                "safe_value": "Showing section 706 mobile data deployment"
+                "safe_value": ""
             }]
         },
         "field_featured": {
             "und": [{
-                "value": "1"
+                "value": "0"
             }]
         },
         "field_map_display_date": {
@@ -161,8 +161,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/section-706-mobile-data",
-                "title": "Section 706 Mobile Data",
+                "url": "https://www.fcc.gov/reports-research/maps/connect-compete-home-broadband-coverage-map",
+                "title": "Connect to Compete Home Broadband Coverage Map",
                 "attributes": [
 
                 ]
@@ -176,7 +176,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -410,9 +410,15 @@
         }
     },
     "taxonomy": [{
-        "tid": "526",
-        "vid": "7",
-        "name": "Engineering & Technology"
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }],
     "uri": "http://10.154.68.187/api/content/178553"
 }

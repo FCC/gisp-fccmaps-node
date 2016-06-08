@@ -23,7 +23,43 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-800-mhz-cellular-block-cgsas.png",
+                "uri": "thumb-800-mhz-cellular-block-cgsas.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -69,7 +105,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/800-mhz-cellular-–-block-cgsas",
+                "url": "https://www.fcc.gov/reports-research/maps/800-mhz-cellular-%E2%80%93-block-cgsas",
                 "title": "800 MHz Cellular – A Block CGSAs",
                 "attributes": [
 
@@ -84,7 +120,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -269,6 +305,21 @@
         ]
     },
     "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "800 MHz",
+        "url": "https://www.fcc.gov/tags/800-mhz-0"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Cellular",
+        "url": "https://www.fcc.gov/tags/cellular"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
@@ -276,28 +327,8 @@
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports",
-        "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Mobile Broadband",
-        "url": "https://www.fcc.gov/tags/mobile-broadband"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Mobile Fund",
-        "url": "https://www.fcc.gov/tags/mobility-fund-0"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Mobility Fund Phase 1",
-        "url": "https://www.fcc.gov/tags/mobility-fund-phase-1"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Spectrum",
-        "url": "https://www.fcc.gov/tags/spectrum-0"
+        "name": "Wireless Services",
+        "url": "https://www.fcc.gov/tags/wireless-services"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

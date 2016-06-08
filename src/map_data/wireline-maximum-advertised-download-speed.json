@@ -1,10 +1,10 @@
 {
     "nid": "178553",
-    "title": "Section 706 Mobile Data Deployment Map",
+    "title": "Wireline Maximum Advertised Download Speed",
     "created": "2016-03-10",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/section-706-mobile-data-deployment-map",
+    "webUrl": "http://10.154.68.187/reports-research/maps/wireline-maximum-advertised-download-speed",
     "tnid": "0",
     "body": null,
     "vid": "187939",
@@ -14,10 +14,10 @@
         ],
         "field_description": {
             "und": [{
-                "value": "{ \"bureau\": \"WCB\", \"title\": \"Section-706-Mobile-Broadband\", \"description\": \"Section 706 Fixed Data Deployment Map\", \"mapcenter\": {\"latitude\": \"50\",\"longitude\":\"-105\"}, \"mapzoom\":{\"initialzoom\":\"3\", \"maxzoom\":\"15\",\"minzoom\": \"3\"}, \"basemap\": [\"street\", \"satellite\", \"terrain\"], \"scalecontrol\": \"no\", \"search\": \"yes\", \"attribution\": \"FCC Maps\", \"layers\": [ { \"title\": \"Section 706 Mobile\", \"layertype\": \"mapbox\", \"mapid\": \"fcc.Section-706-Mobile-Data-Deployment-Map\", \"checked\": \"yes\" }, { \"layertype\": \"geoserver\", \"geohost\": \"http://www.broadbandmap.gov\", \"geospace\": \"fcc\", \"layername\": \"fcc:bpr_tribal\", \"style\": \"bpr_tribal\", \"checked\": \"no\" } ], \"legends\": [ { \"legendcolor\": \"#99ff00\", \"legendtext\": \"Section 706 Fixed Data Deployment Map\" }, { \"legendcolor\": \"#999999\", \"legendtext\": \"Tribal land\" } ] }\r\n",
+                "value": "<p>This map shows the maximum advertised download speed by any wireline broadband provider for each US Census block less than 2 square miles. Source: National Broadband Map as of June 2011. </p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "{ \"bureau\": \"WCB\", \"title\": \"Section-706-Mobile-Broadband\", \"description\": \"Section 706 Fixed Data Deployment Map\", \"mapcenter\": {\"latitude\": \"50\",\"longitude\":\"-105\"}, \"mapzoom\":{\"initialzoom\":\"3\", \"maxzoom\":\"15\",\"minzoom\": \"3\"}, \"basemap\": [\"street\", \"satellite\", \"terrain\"], \"scalecontrol\": \"no\", \"search\": \"yes\", \"attribution\": \"FCC Maps\", \"layers\": [ { \"title\": \"Section 706 Mobile\", \"layertype\": \"mapbox\", \"mapid\": \"fcc.Section-706-Mobile-Data-Deployment-Map\", \"checked\": \"yes\" }, { \"layertype\": \"geoserver\", \"geohost\": \"<a href=\"http://www.broadbandmap.gov\">http://www.broadbandmap.gov</a>\", \"geospace\": \"fcc\", \"layername\": \"fcc:bpr_tribal\", \"style\": \"bpr_tribal\", \"checked\": \"no\" } ], \"legends\": [ { \"legendcolor\": \"#99ff00\", \"legendtext\": \"Section 706 Fixed Data Deployment Map\" }, { \"legendcolor\": \"#999999\", \"legendtext\": \"Tribal land\" } ] }\n",
+                "safe_value": "<p>This map shows the maximum advertised download speed by any wireline broadband provider for each US Census block less than 2 square miles. Source: National Broadband Map as of June 2011. ",
                 "safe_summary": ""
             }]
         },
@@ -25,8 +25,8 @@
             "und": [{
                 "fid": "3477",
                 "uid": "1798",
-                "filename": "fcc-logo-lg.png",
-                "uri": "https://www.fcc.gov/sites/all/themes/fcc/images/fcc-logo-lg.png",
+                "filename": "thumb-wireline-maximum-advertised-download-speed.png",
+                "uri": "thumb-wireline-maximum-advertised-download-speed.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -63,7 +63,7 @@
         ],
         "field_archived": {
             "und": [{
-                "value": "0"
+                "value": "1"
             }]
         },
         "field_related_content": [
@@ -96,14 +96,14 @@
         },
         "field_subtitle": {
             "und": [{
-                "value": "Showing section 706 mobile data deployment",
+                "value": "",
                 "format": null,
-                "safe_value": "Showing section 706 mobile data deployment"
+                "safe_value": ""
             }]
         },
         "field_featured": {
             "und": [{
-                "value": "1"
+                "value": "0"
             }]
         },
         "field_map_display_date": {
@@ -161,8 +161,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/section-706-mobile-data",
-                "title": "Section 706 Mobile Data",
+                "url": "https://www.fcc.gov/reports-research/maps/wireline-maximum-advertised-download-speed",
+                "title": "Wireline Maximum Advertised Download Speed",
                 "attributes": [
 
                 ]
@@ -176,7 +176,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -410,9 +410,15 @@
         }
     },
     "taxonomy": [{
-        "tid": "526",
-        "vid": "7",
-        "name": "Engineering & Technology"
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }],
     "uri": "http://10.154.68.187/api/content/178553"
 }

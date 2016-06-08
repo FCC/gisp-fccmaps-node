@@ -1,10 +1,10 @@
 {
     "nid": "28002",
-    "title": "Locations Unserved by Fixed Broadband ",
+    "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $48",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/locations-unserved-fixed-broadband",
+    "webUrl": "http://10.154.68.187/reports-research/maps/connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16,14 +16,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map was created to fulfill the requirements of the Commission’s November 19 Further Notice of Proposed Rulemaking. It shows areas that are reported on the National Broadband Map as unserved by fixed broadband with advertised speeds of 3 Mbps downstream and 768 kbps upstream. The map relies on the current version of the National Broadband Map, using data as of December 31, 2011. ",
+                "value": "<p>The Wireline Competition Bureau provides the following illustrative map displaying the areas that would potentially be eligible for the Connect America Fund Phase II offer of model-based support to price cap carriers, based on the output from version 4.0 of the Connect America Cost Model (CAM v4.0) (see <a href=\"http://www.fcc.gov/maps\">http://www.fcc.gov/maps</a>). The areas that are shown as eligible for the offer of model-based support are consistent with the previously posted CAM v4.0 Illustrative Results that utilize a Funding Threshold of $48. In addition to providing a visualization of the areas potentially eligible for the offer of model-based support, the map displays the areas below the Funding Threshold, above the Extremely High Cost Threshold, and areas potentially excluded from eligibility due to the presence of other providers (based on State Broadband Initiative data and FCC Form 477 data). Additional details related to the CAM v4.0 release and supporting information can be found on the fcc.gov site (see <a href=\"http://www.fcc.gov/encyclopedia/price-cap-resources\">http://www.fcc.gov/encyclopedia/price-cap-resources</a>).</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map was created to fulfill the requirements of the Commission’s November 19 Further Notice of Proposed Rulemaking. It shows areas that are reported on the National Broadband Map as unserved by fixed broadband with advertised speeds of 3 Mbps downstream and 768 kbps upstream. The map relies on the current version of the National Broadband Map, using data as of December 31, 2011. ",
+                "safe_value": "<p>The Wireline Competition Bureau provides the following illustrative map displaying the areas that would potentially be eligible for the Connect America Fund Phase II offer of model-based support to price cap carriers, based on the output from version 4.0 of the Connect America Cost Model (CAM v4.0) (see <a href=\"http://www.fcc.gov/maps\">http://www.fcc.gov/maps</a>). The areas that are shown as eligible for the offer of model-based support are consistent with the previously posted CAM v4.0 Illustrative Results that utilize a Funding Threshold of $48. In addition to providing a visualization of the areas potentially eligible for the offer of model-based support, the map displays the areas below the Funding Threshold, above the Extremely High Cost Threshold, and areas potentially excluded from eligibility due to the presence of other providers (based on State Broadband Initiative data and FCC Form 477 data). Additional details related to the CAM v4.0 release and supporting information can be found on the fcc.gov site (see <a href=\"http://www.fcc.gov/encyclopedia/price-cap-resources\">http://www.fcc.gov/encyclopedia/price-cap-resources</a>).</p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-fcc-connect-america-fund-phase-ii-cam-v40illustrative-map-funding-threshold-48.png",
+                "uri": "thumb-connect-america-fund-phase-ii-cam-v40illustrative-map-funding-threshold-48.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -55,7 +91,7 @@
         ],
         "field_subtitle": {
             "und": [{
-                "value": ""
+                "value": "as of Sept. 2014"
             }]
         },
         "field_featured": [
@@ -69,8 +105,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/locations-unserved-fixed-broadband",
-                "title": "Locations Unserved by Fixed Broadband ",
+                "url": "https://www.fcc.gov/reports-research/maps/connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48",
+                "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $48",
                 "attributes": [
 
                 ]
@@ -84,7 +120,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -93,7 +129,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition",
+                "value": "Wireline Communications",
                 "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
@@ -130,9 +166,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.unserved_fixed_broadband",
+                    "value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.unserved_fixed_broadband"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi"
                 }]
             },
             "field_layer_format": {
@@ -142,9 +178,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc.unserved_fixed_broadband",
+                    "value": "fcc.kr8dunmi",
                     "format": null,
-                    "safe_value": "fcc.unserved_fixed_broadbandp"
+                    "safe_value": "fcc.kr8dunmi"
                 }]
             },
             "field_layer_opacity": {
@@ -159,9 +195,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "Locations Unserved by Fixed Broadband ",
+                    "value": "Connect America Phase II - Final Eligible Areas Map",
                     "format": null,
-                    "safe_value": "Locations Unserved by Fixed Broadband "
+                    "safe_value": "Connect America Phase II - Final Eligible Areas Map"
                 }]
             },
             "field_layer_type": {
@@ -244,7 +280,17 @@
 
         ]
     },
-    "taxonomy": [{
+    "taxonomy": [{ 
+        "tid": "966",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost) - Price Cap Carriers",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost-price-cap-carriers"
+    }, {
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
@@ -254,6 +300,11 @@
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service ",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

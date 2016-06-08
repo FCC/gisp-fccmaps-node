@@ -92,9 +92,9 @@
         },
         "field_bureau_office": {
             "und": [{
-                "tid": "WTB",
-                "value": "Wireless Telecommunications",
-                "url": "https://www.fcc.gov/wireless-telecommunications"
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": [
