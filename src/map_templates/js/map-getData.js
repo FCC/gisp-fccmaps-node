@@ -252,7 +252,7 @@ function createMapCard(mapMeta) {
         card += subtitle;
         // TODO: populate description with actual text
         // card += '<p class="card__desc">' + mapMeta.descriptions[i] + '</p>';
-        card += '<p class="card__desc">' + mapMeta.descriptions[i] + '</p>';
+        card += '<div class="card__desc">' + mapMeta.descriptions[i] + '</div>';
         card += '<a class="link-viewMore" href="' + url_bookmark + '">View more&#8230;</a>';
         card += '<ul class="list-unstyled"><li class="tag"><span>Data, Maps, Reports</span></li><li class="tag"><span>Maps</span></li></ul></div>';
         card += '<div class="card__footer"><button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false" aria-controls="t' + i + '"><span class="icon icon-caret-right"></span>View details</button></div>';
@@ -292,7 +292,7 @@ function populateMaps(data) {
 }
 
 function getMapData() {
-    var url = '/getExistingMaps';
+    var url = '/api.json';
 
     $.ajax(url, {
         type: 'GET',

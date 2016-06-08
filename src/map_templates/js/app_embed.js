@@ -945,7 +945,7 @@ function updateText() {
 
 
 function updateMapList() {
-    var url = "/getExistingMaps";
+    var url = "/api.json";
     $.ajax(url, {
         type: "GET",
         url: url,

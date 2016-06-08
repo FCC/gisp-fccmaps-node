@@ -1,6 +1,18 @@
+/*
+ _______   ______   ______    .___  ___.      ___      .______     _______.
+|   ____| /      | /      |   |   \/   |     /   \     |   _  \   /       |
+|  |__   |  ,----'|  ,----'   |  \  /  |    /  ^  \    |  |_)  | |   (----`
+|   __|  |  |     |  |        |  |\/|  |   /  /_\  \   |   ___/   \   \    
+|  |     |  `----.|  `----.   |  |  |  |  /  _____  \  |  |   .----)   |   
+|__|      \______| \______|   |__|  |__| /__/     \__\ | _|   |_______/    
+
+*/
+
+// **********************************************************
 
 "use strict";
 
+// **********************************************************
 // require 
 
 var http = require("http");
@@ -14,58 +26,9 @@ var morgan = require('morgan');
 var cors = require('cors');
 var bodyparser = require('body-parser');
 var request = require('request');
+
 var package_json = require('./package.json');
 var maps = require('./controllers/maps.js');
-
-// **********************************************************
-// config
-
-var configEnv = require('./config/env.json');
-
-var NODE_ENV = process.env.NODE_ENV || "NONE";
-var NODE_PORT =  process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
-var PG_DB = configEnv[NODE_ENV].PG_DB;
-var PG_SCHEMA = configEnv[NODE_ENV].PG_SCHEMA;
-var GEO_HOST = configEnv[NODE_ENV].GEO_HOST;
-var GEO_SPACE = configEnv[NODE_ENV].GEO_SPACE;
-var DRUPAL_API = configEnv[NODE_ENV].DRUPAL_API;
-var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
-
-
-console.log('NODE_ENV : '+ NODE_ENV );
-console.log('NODE_PORT : '+ NODE_PORT );
-console.log('PG_DB : '+ PG_DB );
-console.log('PG_SCHEMA : '+ PG_SCHEMA );
-console.log('GEO_HOST : '+ GEO_HOST );
-console.log('GEO_SPACE : '+ GEO_SPACE );
-console.log('DRUPAL_API : '+ DRUPAL_API );
-console.log('ALLOWED_IP : '+ ALLOWED_IP );
-
-var routetable = {
-	"c2h":	{
-			"name": "c2h",
-                                "route": "connect2health",
-                                "host": "https://apps2.fcc.gov/connect2health/"                                      
-                },
-                "amr" :      {
-                                "name": "amr",
-                                "route": "connect2health",
-                                "host": "http://amr-web-node-dev.us-west-2.elasticbeanstalk.com/"                                      
-                },
-
-                "yahoo" :      {
-                                "name": "yahoo",
-                                "route": "yahoo",
-                                "host": "http://www.yahoo.com/"                                      
-                },
-				                "google" :      {
-                                "name": "google",
-                                "route": "google",
-                                "host": "http://www.google.com/"                                      
-                }
-};
-
-console.log(routetable);
 
 // **********************************************************
 // console start
@@ -75,13 +38,34 @@ console.log('package_json.version : '+ package_json.version );
 console.log('package_json.description : '+ package_json.description );
 
 // **********************************************************
+// config
+
+var configEnv = require('./config/env.json');
+
+var NODE_ENV = process.env.NODE_ENV;
+var NODE_PORT =  process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
+var CONTENT_API = configEnv[NODE_ENV].CONTENT_API || '/api.json';
+var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
+var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
+
+console.log('NODE_ENV : '+ NODE_ENV );
+console.log('NODE_PORT : '+ NODE_PORT );
+console.log('CONTENT_API : '+ CONTENT_API );
+console.log('DEPLOY_INTERVAL : '+ DEPLOY_INTERVAL );
+console.log('ALLOWED_IP : '+ ALLOWED_IP );
+
+// **********************************************************
+// route
+var routeTable = require('./config/route.json');
+
+console.log('routeTable : ' + JSON.stringify(routeTable));
+
+// **********************************************************
 // app
 
 var app = express();
 
 app.use(cors());
-
-
 
 // **********************************************************
 // log
@@ -96,8 +80,6 @@ var accessLogStream = fsr.getStream({
 });
 app.use(morgan('combined', {stream: accessLogStream}))
 
-
-
 // **********************************************************
 // parser
 
@@ -108,102 +90,91 @@ app.use(bodyparser.urlencoded({ extended: false }));
 // route
 
 app.use('/', express.static(__dirname + '/public'));
-app.use('/api-docs', express.static(__dirname + '/public/api-docs.html'));
 
-app.param('uuid', function(req, res, next, uuid){
-    // check format of uuid
-    if(!serverCheck.checkUUID(uuid)){
-        return serverSend.sendErr(res, 'json', 'not_found');
-    } else {
-        next();
-    }
-})
-
-app.param('ext', function(req, res, next, ext) {
-    // check format of id
-    var route = req.route.path;
-    //console.log('\n  route : ' + route );
-    
-    if (!route === '/download/:uuid.:ext') {    // skip for downloads
-        if(!serverCheck.checkExt(ext)){
-            return serverSend.sendErr(res, 'json', 'invalid_ext');
-        } else {
-            next();
-        }
-    }
-    else {
-        next();
-    }
+app.get('/api', function(req, res){
+	maps.getContentAPI(req, res);
 });
-
-app.get('/', function(req, res){
-  res.sendfile('./public/index.html');
-});
-
-app.get('/getExistingMaps/', function(req, res){
-maps.getExistingMaps(req, res);
-});
-
-
-
-app.get('/pullRepo/:nid', function(req, res){
-maps.pullRepo(req, res);
+app.get('/api.json', function(req, res){
+	maps.getContentAPI(req, res);
 });
 
 app.get('/admin/pull', function(req, res){
+	
     var ip = req.headers['x-forwarded-for'] || 
-    req.connection.remoteAddress || 
-    req.socket.remoteAddress ||
-    req.connection.socket.remoteAddress;
+		req.connection.remoteAddress || 
+		req.socket.remoteAddress ||
+		req.connection.socket.remoteAddress;
+		
+	console.log('ip : ' + ip );
 
 	//check allowed IP
 	var isAllowed = false;
 	if (ip != undefined) {
+	
 		ip = ip.replace(/ +/g, '').split(',')[0]
 		for (var i = 0; i < ALLOWED_IP.length; i++) {
 			var re = new RegExp('^' + ALLOWED_IP[i].replace('*', ''));
 			if (ip.match(re)) {
 				isAllowed = true;
 			}
-		 }
-	 
+		 }	 
 	 }
 	 
 	 if (isAllowed) {
-		maps.pullDrupal(req, res);
+		console.log('maps.pullMap isAllowed');
+		maps.pullMap(req, res);
 	 }
-	 else {
-		console.log("IP not allowed");
-		res.send({"status": "error", "msg": "not allowed"});
+	 else {		
+		console.log('IP not allowed');
+		//res.send({'status': 'error', 'msg': 'not allowed'});
+		res.status(404);
+		//res.sendFile('/public/404.html');
+		res.sendFile('404.html', { root: __dirname + '/public' });
 	 }
 	 
 });
 
-
 //proxy routing
-app.use('/apps', function(req, res){
-
-	var appid = req.url.replace(/\//g, '');
+app.use('/:appId', function(req, res, next){
 	
-	console.log(appid);
-	if (routetable[appid]) {
-	var url = routetable[appid].host;
-	console.log(url);
-	req.pipe(request(url)).pipe(res);
+	//console.log('\n proxy routing ' );
+
+	var appId = req.params.appId; //req.url.replace(/\//g, '');	
+	console.log('appId ' + appId);
+	/*
+	console.log('req.url ' + req.url);
+	console.log('req.get host ' + req.get('host'));
+	console.log('req.originalUrl ' + req.originalUrl);
+	console.log('req.host ' + req.host);
+	console.log('req.path ' + req.path);
+	*/
+	
+	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
+		console.log('trailing slash redirect ');		
+		res.redirect(301, req.originalUrl + '/');
+	}
+	
+	if (routeTable[appId]) {
+		var appUrl = routeTable[appId].url;
+		console.log('appUrl : ' + appUrl);
+				
+		if (appUrl.slice(-1) == '/' ){
+			appUrl = appUrl.slice(0, -1);		
+		}
+		var proxyUrl = appUrl + req.url;
+		console.log('proxyUrl : ' + proxyUrl);
+		
+		req.pipe(request(proxyUrl)).pipe(res);
 	}
 	else {
-	console.log('no id');
-	res.sendfile('./public/404.html');
+		console.log('no app id');
+		next(); 
 	}
 
-	
-	
-  //req.pipe(request(url)).pipe(res);
-//console.log(req.url);
 
 });
 
-
+app.use('/', express.static(__dirname + '/public/map'));
 
 
 // **********************************************************
@@ -211,41 +182,26 @@ app.use('/apps', function(req, res){
 
 app.use(function(req, res) {
 
-    var err_res = {};
-    
-    err_res.responseStatus = {
-        'status': 404,
-        'type': 'Not Found',
-        'err': req.url +' Not Found'        
-    };
+console.log('\napp.use file not found ' );
+    console.error('404 file not found'); 
 
     res.status(404);
-    //res.send(err_res);    
-    res.sendfile('./public/404.html');
+    //res.sendFile('/public/404.html');
+	res.sendFile('404.html', { root: __dirname + '/public' });
 });
 
 app.use(function(err, req, res, next) {
     
-    //console.log('\n app.use error: ' + err );
-    console.error(err.stack);
-    
-    var err_res = {};       
-    err_res.responseStatus = {
-        'status': 500,
-        'type': 'Internal Server Error',
-        'err': err.name +': '+ err.message      
-    };  
-    
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    console.log('\n app.use error: ' + err );
+    console.error(err.stack); 
     
     res.status(500);
-    // res.send(err_res);
-    res.sendfile('./public/500.html');
+    //res.sendFile('/public/500.html');
+	res.sendFile('500.html', { root: __dirname + '/public' });
 });
 
 process.on('uncaughtException', function (err) {
-    //console.log('\n uncaughtException: '+ err);
+    console.log('\n uncaughtException: '+ err);
     console.error(err.stack);
 });
 
@@ -261,9 +217,10 @@ var server = app.listen(NODE_PORT, function () {
 
 });
 
-maps.mapDeploy("repeat");
+// **********************************************************
+// deploy
+maps.deployMap(true);
 
+// **********************************************************
+// export
 module.exports = app;
-
-
-

@@ -11,7 +11,7 @@
 
 <script>
 	function getMapList() {
-		var url = "/getExistingMaps";
+		var url = "/api.json";
 		$.ajax(url, {
 			type: "GET",
 			url: url,
@@ -104,11 +104,7 @@
 				text += "</table>";
 				
 				$('#map-list-display').html(text);
-				$('.span-pull-github').on("click", function(e) {
-					var nid = e.target.id;
-					
-					pullRepo(nid);
-				});
+		
 
 			
 			}
@@ -138,30 +134,6 @@
 	}
 	
 	
-	function pullRepo(nid) {
-		var url = "/pullRepo/" + nid;
-		console.log(url);
-		
-		$.ajax(url, {
-			type: "GET",
-			url: url,
-			dataType: "json",
-			success: function(data){
-				if (data.status == "ok") {
-					alert("Repo has been pulled");
-				}
-				else {
-					alert("error occured during Repo pull");
-				}
-			}
-		});
-		
-		
-	
-	
-	}
-	
-
 	
 $(document).ready(function() {
 getMapList();
