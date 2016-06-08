@@ -1,6 +1,18 @@
+/*
+ _______   ______   ______    .___  ___.      ___      .______     _______.
+|   ____| /      | /      |   |   \/   |     /   \     |   _  \   /       |
+|  |__   |  ,----'|  ,----'   |  \  /  |    /  ^  \    |  |_)  | |   (----`
+|   __|  |  |     |  |        |  |\/|  |   /  /_\  \   |   ___/   \   \    
+|  |     |  `----.|  `----.   |  |  |  |  /  _____  \  |  |   .----)   |   
+|__|      \______| \______|   |__|  |__| /__/     \__\ | _|   |_______/    
+
+*/
+
+// **********************************************************
 
 "use strict";
 
+// **********************************************************
 // require 
 
 var http = require("http");
@@ -22,47 +34,27 @@ var maps = require('./controllers/maps.js');
 
 var configEnv = require('./config/env.json');
 
-var NODE_ENV = process.env.NODE_ENV || "NONE";
+var NODE_ENV = process.env.NODE_ENV;
 var NODE_PORT =  process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
-var PG_DB = configEnv[NODE_ENV].PG_DB;
-var PG_SCHEMA = configEnv[NODE_ENV].PG_SCHEMA;
-var GEO_HOST = configEnv[NODE_ENV].GEO_HOST;
-var GEO_SPACE = configEnv[NODE_ENV].GEO_SPACE;
-var DRUPAL_API = configEnv[NODE_ENV].DRUPAL_API;
+var CONTENT_API = configEnv[NODE_ENV].CONTENT_API;
 var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
-
 
 console.log('NODE_ENV : '+ NODE_ENV );
 console.log('NODE_PORT : '+ NODE_PORT );
-console.log('PG_DB : '+ PG_DB );
-console.log('PG_SCHEMA : '+ PG_SCHEMA );
-console.log('GEO_HOST : '+ GEO_HOST );
-console.log('GEO_SPACE : '+ GEO_SPACE );
-console.log('DRUPAL_API : '+ DRUPAL_API );
+console.log('CONTENT_API : '+ CONTENT_API );
 console.log('ALLOWED_IP : '+ ALLOWED_IP );
 
 var routetable = {
-	"c2h":	{
-			"name": "c2h",
-                                "route": "connect2health",
-                                "host": "https://apps2.fcc.gov/connect2health/"                                      
-                },
-                "amr" :      {
-                                "name": "amr",
-                                "route": "connect2health",
-                                "host": "http://amr-web-node-dev.us-west-2.elasticbeanstalk.com/"                                      
-                },
-
-                "yahoo" :      {
-                                "name": "yahoo",
-                                "route": "yahoo",
-                                "host": "http://www.yahoo.com/"                                      
-                },
-				                "google" :      {
-                                "name": "google",
-                                "route": "google",
-                                "host": "http://www.google.com/"                                      
-                }
+	"c2h": {
+		"name": "c2h",
+		"route": "connect2health",
+		"host": "https://apps2.fcc.gov/connect2health/"                                      
+	},
+	"amr": {
+		"name": "amr",
+		"route": "connect2health",
+		"host": "http://amr-web-node-dev.us-west-2.elasticbeanstalk.com/"                                      
+	}
 };
 
 console.log(routetable);
@@ -81,8 +73,6 @@ var app = express();
 
 app.use(cors());
 
-
-
 // **********************************************************
 // log
 
@@ -96,8 +86,6 @@ var accessLogStream = fsr.getStream({
 });
 app.use(morgan('combined', {stream: accessLogStream}))
 
-
-
 // **********************************************************
 // parser
 
@@ -108,94 +96,64 @@ app.use(bodyparser.urlencoded({ extended: false }));
 // route
 
 app.use('/', express.static(__dirname + '/public'));
-app.use('/api-docs', express.static(__dirname + '/public/api-docs.html'));
 
-app.param('uuid', function(req, res, next, uuid){
-    // check format of uuid
-    if(!serverCheck.checkUUID(uuid)){
-        return serverSend.sendErr(res, 'json', 'not_found');
-    } else {
-        next();
-    }
-})
-
-app.param('ext', function(req, res, next, ext) {
-    // check format of id
-    var route = req.route.path;
-    //console.log('\n  route : ' + route );
-    
-    if (!route === '/download/:uuid.:ext') {    // skip for downloads
-        if(!serverCheck.checkExt(ext)){
-            return serverSend.sendErr(res, 'json', 'invalid_ext');
-        } else {
-            next();
-        }
-    }
-    else {
-        next();
-    }
-});
-
-app.get('/', function(req, res){
-  res.sendfile('./public/index.html');
-});
-
+/*
 app.get('/getExistingMaps/', function(req, res){
-maps.getExistingMaps(req, res);
+	maps.getExistingMaps(req, res);
 });
+*/
 
-
-
+/*
 app.get('/pullRepo/:nid', function(req, res){
-maps.pullRepo(req, res);
+	maps.pullRepo(req, res);
 });
+*/
 
 app.get('/admin/pull', function(req, res){
     var ip = req.headers['x-forwarded-for'] || 
-    req.connection.remoteAddress || 
-    req.socket.remoteAddress ||
-    req.connection.socket.remoteAddress;
+		req.connection.remoteAddress || 
+		req.socket.remoteAddress ||
+		req.connection.socket.remoteAddress;
 
 	//check allowed IP
 	var isAllowed = false;
 	if (ip != undefined) {
+	
 		ip = ip.replace(/ +/g, '').split(',')[0]
 		for (var i = 0; i < ALLOWED_IP.length; i++) {
 			var re = new RegExp('^' + ALLOWED_IP[i].replace('*', ''));
 			if (ip.match(re)) {
 				isAllowed = true;
 			}
-		 }
-	 
+		 }	 
 	 }
 	 
 	 if (isAllowed) {
 		maps.pullDrupal(req, res);
 	 }
-	 else {
+	 else {		
 		console.log("IP not allowed");
-		res.send({"status": "error", "msg": "not allowed"});
+		//res.send({"status": "error", "msg": "not allowed"});
+		res.sendFile('./public/404.html');		
 	 }
 	 
 });
 
-
 //proxy routing
 app.use('/apps', function(req, res){
 
-	var appid = req.url.replace(/\//g, '');
-	
+	var appid = req.url.replace(/\//g, '');	
 	console.log(appid);
+	
 	if (routetable[appid]) {
-	var url = routetable[appid].host;
-	console.log(url);
-	req.pipe(request(url)).pipe(res);
+		var url = routetable[appid].host;
+		console.log(url);
+		req.pipe(request(url)).pipe(res);
 	}
 	else {
-	console.log('no id');
-	res.sendfile('./public/404.html');
+		console.log('no id');
+		res.sendFile('./public/404.html');
 	}
-
 	
 	
   //req.pipe(request(url)).pipe(res);
@@ -221,7 +179,7 @@ app.use(function(req, res) {
 
     res.status(404);
     //res.send(err_res);    
-    res.sendfile('./public/404.html');
+    res.sendFile('./public/404.html');
 });
 
 app.use(function(err, req, res, next) {
@@ -241,7 +199,7 @@ app.use(function(err, req, res, next) {
     
     res.status(500);
     // res.send(err_res);
-    res.sendfile('./public/500.html');
+    res.sendFile('./public/500.html');
 });
 
 process.on('uncaughtException', function (err) {
