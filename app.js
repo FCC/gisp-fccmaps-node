@@ -107,10 +107,13 @@ app.get('/api.json', function(req, res){
 });
 
 app.get('/admin/pull', function(req, res){
+	
     var ip = req.headers['x-forwarded-for'] || 
 		req.connection.remoteAddress || 
 		req.socket.remoteAddress ||
 		req.connection.socket.remoteAddress;
+		
+	console.log('ip : ' + ip );
 
 	//check allowed IP
 	var isAllowed = false;
@@ -126,12 +129,15 @@ app.get('/admin/pull', function(req, res){
 	 }
 	 
 	 if (isAllowed) {
+		console.log('maps.pullMap isAllowed');
 		maps.pullMap(req, res);
 	 }
 	 else {		
-		console.log("IP not allowed");
-		//res.send({"status": "error", "msg": "not allowed"});
-		res.sendFile('./public/404.html');		
+		console.log('IP not allowed');
+		//res.send({'status': 'error', 'msg': 'not allowed'});
+		res.status(404);
+		//res.sendFile('/public/404.html');
+		res.sendFile('404.html', { root: __dirname + '/public' });
 	 }
 	 
 });
@@ -148,8 +154,10 @@ app.use('/apps', function(req, res){
 		req.pipe(request(url)).pipe(res);
 	}
 	else {
-		console.log('no id');
-		res.sendFile('./public/404.html');
+		console.log('no app id');
+		res.status(404);
+		//res.sendFile('/public/404.html');
+		res.sendFile('404.html', { root: __dirname + '/public' });
 	}
 	
 	
@@ -170,7 +178,8 @@ console.log('\napp.use file not found ' );
     console.error('404 file not found'); 
 
     res.status(404);
-    res.sendFile('./public/404.html');
+    //res.sendFile('/public/404.html');
+	res.sendFile('404.html', { root: __dirname + '/public' });
 });
 
 app.use(function(err, req, res, next) {
@@ -179,7 +188,8 @@ app.use(function(err, req, res, next) {
     console.error(err.stack); 
     
     res.status(500);
-    res.sendFile('./public/500.html');
+    //res.sendFile('/public/500.html');
+	res.sendFile('500.html', { root: __dirname + '/public' });
 });
 
 process.on('uncaughtException', function (err) {
@@ -199,9 +209,10 @@ var server = app.listen(NODE_PORT, function () {
 
 });
 
-maps.deployMap("repeat");
+// **********************************************************
+// deploy
+maps.deployMap(true, true);
 
+// **********************************************************
+// export
 module.exports = app;
-
-
-
