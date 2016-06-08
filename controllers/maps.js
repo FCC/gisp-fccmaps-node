@@ -10,13 +10,13 @@
 
 // **********************************************************
 
-"use strict";
+'use strict';
 
 
 // **********************************************************
 //require
-var http = require("http");
-var https = require("https");
+var http = require('http');
+var https = require('https');
 var fs = require('fs-extra');
 
 var request = require('request');
@@ -35,95 +35,108 @@ var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseco
 // **********************************************************
 
 var contentJson = [];
-var mapDataJson;
-
+var newDataJson, oldDataJson;
 var mapDirPath = './public/map';
 
-var task = function(mm) { return function(callback) {
+function createMap(mm, callback) { 
+	//return function(callback) {
 
-	var nid = mm.nid;
-	var vid = mm.vid;
-	var map_repository_title = "";
-	var map_repository_url = "";
-	var map_page_url = "";
-	var map_page_title = "";
-	
-	//see if there is map_page_url
-	if ( !(mm.fields.field_map_page_url.und && mm.fields.field_map_page_url.und[0].url)) {
-		callback();
-		return;
-	}
-	
-	//see if map type is int_layers
-	var map_type = '';
-	if (mm.fields.field_map_type && mm.fields.field_map_type.und) {
-		map_type = mm.fields.field_map_type.und[0].value;
-	}
-	if (map_type != 'int_layers') {
-		callback();
-		return;
-	}
-	
-	//compare with contentJson to see if they are different
-	var map_status = is_new(mm);
-	
-	if (!map_status.is_new_map && !map_status.is_new_version) {
-		callback();
-		return;
-	}
-	
-	if (mm.fields.field_map_page_url.und) {
-	
-		console.log(mm.fields.field_map_page_url.und);
-	
-		map_page_url = mm.fields.field_map_page_url.und[0].url;
-		map_page_url = map_page_url.replace(/.*\//, '')
-		map_page_title = mm.fields.field_map_page_url.und[0].title;
-	}
-	
-	if (mm.fields.field_map_repository.und) {
-		map_repository_title = mm.fields.field_map_repository.und[0].title;
-		map_repository_url = mm.fields.field_map_repository.und[0].url;
-		map_repository_url = map_repository_url.replace(/.*\//, '')
-	}
-	
-	if (map_page_url == "") {
-		console.log("no map page url");
-		callback();
-		return;
-	}
-	else {
-		var dirPath = "./public/map/" + map_page_url;
-		//new map - create directory and write files
-		if (map_status.is_new_map) {
-			console.log("new Map");
-			console.log("new map: " + map_page_url);
-			if (fs.existsSync(dirPath)) {
-				fs.removeSync(dirPath);
-			}
-			fs.mkdirSync(dirPath);
-			console.log("new dir created");
-			copyFromTemplates(mm, dirPath);
-			callback();
-		}
-		else if (map_status.is_new_version) {
-			//new version - write new json file to directory
-			console.log("new version")
-			writeMapOptions(mm, dirPath);
-			callback();
+		var nid = mm.nid;
+		var vid = mm.vid;
+		var map_repository_title = '';
+		var map_repository_url = '';
+		var map_page_url = '';
+		var map_page_title = '';
+		
+		//see if there is map_page_url
+		if ( !(mm.fields.field_map_page_url.und && mm.fields.field_map_page_url.und[0].url)) {
+			//callback(new Error('map_page_url undefined'));
+			return;
 		}
 		
-	}
-}
+		//see if map type is int_layers
+		var map_type = '';
+		if (mm.fields.field_map_type && mm.fields.field_map_type.und) {
+			map_type = mm.fields.field_map_type.und[0].value;
+		}
+		if (map_type != 'int_layers') {
+			console.log('map_type invalid');
+			//callback(new Error('map_type invalid '));
+			//return;
+		}
+		
+		//compare with oldDataJson to see if they are different
+		var map_new = is_new(mm);
+		
+		if (!map_new) {
+			console.log('map_new not new');
+			//callback(new Error('map_new not new '));
+			return;
+		}
+		
+		if (mm.fields.field_map_page_url.und) {
+		
+			//console.log('field_map_page_url.und : ' + JSON.stringify(mm.fields.field_map_page_url.und));
+		
+			map_page_url = mm.fields.field_map_page_url.und[0].url;
+			map_page_url = map_page_url.replace(/.*\//, '')
+			map_page_title = mm.fields.field_map_page_url.und[0].title;
+		}
+		
+		if (!map_page_url) {
+			console.log('no map page url');
+			//callback(new Error('map_page_url undefined '));
+			return;
+		}
+		else {
+			var dirPath = './public/map/' + map_page_url;
+			console.log('\n dirPath: ' + dirPath);
+			
+			if (map_new) {
+
+				console.log('map map_page_url : ' + map_page_url);
+				
+				if (fs.existsSync(dirPath)) {
+					fs.removeSync(dirPath);
+				}
+				
+				fs.mkdir(dirPath, function(err){
+					if (err) {
+						console.log('fs.mkdir err');
+						//callback(err);	
+						return
+					}
+					else {
+						console.log('new dir created');
+				
+						copyFromTemplates(mm, dirPath);
+						//callback(null);
+						return;
+					}
+				});				
+			}
+			else {
+				//callback(new Error('map error undefined '));
+				console.log('map error undefined');
+				return;
+			}			
+		}
+	//}
 }
 
-function deployMap(repeat) {
+function deployMap(repeat, force) {
 
 	try {
 	
+		if (force) { // force will clear and rebuild
+			if (fs.existsSync(mapDirPath)) {
+				fs.removeSync(mapDirPath);
+			}
+		}
+		
 		if (!fs.existsSync(mapDirPath)) {
 			fs.mkdirSync(mapDirPath);
-		}
+		}		
 						
 		var contentProtocol = https;
 		if (CONTENT_API.indexOf('http://') == 0) {
@@ -133,45 +146,63 @@ function deployMap(repeat) {
 		console.log('CONTENT_API : ' + CONTENT_API);
 		
 		contentProtocol.get(CONTENT_API, function(res) {
-			var data = "";
+			var data = '';
 			res.on('data', function(chunk) {
 				data += chunk;
 			});
-			res.on("end", function() {
+			res.on('end', function() {
 		
-				var mapData = data;
-				mapData = mapData.replace(/\\n/g, '');
-				mapData = mapData.replace(/\\r/g, '');
-		
-				mapDataJson = JSON.parse(mapData);
-
-				console.log("CONTENT_API data received.");
-
-				var asyncTasks = [];
+				oldDataJson = contentJson;
 				
-				for (var i = 1; i < mapDataJson.length; i++) {	
-					asyncTasks.push(task(mapDataJson[i]));
+				var newData = data;
+				newData = newData.replace(/\\n/g, '');
+				newData = newData.replace(/\\r/g, '');
+		
+				newDataJson = JSON.parse(newData);				
+
+				console.log('CONTENT_API data received.');
+
+				//var asyncTasks = [];
+				
+				if (JSON.stringify(newDataJson) != JSON.stringify(oldDataJson)) {
+				
+					console.log('newDataJson != oldDataJson');
+				
+					for (var i = 1; i < newDataJson.length; i++) {	
+						//asyncTasks.push( createMap(newDataJson[i]) );
+						createMap(newDataJson[i]);
+					}
+					
+					contentJson = newDataJson;
 				}
-				
-				async.parallel(asyncTasks, function() {
-					console.log("all maps done");
-					contentJson = mapDataJson;
+				else {
+					console.log('no change - newDataJson == oldDataJson');
+				}
+								
+				/*
+				async.parallel(asyncTasks, function(err) {
+					if (err) {
+						console.error('async.parallel err :' + err );
+					}
+					else {
+						console.log('\n\n all maps done');
+						contentJson = newDataJson;
+					}
 				});
+				*/
 				
-			});
-			
+			});			
 		});
 
 		if (repeat) {
 			setTimeout(function() {
-				deployMap(true);
+				deployMap(true, false);
 			}, DEPLOY_INTERVAL);
-			console.log((new Date()).toString() + " wait...");
+			console.log((new Date()).toString() + ' wait...');
 		}
 		else {
-			console.log("one time run to pull");
+			console.log('one time run to pull');
 		}
-
 
 	}
 	catch (e) {
@@ -179,43 +210,50 @@ function deployMap(repeat) {
 		if (repeat) {
 			console.log('resumme deployMap loop');
 			setTimeout(function() {
-				deployMap(true);
+				deployMap(true, false);
 			}, DEPLOY_INTERVAL);
 		}
 	}
 }
 
-
 function is_new(m) {
 	//check if is new map and/or version
+	//console.log('\n is_new');
+	
 	var nid_new = m.nid;
 	var vid_new = m.vid;
-	var maps = contentJson;
+	//var maps = contentJson;
 	var is_new_map = true;
 	var is_new_version = true;
-	for (var i = 1; i < maps.length; i++) {
-		var nid_current = maps[i].nid;
-		var vid_current = maps[i].vid;
+	var new_status = true;
+	
+	for (var i = 1; i < contentJson.length; i++) {
+		var nid_current = contentJson[i].nid;
+		var vid_current = contentJson[i].vid;
 		if (nid_new == nid_current) {
-			is_new_map = false;
+			is_new_map = false;			
 			if (vid_new == vid_current) {
 				is_new_version = false;
+				new_status = false;
 			}
 		}
 	}
+	//console.log(' new_status : ' + new_status );
 
-	return {"is_new_map": is_new_map, "is_new_version": is_new_version}
+	//return {'is_new_map': is_new_map, 'is_new_version': is_new_version};
+	return new_status;;
 }
 
 
 function copyFromTemplates(m, dirPath) {
-	var templatePath = "./public/map_templates";
+	//console.log('\n copyFromTemplates');
+	var templatePath = './public/map_templates';
 	fs.copy(templatePath, dirPath, function (err) {
 		if (err) {
-			console.error(err);
+			console.error('copyFromTemplates err' + err);
 		}
 		else {
-			console.log("templates copied to map directory");
+			//console.log('templates copied to map directory');
 			writeMapOptions(m, dirPath);	
 		}
 	});
@@ -223,45 +261,63 @@ function copyFromTemplates(m, dirPath) {
 
 
 function writeMapOptions(m, dirPath) {
-	var filePath = dirPath + "/mapOptions.js";
-	var file = fs.createWriteStream(filePath);
-	var optionData = "var mapOptions = " + JSON.stringify(m) + ";";
-	file.write(optionData);
-	file.end();
-	console.log("updating mapOptions");
+	//console.log('\n writeMapOptions');
+	
+	var filePath = dirPath + '/mapOptions.js';
+	//var file = fs.createWriteStream(filePath);
+	var optionData = 'var mapOptions = ' + JSON.stringify(m) + ';';
+	//file.write(optionData);
+	//file.end();
+	
+	//console.log(' filePath : ' + filePath);
+	
+	fs.writeFile(filePath, optionData, function(err) {
+		if (err) {
+			return console.error('writeMapOptions err : ' + err);
+		}
+		else {
+			//console.log('mapOptions.js was saved');
+		}
+	}); 	
 }
 
+// **********************************************************
+// resp
 
 function getContentAPI(req, res) {
 	res.json(contentJson);
 }
 
 function pullMap(req, res) {
-
+	
+	console.log('\n pullMap ');
+	
 	try {
-		console.log("Manual pull of content API");
-		deployMap(false);
-		res.send({"status": "ok"});	
+		var reqMsg = 'Pull Map Requested';
+		
+		var forceType = req.query.force;
+		//console.log('forceType : ' + forceType);
+		
+		var force = false;
+		if (forceType == 'true') {
+			force = true;
+			reqMsg += ' with Force';
+		}
+		//console.log('force : ' + force);
+		
+		deployMap(false, force);
+		
+		res.send({'status': 'ok', 'msg': reqMsg});	
 	}
 	catch (e) {
 		console.error('Exception in pullMap: ' + e);
-		res.send({"status": "error", "msg": "Exception in pullMap: " + e});
+		res.status(500);
+		res.send({'status': 'error', 'msg': 'Pull Map Exception: ' + e});
 	}	
 }
 
-function getMapUrl(nid) {
-	var url = "";
-	var map_info = contentJson;
-	for (var i = 1; i < map_info.length; i++) {
-		if (map_info[i].nid == nid) {
-			if (map_info[i].fields.field_map_page_url.und) {
-				url = map_info[i].fields.field_map_page_url.und[0].url;
-			}
-		}
-	}
-	
-	return url;
-}
+// **********************************************************
+// export
 
 module.exports.deployMap = deployMap;
 module.exports.getContentAPI = getContentAPI;
