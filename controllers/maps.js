@@ -18,7 +18,6 @@
 var http = require("http");
 var https = require("https");
 var fs = require('fs-extra');
-var unzip = require('unzip');
 
 var request = require('request');
 
@@ -37,21 +36,6 @@ var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseco
 
 var contentJson = [];
 var mapDataJson;
-
-function getConfig() {
-    var configEnv = require('../config/env.json');
-
-    var NODE_ENV = process.env.NODE_ENV || "NONE";
-    var NODE_PORT = process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
-
-	var CONTENT_API = configEnv[NODE_ENV].CONTENT_API;
-	
-    var ret = {
-
-    };
-
-    return ret;
-}
 
 var mapDirPath = './public/map';
 
@@ -133,32 +117,22 @@ var task = function(mm) { return function(callback) {
 }
 }
 
-function mapDeploy(type) {
+function deployMap(repeat) {
 
 	try {
 	
 		if (!fs.existsSync(mapDirPath)) {
 			fs.mkdirSync(mapDirPath);
 		}
+						
+		var contentProtocol = https;
+		if (CONTENT_API.indexOf('http://') == 0) {
+			contentProtocol = http;
+			console.log('contentProtocol : http ' );
+		}		
+		console.log('CONTENT_API : ' + CONTENT_API);
 		
-		
-		var source = 'static';
-		
-		if (source == 'static') {
-			if (NODE_ENV == 'LOCAL') {
-			var url = 'http://localhost:6479/content.json';
-			}
-			else {
-			var url = "http://gisp-fccmaps-node-dev.us-west-2.elasticbeanstalk.com/content.json";
-			}
-		}
-		else {
-			var url = CONTENT_API;
-		}
-		
-		console.log(url);
-		
-		http.get(url, function(res) {
+		contentProtocol.get(CONTENT_API, function(res) {
 			var data = "";
 			res.on('data', function(chunk) {
 				data += chunk;
@@ -171,7 +145,7 @@ function mapDeploy(type) {
 		
 				mapDataJson = JSON.parse(mapData);
 
-				console.log("Drupal API data received.");
+				console.log("CONTENT_API data received.");
 
 				var asyncTasks = [];
 				
@@ -188,24 +162,24 @@ function mapDeploy(type) {
 			
 		});
 
-		if (type == "repeat") {
+		if (repeat) {
 			setTimeout(function() {
-				mapDeploy("repeat");
+				deployMap(true);
 			}, DEPLOY_INTERVAL);
 			console.log((new Date()).toString() + " wait...");
 		}
 		else {
-			console.log("one time run to pull Drupal");
+			console.log("one time run to pull");
 		}
 
 
 	}
 	catch (e) {
-		console.error('Exception in mapDeploy:'+e);
-		if (type == "repeat") {
-			console.log('resumme mapDeploy loop');
+		console.error('Exception in deployMap:'+e);
+		if (repeat) {
+			console.log('resumme deployMap loop');
 			setTimeout(function() {
-				mapDeploy("repeat");
+				deployMap(true);
 			}, DEPLOY_INTERVAL);
 		}
 	}
@@ -239,7 +213,7 @@ function copyFromTemplates(m, dirPath) {
 	fs.copy(templatePath, dirPath, function (err) {
 		if (err) {
 			console.error(err);
-			}
+		}
 		else {
 			console.log("templates copied to map directory");
 			writeMapOptions(m, dirPath);	
@@ -262,16 +236,16 @@ function getContentAPI(req, res) {
 	res.json(contentJson);
 }
 
-function pullDrupal(req, res) {
+function pullMap(req, res) {
 
 	try {
-		console.log("Manual pull of Drupal API");
-		mapDeploy("onetime");
+		console.log("Manual pull of content API");
+		deployMap(false);
 		res.send({"status": "ok"});	
 	}
 	catch (e) {
-		console.error('Exception in pullDrupal: ' + e);
-		res.send({"status": "error", "msg": "Exception in pullDrupal: " + e});
+		console.error('Exception in pullMap: ' + e);
+		res.send({"status": "error", "msg": "Exception in pullMap: " + e});
 	}	
 }
 
@@ -289,6 +263,6 @@ function getMapUrl(nid) {
 	return url;
 }
 
-module.exports.mapDeploy = mapDeploy;
+module.exports.deployMap = deployMap;
 module.exports.getContentAPI = getContentAPI;
-module.exports.pullDrupal = pullDrupal;
+module.exports.pullMap = pullMap;
