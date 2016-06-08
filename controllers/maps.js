@@ -206,6 +206,7 @@ function deployMap(repeat) {
 					}
 					
 					contentJson = newDataJson;
+					
 				}
 				else {
 					console.log('no change - newDataJson == oldDataJson');
