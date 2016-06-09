@@ -201,8 +201,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                                    
-                                   <iframe class="map-iframe" src="" width="100%" height="600"></iframe>
+                                    </div>
+                                    <div id="map-container">
+                                        <div id="div-legend-holder">
+                                        </div>
+                                    </div>
+                                   
                                     <dl class="dl-mapMeta dl-horizontal">
                                         <dt>Published by:</dt>
                                         <dd><span id="span-bureau">Bureau</span></dd>
@@ -333,26 +337,20 @@
     </div>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    window.jQuery || document.write('<script src="../map_templates/js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script>
-    window.jQuery.ui || document.write('<script src="js/vendor/jquery-ui.min.js"><\/script>')
+    window.jQuery.ui || document.write('<script src="../map_templates/js/vendor/jquery-ui.min.js"><\/script>')
     </script>
     <script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
     <script src='../map_templates/js/vendor/l-hash.js'></script>
-    <!-- <script src='js/vendor/leaflet-hash.js'></script> -->
+    <!-- <script src='../map_templates/js/vendor/leaflet-hash.js'></script> -->
     <script src="../map_templates/js/vendor/bootstrap.min.js"></script>
     <script src="../map_templates/js/pg-common.js"></script>
     <script src="../map_templates/js/map-template.js"></script>
-    <script src="../map_templates/js/app_iframe.js"></script>
+    <script src="../map_templates/js/app.js"></script>
     <script src="../map_templates/mapOptions.js"></script>
-	
-	<script>
-
-
-	</script>
-	
 </body>
 
 </html>
