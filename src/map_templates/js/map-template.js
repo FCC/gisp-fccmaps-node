@@ -102,7 +102,7 @@
     // Create Share and Embed links
     
     $('a[href="#embedLink"]').click(function(e) { 
-        var embedLink = window.location.href.split('#')[0] + 'embed/#' + window.location.href.split('#')[1] + '/zoom,search,layers,attr,key';
+        var embedLink = window.location.href.split('#')[0] + 'embed/#' + window.location.href.split('#')[1] + 'zoom,search,layers,attr,key';
 
         e.preventDefault();
         $('#linkShare').slideDown();

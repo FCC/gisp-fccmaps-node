@@ -1,0 +1,476 @@
+{
+    "nid": "28002",
+    "title": "Terrestrial Mobile Wireless Digital Coverage",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "http://10.154.68.187/terrestrial-mobile-wireless-digital-coverage",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p>Includes CDMA, GSM, and IDEN Networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p>Includes CDMA, GSM, and IDEN Networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-21 14:15:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "July 2015"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "http://maps.fcc.gov/terrestrial-mobile-wireless-digital-coverage",
+                "title": "Terrestrial Mobile Wireless Digital Coverage",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "4" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "38.62" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.n4we9udi",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.n4we9udi"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc20554.n4we9udi",
+                    "format": null,
+                    "safe_value": "fcc20554.n4we9udi"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "GSM",
+                    "format": null,
+                    "safe_value": "GSM"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.a8y6i529",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.a8y6i529"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc20554.a8y6i529",
+                    "format": null,
+                    "safe_value": "fcc20554.a8y6i529"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "CDMA",
+                    "format": null,
+                    "safe_value": "CDMA"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.jmt8d7vi",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.jmt8d7vi"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc20554.jmt8d7vi",
+                    "format": null,
+                    "safe_value": "fcc20554.jmt8d7vi"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "IDEN",
+                    "format": null,
+                    "safe_value": "IDEN"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.WLB_State",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.WLB_State"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc20554.WLB_State",
+                    "format": null,
+                    "safe_value": "fcc20554.WLB_State"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "States",
+                    "format": null,
+                    "safe_value": "States"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ae8",
+                    "format": null,
+                    "safe_value": "#ae8"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "CDMA",
+                    "format": null,
+                    "safe_value": "0"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#f3e723",
+                    "format": null,
+                    "safe_value": "#f3e723"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "GSM",
+                    "format": null,
+                    "safe_value": "GSM"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#795836",
+                    "format": null,
+                    "safe_value": "#795836"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "iDEN",
+                    "format": null,
+                    "safe_value": "iDEN"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-99.67" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Mobile Wireless Competition Report",
+        "url": "https://www.fcc.gov/tags/mobile-wireless-competition-report"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}

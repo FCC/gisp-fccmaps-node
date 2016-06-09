@@ -199,7 +199,11 @@ module.exports = function(grunt) {
                     './src/map_data/connect-america-fund-caf-phase-i.json',
                     './src/map_data/wireline-maximum-advertised-download-speed.json',
                     './src/map_data/regulatory-type-holding-company-level-study-area.json',
-                    './src/map_data/connect-compete-home-broadband-coverage-map.json'
+                    './src/map_data/connect-compete-home-broadband-coverage-map.json',
+                    './src/map_data/800-mhz-cellular-–-b-block-cgsas.json',
+                    './src/map_data/terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level.json',
+                    './src/map_data/terrestrial-mobile-wireless-digital-coverage.json',
+                    './src/map_data/nationwide-4g-coverage.json'
                 ],
                 dest: './src/content.json'
             }           

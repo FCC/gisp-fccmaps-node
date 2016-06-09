@@ -1,10 +1,10 @@
 {
     "nid": "28002",
-    "title": "Mobility Fund Phase 1 Eligible Areas",
+    "title": "800 MHz Cellular – A Block CGSAs",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Mobility-Fund-Phase-1-Eligible-Areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/35/-97",
+    "webUrl": "http://10.154.68.187/reports-research/maps/800-mhz-cellular-–-block-cgsas",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16,10 +16,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows the areas identified as eligible for Mobility Fund Phase 1 support as of September 2012. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block and contain road miles in any of six road categories. These blocks were identified by analyzing US Census data, January 2012 American Roamer (now called Mosaik Solutions) data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible blocks, including population, road miles (S1100, S1200, S1400, S1500, S1640, and S1740 categories), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a>",
+                "value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the B Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model. Gulf of Mexico Exclusive Zone (GMEZ) not shown. See CFR47 Section 22.950 (c).",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows the areas identified as eligible for Mobility Fund Phase 1 support as of September 2012. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block and contain road miles in any of six road categories. These blocks were identified by analyzing US Census data, January 2012 American Roamer (now called Mosaik Solutions) data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible blocks, including population, road miles (S1100, S1200, S1400, S1500, S1640, and S1740 categories), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a>",
+                "safe_value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the B Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model. Gulf of Mexico Exclusive Zone (GMEZ) not shown. See CFR47 Section 22.950 (c).",
                 "safe_summary": ""
             }]
         },
@@ -27,8 +27,8 @@
             "und": [{
                 "fid": "3477",
                 "uid": "1798",
-                "filename": "thumb-mobility-fund-phase-1-eligible-areas.png",
-                "uri": "thumb-mobility-fund-phase-1-eligible-areas.png",
+                "filename": "thumb-800-mhz-cellular-b-block-cgsas.png",
+                "uri": "thumb-800-mhz-cellular-b-block-cgsas.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -105,8 +105,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/mobility-fund-phase-1-eligible-areas",
-                "title": "Mobility Fund Phase 1 Eligible Areas",
+                "url": "https://maps.fcc.gov/800-mhz-cellular-–-b-block-cgsas",
+                "title": "800 MHz Cellular – A Block CGSAs",
                 "attributes": [
 
                 ]
@@ -166,9 +166,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.Mobility-Fund-Phase-1-Eligible-Areas",
+                    "value": "a.tiles.mapbox.com/v4/fcc.800-mhz-cellular-a-block-cgsa",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Mobility-Fund-Phase-1-Eligible-Areas"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.800-mhz-cellular-a-block-cgsa"
                 }]
             },
             "field_layer_format": {
@@ -178,9 +178,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc.Mobility-Fund-Phase-1-Eligible-Areas",
+                    "value": "fcc.800-mhz-cellular-a-block-cgsa",
                     "format": null,
-                    "safe_value": "fcc.Mobility-Fund-Phase-1-Eligible-Areas"
+                    "safe_value": "fcc.800-mhz-cellular-a-block-cgsa"
                 }]
             },
             "field_layer_opacity": {
@@ -195,9 +195,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
+                    "value": "800 MHz Cellular – A Block CGSAs",
                     "format": null,
-                    "safe_value": "Tribal Mobility Fund Phase I Potentially Eligible Areas"
+                    "safe_value": "800 MHz Cellular – A Block CGSAs"
                 }]
             },
             "field_layer_type": {
@@ -228,16 +228,64 @@
             "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
             "field_legend_color": {
                 "und": [{
-                    "value": "#080c0f",
+                    "value": "#7a8d3b",
                     "format": null,
-                    "safe_value": "#080c0f"
+                    "safe_value": "#7a8d3b"
                 }]
             },
             "field_legend_text": {
                 "und": [{
-                    "value": "Mobility Fund Phase 1 Eligible Areas",
+                    "value": "Licensed CGSAs",
                     "format": null,
-                    "safe_value": "Mobility Fund Phase 1 Eligible Areas"
+                    "safe_value": "Licensed CGSAs"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#9a2221",
+                    "format": null,
+                    "safe_value": "#9a2221"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "CGSA boundary",
+                    "format": null,
+                    "safe_value": "CGSA boundary"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#F06c6c",
+                    "format": null,
+                    "safe_value": "#F06c6c"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "CMA boundary",
+                    "format": null,
+                    "safe_value": "CMA boundary"
                 }]
             },
             "rdf_mapping": [
@@ -259,6 +307,16 @@
     "taxonomy": [{
         "tid": "956",
         "vid": "1",
+        "name": "800 MHz",
+        "url": "https://www.fcc.gov/tags/800-mhz-0"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Cellular",
+        "url": "https://www.fcc.gov/tags/cellular"
+    }, {
+        "tid": "956",
+        "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
     }, {
@@ -269,23 +327,8 @@
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Mobile Broadband",
-        "url": "https://www.fcc.gov/tags/mobile-broadband"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Mobile Fund",
-        "url": "https://www.fcc.gov/tags/mobility-fund-0"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Mobility Fund Phase 1",
-        "url": "https://www.fcc.gov/tags/mobility-fund-phase-1"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Spectrum",
-        "url": "https://www.fcc.gov/tags/spectrum-0"
+        "name": "Wireless Services",
+        "url": "https://www.fcc.gov/tags/wireless-services"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
