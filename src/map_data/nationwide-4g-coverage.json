@@ -76,6 +76,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "nationwide-4g-coverage"
+            }]
+        },
         "field_map_repository": [
 
         ],

@@ -74,6 +74,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "nationwide-mobile-wireless-coverage-july-2015"
+            }]
+        },
         "field_map_repository": [
 
         ],

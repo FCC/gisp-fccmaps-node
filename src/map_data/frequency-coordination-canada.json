@@ -160,6 +160,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "frequency-coordination-canada"
+            }]
+        },
         "field_map_repository": [
 
         ],

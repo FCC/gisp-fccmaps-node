@@ -76,6 +76,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "broadband-availability-alaska"
+            }]
+        },
         "field_map_repository": [
 
         ],

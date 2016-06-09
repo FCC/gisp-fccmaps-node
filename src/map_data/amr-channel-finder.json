@@ -160,6 +160,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "amr-channel-finder"
+            }]
+        },
         "field_map_repository": [
 
         ],

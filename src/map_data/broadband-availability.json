@@ -76,6 +76,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "broadband-availability"
+            }]
+        },
         "field_map_repository": [
 
         ],

@@ -74,6 +74,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "terrestrial-mobile-wireless-digital-coverage-july-2015"
+            }]
+        },
         "field_map_repository": [
 
         ],

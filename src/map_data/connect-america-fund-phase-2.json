@@ -116,6 +116,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "caf2"
+            }]
+        },
         "field_map_repository": [
 
         ],

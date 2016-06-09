@@ -160,6 +160,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "fcc-enforcement-actions-against-pirate-radio-location"
+            }]
+        },
         "field_map_repository": [
 
         ],

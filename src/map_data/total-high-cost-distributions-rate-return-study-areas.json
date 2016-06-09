@@ -112,6 +112,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "https://www.fcc.gov/maps/total-high-cost-distributions-rate-return-study-areas"
+            }]
+        },
         "field_map_repository": [
 
         ],

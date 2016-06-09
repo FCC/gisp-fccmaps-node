@@ -168,6 +168,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-compete-home-broadband-coverage-map"
+            }]
+        },
         "field_map_repository": [
 
         ],

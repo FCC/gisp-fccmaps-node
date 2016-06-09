@@ -116,6 +116,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "100pct-overlap-map"
+            }]
+        },
         "field_map_repository": [
 
         ],

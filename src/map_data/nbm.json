@@ -160,6 +160,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "http://www.broadbandmap.gov/"
+            }]
+        },
         "field_map_repository": [
 
         ],

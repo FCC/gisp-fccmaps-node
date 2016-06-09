@@ -74,6 +74,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "residential-fixed-connections-3-mbps-768-kbps"
+            }]
+        },
         "field_map_repository": [
 
         ],

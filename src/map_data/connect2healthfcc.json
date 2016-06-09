@@ -160,6 +160,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect2health"
+            }]
+        },
         "field_map_repository": [
 
         ],

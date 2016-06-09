@@ -76,6 +76,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "terrestrial-mobile-wireless-digital-coverage"
+            }]
+        },
         "field_map_repository": [
 
         ],

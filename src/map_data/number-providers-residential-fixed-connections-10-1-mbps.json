@@ -74,6 +74,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "number-providers-residential-fixed-connections-10-1-mbps"
+            }]
+        },
         "field_map_repository": [
 
         ],

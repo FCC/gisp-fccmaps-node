@@ -168,6 +168,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "regulatory-type-holding-company-level-study-area"
+            }]
+        },
         "field_map_repository": [
 
         ],

@@ -76,6 +76,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "locations-unserved-fixed-broadband"
+            }]
+        },
         "field_map_repository": [
 
         ],

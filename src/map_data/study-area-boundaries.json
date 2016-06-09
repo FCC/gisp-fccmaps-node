@@ -160,6 +160,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "study-area-boundaries"
+            }]
+        },
         "field_map_repository": [
 
         ],

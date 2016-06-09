@@ -112,6 +112,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "acam-ror-sa-map"
+            }]
+        },
         "field_map_repository": [
 
         ],

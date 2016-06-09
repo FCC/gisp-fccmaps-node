@@ -74,6 +74,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "bpr-2016-fixed-speed"
+            }]
+        },
         "field_map_repository": [
 
         ],

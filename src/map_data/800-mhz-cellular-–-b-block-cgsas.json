@@ -112,6 +112,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "800-mhz-cellular-–-b-block-cgsas"
+            }]
+        },
         "field_map_repository": [
 
         ],

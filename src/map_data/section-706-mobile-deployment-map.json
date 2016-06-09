@@ -76,6 +76,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "section-706-mobile-deployment-map"
+            }]
+        },
         "field_map_repository": [
 
         ],

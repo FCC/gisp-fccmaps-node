@@ -121,6 +121,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "caf2"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -397,6 +402,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "bpr-2016-fixed-25mbps-3mbps-providers"
             }]
         },
         "field_map_repository": [
@@ -1074,6 +1084,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "bpr-2016-fixed-25mbps-3mbps-technology"
             }]
         },
         "field_map_repository": [
@@ -1921,6 +1936,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "bpr-2016-fixed-speed"
             }]
         },
         "field_map_repository": [
@@ -2856,6 +2876,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "http://www.broadbandmap.gov/"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -3687,6 +3712,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "100pct-overlap-map"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -3928,6 +3958,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect2health"
             }]
         },
         "field_map_repository": [
@@ -4874,6 +4909,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "residential-fixed-connections-over-200-kbps"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -5234,6 +5274,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "residential-fixed-connections-3-mbps-768-kbps"
             }]
         },
         "field_map_repository": [
@@ -5598,6 +5643,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "number-providers-residential-fixed-connections-over-200-kbps"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -5960,6 +6010,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "number-providers-residential-fixed-connections-10-1-mbps"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -6320,6 +6375,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "terrestrial-mobile-wireless-digital-coverage-july-2015"
             }]
         },
         "field_map_repository": [
@@ -6795,6 +6855,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "nationwide-mobile-wireless-coverage-july-2015"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -7072,6 +7137,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "nationwide-lte-coverage-july-2015"
             }]
         },
         "field_map_repository": [
@@ -7376,6 +7446,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "amr-channel-finder"
             }]
         },
         "field_map_repository": [
@@ -8205,6 +8280,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "https://www.fcc.gov/maps/tribal-mobility-fund-phase-i-eligible-areas"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -8503,6 +8583,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "https://www.fcc.gov/maps/tribal-mobility-fund-phase-i-potentially-eligible-areas"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -8787,6 +8872,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "mobility-fund-phase-1-eligible-areas"
             }]
         },
         "field_map_repository": [
@@ -9078,6 +9168,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "800-mhz-cellular-–-block-cgsas"
             }]
         },
         "field_map_repository": [
@@ -9376,6 +9471,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "broadband-availability-hawaii"
             }]
         },
         "field_map_repository": [
@@ -9685,6 +9785,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "broadband-availability-alaska"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -9990,6 +10095,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "broadband-availability"
             }]
         },
         "field_map_repository": [
@@ -10381,6 +10491,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "fcc-enforcement-actions-against-pirate-radio-location"
             }]
         },
         "field_map_repository": [
@@ -11341,6 +11456,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "section-706-mobile-deployment-map"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -11644,6 +11764,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "locations-unserved-fixed-broadband"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -11937,6 +12062,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "fcc-connect-america-phase-ii-final-eligible-areas-map"
             }]
         },
         "field_map_repository": [
@@ -12234,6 +12364,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "https://www.fcc.gov/maps/total-high-cost-distributions-rate-return-study-areas"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -12527,6 +12662,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "https://www.fcc.gov/maps/total-line-usf-high-cost-distributions-rate-return-study-areas"
             }]
         },
         "field_map_repository": [
@@ -12824,6 +12964,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "net-usf-received-voice-line"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -13117,6 +13262,11 @@
                 "attributes": [
 
                 ]
+            }]
+        }, 
+        "field_map_unique": {
+            "und": [{
+                "value": "rural-health-care-pilot-program"
             }]
         },
         "field_map_repository": [
@@ -13414,6 +13564,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "acam-ror-sa-map"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -13707,6 +13862,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-america-phase-ii-final-eligible-areas-map"
             }]
         },
         "field_map_repository": [
@@ -14019,6 +14179,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-america-phase-ii-initial-eligible-areas-map"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -14327,6 +14492,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0"
             }]
         },
         "field_map_repository": [
@@ -14639,6 +14809,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -14949,6 +15124,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-america-fund-caf-phase-i-round-two"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -15252,6 +15432,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-america-fund-caf-phase-i"
             }]
         },
         "field_map_repository": [
@@ -15613,6 +15798,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "https://www.fcc.gov/maps/wireline-maximum-advertised-download-speed"
             }]
         },
         "field_map_repository": [
@@ -16037,6 +16227,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "regulatory-type-holding-company-level-study-area"
             }]
         },
         "field_map_repository": [
@@ -16473,6 +16668,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-compete-home-broadband-coverage-map"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -16841,6 +17041,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "800-mhz-cellular-–-b-block-cgsas"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -17137,6 +17342,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level"
             }]
         },
         "field_map_repository": [
@@ -17478,6 +17688,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "terrestrial-mobile-wireless-digital-coverage"
             }]
         },
         "field_map_repository": [
@@ -17956,6 +18171,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "nationwide-4g-coverage"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -18365,6 +18585,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -18742,6 +18967,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "mobility-fund-phase-1-potentially-eligible-areas"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -19079,6 +19309,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "study-area-boundaries"
             }]
         },
         "field_map_repository": [
@@ -20130,6 +20365,11 @@
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "frequency-coordination-canada"
             }]
         },
         "field_map_repository": [

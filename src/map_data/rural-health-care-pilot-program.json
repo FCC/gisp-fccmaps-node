@@ -111,6 +111,11 @@
 
                 ]
             }]
+        }, 
+        "field_map_unique": {
+            "und": [{
+                "value": "rural-health-care-pilot-program"
+            }]
         },
         "field_map_repository": [
 

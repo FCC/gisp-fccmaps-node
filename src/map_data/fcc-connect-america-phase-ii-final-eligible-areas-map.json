@@ -112,6 +112,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "fcc-connect-america-phase-ii-final-eligible-areas-map"
+            }]
+        },
         "field_map_repository": [
 
         ],

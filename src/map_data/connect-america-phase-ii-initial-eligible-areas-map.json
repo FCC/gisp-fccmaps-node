@@ -112,6 +112,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-america-phase-ii-initial-eligible-areas-map"
+            }]
+        },
         "field_map_repository": [
 
         ],
