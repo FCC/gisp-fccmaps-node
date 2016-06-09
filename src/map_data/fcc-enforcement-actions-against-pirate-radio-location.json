@@ -1024,9 +1024,20 @@
         }
     },
     "taxonomy": [{
-        "tid": "527",
-        "vid": "7",
-        "name": "General Counsel"
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/179638"
 }

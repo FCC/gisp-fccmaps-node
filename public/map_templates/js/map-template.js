@@ -97,35 +97,5 @@
                 scrollTop: scrolled
             });
         }
-    });
-
-    // Create Share and Embed links
-    
-    $('a[href="#embedLink"]').click(function(e) { 
-        var embedLink = window.location.href.split('#')[0] + 'embed/#' + window.location.href.split('#')[1] + 'zoom,search,layers,attr,key';
-
-        e.preventDefault();
-        $('#linkShare').slideDown();
-        $('#txt-link').val(embedLink).select();
-        $('.help-block').removeClass('hide');         
-    });
-
-    $('a[href="#bookmarkLink"]').click(function(e) {
-        var bookmarkLink = window.location;
-
-        e.preventDefault();
-        $('#linkShare').slideDown();
-        $('#txt-link').val(bookmarkLink).select();
-        $('.help-block').addClass('hide');
-    });
-
-    $('#btn-closeShare').click(function(e) {
-        e.preventDefault();
-        $('#linkShare').slideUp();
-    });
-
-    $('#txt-link').on('click, focus', function(){
-        this.select();
-    });
-    
+    });    
 })();
