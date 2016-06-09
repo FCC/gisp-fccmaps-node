@@ -219,10 +219,10 @@ function deployMap(repeat) {
 				
 					console.log('newDataJson != oldDataJson');
 				
-					for (var i = 1; i < newDataJson.length; i++) {	
+					//for (var i = 1; i < newDataJson.length; i++) {	
 						//asyncTasks.push( createMap(newDataJson[i]) );
 						//createMap(newDataJson[i]);
-					}
+					//}
 					
 					contentJson = newDataJson;
 					
@@ -398,13 +398,12 @@ function pullMap(req, res) {
 function checkMapId(mapId) {
 console.log('check map id ' + mapId);
 	for (var i = 1; i < contentJson.length; i++) {
-		var map_url = '';
-		if (contentJson[i].fields.field_map_page_url && contentJson[i].fields.field_map_page_url.und && contentJson[i].fields.field_map_page_url.und[0].url) {
-			map_url = contentJson[i].fields.field_map_page_url.und[0].url;
+		var map_unique = '';
+		if (contentJson[i].fields.field_map_unique && contentJson[i].fields.field_map_unique.und && contentJson[i].fields.field_map_unique.und[0].value) {
+			map_unique = contentJson[i].fields.field_map_unique.und[0].value;
 		}
 
-		var mapId0 = map_url.replace(/.*\//, '');
-		if (mapId0 == mapId) {
+		if (map_unique == mapId) {
 			return true;
 		}
 	
@@ -417,25 +416,35 @@ console.log('check map id ' + mapId);
 function getMapType(mapId) {
 	var map_type = '';
 	for (var i = 1; i < contentJson.length; i++) {
-		var map_url = '';
-
-		if (contentJson[i].fields.field_map_page_url && contentJson[i].fields.field_map_page_url.und && contentJson[i].fields.field_map_page_url.und[0].url) {
-			map_url = contentJson[i].fields.field_map_page_url.und[0].url;
+		var map_unique = '';
+		if (contentJson[i].fields.field_map_unique && contentJson[i].fields.field_map_unique.und && contentJson[i].fields.field_map_unique.und[0].value) {
+			map_unique = contentJson[i].fields.field_map_unique.und[0].value;
 		}
 
-		var mapId0 = map_url.replace(/.*\//, '');
-		if (mapId0 == mapId) {
+		if (map_unique == mapId) {
 			if (contentJson[i].fields.field_map_type && contentJson[i].fields.field_map_type.und && contentJson[i].fields.field_map_type.und[0].value) {
 				map_type = contentJson[i].fields.field_map_type.und[0].value;
 			}
 		}
 	}
-
 	return map_type;
-
 }
 
-
+function getWebUrl(mapId) {
+	var webUrl = '';
+	for (var i = 1; i < contentJson.length; i++) {
+		var map_unique = '';
+		if (contentJson[i].fields.field_map_unique && contentJson[i].fields.field_map_unique.und && contentJson[i].fields.field_map_unique.und[0].value) {
+			map_unique = contentJson[i].fields.field_map_unique.und[0].value;
+		}
+		if (map_unique == mapId) {
+			if (contentJson[i].webUrl) {
+				webUrl = contentJson[i].webUrl;
+			}
+		}
+	}
+	return webUrl;
+}
 
 
 
@@ -460,3 +469,4 @@ module.exports.getContentAPI = getContentAPI;
 module.exports.pullMap = pullMap;
 module.exports.checkMapId = checkMapId;
 module.exports.getMapType = getMapType;
+module.exports.getWebUrl = getWebUrl;

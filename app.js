@@ -177,11 +177,23 @@ app.use('/:appId', function(req, res, next){
 		return;
 	}
 	
-	if (routeTable[appId]) {
-		var appUrl = routeTable[appId].url;
-		var routeType =  'proxy'; // routeTable[appId].type;
-		console.log('appUrl : ' + appUrl);
-		console.log('routeType : ' + routeType);
+	
+	var isMap = maps.checkMapId(appId);
+
+	if (!isMap) {
+		next();
+	}
+	
+	var mapType = maps.getMapType(appId);
+
+	if (mapType == 'proxy' || mapType == 'redirect') {
+		var appUrl = maps.getWebUrl(appId);
+		appUrl = appUrl.replace(/\?$/, '');
+
+		//var appUrl = routeTable['amr'].url;
+		//var routeType =  'proxy'; // routeTable[appId].type;
+		//console.log('appUrl : ' + appUrl);
+		//console.log('routeType : ' + routeType);
 				
 		if (appUrl.slice(-1) == '/' ){
 			appUrl = appUrl.slice(0, -1);		
@@ -189,10 +201,11 @@ app.use('/:appId', function(req, res, next){
 		var routeUrl = appUrl + req.url;
 		console.log('routeUrl : ' + routeUrl);
 		
-		if (routeType == "proxy") {
+		
+		if (mapType == "proxy") {
 			req.pipe(request(routeUrl)).pipe(res);
 		}
-		else {	//if (routeType == "redirect")	
+		else {	//if (mapType == "redirect")	
 			res.redirect(302, routeUrl);
 		}
 		return;
@@ -200,12 +213,7 @@ app.use('/:appId', function(req, res, next){
 	else {
 	
 		console.log('no app id - assume to be a map');
-		
-		var isMap = maps.checkMapId(appId);
-		if (!isMap) {
-			next();
-		}
-		
+
 		var mapType = maps.getMapType(appId);
 		
 		if (mapType == 'int_layers') {
