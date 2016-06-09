@@ -144,6 +144,7 @@ function getMapMeta1(data, mapMeta) {
         mapJSON.longitude = map_info_all.map_longitude || '-105.00';
         mapJSON.initialzoom = map_info_all.map_initial_zoom || '3';
         mapJSON.thumbnail = map_info_all.image_thumbnail;
+		mapJSON.webUrl = map_info_all.webUrl;
         
         if (mapJSON.url !== '') {
             updateMapMeta(data[i], mapMeta, mapJSON);
@@ -209,16 +210,25 @@ function createMapCard(mapMeta) {
     
     for (var i = 0; i < urls.length; i++) {
 
-		isMapLayers = mapMeta.mapTypes[i] === 'int_layers';
+		isMapLayers = mapMeta.mapTypes[i] === 'int_layers';				
 
-		if (isMapLayers) {			
+		if (mapMeta.mapTypes[i] === 'int_layers') {			
 			url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
 			embedLink =  url + '/embed/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i] + '/';
 			url_bookmark = url + '/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i];
 			thumbImg = '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
-		} else {
+		} 
+		else if (mapMeta.mapTypes[i] === 'int_iframe') {			
+			url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
+			embedLink = mapMeta.webUrl;
+			console.log('embedLink : '+ embedLink );
+			console.log('mapMeta.webUrl : '+ mapMeta.webUrl );
+			url_bookmark = url;
+			thumbImg = '<img src="../map_templates/images/' + mapMeta.thumbnail[i] + '" alt="' + mapMeta.titles[i] + '" class="mapThumb img-responsive">';
+		}
+		else {
 			url = urls[i];
-			embedLink = '/';
+			embedLink = url; // '/';
 			url_bookmark = url;
 			thumbImg = '<img src="../map_templates/images/' + mapMeta.thumbnail[i] + '" alt="' + mapMeta.titles[i] + '" class="mapThumb img-responsive">';
 		}

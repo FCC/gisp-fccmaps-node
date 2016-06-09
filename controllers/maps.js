@@ -33,6 +33,10 @@ var CONTENT_API = configEnv[NODE_ENV].CONTENT_API || '/api.json';
 var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
 
 // **********************************************************
+// routeTable
+var routeTable = require('../config/route.json');
+
+// **********************************************************
 
 var contentJson = [];
 var newDataJson, oldDataJson;
@@ -50,6 +54,7 @@ function createMap(mm) {
 		var map_page_title = '';
 	
 		console.log('\n\n=========== begin processing map ===========');
+				
 		
 		//see if there is map_page_url
 		if ( !(mm.fields.field_map_page_url.und && mm.fields.field_map_page_url.und[0].url)) {
@@ -88,7 +93,13 @@ function createMap(mm) {
 			map_page_title = mm.fields.field_map_page_url.und[0].title;
 		}
 		
-		if (!map_page_url) {
+		// validate route from routeTable
+		if (routeTable[map_page_url]) {			
+			console.log('\n\n\n\n\n\n\n map_page_url in routeTable');
+			//callback(new Error('map_page_url in routeTable '));
+			return;
+		}		
+		else if (!map_page_url) {
 			console.log('no map page url');
 			//callback(new Error('map_page_url undefined '));
 			return;
@@ -130,7 +141,7 @@ function createMap(mm) {
 }
 
 function forceMap() { // force will clear and rebuild
-	console.log('\n deployMap :  '  );
+	console.log('\n forceMap :  '  );
 	console.log('forceLock :  ' + forceLock );
 	try {
 		if (forceLock) {
@@ -139,6 +150,7 @@ function forceMap() { // force will clear and rebuild
 		}
 		else {
 			contentJson = '';
+			console.log('contentJson :  ' + contentJson );
 			
 			if (fs.existsSync(mapDirPath)) {
 				
@@ -159,10 +171,13 @@ function forceMap() { // force will clear and rebuild
 			
 				//fs.removeSync(mapDirPath);
 			}
+			else {
+				deployMap(false);	
+			}
 		}
 	}
 	catch (e) {
-		console.error('Exception in forceMap:'+e);		
+		console.error('Exception in forceMap : '+e);		
 	}
 }
 
@@ -309,8 +324,7 @@ function copyFromTemplates(m, dirPath) {
 				fs.rename(pathIndexIframe, pathIndex, function(err){
 					if (err) return console.error(err);
 				});
-			}
-			
+			}			
 			
 			writeMapOptions(m, dirPath);	
 		}

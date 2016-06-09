@@ -87,24 +87,13 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
 
 // **********************************************************
-// route
-
-app.use('/', express.static(__dirname + '/public'));
-
-app.get('/api', function(req, res){
-	maps.getContentAPI(req, res);
-});
-app.get('/api.json', function(req, res){
-	maps.getContentAPI(req, res);
-});
-
-app.get('/admin/pull', function(req, res){
+// validate
+function checkAllowed(req, res, next) {
 	
-    var ip = req.headers['x-forwarded-for'] || 
+	var ip = req.headers['x-forwarded-for'] || 
 		req.connection.remoteAddress || 
 		req.socket.remoteAddress ||
-		req.connection.socket.remoteAddress;
-		
+		req.connection.socket.remoteAddress;		
 	console.log('ip : ' + ip );
 
 	//check allowed IP
@@ -122,17 +111,41 @@ app.get('/admin/pull', function(req, res){
 	 
 	 if (isAllowed) {
 		console.log('maps.pullMap isAllowed');
-		maps.pullMap(req, res);
+		next();
 	 }
 	 else {		
-		console.log('IP not allowed');
+		console.log('checkAllowed error : IP not allowed');
 		//res.send({'status': 'error', 'msg': 'not allowed'});
 		res.status(404);
 		//res.sendFile('/public/404.html');
 		res.sendFile('404.html', { root: __dirname + '/public' });
+		return;
 	 }
-	 
+}
+
+// **********************************************************
+// route
+
+//api routing
+app.get('/api', function(req, res){
+	maps.getContentAPI(req, res);
 });
+app.get('/api.json', function(req, res){
+	maps.getContentAPI(req, res);
+});
+
+//admin routing
+app.use('/admin', function(req, res, next){		
+	checkAllowed(req, res, next);
+});
+app.get('/admin/pull', function(req, res, next){
+	maps.pullMap(req, res, next);
+});
+
+//static routing
+app.use('/', express.static(__dirname + '/public'));
+
+app.use('/', express.static(__dirname + '/public/map'));
 
 //proxy routing
 app.use('/:appId', function(req, res, next){
@@ -140,7 +153,7 @@ app.use('/:appId', function(req, res, next){
 	//console.log('\n proxy routing ' );
 
 	var appId = req.params.appId; //req.url.replace(/\//g, '');	
-	console.log('appId ' + appId);
+	//console.log('appId ' + appId);
 	/*
 	console.log('req.url ' + req.url);
 	console.log('req.get host ' + req.get('host'));
@@ -152,42 +165,47 @@ app.use('/:appId', function(req, res, next){
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
 		console.log('trailing slash redirect ');		
 		res.redirect(301, req.originalUrl + '/');
+		return;
 	}
 	
 	if (routeTable[appId]) {
 		var appUrl = routeTable[appId].url;
+		var routeType = routeTable[appId].type;
 		console.log('appUrl : ' + appUrl);
+		console.log('routeType : ' + routeType);
 				
 		if (appUrl.slice(-1) == '/' ){
 			appUrl = appUrl.slice(0, -1);		
 		}
-		var proxyUrl = appUrl + req.url;
-		console.log('proxyUrl : ' + proxyUrl);
+		var routeUrl = appUrl + req.url;
+		console.log('routeUrl : ' + routeUrl);
 		
-		req.pipe(request(proxyUrl)).pipe(res);
+		if (routeType == "proxy") {
+			req.pipe(request(routeUrl)).pipe(res);
+		}
+		else {	//if (routeType == "redirect")	
+			res.redirect(302, routeUrl);
+		}
+		return;
 	}
 	else {
-		console.log('no app id');
+		//console.log('no app id');
 		next(); 
 	}
-
-
 });
-
-app.use('/', express.static(__dirname + '/public/map'));
-
 
 // **********************************************************
 // error
 
 app.use(function(req, res) {
 
-console.log('\napp.use file not found ' );
+	console.log('\n app.use file not found ' );
     console.error('404 file not found'); 
 
     res.status(404);
     //res.sendFile('/public/404.html');
 	res.sendFile('404.html', { root: __dirname + '/public' });
+	return;
 });
 
 app.use(function(err, req, res, next) {
@@ -198,6 +216,7 @@ app.use(function(err, req, res, next) {
     res.status(500);
     //res.sendFile('/public/500.html');
 	res.sendFile('500.html', { root: __dirname + '/public' });
+	return;
 });
 
 process.on('uncaughtException', function (err) {
