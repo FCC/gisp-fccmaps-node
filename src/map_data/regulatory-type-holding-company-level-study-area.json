@@ -4,7 +4,7 @@
     "created": "2016-03-10",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/regulatory-type-holding-company-level-study-area",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFregType/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "187939",
@@ -161,7 +161,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/regulatory-type-holding-company-level-study-area",
+                "url": "https://www.fcc.gov/maps/regulatory-type-holding-company-level-study-area",
                 "title": "Regulatory Type at the Holding Company Level by Study Area",
                 "attributes": [
 

@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFperLineHiCost/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -105,7 +105,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
+                "url": "https://www.fcc.gov/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
                 "title": "Total Per Line USF High-Cost Distributions in Rate-of-Return Study Areas",
                 "attributes": [
 

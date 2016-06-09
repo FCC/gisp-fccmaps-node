@@ -176,8 +176,9 @@
         ],
         "field_bureau_office": {
             "und": [{
-                "tid": "OGC",
-                "value": "Wireline Competition Bureau"
+                "tid": "EB",
+                "value": "Enforcement Bureau",
+                "url": "https://www.fcc.gov/enforcement"
             }]
         },
         "field_map_address_search_": {

@@ -8395,7 +8395,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/tribal-mobility-fund-phase-i-potentially-eligible-areas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38.8226/-99.1406",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -8496,7 +8496,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/tribal-mobility-fund-phase-i-potentially-eligible-areas",
+                "url": "https://www.fcc.gov/maps/tribal-mobility-fund-phase-i-potentially-eligible-areas",
                 "title": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
                 "attributes": [
 
@@ -8972,7 +8972,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/800-mhz-cellular-–-block-cgsas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.800-mhz-cellular-a-block-cgsa/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39/-99.9887",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -9073,7 +9073,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/800-mhz-cellular-%E2%80%93-block-cgsas",
+                "url": "https://www.fcc.gov/maps/800-mhz-cellular-–-block-cgsas",
                 "title": "800 MHz Cellular – A Block CGSAs",
                 "attributes": [
 
@@ -10399,8 +10399,9 @@
         ],
         "field_bureau_office": {
             "und": [{
-                "tid": "OGC",
-                "value": "Wireline Competition Bureau"
+                "tid": "EB",
+                "value": "Enforcement Bureau",
+                "url": "https://www.fcc.gov/enforcement"
             }]
         },
         "field_map_address_search_": {
@@ -11819,7 +11820,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/fcc-connect-america-phase-ii-final-eligible-areas-map",
+    "webUrl": "https://fcc.github.io/caf-2-final-areas-map/index.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -11920,7 +11921,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/fcc-connect-america-phase-ii-final-eligible-areas-map",
+                "url": "https://www.fcc.gov/maps/fcc-connect-america-phase-ii-final-eligible-areas-map",
                 "title": "Connect America Phase II - Final Eligible Areas Map",
                 "attributes": [
 
@@ -12114,7 +12115,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/total-high-cost-distributions-rate-return-study-areas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFtotalHiCost/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -12215,7 +12216,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/total-high-cost-distributions-rate-return-study-areas",
+                "url": "https://www.fcc.gov/maps/total-high-cost-distributions-rate-return-study-areas",
                 "title": "Total High-Cost Distributions in Rate-of-Return Study Areas",
                 "attributes": [
 
@@ -12409,7 +12410,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFperLineHiCost/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -12510,7 +12511,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
+                "url": "https://www.fcc.gov/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
                 "title": "Total Per Line USF High-Cost Distributions in Rate-of-Return Study Areas",
                 "attributes": [
 
@@ -12704,7 +12705,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/net-usf-received-voice-line",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USF_NetFlow100711/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#3/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -12805,7 +12806,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/net-usf-received-voice-line",
+                "url": "https://www.fcc.gov/maps/net-usf-received-voice-line",
                 "title": "Net USF Received Per Voice Line",
                 "attributes": [
 
@@ -12999,7 +13000,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/rural-health-care-pilot-program",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.map-pxxbakrr/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#6/39.053318106741/-105.43454272461",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -13100,7 +13101,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/rural-health-care-pilot-program",
+                "url": "https://www.fcc.gov/maps/rural-health-care-pilot-program",
                 "title": "Rural Health Care Pilot Program",
                 "attributes": [
 
@@ -13290,11 +13291,11 @@
 }
 ,{
     "nid": "28002",
-    "title": "Alternative Connect America Cost Model (A-CAM) - Rate-of-Return Areas for Download",
+    "title": "Alternative Connect America Cost Model (A-CAM)",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/acam-ror-sa-map",
+    "webUrl": "https://www.broadbandmap.gov/a/swat/ror-map/index.html?v=1",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -13381,7 +13382,7 @@
         ],
         "field_subtitle": {
             "und": [{
-                "value": ""
+                "value": "Rate-of-Return Areas for Download"
             }]
         },
         "field_featured": [
@@ -13395,7 +13396,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/acam-ror-sa-map",
+                "url": "https://www.fcc.gov/maps/acam-ror-sa-map",
                 "title": "Alternative Connect America Cost Model (A-CAM) - Rate-of-Return Areas for Download",
                 "attributes": [
 
@@ -13585,11 +13586,11 @@
 }
 ,{
     "nid": "28002",
-    "title": "Connect America Phase II - Initial Eligible Areas Map",
+    "title": "Connect America Phase II - Final Eligible Areas Map",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/connect-america-phase-ii-final-eligible-areas-map",
+    "webUrl": "https://fcc.github.io/caf-2-final-map/index.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -13601,10 +13602,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "<p>This map identifies the areas that have been initially determined to be eligible for ongoing Phase II Connect America support, which are shown in dark green on the map. The map displays the outputs of the adopted version of the Connect America Cost Model (CAM) (version 4.1.1), which calculates costs per location in all price cap carrier study areas for the entire country. Areas marked as “served” are reported as having Internet access of at least 3 Mbps downstream and 768 kbps upstream from an unsubsidized competitor. The map is based on round 8 State Broadband Initiative Data (data as of June 2013).</p><p>Areas on the map fall into one of six categories: served/above cost, served/between cost, served/below cost, unserved/above cost, unserved/between cost, and unserved/below cost. The Wireline Competition Bureau has made an initial determination that areas shown as unserved/between cost on the map are eligible for Phase II support, subject to a challenge process. An area is classified as “between cost” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above $52.50 but below $207.81. An area is classified as “unserved” if it is reported to lack service meeting the requisite speed from an unsubsidized competitor. Areas shown in grey (i.e., not falling into one of the six categories) are either located in rate-of-return study areas and/or are reported as uninhabited. The map will be updated after completion of the Phase II challenge process.</p><p>When the map is zoomed in to display census tract boundaries, clicking on an area of the map displays additional information for that particular census tract (i.e., a grouping of census blocks). The tract-based information provides the census tract number, the total number of eligible locations in the price cap portion of the census tract that are between the cost thresholds where Phase II support is provided and unserved by an unsubsidized competitor, and the cost model-derived amount of annual Phase II support to serve these between cost, unserved locations. Additionally, the displayed information separately provides the total number of locations in the price cap portion of the census tract that are unserved but are in census blocks that are “above cost” (i.e, the census block has a monthly cost-per-location, as calculated by the cost model, at or above the extremely high-cost threshold of $207.81).</p><p>UPDATE: The download feature on this map was updated on 9/29 to correct an issue that limited the number of block records returned to a maximum of 10.</p>",
+                "value": "<p>This map identifies the areas that have been determined to be eligible for support for broadband and voice service from Phase II of the FCC’s Connect America Fund. Specifically, the map identifies areas determined by a cost model as eligible for support and which are served by a class of larger carriers called price cap carriers. These areas are shown in bright green on the map. The map displays the outputs of the final version of the Connect America Cost Model (CAM) (version 4.3) adopted for purposes of making the offer Phase II support to price cap carriers. The model calculates costs per location in all price cap carrier census blocks for the entire country. Empty areas with no color are either located in areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but may receive support from other universal service high-cost mechanisms, and/or are reported as uninhabited.</p><p>The offer of model-based support is targeted to price cap areas that are high-cost, but not extremely high-cost. Areas on the map fall into one of five categories: eligible, ineligible because the average cost is above the extremely high-cost threshold (EHCT), ineligible because the average cost is below the funding benchmark, high-cost areas that are ineligible for other reasons, and areas not subject to the offer of support because the carrier in the area is not interested in model-based support. An area is classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above the $52.50 funding benchmark but below the $198.60 EHCT, and is not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. An area is classified as “other ineligible” if the average monthly cost-per-location is above $52.50 but below $198.60, but it is served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments. Price cap areas in Alaska, Puerto Rico, and the Virgin Islands are classified as “elected frozen” because the carriers serving these non-contiguous areas indicated that they are interested in receiving frozen Phase II support in lieu of model-based support.</p><p>When the map is zoomed in to display county boundaries, clicking on an area of the map displays additional information for that particular county. The county information provides the county name, the total number of price cap locations in the county, the total number of price cap locations that are eligible for model-based support, and the cost model-derived amount of annual Phase II support available in the county. Carriers accepting support will be required to offer broadband service to a specific number of locations across their entire service area in the state. Note that not all locations in a given county are eligible for Phase II support.</p><p>For more information about Connect America Phase II, refer to <a href=\"https://www.fcc.gov/encyclopedia/price-cap-resources\">https://www.fcc.gov/encyclopedia/price-cap-resources</a>.</p><p><a href=\"https://www.fcc.gov/maps/fcc-connect-america-phase-ii-final-eligible-areas-map\">Click here for the original version of this map</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p>This map identifies the areas that have been initially determined to be eligible for ongoing Phase II Connect America support, which are shown in dark green on the map. The map displays the outputs of the adopted version of the Connect America Cost Model (CAM) (version 4.1.1), which calculates costs per location in all price cap carrier study areas for the entire country. Areas marked as “served” are reported as having Internet access of at least 3 Mbps downstream and 768 kbps upstream from an unsubsidized competitor. The map is based on round 8 State Broadband Initiative Data (data as of June 2013).</p><p>Areas on the map fall into one of six categories: served/above cost, served/between cost, served/below cost, unserved/above cost, unserved/between cost, and unserved/below cost. The Wireline Competition Bureau has made an initial determination that areas shown as unserved/between cost on the map are eligible for Phase II support, subject to a challenge process. An area is classified as “between cost” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above $52.50 but below $207.81. An area is classified as “unserved” if it is reported to lack service meeting the requisite speed from an unsubsidized competitor. Areas shown in grey (i.e., not falling into one of the six categories) are either located in rate-of-return study areas and/or are reported as uninhabited. The map will be updated after completion of the Phase II challenge process.</p><p>When the map is zoomed in to display census tract boundaries, clicking on an area of the map displays additional information for that particular census tract (i.e., a grouping of census blocks). The tract-based information provides the census tract number, the total number of eligible locations in the price cap portion of the census tract that are between the cost thresholds where Phase II support is provided and unserved by an unsubsidized competitor, and the cost model-derived amount of annual Phase II support to serve these between cost, unserved locations. Additionally, the displayed information separately provides the total number of locations in the price cap portion of the census tract that are unserved but are in census blocks that are “above cost” (i.e, the census block has a monthly cost-per-location, as calculated by the cost model, at or above the extremely high-cost threshold of $207.81).</p><p>UPDATE: The download feature on this map was updated on 9/29 to correct an issue that limited the number of block records returned to a maximum of 10.</p>",
+                "safe_value": "<p>This map identifies the areas that have been determined to be eligible for support for broadband and voice service from Phase II of the FCC’s Connect America Fund. Specifically, the map identifies areas determined by a cost model as eligible for support and which are served by a class of larger carriers called price cap carriers. These areas are shown in bright green on the map. The map displays the outputs of the final version of the Connect America Cost Model (CAM) (version 4.3) adopted for purposes of making the offer Phase II support to price cap carriers. The model calculates costs per location in all price cap carrier census blocks for the entire country. Empty areas with no color are either located in areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but may receive support from other universal service high-cost mechanisms, and/or are reported as uninhabited.</p><p>The offer of model-based support is targeted to price cap areas that are high-cost, but not extremely high-cost. Areas on the map fall into one of five categories: eligible, ineligible because the average cost is above the extremely high-cost threshold (EHCT), ineligible because the average cost is below the funding benchmark, high-cost areas that are ineligible for other reasons, and areas not subject to the offer of support because the carrier in the area is not interested in model-based support. An area is classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above the $52.50 funding benchmark but below the $198.60 EHCT, and is not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. An area is classified as “other ineligible” if the average monthly cost-per-location is above $52.50 but below $198.60, but it is served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments. Price cap areas in Alaska, Puerto Rico, and the Virgin Islands are classified as “elected frozen” because the carriers serving these non-contiguous areas indicated that they are interested in receiving frozen Phase II support in lieu of model-based support.</p><p>When the map is zoomed in to display county boundaries, clicking on an area of the map displays additional information for that particular county. The county information provides the county name, the total number of price cap locations in the county, the total number of price cap locations that are eligible for model-based support, and the cost model-derived amount of annual Phase II support available in the county. Carriers accepting support will be required to offer broadband service to a specific number of locations across their entire service area in the state. Note that not all locations in a given county are eligible for Phase II support.</p><p>For more information about Connect America Phase II, refer to <a href=\"https://www.fcc.gov/encyclopedia/price-cap-resources\">https://www.fcc.gov/encyclopedia/price-cap-resources</a>.</p><p><a href=\"https://www.fcc.gov/maps/fcc-connect-america-phase-ii-final-eligible-areas-map\">Click here for the original version of this map</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -13690,317 +13691,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/connect-america-phase-ii-initial-eligible-areas-map",
-                "title": "Connect America Phase II - Initial Eligible Areas Map",
-                "attributes": [
-
-                ]
-            }]
-        },
-        "field_map_repository": [
-
-        ],
-        "field_map_status": [
-
-        ],
-        "field_map_type": {
-            "und": [{
-                "value": "int_iframe"
-            }]
-        },
-        "field_related_links": {
-            "und": []
-        },
-        "field_bureau_office": {
-            "und": [{
-                "tid": "WCB",
-                "value": "Wireline Communications",
-                "url": "https://www.fcc.gov/wireline-competition"
-            }]
-        },
-        "field_map_address_search_": [
-
-        ],
-        "field_map_attribution": [
-
-        ],
-        "field_map_basemap": {
-            "und": [
-                { "value": "street" }
-            ]
-        },
-        "field_map_coordinate_search_": [
-
-        ],
-        "field_map_initial_zoom": {
-            "und": [
-                { "value": "4" }
-            ]
-        },
-        "field_map_latitude": {
-            "und": [
-                { "value": "38.82" }
-            ]
-        },
-        "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc.kr8dunmi",
-                    "format": null,
-                    "safe_value": "fcc.kr8dunmi"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1.0"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "Connect America Phase II - Final Eligible Areas Map",
-                    "format": null,
-                    "safe_value": "Connect America Phase II - Final Eligible Areas Map"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#ff8240",
-                    "format": null,
-                    "safe_value": "#ff8240"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Unavailable",
-                    "format": null,
-                    "safe_value": "Unavailable"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#ffe1d1",
-                    "format": null,
-                    "safe_value": "#ffe1d1"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Partially Unavailable",
-                    "format": null,
-                    "safe_value": "Partially Unavailable"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_longitude": {
-            "und": [
-                { "value": "-96.86" }
-            ]
-        },
-        "field_map_max_zoom": [
-
-        ],
-        "field_map_min_zoom": [
-
-        ]
-    },
-    "taxonomy": [{ 
-        "tid": "966",
-        "vid": "1",
-        "name": "Connect America Fund (High Cost)",
-        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Connect America Fund (High Cost) - Price Cap Carriers",
-        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost-price-cap-carriers"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Data, Maps, Reports",
-        "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps",
-        "url": "https://www.fcc.gov/tags/maps"
-    }, { 
-        "tid": "966",
-        "vid": "1",
-        "name": "Universal Service ",
-        "url": "https://www.fcc.gov/tags/universal-service"
-    }],
-    "uri": "http://10.154.68.187/api/content/28002"
-}
-,{
-    "nid": "28002",
-    "title": "Connect America Phase II - Final Eligible Areas Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
-    "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/connect-america-phase-ii-initial-eligible-areas-map",
-    "tnid": "0",
-    "body": null,
-    "vid": "28434",
-    "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
-        "field_description": {
-            "und": [{
-                "value": "<p>This map identifies the areas that have been determined to be eligible for support for broadband and voice service from Phase II of the FCC’s Connect America Fund. Specifically, the map identifies areas determined by a cost model as eligible for support and which are served by a class of larger carriers called price cap carriers. These areas are shown in bright green on the map. The map displays the outputs of the final version of the Connect America Cost Model (CAM) (version 4.3) adopted for purposes of making the offer Phase II support to price cap carriers. The model calculates costs per location in all price cap carrier census blocks for the entire country. Empty areas with no color are either located in areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but may receive support from other universal service high-cost mechanisms, and/or are reported as uninhabited.</p><p>The offer of model-based support is targeted to price cap areas that are high-cost, but not extremely high-cost. Areas on the map fall into one of five categories: eligible, ineligible because the average cost is above the extremely high-cost threshold (EHCT), ineligible because the average cost is below the funding benchmark, high-cost areas that are ineligible for other reasons, and areas not subject to the offer of support because the carrier in the area is not interested in model-based support. An area is classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above the $52.50 funding benchmark but below the $198.60 EHCT, and is not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. An area is classified as \"other ineligible\" if the average monthly cost-per-location is above $52.50 but below $198.60, but it is served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments. Price cap areas in Alaska, Puerto Rico, and the Virgin Islands are classified as “elected frozen” because the carriers serving these non-contiguous areas indicated that they are interested in receiving frozen Phase II support in lieu of model-based support.</p><p>When the map is zoomed in to display county boundaries, clicking on an area of the map displays additional information for that particular county. The county information provides the county name, the total number of price cap locations in the county, the total number of price cap locations that are eligible for model-based support, and the cost model-derived amount of annual Phase II support available in the county. Carriers accepting support will be required to offer broadband service to a specific number of locations across their entire service area in the state. Note that not all locations in a given county are eligible for Phase II support.</p><p>For more information about Connect America Phase II, refer to <a href=\"https://www.fcc.gov/encyclopedia/price-cap-resources\">https://www.fcc.gov/encyclopedia/price-cap-resources</a>.</p><p><a href=\"https://www.fcc.gov/maps/fcc-connect-america-phase-ii-final-eligible-areas-map\">Click here for the original version of this map.</a></p>",
-                "summary": "",
-                "format": "full_html",
-                "safe_value": "<p>This map identifies the areas that have been determined to be eligible for support for broadband and voice service from Phase II of the FCC’s Connect America Fund. Specifically, the map identifies areas determined by a cost model as eligible for support and which are served by a class of larger carriers called price cap carriers. These areas are shown in bright green on the map. The map displays the outputs of the final version of the Connect America Cost Model (CAM) (version 4.3) adopted for purposes of making the offer Phase II support to price cap carriers. The model calculates costs per location in all price cap carrier census blocks for the entire country. Empty areas with no color are either located in areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but may receive support from other universal service high-cost mechanisms, and/or are reported as uninhabited.</p><p>The offer of model-based support is targeted to price cap areas that are high-cost, but not extremely high-cost. Areas on the map fall into one of five categories: eligible, ineligible because the average cost is above the extremely high-cost threshold (EHCT), ineligible because the average cost is below the funding benchmark, high-cost areas that are ineligible for other reasons, and areas not subject to the offer of support because the carrier in the area is not interested in model-based support. An area is classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above the $52.50 funding benchmark but below the $198.60 EHCT, and is not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. An area is classified as \"other ineligible\" if the average monthly cost-per-location is above $52.50 but below $198.60, but it is served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments. Price cap areas in Alaska, Puerto Rico, and the Virgin Islands are classified as “elected frozen” because the carriers serving these non-contiguous areas indicated that they are interested in receiving frozen Phase II support in lieu of model-based support.</p><p>When the map is zoomed in to display county boundaries, clicking on an area of the map displays additional information for that particular county. The county information provides the county name, the total number of price cap locations in the county, the total number of price cap locations that are eligible for model-based support, and the cost model-derived amount of annual Phase II support available in the county. Carriers accepting support will be required to offer broadband service to a specific number of locations across their entire service area in the state. Note that not all locations in a given county are eligible for Phase II support.</p><p>For more information about Connect America Phase II, refer to <a href=\"https://www.fcc.gov/encyclopedia/price-cap-resources\">https://www.fcc.gov/encyclopedia/price-cap-resources</a>.</p><p><a href=\"https://www.fcc.gov/maps/fcc-connect-america-phase-ii-final-eligible-areas-map\">Click here for the original version of this map.</a></p>",
-                "safe_summary": ""
-            }]
-        },
-        "field_image_thumbnail": {
-            "und": [{
-                "fid": "3477",
-                "uid": "1798",
-                "filename": "thumb-connect-america-phase-ii-initial-eligible-areas-map.png",
-                "uri": "thumb-connect-america-phase-ii-initial-eligible-areas-map.png",
-                "filemime": "image/png",
-                "filesize": "3695",
-                "status": "1",
-                "timestamp": "1456505550",
-                "type": "image",
-                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
-                "field_file_image_alt_text": [
-
-                ],
-                "field_file_image_title_text": [
-
-                ],
-                "field_caption": [
-
-                ],
-                "field_bo_media": [
-
-                ],
-                "rdf_mapping": [
-
-                ],
-                "metadata": {
-                    "height": 38,
-                    "width": 175
-                },
-                "alt": null,
-                "title": null,
-                "height": "38",
-                "width": "175"
-            }]
-        },
-        "field_link": [
-
-        ],
-        "field_archived": {
-            "und": [{
-                "value": "1"
-            }]
-        },
-        "field_related_content": [
-
-        ],
-        "field_date_updated_reviewed": {
-            "und": [{
-                "value": "2016-01-29 11:45:00",
-                "timezone": "America/New_York",
-                "timezone_db": "UTC",
-                "date_type": "datetime"
-            }]
-        },
-        "og_group_ref": [{
-            "nid": "1639",
-            "group": "Wireline Competition"
-        }],
-        "field_date": [
-
-        ],
-        "field_search_exclude": [
-
-        ],
-        "field_subtitle": {
-            "und": [{
-                "value": ""
-            }]
-        },
-        "field_featured": [
-
-        ],
-        "field_map_display_date": [
-
-        ],
-        "field_map_options": [
-
-        ],
-        "field_map_page_url": {
-            "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/connect-america-phase-ii-initial-eligible-areas-map",
+                "url": "https://www.fcc.gov/maps/connect-america-phase-ii-final-eligible-areas-map",
                 "title": "Connect America Phase II - Final Eligible Areas Map",
                 "attributes": [
 
@@ -14209,7 +13900,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0",
+    "webUrl": "https://fcc.github.io/cost_model_map/map_frame.html#4/38.82/-94.96",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -14225,6 +13916,316 @@
                 "summary": "",
                 "format": "full_html",
                 "safe_value": "<p>This map identifies the areas that have been initially determined to be eligible for ongoing Phase II Connect America support, which are shown in dark green on the map. The map displays the outputs of the adopted version of the Connect America Cost Model (CAM) (version 4.1.1), which calculates costs per location in all price cap carrier study areas for the entire country. Areas marked as “served” are reported as having Internet access of at least 3 Mbps downstream and 768 kbps upstream from an unsubsidized competitor. The map is based on round 8 State Broadband Initiative Data (data as of June 2013).</p><p>Areas on the map fall into one of six categories: served/above cost, served/between cost, served/below cost, unserved/above cost, unserved/between cost, and unserved/below cost. The Wireline Competition Bureau has made an initial determination that areas shown as unserved/between cost on the map are eligible for Phase II support, subject to a challenge process. An area is classified as “between cost” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above $52.50 but below $207.81. An area is classified as “unserved” if it is reported to lack service meeting the requisite speed from an unsubsidized competitor. Areas shown in grey (i.e., not falling into one of the six categories) are either located in rate-of-return study areas and/or are reported as uninhabited. The map will be updated after completion of the Phase II challenge process.</p><p>When the map is zoomed in to display census tract boundaries, clicking on an area of the map displays additional information for that particular census tract (i.e., a grouping of census blocks). The tract-based information provides the census tract number, the total number of eligible locations in the price cap portion of the census tract that are between the cost thresholds where Phase II support is provided and unserved by an unsubsidized competitor, and the cost model-derived amount of annual Phase II support to serve these between cost, unserved locations. Additionally, the displayed information separately provides the total number of locations in the price cap portion of the census tract that are unserved but are in census blocks that are “above cost” (i.e, the census block has a monthly cost-per-location, as calculated by the cost model, at or above the extremely high-cost threshold of $207.81).</p><p>UPDATE: The download feature on this map was updated on 9/29 to correct an issue that limited the number of block records returned to a maximum of 10.</p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-connect-america-phase-ii-initial-eligible-areas-map.png",
+                "uri": "thumb-connect-america-phase-ii-initial-eligible-areas-map.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "as of Sept. 2014"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/connect-america-phase-ii-initial-eligible-areas-map",
+                "title": "Connect America Phase II - Initial Eligible Areas Map",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_iframe"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Communications",
+                "url": "https://www.fcc.gov/wireline-competition"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "4" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "38.82" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.kr8dunmi",
+                    "format": null,
+                    "safe_value": "fcc.kr8dunmi"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Connect America Phase II - Final Eligible Areas Map",
+                    "format": null,
+                    "safe_value": "Connect America Phase II - Final Eligible Areas Map"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ff8240",
+                    "format": null,
+                    "safe_value": "#ff8240"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Unavailable",
+                    "format": null,
+                    "safe_value": "Unavailable"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffe1d1",
+                    "format": null,
+                    "safe_value": "#ffe1d1"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Partially Unavailable",
+                    "format": null,
+                    "safe_value": "Partially Unavailable"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-96.86" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{ 
+        "tid": "966",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost) - Price Cap Carriers",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost-price-cap-carriers"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service ",
+        "url": "https://www.fcc.gov/tags/universal-service"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $52",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.l4qme7b9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p>The Wireline Competition Bureau provides the following illustrative map displaying the areas that would potentially be eligible for the Connect America Fund Phase II offer of model-based support to price cap carriers, based on the output from version 4.0 of the Connect America Cost Model (CAM v4.0) (see <a href=\"http://www.fcc.gov/maps\">http://www.fcc.gov/maps</a>). The areas that are shown as eligible for the offer of model-based support are consistent with the previously posted CAM v4.0 Illustrative Results that utilize a Funding Threshold of $52. In addition to providing a visualization of the areas potentially eligible for the offer of model-based support, the map displays the areas below the Funding Threshold, above the Extremely High Cost Threshold, and areas potentially excluded from eligibility due to the presence of other providers (based on State Broadband Initiative data and FCC Form 477 data). Additional details related to the CAM v4.0 release and supporting information can be found on the fcc.gov site (see <a href=\"http://www.fcc.gov/encyclopedia/price-cap-resources\">http://www.fcc.gov/encyclopedia/price-cap-resources</a>).</p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p>The Wireline Competition Bureau provides the following illustrative map displaying the areas that would potentially be eligible for the Connect America Fund Phase II offer of model-based support to price cap carriers, based on the output from version 4.0 of the Connect America Cost Model (CAM v4.0) (see <a href=\"http://www.fcc.gov/maps\">http://www.fcc.gov/maps</a>). The areas that are shown as eligible for the offer of model-based support are consistent with the previously posted CAM v4.0 Illustrative Results that utilize a Funding Threshold of $52. In addition to providing a visualization of the areas potentially eligible for the offer of model-based support, the map displays the areas below the Funding Threshold, above the Extremely High Cost Threshold, and areas potentially excluded from eligibility due to the presence of other providers (based on State Broadband Initiative data and FCC Form 477 data). Additional details related to the CAM v4.0 release and supporting information can be found on the fcc.gov site (see <a href=\"http://www.fcc.gov/encyclopedia/price-cap-resources\">http://www.fcc.gov/encyclopedia/price-cap-resources</a>).</p>",
                 "safe_summary": ""
             }]
         },
@@ -14310,8 +14311,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0",
-                "title": "Connect America Phase II - Initial Eligible Areas Map",
+                "url": "https://www.fcc.gov/maps/fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0",
+                "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $52",
                 "attributes": [
 
                 ]
@@ -14519,7 +14520,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.k02xd2t9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -14620,7 +14621,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48",
+                "url": "https://www.fcc.gov/maps/connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48",
                 "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $48",
                 "attributes": [
 
@@ -14829,7 +14830,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/connect-america-fund-caf-phase-i-round-two",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.connect_america_fund_phase_I_round_two/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -14930,7 +14931,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/connect-america-fund-caf-phase-i-round-two",
+                "url": "https://www.fcc.gov/maps/connect-america-fund-caf-phase-i-round-two",
                 "title": "Connect America Fund (CAF) Phase I Round Two",
                 "attributes": [
 
@@ -15134,7 +15135,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/connect-america-fund-caf-phase-i",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.CAF-Phase-1-States/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38.9594/-98.7891",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -15235,7 +15236,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/connect-america-fund-caf-phase-i",
+                "url": "https://www.fcc.gov/maps/connect-america-fund-caf-phase-i",
                 "title": "Connect America Fund (CAF) Phase I",
                 "attributes": [
 
@@ -15439,7 +15440,7 @@
     "created": "2016-03-10",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/wireline-maximum-advertised-download-speed",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.wireline-max-dl-speed-jun11/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39.2323/-98.7891",
     "tnid": "0",
     "body": null,
     "vid": "187939",
@@ -15596,7 +15597,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/wireline-maximum-advertised-download-speed",
+                "url": "https://www.fcc.gov/maps/wireline-maximum-advertised-download-speed",
                 "title": "Wireline Maximum Advertised Download Speed",
                 "attributes": [
 
@@ -15863,7 +15864,7 @@
     "created": "2016-03-10",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/regulatory-type-holding-company-level-study-area",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFregType/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "187939",
@@ -16020,7 +16021,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/regulatory-type-holding-company-level-study-area",
+                "url": "https://www.fcc.gov/maps/regulatory-type-holding-company-level-study-area",
                 "title": "Regulatory Type at the Holding Company Level by Study Area",
                 "attributes": [
 
@@ -16297,7 +16298,7 @@
     "created": "2016-03-10",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/connect-compete-home-broadband-coverage-map",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.connect2compete/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "187939",
@@ -16454,7 +16455,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/connect-compete-home-broadband-coverage-map",
+                "url": "https://www.fcc.gov/maps/connect-compete-home-broadband-coverage-map",
                 "title": "Connect to Compete Home Broadband Coverage Map",
                 "attributes": [
 
@@ -16717,11 +16718,11 @@
 }
 ,{
     "nid": "28002",
-    "title": "800 MHz Cellular – A Block CGSAs",
+    "title": "800 MHz Cellular – B Block CGSAs",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/800-mhz-cellular-–-block-cgsas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.p3lhm2t9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39/-99.9887",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16822,8 +16823,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://maps.fcc.gov/800-mhz-cellular-–-b-block-cgsas",
-                "title": "800 MHz Cellular – A Block CGSAs",
+                "url": "https://www.fcc.gov/maps/800-mhz-cellular-–-b-block-cgsas",
+                "title": "800 MHz Cellular – B Block CGSAs",
                 "attributes": [
 
                 ]
@@ -17998,9 +17999,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc20554.n4we9udi",
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.6abutyb9",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.n4we9udi"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.6abutyb9"
                 }]
             },
             "field_layer_format": {
@@ -18010,9 +18011,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc20554.n4we9udi",
+                    "value": "fcc20554.6abutyb9",
                     "format": null,
-                    "safe_value": "fcc20554.n4we9udi"
+                    "safe_value": "fcc20554.6abutyb9"
                 }]
             },
             "field_layer_opacity": {
@@ -18027,9 +18028,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "GSM",
+                    "value": "WiMAX",
                     "format": null,
-                    "safe_value": "GSM"
+                    "safe_value": "WiMAX"
                 }]
             },
             "field_layer_type": {
@@ -18059,9 +18060,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc20554.a8y6i529",
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.2etawcdi",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.a8y6i529"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.2etawcdi"
                 }]
             },
             "field_layer_format": {
@@ -18071,9 +18072,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc20554.a8y6i529",
+                    "value": "fcc20554.2etawcdi",
                     "format": null,
-                    "safe_value": "fcc20554.a8y6i529"
+                    "safe_value": "fcc20554.2etawcdi"
                 }]
             },
             "field_layer_opacity": {
@@ -18088,9 +18089,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "CDMA",
+                    "value": "LTE",
                     "format": null,
-                    "safe_value": "CDMA"
+                    "safe_value": "LTE"
                 }]
             },
             "field_layer_type": {
@@ -18120,9 +18121,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc20554.jmt8d7vi",
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.u8mvaemi",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.jmt8d7vi"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.u8mvaemi"
                 }]
             },
             "field_layer_format": {
@@ -18132,9 +18133,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc20554.jmt8d7vi",
+                    "value": "fcc20554.u8mvaemi",
                     "format": null,
-                    "safe_value": "fcc20554.jmt8d7vi"
+                    "safe_value": "fcc20554.u8mvaemi"
                 }]
             },
             "field_layer_opacity": {
@@ -18149,9 +18150,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "IDEN",
+                    "value": "HSPA Plus",
                     "format": null,
-                    "safe_value": "IDEN"
+                    "safe_value": "HSPA Plus"
                 }]
             },
             "field_layer_type": {
@@ -18234,6 +18235,232 @@
 
             ]
         }],
+        "field_map_legend": [],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-99.67" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "3G, 4G and 5G",
+        "url": "https://www.fcc.gov/tags/3g-4g-and-5g"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Mobile Wireless Competition Report",
+        "url": "https://www.fcc.gov/tags/mobile-wireless-competition-report"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Terrestrial Wireless Coverage by Number of Providers",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": [],
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-21 14:15:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "July 2015"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers",
+                "title": "Terrestrial Wireless Coverage by Number of Providers",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_layers"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "4" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "38.62" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.kdh0pigc",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.kdh0pigc"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc20554.6abutyb9",
+                    "format": null,
+                    "safe_value": "fcc20554.6abutyb9"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "WiMAX",
+                    "format": null,
+                    "safe_value": "WiMAX"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
         "field_map_legend": [{
             "item_id": "2434",
             "revision_id": "3385",
@@ -18243,14 +18470,14 @@
             "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
             "field_legend_color": {
                 "und": [{
-                    "value": "#ae8",
+                    "value": "lightgrey",
                     "format": null,
-                    "safe_value": "#ae8"
+                    "safe_value": "lightgrey"
                 }]
             },
             "field_legend_text": {
                 "und": [{
-                    "value": "CDMA",
+                    "value": "0",
                     "format": null,
                     "safe_value": "0"
                 }]
@@ -18267,40 +18494,88 @@
             "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
             "field_legend_color": {
                 "und": [{
-                    "value": "#f3e723",
+                    "value": "#ffff99",
                     "format": null,
-                    "safe_value": "#f3e723"
+                    "safe_value": "#ffff99"
                 }]
             },
             "field_legend_text": {
                 "und": [{
-                    "value": "GSM",
+                    "value": "1",
                     "format": null,
-                    "safe_value": "GSM"
+                    "safe_value": "1"
                 }]
             },
             "rdf_mapping": [
 
             ]
         }, {
-            "item_id": "2435",
-            "revision_id": "3386",
+            "item_id": "2434",
+            "revision_id": "3385",
             "field_name": "field_map_legend",
             "default_revision": "1",
             "archived": "0",
-            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
             "field_legend_color": {
                 "und": [{
-                    "value": "#795836",
+                    "value": "#7fc97f",
                     "format": null,
-                    "safe_value": "#795836"
+                    "safe_value": "#7fc97f"
                 }]
             },
             "field_legend_text": {
                 "und": [{
-                    "value": "iDEN",
+                    "value": "2",
                     "format": null,
-                    "safe_value": "iDEN"
+                    "safe_value": "2"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#a87000",
+                    "format": null,
+                    "safe_value": "#a87000"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "3",
+                    "format": null,
+                    "safe_value": "3"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#734c00",
+                    "format": null,
+                    "safe_value": "#734c00"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "4 or more",
+                    "format": null,
+                    "safe_value": "4 or more"
                 }]
             },
             "rdf_mapping": [
@@ -18339,6 +18614,297 @@
         "vid": "1",
         "name": "Reports",
         "url": "https://www.fcc.gov/tags/reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Mobility Fund Phase 1 Potentially Eligible Areas",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.mobility-fund-phase-1-potentially-eligible-areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/35/-97",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p>This map is made with data current as of January 2012. This map shows the areas identified as potentially eligible for Mobility Fund Phase 1 support. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block according to January 2012 American Roamer data and contain road miles in any of nine road categories. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible blocks, including population, road miles (S1100, S1200, and S1400 categories only), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a></p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p>This map is made with data current as of January 2012. This map shows the areas identified as potentially eligible for Mobility Fund Phase 1 support. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block according to January 2012 American Roamer data and contain road miles in any of nine road categories. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible blocks, including population, road miles (S1100, S1200, and S1400 categories only), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a></p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-mobility-fund-phase-1-potentially-eligible-areas.png",
+                "uri": "thumb-mobility-fund-phase-1-potentially-eligible-areas.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/mobility-fund-phase-1-potentially-eligible-areas",
+                "title": "Mobility Fund Phase 1 Potentially Eligible Areas",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "int_iframe"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.Mobility-Fund-Phase-1-Eligible-Areas",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Mobility-Fund-Phase-1-Eligible-Areas"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.Mobility-Fund-Phase-1-Eligible-Areas",
+                    "format": null,
+                    "safe_value": "fcc.Mobility-Fund-Phase-1-Eligible-Areas"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
+                    "format": null,
+                    "safe_value": "Tribal Mobility Fund Phase I Potentially Eligible Areas"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#080c0f",
+                    "format": null,
+                    "safe_value": "#080c0f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Mobility Fund Phase 1 Eligible Areas",
+                    "format": null,
+                    "safe_value": "Mobility Fund Phase 1 Eligible Areas"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobile Broadband",
+        "url": "https://www.fcc.gov/tags/mobile-broadband"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobile Fund",
+        "url": "https://www.fcc.gov/tags/mobility-fund-0"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobility Fund Phase 1",
+        "url": "https://www.fcc.gov/tags/mobility-fund-phase-1"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Spectrum",
+        "url": "https://www.fcc.gov/tags/spectrum-0"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

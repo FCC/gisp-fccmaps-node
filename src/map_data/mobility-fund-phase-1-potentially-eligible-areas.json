@@ -1,10 +1,10 @@
 {
     "nid": "28002",
-    "title": "Total High-Cost Distributions in Rate-of-Return Study Areas",
+    "title": "Mobility Fund Phase 1 Potentially Eligible Areas",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFtotalHiCost/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.mobility-fund-phase-1-potentially-eligible-areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/35/-97",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16,10 +16,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map was developed by the FCC to show Total Universal Service Fund High-Cost Distributions in Rate-of-Return Study Areas. Data derived from USAC 2010 disbursement data available at <a href=\"https://apps.fcc.gov/edocs_public/attachmatch/DOC-310281A1.pdf\">https://apps.fcc.gov/edocs_public/attachmatch/DOC-310281A1.pdf</a>. Study area boundaries are derived from Tele Atlas Telecommunications Suite 2010.06",
+                "value": "<p>This map is made with data current as of January 2012. This map shows the areas identified as potentially eligible for Mobility Fund Phase 1 support. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block according to January 2012 American Roamer data and contain road miles in any of nine road categories. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible blocks, including population, road miles (S1100, S1200, and S1400 categories only), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a></p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map was developed by the FCC to show Total Universal Service Fund High-Cost Distributions in Rate-of-Return Study Areas. Data derived from USAC 2010 disbursement data available at <a href=\"https://apps.fcc.gov/edocs_public/attachmatch/DOC-310281A1.pdf\">https://apps.fcc.gov/edocs_public/attachmatch/DOC-310281A1.pdf</a>. Study area boundaries are derived from Tele Atlas Telecommunications Suite 2010.06",
+                "safe_value": "<p>This map is made with data current as of January 2012. This map shows the areas identified as potentially eligible for Mobility Fund Phase 1 support. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block according to January 2012 American Roamer data and contain road miles in any of nine road categories. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible blocks, including population, road miles (S1100, S1200, and S1400 categories only), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a></p>",
                 "safe_summary": ""
             }]
         },
@@ -27,8 +27,8 @@
             "und": [{
                 "fid": "3477",
                 "uid": "1798",
-                "filename": "thumb-total-high-cost-distributions-rate-return-study-areas.png",
-                "uri": "thumb-total-high-cost-distributions-rate-return-study-areas.png",
+                "filename": "thumb-mobility-fund-phase-1-potentially-eligible-areas.png",
+                "uri": "thumb-mobility-fund-phase-1-potentially-eligible-areas.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -105,8 +105,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/total-high-cost-distributions-rate-return-study-areas",
-                "title": "Total High-Cost Distributions in Rate-of-Return Study Areas",
+                "url": "https://www.fcc.gov/maps/mobility-fund-phase-1-potentially-eligible-areas",
+                "title": "Mobility Fund Phase 1 Potentially Eligible Areas",
                 "attributes": [
 
                 ]
@@ -128,9 +128,9 @@
         },
         "field_bureau_office": {
             "und": [{
-                "tid": "WCB",
-                "value": "Wireline Communications",
-                "url": "https://www.fcc.gov/wireline-competition"
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
             }]
         },
         "field_map_address_search_": [
@@ -149,12 +149,12 @@
         ],
         "field_map_initial_zoom": {
             "und": [
-                { "value": "4" }
+                { "value": "3" }
             ]
         },
         "field_map_latitude": {
             "und": [
-                { "value": "38.82" }
+                { "value": "50" }
             ]
         },
         "field_map_layer": [{
@@ -166,9 +166,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi",
+                    "value": "a.tiles.mapbox.com/v4/fcc.Mobility-Fund-Phase-1-Eligible-Areas",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Mobility-Fund-Phase-1-Eligible-Areas"
                 }]
             },
             "field_layer_format": {
@@ -178,9 +178,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc.kr8dunmi",
+                    "value": "fcc.Mobility-Fund-Phase-1-Eligible-Areas",
                     "format": null,
-                    "safe_value": "fcc.kr8dunmi"
+                    "safe_value": "fcc.Mobility-Fund-Phase-1-Eligible-Areas"
                 }]
             },
             "field_layer_opacity": {
@@ -195,9 +195,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "Connect America Phase II - Final Eligible Areas Map",
+                    "value": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
                     "format": null,
-                    "safe_value": "Connect America Phase II - Final Eligible Areas Map"
+                    "safe_value": "Tribal Mobility Fund Phase I Potentially Eligible Areas"
                 }]
             },
             "field_layer_type": {
@@ -228,40 +228,16 @@
             "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
             "field_legend_color": {
                 "und": [{
-                    "value": "#ff8240",
+                    "value": "#080c0f",
                     "format": null,
-                    "safe_value": "#ff8240"
+                    "safe_value": "#080c0f"
                 }]
             },
             "field_legend_text": {
                 "und": [{
-                    "value": "Unavailable",
+                    "value": "Mobility Fund Phase 1 Eligible Areas",
                     "format": null,
-                    "safe_value": "Unavailable"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#ffe1d1",
-                    "format": null,
-                    "safe_value": "#ffe1d1"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Partially Unavailable",
-                    "format": null,
-                    "safe_value": "Partially Unavailable"
+                    "safe_value": "Mobility Fund Phase 1 Eligible Areas"
                 }]
             },
             "rdf_mapping": [
@@ -270,7 +246,7 @@
         }],
         "field_map_longitude": {
             "und": [
-                { "value": "-96.86" }
+                { "value": "-105" }
             ]
         },
         "field_map_max_zoom": [
@@ -285,11 +261,31 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobile Broadband",
+        "url": "https://www.fcc.gov/tags/mobile-broadband"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobile Fund",
+        "url": "https://www.fcc.gov/tags/mobility-fund-0"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Mobility Fund Phase 1",
+        "url": "https://www.fcc.gov/tags/mobility-fund-phase-1"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Spectrum",
+        "url": "https://www.fcc.gov/tags/spectrum-0"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

@@ -130,9 +130,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc20554.n4we9udi",
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.6abutyb9",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.n4we9udi"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.6abutyb9"
                 }]
             },
             "field_layer_format": {
@@ -142,9 +142,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc20554.n4we9udi",
+                    "value": "fcc20554.6abutyb9",
                     "format": null,
-                    "safe_value": "fcc20554.n4we9udi"
+                    "safe_value": "fcc20554.6abutyb9"
                 }]
             },
             "field_layer_opacity": {
@@ -159,9 +159,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "GSM",
+                    "value": "WiMAX",
                     "format": null,
-                    "safe_value": "GSM"
+                    "safe_value": "WiMAX"
                 }]
             },
             "field_layer_type": {
@@ -191,9 +191,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc20554.a8y6i529",
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.2etawcdi",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.a8y6i529"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.2etawcdi"
                 }]
             },
             "field_layer_format": {
@@ -203,9 +203,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc20554.a8y6i529",
+                    "value": "fcc20554.2etawcdi",
                     "format": null,
-                    "safe_value": "fcc20554.a8y6i529"
+                    "safe_value": "fcc20554.2etawcdi"
                 }]
             },
             "field_layer_opacity": {
@@ -220,9 +220,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "CDMA",
+                    "value": "LTE",
                     "format": null,
-                    "safe_value": "CDMA"
+                    "safe_value": "LTE"
                 }]
             },
             "field_layer_type": {
@@ -252,9 +252,9 @@
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc20554.jmt8d7vi",
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.u8mvaemi",
                     "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.jmt8d7vi"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.u8mvaemi"
                 }]
             },
             "field_layer_format": {
@@ -264,9 +264,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc20554.jmt8d7vi",
+                    "value": "fcc20554.u8mvaemi",
                     "format": null,
-                    "safe_value": "fcc20554.jmt8d7vi"
+                    "safe_value": "fcc20554.u8mvaemi"
                 }]
             },
             "field_layer_opacity": {
@@ -281,9 +281,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "IDEN",
+                    "value": "HSPA Plus",
                     "format": null,
-                    "safe_value": "IDEN"
+                    "safe_value": "HSPA Plus"
                 }]
             },
             "field_layer_type": {
@@ -366,79 +366,7 @@
 
             ]
         }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#ae8",
-                    "format": null,
-                    "safe_value": "#ae8"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "CDMA",
-                    "format": null,
-                    "safe_value": "0"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#f3e723",
-                    "format": null,
-                    "safe_value": "#f3e723"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "GSM",
-                    "format": null,
-                    "safe_value": "GSM"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2435",
-            "revision_id": "3386",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#795836",
-                    "format": null,
-                    "safe_value": "#795836"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "iDEN",
-                    "format": null,
-                    "safe_value": "iDEN"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
+        "field_map_legend": [],
         "field_map_longitude": {
             "und": [
                 { "value": "-99.67" }
@@ -452,6 +380,11 @@
         ]
     },
     "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "3G, 4G and 5G",
+        "url": "https://www.fcc.gov/tags/3g-4g-and-5g"
+    }, {
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",

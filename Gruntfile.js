@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     // Configurable paths
     var paths = {
         tmp: '.tmp',
-        assets: 'dist/map_templates'
+        assets: './public/map_templates'
     };
 
     grunt.initConfig({
@@ -18,22 +18,14 @@ module.exports = function(grunt) {
         config: { version: '1.0.0'},
 
         // Watches files for changes and runs tasks based on the changed files
-        watch: {
-            html: {
-                files: ['./src/*.*', './src/map_templates/**/*.html'],
-                tasks: ['copy', 'clean:delTempFolders']
-            },
-            js: {
-                files: ['./src/map_templates/js/**/*.js'],
-                tasks: ['copy', 'clean:delTempFolders']
-            },
+        watch: {            
             json: {
                 files: ['./src/map_data/*.json'],
-                tasks: ['concat:contentjson','copy', 'clean:delTempFolders']
+                tasks: ['concat:contentjson','copy']
             },
             less: {
                 files: ['./src/bootstrap-gisp/less/**/*.less'],
-                tasks: ['less', 'usebanner', 'autoprefixer', 'copy', 'clean:delTempFolders']
+                tasks: ['less', 'usebanner', 'autoprefixer', 'copy']
             }
         },
 
@@ -44,8 +36,7 @@ module.exports = function(grunt) {
                     dot: true,
                     src: [
                         '<%= paths.tmp %>',
-                        '<%= paths.assets %>',
-                        './public/map_templates'                        
+                        '<%= paths.assets %>'                       
                     ]
                 }]
             },
@@ -83,7 +74,7 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                './src/map_templates/js/**/*.js'
+                '<%= paths.assets %>/js/**/*.js'
             ]
         },
 
@@ -203,9 +194,11 @@ module.exports = function(grunt) {
                     './src/map_data/800-mhz-cellular-–-b-block-cgsas.json',
                     './src/map_data/terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level.json',
                     './src/map_data/terrestrial-mobile-wireless-digital-coverage.json',
-                    './src/map_data/nationwide-4g-coverage.json'
+                    './src/map_data/nationwide-4g-coverage.json',
+                    './src/map_data/terrestrial-wireless-coverage-number-providers.json',
+                    './src/map_data/mobility-fund-phase-1-potentially-eligible-areas.json'
                 ],
-                dest: './src/content.json'
+                dest: './public/content.json'
             }           
         },
 
@@ -227,59 +220,29 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                { // map template page to dist 
-                    expand: true,
-                    cwd: './src/map_templates/',
-                    src: '**/*',
-                    dest: '<%= paths.assets %>'
-                }, 
-                { // JS 
-                    expand: true,
-                    cwd: './src/map_templates/js',
-                    src: '**',
-                    dest: '<%= paths.assets %>/js'
-                }, { // fonts 
+                
+                 { // fonts 
                     dot: true,
                     expand: true,
                     cwd: 'bower_components/font-awesome/fonts',
                     src: '**',
                     dest: '<%= paths.assets %>/fonts'
-                }, { // images 
-                    expand: true,
-                    cwd: './src/map_templates/images',
-                    src: '**',
-                    dest: '<%= paths.assets %>/images'
                 }]
-            },
-            mapHome: {
-                files: [{ // map home page to public
-                    expand: true,
-                    cwd: './src',
-                    src: ['*.*'],
-                    dest: './public'
-                }]
-            },
-            mapTemplates: {
-                files: [{ // map_templates folder to public
-                    expand: true,
-                    cwd: './dist/map_templates',
-                    src: ['**'],
-                    dest: './public/map_templates'
-                }]
-            }            
+            }
+                       
         }
     });
 
     grunt.registerTask('build', [
-        'clean:dist',
+       // 'clean:dist',
         // 'jshint',
         'less',
         // 'imagemin',
         'usebanner',
         'concat',
         'autoprefixer',
-        'copy',
-        'clean:delTempFolders'
+        //'copy',
+        //'clean:delTempFolders'
     ]);
 
     grunt.registerTask('default', [

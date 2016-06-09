@@ -922,7 +922,7 @@ function updateText() {
     $('#span-subtitle').html(map_info_all.subtitle);
     $('#dd-published').html(map_info_all.date);
     $('#dd-updated').html(map_info_all.date_updated_reviewed.split(' ')[0]);
-    $('#span-bureau').text(map_info_all.bureau_office.value);
+    $('#span-bureau').html('<a href="' + map_info_all.bureau_office.url + '">' + map_info_all.bureau_office.value + '</a>');
     $('#span-description').html(map_info_all.description);
     if (map_info_all.related_links) {
         var related_links_html = '';

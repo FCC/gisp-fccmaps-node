@@ -4,7 +4,7 @@
     "created": "2016-03-10",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/connect-compete-home-broadband-coverage-map",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.connect2compete/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "187939",
@@ -161,7 +161,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/connect-compete-home-broadband-coverage-map",
+                "url": "https://www.fcc.gov/maps/connect-compete-home-broadband-coverage-map",
                 "title": "Connect to Compete Home Broadband Coverage Map",
                 "attributes": [
 
