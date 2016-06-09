@@ -106,8 +106,7 @@ function createMap() {
 
     if (map_info_all.map_layer.length > 0) {
         for (var i = 0; i < map_info_all.map_layer.length; i++) {
-            console.log(i);
-
+            
             zindex1++;
             if (map_info_all.map_layer[i].type == 'XYZ') {
 
@@ -122,7 +121,7 @@ function createMap() {
                 }
 
                 var url = '//' + map_info_all.map_layer[i].domain + '/{z}/{x}/{y}.png?' + query_string;
-                console.log(url)
+                
                 mapLayer[title] = L.tileLayer(url, {
                     opacity: map_info_all.map_layer[i].opacity,
                     zIndex: zindex1
@@ -610,8 +609,7 @@ function getMapInfo() {
 
     //map_info = JSON.parse(map_info);
     //layers_info = map_info.layers;
-
-    console.log(mapOptions);
+    
 
     //title
     var title = '';
@@ -897,8 +895,7 @@ function getMapInfo() {
         subtitle = mapOptions.fields.field_subtitle.und[0].value;
     }
     map_info_all.subtitle = subtitle;
-
-    console.log(map_info_all);
+   
 
 }
 
@@ -940,8 +937,7 @@ function updateText() {
     $('#dd-updated').html(map_info_all.date_updated_reviewed);
     $('#span-bureau').html(map_info_all.bureau_office);
     $('#span-description').html(map_info_all.description);
-
-    console.log('office=' + map_info_all.bureau_office);
+   
 
 }
 
