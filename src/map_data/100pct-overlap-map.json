@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/100pct-overlap-map",
+    "webUrl": "https://fcc.github.io/overbuilt-map/",
     "tnid": "0",
     "body": null,
     "vid": "28433",
@@ -16,10 +16,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-15-868A1.pdf.",
+                "value": "<p>Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see <a href=\"https://apps.fcc.gov/edocs_public/attachmatch/DA-15-868A1.pdf\">https://apps.fcc.gov/edocs_public/attachmatch/DA-15-868A1.pdf</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see <a href=\"http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-15-868A1.pdf\">http://transition.fcc.gov/Daily_Releases/Daily_Business/2015/db0806/DA-1...</a>.",
+                "safe_value": "<p>Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see <a href=\"https://apps.fcc.gov/edocs_public/attachmatch/DA-15-868A1.pdf\">https://apps.fcc.gov/edocs_public/attachmatch/DA-15-868A1.pdf</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -37,9 +37,9 @@
                 "uuid": "a4e4d98b-d5bd-4c6f-a395-b1e7c7477ed0",
                 "field_file_image_alt_text": {
                     "und": [{
-                        "value": "100 Percent Overlap Map",
+                        "value": "thumb-100pct-overlap-map",
                         "format": null,
-                        "safe_value": "100 Percent Overlap Map"
+                        "safe_value": "thumb-100pct-overlap-map"
                     }]
                 },
                 "field_file_image_title_text": {
@@ -109,7 +109,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://fcc.github.io/overbuilt-map/",
+                "url": "https://www.fcc.gov/maps/100pct-overlap-map",
                 "title": "100% Overlap Map",
                 "attributes": [
 
@@ -118,7 +118,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "100pct-overlap-map"
+                "value": "overbuilt-map"
             }]
         },
         "field_map_repository": [
@@ -129,7 +129,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "ext_iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": [
@@ -138,7 +138,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition Bureau"
+                "value": "Wireline Competition"
             }]
         },
         "field_map_address_search_": [
@@ -176,29 +176,34 @@
         ]
     },
     "taxonomy": [{
+        "tid": "1566",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
+    }, {
+        "tid": "1568",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost) - Rate of Return Carriers",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost-rate-return-carriers"
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps"
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
     }, {
-        "tid": "1568",
+        "tid": "966",
         "vid": "1",
-        "name": "Connect America Fund (High Cost) - Rate of Return Carriers"
-    }, {
-        "tid": "1565",
-        "vid": "1",
-        "name": "Universal Service"
-    }, {
-        "tid": "1566",
-        "vid": "1",
-        "name": "Connect America Fund (High Cost)"
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "1565",
         "vid": "1",
-        "name": "Universal Service"
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28001"
 }
