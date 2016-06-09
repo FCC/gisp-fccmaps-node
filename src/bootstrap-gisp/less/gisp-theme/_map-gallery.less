@@ -144,10 +144,14 @@
     .tag {
         font-size: 11px;
     }
-    .mapThumb {
-        height: 150px;
-        margin-bottom: 5px;
+    .thumbnail {
+        border: none;
+        margin-bottom: 0;
         padding: 5px;
+        & > div {
+            background-size: cover;
+            height: 145px;
+        }
     }
     .mapThumb-btns {
         right: 10px;
