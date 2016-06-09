@@ -54,6 +54,11 @@ console.log('CONTENT_API : '+ CONTENT_API );
 console.log('DEPLOY_INTERVAL : '+ DEPLOY_INTERVAL );
 console.log('ALLOWED_IP : '+ ALLOWED_IP );
 
+
+// deploy
+maps.deployMap(true);
+
+
 // **********************************************************
 // route
 var routeTable = require('./config/route.json');
@@ -153,14 +158,18 @@ app.use('/:appId', function(req, res, next){
 	//console.log('\n proxy routing ' );
 
 	var appId = req.params.appId; //req.url.replace(/\//g, '');	
-	//console.log('appId ' + appId);
-	/*
+	var yrl = req.originalUrl;
+	console.log('appId========================= ' + appId + '  url=' + url);
+	
+	
 	console.log('req.url ' + req.url);
 	console.log('req.get host ' + req.get('host'));
 	console.log('req.originalUrl ' + req.originalUrl);
 	console.log('req.host ' + req.host);
 	console.log('req.path ' + req.path);
-	*/
+	
+	
+	
 	
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
 		console.log('trailing slash redirect ');		
@@ -170,7 +179,7 @@ app.use('/:appId', function(req, res, next){
 	
 	if (routeTable[appId]) {
 		var appUrl = routeTable[appId].url;
-		var routeType = routeTable[appId].type;
+		var routeType =  'proxy'; // routeTable[appId].type;
 		console.log('appUrl : ' + appUrl);
 		console.log('routeType : ' + routeType);
 				
@@ -189,8 +198,36 @@ app.use('/:appId', function(req, res, next){
 		return;
 	}
 	else {
-		//console.log('no app id');
-		next(); 
+	
+		console.log('no app id - assume to be a map');
+		
+		var isMap = maps.checkMapId(appId);
+		if (!isMap) {
+			next();
+		}
+		
+		var mapType = maps.getMapType(appId);
+		
+		if (mapType == 'int_layers') {
+			if (req.originalUrl.match(/\/embed/)) {
+				console.log('sending embed')
+				res.sendFile('index.html', { root: __dirname + '/public/map_templates/embed' });
+			}
+			else {
+				res.sendFile('index_route.html', { root: __dirname + '/public/map_templates' });
+			}
+		}
+		else if (mapType == 'int_iframe') {
+			console.log('send iframe');
+		
+			res.sendFile('index-iframe.html', { root: __dirname + '/public/map_templates' });
+		}
+		
+		
+		
+		return;
+		
+		//next(); 
 	}
 });
 
@@ -238,7 +275,7 @@ var server = app.listen(NODE_PORT, function () {
 
 // **********************************************************
 // deploy
-maps.deployMap(true);
+//maps.deployMap(true);
 
 // **********************************************************
 // export

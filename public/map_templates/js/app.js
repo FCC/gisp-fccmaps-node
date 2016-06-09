@@ -5,6 +5,7 @@ var mapOptions;
 var map_info;
 var map_info_all = {};
 var layers_info;
+var contentJson;
 
 var hash = null;
 
@@ -1048,13 +1049,47 @@ function updateMapList() {
 }
 
 
+function getMapOption() {
+
+var mapId = window.location.href.replace(/.*\/\//, '').split('/')[1] || '';
+for (var i = 1; i < contentJson.length; i++) {
+	var map_url = '';
+	if (contentJson[i].fields.field_map_page_url && contentJson[i].fields.field_map_page_url.und && contentJson[i].fields.field_map_page_url.und[0].url) {
+		map_url = contentJson[i].fields.field_map_page_url.und[0].url;
+	}
+
+	var mapId0 = map_url.replace(/.*\//, '');
+	
+	if (mapId0 == mapId) {
+		mapOptions = contentJson[i];
+	}
+
+}
+
+}
+
+
+
 $(document).ready(function() {
-    getMapInfo(mapOptions);
-    //updateMapSize();
-    updateMapList();
-    updateText();
-    createMap();
-    createSearchFields();
-    setupListener();
+
+var url = "/api.json";
+    $.ajax(url, {
+        type: "GET",
+        url: url,
+        dataType: "json",
+        success: function(data) {
+			contentJson = data;
+			getMapOption();
+			getMapInfo(mapOptions);
+			//updateMapSize();
+			updateMapList();
+			updateText();
+			createMap();
+			createSearchFields();
+			setupListener();
+		}
+		
+	});
+
 
 });
