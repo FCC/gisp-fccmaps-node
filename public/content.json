@@ -3978,7 +3978,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "ext_window"
+                "value": "proxy"
             }]
         },
         "field_related_links": [
@@ -7466,7 +7466,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "ext_window"
+                "value": "proxy"
             }]
         },
         "field_related_links": [
