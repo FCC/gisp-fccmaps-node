@@ -1,10 +1,10 @@
 {
     "nid": "179638",
-    "title": "FCC Enforcement Actions Against Pirate Radio by Location",
-    "created": "2016-05-27",
-    "changed": "2016-05-27",
+    "title": "Study Area Boundaries",
+    "created": "2016-06-08",
+    "changed": "",
     "type": "map",
-    "webUrl": "https://fcc.github.io/pirateaction2/index.html",
+    "webUrl": "https://fcc.maps.arcgis.com/apps/Minimalist/index.html?appid=9f996a35de9244c5b40ea3d412679fc2",
     "tnid": "0",
     "body": null,
     "vid": "187946",
@@ -14,10 +14,10 @@
         ],
         "field_description": {
             "und": [{
-                "value": "This map tracks the Enforcement Bureau’s efforts to shut down pirate stations and take aggressive enforcement action against the operators and those who assist them. It consists of Bureau or Commission orders related to pirate radio operations, but does not include unpublished informal warnings, which may be issued in appropriate circumstances.",
+                "value": "The map displays the study area boundaries submitted and certified by incumbent local exchange carriers and state commissions through May 5th, 2016. As a result of confidentiality requests, certain boundaries for Verizon and AT&T are not displayed.",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map tracks the Enforcement Bureau’s efforts to shut down pirate stations and take aggressive enforcement action against the operators and those who assist them. It consists of Bureau or Commission orders related to pirate radio operations, but does not include unpublished informal warnings, which may be issued in appropriate circumstances.",
+                "safe_value": "The map displays the study area boundaries submitted and certified by incumbent local exchange carriers and state commissions through May 5th, 2016. As a result of confidentiality requests, certain boundaries for Verizon and AT&T are not displayed.",
                 "safe_summary": ""
             }]
         },
@@ -25,8 +25,8 @@
             "und": [{
                 "fid": "3477",
                 "uid": "1798",
-                "filename": "thumb-fcc-enforcement-actions.png",
-                "uri": "thumb-fcc-enforcement-actions.png",
+                "filename": "thumb-study-area-boundaries.png",
+                "uri": "thumb-study-area-boundaries.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -95,7 +95,7 @@
         ],
         "field_featured": {
             "und": [{
-                "value": "0"
+                "value": "1"
             }]
         },
         "field_map_display_date": {
@@ -153,8 +153,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://maps.fcc.gov/fcc-enforcement-actions-against-pirate-radio-location",
-                "title": "FCC Enforcement Actions Against Pirate Radio by Location",
+                "url": "https://www.fcc.gov/maps/study-area-boundaries",
+                "title": "Study Area Boundaries",
                 "attributes": [
 
                 ]
@@ -171,14 +171,18 @@
                 "value": "int_iframe"
             }]
         },
-        "field_related_links": [
-
-        ],
+        "field_related_links": {
+            "und": [{
+                "url": "https://www.fcc.gov/wireline-competition/industry-analysis-and-technology-division/general/study-area-boundary-data",
+                "title": "Study Area Boundary Data",
+                "attributes": []
+            }]
+        },
         "field_bureau_office": {
             "und": [{
-                "tid": "EB",
-                "value": "Enforcement Bureau",
-                "url": "https://www.fcc.gov/enforcement"
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": {
@@ -1026,6 +1030,11 @@
     "taxonomy": [{
         "tid": "956",
         "vid": "1",
+        "name": "Data",
+        "url": "https://www.fcc.gov/tags/data"
+    }, {
+        "tid": "956",
+        "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
     }, {
@@ -1036,8 +1045,8 @@
     }, {
         "tid": "966",
         "vid": "1",
-        "name": "Reports",
-        "url": "https://www.fcc.gov/tags/reports"
+        "name": "Study Area Boundary Data",
+        "url": "https://www.fcc.gov/tags/study-area-boundary-data"
     }],
     "uri": "http://10.154.68.187/api/content/179638"
 }
