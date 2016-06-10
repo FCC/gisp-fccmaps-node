@@ -155,6 +155,15 @@ function updateMapMeta(data, mapMeta, mapJSON) {
 
 }
 
+function formatDate(dateFormat) {
+    var dateStr = dateFormat.split('-');
+    var MM = dateStr[1];
+    var DD = dateStr[2];
+    var YYYY = dateStr[0];
+
+    return (MM + '/' + DD + '/' + YYYY);
+}
+
 function createMapCard(mapMeta) {
     var urls = mapMeta.urls;
     // var text = '';
@@ -211,7 +220,7 @@ function createMapCard(mapMeta) {
         card += thumbImg;
         //card += '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '"></iframe>';
         card += '<p class="card__title text-overflow"><a href="' + url_bookmark + '"><span >' + mapMeta.titles[i] + '</span></a></p>';
-        card += '<div class="card__meta"><div class="pull-left">' + mapMeta.bureaus[i].tid + '</div><div class="pull-right data-date">' + mapMeta.dates[i].split(' ')[0] + '</div></div>';
+        card += '<div class="card__meta"><div class="pull-left">' + mapMeta.bureaus[i].tid + '</div><div class="pull-right data-date">' + formatDate(mapMeta.dates[i].split(' ')[0]) + '</div></div>';
         card += '<div class="card__body" id="t' + i + '"" aria-hidden="true" role="region" style="display: none;">';
         card += subtitle;
         // TODO: populate description with actual text
