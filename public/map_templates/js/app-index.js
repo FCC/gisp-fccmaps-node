@@ -1,7 +1,12 @@
 
 
-
 function createMap() {
+
+    var initialzoom = 5;
+    var maxzoom = 15;
+    var minzoom = 3;
+    var center_lat = 50;
+    var center_lon = -105;
 
     if (map_info_all.map_initial_zoom) {
         initialzoom = map_info_all.map_initial_zoom;
@@ -26,7 +31,7 @@ function createMap() {
     }
     args = urlHash.split('/');
 
-    if (args[3] !== undefined) {
+    if (isEmbed && args[3] !== undefined) {
         displayOpts = args[3].split(',');
 
         hasZoom = displayOpts.indexOf('zoom') > -1;
@@ -40,8 +45,7 @@ function createMap() {
     map = L.mapbox.map('map-container', 'fcc.k74ed5ge', {
             attributionControl: hasAttribution,
             maxZoom: maxzoom,
-            minZoom: minzoom,
-            zoomControl: hasZoom
+            minZoom: minzoom
         })
         .setView([center_lat, center_lon], initialzoom);
 
@@ -55,26 +59,24 @@ function createMap() {
     baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
     baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');
     var baseLayer = {};
-	
-	//default
-	baseLayer["Street"] = baseStreet.addTo(map);
-	baseLayer["Satellite"] = baseSatellite;
-	baseLayer["Terrain"] = baseTerrain;
-	if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "street") {
-		baseLayer["Street"] = baseStreet.addTo(map);
-		baseLayer["Satellite"] = baseSatellite;
-		baseLayer["Terrain"] = baseTerrain;
-	}
-	else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "satellite") {
-		baseLayer["Street"] = baseStreet;
-		baseLayer["Satellite"] = baseSatellite.addTo(map);
-		baseLayer["Terrain"] = baseTerrain;
-	}
-	else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "terrain") {
-		baseLayer["Street"] = baseStreet;
-		baseLayer["Satellite"] = baseSatellite;
-		baseLayer["Terrain"] = baseTerrain.addTo(map);
-	}
+
+    //default
+    baseLayer["Street"] = baseStreet.addTo(map);
+    baseLayer["Satellite"] = baseSatellite;
+    baseLayer["Terrain"] = baseTerrain;
+    if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "street") {
+        baseLayer["Street"] = baseStreet.addTo(map);
+        baseLayer["Satellite"] = baseSatellite;
+        baseLayer["Terrain"] = baseTerrain;
+    } else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "satellite") {
+        baseLayer["Street"] = baseStreet;
+        baseLayer["Satellite"] = baseSatellite.addTo(map);
+        baseLayer["Terrain"] = baseTerrain;
+    } else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "terrain") {
+        baseLayer["Street"] = baseStreet;
+        baseLayer["Satellite"] = baseSatellite;
+        baseLayer["Terrain"] = baseTerrain.addTo(map);
+    }
 
     //map layers
     mapLayer = {};
@@ -82,8 +84,8 @@ function createMap() {
 
     if (map_info_all.map_layer.length > 0) {
         for (var i = 0; i < map_info_all.map_layer.length; i++) {
-            
             zindex1++;
+
             if (map_info_all.map_layer[i].type == 'XYZ') {
 
                 var title = map_info_all.map_layer[i].title;
@@ -97,7 +99,7 @@ function createMap() {
                 }
 
                 var url = '//' + map_info_all.map_layer[i].domain + '/{z}/{x}/{y}.png?' + query_string;
-                
+
                 mapLayer[title] = L.tileLayer(url, {
                     opacity: map_info_all.map_layer[i].opacity,
                     zIndex: zindex1
@@ -145,11 +147,22 @@ function createMap() {
         var legend_text1 = '';
         var keyStyle = '';
         var keyColor = 'background-color:';
-        var keyImg = 'background-image: url(images/legend-thumb-slash.png)';
+        var keyImgTribal = 'background-image: url(images/legend-thumb-slash.png)';
+        var keyImgUrban = 'background-image: url(images/legend-thumb-dot.png)';
 
         for (var i = 0; i < map_info_all.map_legend.length; i++) {
 
-            keyStyle = map_info_all.map_legend[i].text.search('Tribal land') > -1 ? keyImg : keyColor + map_info_all.map_legend[i].color;
+            if (map_info_all.map_legend[i].text.search('Tribal land') > -1) {
+                keyStyle = keyImgTribal;
+            } else if (map_info_all.map_legend[i].text.search('Urban area') > -1) {
+                keyStyle = keyImgUrban;
+            } else {
+                keyStyle = keyColor + map_info_all.map_legend[i].color;
+            }
+
+            /*keyStyle = map_info_all.map_legend[i].text.search('Tribal land') > -1 
+                        ? keyImg 
+                        : keyColor + map_info_all.map_legend[i].color;*/
 
             legend_text1 += '<tr><td style="width: 28px; height: 28px;"><div style="width: 20px; height: 20px;' + keyStyle + '"; opacity: 1.0; border: solid 1px #999999"></div></td><td>' + map_info_all.map_legend[i].text + '</td></tr>' + '\n';
 
@@ -176,27 +189,24 @@ function createMap() {
 }
 
 
-
 $(document).ready(function() {
-var url = "/api.json";
+
+    var url = "/api.json";
     $.ajax(url, {
         type: "GET",
         url: url,
         dataType: "json",
         success: function(data) {
-			contentJson = data;
-			getMapOption();
-			getMapInfo();
-			//updateMapSize();
-			//updateMapList();
-			//updateText();
-			createMap();
-			createSearchFields();
-			setupListener();
-		}
-		
-	});
+            contentJson = data;
+            getMapOption();
+            getMapInfo(mapOptions);
+            updateMapList();
+            updateText();
+            createMap();
+            createSearchFields();
+            setupListener();
+        }
 
-
+    });
 
 });

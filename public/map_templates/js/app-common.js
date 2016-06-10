@@ -28,8 +28,6 @@ var urlHash = window.location.hash,
     hasSearch = true;
 
 
-
-
 function createSearchFields() {
     if (hasSearch) {
         if ((map_info_all.map_address_search && map_info_all.map_address_search.toLowerCase() == "on") || (map_info_all.map_coordinate_search && map_info_all.map_coordinate_search.toLowerCase() == "on")) {
@@ -40,91 +38,7 @@ function createSearchFields() {
     }
 }
 
-function createSearchFields1() {
 
-    if (map_info.search && map_info.search.length == 0) {
-        $('#search-field-holder').html(field_text).css("display", "none");
-        return;
-    }
-
-    if (map_info.search && map_info.search.length > 0) {
-        var hasAddress = false;
-        for (var i = 0; i < map_info.search.length; i++) {
-            if (map_info.search[i] == "address") {
-                hasAddress = true;
-            }
-        }
-        if (!hasAddress) {
-            return;
-        }
-    }
-
-
-
-    if (map_info.search && map_info.search.length > 0) {
-
-        var field_dropdown = "";
-        for (var i = 0; i < map_info.search.length; i++) {
-            if (map_info.search[i] == "address") {
-                field_dropdown += '<li><a href="#" data-value="loc">Address</a></li>';
-            }
-            if (map_info.search[i] == "coordinate") {
-                field_dropdown += '<li><a href="#" data-value="latlon-decimal">Coordinates</a></li>';
-            }
-
-        }
-
-        var field_text = '<div id="search-field" class="input-group" style="width: 920px"> \
-                            <div class="search-group"> \
-                                <div class="search-input"> \
-                                    <div class="input-group"> \
-                                        <div class="input-group-btn"> \
-                                            <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span id="btn-label">Address</span> <span class="caret"></span></button> \
-                                            <ul id="input-search-switch" role="menu" class="dropdown-menu">' +
-            field_dropdown +
-            '</ul> \
-                            </div>';
-
-        for (var i = 0; i < map_info.search.length; i++) {
-            if (map_info.search[i] == "address") {
-                field_text += '<input id="input-location" class="form-control" type="search" placeholder="Enter Address" style="display: block">';
-            }
-            if (map_info.search[i] == "coordinate") {
-                field_text += '<div id="input-latlon-decimal" class="form-control" type="search" placeholder="Enter Latlon decimal" style="display: none"> \
-                                        <table id="table-latlon-decimal"><tr> \
-                                        <td>Latitude: <input id="latitude"   placeholder="41.234567" style="width: 150px; height: 20px; border: solid 1px #eee"></td> \
-                                        <td width=75></td> \
-                                        <td>Longitude: <input id="longitude"   placeholder="-91.234567" style="width: 150px; height: 20px; border: solid 1px #eee"></td> \
-                                        </tr></table> \
-                                        </div>';
-            }
-        }
-
-        field_text += '<span class="input-group-btn" id="span-location-search" style="display: table-cell"> \
-                                            <button class="btn-search btn btn-default" type="submit" id="input-loc-search" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Location Search</span></button> \
-                                        </span> \
-                                        <span class="input-group-btn" id="span-latlon-decimal-search" style="display: none"> \
-                                            <button class="btn-search btn btn-default" id="input-latlon-decimal-search" title="Decimal Latlon Search" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Decimal Lat/Lon Search</span></button> \
-                                        </span> \
-                                        </div> \
-                                </div> \
-                                <div class="btn-group-loc"> \
-                                    <span class="input-group-btn"> \
-                                        <button class="btn-geoLocation btn btn-default st" title="Get Current Location" data-toggle="tooltip" data-placement="top" id="btn-geoLocation" type="button" data-original-title="Get Current Location"> \
-                                        <span class="fa fa-location-arrow"></span><span class="sr-only">Get Current Location</span></button> \
-                                    <button class="btn-nationLocation btn btn-default st" title="Nationwide" data-toggle="tooltip" data-placement="top" id="btn-nationLocation" type="button" data-original-title="Nationwide"><span class="icon-nation-1"></span><span class="sr-only">Nationwide</span></button> \
-                                    </span> \
-                                </div> \
-                            </div> \
-                        </div>';
-
-
-        $('#search-field-holder').html(field_text).css("display", "block");
-
-    }
-
-
-}
 
 
 function searchLocation() {
@@ -725,7 +639,7 @@ function getMapInfo() {
     map_info_all.search_exclude = search_exclude;
 
     //subtitle
-    var subtitle = "0";
+    var subtitle = "";
     if (mapOptions.fields.field_subtitle && mapOptions.fields.field_subtitle.und) {
         subtitle = mapOptions.fields.field_subtitle.und[0].value;
     }
@@ -953,26 +867,4 @@ function getMapOption() {
 
 
 
-$(document).ready(function() {
 
-    var url = "/api.json";
-    $.ajax(url, {
-        type: "GET",
-        url: url,
-        dataType: "json",
-        success: function(data) {
-            contentJson = data;
-            getMapOption();
-            getMapInfo(mapOptions);
-            //updateMapSize();
-            updateMapList();
-            updateText();
-            createMap();
-            createSearchFields();
-            setupListener();
-        }
-
-    });
-
-
-});
