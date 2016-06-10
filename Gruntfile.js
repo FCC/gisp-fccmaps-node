@@ -184,7 +184,7 @@ module.exports = function(grunt) {
                     './src/map_data/acam-ror-sa-map.json',
                     './src/map_data/connect-america-phase-ii-final-eligible-areas-map.json',
                     './src/map_data/connect-america-phase-ii-initial-eligible-areas-map.json',
-                    './src/map_data/fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0.json',
+                    './src/map_data/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-52.json',
                     './src/map_data/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-48.json',
                     './src/map_data/connect-america-fund-caf-phase-i-round-two.json',
                     './src/map_data/connect-america-fund-caf-phase-i.json',

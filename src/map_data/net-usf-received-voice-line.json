@@ -134,7 +134,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Communications",
+                "value": "Wireline Competition",
                 "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
@@ -285,7 +285,12 @@
 
         ]
     },
-    "taxonomy": [{
+    "taxonomy": [{ 
+        "tid": "966",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
+    }, { 
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
@@ -295,6 +300,11 @@
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

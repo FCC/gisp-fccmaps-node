@@ -105,7 +105,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0",
+                "url": "https://www.fcc.gov/maps/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-52",
                 "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $52",
                 "attributes": [
 
@@ -114,7 +114,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0"
+                "value": "fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-52"
             }]
         },
         "field_map_repository": [
@@ -134,7 +134,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Communications",
+                "value": "Wireline Competition",
                 "url": "https://www.fcc.gov/wireline-competition"
             }]
         },

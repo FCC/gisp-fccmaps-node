@@ -134,7 +134,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Communications",
+                "value": "Wireline Competition",
                 "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
@@ -295,6 +295,16 @@
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Rural Health Care",
+        "url": "https://www.fcc.gov/tags/rural-health-care-0"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
