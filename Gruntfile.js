@@ -169,7 +169,7 @@ module.exports = function(grunt) {
                     './src/map_data/tribal-mobility-fund-phase-i-eligible-areas.json',
                     './src/map_data/tribal-mobility-fund-phase-i-potentially-eligible-areas.json',
                     './src/map_data/mobility-fund-phase-1-eligible-areas.json',
-                    './src/map_data/800-mhz-cellular-–-block-cgsas.json',
+                    './src/map_data/800-mhz-cellular-a-block-cgsas.json',
                     './src/map_data/broadband-availability-hawaii.json',
                     './src/map_data/broadband-availability-alaska.json',
                     './src/map_data/broadband-availability.json',
@@ -185,7 +185,7 @@ module.exports = function(grunt) {
                     './src/map_data/connect-america-phase-ii-final-eligible-areas-map.json',
                     './src/map_data/connect-america-phase-ii-initial-eligible-areas-map.json',
                     './src/map_data/fcc-connect-america-fund-phase-ii-–-cam-v40-illustrative-map-funding-thresho-0.json',
-                    './src/map_data/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-48',
+                    './src/map_data/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-48.json',
                     './src/map_data/connect-america-fund-caf-phase-i-round-two.json',
                     './src/map_data/connect-america-fund-caf-phase-i.json',
                     './src/map_data/wireline-maximum-advertised-download-speed.json',
@@ -198,7 +198,8 @@ module.exports = function(grunt) {
                     './src/map_data/terrestrial-wireless-coverage-number-providers.json',
                     './src/map_data/mobility-fund-phase-1-potentially-eligible-areas.json',
                     './src/map_data/study-area-boundaries.json',
-                    './src/map_data/frequency-coordination-canada.json'
+                    './src/map_data/frequency-coordination-canada.json',
+                    './src/map_data/section-706-fixed-broadband-deployment-map.json'
                 ],
                 dest: './public/content.json'
             }           
