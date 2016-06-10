@@ -1,3 +1,4 @@
+
 var map;
 var layerList = [];
 var mapLayers = [];
@@ -10,6 +11,7 @@ var maxzoom = 15;
 var minzoom = 1;
 var center_lat = 50;
 var center_lon = -105;
+
 var hash = null;
 
 var contentJson = [];
@@ -19,289 +21,24 @@ var urlHash = window.location.hash,
     isEmbed = window.location.pathname.split('/')[2] === 'embed',
     args = [],
     displayOpts = '',
-    hasZoom = false,
-    hasAttribution = false,
-    hasLayers = false,
-    hasLegend = false,
-    hasSearch = false;
-
-function createMap() {
-
-    if (map_info_all.map_initial_zoom) {
-        initialzoom = map_info_all.map_initial_zoom;
-    }
-    if (map_info_all.map_max_zoom) {
-        maxzoom = map_info_all.map_max_zoom;
-    }
-    if (map_info_all.map_min_zoom) {
-        minzoom = map_info_all.map_min_zoom;
-    }
-
-    if (map_info_all.map_latitude) {
-        center_lat = map_info_all.map_latitude;
-    }
-    if (map_info_all.map_longitude) {
-        center_lon = map_info_all.map_longitude;
-    }
-
-
-    if (urlHash.indexOf('#') === 0) {
-        urlHash = urlHash.substr(1);
-    }
-    args = urlHash.split('/');
-
-    if (args[3] !== undefined) {
-        displayOpts = args[3].split(',');
-
-        hasZoom = displayOpts.indexOf('zoom') > -1;
-        hasAttribution = displayOpts.indexOf('attr') > -1;
-        hasLayers = displayOpts.indexOf('layers') > -1;
-        hasLegend = displayOpts.indexOf('key') > -1;
-        hasSearch = displayOpts.indexOf('search') > -1;
-    }
-
-    L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
-    map = L.mapbox.map('map-container', 'fcc.k74ed5ge', {
-            attributionControl: hasAttribution,
-            maxZoom: maxzoom,
-            minZoom: minzoom,
-            zoomControl: hasZoom
-        })
-        .setView([center_lat, center_lon], initialzoom);
-
-    if (map_info_all.map_attribution && hasAttribution) {
-        map.attributionControl.addAttribution(map_info_all.map_attribution);
-    }
-
-    this.hash = L.hash(map);
-
-    baseStreet = L.mapbox.tileLayer('fcc.k74ed5ge');
-    baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
-    baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');
-    var baseLayer = {};
-	
-	//default
-	baseLayer["Street"] = baseStreet.addTo(map);
-	baseLayer["Satellite"] = baseSatellite;
-	baseLayer["Terrain"] = baseTerrain;
-	if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "street") {
-		baseLayer["Street"] = baseStreet.addTo(map);
-		baseLayer["Satellite"] = baseSatellite;
-		baseLayer["Terrain"] = baseTerrain;
-	}
-	else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "satellite") {
-		baseLayer["Street"] = baseStreet;
-		baseLayer["Satellite"] = baseSatellite.addTo(map);
-		baseLayer["Terrain"] = baseTerrain;
-	}
-	else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "terrain") {
-		baseLayer["Street"] = baseStreet;
-		baseLayer["Satellite"] = baseSatellite;
-		baseLayer["Terrain"] = baseTerrain.addTo(map);
-	}
-
-    //map layers
-    mapLayer = {};
-    zindex1 = 10;
-
-    if (map_info_all.map_layer.length > 0) {
-        for (var i = 0; i < map_info_all.map_layer.length; i++) {
-            
-            zindex1++;
-            if (map_info_all.map_layer[i].type == 'XYZ') {
-
-                var title = map_info_all.map_layer[i].title;
-                if (title == '') {
-                    title = '' + i;
-                }
-
-                var query_string = map_info_all.map_layer[i].query_string;
-                if (query_string == '') {
-                    query_string = 'access_token=pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
-                }
-
-                var url = '//' + map_info_all.map_layer[i].domain + '/{z}/{x}/{y}.png?' + query_string;
-                
-                mapLayer[title] = L.tileLayer(url, {
-                    opacity: map_info_all.map_layer[i].opacity,
-                    zIndex: zindex1
-                });
-
-                if (map_info_all.map_layer[i].visibility == 'on') {
-                    mapLayer[title].addTo(map);
-                }
-            } else if (map_info_all.map_layer[i].type == 'WMS') {
-                var title = map_info_all.map_layer[i].title;
-                if (title == '') {
-                    title = '' + i;
-                }
-
-                mapLayer[title] = L.tileLayer.wms(map_info_all.map_layer[i].protocol + '://' + map_info_all.map_layer[i].domain, {
-                    format: 'image/' + map_info_all.map_layer[i].format,
-                    transparent: true,
-                    opacity: map_info_all.map_layer[i].opacity,
-                    layers: map_info_all.map_layer[i].name,
-                    styles: map_info_all.map_layer[i].style,
-                    zIndex: zindex1
-                });
-
-                if (map_info_all.map_layer[i].visibility == 'on') {
-                    mapLayer[title].addTo(map);
-                }
-            }
-        }
-    }
-
-
-    if (hasLayers) {
-        layerControl = new L.Control.Layers(
-            baseLayer, mapLayer, {
-                position: 'topleft'
-            }
-        ).addTo(map);
-    }
-
-    geocoder = L.mapbox.geocoder('mapbox.places-v1');
-
-    //make legend
-
-    if (hasLegend && map_info_all.map_legend.length && map_info_all.map_legend.length > 0) {
-        var legend_text1 = '';
-        var keyStyle = '';
-        var keyColor = 'background-color:';
-        var keyImg = 'background-image: url(images/legend-thumb-slash.png)';
-
-        for (var i = 0; i < map_info_all.map_legend.length; i++) {
-
-            keyStyle = map_info_all.map_legend[i].text.search('Tribal land') > -1 ? keyImg : keyColor + map_info_all.map_legend[i].color;
-
-            legend_text1 += '<tr><td style="width: 28px; height: 28px;"><div style="width: 20px; height: 20px;' + keyStyle + '"; opacity: 1.0; border: solid 1px #999999"></div></td><td>' + map_info_all.map_legend[i].text + '</td></tr>' + '\n';
-
-        }
-
-        var legend_text = '<div id="div-legend" class="map-legend">' +
-            '<table>' +
-            '<tr><td colspan=3>' +
-            '<span class="icon icon-list"></span> <span class="map-legend-name">Map Legend</span>' +
-            '<button class="btn-closeLegend btn btn-xs pull-right">' +
-            '<span class="icon icon-close"></span> <span class="sr-only">Hide legend</span>' +
-            '</button>' +
-            '</td></tr>' +
-            legend_text1 +
-            '</table>' +
-            '</div>' +
-            '<div id="div-legend-icon" class="legend__icon" title="Map Legend">' +
-            '<span class="icon icon-list"></span>' +
-            '</div>';
-
-        $('#div-legend-holder').html(legend_text);
-    }
-
-}
+    hasZoom = true,
+    hasAttribution = true,
+    hasLayers = true,
+    hasLegend = true,
+    hasSearch = true;
 
 
 function createSearchFields() {
     if (hasSearch) {
         if ((map_info_all.map_address_search && map_info_all.map_address_search.toLowerCase() == "on") || (map_info_all.map_coordinate_search && map_info_all.map_coordinate_search.toLowerCase() == "on")) {
-            // $('#search-field-holder').css("display", "block");
-            $('#search-field-holder')
-                .addClass('hasSearch')
-                .show();
-
+            $('#search-field-holder').css("display", "block");
         } else {
-            // $('#search-field-holder').css("display", "none");
-            $('#search-field-holder')
-                .removeClass('hasSearch')
-                .hide();
+            $('#search-field-holder').css("display", "none");
         }
     }
 }
 
-function createSearchFields1() {
 
-    if (map_info.search && map_info.search.length == 0) {
-        $('#search-field-holder').html(field_text).css("display", "none");
-        return;
-    }
-
-    if (map_info.search && map_info.search.length > 0) {
-        var hasAddress = false;
-        for (var i = 0; i < map_info.search.length; i++) {
-            if (map_info.search[i] == "address") {
-                hasAddress = true;
-            }
-        }
-        if (!hasAddress) {
-            return;
-        }
-    }
-
-
-
-    if (map_info.search && map_info.search.length > 0) {
-
-        var field_dropdown = "";
-        for (var i = 0; i < map_info.search.length; i++) {
-            if (map_info.search[i] == "address") {
-                field_dropdown += '<li><a href="#" data-value="loc">Address</a></li>';
-            }
-            if (map_info.search[i] == "coordinate") {
-                field_dropdown += '<li><a href="#" data-value="latlon-decimal">Coordinates</a></li>';
-            }
-
-        }
-
-        var field_text = '<div id="search-field" class="input-group" style="width: 920px"> \
-                            <div class="search-group"> \
-                                <div class="search-input"> \
-                                    <div class="input-group"> \
-                                        <div class="input-group-btn"> \
-                                            <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span id="btn-label">Address</span> <span class="caret"></span></button> \
-                                            <ul id="input-search-switch" role="menu" class="dropdown-menu">' +
-            field_dropdown +
-            '</ul> \
-                            </div>';
-
-        for (var i = 0; i < map_info.search.length; i++) {
-            if (map_info.search[i] == "address") {
-                field_text += '<input id="input-location" class="form-control" type="search" placeholder="Enter Address" style="display: block">';
-            }
-            if (map_info.search[i] == "coordinate") {
-                field_text += '<div id="input-latlon-decimal" class="form-control" type="search" placeholder="Enter Latlon decimal" style="display: none"> \
-                                        <table id="table-latlon-decimal"><tr> \
-                                        <td>Latitude: <input id="latitude"   placeholder="41.234567" style="width: 150px; height: 20px; border: solid 1px #eee"></td> \
-                                        <td width=75></td> \
-                                        <td>Longitude: <input id="longitude"   placeholder="-91.234567" style="width: 150px; height: 20px; border: solid 1px #eee"></td> \
-                                        </tr></table> \
-                                        </div>';
-            }
-        }
-
-        field_text += '<span class="input-group-btn" id="span-location-search" style="display: table-cell"> \
-                                            <button class="btn-search btn btn-default" type="submit" id="input-loc-search" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Location Search</span></button> \
-                                        </span> \
-                                        <span class="input-group-btn" id="span-latlon-decimal-search" style="display: none"> \
-                                            <button class="btn-search btn btn-default" id="input-latlon-decimal-search" title="Decimal Latlon Search" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Decimal Lat/Lon Search</span></button> \
-                                        </span> \
-                                        </div> \
-                                </div> \
-                                <div class="btn-group-loc"> \
-                                    <span class="input-group-btn"> \
-                                        <button class="btn-geoLocation btn btn-default st" title="Get Current Location" data-toggle="tooltip" data-placement="top" id="btn-geoLocation" type="button" data-original-title="Get Current Location"> \
-                                        <span class="fa fa-location-arrow"></span><span class="sr-only">Get Current Location</span></button> \
-                                    <button class="btn-nationLocation btn btn-default st" title="Nationwide" data-toggle="tooltip" data-placement="top" id="btn-nationLocation" type="button" data-original-title="Nationwide"><span class="icon-nation-1"></span><span class="sr-only">Nationwide</span></button> \
-                                    </span> \
-                                </div> \
-                            </div> \
-                        </div>';
-
-
-        $('#search-field-holder').html(field_text).css("display", "block");
-
-    }
-
-
-}
 
 
 function searchLocation() {
@@ -605,11 +342,6 @@ function getBureau(tid) {
 }
 
 function getMapInfo() {
-    //map_info = mapOptions.fields.field_description.und[0].value;
-
-    //map_info = JSON.parse(map_info);
-    //layers_info = map_info.layers;
-    
 
     //title
     var title = '';
@@ -635,12 +367,12 @@ function getMapInfo() {
     //bureau_office
     var bureau_office = '';
     if (mapOptions.fields.field_bureau_office && mapOptions.fields.field_bureau_office.und) {
-        var tid = mapOptions.fields.field_bureau_office.und[0].tid;
-        bureau_office = getBureau(tid);
+        var bureau_office = mapOptions.fields.field_bureau_office.und[0];
+        // bureau_office = getBureau(tid);
     }
     map_info_all.bureau_office = bureau_office;
 
-    //date
+    //date published
     var date = ''
     if (mapOptions.fields.field_date && mapOptions.fields.field_date.und) {
         date = mapOptions.fields.field_date.und[0].value;
@@ -657,7 +389,7 @@ function getMapInfo() {
     //description
     var description = ''
     if (mapOptions.fields.field_description && mapOptions.fields.field_description.und) {
-        description = mapOptions.fields.field_description.und[0].value;
+        description = mapOptions.fields.field_description.und[0].safe_value;
     }
     map_info_all.description = description;
 
@@ -832,14 +564,14 @@ function getMapInfo() {
     map_info_all.map_longitude = map_longitude;
 
     //map_max_zoom
-    var map_max_zoom = maxzoom;
+    var map_max_zoom = '12';
     if (mapOptions.fields.field_map_max_zoom && mapOptions.fields.field_map_max_zoom.und) {
         map_max_zoom = mapOptions.fields.field_map_max_zoom.und[0].value;
     }
     map_info_all.map_max_zoom = map_max_zoom;
 
     //map_min_zoom
-    var map_min_zoom = minzoom;
+    var map_min_zoom = '3';
     if (mapOptions.fields.field_map_min_zoom && mapOptions.fields.field_map_min_zoom.und) {
         map_min_zoom = mapOptions.fields.field_map_min_zoom.und[0].value;
     }
@@ -862,6 +594,11 @@ function getMapInfo() {
     //map_status
 
     //map_type
+    var map_type = '';
+    if (mapOptions.fields.field_map_type && mapOptions.fields.field_map_type.und) {
+        map_type = mapOptions.fields.field_map_type.und[0].value;
+    }
+    map_info_all.map_type = map_type;
 
     //publishing_bureau_office
 
@@ -875,12 +612,24 @@ function getMapInfo() {
         for (var i = 0; i < mapOptions.fields.field_related_links.und.length; i++) {
             var title = mapOptions.fields.field_related_links.und[i].title;
             var url = mapOptions.fields.field_related_links.und[i].url;
+            if (!/^(f|ht)tps?:\/\//i.test(url)) {
+                url = "http://" + url;
+            }
             entry = { "title": title, "url": url }
             related_links.push(entry);
 
         }
     }
     map_info_all.related_links = related_links;
+
+    //tags
+    var tag_list = [];
+
+    if (mapOptions.taxonomy && mapOptions.taxonomy.length > 0) {
+        tag_list = mapOptions.taxonomy;
+    }
+
+    map_info_all.tags = tag_list;
 
     //search_exclude
     var search_exclude = "0";
@@ -890,54 +639,101 @@ function getMapInfo() {
     map_info_all.search_exclude = search_exclude;
 
     //subtitle
-    var subtitle = "0";
+    var subtitle = "";
     if (mapOptions.fields.field_subtitle && mapOptions.fields.field_subtitle.und) {
         subtitle = mapOptions.fields.field_subtitle.und[0].value;
     }
     map_info_all.subtitle = subtitle;
-   
 
 }
 
+function formatDate(dateFormat) {
+    var dateStr = dateFormat.split('-');
+    var MM = dateStr[1];
+    var DD = dateStr[2];
+    var YYYY = dateStr[0];
+
+    return (MM + '/' + DD + '/' + YYYY);
+}
+
 function updateText() {
-
-    // var json_obj = JSON.parse(mapOptions.fields.field_description.und[0].value);
-    // var bureau = "NA"
-    // if (json_obj.bureau) {
-    // bureau = json_obj.bureau;
-    // }
-    // var title = mapOptions.title;
-    // var subtitle = mapOptions.fields.field_subtitle.und[0].value;
-    // var created = mapOptions.created;
-    // var changed = mapOptions.changed;
-
-    // $(document).prop('title', title);
-    // $('#span-title').html(title);
-    // $('#span-subtitle').html(subtitle);
-    // $('#dd-published').html(created);
-    // $('#dd-updated').html(changed);
-    // $('#span-bureau').html(bureau);
-
-    // map_info = mapOptions.fields.field_description.und[0].value;
-    // map_info = JSON.parse(map_info);
-    // var description = map_info.description;
-    // $('#span-description').html(description);
-
-
-    //var json_obj = JSON.parse(mapOptions.fields.field_description.und[0].value);
-    //var title = mapOptions.title;
-    //var subtitle = mapOptions.fields.field_subtitle.und[0].value;
-    //var created = mapOptions.created;
-    //var changed = mapOptions.changed;
-
     $(document).prop('title', map_info_all.title);
     $('#span-title').html(map_info_all.title);
     $('#span-subtitle').html(map_info_all.subtitle);
-    $('#dd-published').html(map_info_all.date);
-    $('#dd-updated').html(map_info_all.date_updated_reviewed);
-    $('#span-bureau').html(map_info_all.bureau_office);
+    //date published
+    if (map_info_all.date !== '') {
+        $('dd[data-published]').text(formatDate(map_info_all.date.split(' ')[0]));
+    } else {
+        $('[data-published]').remove();
+    }
+
+    //date updated
+    if (map_info_all.date_updated_reviewed !== '') {
+        $('dd[data-updated]').text(formatDate(map_info_all.date_updated_reviewed.split(' ')[0]));
+    } else {
+        $('[data-updated]').remove();
+    }
+
+    //publishing bureau
+    if (map_info_all.bureau_office.value !== '') {
+        $('dd[data-bureau]').html('<a href="' + map_info_all.bureau_office.url + '">' + map_info_all.bureau_office.value + '</a>');
+    } else {
+        $('[data-bureau]').remove();
+    }
+
     $('#span-description').html(map_info_all.description);
-   
+
+    //related links
+    if (map_info_all.related_links.length !== 0) {
+        var related_links_html = '';
+        for (var i = 0; i < map_info_all.related_links.length; i++) {
+            var title = map_info_all.related_links[i].title;
+            var url = map_info_all.related_links[i].url;
+            related_links_html = related_links_html + '<li><a href="' + url + '" target="_blank">' + title + '</a></li>';
+        }
+
+        $('[data-relatedLinks]').find('ul').html(related_links_html);
+    } else {
+        $('[data-relatedLinks]').remove();
+    }
+
+    var tagList = '';
+    var tagLink = '';
+    for (var i = 0; i < map_info_all.tags.length; i++) {
+        tagLink = '<a href="' + map_info_all.tags[i].url + '">' + map_info_all.tags[i].name + '</a>';
+
+        tagList += '<li class="tag">' + tagLink + '</li>';
+    }
+
+    $('#ul-tag-list').html(tagList);
+
+    // Create Share and Embed links    
+    $('a[href="#embedLink"]').click(function(e) {
+        var embedLink = window.location.href.split('#')[0] + 'embed/#' + window.location.href.split('#')[1] + '/zoom,search,layers,attr,key';
+
+        e.preventDefault();
+        $('#linkShare').slideDown();
+        $('#txt-link').val(embedLink).select();
+        $('.help-block').removeClass('hide');
+    });
+
+    $('a[href="#bookmarkLink"]').click(function(e) {
+        var bookmarkLink = window.location;
+
+        e.preventDefault();
+        $('#linkShare').slideDown();
+        $('#txt-link').val(bookmarkLink).select();
+        $('.help-block').addClass('hide');
+    });
+
+    $('#btn-closeShare').click(function(e) {
+        e.preventDefault();
+        $('#linkShare').slideUp();
+    });
+
+    $('#txt-link').on('click, focus', function() {
+        this.select();
+    });
 
 }
 
@@ -949,7 +745,7 @@ function updateMapList() {
         url: url,
         dataType: "json",
         success: function(data) {
-
+            var map_types = [];
             var urls = [];
             var titles = [];
             var subtitles = [];
@@ -960,21 +756,54 @@ function updateMapList() {
             var center_lats = [];
             var center_lons = [];
             var searches = [];
+            var thumbs = [];
+            var center_lats = [];
+            var center_lons = [];
 
             for (var i = 1; i < data.length; i++) {
-                var title = data[i].title;
-                var url = "";
-                if (data[i].fields.field_map_page_url.und) {
+                var title = '';
+                if (data[i].title) {
+                    title = data[i].title;
+                }
+                //map_type
+                var map_type = '';
+                if (data[i].fields.field_map_type && data[i].fields.field_map_type.und) {
+                    map_type = data[i].fields.field_map_type.und[0].value;
+                }
+                //url
+                var url = '';
+                if (data[i].fields.field_map_page_url && data[i].fields.field_map_page_url.und) {
                     url = data[i].fields.field_map_page_url.und[0].url;
                 }
-                var repo = "";
-                if (data[i].fields.field_map_repository.und) {
-                    repo = data[i].fields.field_map_repository.und[0].url;
+                //image_thumbnail
+                var image_thumbnail = '';
+                if (data[i].fields.field_image_thumbnail && data[i].fields.field_image_thumbnail.und) {
+                    image_thumbnail = data[i].fields.field_image_thumbnail.und[0].uri;
+                }
+                //map_latitude
+                var map_latitude = '0';
+                if (data[i].fields.field_map_latitude && data[i].fields.field_map_latitude.und) {
+                    map_latitude = data[i].fields.field_map_latitude.und[0].value;
+                }
+                //map_longitude
+                var map_longitude = '0';
+                if (data[i].fields.field_map_longitude && data[i].fields.field_map_longitude.und) {
+                    map_longitude = data[i].fields.field_map_longitude.und[0].value;
+                }
+                //map_initial_zoom
+                var map_initial_zoom = '';
+                if (data[i].fields.field_map_initial_zoom && data[i].fields.field_map_initial_zoom.und) {
+                    map_initial_zoom = data[i].fields.field_map_initial_zoom.und[0].value;
                 }
 
-                if (url + repo != "") {
+                if (url != "") {
+                    map_types.push(map_type);
                     urls.push(url);
                     titles.push(title);
+                    center_lats.push(map_latitude);
+                    center_lons.push(map_longitude);
+                    thumbs.push(image_thumbnail);
+                    zooms.push(map_initial_zoom);
                 }
             }
 
@@ -987,14 +816,25 @@ function updateMapList() {
                 return true;
             }
 
-            //var urls = data.urls;
-            //var titles = data.titles;
             var map_list_text = "";
+
             for (var i = 0; i < urls.length; i++) {
-                map_list_text += '<li><a href="/' + urls[i] + '" class=""> \
-                    <iframe width="150" height="125" src="/' + urls[i] + '/responsive.html"></iframe> \
-                    <p>' + titles[i] + '</p> \
-                    </a></li>';
+                isMapLayers = map_types[i] === 'int_layers';
+
+                if (isMapLayers) {
+                    url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
+                    embedLink = url + '/embed/#' + zooms[i] + '/' + center_lats[i] + '/' + center_lons[i] + '/';
+                    url_bookmark = '/' + url + '/#' + zooms[i] + '/' + center_lats[i] + '/' + center_lons[i];
+                    thumbImg = '<iframe width="150" height="125" src="/' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
+                } else {
+                    url = urls[i];
+                    url_bookmark = url;
+                    thumbImg = '<div class="mapThumb"><img src="../map_templates/images/' + thumbs[i] + '" alt="' + titles[i] + '" class="img-responsive"></div>';
+                }
+
+
+                map_list_text += '<li><a href="' + url_bookmark + '" class="">' +
+                    thumbImg + '</iframe><p>' + titles[i] + '</p></a></li>';
             }
 
             $('#ul-map-list').html(map_list_text);
@@ -1008,43 +848,23 @@ function updateMapList() {
 
 function getMapOption() {
 
-var mapId = window.location.href.replace(/.*\/\//, '').split('/')[1] || '';
-for (var i = 1; i < contentJson.length; i++) {
-	var map_url = '';
-	if (contentJson[i].fields.field_map_page_url && contentJson[i].fields.field_map_page_url.und && contentJson[i].fields.field_map_page_url.und[0].url) {
-		map_url = contentJson[i].fields.field_map_page_url.und[0].url;
-	}
+    var mapId = window.location.href.replace(/.*\/\//, '').split('/')[1] || '';
+    for (var i = 1; i < contentJson.length; i++) {
+        var map_url = '';
+        if (contentJson[i].fields.field_map_page_url && contentJson[i].fields.field_map_page_url.und && contentJson[i].fields.field_map_page_url.und[0].url) {
+            map_url = contentJson[i].fields.field_map_page_url.und[0].url;
+        }
 
-	var mapId0 = map_url.replace(/.*\//, '');
-	
-	if (mapId0 == mapId) {
-		mapOptions = contentJson[i];
-	}
+        var mapId0 = map_url.replace(/.*\//, '');
+
+        if (mapId0 == mapId) {
+            mapOptions = contentJson[i];
+        }
+
+    }
 
 }
 
-}
-
-$(document).ready(function() {
-var url = "/api.json";
-    $.ajax(url, {
-        type: "GET",
-        url: url,
-        dataType: "json",
-        success: function(data) {
-			contentJson = data;
-			getMapOption();
-			getMapInfo();
-			//updateMapSize();
-			updateMapList();
-			updateText();
-			createMap();
-			createSearchFields();
-			setupListener();
-		}
-		
-	});
 
 
 
-});

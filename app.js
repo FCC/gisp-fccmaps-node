@@ -222,7 +222,7 @@ app.use('/:appId', function(req, res, next){
 				res.sendFile('index.html', { root: __dirname + '/public/map_templates/embed' });
 			}
 			else {
-				res.sendFile('index_route.html', { root: __dirname + '/public/map_templates' });
+				res.sendFile('index.html', { root: __dirname + '/public/map_templates' });
 			}
 		}
 		else if (mapType == 'int_iframe') {
