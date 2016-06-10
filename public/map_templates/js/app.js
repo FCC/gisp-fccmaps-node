@@ -79,28 +79,24 @@ function createMap() {
     baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
     baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');
     var baseLayer = {};
-    
-	//default
-	baseLayer["Street"] = baseStreet.addTo(map);
-	baseLayer["Satellite"] = baseSatellite;
-	baseLayer["Terrain"] = baseTerrain;
-	if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "street") {
-		baseLayer["Street"] = baseStreet.addTo(map);
-		baseLayer["Satellite"] = baseSatellite;
-		baseLayer["Terrain"] = baseTerrain;
-	}
-	else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "satellite") {
-		baseLayer["Street"] = baseStreet;
-		baseLayer["Satellite"] = baseSatellite.addTo(map);
-		baseLayer["Terrain"] = baseTerrain;
-	}
-	else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "terrain") {
-		baseLayer["Street"] = baseStreet;
-		baseLayer["Satellite"] = baseSatellite;
-		baseLayer["Terrain"] = baseTerrain.addTo(map);
-	}
-	
-    console.log(baseLayer)
+
+    //default
+    baseLayer["Street"] = baseStreet.addTo(map);
+    baseLayer["Satellite"] = baseSatellite;
+    baseLayer["Terrain"] = baseTerrain;
+    if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "street") {
+        baseLayer["Street"] = baseStreet.addTo(map);
+        baseLayer["Satellite"] = baseSatellite;
+        baseLayer["Terrain"] = baseTerrain;
+    } else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "satellite") {
+        baseLayer["Street"] = baseStreet;
+        baseLayer["Satellite"] = baseSatellite.addTo(map);
+        baseLayer["Terrain"] = baseTerrain;
+    } else if (map_info_all.map_basemap && map_info_all.map_basemap[0].toLowerCase() == "terrain") {
+        baseLayer["Street"] = baseStreet;
+        baseLayer["Satellite"] = baseSatellite;
+        baseLayer["Terrain"] = baseTerrain.addTo(map);
+    }
 
     //map layers
     mapLayer = {};
@@ -108,9 +104,8 @@ function createMap() {
 
     if (map_info_all.map_layer.length > 0) {
         for (var i = 0; i < map_info_all.map_layer.length; i++) {
-            console.log(i);
-
             zindex1++;
+
             if (map_info_all.map_layer[i].type == 'XYZ') {
 
                 var title = map_info_all.map_layer[i].title;
@@ -124,7 +119,7 @@ function createMap() {
                 }
 
                 var url = '//' + map_info_all.map_layer[i].domain + '/{z}/{x}/{y}.png?' + query_string;
-                console.log(url)
+
                 mapLayer[title] = L.tileLayer(url, {
                     opacity: map_info_all.map_layer[i].opacity,
                     zIndex: zindex1
@@ -612,12 +607,6 @@ function getBureau(tid) {
 }
 
 function getMapInfo() {
-    //map_info = mapOptions.fields.field_description.und[0].value;
-
-    //map_info = JSON.parse(map_info);
-    //layers_info = map_info.layers;
-
-    console.log(mapOptions);
 
     //title
     var title = '';
@@ -648,7 +637,7 @@ function getMapInfo() {
     }
     map_info_all.bureau_office = bureau_office;
 
-    //date
+    //date published
     var date = ''
     if (mapOptions.fields.field_date && mapOptions.fields.field_date.und) {
         date = mapOptions.fields.field_date.und[0].value;
@@ -900,14 +889,12 @@ function getMapInfo() {
 
     //tags
     var tag_list = [];
-    console.log(mapOptions.taxonomy);
-    if (mapOptions.taxonomy && mapOptions.taxonomy.length > 0) { 
-console.log('mapOptions.taxonomy');
-        console.log(mapOptions.taxonomy.slice(0));
+
+    if (mapOptions.taxonomy && mapOptions.taxonomy.length > 0) {
         tag_list = mapOptions.taxonomy;
     }
-    map_info_all.tags = tag_list; 
- console.log(tag_list);    
+
+    map_info_all.tags = tag_list;
 
     //search_exclude
     var search_exclude = "0";
@@ -925,46 +912,74 @@ console.log('mapOptions.taxonomy');
 
 }
 
+function formatDate(dateFormat) {
+    var dateStr = dateFormat.split('-');
+    var MM = dateStr[1];
+    var DD = dateStr[2];
+    var YYYY = dateStr[0];
+
+    return (MM + '/' + DD + '/' + YYYY);
+}
+
 function updateText() {
-
-    console.log(map_info_all);
-
     $(document).prop('title', map_info_all.title);
     $('#span-title').html(map_info_all.title);
     $('#span-subtitle').html(map_info_all.subtitle);
-    $('#dd-published').html(map_info_all.date);
-    $('#dd-updated').html(map_info_all.date_updated_reviewed.split(' ')[0]);
-    $('#span-bureau').html('<a href="' + map_info_all.bureau_office.url + '">' + map_info_all.bureau_office.value + '</a>');
+    //date published
+    if (map_info_all.date !== '') {
+        $('dd[data-published]').text(formatDate(map_info_all.date.split(' ')[0]));
+    } else {
+        $('[data-published]').remove();
+    }
+
+    //date updated
+    if (map_info_all.date_updated_reviewed !== '') {
+        $('dd[data-updated]').text(formatDate(map_info_all.date_updated_reviewed.split(' ')[0]));
+    } else {
+        $('[data-updated]').remove();
+    }
+
+    //publishing bureau
+    if (map_info_all.bureau_office.value !== '') {
+        $('dd[data-bureau]').html('<a href="' + map_info_all.bureau_office.url + '">' + map_info_all.bureau_office.value + '</a>');
+    } else {
+        $('[data-bureau]').remove();
+    }
+
     $('#span-description').html(map_info_all.description);
-    if (map_info_all.related_links) {
+
+    //related links
+    if (map_info_all.related_links.length !== 0) {
         var related_links_html = '';
         for (var i = 0; i < map_info_all.related_links.length; i++) {
             var title = map_info_all.related_links[i].title;
             var url = map_info_all.related_links[i].url;
             related_links_html = related_links_html + '<li><a href="' + url + '" target="_blank">' + title + '</a></li>';
         }
-        //console.log("related_links_html="+related_links_html);
-        $('#related-links').html(related_links_html);
+
+        $('[data-relatedLinks]').find('ul').html(related_links_html);
+    } else {
+        $('[data-relatedLinks]').remove();
     }
 
     var tagList = '';
     var tagLink = '';
     for (var i = 0; i < map_info_all.tags.length; i++) {
         tagLink = '<a href="' + map_info_all.tags[i].url + '">' + map_info_all.tags[i].name + '</a>';
-    
-        tagList += '<li class="tag">' + tagLink + '</li>';        
+
+        tagList += '<li class="tag">' + tagLink + '</li>';
     }
 
     $('#ul-tag-list').html(tagList);
 
     // Create Share and Embed links    
-    $('a[href="#embedLink"]').click(function(e) { 
+    $('a[href="#embedLink"]').click(function(e) {
         var embedLink = window.location.href.split('#')[0] + 'embed/#' + window.location.href.split('#')[1] + '/zoom,search,layers,attr,key';
 
         e.preventDefault();
         $('#linkShare').slideDown();
         $('#txt-link').val(embedLink).select();
-        $('.help-block').removeClass('hide');         
+        $('.help-block').removeClass('hide');
     });
 
     $('a[href="#bookmarkLink"]').click(function(e) {
@@ -981,9 +996,9 @@ function updateText() {
         $('#linkShare').slideUp();
     });
 
-    $('#txt-link').on('click, focus', function(){
+    $('#txt-link').on('click, focus', function() {
         this.select();
-    });  
+    });
 
 }
 
@@ -1077,7 +1092,7 @@ function updateMapList() {
                     url_bookmark = '/' + url + '/#' + zooms[i] + '/' + center_lats[i] + '/' + center_lons[i];
                     thumbImg = '<iframe width="150" height="125" src="/' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
                 } else {
-                    url = urls[i];                    
+                    url = urls[i];
                     url_bookmark = url;
                     thumbImg = '<div class="mapThumb"><img src="../map_templates/images/' + thumbs[i] + '" alt="' + titles[i] + '" class="img-responsive"></div>';
                 }
@@ -1098,20 +1113,20 @@ function updateMapList() {
 
 function getMapOption() {
 
-var mapId = window.location.href.replace(/.*\/\//, '').split('/')[1] || '';
-for (var i = 1; i < contentJson.length; i++) {
-	var map_url = '';
-	if (contentJson[i].fields.field_map_page_url && contentJson[i].fields.field_map_page_url.und && contentJson[i].fields.field_map_page_url.und[0].url) {
-		map_url = contentJson[i].fields.field_map_page_url.und[0].url;
-	}
+    var mapId = window.location.href.replace(/.*\/\//, '').split('/')[1] || '';
+    for (var i = 1; i < contentJson.length; i++) {
+        var map_url = '';
+        if (contentJson[i].fields.field_map_page_url && contentJson[i].fields.field_map_page_url.und && contentJson[i].fields.field_map_page_url.und[0].url) {
+            map_url = contentJson[i].fields.field_map_page_url.und[0].url;
+        }
 
-	var mapId0 = map_url.replace(/.*\//, '');
-	
-	if (mapId0 == mapId) {
-		mapOptions = contentJson[i];
-	}
+        var mapId0 = map_url.replace(/.*\//, '');
 
-}
+        if (mapId0 == mapId) {
+            mapOptions = contentJson[i];
+        }
+
+    }
 
 }
 
@@ -1119,24 +1134,24 @@ for (var i = 1; i < contentJson.length; i++) {
 
 $(document).ready(function() {
 
-var url = "/api.json";
+    var url = "/api.json";
     $.ajax(url, {
         type: "GET",
         url: url,
         dataType: "json",
         success: function(data) {
-			contentJson = data;
-			getMapOption();
-			getMapInfo(mapOptions);
-			//updateMapSize();
-			updateMapList();
-			updateText();
-			createMap();
-			createSearchFields();
-			setupListener();
-		}
-		
-	});
+            contentJson = data;
+            getMapOption();
+            getMapInfo(mapOptions);
+            //updateMapSize();
+            updateMapList();
+            updateText();
+            createMap();
+            createSearchFields();
+            setupListener();
+        }
+
+    });
 
 
 });

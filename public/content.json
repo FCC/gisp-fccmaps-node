@@ -8850,9 +8850,14 @@
             "nid": "1639",
             "group": "Wireline Competition"
         }],
-        "field_date": [
-
-        ],
+        "field_date": {
+            "und": [{
+                "value": "2016-05-26 00:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "America/New_York",
+                "date_type": "datetime"
+            }]
+        },
         "field_search_exclude": [
 
         ],
