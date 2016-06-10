@@ -105,7 +105,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/800-mhz-cellular-–-b-block-cgsas",
+                "url": "https://www.fcc.gov/maps/800-mhz-cellular-b-block-cgsas",
                 "title": "800 MHz Cellular – B Block CGSAs",
                 "attributes": [
 
@@ -114,7 +114,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "800-mhz-cellular-–-b-block-cgsas"
+                "value": "800-mhz-cellular-b-block-cgsas"
             }]
         },
         "field_map_repository": [
@@ -162,141 +162,8 @@
                 { "value": "50" }
             ]
         },
-        "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.800-mhz-cellular-a-block-cgsa",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.800-mhz-cellular-a-block-cgsa"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc.800-mhz-cellular-a-block-cgsa",
-                    "format": null,
-                    "safe_value": "fcc.800-mhz-cellular-a-block-cgsa"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1.0"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "800 MHz Cellular – A Block CGSAs",
-                    "format": null,
-                    "safe_value": "800 MHz Cellular – A Block CGSAs"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#7a8d3b",
-                    "format": null,
-                    "safe_value": "#7a8d3b"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Licensed CGSAs",
-                    "format": null,
-                    "safe_value": "Licensed CGSAs"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#9a2221",
-                    "format": null,
-                    "safe_value": "#9a2221"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "CGSA boundary",
-                    "format": null,
-                    "safe_value": "CGSA boundary"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#F06c6c",
-                    "format": null,
-                    "safe_value": "#F06c6c"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "CMA boundary",
-                    "format": null,
-                    "safe_value": "CMA boundary"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
+        "field_map_layer": [],
+        "field_map_legend": [],
         "field_map_longitude": {
             "und": [
                 { "value": "-105" }

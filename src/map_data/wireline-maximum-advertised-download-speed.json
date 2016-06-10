@@ -170,7 +170,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "https://www.fcc.gov/maps/wireline-maximum-advertised-download-speed"
+                "value": "wireline-maximum-advertised-download-speed"
             }]
         },
         "field_map_repository": [

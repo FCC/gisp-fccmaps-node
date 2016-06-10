@@ -3714,7 +3714,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "overbuilt-map"
+                "value": "100pct-overlap-map"
             }]
         },
         "field_map_repository": [
@@ -8287,7 +8287,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "https://www.fcc.gov/maps/tribal-mobility-fund-phase-i-eligible-areas"
+                "value": "tribal-mobility-fund-phase-i-eligible-areas"
             }]
         },
         "field_map_repository": [
@@ -8590,7 +8590,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "https://www.fcc.gov/maps/tribal-mobility-fund-phase-i-potentially-eligible-areas"
+                "value": "tribal-mobility-fund-phase-i-potentially-eligible-areas"
             }]
         },
         "field_map_repository": [
@@ -9168,7 +9168,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/800-mhz-cellular-–-block-cgsas",
+                "url": "https://www.fcc.gov/maps/800-mhz-cellular-a-block-cgsas",
                 "title": "800 MHz Cellular – A Block CGSAs",
                 "attributes": [
 
@@ -9177,7 +9177,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "800-mhz-cellular-–-block-cgsas"
+                "value": "800-mhz-cellular-a-block-cgsas"
             }]
         },
         "field_map_repository": [
@@ -12371,7 +12371,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "https://www.fcc.gov/maps/total-high-cost-distributions-rate-return-study-areas"
+                "value": "total-high-cost-distributions-rate-return-study-areas"
             }]
         },
         "field_map_repository": [
@@ -12671,7 +12671,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "https://www.fcc.gov/maps/total-line-usf-high-cost-distributions-rate-return-study-areas"
+                "value": "total-line-usf-high-cost-distributions-rate-return-study-areas"
             }]
         },
         "field_map_repository": [
@@ -14702,321 +14702,6 @@
 }
 ,{
     "nid": "28002",
-    "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $48",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
-    "type": "map",
-    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.k02xd2t9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
-    "tnid": "0",
-    "body": null,
-    "vid": "28434",
-    "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
-        "field_description": {
-            "und": [{
-                "value": "<p>The Wireline Competition Bureau provides the following illustrative map displaying the areas that would potentially be eligible for the Connect America Fund Phase II offer of model-based support to price cap carriers, based on the output from version 4.0 of the Connect America Cost Model (CAM v4.0) (see <a href=\"http://www.fcc.gov/maps\">http://www.fcc.gov/maps</a>). The areas that are shown as eligible for the offer of model-based support are consistent with the previously posted CAM v4.0 Illustrative Results that utilize a Funding Threshold of $48. In addition to providing a visualization of the areas potentially eligible for the offer of model-based support, the map displays the areas below the Funding Threshold, above the Extremely High Cost Threshold, and areas potentially excluded from eligibility due to the presence of other providers (based on State Broadband Initiative data and FCC Form 477 data). Additional details related to the CAM v4.0 release and supporting information can be found on the fcc.gov site (see <a href=\"http://www.fcc.gov/encyclopedia/price-cap-resources\">http://www.fcc.gov/encyclopedia/price-cap-resources</a>).</p>",
-                "summary": "",
-                "format": "full_html",
-                "safe_value": "<p>The Wireline Competition Bureau provides the following illustrative map displaying the areas that would potentially be eligible for the Connect America Fund Phase II offer of model-based support to price cap carriers, based on the output from version 4.0 of the Connect America Cost Model (CAM v4.0) (see <a href=\"http://www.fcc.gov/maps\">http://www.fcc.gov/maps</a>). The areas that are shown as eligible for the offer of model-based support are consistent with the previously posted CAM v4.0 Illustrative Results that utilize a Funding Threshold of $48. In addition to providing a visualization of the areas potentially eligible for the offer of model-based support, the map displays the areas below the Funding Threshold, above the Extremely High Cost Threshold, and areas potentially excluded from eligibility due to the presence of other providers (based on State Broadband Initiative data and FCC Form 477 data). Additional details related to the CAM v4.0 release and supporting information can be found on the fcc.gov site (see <a href=\"http://www.fcc.gov/encyclopedia/price-cap-resources\">http://www.fcc.gov/encyclopedia/price-cap-resources</a>).</p>",
-                "safe_summary": ""
-            }]
-        },
-        "field_image_thumbnail": {
-            "und": [{
-                "fid": "3477",
-                "uid": "1798",
-                "filename": "thumb-fcc-connect-america-fund-phase-ii-cam-v40illustrative-map-funding-threshold-48.png",
-                "uri": "thumb-connect-america-fund-phase-ii-cam-v40illustrative-map-funding-threshold-48.png",
-                "filemime": "image/png",
-                "filesize": "3695",
-                "status": "1",
-                "timestamp": "1456505550",
-                "type": "image",
-                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
-                "field_file_image_alt_text": [
-
-                ],
-                "field_file_image_title_text": [
-
-                ],
-                "field_caption": [
-
-                ],
-                "field_bo_media": [
-
-                ],
-                "rdf_mapping": [
-
-                ],
-                "metadata": {
-                    "height": 38,
-                    "width": 175
-                },
-                "alt": null,
-                "title": null,
-                "height": "38",
-                "width": "175"
-            }]
-        },
-        "field_link": [
-
-        ],
-        "field_archived": {
-            "und": [{
-                "value": "1"
-            }]
-        },
-        "field_related_content": [
-
-        ],
-        "field_date_updated_reviewed": {
-            "und": [{
-                "value": "2016-01-29 11:45:00",
-                "timezone": "America/New_York",
-                "timezone_db": "UTC",
-                "date_type": "datetime"
-            }]
-        },
-        "og_group_ref": [{
-            "nid": "1639",
-            "group": "Wireline Competition"
-        }],
-        "field_date": [
-
-        ],
-        "field_search_exclude": [
-
-        ],
-        "field_subtitle": {
-            "und": [{
-                "value": "as of Sept. 2014"
-            }]
-        },
-        "field_featured": [
-
-        ],
-        "field_map_display_date": [
-
-        ],
-        "field_map_options": [
-
-        ],
-        "field_map_page_url": {
-            "und": [{
-                "url": "https://www.fcc.gov/maps/connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48",
-                "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $48",
-                "attributes": [
-
-                ]
-            }]
-        },
-        "field_map_unique": {
-            "und": [{
-                "value": "connect-america-fund-phase-ii-–-cam-v40illustrative-map-funding-threshold-48"
-            }]
-        },
-        "field_map_repository": [
-
-        ],
-        "field_map_status": [
-
-        ],
-        "field_map_type": {
-            "und": [{
-                "value": "int_iframe"
-            }]
-        },
-        "field_related_links": {
-            "und": []
-        },
-        "field_bureau_office": {
-            "und": [{
-                "tid": "WCB",
-                "value": "Wireline Communications",
-                "url": "https://www.fcc.gov/wireline-competition"
-            }]
-        },
-        "field_map_address_search_": [
-
-        ],
-        "field_map_attribution": [
-
-        ],
-        "field_map_basemap": {
-            "und": [
-                { "value": "street" }
-            ]
-        },
-        "field_map_coordinate_search_": [
-
-        ],
-        "field_map_initial_zoom": {
-            "und": [
-                { "value": "4" }
-            ]
-        },
-        "field_map_latitude": {
-            "und": [
-                { "value": "38.82" }
-            ]
-        },
-        "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc.kr8dunmi",
-                    "format": null,
-                    "safe_value": "fcc.kr8dunmi"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1.0"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "Connect America Phase II - Final Eligible Areas Map",
-                    "format": null,
-                    "safe_value": "Connect America Phase II - Final Eligible Areas Map"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#ff8240",
-                    "format": null,
-                    "safe_value": "#ff8240"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Unavailable",
-                    "format": null,
-                    "safe_value": "Unavailable"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#ffe1d1",
-                    "format": null,
-                    "safe_value": "#ffe1d1"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Partially Unavailable",
-                    "format": null,
-                    "safe_value": "Partially Unavailable"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_longitude": {
-            "und": [
-                { "value": "-96.86" }
-            ]
-        },
-        "field_map_max_zoom": [
-
-        ],
-        "field_map_min_zoom": [
-
-        ]
-    },
-    "taxonomy": [{ 
-        "tid": "966",
-        "vid": "1",
-        "name": "Connect America Fund (High Cost)",
-        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Connect America Fund (High Cost) - Price Cap Carriers",
-        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost-price-cap-carriers"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Data, Maps, Reports",
-        "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps",
-        "url": "https://www.fcc.gov/tags/maps"
-    }, { 
-        "tid": "966",
-        "vid": "1",
-        "name": "Universal Service ",
-        "url": "https://www.fcc.gov/tags/universal-service"
-    }],
-    "uri": "http://10.154.68.187/api/content/28002"
-}
-,{
-    "nid": "28002",
     "title": "Connect America Fund (CAF) Phase I Round Two",
     "created": "2015-10-20",
     "changed": "2015-12-09",
@@ -15807,7 +15492,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "https://www.fcc.gov/maps/wireline-maximum-advertised-download-speed"
+                "value": "wireline-maximum-advertised-download-speed"
             }]
         },
         "field_map_repository": [
@@ -17039,7 +16724,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/800-mhz-cellular-–-b-block-cgsas",
+                "url": "https://www.fcc.gov/maps/800-mhz-cellular-b-block-cgsas",
                 "title": "800 MHz Cellular – B Block CGSAs",
                 "attributes": [
 
@@ -17048,7 +16733,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "800-mhz-cellular-–-b-block-cgsas"
+                "value": "800-mhz-cellular-b-block-cgsas"
             }]
         },
         "field_map_repository": [
@@ -17096,141 +16781,8 @@
                 { "value": "50" }
             ]
         },
-        "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.800-mhz-cellular-a-block-cgsa",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.800-mhz-cellular-a-block-cgsa"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc.800-mhz-cellular-a-block-cgsa",
-                    "format": null,
-                    "safe_value": "fcc.800-mhz-cellular-a-block-cgsa"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1.0"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "800 MHz Cellular – A Block CGSAs",
-                    "format": null,
-                    "safe_value": "800 MHz Cellular – A Block CGSAs"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#7a8d3b",
-                    "format": null,
-                    "safe_value": "#7a8d3b"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Licensed CGSAs",
-                    "format": null,
-                    "safe_value": "Licensed CGSAs"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#9a2221",
-                    "format": null,
-                    "safe_value": "#9a2221"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "CGSA boundary",
-                    "format": null,
-                    "safe_value": "CGSA boundary"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#F06c6c",
-                    "format": null,
-                    "safe_value": "#F06c6c"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "CMA boundary",
-                    "format": null,
-                    "safe_value": "CMA boundary"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
+        "field_map_layer": [],
+        "field_map_legend": [],
         "field_map_longitude": {
             "und": [
                 { "value": "-105" }
@@ -18592,7 +18144,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers"
+                "value": "terrestrial-wireless-coverage-number-providers"
             }]
         },
         "field_map_repository": [
@@ -18661,9 +18213,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc20554.6abutyb9",
+                    "value": "fcc20554.kdh0pigc",
                     "format": null,
-                    "safe_value": "fcc20554.6abutyb9"
+                    "safe_value": "fcc20554.kdh0pigc"
                 }]
             },
             "field_layer_opacity": {
@@ -18678,9 +18230,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "WiMAX",
+                    "value": "Terrestrial Wireless Coverage by Number of Providers",
                     "format": null,
-                    "safe_value": "WiMAX"
+                    "safe_value": "Terrestrial Wireless Coverage by Number of Providers"
                 }]
             },
             "field_layer_type": {

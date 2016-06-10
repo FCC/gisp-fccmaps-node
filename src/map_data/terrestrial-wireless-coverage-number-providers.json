@@ -78,7 +78,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers"
+                "value": "terrestrial-wireless-coverage-number-providers"
             }]
         },
         "field_map_repository": [
@@ -147,9 +147,9 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc20554.6abutyb9",
+                    "value": "fcc20554.kdh0pigc",
                     "format": null,
-                    "safe_value": "fcc20554.6abutyb9"
+                    "safe_value": "fcc20554.kdh0pigc"
                 }]
             },
             "field_layer_opacity": {
@@ -164,9 +164,9 @@
             },
             "field_layer_title": {
                 "und": [{
-                    "value": "WiMAX",
+                    "value": "Terrestrial Wireless Coverage by Number of Providers",
                     "format": null,
-                    "safe_value": "WiMAX"
+                    "safe_value": "Terrestrial Wireless Coverage by Number of Providers"
                 }]
             },
             "field_layer_type": {
