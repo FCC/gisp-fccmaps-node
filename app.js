@@ -152,6 +152,8 @@ app.use('/', express.static(__dirname + '/public'));
 
 app.use('/', express.static(__dirname + '/public/map'));
 
+app.use('/', express.static(__dirname + '/public/map_templates'));
+
 //proxy routing
 app.use('/:appId', function(req, res, next){
 	
