@@ -198,7 +198,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1"
                 }]
             },
             "field_layer_protocol": {
@@ -5392,7 +5392,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -14234,7 +14234,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -14549,7 +14549,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -15385,7 +15385,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -15695,7 +15695,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -16913,7 +16913,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -17490,7 +17490,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -17870,7 +17870,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -18387,7 +18387,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -18835,7 +18835,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "iframe"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
