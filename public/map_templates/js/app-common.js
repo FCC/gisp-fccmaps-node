@@ -710,13 +710,13 @@ function updateText() {
 
     // Create Share and Embed links    
     $('a[href="#embedLink"]').click(function(e) {
-        var embedLink = '';
+        var embedLink = window.location.href.split('#');
 
         if (map_info_all.map_type === 'int_iframe') {
             embedLink = map_info_all.webUrl;
             $('.help-block').addClass('hide');
         } else {
-            embedLink = window.location.href.split('#')[0] + 'embed/#' + window.location.href.split('#')[1] + '/zoom,search,layers,attr,key';
+            embedLink = embedLink[0] + 'embed/#' + embedLink[1].slice(0,-1) + '/zoom,search,layers,attr,key';
             $('.help-block').removeClass('hide');
         }
 
