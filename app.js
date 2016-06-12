@@ -124,11 +124,11 @@ function checkAllowed(req, res, next) {
 // route
 
 //api routing
-app.get('/api', function(req, res){
-	maps.getContentAPI(req, res);
+app.get('/api', function(req, res, next){
+	maps.getContentAPI(req, res, next);
 });
-app.get('/api.json', function(req, res){
-	maps.getContentAPI(req, res);
+app.get('/api.json', function(req, res, next){
+	maps.getContentAPI(req, res, next);
 });
 
 //admin routing
@@ -141,6 +141,43 @@ app.get('/admin/pull', function(req, res, next){
 
 //static routing
 app.use('/', express.static(__dirname + '/public'));
+
+//map thumb routing
+app.use('/:mapId/thumb', function(req, res, next){
+	
+	console.log('\n map thumb routing ' );
+
+	var mapId = req.params.mapId;  //req.url.replace(/\//g, '');	
+	console.log('mapId : ' + mapId);
+	
+	console.log('req.url : ' + req.url);
+	console.log('req.get host : ' + req.get('host'));
+	console.log('req.originalUrl : ' + req.originalUrl);
+	console.log('req.host : ' + req.host);
+	console.log('req.hostname : ' + req.hostname);
+	console.log('req.path : ' + req.path);
+	
+	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
+		console.log('trailing slash redirect ');		
+		res.redirect(301, req.originalUrl + '/');
+		return;
+	}	
+	
+	var isMap = maps.checkMapId(mapId);
+	console.log('isMap : ' + isMap);
+	
+	if (!isMap) {
+		next();
+	}
+	
+	
+	console.log('thumb sendFile ');
+	//res.sendFile('thumb-'+ mapId +'.png', { root: __dirname + '/public/images/thumb' });
+	//return;			
+
+
+	next(); 	
+});
 
 //map embed routing
 app.use('/:mapId/embed', function(req, res, next){

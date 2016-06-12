@@ -34,9 +34,9 @@ var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseco
 
 var contentJson = [];
 var newDataJson, oldDataJson;
-var mapDirPath = './public/map';
-var forceLock = false;
 
+
+// **********************************************************
 
 function deployMap(repeat) {
 	console.log('\n deployMap :  '  );
@@ -111,9 +111,9 @@ function pullMap(req, res) {
 	console.log('\n pullMap ');
 	
 	try {
-			deployMap(false);		
-			res.send({'status': 'ok', 'msg': 'Pull Map Requested'});	
-			return;		
+		deployMap(false);		
+		res.send({'status': 'ok', 'msg': 'Pull Map Requested'});	
+		return;		
 	}
 	catch (e) {
 		console.error('Exception in pullMap: ' + e);
@@ -171,7 +171,6 @@ function getWebUrl(mapId) {
 	}
 	return webUrl;
 }
-
 
 // **********************************************************
 // export
