@@ -712,7 +712,7 @@ function updateText() {
     $('a[href="#embedLink"]').click(function(e) {
         var embedLink = window.location.href.split('#');
 
-        if (map_info_all.map_type === 'int_iframe') {
+        if (map_info_all.map_type === 'iframe') {
             embedLink = map_info_all.webUrl;
             $('.help-block').addClass('hide');
         } else {
@@ -827,7 +827,7 @@ function updateMapList() {
             var map_list_text = "";
 
             for (var i = 0; i < urls.length; i++) {
-                isMapLayers = map_types[i] === 'int_layers';
+                isMapLayers = map_types[i] === 'layers';
 
                 if (isMapLayers) {
                     url = urls[i].substr(urls[i].lastIndexOf('/') + 1);

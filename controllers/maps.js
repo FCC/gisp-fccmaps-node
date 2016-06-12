@@ -31,10 +31,6 @@ var CONTENT_API = configEnv[NODE_ENV].CONTENT_API || '/api.json';
 var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
 
 // **********************************************************
-// routeTable
-var routeTable = require('../config/route.json');
-
-// **********************************************************
 
 var contentJson = [];
 var newDataJson, oldDataJson;

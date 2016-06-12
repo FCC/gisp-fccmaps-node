@@ -87,7 +87,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {

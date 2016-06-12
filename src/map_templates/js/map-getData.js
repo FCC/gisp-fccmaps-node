@@ -210,15 +210,15 @@ function createMapCard(mapMeta) {
     
     for (var i = 0; i < urls.length; i++) {
 
-		isMapLayers = mapMeta.mapTypes[i] === 'int_layers';				
+		isMapLayers = mapMeta.mapTypes[i] === 'layers';				
 
-		if (mapMeta.mapTypes[i] === 'int_layers') {			
+		if (mapMeta.mapTypes[i] === 'layers') {			
 			url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
 			embedLink =  url + '/embed/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i] + '/';
 			url_bookmark = url + '/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i];
 			thumbImg = '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
 		} 
-		else if (mapMeta.mapTypes[i] === 'int_iframe') {			
+		else if (mapMeta.mapTypes[i] === 'iframe') {			
 			url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
 			embedLink = mapMeta.webUrl;
 			console.log('embedLink : '+ embedLink );

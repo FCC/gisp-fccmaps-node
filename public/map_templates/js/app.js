@@ -1084,7 +1084,7 @@ function updateMapList() {
             var map_list_text = "";
 
             for (var i = 0; i < urls.length; i++) {
-                isMapLayers = map_types[i] === 'int_layers';
+                isMapLayers = map_types[i] === 'layers';
 
                 if (isMapLayers) {
                     url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
