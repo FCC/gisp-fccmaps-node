@@ -58,5 +58,5 @@ var extLinks = function(e) {
 
 $(document).ready(function() {
     offCanvasMenu.init();
-    $('.link-ext').on('click', extLinks);
+    $('body').on('click', '.link-ext', extLinks);
 });

@@ -212,9 +212,9 @@ function createMap() {
 function createSearchFields() {
     if (hasSearch) {
         if ((map_info_all.map_address_search && map_info_all.map_address_search.toLowerCase() == "on") || (map_info_all.map_coordinate_search && map_info_all.map_coordinate_search.toLowerCase() == "on")) {
-            $('#search-field-holder').css("display", "block");
+            $('#search-field-holder').toggleClass('hasSearch hide');
         } else {
-            $('#search-field-holder').css("display", "none");
+            $('#search-field-holder').toggleClass('hasSearch hide');
         }
     }
 }
