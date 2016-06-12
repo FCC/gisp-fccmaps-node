@@ -218,7 +218,7 @@ app.use('/:appId', function(req, res, next){
 
 		var mapType = maps.getMapType(appId);
 		
-		if (mapType == 'int_layers') {
+		if (mapType == 'layers') {
 			if (req.originalUrl.match(/\/embed/)) {
 				console.log('sending embed')
 				res.sendFile('index.html', { root: __dirname + '/public/map_templates/embed' });
@@ -227,7 +227,7 @@ app.use('/:appId', function(req, res, next){
 				res.sendFile('index.html', { root: __dirname + '/public/map_templates' });
 			}
 		}
-		else if (mapType == 'int_iframe') {
+		else if (mapType == 'iframe') {
 			console.log('send iframe');
 		
 			res.sendFile('index-iframe.html', { root: __dirname + '/public/map_templates' });

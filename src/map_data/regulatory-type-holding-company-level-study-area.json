@@ -181,7 +181,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {

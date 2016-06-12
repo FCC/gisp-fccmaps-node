@@ -134,7 +134,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
@@ -409,7 +409,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
@@ -1102,7 +1102,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
@@ -1965,7 +1965,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
@@ -3750,7 +3750,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": [
@@ -4988,7 +4988,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -5356,7 +5356,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
@@ -5723,7 +5723,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
@@ -6090,7 +6090,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
@@ -6493,7 +6493,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -7008,7 +7008,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -7293,7 +7293,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
@@ -8434,7 +8434,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -8737,7 +8737,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -9033,7 +9033,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -9329,7 +9329,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -9668,7 +9668,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -10016,7 +10016,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -10364,7 +10364,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -10755,7 +10755,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": [
@@ -11769,7 +11769,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -11980,7 +11980,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -12280,7 +12280,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -12595,7 +12595,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -12910,7 +12910,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -13225,7 +13225,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -13535,7 +13535,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -13845,7 +13845,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -14160,7 +14160,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -14475,7 +14475,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -14790,7 +14790,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -15105,7 +15105,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -15311,7 +15311,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -15621,7 +15621,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -15982,7 +15982,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -16405,7 +16405,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -16839,7 +16839,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -17212,7 +17212,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -17416,7 +17416,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -17796,7 +17796,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -18313,7 +18313,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -18761,7 +18761,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -19143,7 +19143,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -19487,7 +19487,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -20543,7 +20543,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -21551,7 +21551,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
