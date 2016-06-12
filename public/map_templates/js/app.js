@@ -167,8 +167,8 @@ function createMap() {
         var legend_text1 = '';
         var keyStyle = '';
         var keyColor = 'background-color:';
-        var keyImgTribal = 'background-image: url(images/legend-thumb-slash.png)';
-        var keyImgUrban = 'background-image: url(images/legend-thumb-dot.png)';
+        var keyImgTribal = 'background-image: url(/images/legend-thumb-slash.png)';
+        var keyImgUrban = 'background-image: url(/images/legend-thumb-dot.png)';
 
         for (var i = 0; i < map_info_all.map_legend.length; i++) {
 
