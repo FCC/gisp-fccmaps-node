@@ -78,12 +78,7 @@
             }]
         },
         "field_date": {
-            "und": [{
-                "value": "2016-05-27 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": {
             "und": [{
@@ -182,7 +177,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "EB",
-                "value": "Enforcement Bureau",
+                "value": "Enforcement",
                 "url": "https://www.fcc.gov/enforcement"
             }]
         },
@@ -1027,7 +1022,7 @@
                 "value": "3"
             }]
         }
-    },
+    }, 
     "taxonomy": [{
         "tid": "956",
         "vid": "1",
@@ -1036,13 +1031,28 @@
     }, {
         "tid": "966",
         "vid": "1",
+        "name": "Enforcement",
+        "url": "https://www.fcc.gov/tags/enforcement"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "From Unlicensed/Unauthorized Service",
+        "url": "https://www.fcc.gov/tags/unlicensedunauthorized-service"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Interference",
+        "url": "https://www.fcc.gov/tags/interference-2"
+    }, {
+        "tid": "966",
+        "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "966",
         "vid": "1",
-        "name": "Reports",
-        "url": "https://www.fcc.gov/tags/reports"
+        "name": "Unauthorized Operation",
+        "url": "https://www.fcc.gov/tags/unauthorized-operation"
     }],
     "uri": "http://10.154.68.187/api/content/179638"
 }

@@ -5,11 +5,11 @@
     "currentPage": 0
 },{
     "nid": "28002",
-    "title": "Connect America Fund Phase II - Accepted Areas Map",
+    "title": "Connect America Fund Phase II",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/caf-2-accepted-map",
+    "webUrl": "https://www.fcc.gov/maps/caf-2-accepted-map",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -21,10 +21,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map identifies the areas where some of the nation's largest phone companies, also known as price cap carriers, accepted Phase II support from the FCC’s Connect America Fund to provide broadband and voice service over the next six years. The offer of Connect America Phase II model-based support was targeted to price cap areas that are high-cost, but not extremely high-cost. An area was classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the Connect America Cost Model (CAM) (version 4.3), was above the $52.50 funding benchmark but below a $198.60 extremely high cost threshold, and not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. Eligible areas that were accepted are shown in bright green on the map. Declined funding will be made available at a future date through a competitive bidding process.",
+                "value": "<p>This map identifies the areas where some of the nation's largest phone companies, also known as price cap carriers, accepted Phase II support from the FCC’s Connect America Fund to provide broadband and voice service over the next six years. The offer of Connect America Phase II model-based support was targeted to price cap areas that are high-cost, but not extremely high-cost. An area was classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the Connect America Cost Model (CAM) (version 4.3), was above the $52.50 funding benchmark but below a $198.60 extremely high cost threshold, and not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. Eligible areas that were accepted are shown in bright green on the map. Declined funding will be made available at a future date through a competitive bidding process.</p><p>Empty areas with no color are either areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but receive support from other universal service high-cost mechanisms; areas declined by price cap carriers; areas where the average monthly cost-per-location is above $52.50 but below $198.60, but the area was deemed served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments; areas where the average monthly cost-per-location was calculated by version 4.3 of the CAM as above $198.60; and/or areas reported as uninhabited.</p><p>For more information about Connect America Phase II, refer to <a href=\"https://www.fcc.gov/encyclopedia/price-cap-resources\">https://www.fcc.gov/encyclopedia/price-cap-resources</a>.</p><p><a href=\"https://www.fcc.gov/maps/connect-america-phase-ii-final-eligible-areas-map\">Click here for the version of the map identifying the areas subject to the offer of support</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map identifies the areas where some of the nation's largest phone companies, also known as price cap carriers, accepted Phase II support from the FCC’s Connect America Fund to provide broadband and voice service over the next six years. The offer of Connect America Phase II model-based support was targeted to price cap areas that are high-cost, but not extremely high-cost. An area was classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the Connect America Cost Model (CAM) (version 4.3), was above the $52.50 funding benchmark but below a $198.60 extremely high cost threshold, and not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. Eligible areas that were accepted are shown in bright green on the map. Declined funding will be made available at a future date through a competitive bidding process.",
+                "safe_value": "<p>This map identifies the areas where some of the nation's largest phone companies, also known as price cap carriers, accepted Phase II support from the FCC’s Connect America Fund to provide broadband and voice service over the next six years. The offer of Connect America Phase II model-based support was targeted to price cap areas that are high-cost, but not extremely high-cost. An area was classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the Connect America Cost Model (CAM) (version 4.3), was above the $52.50 funding benchmark but below a $198.60 extremely high cost threshold, and not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. Eligible areas that were accepted are shown in bright green on the map. Declined funding will be made available at a future date through a competitive bidding process.</p><p>Empty areas with no color are either areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but receive support from other universal service high-cost mechanisms; areas declined by price cap carriers; areas where the average monthly cost-per-location is above $52.50 but below $198.60, but the area was deemed served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments; areas where the average monthly cost-per-location was calculated by version 4.3 of the CAM as above $198.60; and/or areas reported as uninhabited.</p><p>For more information about Connect America Phase II, refer to <a href=\"https://www.fcc.gov/encyclopedia/price-cap-resources\">https://www.fcc.gov/encyclopedia/price-cap-resources</a>.</p><p><a href=\"https://www.fcc.gov/maps/connect-america-phase-ii-final-eligible-areas-map\">Click here for the version of the map identifying the areas subject to the offer of support</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -114,8 +114,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/caf2",
-                "title": "CAF2",
+                "url": "https://www.fcc.gov/maps/caf-2-accepted-map",
+                "title": "Connect America Fund Phase II",
                 "attributes": [
 
                 ]
@@ -123,7 +123,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "caf2"
+                "value": "caf-2-accepted-map"
             }]
         },
         "field_map_repository": [
@@ -138,15 +138,7 @@
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/general/connect-america-fund-caf",
-                "title": "Connect America Fund",
-                "attributes": []
-            }, {
-                "url": "www.fcc.gov/maps",
-                "title": "Maps",
-                "attributes": []
-            }]
+           
         },
         "field_bureau_office": {
             "und": [{
@@ -421,24 +413,13 @@
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition"
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": [
@@ -998,15 +979,37 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
+        "tid": "956",
         "vid": "1",
-        "name": "Maps"
+        "name": "Broadband Progress Report",
+        "url": "https://www.fcc.gov/tags/broadband-progress-report"
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Broadband Progress Reports",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Broadband, Internet & IP",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
@@ -1016,7 +1019,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-technology",
+    "webUrl": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-technology",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -1028,10 +1031,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.",
+                "value": "<p>This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.",
+                "safe_value": "<p>This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -1079,7 +1082,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/bpr-2016-fixed-25mbps-3mbps-technology",
+                "url": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-technology",
                 "title": "Residential Fixed Broadband Technology at 25 Mbps/3 Mbps",
                 "attributes": [
 
@@ -1103,24 +1106,13 @@
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition"
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": [
@@ -1850,15 +1842,37 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
+        "tid": "956",
         "vid": "1",
-        "name": "Maps"
+        "name": "Broadband Progress Report",
+        "url": "https://www.fcc.gov/tags/broadband-progress-report"
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Broadband Progress Reports",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Broadband, Internet & IP",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
@@ -1880,10 +1894,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report.\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.",
+                "value": "<p>This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report.\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.",
+                "safe_value": "<p>This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -1955,24 +1969,13 @@
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition"
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": [
@@ -2702,15 +2705,37 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
+        "tid": "956",
         "vid": "1",
-        "name": "Maps"
+        "name": "Broadband Progress Report",
+        "url": "https://www.fcc.gov/tags/broadband-progress-report"
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Broadband Progress Reports",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Broadband, Internet & IP",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
@@ -4844,7 +4869,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/residential-fixed-connections-over-200-kbps",
+    "webUrl": "https://fcc.github.io/ias-map-1/index.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -4856,14 +4881,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows the number of residential fixed connections over 200 kbps per 1,000 households by census tract based on December 2014 Form 477 fixed broadband subscribership data.",
+                "value": "<p>This map shows the number of residential fixed connections over 200 kbps per 1,000 households by census tract based on December 2014 Form 477 fixed broadband subscribership data. For more information, see the <a href=\"https://www.fcc.gov/reports-research/reports/internet-access-services-reports/internet-access-services-reports\">Internet Access Services Reports.</a></p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows the number of residential fixed connections over 200 kbps per 1,000 households by census tract based on December 2014 Form 477 fixed broadband subscribership data.",
+                "safe_value": "<p>This map shows the number of residential fixed connections over 200 kbps per 1,000 households by census tract based on December 2014 Form 477 fixed broadband subscribership data. For more information, see the <a href=\"https://www.fcc.gov/reports-research/reports/internet-access-services-reports/internet-access-services-reports\">Internet Access Services Reports.</a></p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-residential-fixed-connections-over-200-kbps.png",
+                "uri": "thumb-residential-fixed-connections-over-200-kbps.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -4875,7 +4936,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2015-09-01 21:00:00",
+                "value": "2016-01-21 14:30:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -4907,7 +4968,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/residential-fixed-connections-over-200-kbps",
+                "url": "https://www.fcc.gov/maps/residential-fixed-connections-over-200-kbps",
                 "title": "Residential Fixed Connections over 200 kbps per 1,000 Households by Census Tract",
                 "attributes": [
 
@@ -4927,28 +4988,17 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition"
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": [
@@ -5193,15 +5243,27 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps"
-    }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Internet Access Services Reports",
+        "url": "https://www.fcc.gov/tags/internet-access-services-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
@@ -6312,7 +6374,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/terrestrial-mobile-wireless-digital-coverage-july-2015",
+    "webUrl": "https://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/mw-maps/mw18-July2015-mobile-digital-map.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -6324,14 +6386,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows the number of fixed providers of residential Internet access service at least 10 Mbps downstream and 1 Mbps upstream based on December 2014 Form 477 fixed broadband deployment data.",
+                "value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows the number of fixed providers of residential Internet access service at least 10 Mbps downstream and 1 Mbps upstream based on December 2014 Form 477 fixed broadband deployment data.",
+                "safe_value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-terrestrial-mobile-wireless-digital-coverage-july-2015.png",
+                "uri": "thumb-terrestrial-mobile-wireless-digital-coverage-july-2015.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -6375,7 +6473,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/terrestrial-mobile-wireless-digital-coverage-july-2015",
+                "url": "http://ww.fcc.gov/maps/terrestrial-mobile-wireless-digital-coverage-july-2015",
                 "title": "Terrestrial Mobile Wireless Digital Coverage",
                 "attributes": [
 
@@ -6395,28 +6493,17 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition"
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
             }]
         },
         "field_map_address_search_": [
@@ -6772,15 +6859,27 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps"
-    }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Mobile Wireless Competition Report",
+        "url": "https://www.fcc.gov/tags/mobile-wireless-competition-report"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
@@ -6790,7 +6889,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/nationwide-mobile-wireless-coverage-july-2015",
+    "webUrl": "https://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/mw-maps/mw18-July2015-mobile-overall-map.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -6802,14 +6901,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.",
+                "value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.",
+                "safe_value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-nationwide-mobile-wireless-coverage-july-2015.png",
+                "uri": "thumb-nationwide-mobile-wireless-coverage-july-2015.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -6853,7 +6988,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/nationwide-mobile-wireless-coverage-july-2015",
+                "url": "https://www.fcc.gov/maps/nationwide-mobile-wireless-coverage-july-2015",
                 "title": "Nationwide Mobile Wireless Coverage",
                 "attributes": [
 
@@ -6873,28 +7008,17 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
-                "tid": "WCB",
-                "value": "Wireline Competition"
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
             }]
         },
         "field_map_address_search_": [
@@ -7056,15 +7180,27 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps"
-    }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Mobile Wireless Competition Report",
+        "url": "https://www.fcc.gov/tags/mobile-wireless-competition-report"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
@@ -10529,12 +10665,7 @@
             }]
         },
         "field_date": {
-            "und": [{
-                "value": "2016-05-27 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": {
             "und": [{
@@ -10633,7 +10764,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "EB",
-                "value": "Enforcement Bureau",
+                "value": "Enforcement",
                 "url": "https://www.fcc.gov/enforcement"
             }]
         },
@@ -11478,7 +11609,7 @@
                 "value": "3"
             }]
         }
-    },
+    }, 
     "taxonomy": [{
         "tid": "956",
         "vid": "1",
@@ -11487,13 +11618,28 @@
     }, {
         "tid": "966",
         "vid": "1",
+        "name": "Enforcement",
+        "url": "https://www.fcc.gov/tags/enforcement"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "From Unlicensed/Unauthorized Service",
+        "url": "https://www.fcc.gov/tags/unlicensedunauthorized-service"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Interference",
+        "url": "https://www.fcc.gov/tags/interference-2"
+    }, {
+        "tid": "966",
+        "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "966",
         "vid": "1",
-        "name": "Reports",
-        "url": "https://www.fcc.gov/tags/reports"
+        "name": "Unauthorized Operation",
+        "url": "https://www.fcc.gov/tags/unauthorized-operation"
     }],
     "uri": "http://10.154.68.187/api/content/179638"
 },{

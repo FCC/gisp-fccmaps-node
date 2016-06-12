@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-technology",
+    "webUrl": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-technology",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16,10 +16,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.",
+                "value": "<p>This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.",
+                "safe_value": "<p>This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -67,7 +67,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/bpr-2016-fixed-25mbps-3mbps-technology",
+                "url": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-technology",
                 "title": "Residential Fixed Broadband Technology at 25 Mbps/3 Mbps",
                 "attributes": [
 
@@ -91,24 +91,13 @@
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition"
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": [
@@ -838,15 +827,37 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
+        "tid": "956",
         "vid": "1",
-        "name": "Maps"
+        "name": "Broadband Progress Report",
+        "url": "https://www.fcc.gov/tags/broadband-progress-report"
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Broadband Progress Reports",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Broadband, Internet & IP",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
