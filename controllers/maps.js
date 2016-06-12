@@ -172,6 +172,23 @@ function getWebUrl(mapId) {
 	return webUrl;
 }
 
+function getThumbUrl(mapId) {
+	var thumbUrl = false;
+	for (var i = 1; i < contentJson.length; i++) {
+		var map_unique = '';
+		if (contentJson[i].fields.field_map_unique && contentJson[i].fields.field_map_unique.und && contentJson[i].fields.field_map_unique.und[0].value) {
+			map_unique = contentJson[i].fields.field_map_unique.und[0].value;
+		}
+		if (map_unique == mapId) {
+			if (contentJson[i].fields.field_image_thumbnail && contentJson[i].fields.field_image_thumbnail.und && contentJson[i].fields.field_image_thumbnail.und[0].uri) {
+				thumbUrl = contentJson[i].fields.field_image_thumbnail.und[0].uri;
+			}
+		}
+	}
+	
+	return thumbUrl;
+}
+
 // **********************************************************
 // export
 
@@ -181,3 +198,4 @@ module.exports.pullMap = pullMap;
 module.exports.checkMapId = checkMapId;
 module.exports.getMapType = getMapType;
 module.exports.getWebUrl = getWebUrl;
+module.exports.getThumbUrl = getThumbUrl;

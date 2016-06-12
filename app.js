@@ -170,12 +170,16 @@ app.use('/:mapId/thumb', function(req, res, next){
 		next();
 	}
 	
+	var thumbURL =  maps.getThumbUrl(mapId);
+	console.log('thumbURL : ' + thumbURL);
 	
-	console.log('thumb sendFile ');
-	//res.sendFile('thumb-'+ mapId +'.png', { root: __dirname + '/public/images/thumb' });
-	//return;			
+	if (thumbURL) {
 
-
+		console.log('thumbURL proxy pipe ');
+		req.pipe(request(thumbURL)).pipe(res);
+		return;	
+	}
+	
 	next(); 	
 });
 
