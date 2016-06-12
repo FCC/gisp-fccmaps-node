@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/broadband-availability-hawaii",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Unavail_HI/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#7/19.560/-158.796",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -23,7 +23,43 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-broadband-availability-hawaii.png",
+                "uri": "thumb-broadband-availability-hawaii.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -37,7 +73,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-02-14 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -89,7 +125,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {

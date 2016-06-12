@@ -1,10 +1,10 @@
 {
     "nid": "28002",
-    "title": "Terrestrial Wireless Coverage by Number of Providers",
+    "title": "Terrestrial Wireless Coverage by Number of Providers (Census Block)",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers",
+    "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-Jan2014-mobile-voice-map.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16,14 +16,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "safe_value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-terrestrial-wireless-coverage-number-providers.png",
+                "uri": "thumb-terrestrial-wireless-coverage-number-providers.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -37,7 +73,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-21 14:15:00",
+                "value": "2015-06-10 14:15:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -54,9 +90,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "July 2015"
-            }]
+            
         },
         "field_featured": [
 
@@ -70,7 +104,7 @@
         "field_map_page_url": {
             "und": [{
                 "url": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers",
-                "title": "Terrestrial Wireless Coverage by Number of Providers",
+                "title": "Terrestrial Wireless Coverage by Number of Providers (Census Block)",
                 "attributes": [
 
                 ]
@@ -89,7 +123,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {

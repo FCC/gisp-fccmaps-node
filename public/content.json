@@ -9411,7 +9411,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/broadband-availability-hawaii",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Unavail_HI/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#7/19.560/-158.796",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -9430,7 +9430,43 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-broadband-availability-hawaii.png",
+                "uri": "thumb-broadband-availability-hawaii.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -9444,7 +9480,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-02-14 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -9496,7 +9532,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -9723,7 +9759,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/broadband-availability-alaska",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Unavail_AK/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/63.5/-154.5",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -9742,7 +9778,43 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-broadband-availability-alaska.png",
+                "uri": "thumb-broadband-availability-alaska.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -9756,7 +9828,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2014-02-14 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -9808,7 +9880,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -10035,7 +10107,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/broadband-availability",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Unavail_20111007_2/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#6/37/-96",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -10054,7 +10126,43 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-broadband-availability.png",
+                "uri": "thumb-broadband-availability.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -10068,7 +10176,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-02-14 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -10120,7 +10228,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -11463,7 +11571,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-08-21 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -17039,11 +17147,11 @@
 }
 ,{
     "nid": "28002",
-    "title": "Terrestrial Mobile Broadband Network Coverage by Number of Providers",
+    "title": "Terrestrial Mobile Broadband Network Coverage by Number of Providers (Census Block Level)",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level",
+    "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-broadband-map.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -17055,14 +17163,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "<p>Includes EV-DO, EV-DO REV A, WCDMA/HSPA/HSPA+, LTE, and WiMAX Netowrks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
+                "value": "<p>Includes EV-DO, EV-DO REV A, WCDMA/HSPA/HSPA+, LTE, and WiMAX Netowrks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p>Includes EV-DO, EV-DO REV A, WCDMA/HSPA/HSPA+, LTE, and WiMAX Netowrks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
+                "safe_value": "<p>Includes EV-DO, EV-DO REV A, WCDMA/HSPA/HSPA+, LTE, and WiMAX Netowrks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level.png",
+                "uri": "thumb-terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -17076,7 +17220,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-21 14:15:00",
+                "value": "2015-06-10 14:15:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -17093,9 +17237,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "Census Block Level"
-            }]
+            
         },
         "field_featured": [
 
@@ -17108,8 +17250,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level",
-                "title": "Terrestrial Mobile Broadband Network Coverage by Number of Providers",
+                "url": "https://www.fcc.gov/maps/terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level",
+                "title": "Terrestrial Mobile Broadband Network Coverage by Number of Providers (Census Block Level)",
                 "attributes": [
 
                 ]
@@ -17128,7 +17270,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -17389,7 +17531,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/terrestrial-mobile-wireless-digital-coverage",
+    "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-digital-map.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -17401,14 +17543,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "<p>Includes CDMA, GSM, and IDEN Networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "value": "<p>Includes CDMA, GSM, and IDEN Networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p>Includes CDMA, GSM, and IDEN Networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "safe_value": "<p>Includes CDMA, GSM, and IDEN Networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-terrestrial-mobile-wireless-digital-coverage.png",
+                "uri": "thumb-terrestrial-mobile-wireless-digital-coverage.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -17422,7 +17600,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-21 14:15:00",
+                "value": "2015-06-10 14:15:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -17439,9 +17617,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "July 2015"
-            }]
+           
         },
         "field_featured": [
 
@@ -17454,7 +17630,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/terrestrial-mobile-wireless-digital-coverage",
+                "url": "https://www.fcc.gov/maps/terrestrial-mobile-wireless-digital-coverage",
                 "title": "Terrestrial Mobile Wireless Digital Coverage",
                 "attributes": [
 
@@ -17474,7 +17650,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -17870,7 +18046,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/nationwide-4g-coverage",
+    "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-4G-map.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -17882,14 +18058,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "<p>Includes LTE, HSPA+, and WiMAX networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "value": "<p>Includes LTE, HSPA+, and WiMAX networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p>Includes LTE, HSPA+, and WiMAX networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "safe_value": "<p>Includes LTE, HSPA+, and WiMAX networks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-nationwide-4g-coverage.png",
+                "uri": "thumb-nationwide-4g-coverage.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -17903,7 +18115,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-21 14:15:00",
+                "value": "2015-06-10 14:15:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -17935,7 +18147,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/nationwide-4g-coverage",
+                "url": "https://www.fcc.gov/maps/nationwide-4g-coverage",
                 "title": "Nationwide 4G Coverage",
                 "attributes": [
 
@@ -17955,7 +18167,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
@@ -18280,11 +18492,11 @@
 }
 ,{
     "nid": "28002",
-    "title": "Terrestrial Wireless Coverage by Number of Providers",
+    "title": "Terrestrial Wireless Coverage by Number of Providers (Census Block)",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers",
+    "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-Jan2014-mobile-voice-map.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -18296,14 +18508,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a>.</p>",
+                "safe_value": "<p>Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-terrestrial-wireless-coverage-number-providers.png",
+                "uri": "thumb-terrestrial-wireless-coverage-number-providers.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -18317,7 +18565,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-21 14:15:00",
+                "value": "2015-06-10 14:15:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -18334,9 +18582,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "July 2015"
-            }]
+            
         },
         "field_featured": [
 
@@ -18350,7 +18596,7 @@
         "field_map_page_url": {
             "und": [{
                 "url": "https://www.fcc.gov/maps/terrestrial-wireless-coverage-number-providers",
-                "title": "Terrestrial Wireless Coverage by Number of Providers",
+                "title": "Terrestrial Wireless Coverage by Number of Providers (Census Block)",
                 "attributes": [
 
                 ]
@@ -18369,7 +18615,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "int_iframe"
             }]
         },
         "field_related_links": {
