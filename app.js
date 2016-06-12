@@ -142,9 +142,6 @@ app.get('/admin/pull', function(req, res, next){
 //static routing
 app.use('/', express.static(__dirname + '/public'));
 
-//app.use('/', express.static(__dirname + '/public/map_templates'));
-
-
 //map embed routing
 app.use('/:mapId/embed', function(req, res, next){
 	
@@ -188,7 +185,7 @@ app.use('/:mapId/embed', function(req, res, next){
 		
 		if (mapType == 'layers') {			
 			console.log('layers embed sendFile ');
-			res.sendFile('index.html', { root: __dirname + '/public/map_templates/embed' });
+			res.sendFile('index.html', { root: __dirname + '/public/embed' });
 			return;			
 		}
 		else if (mapType == 'iframe') {
@@ -275,18 +272,15 @@ app.use('/:mapId', function(req, res, next){
 	else if ((mapType == 'layers') || (mapType == 'iframe')) {
 	
 		console.log('layers or iframe');
-
-		var mapType = maps.getMapType(mapId);
 		
 		if (mapType == 'layers') {
 			console.log('send layers');
-			res.sendFile('index.html', { root: __dirname + '/public/map_templates' });
+			res.sendFile('map-layers.html', { root: __dirname + '/public' });
 			return;
-
 		}
 		else if (mapType == 'iframe') {
 			console.log('send iframe');		
-			res.sendFile('index-iframe.html', { root: __dirname + '/public/map_templates' });
+			res.sendFile('map-iframe.html', { root: __dirname + '/public' });
 			return;
 		}		
 	}
