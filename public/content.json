@@ -23161,8 +23161,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/frequency-coordination-canada",
-                "title": "Frequency Coordination with Canada Below 470 MHz",
+                "url": "https://www.fcc.gov/maps/oklahoma-enhanced-lifeline-support",
+                "title": "Oklahoma Enhanced Lifeline Support",
                 "attributes": [
 
                 ]
@@ -23170,7 +23170,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "frequency-coordination-canada"
+                "value": "oklahoma-enhanced-lifeline-support"
             }]
         },
         "field_map_repository": [
