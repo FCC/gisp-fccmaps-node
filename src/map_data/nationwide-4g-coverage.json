@@ -419,7 +419,7 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
         "tid": "956",
         "vid": "1",
@@ -445,6 +445,11 @@
         "vid": "1",
         "name": "Reports",
         "url": "https://www.fcc.gov/tags/reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Wireless Services",
+        "url": "https://www.fcc.gov/tags/wireless-services"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
