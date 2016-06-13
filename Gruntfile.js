@@ -90,7 +90,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: './src/bootstrap-gisp/less',
                     src: ['gisp-theme.less'],
-                    dest: '<%= paths.assets %>/css/',
+                    dest: './public/css/',
                     ext: '.min.css'
                 }]                
             }

@@ -57,7 +57,7 @@
                 .isotope({
                     masonry: {                        
                         columnWidth: '.card',
-                        gutter: 20
+                        gutter: 20                        
                     },
                     getSortData: {                        
                         date: function(itemElem) {
@@ -67,7 +67,8 @@
                     },
                     itemSelector: '.card',
                     sortBy: mapGallery.sortList.sortBy,
-                    sortAscending: mapGallery.sortList.sortAscending
+                    sortAscending: mapGallery.sortList.sortAscending,
+                    transitionDuration: 0
                 })
                 .append(window.allMaps)
                 .isotope('insert', window.allMaps)
@@ -99,7 +100,7 @@
                 $(filteredItems[i].element)
                     .attr('tabindex', idx)
                     .add()
-                    .find('a').attr('tabindex', idx)
+                    .find('a, button').attr('tabindex', idx)
                     .end()
                     .find('.link-viewMore').attr('tabindex', idx + 1);
             }
@@ -111,20 +112,19 @@
 
         showCardDetails: function(e) {
             var thisBtn = $(this),
-                thisCard = thisBtn.closest('.card').find('.card__body'),
-                thisCardBody = thisBtn.closest('.card').find('.card__body');
+                thisCard = thisBtn.closest('.card'),
+                thisCardBody = thisCard.find('.card__body');
 
-            e.preventDefault();
-            thisCard.closest('.card').css('z-index', 1);
+            e.preventDefault();            
 
-            if (thisCard.is(':visible')) {
+            if (thisCardBody.is(':visible')) { 
                 thisBtn
                     .html('<span class="icon icon-caret-right"></span>View details')
                     .attr('aria-expanded', false);
 
                 thisCardBody.slideUp(function() {
                     thisCardBody.attr('aria-hidden', true);
-                    thisBtn.closest('.card').css('z-index', 0);
+                    thisCardBody.css('z-index', '');
                     $('.map-cards').isotope('layout');
                 });
             } else {
@@ -134,7 +134,7 @@
 
                 thisCardBody.slideDown(function() {
                     thisCardBody.attr('aria-hidden', false);
-                    thisBtn.closest('.card').css('z-index', 0);
+                    thisCardBody.css('z-index', 2);
                     $('.map-cards').isotope('layout');
                 });
             }
