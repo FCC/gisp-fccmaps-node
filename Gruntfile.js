@@ -201,7 +201,8 @@ module.exports = function(grunt) {
                     './src/map_data/mobility-fund-phase-1-potentially-eligible-areas.json',
                     './src/map_data/study-area-boundaries.json',
                     './src/map_data/frequency-coordination-canada.json',
-                    './src/map_data/section-706-fixed-broadband-deployment-map.json'
+                    './src/map_data/section-706-fixed-broadband-deployment-map.json',
+                    './src/map_data/oklahoma-enhanced-lifeline-support.json'
                 ],
                 dest: './public/content.json'
             }           
