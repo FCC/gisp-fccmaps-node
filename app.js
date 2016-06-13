@@ -224,7 +224,7 @@ app.use('/:mapId/embed', function(req, res, next){
 			
 			if (mapType == 'layers') {			
 				console.log('layers embed sendFile ');
-				res.sendFile('index.html', { root: __dirname + '/public/embed' });
+				res.sendFile('map-embed.html', { root: __dirname + '/public' });
 				return;			
 			}
 			else if (mapType == 'iframe') {
