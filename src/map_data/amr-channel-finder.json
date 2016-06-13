@@ -864,18 +864,16 @@
             }]
         }
     },
-    "taxonomy": [{
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps"
-    }, {
+     "taxonomy": [{
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
-    }, {
-        "tid": "534",
-        "vid": "7",
-        "name": "Strategic Planning & Policy Analysis"
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }],
     "uri": "http://10.154.68.187/api/content/179626"
 }
