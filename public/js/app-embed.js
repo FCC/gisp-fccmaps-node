@@ -149,20 +149,20 @@ function createMap() {
 
             keyStyle = map_info_all.map_legend[i].text.search('Tribal land') > -1 ? keyImg : keyColor + map_info_all.map_legend[i].color;
 
-            legend_text1 += '<tr><td style="width: 28px; height: 28px;"><div style="width: 20px; height: 20px;' + keyStyle + '"; opacity: 1.0; border: solid 1px #999999"></div></td><td>' + map_info_all.map_legend[i].text + '</td></tr>' + '\n';
+            legend_text1 += '<tr><td><div class="key-symbol" style="' + keyStyle + ';"></div></td><td>' + map_info_all.map_legend[i].text + '</td></tr>' + '\n';
 
         }
 
         var legend_text = '<div id="div-legend" class="map-legend">' +
-            '<table>' +
-            '<tr><td colspan=3>' +
+            '<table><thead>' +
+            '<tr><td colspan="3">' +
             '<span class="icon icon-list"></span> <span class="map-legend-name">Map Legend</span>' +
             '<button class="btn-closeLegend btn btn-xs pull-right">' +
             '<span class="icon icon-close"></span> <span class="sr-only">Hide legend</span>' +
             '</button>' +
-            '</td></tr>' +
+            '</td></tr></thead><tbody>' +
             legend_text1 +
-            '</table>' +
+            '</tbody></table>' +
             '</div>' +
             '<div id="div-legend-icon" class="legend__icon" title="Map Legend">' +
             '<span class="icon icon-list"></span>' +
