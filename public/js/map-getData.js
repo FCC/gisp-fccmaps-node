@@ -61,6 +61,7 @@ function getMapMeta(data, mapMeta) {
         mapJSON.initialzoom = map_info_all.map_initial_zoom || '3';
         mapJSON.thumbnail = map_info_all.image_thumbnail;
         mapJSON.webUrl = map_info_all.webUrl;
+        mapJSON.uniquePath = map_info_all.map_unique_path;
 
         if (mapJSON.url !== '') {
             updateMapMeta(data[i], mapMeta, mapJSON);
@@ -83,6 +84,7 @@ function updateMapMeta(data, mapMeta, mapJSON) {
     //var isJson = isJsonString(desc_str);
 
     mapMeta.urls.push(mapJSON.url);
+    mapMeta.uniquePath.push(mapJSON.uniquePath);
     mapMeta.titles.push(mapJSON.title);
     mapMeta.subtitles.push(mapJSON.subtitle);
     mapMeta.descriptions.push(mapJSON.description);
@@ -141,15 +143,15 @@ function createMapCard(mapMeta) {
             url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
             embedLink = url + '/embed/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i] + '/';
             url_bookmark = url + '/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i];
-            thumbImg = '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
+            thumbImg = '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameBorder="0" seamless="seamless" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
         } else if (mapMeta.mapTypes[i] === 'iframe') {
-            url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
+            url = mapMeta.uniquePath[i];
             embedLink = mapMeta.webUrl;
             url_bookmark = url;
             thumbImg = '<div class="thumbnail img-responsive"><div style="background-image: url(' + mapMeta.thumbnail[i] + ')" title="' + mapMeta.titles[i] + '"></div></div>';
         } else {
-            url = urls[i];
-            embedLink = url; // '/';
+            url = mapMeta.uniquePath[i];
+            embedLink = url; 
             url_bookmark = url;
             thumbImg = '<div class="thumbnail img-responsive"><div style="background-image: url(' + mapMeta.thumbnail[i] + ')" title="' + mapMeta.titles[i] + '"></div></div>';
         }
@@ -167,7 +169,7 @@ function createMapCard(mapMeta) {
         }
 
         if (mapMeta.subtitles[i] !== "0") {
-            subtitle = '<p class="card__subTitle text-overflow">' + mapMeta.subtitles[i] + '</p>'
+            subtitle = '<p class="card__subTitle text-overflow">' + mapMeta.subtitles[i] + '</p>';
         } else {
             subtitle = '';
         }
@@ -177,9 +179,9 @@ function createMapCard(mapMeta) {
         card += '<div class="ribbon"><span>Featured</span></div>';
         card += thumbImg;
         //card += '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '"></iframe>';
-        card += '<p class="card__title text-overflow"><a href="' + url_bookmark + '"><span >' + mapMeta.titles[i] + '</span></a></p>';
+        card += '<p class="card__title text-overflow"><a href="' + url_bookmark + '"><span>' + mapMeta.titles[i] + '</span></a></p>';
         card += '<div class="card__meta"><div class="pull-left">' + mapMeta.bureaus[i].tid + '</div><div class="pull-right data-date">' + formatDate(mapMeta.dates[i].split(' ')[0]) + '</div></div>';
-        card += '<div class="card__body" id="t' + i + '"" aria-hidden="true" role="region" style="display: none;">';
+        card += '<div class="card__body" id="t' + i + '" aria-hidden="true" role="region" style="display: none;">';
         card += subtitle;
         // TODO: populate description with actual text
         // card += '<p class="card__desc">' + mapMeta.descriptions[i] + '</p>';
@@ -189,7 +191,7 @@ function createMapCard(mapMeta) {
         card += '<div class="card__footer"><button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false" aria-controls="t' + i + '"><span class="icon icon-caret-right"></span>View details</button></div>';
         card += '</li>';
 
-    }
+    }    
 
     window.allMaps = $(card);
 
@@ -199,6 +201,7 @@ function populateMaps(data) {
 
     var mapMeta = {
         urls: [],
+        uniquePath: [],
         titles: [],
         subtitles: [],
         descriptions: [],
@@ -481,6 +484,13 @@ function getMapInfo(mapOptions) {
     }
     map_info_all.map_page_url_url = map_page_url_url;
     map_info_all.map_page_url_title = map_page_url_title;
+
+    //map unique path
+    var map_unique_path = '';
+    if (mapOptions.fields.field_map_unique && mapOptions.fields.field_map_unique.und) {
+        map_unique_path = mapOptions.fields.field_map_unique.und[0].value;        
+    }
+    map_info_all.map_unique_path = map_unique_path;
 
     //map_repository
 
