@@ -168,17 +168,22 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "section-706-mobile-data"
+            }]
+        },
         "field_map_repository": [
 
         ],
         "field_map_status": [
 
         ],
-        "field_map_type": [
+        "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
-        ],
+        },
         "field_related_links": {
             "und": [{
                 "url": "https://www.fcc.gov",
@@ -191,7 +196,8 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition Bureau"
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": {

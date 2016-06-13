@@ -1,0 +1,310 @@
+{
+    "nid": "28002",
+    "title": "Connect America Fund (CAF) Phase I Round Two",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.connect_america_fund_phase_I_round_two/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p>This map shows the areas where new broadband may be deployed as a result of the second round of Connect America Phase I. In their initial elections, price cap carriers requested over $385 million in Connect America Phase I incremental support, committing to bring broadband to over 600,000 locations that previously lacked access by 2016. Some of these carrier acceptances are contingent upon the carriers prevailing in challenges regarding whether certain census blocks are unserved. Furthermore, after providing the Commission with notice, carriers have the ability to alter deployment plans to other unserved census blocks, which could result in more or less funding being allocated to any given area. The map shows where funding has been authorized to date; the map will be updated as the FCC completes its review of the challenges.</p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p>This map shows the areas where new broadband may be deployed as a result of the second round of Connect America Phase I. In their initial elections, price cap carriers requested over $385 million in Connect America Phase I incremental support, committing to bring broadband to over 600,000 locations that previously lacked access by 2016. Some of these carrier acceptances are contingent upon the carriers prevailing in challenges regarding whether certain census blocks are unserved. Furthermore, after providing the Commission with notice, carriers have the ability to alter deployment plans to other unserved census blocks, which could result in more or less funding being allocated to any given area. The map shows where funding has been authorized to date; the map will be updated as the FCC completes its review of the challenges.</p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-connect-america-fund-caf-phase-i-round-two.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-connect-america-fund-caf-phase-i-round-two.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "as of Sept. 2014"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/connect-america-fund-caf-phase-i-round-two",
+                "title": "Connect America Fund (CAF) Phase I Round Two",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect-america-fund-caf-phase-i-round-two"
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "iframe"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "4" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "38.82" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.kr8dunmi",
+                    "format": null,
+                    "safe_value": "fcc.kr8dunmi"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Connect America Phase II - Final Eligible Areas Map",
+                    "format": null,
+                    "safe_value": "Connect America Phase II - Final Eligible Areas Map"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ff8240",
+                    "format": null,
+                    "safe_value": "#ff8240"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Unavailable",
+                    "format": null,
+                    "safe_value": "Unavailable"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffe1d1",
+                    "format": null,
+                    "safe_value": "#ffe1d1"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Partially Unavailable",
+                    "format": null,
+                    "safe_value": "Partially Unavailable"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-96.86" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{ 
+        "tid": "966",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service ",
+        "url": "https://www.fcc.gov/tags/universal-service"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}

@@ -26,7 +26,7 @@
                 "fid": "3477",
                 "uid": "1798",
                 "filename": "thumb-c2h.png",
-                "uri": "thumb-c2h.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-c2h.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -160,6 +160,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect2health"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -168,7 +173,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "ext_window"
+                "value": "proxy"
             }]
         },
         "field_related_links": [
@@ -177,7 +182,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "OGC",
-                "value": "Wireline Competition Bureau"
+                "value": "Office of the General Counsel "
             }]
         },
         "field_map_address_search_": {

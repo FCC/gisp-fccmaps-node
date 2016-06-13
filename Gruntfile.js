@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     // Configurable paths
     var paths = {
         tmp: '.tmp',
-        assets: 'dist/map_templates'
+        assets: './public/map_templates'
     };
 
     grunt.initConfig({
@@ -18,22 +18,14 @@ module.exports = function(grunt) {
         config: { version: '1.0.0'},
 
         // Watches files for changes and runs tasks based on the changed files
-        watch: {
-            html: {
-                files: ['./src/*.*', './src/map_templates/**/*.html'],
-                tasks: ['copy', 'clean:delTempFolders']
-            },
-            js: {
-                files: ['./src/map_templates/js/**/*.js'],
-                tasks: ['copy', 'clean:delTempFolders']
-            },
+        watch: {            
             json: {
                 files: ['./src/map_data/*.json'],
-                tasks: ['concat:contentjson','copy', 'clean:delTempFolders']
+                tasks: ['concat:contentjson','copy']
             },
             less: {
                 files: ['./src/bootstrap-gisp/less/**/*.less'],
-                tasks: ['less', 'usebanner', 'autoprefixer', 'copy', 'clean:delTempFolders']
+                tasks: ['less', 'usebanner', 'autoprefixer', 'copy']
             }
         },
 
@@ -44,8 +36,7 @@ module.exports = function(grunt) {
                     dot: true,
                     src: [
                         '<%= paths.tmp %>',
-                        '<%= paths.assets %>',
-                        './public/map_templates'                        
+                        '<%= paths.assets %>'                       
                     ]
                 }]
             },
@@ -83,7 +74,7 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                './src/map_templates/js/**/*.js'
+                '<%= paths.assets %>/js/**/*.js'
             ]
         },
 
@@ -99,7 +90,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: './src/bootstrap-gisp/less',
                     src: ['gisp-theme.less'],
-                    dest: '<%= paths.assets %>/css/',
+                    dest: './public/css/',
                     ext: '.min.css'
                 }]                
             }
@@ -160,7 +151,9 @@ module.exports = function(grunt) {
                 },
                 src: [
                     './src/map_data/mapdata-open.json',
-                    './src/map_data/connect-america-fund-phase-2.json',
+                    './src/map_data/caf-2-accepted-map.json',
+                    './src/map_data/E-rate-fiber-map.json',
+                    './src/map_data/bpr-2016-fixed-25mbps-3mbps-deployment.json',
                     './src/map_data/bpr-2016-fixed-25mbps-3mbps-providers.json',
                     './src/map_data/bpr-2016-fixed-25mbps-3mbps-technology.json',
                     './src/map_data/bpr-2016-fixed-speed.json',
@@ -178,7 +171,7 @@ module.exports = function(grunt) {
                     './src/map_data/tribal-mobility-fund-phase-i-eligible-areas.json',
                     './src/map_data/tribal-mobility-fund-phase-i-potentially-eligible-areas.json',
                     './src/map_data/mobility-fund-phase-1-eligible-areas.json',
-                    './src/map_data/800-mhz-cellular-–-block-cgsas.json',
+                    './src/map_data/800-mhz-cellular-a-block-cgsas.json',
                     './src/map_data/broadband-availability-hawaii.json',
                     './src/map_data/broadband-availability-alaska.json',
                     './src/map_data/broadband-availability.json',
@@ -190,9 +183,27 @@ module.exports = function(grunt) {
                     './src/map_data/total-line-usf-high-cost-distributions-rate-return-study-areas.json',
                     './src/map_data/net-usf-received-voice-line.json',
                     './src/map_data/rural-health-care-pilot-program.json',
-                    './src/map_data/acam-ror-sa-map.json'
+                    './src/map_data/acam-ror-sa-map.json',
+                    './src/map_data/connect-america-phase-ii-final-eligible-areas-map.json',
+                    './src/map_data/connect-america-phase-ii-initial-eligible-areas-map.json',
+                    './src/map_data/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-52.json',
+                    './src/map_data/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-48.json',
+                    './src/map_data/connect-america-fund-caf-phase-i-round-two.json',
+                    './src/map_data/connect-america-fund-caf-phase-i.json',
+                    './src/map_data/wireline-maximum-advertised-download-speed.json',
+                    './src/map_data/regulatory-type-holding-company-level-study-area.json',
+                    './src/map_data/connect-compete-home-broadband-coverage-map.json',
+                    './src/map_data/800-mhz-cellular-b-block-cgsas.json',
+                    './src/map_data/terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level.json',
+                    './src/map_data/terrestrial-mobile-wireless-digital-coverage.json',
+                    './src/map_data/nationwide-4g-coverage.json',
+                    './src/map_data/terrestrial-wireless-coverage-number-providers.json',
+                    './src/map_data/mobility-fund-phase-1-potentially-eligible-areas.json',
+                    './src/map_data/study-area-boundaries.json',
+                    './src/map_data/frequency-coordination-canada.json',
+                    './src/map_data/section-706-fixed-broadband-deployment-map.json'
                 ],
-                dest: './src/content.json'
+                dest: './public/content.json'
             }           
         },
 
@@ -214,59 +225,29 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                { // map template page to dist 
-                    expand: true,
-                    cwd: './src/map_templates/',
-                    src: '**/*',
-                    dest: '<%= paths.assets %>'
-                }, 
-                { // JS 
-                    expand: true,
-                    cwd: './src/map_templates/js',
-                    src: '**',
-                    dest: '<%= paths.assets %>/js'
-                }, { // fonts 
+                
+                 { // fonts 
                     dot: true,
                     expand: true,
                     cwd: 'bower_components/font-awesome/fonts',
                     src: '**',
                     dest: '<%= paths.assets %>/fonts'
-                }, { // images 
-                    expand: true,
-                    cwd: './src/map_templates/images',
-                    src: '**',
-                    dest: '<%= paths.assets %>/images'
                 }]
-            },
-            mapHome: {
-                files: [{ // map home page to public
-                    expand: true,
-                    cwd: './src',
-                    src: ['*.*'],
-                    dest: './public'
-                }]
-            },
-            mapTemplates: {
-                files: [{ // map_templates folder to public
-                    expand: true,
-                    cwd: './dist/map_templates',
-                    src: ['**'],
-                    dest: './public/map_templates'
-                }]
-            }            
+            }
+                       
         }
     });
 
     grunt.registerTask('build', [
-        'clean:dist',
+       // 'clean:dist',
         // 'jshint',
         'less',
         // 'imagemin',
         'usebanner',
         'concat',
         'autoprefixer',
-        'copy',
-        'clean:delTempFolders'
+        //'copy',
+        //'clean:delTempFolders'
     ]);
 
     grunt.registerTask('default', [

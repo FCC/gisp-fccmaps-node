@@ -1,9 +1,11 @@
 /* Search bar */
 
+
 /* .btn-group {
     display: table-cell;
 }
  */
+
 .search-field {
     margin: 15px 0;
     width: 100%;
@@ -47,9 +49,9 @@
     td {
         white-space: nowrap;
         &:last-child {
-        padding-left: 15px;
+            padding-left: 15px;
+        }
     }
-    }    
     label {
         font-size: 12px;
     }
@@ -65,9 +67,10 @@
 
 .map-iframe {
     border: none;
-    height: 400px;
+    height: 620px;
     width: 100%;
 }
+
 
 /* Legend */
 
@@ -88,25 +91,40 @@
 }
 
 .map-legend {
-    background-color: #fff; 
-    border: solid 1px #999999; 
-    bottom: 10px; 
-    left: 10px;   
-    padding: 5px;  
-    position: absolute; 
-    z-index: 2; 
+    background-color: #fff;
+    border: solid 1px #999999;
+    bottom: 10px;
+    left: 10px;
+    min-width: 150px;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
     .icon-list {
         font-size: 13px;
     }
+    table {
+        width: 100%;
+    }
+    tbody td:first-child {
+        height: 28px;
+        width: 28px;
+    }
 }
 
-.legend__icon {     
-    bottom: 10px; 
+.legend__icon {
+    bottom: 10px;
     font-size: 16px;
     cursor: pointer;
     left: 10px;
     position: absolute;
-    z-index: 1; 
+    z-index: 1;
+}
+
+.key-symbol {
+    border: solid 1px #999;
+    height: 20px;
+    opacity: 1.0;
+    width: 20px;
 }
 
 .leaflet-control-container {
@@ -141,7 +159,7 @@
     dd {
         margin-left: 0;
         @media (min-width: @screen-sm-min) {
-             margin-left: 110px;
+            margin-left: 110px;
         }
     }
 }
@@ -154,10 +172,9 @@
     }
     .dl-inline:first-child {
         float: none;
-         @media (min-width: @screen-sm-min) {
+        @media (min-width: @screen-sm-min) {
             float: left;
         }
-
     }
     .dl-inline:last-child {
         float: none;
@@ -166,9 +183,9 @@
         }
     }
     dt {
-        color: #666;    
+        color: #666;
         font-size: 11px;
-        font-weight: 700;        
+        font-weight: 700;
     }
 }
 

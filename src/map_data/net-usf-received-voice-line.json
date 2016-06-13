@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/net-usf-received-voice-line",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USF_NetFlow100711/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#3/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -28,7 +28,7 @@
                 "fid": "3477",
                 "uid": "1798",
                 "filename": "thumb-net-usf-received-voice-line.png",
-                "uri": "thumb-net-usf-received-voice-line.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-net-usf-received-voice-line.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -105,11 +105,16 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/net-usf-received-voice-line",
+                "url": "https://www.fcc.gov/maps/net-usf-received-voice-line",
                 "title": "Net USF Received Per Voice Line",
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "net-usf-received-voice-line"
             }]
         },
         "field_map_repository": [
@@ -120,7 +125,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -129,7 +134,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Communications",
+                "value": "Wireline Competition",
                 "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
@@ -280,7 +285,12 @@
 
         ]
     },
-    "taxonomy": [{
+    "taxonomy": [{ 
+        "tid": "966",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
+    }, { 
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
@@ -290,6 +300,11 @@
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

@@ -81,7 +81,7 @@
     }
     .card {        
         margin: 0 0 20px 0;
-        position: relative;
+        // position: relative;
         width: 350px;        
         @media screen and (min-width: @screen-md-min) {
             width: 300px;
@@ -144,10 +144,16 @@
     .tag {
         font-size: 11px;
     }
-    .mapThumb {
-        height: 150px;
-        margin-bottom: 5px;
-        padding: 5px;
+    .thumbnail {
+        border: none;
+        border-radius: 0;
+        margin-bottom: 0;
+        padding: 0;
+        & > div {
+            background-size: cover;
+            height: 115px;
+            margin: 5px;
+        }
     }
     .mapThumb-btns {
         right: 10px;

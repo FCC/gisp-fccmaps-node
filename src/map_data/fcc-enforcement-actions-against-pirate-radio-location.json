@@ -4,7 +4,7 @@
     "created": "2016-05-27",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/fcc-enforcement-actions-against-pirate-radio-location",
+    "webUrl": "https://fcc.github.io/pirateaction2/index.html",
     "tnid": "0",
     "body": null,
     "vid": "187946",
@@ -26,7 +26,7 @@
                 "fid": "3477",
                 "uid": "1798",
                 "filename": "thumb-fcc-enforcement-actions.png",
-                "uri": "thumb-fcc-enforcement-actions.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-fcc-enforcement-actions.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -78,12 +78,7 @@
             }]
         },
         "field_date": {
-            "und": [{
-                "value": "2016-05-27 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": {
             "und": [{
@@ -153,11 +148,16 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/fcc-enforcement-actions-against-pirate-radio-location",
+                "url": "https://maps.fcc.gov/fcc-enforcement-actions-against-pirate-radio-location",
                 "title": "FCC Enforcement Actions Against Pirate Radio by Location",
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "fcc-enforcement-actions-against-pirate-radio-location"
             }]
         },
         "field_map_repository": [
@@ -168,7 +168,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": [
@@ -176,8 +176,9 @@
         ],
         "field_bureau_office": {
             "und": [{
-                "tid": "OGC",
-                "value": "Wireline Competition Bureau"
+                "tid": "EB",
+                "value": "Enforcement",
+                "url": "https://www.fcc.gov/enforcement"
             }]
         },
         "field_map_address_search_": {
@@ -1021,11 +1022,37 @@
                 "value": "3"
             }]
         }
-    },
+    }, 
     "taxonomy": [{
-        "tid": "527",
-        "vid": "7",
-        "name": "General Counsel"
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Enforcement",
+        "url": "https://www.fcc.gov/tags/enforcement"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "From Unlicensed/Unauthorized Service",
+        "url": "https://www.fcc.gov/tags/unlicensedunauthorized-service"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Interference",
+        "url": "https://www.fcc.gov/tags/interference-2"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Unauthorized Operation",
+        "url": "https://www.fcc.gov/tags/unauthorized-operation"
     }],
     "uri": "http://10.154.68.187/api/content/179638"
 }

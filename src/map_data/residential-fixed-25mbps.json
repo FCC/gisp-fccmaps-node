@@ -113,9 +113,20 @@
         "field_map_options": [
 
         ],
-        "field_map_page_url": [
+        "field_map_page_url": {
+            "und": [{
+                "url": "",
+                "title": "",
+                "attributes": [
 
-        ],
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": ""
+            }]
+        },
         "field_map_repository": [
 
         ],

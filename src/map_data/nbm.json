@@ -26,7 +26,7 @@
                 "fid": "3516",
                 "uid": "1162",
                 "filename": "thumb-nbm.png",
-                "uri": "thumb-nbm.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-nbm.png",
                 "filemime": "image/gif",
                 "filesize": "4198",
                 "status": "1",
@@ -160,6 +160,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "http://www.broadbandmap.gov/"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -177,7 +182,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition Bureau"
+                "value": "Wireline Competition"
             }]
         },
         "field_map_address_search_": {

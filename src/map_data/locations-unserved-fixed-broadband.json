@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/locations-unserved-fixed-broadband",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.unserved_fixed_broadband/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38.9594/-99.1406",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -23,7 +23,43 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-locations-unserved-fixed-broadband.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-locations-unserved-fixed-broadband.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -37,7 +73,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-12-05 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -76,6 +112,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "locations-unserved-fixed-broadband"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -84,7 +125,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -92,9 +133,9 @@
         },
         "field_bureau_office": {
             "und": [{
-                "tid": "WTB",
-                "value": "Wireless Telecommunications",
-                "url": "https://www.fcc.gov/wireless-telecommunications"
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": [

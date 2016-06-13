@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/tribal-mobility-fund-phase-i-eligible-areas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.tribal-mobility-fund-phase-i-eligible-areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39.2323/-99.4922",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -23,7 +23,43 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-tribal-mobility-fund-phase-i-eligible-areas.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-tribal-mobility-fund-phase-i-eligible-areas.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -76,6 +112,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "tribal-mobility-fund-phase-i-eligible-areas"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -84,7 +125,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -233,20 +274,20 @@
         ]
     },
     "taxonomy": [{
-        "tid": "966",
+        "tid": "956",
         "vid": "1",
-        "name": "Maps",
-        "url": "https://www.fcc.gov/tags/maps"
+        "name": "Constituencies",
+        "url": "https://www.fcc.gov/tags/constituencies"
     }, {
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
     }, {
-        "tid": "956",
+        "tid": "966",
         "vid": "1",
-        "name": "Constituencies",
-        "url": "https://www.fcc.gov/tags/constituencies"
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "956",
         "vid": "1",

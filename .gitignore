@@ -9,8 +9,6 @@ config.json
 env.json
 
 # Dynamic Directory
-public/map
-public/maps
 
 # Runtime data
 pids
@@ -43,7 +41,3 @@ bower_components
 .ebextensions
 app.zip
 dist
-public/*
-!public/map_templates
-!public/content.json
-!public/admin

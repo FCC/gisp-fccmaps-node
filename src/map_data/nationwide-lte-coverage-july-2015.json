@@ -16,10 +16,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.",
+                "value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.",
+                "safe_value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -74,6 +74,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "nationwide-lte-coverage-july-2015"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -82,28 +87,17 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "layers"
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
-                "tid": "WCB",
-                "value": "Wireline Competition Bureau"
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
             }]
         },
         "field_map_address_search_": [
@@ -191,6 +185,67 @@
             "rdf_mapping": [
 
             ]
+        }, {
+            "item_id": "2438",
+            "revision_id": "3384",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc20554.WLB_State",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc20554.WLB_State"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc20554.WLB_State",
+                    "format": null,
+                    "safe_value": "fcc20554.WLB_State"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "1.0"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "States",
+                    "format": null,
+                    "safe_value": "States"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_query_string": {
+                "und": [{
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
         }],
         "field_map_legend": [],
         "field_map_longitude": {
@@ -204,15 +259,27 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
         "tid": "966",
         "vid": "1",
-        "name": "Maps"
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Mobile Wireless Competition Report",
+        "url": "https://www.fcc.gov/tags/mobile-wireless-competition-report"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

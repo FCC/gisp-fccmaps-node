@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFperLineHiCost/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -28,7 +28,7 @@
                 "fid": "3477",
                 "uid": "1798",
                 "filename": "thumb-total-line-usf-high-cost-distributions-rate-return-study-areas.png",
-                "uri": "thumb-total-line-usf-high-cost-distributions-rate-return-study-areas.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-total-line-usf-high-cost-distributions-rate-return-study-areas.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -105,11 +105,16 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/reports-research/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
+                "url": "https://www.fcc.gov/maps/total-line-usf-high-cost-distributions-rate-return-study-areas",
                 "title": "Total Per Line USF High-Cost Distributions in Rate-of-Return Study Areas",
                 "attributes": [
 
                 ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "total-line-usf-high-cost-distributions-rate-return-study-areas"
             }]
         },
         "field_map_repository": [
@@ -120,7 +125,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_iframe"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -129,7 +134,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Communications",
+                "value": "Wireline Competition",
                 "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
@@ -280,7 +285,17 @@
 
         ]
     },
-    "taxonomy": [{
+    "taxonomy": [{ 
+        "tid": "966",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Connect America Fund (High Cost) - Rate of Return Carriers",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost-rate-return-carriers"
+    }, {
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
@@ -290,6 +305,11 @@
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

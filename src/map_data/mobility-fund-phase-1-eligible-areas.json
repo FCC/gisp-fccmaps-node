@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/mobility-fund-phase-1-eligible-areas",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Mobility-Fund-Phase-1-Eligible-Areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/35/-97",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16,14 +16,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows the areas identified as eligible for Mobility Fund Phase 1 support as of September 2012. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block and contain road miles in any of six road categories. These blocks were identified by analyzing US Census data, January 2012 American Roamer (now called Mosaik Solutions) data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible blocks, including population, road miles (S1100, S1200, S1400, S1500, S1640, and S1740 categories), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a>.",
+                "value": "This map shows the areas identified as eligible for Mobility Fund Phase 1 support as of September 2012. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block and contain road miles in any of six road categories. These blocks were identified by analyzing US Census data, January 2012 American Roamer (now called Mosaik Solutions) data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible blocks, including population, road miles (S1100, S1200, S1400, S1500, S1640, and S1740 categories), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows the areas identified as potentially eligible for Tribal Mobility Fund Phase I support as of March 2013. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible areas, including the proposed bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",
+                "safe_value": "This map shows the areas identified as eligible for Mobility Fund Phase 1 support as of September 2012. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block and contain road miles in any of six road categories. These blocks were identified by analyzing US Census data, January 2012 American Roamer (now called Mosaik Solutions) data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible blocks, including population, road miles (S1100, S1200, S1400, S1500, S1640, and S1740 categories), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-mobility-fund-phase-1-eligible-areas.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-mobility-fund-phase-1-eligible-areas.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -47,9 +83,14 @@
             "nid": "1639",
             "group": "Wireline Competition"
         }],
-        "field_date": [
-
-        ],
+        "field_date": {
+            "und": [{
+                "value": "2016-05-26 00:00:00",
+                "timezone": "America/New_York",
+                "timezone_db": "America/New_York",
+                "date_type": "datetime"
+            }]
+        },
         "field_search_exclude": [
 
         ],
@@ -76,6 +117,11 @@
                 ]
             }]
         },
+        "field_map_unique": {
+            "und": [{
+                "value": "mobility-fund-phase-1-eligible-areas"
+            }]
+        },
         "field_map_repository": [
 
         ],
@@ -84,7 +130,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -221,15 +267,15 @@
         ]
     },
     "taxonomy": [{
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps",
-        "url": "https://www.fcc.gov/tags/maps"
-    }, {
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "956",
         "vid": "1",
