@@ -16,10 +16,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows the number of fixed providers of residential Internet access service at least 10 Mbps downstream and 1 Mbps upstream based on December 2014 Form 477 fixed broadband deployment data.",
+                "value": "<p>This map shows the number of fixed providers of residential Internet access service at least 10 Mbps downstream and 1 Mbps upstream based on December 2014 <a href=\"https://www.fcc.gov/general/broadband-deployment-data-fcc-form-477\">Form 477 fixed broadband deployment data</a>. For more information, see the <a href=\"https://www.fcc.gov/reports-research/reports/internet-access-services-reports/internet-access-services-reports\">Internet Access Services Reports</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows the number of fixed providers of residential Internet access service at least 10 Mbps downstream and 1 Mbps upstream based on December 2014 Form 477 fixed broadband deployment data.",
+                "safe_value": "<p>This map shows the number of fixed providers of residential Internet access service at least 10 Mbps downstream and 1 Mbps upstream based on December 2014 <a href=\"https://www.fcc.gov/general/broadband-deployment-data-fcc-form-477\">Form 477 fixed broadband deployment data</a>. For more information, see the <a href=\"https://www.fcc.gov/reports-research/reports/internet-access-services-reports/internet-access-services-reports\">Internet Access Services Reports</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -91,24 +91,13 @@
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
                 "tid": "WCB",
-                "value": "Wireline Competition"
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": [
@@ -355,13 +344,25 @@
         ]
     },
     "taxonomy": [{
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps"
-    }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Internet Access Services Reports",
+        "url": "https://www.fcc.gov/tags/internet-access-services-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
