@@ -126,10 +126,10 @@ function createMapCard(mapMeta) {
         isMapLayers = mapMeta.mapTypes[i] === 'layers';
 
         if (mapMeta.mapTypes[i] === 'layers') {
-            url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
-            embedLink = url + '/embed/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i] + '/';
+            url = urls[i].substr(urls[i].lastIndexOf('/') + 1);            
+            embedLink = url + '/embed/#' + mapMeta.zooms[i] + '/40.65/-102.13/';
             url_bookmark = url + '/#' + mapMeta.zooms[i] + '/' + mapMeta.center_lats[i] + '/' + mapMeta.center_lons[i];
-            thumbImg = '<iframe src="' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameBorder="0" seamless="seamless" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
+            thumbImg = '<iframe src="' + embedLink + 'zoom" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameBorder="0" seamless="seamless" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
         } else if (mapMeta.mapTypes[i] === 'iframe') {
             url = mapMeta.uniquePath[i];
             embedLink = mapMeta.webUrl;
@@ -142,6 +142,7 @@ function createMapCard(mapMeta) {
             thumbImg = '<div class="thumbnail img-responsive"><div style="background-image: url(' + mapMeta.thumbnail[i] + ')" title="' + mapMeta.titles[i] + '"></div></div>';
         }
 
+        add_class = '';
         if (mapMeta.lives[i] === '1') {
             add_class += 'data-live ';
         }
