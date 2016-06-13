@@ -20525,10 +20525,10 @@
         ],
         "field_description": {
             "und": [{
-                "value": "This map displays line A, line B, line C, and line D along the US-Canada border for frequency coordination below 470 MHz.",
+                "value": "<p>This map displays line A, line B, line C, and line D along the US-Canada border for frequency coordination below 470 MHz. <a href=\"https://fcc.maps.arcgis.com/home/webmap/viewer.html?webmap=feff1ec7faa845189810fd78fd65fef8\">Click here to view the full interactive map.</a></p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map displays line A, line B, line C, and line D along the US-Canada border for frequency coordination below 470 MHz.",
+                "safe_value": "<p>This map displays line A, line B, line C, and line D along the US-Canada border for frequency coordination below 470 MHz. <a href=\"https://fcc.maps.arcgis.com/home/webmap/viewer.html?webmap=feff1ec7faa845189810fd78fd65fef8\">Click here to view the full interactive map.</a></p>",
                 "safe_summary": ""
             }]
         },
@@ -20582,7 +20582,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-05-27 17:00:00",
+                "value": "2016-06-08 17:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -20590,7 +20590,7 @@
         },
         "field_date": {
             "und": [{
-                "value": "2016-05-27 00:00:00",
+                "value": "2016-06-08 00:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "America/New_York",
                 "date_type": "datetime"
