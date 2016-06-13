@@ -41,48 +41,6 @@ function getMapMeta(data, mapMeta) {
     var mapJSON = {};
 
     for (var i = 1; i < data.length; i++) {
-        //mapJSON.data = data[i];
-        mapJSON.fields = data[i].fields;
-        mapJSON.title = data[i].title;
-        // var nid = mapData.nid;
-        mapJSON.vid = data[i].vid;
-        mapJSON.created = data[i].created;
-        mapJSON.changed = data[i].changed;
-        // var updated = mapDataFields.field_date_updated_reviewed.und ? mapDataFields.field_date_updated_reviewed.und[0].value : '';
-
-        // if (data[i].fields.field_date_updated_reviewed.und) {
-        //     updated = data[i].fields.field_date_updated_reviewed.und[0].value;
-        // }
-
-        mapJSON.url = hasProp(mapJSON.fields.field_map_page_url.und, 'url') || '';
-
-        mapJSON.repo = hasProp(mapJSON.fields.field_map_repository.und, 'url') || '';
-
-        mapJSON.subtitle = hasProp(mapJSON.fields.field_subtitle.und, 'value') || '';
-
-        mapJSON.archived = hasProp(mapJSON.fields.field_archived.und, 'value') || '0';
-
-        mapJSON.live = mapJSON.archived === '0' ? '1' : '0';
-
-        mapJSON.featured = hasProp(mapJSON.fields.field_featured.und, 'value') || '0';
-
-        mapJSON.latitude = hasProp(mapJSON.fields.field_map_latitude.und, 'value') || '50.00';
-        mapJSON.longitude = hasProp(mapJSON.fields.field_map_longitude.und, 'value') || '-105.00';
-        mapJSON.initialzoom = hasProp(mapJSON.fields.field_map_initial_zoom.und, 'value') || '3';
-
-        if (mapJSON.url !== '' || mapJSON.repo !== '') {
-            updateMapMeta(data[i], mapMeta, mapJSON);
-        }
-    }
-
-}
-
-
-function getMapMeta1(data, mapMeta) {
-
-    var mapJSON = {};
-
-    for (var i = 1; i < data.length; i++) {
 
         var map_info_all = getMapInfo(data[i]);
         mapJSON.map_type = map_info_all.map_type;
@@ -259,7 +217,7 @@ function populateMaps(data) {
         thumbnail: []
     };
 
-    getMapMeta1(data, mapMeta);
+    getMapMeta(data, mapMeta);
     getBureauFilters(mapMeta.bureaus);
     createMapCard(mapMeta);
 }
@@ -274,8 +232,6 @@ function getMapData() {
         success: populateMaps
     });
 }
-
-
 
 function getMapInfo(mapOptions) {
     var map_info_all = {};
