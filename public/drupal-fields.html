@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+New map-related fields to be added to the Drupal form.<p>
+<form>
+Bureau/Office: <input id="bureau" value=""><br>
+Initial latitude: <input id="map_center_latitude" value="50"><br>
+Initial longitude: <input id="map_center_longitude" value="-105"><br>
+Initial zoom: <input id="map_initial_zoom" value="3"><br>
+Min zoom: <input id="map_max_zoom" value="3"><br>
+Max zoom: <input id="map_min_zoom" value="15"><br>
+Scale Control: <select id="scale_control">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+				</select><br>
+Search bar: <select id="search">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+				</select><br>
+
+Attribution: <input id="attribution" value="<a href=https://maps.fcc.gov/>FCC Maps</a>">
+<br>
+Base maps: <input type="checkbox" id="base-map-street" value="street" checked>Street
+<input type="checkbox" id="base-map-satellite" value="satellite" checked>Satellite
+<input type="checkbox" id="base-map-terrain" value="terrain" checked>Terrain
+
+<p>
+
+
+Layers:
+<br>
+Note: there will be unknown number of layers for each submission, please design the form to allow this, with different IDs for each layer.
+
+
+<p>
+Layer 1:<br>
+Layer type: <select id="layer_type">
+				<option value="xyz">XYZ</option>
+				<option value="wms">WMS</option>
+				<option value="tms">TMS</option>
+				</select>
+				<br>
+Protocol: <select id="protocol">
+				<option value="https">HTTPS</option>
+				<option value="http">HTTP</option>
+				</select>
+				<br>
+				
+Domain: <input id="domain">
+<br>
+Layer name: <input id="layer_name">
+<br>
+Style name: <input id="style_name">
+<br>
+Format: <input id="format">
+<br>
+Opacity: <input id="opacity">
+<br>
+
+Layer on by default: <select id="layer_auto_on">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+				</select>
+<p>
+Layer 2:<br>
+Layer type: <select id="layer_type">
+				<option value="xyz">XYZ</option>
+				<option value="wms">WMS</option>
+				<option value="tms">TMS</option>
+				</select>
+				<br>
+Protocol: <select id="protocol">
+				<option value="https">HTTPS</option>
+				<option value="http">HTTP</option>
+				</select>
+				<br>
+				
+Domain: <input id="domain">
+<br>
+Layer name: <input id="layer_name">
+<br>
+Style name: <input id="style_name">
+<br>
+Format: <input id="format">
+<br>
+Opacity: <input id="opacity">
+<br>
+
+Layer on by default: <select id="layer_auto_on">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+				</select>
+<p>
+Layer 3: ...
+<p>
+
+
+<br>
+Legends:
+<br>
+Note: there will be unknown number of legends, please design the form to allow this.
+<p>
+Legend 1:<br>
+Color: <input id=legend-color>
+<br>
+Text: <input id=legend-text>
+<p>
+Legend 2:<br>
+Color: <input id=legend-color>
+<br>
+Text: <input id=legend-text>
+<p>
+Legend 3: ...
+
+
+
+
+
+
+				
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+</html>
