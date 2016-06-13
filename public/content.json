@@ -4930,7 +4930,7 @@
     "created": "2016-05-27",
     "changed": "2016-05-27",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/connect2healthfcc",
+    "webUrl": "http://c2hgis-web-node-dev.us-west-2.elasticbeanstalk.com/",
     "tnid": "0",
     "body": null,
     "vid": "187946",
@@ -5079,7 +5079,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://apps2.fcc.gov/connect2health/",
+                "url": "http://c2hgis-web-node-dev.us-west-2.elasticbeanstalk.com/",
                 "title": "Connect2HealthFCC",
                 "attributes": [
 
