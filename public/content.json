@@ -322,6 +322,1101 @@
 }
 ,{
     "nid": "28002",
+    "title": "FCC E-rate Maps of Fiber Connectivity to Schools and Libraries",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://fcc.github.io/erate-map/iframe.html#4/38.82/-94.96",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p><b>Note:</b> This map is no longer being updated. We plan to release a new map based on the FY16 E-rate program data collected by USAC. Please email <a href=\"mailto:E-rateDataTeam@fcc.gov\">E-rateDataTeam@fcc.gov</a> with any questions. Thank you for your patience.</p><b>School Districts</b><p>This is an interactive map that shows, by School District, the percent of public schools with fiber connectivity sized by number of students. It does not show what percent of schools within a district actually subscribe to high-speed fiber. The universe of public schools is defined using 2011-2012 NCES Public School Data available at <a href=\"http://nces.ed.gov/ccd/pubschuniv.asp\">http://nces.ed.gov/ccd/pubschuniv.asp</a>.</p><p>Connectivity status is compiled from data from the National Broadband Map (June 2013) and data submitted to the FCC in WC Docket Number 13-184 and posted at <a href=\"http://www.fcc.gov/encyclopedia/E-rate-modernization-data\">http://www.fcc.gov/encyclopedia/E-rate-modernization-data</a>. Fiber connectivity is determined from either notation of “fiber” as the specific connection technology (at any speed) or a connection speed of at least 100 Mbps.</p><b>About</b><p>When Congress passed the Telecommunications Act of 1996 authorizing the creation of the E-rate program (more formally known as the schools and libraries universal service support mechanism), only 14 percent of classrooms had access to the Internet, and most schools with access (74 percent) used dial-up connections. Today, virtually all schools and libraries have Internet access.</p><p>But learning is changing. Teachers and students want to use innovative digital learning technologies in the classroom and the Internet connects library patrons to information, jobs, and promotes life-long learning. Demand for bandwidth in schools and libraries continues to increase. In an FCC survey of E-rate recipients, nearly half of respondents reported lower speed Internet connectivity than the average American home - despite having, on average, 200 times as many users.</p><p>The FCC began updating E-rate in 2010, and on July 23, 2014, released the E-rate Modernization Order, expanding wi-fi networks in schools and libraries across America while ensuring support continues to be available for broadband connectivity to schools and libraries. In the Further Notice released in conjunction with the E-Rate Modernization Order, the Commission sought input on the program’s long-term, overall funding needs, particularly in light of general industry trends in broadband pricing and the likelihood that demand for category one services providing connectivity to school and library premises will continue to grow.</p><p>Consistent with that effort, and to better understand the current state of fiber connectivity, the FCC seeks further community engagement to refine this map as well as a companion map on connectivity to libraries, which can be found by selecting the Libraries tab on the map selector above.</p><p>We recognize that the current version of this map only identifies connectivity to public school districts. We intend to augment it with information about fiber connectivity to private and parochial schools that are eligible for E-rate support.</p><b>Community Engagement</b><p>Can you help improve the data that drives this map? The Commission has asked for comment to help identify the gap between schools’ and libraries’ current connectivity and the specific connectivity targets the Commission adopted in its E-Rate Modernization Order. Can you help by providing a district or school name that is not identified? A school’s NCES ID (found at <a href=\"http://nces.ed.gov/ccd/schoolsearch/\">http://nces.ed.gov/ccd/schoolsearch/</a>)? An individual school’s connection technology (e.g., fiber, cable, T-1, wireless) or advertised download speed?</p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p><b>Note:</b> This map is no longer being updated. We plan to release a new map based on the FY16 E-rate program data collected by USAC. Please email <a href=\"mailto:E-rateDataTeam@fcc.gov\">E-rateDataTeam@fcc.gov</a> with any questions. Thank you for your patience.</p><b>School Districts</b><p>This is an interactive map that shows, by School District, the percent of public schools with fiber connectivity sized by number of students. It does not show what percent of schools within a district actually subscribe to high-speed fiber. The universe of public schools is defined using 2011-2012 NCES Public School Data available at <a href=\"http://nces.ed.gov/ccd/pubschuniv.asp\">http://nces.ed.gov/ccd/pubschuniv.asp</a>.</p><p>Connectivity status is compiled from data from the National Broadband Map (June 2013) and data submitted to the FCC in WC Docket Number 13-184 and posted at <a href=\"http://www.fcc.gov/encyclopedia/E-rate-modernization-data\">http://www.fcc.gov/encyclopedia/E-rate-modernization-data</a>. Fiber connectivity is determined from either notation of “fiber” as the specific connection technology (at any speed) or a connection speed of at least 100 Mbps.</p><b>About</b><p>When Congress passed the Telecommunications Act of 1996 authorizing the creation of the E-rate program (more formally known as the schools and libraries universal service support mechanism), only 14 percent of classrooms had access to the Internet, and most schools with access (74 percent) used dial-up connections. Today, virtually all schools and libraries have Internet access.</p><p>But learning is changing. Teachers and students want to use innovative digital learning technologies in the classroom and the Internet connects library patrons to information, jobs, and promotes life-long learning. Demand for bandwidth in schools and libraries continues to increase. In an FCC survey of E-rate recipients, nearly half of respondents reported lower speed Internet connectivity than the average American home - despite having, on average, 200 times as many users.</p><p>The FCC began updating E-rate in 2010, and on July 23, 2014, released the E-rate Modernization Order, expanding wi-fi networks in schools and libraries across America while ensuring support continues to be available for broadband connectivity to schools and libraries. In the Further Notice released in conjunction with the E-Rate Modernization Order, the Commission sought input on the program’s long-term, overall funding needs, particularly in light of general industry trends in broadband pricing and the likelihood that demand for category one services providing connectivity to school and library premises will continue to grow.</p><p>Consistent with that effort, and to better understand the current state of fiber connectivity, the FCC seeks further community engagement to refine this map as well as a companion map on connectivity to libraries, which can be found by selecting the Libraries tab on the map selector above.</p><p>We recognize that the current version of this map only identifies connectivity to public school districts. We intend to augment it with information about fiber connectivity to private and parochial schools that are eligible for E-rate support.</p><b>Community Engagement</b><p>Can you help improve the data that drives this map? The Commission has asked for comment to help identify the gap between schools’ and libraries’ current connectivity and the specific connectivity targets the Commission adopted in its E-Rate Modernization Order. Can you help by providing a district or school name that is not identified? A school’s NCES ID (found at <a href=\"http://nces.ed.gov/ccd/schoolsearch/\">http://nces.ed.gov/ccd/schoolsearch/</a>)? An individual school’s connection technology (e.g., fiber, cable, T-1, wireless) or advertised download speed?</p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-E-rate-fiber-map.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-E-rate-fiber-map.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": [{
+            "value": "0"
+        }],
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "2016 Broadband Progress Report"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/E-rate-fiber-map",
+                "title": "FCC E-rate Maps of Fiber Connectivity to Schools and Libraries",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "E-rate-fiber-map"
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "iframe"
+            }]
+        },
+        "field_related_links": {
+            
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
+            }, {
+                "tid": "OSP",
+                "value": "Strategic Planning & Policy Analysis",
+                "url": "https://www.fcc.gov/strategic-planning-%26-policy-analysis"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "format": null,
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "bpr_county_layer_1",
+                    "format": null,
+                    "safe_value": "bpr_county_layer_1"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "BPR County Layer",
+                    "format": null,
+                    "safe_value": "BPR County Layer"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_state_layer",
+                    "format": null,
+                    "safe_value": "bpr_state_layer"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_query_string": {
+
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "format": null,
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Tribal Land",
+                    "format": null,
+                    "safe_value": "Tribal Land"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_query_string": {
+
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "format": null,
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc:bpr_county_layer_urban_only",
+                    "format": null,
+                    "safe_value": "fcc:bpr_county_layer_urban_only"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Urban",
+                    "format": null,
+                    "safe_value": "Urban"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_layer_urban",
+                    "format": null,
+                    "safe_value": "bpr_layer_urban"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_query_string": {
+
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffffcc",
+                    "format": null,
+                    "safe_value": "#ffffcc"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Zero fixed 25 Mbps/3 Mbps providers",
+                    "format": null,
+                    "safe_value": "Zero fixed 25 Mbps/3 Mbps providers"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#fdcc8a",
+                    "format": null,
+                    "safe_value": "#fdcc8a"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "One fixed 25 Mbps/3 Mbps provider",
+                    "format": null,
+                    "safe_value": "One fixed 25 Mbps/3 Mbps provider"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#fc8d59",
+                    "format": null,
+                    "safe_value": "#fc8d59"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Two fixed 25 Mbps/3 Mbps providers",
+                    "format": null,
+                    "safe_value": "Two fixed 25 Mbps/3 Mbps providers"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#d7301f",
+                    "format": null,
+                    "safe_value": "#d7301f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Three or more fixed 25 Mbps/3 Mbps providers",
+                    "format": null,
+                    "safe_value": "Three or more fixed 25 Mbps/3 Mbps providers"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#d7301f",
+                    "format": null,
+                    "safe_value": "#d7301f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Tribal land",
+                    "format": null,
+                    "safe_value": "Tribal land"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#FFFFFF",
+                    "format": null,
+                    "safe_value": "#FFFFFF"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Urban area",
+                    "format": null,
+                    "safe_value": "Urban area"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    }, 
+    "taxonomy": [{
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "E-Rate (Schools & Libraries)",
+        "url": "https://www.fcc.gov/tags/e-rate-schools-libraries"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Residential Fixed 25 Mbps/3 Mbps Broadband Deployment",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://fcc.github.io/bpr-map-2016/iframe_main.html",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p>This map shows where fixed residential broadband services of at least 25 Mbps download and 3 Mbps upload is deployed and where it is not deployed.  Enter an address to see the list of providers that offer residential services in the census block area, each provider’s maximum advertised residential speed, and demographic data for the county associated with the Census block.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p>This map shows where fixed residential broadband services of at least 25 Mbps download and 3 Mbps upload is deployed and where it is not deployed.  Enter an address to see the list of providers that offer residential services in the census block area, each provider’s maximum advertised residential speed, and demographic data for the county associated with the Census block.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-c2h.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-bpr-2016-fixed-25mbps-3mbps-deployment.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": [{
+            "value": "0"
+        }],
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2016-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "2016 Broadband Progress Report"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-deployment",
+                "title": "Residential Fixed 25 Mbps/3 Mbps Broadband Deployment",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "bpr-2016-fixed-25mbps-3mbps-deployment"
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "iframe"
+            }]
+        },
+        "field_related_links": {
+            
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [{
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "format": null,
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "bpr_county_layer_1",
+                    "format": null,
+                    "safe_value": "bpr_county_layer_1"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "BPR County Layer",
+                    "format": null,
+                    "safe_value": "BPR County Layer"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_state_layer",
+                    "format": null,
+                    "safe_value": "bpr_state_layer"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_query_string": {
+
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "format": null,
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Tribal Land",
+                    "format": null,
+                    "safe_value": "Tribal Land"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_tribal",
+                    "format": null,
+                    "safe_value": "bpr_tribal"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_query_string": {
+
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2430",
+            "revision_id": "3305",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "format": null,
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc:bpr_county_layer_urban_only",
+                    "format": null,
+                    "safe_value": "fcc:bpr_county_layer_urban_only"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_title": {
+                "und": [{
+                    "value": "Urban",
+                    "format": null,
+                    "safe_value": "Urban"
+                }]
+            },
+            "field_layer_style": {
+                "und": [{
+                    "value": "bpr_layer_urban",
+                    "format": null,
+                    "safe_value": "bpr_layer_urban"
+                }]
+            },
+            "field_layer_type": {
+                "und": [{
+                    "value": "WMS"
+                }]
+            },
+            "field_layer_query_string": {
+
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_legend": [{
+            "item_id": "2434",
+            "revision_id": "3385",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#ffffcc",
+                    "format": null,
+                    "safe_value": "#ffffcc"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Zero fixed 25 Mbps/3 Mbps providers",
+                    "format": null,
+                    "safe_value": "Zero fixed 25 Mbps/3 Mbps providers"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#fdcc8a",
+                    "format": null,
+                    "safe_value": "#fdcc8a"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "One fixed 25 Mbps/3 Mbps provider",
+                    "format": null,
+                    "safe_value": "One fixed 25 Mbps/3 Mbps provider"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#fc8d59",
+                    "format": null,
+                    "safe_value": "#fc8d59"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Two fixed 25 Mbps/3 Mbps providers",
+                    "format": null,
+                    "safe_value": "Two fixed 25 Mbps/3 Mbps providers"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#d7301f",
+                    "format": null,
+                    "safe_value": "#d7301f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Three or more fixed 25 Mbps/3 Mbps providers",
+                    "format": null,
+                    "safe_value": "Three or more fixed 25 Mbps/3 Mbps providers"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#d7301f",
+                    "format": null,
+                    "safe_value": "#d7301f"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Tribal land",
+                    "format": null,
+                    "safe_value": "Tribal land"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2435",
+            "revision_id": "3386",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#FFFFFF",
+                    "format": null,
+                    "safe_value": "#FFFFFF"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Urban area",
+                    "format": null,
+                    "safe_value": "Urban area"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    }, 
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "Broadband Progress Report",
+        "url": "https://www.fcc.gov/tags/broadband-progress-report"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Broadband Progress Reports",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Broadband, Internet & IP",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
     "title": "Number of Residential Fixed Broadband Providers at 25 Mbps/3 Mbps",
     "created": "2015-10-20",
     "changed": "2015-12-09",
@@ -338,10 +1433,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows the number of providers offering residential broadband services of at least 25 Mbps download and 3 Mbps upload.  Enter your address to see the number of providers that offer these residential services in your area. Click each box to in the legend to see whether the number of providers changes in your area.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Zoom out to see whether the number of providers differs in the areas surrounding your address.",
+                "value": "<p>This map shows the number of providers offering residential broadband services of at least 25 Mbps download and 3 Mbps upload.  Enter your address to see the number of providers that offer these residential services in your area. Click each box to in the legend to see whether the number of providers changes in your area.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Zoom out to see whether the number of providers differs in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows the number of providers offering residential broadband services of at least 25 Mbps download and 3 Mbps upload.  Enter your address to see the number of providers that offer these residential services in your area. Click each box to in the legend to see whether the number of providers changes in your area.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Zoom out to see whether the number of providers differs in the areas surrounding your address.",
+                "safe_value": "<p>This map shows the number of providers offering residential broadband services of at least 25 Mbps download and 3 Mbps upload.  Enter your address to see the number of providers that offer these residential services in your area. Click each box to in the legend to see whether the number of providers changes in your area.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Zoom out to see whether the number of providers differs in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "safe_summary": ""
             }]
         },
@@ -7297,10 +8392,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.",
+                "value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.",
+                "safe_value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",
                 "safe_summary": ""
             }]
         },

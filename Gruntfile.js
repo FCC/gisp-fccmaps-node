@@ -152,6 +152,8 @@ module.exports = function(grunt) {
                 src: [
                     './src/map_data/mapdata-open.json',
                     './src/map_data/caf-2-accepted-map.json',
+                    './src/map_data/E-rate-fiber-map.json',
+                    './src/map_data/bpr-2016-fixed-25mbps-3mbps-deployment.json',
                     './src/map_data/bpr-2016-fixed-25mbps-3mbps-providers.json',
                     './src/map_data/bpr-2016-fixed-25mbps-3mbps-technology.json',
                     './src/map_data/bpr-2016-fixed-speed.json',

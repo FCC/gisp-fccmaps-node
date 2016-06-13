@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-deployment",
+    "webUrl": "https://fcc.github.io/bpr-map-2016/iframe_main.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -16,14 +16,50 @@
         }],
         "field_description": {
             "und": [{
-                "value": "This map shows where fixed residential broadband services of at least 25 Mbps download and 3 Mbps upload is deployed and where it is not deployed.  Enter an address to see the list of providers that offer residential services in the census block area, each provider’s maximum advertised residential speed, and demographic data for the county associated with the Census block.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.",
+                "value": "<p>This map shows where fixed residential broadband services of at least 25 Mbps download and 3 Mbps upload is deployed and where it is not deployed.  Enter an address to see the list of providers that offer residential services in the census block area, each provider’s maximum advertised residential speed, and demographic data for the county associated with the Census block.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map shows where fixed residential broadband services of at least 25 Mbps download and 3 Mbps upload is deployed and where it is not deployed.  Enter an address to see the list of providers that offer residential services in the census block area, each provider’s maximum advertised residential speed, and demographic data for the county associated with the Census block.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.",
+                "safe_value": "<p>This map shows where fixed residential broadband services of at least 25 Mbps download and 3 Mbps upload is deployed and where it is not deployed.  Enter an address to see the list of providers that offer residential services in the census block area, each provider’s maximum advertised residential speed, and demographic data for the county associated with the Census block.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [],
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-c2h.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-bpr-2016-fixed-25mbps-3mbps-deployment.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
         "field_link": [
 
         ],
@@ -67,7 +103,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/bpr-2016-fixed-25mbps-3mbps-deployment",
+                "url": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-deployment",
                 "title": "Residential Fixed 25 Mbps/3 Mbps Broadband Deployment",
                 "attributes": [
 
@@ -87,23 +123,11 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "int_layers"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
-            "und": [{
-                "url": "https://www.fcc.gov/tags/broadband-progress-report",
-                "title": "Broadband Progress Report",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-progress-reports",
-                "title": "Broadband Progress Reports",
-                "attributes": []
-            }, {
-                "url": "https://www.fcc.gov/tags/broadband-internet-ip",
-                "title": "Broadband, Internet & IP",
-                "attributes": []
-            }]
+            
         },
         "field_bureau_office": {
             "und": [{
@@ -490,15 +514,37 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
+        "tid": "956",
         "vid": "1",
-        "name": "Maps"
+        "name": "Broadband Progress Report",
+        "url": "https://www.fcc.gov/tags/broadband-progress-report"
     }, {
         "tid": "956",
         "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Broadband Progress Reports",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Broadband, Internet & IP",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
