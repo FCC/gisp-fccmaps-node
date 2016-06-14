@@ -159,12 +159,7 @@ function createMapCard(mapMeta) {
         } else {
             subtitle = '';
         }
-
-        tagItems = '';
-        for (var t = 0; t < mapMeta.tags[i].length; t++) {
-            tagItems += '<li class="tag"><a href="' + mapMeta.tags[i][t].url + '">' + mapMeta.tags[i][t].name + '</a></li>';
-        }
-
+        
         card += '<li class="card data-all bureau-' + mapMeta.bureaus[i].tid + ' ' + add_class + ' tag-data-maps-reports tag-maps">';
         card += '<div class="mapThumb-btns">' + '<a class="btn btn-xs btn-default" href="' + url_bookmark + '"><span class="sr-only">View map</span> <span class="icon icon-external-link-square"></span></a>' + '</div>';
         card += '<div class="ribbon"><span>Featured</span></div>';
@@ -178,7 +173,7 @@ function createMapCard(mapMeta) {
         card += '<div class="card__desc">' + mapMeta.descriptions[i] + '</div>';
         card += '<a class="link-viewMore" href="' + url_bookmark + '">View more&#8230;</a>';
 
-        card += '<ul class="list-unstyled">' + tagItems + '</ul></div>';
+        card += '</div>';
         card += '<div class="card__footer"><button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false" aria-controls="t' + i + '"><span class="icon icon-caret-right"></span>View details</button></div>';
         card += '</li>';
 
