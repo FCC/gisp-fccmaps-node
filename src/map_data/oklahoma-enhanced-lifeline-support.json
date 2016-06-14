@@ -1,38 +1,38 @@
 {
-    "nid": "179626",
-    "title": "FCC AM Revitalization Channel Finder",
-    "created": "2016-05-26",
-    "changed": "2016-05-26",
+    "nid": "179638",
+    "title": "Oklahoma Enhanced Lifeline Support",
+    "created": "2016-06-08",
+    "changed": "",
     "type": "map",
-    "webUrl": "https://apps2.fcc.gov/amr-channel-finder/?",
+    "webUrl": "https://fcc.maps.arcgis.com/apps/Minimalist/index.html?appid=85bc280d4be24ecd9f769482e10a96fa",
     "tnid": "0",
     "body": null,
-    "vid": "187924",
+    "vid": "187946",
     "fields": {
         "field_map_embed_code": [
 
         ],
         "field_description": {
             "und": [{
-                "value": "",
+                "value": "<p>This map shows the areas of Oklahoma eligible for enhanced Lifeline support.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "",
+                "safe_value": "<p>This map shows the areas of Oklahoma eligible for enhanced Lifeline support.</p>",
                 "safe_summary": ""
             }]
         },
         "field_image_thumbnail": {
             "und": [{
-                "fid": "3516",
-                "uid": "1162",
-                "filename": "thumb-nbm.png",
-                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-amr-channel-finder.png",
-                "filemime": "image/gif",
-                "filesize": "4198",
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-oklahoma-enhanced-lifeline-support.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-oklahoma-enhanced-lifeline-support.png",
+                "filemime": "image/png",
+                "filesize": "3695",
                 "status": "1",
-                "timestamp": "1464290179",
+                "timestamp": "1456505550",
                 "type": "image",
-                "uuid": "6b22d3f3-bf72-4d70-9bc3-6bf7c21daacc",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
                 "field_file_image_alt_text": [
 
                 ],
@@ -50,12 +50,12 @@
                 ],
                 "metadata": {
                     "height": 38,
-                    "width": 333
+                    "width": 175
                 },
                 "alt": null,
                 "title": null,
                 "height": "38",
-                "width": "333"
+                "width": "175"
             }]
         },
         "field_link": [
@@ -71,7 +71,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-05-26 19:15:00",
+                "value": "2016-06-10 17:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -79,7 +79,7 @@
         },
         "field_date": {
             "und": [{
-                "value": "2016-05-26 00:00:00",
+                "value": "2016-06-10 00:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "America/New_York",
                 "date_type": "datetime"
@@ -95,12 +95,12 @@
         ],
         "field_featured": {
             "und": [{
-                "value": "0"
+                "value": "1"
             }]
         },
         "field_map_display_date": {
             "und": [{
-                "value": "2016-05-26 00:00:00",
+                "value": "2016-05-27 00:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "America/New_York",
                 "date_type": "datetime",
@@ -120,8 +120,8 @@
                         ],
                         "timeOnly": false,
                         "dateOnly": false,
-                        "originalTime": "2016-05-26T00:00:00-04:00",
-                        "date": "2016-05-26 00:00:00.000000",
+                        "originalTime": "2016-05-27T00:00:00-04:00",
+                        "date": "2016-05-27 00:00:00.000000",
                         "timezone_type": 3,
                         "timezone": "America/New_York"
                     },
@@ -140,8 +140,8 @@
                         ],
                         "timeOnly": false,
                         "dateOnly": false,
-                        "originalTime": "2016-05-26T00:00:00-04:00",
-                        "date": "2016-05-26 00:00:00.000000",
+                        "originalTime": "2016-05-27T00:00:00-04:00",
+                        "date": "2016-05-27 00:00:00.000000",
                         "timezone_type": 3,
                         "timezone": "America/New_York"
                     }
@@ -153,8 +153,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://apps2.fcc.gov/amr-channel-finder/?",
-                "title": "FCC AM Revitalization Channel Finder",
+                "url": "https://www.fcc.gov/maps/oklahoma-enhanced-lifeline-support",
+                "title": "Oklahoma Enhanced Lifeline Support",
                 "attributes": [
 
                 ]
@@ -162,7 +162,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "amr-channel-finder"
+                "value": "oklahoma-enhanced-lifeline-support"
             }]
         },
         "field_map_repository": [
@@ -173,16 +173,21 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "proxy"
+                "value": "iframe"
             }]
         },
-        "field_related_links": [
-
-        ],
+        "field_related_links": {
+            "und": [{
+                "url": "https://www.fcc.gov/general/oklahoma-enhanced-lifeline-support-maps",
+                "title": "Oklahoma Enhanced Lifeline Support Maps",
+                "attributes": []
+            }]
+        },
         "field_bureau_office": {
             "und": [{
-                "tid": "MB",
-                "value": "Media Bureau"
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
             }]
         },
         "field_map_address_search_": {
@@ -255,11 +260,6 @@
             "field_layer_type": {
                 "und": [{
                     "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "key=value&key2=value2"
                 }]
             },
             "field_layer_visibility": {
@@ -436,16 +436,16 @@
             ]
         }, {
             "item_id": "2433",
-            "revision_id": "3323",
+            "revision_id": "3399",
             "field_name": "field_map_layer",
             "default_revision": "1",
             "archived": "0",
             "uuid": "03749931-f9d7-4f14-a6df-a9038c0ee8ca",
             "field_layer_domain": {
                 "und": [{
-                    "value": "www.broadbandmap.gov/geoserver",
+                    "value": "www.broadbandmap.gov/geoserver/wms",
                     "format": null,
-                    "safe_value": "www.broadbandmap.gov/geoserver"
+                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
                 }]
             },
             "field_layer_format": {
@@ -467,7 +467,7 @@
             },
             "field_layer_protocol": {
                 "und": [{
-                    "value": "HTTP"
+                    "value": "HTTPS"
                 }]
             },
             "field_layer_style": {
@@ -536,16 +536,16 @@
             ]
         }, {
             "item_id": "2438",
-            "revision_id": "3324",
+            "revision_id": "3400",
             "field_name": "field_map_layer",
             "default_revision": "1",
             "archived": "0",
             "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
             "field_layer_domain": {
                 "und": [{
-                    "value": "fcc.Section-706-Mobile-Data-Deployment-Map",
+                    "value": "a.tiles.mapbox.com/v4/fcc.Section-706-Mobile-Data-Deployment-Map",
                     "format": null,
-                    "safe_value": "fcc.Section-706-Mobile-Data-Deployment-Map"
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.Section-706-Mobile-Data-Deployment-Map"
                 }]
             },
             "field_layer_format": {
@@ -555,11 +555,55 @@
             },
             "field_layer_name": {
                 "und": [{
-                    "value": "fcc.Section-706-Mobile-Data-Deployment-Map",
+                    "value": "Section-706-Mobile",
                     "format": null,
-                    "safe_value": "fcc.Section-706-Mobile-Data-Deployment-Map"
+                    "safe_value": "Section-706-Mobile"
                 }]
             },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.50"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTP"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2443",
+            "revision_id": "3369",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "be9f6ead-0c86-46bb-9f90-67dc30f5de25",
+            "field_layer_domain": [
+
+            ],
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": [
+
+            ],
             "field_layer_opacity": {
                 "und": [{
                     "value": "0.50"
@@ -575,7 +619,7 @@
             ],
             "field_layer_type": {
                 "und": [{
-                    "value": "WMS"
+                    "value": "XYZ"
                 }]
             },
             "field_layer_visibility": {
@@ -587,12 +631,64 @@
 
             ]
         }, {
-            "item_id": "2443",
-            "revision_id": "3345",
+            "item_id": "2445",
+            "revision_id": "3406",
             "field_name": "field_map_layer",
             "default_revision": "1",
             "archived": "0",
-            "uuid": "be9f6ead-0c86-46bb-9f90-67dc30f5de25",
+            "uuid": "69c8d9f9-c2db-454e-bbfd-5cbec45e53f8",
+            "field_layer_domain": {
+                "und": [{
+                    "value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh",
+                    "format": null,
+                    "safe_value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh"
+                }]
+            },
+            "field_layer_format": {
+                "und": [{
+                    "value": "png"
+                }]
+            },
+            "field_layer_name": {
+                "und": [{
+                    "value": "fcc.0j21k0bh",
+                    "format": null,
+                    "safe_value": "fcc.0j21k0bh"
+                }]
+            },
+            "field_layer_opacity": {
+                "und": [{
+                    "value": "0.75"
+                }]
+            },
+            "field_layer_protocol": {
+                "und": [{
+                    "value": "HTTPS"
+                }]
+            },
+            "field_layer_style": [
+
+            ],
+            "field_layer_type": {
+                "und": [{
+                    "value": "XYZ"
+                }]
+            },
+            "field_layer_visibility": {
+                "und": [{
+                    "value": "on"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2448",
+            "revision_id": "3415",
+            "field_name": "field_map_layer",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "720ed00f-7495-45a0-8757-19b50472b663",
             "field_layer_domain": [
 
             ],
@@ -753,7 +849,7 @@
             ]
         }, {
             "item_id": "2434",
-            "revision_id": "3325",
+            "revision_id": "3401",
             "field_name": "field_map_legend",
             "default_revision": "1",
             "archived": "0",
@@ -777,7 +873,7 @@
             ]
         }, {
             "item_id": "2435",
-            "revision_id": "3326",
+            "revision_id": "3402",
             "field_name": "field_map_legend",
             "default_revision": "1",
             "archived": "0",
@@ -825,11 +921,83 @@
             ]
         }, {
             "item_id": "2444",
-            "revision_id": "3346",
+            "revision_id": "3370",
             "field_name": "field_map_legend",
             "default_revision": "1",
             "archived": "0",
             "uuid": "269e1d70-1314-410a-8b9d-be49c0ac7a0a",
+            "field_legend_color": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "N/A",
+                    "format": null,
+                    "safe_value": "N/A"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2446",
+            "revision_id": "3407",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "14c2afe2-8285-4055-bb95-58c877cccbdd",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#aaaa00",
+                    "format": null,
+                    "safe_value": "#aaaa00"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Accepted PC Funding",
+                    "format": null,
+                    "safe_value": "Accepted PC Funding"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2447",
+            "revision_id": "3408",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "6ce7ad29-4ec6-4a75-b747-22175d2c9981",
+            "field_legend_color": {
+                "und": [{
+                    "value": "#999999",
+                    "format": null,
+                    "safe_value": "#999999"
+                }]
+            },
+            "field_legend_text": {
+                "und": [{
+                    "value": "Areas Outside of Phase II Model-Based Support",
+                    "format": null,
+                    "safe_value": "Areas Outside of Phase II Model-Based Support"
+                }]
+            },
+            "rdf_mapping": [
+
+            ]
+        }, {
+            "item_id": "2449",
+            "revision_id": "3416",
+            "field_name": "field_map_legend",
+            "default_revision": "1",
+            "archived": "0",
+            "uuid": "9e280f8e-629c-4cce-b891-f65367a240f5",
             "field_legend_color": {
                 "und": [{
                     "value": "N/A",
@@ -864,16 +1032,26 @@
             }]
         }
     },
-     "taxonomy": [{
+    "taxonomy": [{
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Lifeline",
+        "url": "https://www.fcc.gov/tags/lifeline-0"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
-    "uri": "http://10.154.68.187/api/content/179626"
+    "uri": "http://10.154.68.187/api/content/179638"
 }
