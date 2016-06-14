@@ -29,7 +29,7 @@
                 sortAscending: false
             }
         },
-        // selectedTags: [],
+        
         isIsotopeInit: false,
 
         init: function() {
@@ -41,8 +41,6 @@
 
             $('#sel-filter').on('change', mapGallery.filterByBureau);
             $('#sel-sort').on('change', mapGallery.sorting);
-
-            // $('.tag-list-inline').on('click', '.link-removeTag', mapGallery.removeTag);
 
             $('.map-status').on('click', '.btn', mapGallery.filterByStatus);
 
@@ -74,8 +72,7 @@
                 .isotope('insert', window.allMaps)
                 .on('layoutComplete', mapGallery.updateResults)
                 .on('arrangeComplete', mapGallery.showNumResults)
-                .on('click', '.btn-details', mapGallery.showCardDetails);
-                // .on('click', '.tag a', mapGallery.addTag);  
+                .on('click', '.btn-details', mapGallery.showCardDetails);                
 
             $grid.imagesLoaded().progress( function() {
               $grid.isotope('layout');
@@ -171,60 +168,7 @@
             mapGallery.filters.status = '.' + selectedBtn;
 
             mapGallery.filter();
-        },
-
-        /*removeTag: function(e) {
-            var $tagLink = $(this),
-                $tag = $tagLink.parent('span').attr('data-tag');
-
-            var index = mapGallery.selectedTags.indexOf($tag);
-
-            e.preventDefault();
-
-            mapGallery.selectedTags.splice(index, 1);
-
-            $tagLink.closest('.tag').remove();
-
-            mapGallery.filterByTags();
-        },
-
-        addTag: function(e) {
-            e.preventDefault();
-
-            var $tagLink = $(this),
-                $tag = $tagLink.attr('data-tag'),
-                $tagText = $tagLink.text(),
-                newTag = $tagLink.parent('li').clone();
-
-            if (mapGallery.selectedTags.indexOf($tag) < 0) {
-
-                mapGallery.selectedTags.push($tag);
-
-                newTag.find('a').replaceWith('<span data-tag="' + $tag + '">' + $tagText + '<a class="link-removeTag" href="#void"><span class="icon icon-remove"></span></span></a>');
-
-                if (!$('.tag-list-inline').is(':visible')) {
-                    $('.tag-list-inline').removeClass('hide');
-                }
-
-                $('.tag-list-inline').find('ul').append(newTag);
-
-                mapGallery.filterByTags();
-            }
-
-        },*/
-
-        /*filterByTags: function() {
-            var numTags = mapGallery.selectedTags.length;
-
-            if (numTags === 0) {
-                mapGallery.filters.tag = '';
-                $('.tag-list-inline').addClass('hide');
-            } else {
-                mapGallery.filters.tag = '.tag-' + mapGallery.selectedTags.join('.tag-');
-            }
-
-            mapGallery.filter();
-        },*/
+        },        
 
         filter: function() {
             mapGallery.locationHash();
@@ -244,40 +188,28 @@
                 .find('.active')
                 .removeClass('active')
                 .end()
-                .find('.btn').eq(1).addClass('active');
-
-            /*if ($('.tag-list-inline').is(':visible')) {
-                $('.tag-list-inline')
-                    .find('li')
-                    .remove()
-                    .end()
-                    .addClass('hide');
-            }*/
+                .find('.btn').eq(1).addClass('active');           
 
             mapGallery.locationHash();
         },
 
         locationHash: function() {
             var filters = 'filter=' + mapGallery.filters.bureau,
-                status = 'status=' + mapGallery.filters.status,
-                // tags = 'tags=' + mapGallery.filters.tag,
+                status = 'status=' + mapGallery.filters.status,                
                 sortBy = 'sortBy=' + mapGallery.sortList.sortBy + '&sortAscending=' + mapGallery.sortList.sortAscending;
-
-            // location.hash = encodeURIComponent(filters) + '&' + encodeURIComponent(status) + '&' + encodeURIComponent(tags) + '&' + encodeURIComponent(sortBy);
+            
             location.hash = encodeURIComponent(filters) + '&' + encodeURIComponent(status) + '&' + encodeURIComponent(sortBy);
         },
 
         getHashFilter: function() {
             var hash = decodeURIComponent(location.hash),
                 bureauHash = hash.match(/filter=([^&]+)/i),
-                statusHash = hash.match(/status=([^&]+)/i),
-                // tagHash = hash.match(/tags=([^&]+)/i),
+                statusHash = hash.match(/status=([^&]+)/i),                
                 sortByHash = hash.match(/sortBy=([^&]+)/i),
                 sortAscHash = hash.match(/sortAscending=([^&]+)/i);
 
             mapGallery.filters.bureau = bureauHash === null ? mapGallery.filters.bureau : bureauHash[1];
-            mapGallery.filters.status = statusHash === null ? mapGallery.filters.status : statusHash[1];
-            // mapGallery.filters.tag = tagHash === null ? mapGallery.filters.tag : tagHash[1];
+            mapGallery.filters.status = statusHash === null ? mapGallery.filters.status : statusHash[1];            
             mapGallery.sortList.sortBy = sortByHash === null ? mapGallery.sortList.sortBy : sortByHash[1];
             mapGallery.sortList.sortAscending = sortAscHash === null ? mapGallery.sortList.sortAscending : sortAscHash[1];
             mapGallery.sortList.sortAscending = mapGallery.sortList.sortAscending === 'true';
@@ -289,8 +221,7 @@
             var bureauVal = '';
 
             mapGallery.getHashFilter();
-
-            // filters = mapGallery.filters.bureau + mapGallery.filters.status + mapGallery.filters.tag;
+            
             filters = mapGallery.filters.bureau + mapGallery.filters.status;
 
             mapGallery.isIsotopeInit = true;
@@ -335,31 +266,6 @@
 
                 });
 
-            /*console.log('selected tags = ' + mapGallery.selectedTags);
-
-            var selectedTags = mapGallery.filters.tag.split('.');
-            var numTags = selectedTags.length - 1;
-
-            selectedTags.shift();
-
-            var LI = '';
-
-            for (var j = 0; j < numTags; j++) {
-                LI += '<li class="tag"><span data-tag="' + selectedTags[j] + '">' + selectedTags[j] + '<a class="link-removeTag" href="#void"><span class="icon icon-remove"></span></span></a></li>';
-
-                if (mapGallery.selectedTags.indexOf(selectedTags[j]) < 0) {
-                    mapGallery.selectedTags.push(selectedTags[j].split('tag-')[1]);
-                }
-            }
-
-            console.log(mapGallery.selectedTags);
-
-            if (!$('.tag-list-inline').is(':visible')) {
-                $('.tag-list-inline').removeClass('hide');
-            }
-
-            $('.tag-list-inline').find('ul').append(LI);*/
-
         }
     };
 
@@ -367,6 +273,7 @@
         mapGallery.init();
 
         $(window).on('hashchange', mapGallery.onHashchange);
+
         // trigger event handler to init Isotope
         mapGallery.onHashchange();
     });
