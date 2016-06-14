@@ -3,7 +3,7 @@
     background: #fff;
     bottom: 0;
     height: 600px;
-    margin: 0 -42px 0 0;
+    margin: 0 -30px 0 0;
     overflow: hidden;
     top: 0;
     width: 200px;
@@ -54,7 +54,7 @@
         display: none;
     }
     .nav.nav-stacked {
-        width: 212px;
+        width: 198px;
         height: 92%;
         overflow-y: scroll;
         padding-right: 15px;
@@ -63,19 +63,24 @@
         font-weight: 400;
         line-height: 16px;
         margin: 10px 0 10px;
-        
         > li.active > a {
             background: #13428b;
             color: #fff;
         }
+        @media (min-width: @screen-md-min) {
+            width: 207px;
+        }
+        @media (min-width: 1700px) {
+            width: 212px;
+        }
     }
     li > a {
-            &:hover,
-            &:focus {
-                background: #13428b;
-                color: #fff;
-            }
+        &:hover,
+        &:focus {
+            background: #13428b;
+            color: #fff;
         }
+    }
     li + li {
         margin-top: 0;
     }
