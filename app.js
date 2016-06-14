@@ -59,7 +59,6 @@ console.log('ALLOWED_IP : '+ ALLOWED_IP );
 // deploy
 maps.deployMap(true);
 
-
 // **********************************************************
 // app
 
@@ -192,9 +191,7 @@ app.use('/:mapId/embed', function(req, res, next){
 	console.log('mapId : ' + mapId);
 	
 	console.log('req.url : ' + req.url);
-	console.log('req.get host : ' + req.get('host'));
 	console.log('req.originalUrl : ' + req.originalUrl);
-	console.log('req.host : ' + req.host);
 	console.log('req.hostname : ' + req.hostname);
 	console.log('req.path : ' + req.path);
 	
