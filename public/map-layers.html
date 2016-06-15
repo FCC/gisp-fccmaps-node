@@ -30,13 +30,7 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" rel="stylesheet" />
     <link href="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.css" rel="stylesheet" />
     <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
-    <link href="../css/gisp-theme.min.css" rel="stylesheet" />
-    <style>
-    #map-container {
-        height: 400px;
-        width: 100%;
-    }
-    </style>
+    <link href="../css/gisp-theme.min.css" rel="stylesheet" />    
 </head>
 
 <body class="docs-collapsed-nav js-ready">
@@ -144,7 +138,7 @@
                                     <div class="row">
                                         <div class="col-sm-11">
                                             <div class="pg-header">
-                                                <div class="nav-breadcrumb"><a href="../">Maps</a>  / </div>
+                                                <div class="nav-breadcrumb"><a href="../">Maps</a> / </div>
                                                 <h1><span id="span-title"></span> <span id="span-subtitle" class="subtitle"></span></h1>
                                             </div>
                                         </div>
@@ -202,16 +196,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="map-container">
-                                        <div id="div-legend-holder">
-                                        </div>
-                                    </div>
-                                   
+                                    <div id="map-container" class="map-wrapper">
+                                        <div id="div-legend-holder"></div>
+                                    </div>                                   
+                                    <div id="span-description"></div>
                                     <dl class="dl-mapMeta dl-horizontal">
                                         <dt data-bureau>Published by:</dt>
                                         <dd data-bureau>Bureau</dd>
-                                        <dt>Description:</dt>
-                                        <dd><span id="span-description"></span></dd>
                                         <dt data-published>Published:</dt>
                                         <dd id="dd-published" data-published></dd>
                                         <dt data-updated>Updated:</dt>
@@ -234,9 +225,9 @@
                                         </dt>
                                         <dd class="share-links">
                                             <a href="#bookmarkLink">Bookmark</a>&nbsp;|&nbsp;<a href="#embedLink">Embed</a>
-                                            <div id="linkShare" style="display: none;">                                                
+                                            <div id="linkShare" style="display: none;">
                                                 <span class="help-block hide">Show or hide map features with URL parameters: zoom,search,layers,attr,key (no spaces between commas)</span>
-                                                <input id="txt-link" class="form-control" type="text">                                                
+                                                <input id="txt-link" class="form-control" type="text">
                                                 <button id="btn-closeShare" class="btn btn-xs btn-default">Close</button>
                                             </div>
                                         </dd>
@@ -348,7 +339,7 @@
     <script src="../js/vendor/bootstrap.min.js"></script>
     <script src="../js/pg-common.js"></script>
     <script src="../js/map-template.js"></script>
-	<script src="../js/app-common.js"></script>
+    <script src="../js/app-common.js"></script>
     <script src="../js/app-layers.js"></script>
 </body>
 
