@@ -18,8 +18,7 @@ $(document).ready(function() {
         success: function(data) {
             contentJson = data;
             getMapOption();
-            getMapInfo(mapOptions);
-            updateMapList();
+            getMapInfo(mapOptions);            
             updateText();
             iframeSetup();
         }
