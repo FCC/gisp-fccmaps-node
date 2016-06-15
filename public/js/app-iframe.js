@@ -4,7 +4,12 @@ function iframeSetup() {
     var map_type = map_info_all.map_type;
     var url = map_info_all.webUrl;
 
-    $('.map-iframe').attr('src', url);
+    $('.map-iframe')
+        .attr('src', url)
+        .css({
+            'height': map_info_all.map_frame_size.height,
+            'width': map_info_all.map_frame_size.width
+        });
 }
 
 

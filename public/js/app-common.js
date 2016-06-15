@@ -408,7 +408,15 @@ function getMapInfo() {
     map_info_all.image_thumbnail = image_thumbnail;
 
     //link
-    var link = [];
+    var link = [];   
+
+    //map_frame_size    
+    var map_frame_size = {};
+    if (mapOptions.fields.field_frame_size && mapOptions.fields.field_frame_size.und) {
+        map_frame_size.height = mapOptions.fields.field_frame_size.und[0].height;
+        map_frame_size.width = mapOptions.fields.field_frame_size.und[0].width;        
+    }
+    map_info_all.map_frame_size = map_frame_size;
 
     //map_address_search
     var map_address_search = 'on';
