@@ -715,7 +715,7 @@ function updateText() {
             embedLink = map_info_all.webUrl;
             $('.help-block').addClass('hide');
         } else {
-            embedLink = embedLink[0] + 'embed/#' + embedLink[1].slice(0, -1) + '/zoom,search,layers,attr,key';
+            embedLink = embedLink[0] + 'embed/#' + embedLink[1].replace(/\/?$/, '/') + 'zoom,search,layers,attr,key';
             $('.help-block').removeClass('hide');
         }
 
