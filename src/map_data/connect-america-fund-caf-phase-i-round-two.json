@@ -128,6 +128,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -285,7 +291,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -295,12 +301,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",

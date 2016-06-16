@@ -449,6 +449,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             
         },
@@ -994,8 +1000,14 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
-            
+
         },
         "field_bureau_office": {
             "und": [{
@@ -1383,7 +1395,7 @@
         "field_map_min_zoom": [
 
         ]
-    }, 
+    },
     "taxonomy": [{
         "tid": "956",
         "vid": "1",
@@ -6093,6 +6105,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             
         },
@@ -6495,6 +6513,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -7673,6 +7697,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             
         },
@@ -8186,6 +8216,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -9674,6 +9710,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": [{
                 "url": "https://www.fcc.gov/tags/broadband-progress-report",
@@ -9977,6 +10019,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -10266,6 +10314,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -10562,6 +10616,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -10903,6 +10963,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -11107,6 +11173,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -11457,6 +11529,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -11803,6 +11881,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -12194,6 +12278,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": [
@@ -13210,6 +13300,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -13419,6 +13515,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -13719,6 +13821,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -14036,6 +14144,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -14349,6 +14463,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -14666,6 +14786,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -14976,6 +15102,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -15284,6 +15416,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },        
+        "field_frame_size": {
+            "und": [{
+                "height": "640px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -15601,6 +15739,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -15758,7 +15902,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -15773,12 +15917,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",
@@ -15916,6 +16060,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -16073,7 +16223,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -16088,12 +16238,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",
@@ -16227,6 +16377,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -16542,6 +16698,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -16748,6 +16910,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -16905,7 +17073,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -16915,12 +17083,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",
@@ -17020,7 +17188,7 @@
 
         ],
         "field_subtitle": {
-            
+
         },
         "field_featured": [
 
@@ -17054,6 +17222,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -17213,7 +17387,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -17223,12 +17397,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",
@@ -17415,6 +17589,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -17835,6 +18015,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": [{
                 "url": "https://www.fcc.gov",
@@ -18172,7 +18358,7 @@
             "group": "Federal Communications Commission"
         }],
         "field_date": {
-            
+
         },
         "field_search_exclude": {
             "und": [{
@@ -18267,6 +18453,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -18366,7 +18558,7 @@
                 }]
             },
             "field_layer_query_string": {
-                
+
             },
             "field_layer_visibility": {
                 "und": [{
@@ -18424,7 +18616,7 @@
                 "und": [{
                     "value": "access_token=pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg"
                 }]
-            },            
+            },
             "field_layer_visibility": {
                 "und": [{
                     "value": "on"
@@ -18504,7 +18696,7 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
@@ -18638,6 +18830,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -19018,6 +19216,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -19537,6 +19741,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -19990,6 +20200,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -20372,6 +20588,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -20714,6 +20936,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -21772,6 +22000,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": [{
                 "url": "https://www.fcc.gov/engineering-technology/electromagnetic-compatibility-division/general/frequency-coordination-canada#LineA",
@@ -22780,6 +23014,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -23170,6 +23410,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {

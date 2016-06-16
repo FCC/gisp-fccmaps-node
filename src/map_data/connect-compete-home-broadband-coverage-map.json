@@ -82,7 +82,7 @@
             "group": "Federal Communications Commission"
         }],
         "field_date": {
-            
+
         },
         "field_search_exclude": {
             "und": [{
@@ -177,6 +177,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -276,7 +282,7 @@
                 }]
             },
             "field_layer_query_string": {
-                
+
             },
             "field_layer_visibility": {
                 "und": [{
@@ -334,7 +340,7 @@
                 "und": [{
                     "value": "access_token=pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg"
                 }]
-            },            
+            },
             "field_layer_visibility": {
                 "und": [{
                     "value": "on"
@@ -414,7 +420,7 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",

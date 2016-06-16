@@ -127,6 +127,12 @@
             "und": [{
                 "value": "iframe"
             }]
+        },        
+        "field_frame_size": {
+            "und": [{
+                "height": "640px",
+                "width": "100%"
+            }]
         },
         "field_related_links": {
             "und": []

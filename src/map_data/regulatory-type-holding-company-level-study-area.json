@@ -179,6 +179,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": [{
                 "url": "https://www.fcc.gov",
