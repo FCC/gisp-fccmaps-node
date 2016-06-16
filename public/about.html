@@ -116,28 +116,76 @@
                 </nav>
             </header>
             <main class="container">
-            <a id="main-content" tabindex="-1"></a>
+                <a id="main-content" tabindex="-1"></a>
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="nav-breadcrumb"><a href="/">Maps</a> / </div>
                         <h1>About</h1>
                         <div class="row">
-                            <div class="col-sm-8">
-                                <p>FCC Maps supports publication of geospatial visualizations related to reports, public notices, and other Federal Communications Commission activities. We focus on using tools and techniques that support rapid development and deployment of visualizations and their underlying data. Source code for most maps is publicly available on <a href="https://github.com/fcc">GitHub</a>.</p>
-                                <p>Since the first map was released in 2011, we have published numerous maps each year on topics ranging from <a href="https://www.fcc.gov/reports-research/maps/fcc-enforcement-actions-against-pirate-radio-location">enforcement actions against pirate radio</a> to <a href="https://www.fcc.gov/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-deployment">block-level broadband deployment by provider</a>. We are excited that FCC Maps continues to grow as a service for the public to enhance understanding on key Commission items.
-                                </p>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="panel-contactUs panel panel-default">
-                                    <div class="panel-heading">
-                                        <span class="h4 panel-title">Contact us</span>
+                            <div class="col-sm-12">
+                                <p>FCC GIS supports publication of geospatial visualizations related to reports, public notices, and other Federal Communications Commission activities. We focus on using tools and techniques that support rapid development and deployment of visualizations and their underlying data.</p>
+                                <p>The FCC publishes numerous maps each year on topics ranging from <a href="https://www.fcc.gov/reports-research/maps/fcc-enforcement-actions-against-pirate-radio-location">enforcement actions against pirate radio</a> to <a href="https://www.fcc.gov/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-deployment">block-level broadband deployment by provider</a>. We are excited that FCC GIS continues to grow as a service for the public to enhance understanding on key Commission items.</p>
+                                <section class="promo">
+                                    <div class="row">
+                                        <div class="card-block">
+                                            <a href="http://www.fcc.gov/maps"><span class="circle"><span class="icon icon-map-marker"></span></span>
+                                            <p>FCC Maps</p></a>
+                                        </div>
+                                        <div class="card-block">
+                                            <a href="http://fcc.github.io/design-standards/"><span class="circle"><span class="icon icon-file-code-o"></span></span>
+                                            
+                                            <p>Design Standards</p></a>
+                                        </div>
+                                        <div class="card-block">
+                                            <a href="http://www.fcc.gov/developers"><span class="circle"><span class="icon icon-code"></span></span>
+                                            <p>Developers</p></a>
+                                        </div>
+                                        <div class="card-block">
+                                            <a href="https://opendata.fcc.gov/browse"><span class="circle"><span class="icon icon-database"></span></span>
+                                            <p>Open Data</p></a>
+                                        </div>
+                                        <div class="card-block">
+                                            <a href="mailto:maps@fcc.gov"><span class="circle"><span class="icon icon-question"></span></span>
+                                            <p>Contact Us</p></a>
+                                        </div>
                                     </div>
-                                    <div class="panel-body">
-                                        If you have questions or comments, please email us at <a href="mailto:maps@fcc.gov">maps@fcc.gov</a>!
+                                </section>
+                                <section class="bureau-cards">
+                                    <h2>Offices and Bureaus</h2>
+                                    <div class="gallery">
+                                        <div class="card">
+                                            <div class="card__title"> <a href="https://www.fcc.gov/consumer-%26-governmental-affairs">Consumer and Governmental Affairs</a> </div>
+                                            <div class="card__body"> Develops and implements consumer policies including those for people with disabilities and those affecting tribal nations. </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__title"> <a href="https://www.fcc.gov/enforcement">Enforcement</a> </div>
+                                            <div class="card__body"> Enforces the Communications Act and FCC rules by protecting consumers, fostering efficient spectrum use, furthering public safety and promoting competition. </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__title"> <a href="https://www.fcc.gov/international">International</a> </div>
+                                            <div class="card__body"> Administers international telecommunications and satellite programs and policies, including licensing and regulatory functions. </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__title"> <a href="https://www.fcc.gov/media">Media</a> </div>
+                                            <div class="card__body"> Oversees broadcast radio and television, as well as cable and satellite services on behalf of consumers. </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__title"> <a href="https://www.fcc.gov/public-safety-%26-homeland-security">Public Safety &amp; Homeland Security</a> </div>
+                                            <div class="card__body"> Supports initiatives that strengthen public safety and emergency response capabilities. </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__title"> <a href="https://www.fcc.gov/wireless-telecommunications">Wireless Telecommunications</a> </div>
+                                            <div class="card__body"> Regulates domestic wireless telecommunications programs and policies, including licensing. </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__title"> <a href="https://www.fcc.gov/wireline-competition">Wireline Competition</a> </div>
+                                            <div class="card__body"> Develops and recommends wireline telecommunications policy goals, objectives, programs and plans. </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__title"> <a href="https://www.fcc.gov/offices-bureaus#block-menu-block-4">View All FCC Offices<br> and Bureaus »</a> </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="map-container">
-                                </div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -220,16 +268,19 @@
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
-    <script src="/js/pg-common.js"></script>
+    <script src="/js/vendor/isotope.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
+    <script src="/js/pg-common.js"></script>
     <script>
-    L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
-    map = L.mapbox.map('map-container', 'fcc.k74d7n0g', {
-            zoomControl: false,
-            maxZoom: 22,
-            minZoom: 5
-        })
-        .setView([38.883494, -77.029021], 16);
+    $('.gallery')
+        .isotope({
+            masonry: {
+                columnWidth: '.card',
+                gutter: 20
+            },
+            itemSelector: '.card',
+            transitionDuration: 0
+        });
     </script>
 </body>
 
