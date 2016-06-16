@@ -181,8 +181,9 @@
         ],
         "field_bureau_office": {
             "und": [{
-                "tid": "WCB",
-                "value": "Wireline Competition"
+                "tid": "OSP",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/strategic-planning-%26-policy-analysis"
             }]
         },
         "field_map_address_search_": {
