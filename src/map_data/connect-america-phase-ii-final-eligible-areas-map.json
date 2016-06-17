@@ -73,7 +73,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2015-06-10 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -90,9 +90,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "as of Sept. 2014"
-            }]
+            
         },
         "field_featured": [
 
@@ -130,7 +128,7 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
+                "height": "646px",
                 "width": "100%"
             }]
         },
