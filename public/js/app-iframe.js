@@ -15,7 +15,7 @@ function iframeSetup() {
 
 $(document).ready(function() {
 
-    var url = "/api.json";
+    var url = "/api/raw.json";
     $.ajax(url, {
         type: "GET",
         url: url,
