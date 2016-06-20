@@ -6,6 +6,8 @@
     "font-awesome": "~4.5.0",
     "bootstrap": "~3.3.6",
     "imagesloaded": "^4.1.0",
-    "isotope": "^3.0.1"
+    "isotope": "^3.0.1",
+    "mustache.js": "mustache#^2.2.1",
+    "handlebars": "^4.0.5"
   }
 }

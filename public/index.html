@@ -123,35 +123,80 @@
                                 <a class="navbar-about" href="about.html">About</a>
                             </div>
                         </div>
-                        <div class="gallery-filters row">
-                            <div class="gallery__numResults">Showing: 0 maps</div>
-                            <div class="gallery__filterOpts">
-                                <div class="map-status btn-group btn-group-sm" role="toolbar" aria-controls="map-list-holder" aria-label="Map view options">
-                                    <button type="button" class="btn btn-default" data-filter="data-all">All</button>
-                                    <button type="button" class="btn btn-default active" data-filter="data-live">Current</button>
-                                    <button type="button" class="btn btn-default" data-filter="data-featured">Featured</button>
-                                    <button type="button" class="btn btn-default" data-filter="data-archived">Archive</button>
-                                </div>
-                                <div class="form-inline">
-                                    <label class="control-label" for="sel-filter">Bureau:</label>
-                                    <select id="sel-filter" class="form-control form-control-width-sm">
-                                        <option value="all">All Bureaus</option>
-                                    </select>
-                                    <label class="control-label" for="sel-sort">Sort:</label>
-                                    <select id="sel-sort" class="form-control form-control-width-sm">
-                                        <option value="dateDesc" selected>Newest</option>
-                                        <option value="dateAsc">Oldest</option>
-                                        <option value="titleAsc">Title (A-Z)</option>
-                                        <option value="titleDesc">Title (Z-A)</option>
-                                    </select>
-                                    <button class="btn-resetFilters btn-link" type="button">Reset Filters</button>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <form class="search input-group">
+                                    <input id="txt-search" type="text" class="form-control" placeholder="Find map...">
+                                    <span class="input-group-btn">
+                                    <button id="btn-search" class="btn btn-default" type="button"><span class="icon icon-search"></span></button>
+                                    </span>
+                                </form>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="gallery-filters row">
+                                    <div class="gallery__filterOpts pull-right">
+                                        <div class="map-status btn-group btn-group-sm" role="toolbar" aria-controls="map-list-holder" aria-label="Map view options">
+                                            <button type="button" class="btn btn-default" data-filter="all">All</button>
+                                            <button type="button" class="btn btn-default active" data-filter="active">Current</button>
+                                            <button type="button" class="btn btn-default" data-filter="feature">Featured</button>
+                                            <button type="button" class="btn btn-default" data-filter="archive">Archive</button>
+                                        </div>
+                                        <div class="form-inline">
+                                            <label class="control-label" for="sel-filter">Bureau:</label>
+                                            <select id="sel-filter" class="form-control form-control-width-sm">
+                                                <option value="all">All Bureaus</option>
+                                            </select>
+                                            <label class="control-label" for="sel-sort">Sort:</label>
+                                            <select id="sel-sort" class="form-control form-control-width-sm">
+                                                <option value="dateDesc" selected>Newest</option>
+                                                <option value="dateAsc">Oldest</option>
+                                                <option value="titleAsc">Title (A-Z)</option>
+                                                <option value="titleDesc">Title (Z-A)</option>
+                                            </select>
+                                            <button class="btn-resetFilters btn-link" type="button">Reset Filters</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="alert-noResults h4 hide" role="alert">
                             The selected filters did not match any maps. Please revise your selections and try again.
                         </div>
+                        <div class="gallery__numResults">Showing: 0 maps</div>
                         <ul id="map-list-holder" class="map-cards list-unstyled"></ul>
+                        <script id="card-template" type="text/x-handlebars-template">
+                            {{#each cards}}
+                            <li class="card">
+                                <div class="mapThumb-btns">
+                                    <a class="btn btn-xs btn-default" href="{{ map_id }}">
+                                        <span class="sr-only">View map</span>
+                                        <span class="icon icon-external-link-square"></span>
+                                    </a>
+                                </div>
+                                {{#if status.feature}}
+                                <div class="ribbon"><span>Featured</span></div>
+                                {{/if}} {{#isIframe map_type}}
+                                <iframe class="map-iframe" src="{{map_id}}/embed/#{{init.zoom}}/40.65/-102.13/zoom" title="{{map_title}}"></iframe>
+                                {{else}}
+                                <div class="thumbnail img-responsive">
+                                    <div style="background-image: url({{ url.thumb }})" title="{{ map_title }}"></div>
+                                </div>
+                                {{/isIframe}}
+                                <p class="card__title text-overflow"><a href="{{map_id}}"><span>{{map_title}}</span></a></p>
+                                <div class="card__meta">
+                                    <div class="pull-left bureau-abbr">{{meta.bureau.id}}</div>
+                                    <div class="pull-right data-date">{{date.reviewed}}</div>
+                                </div>
+                                <div class="card__body" aria-hidden="true" role="region" style="display: none;">
+                                <p class="card__subTitle text-overflow">{{map_subtitle}}</p>
+                                    <div class="card__desc">{{{map_desc}}}</div>
+                                    <a class="link-viewMore" href="{{map_id}}">View more…</a></div>
+                                <div class="card__footer">
+                                    <button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false"><span class="icon icon-caret-right"></span>View details</button>
+                                </div>
+                            </li>
+                            {{/each}}
+                        </script>
                     </div>
                 </div>
             </main>
@@ -232,14 +277,17 @@
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <!--  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script>
     window.jQuery.ui || document.write('<script src="js/vendor/jquery-ui.min.js"><\/script>')
-    </script>
+    </script> -->
+    <script src="/js/vendor/handlebars.min.js"></script>
     <script src="/js/vendor/isotope.min.js"></script>
     <script src="/js/pg-common.js"></script>
-    <script src="/js/map-getData.js"></script>
-    <script src="/js/map-gallery.js"></script>
+    <!-- <script src="/js/map-getData.js"></script>
+    <script src="/js/map-gallery.js"></script>  -->
+    <script src="/js/getData.js"></script>
+    <script src="/js/gallery.js"></script>
 </body>
 
 </html>
