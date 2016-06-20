@@ -24714,11 +24714,11 @@
 }
 ,{
     "nid": "28002",
-    "title": "Mobile 10 Mbps/768 Kbps Deployment Map",
+    "title": "Fixed 25 Mbps/3 Mbps Broadband Deployment Map",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.kg72le5b/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.xlil4u3c/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -24785,7 +24785,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2015-02-02 11:45:00",
+                "value": "2015-01-29 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
