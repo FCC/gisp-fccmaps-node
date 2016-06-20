@@ -36,7 +36,7 @@ var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseco
 var rawDataJson = [];
 var newDataJson, oldDataJson;
 
-var apiJson = {};
+var apiJson = [];
 
 // **********************************************************
 
@@ -127,21 +127,24 @@ function setData(raw) {
 	
 	console.log('\n\n setData');
 	
+	apiJson = [];  // reset 
+	
 	for (var i = 0; i < raw.length; i++) {
 		
-		console.log('\n setData i : ' + i );
+		//console.log('\n setData i : ' + i );
 		
-		var map_unique, map_type, map_desc, map_title, map_subtitle, map_status;
+		var map_unique, map_type, map_desc, map_title, map_subtitle, map_status, map_rank;
 		var status_archive, status_feature;
 		var config_frame_height, config_frame_width, config_search_address, config_search_coordinate, config_attribution, config_zoom_max, config_zoom_min;
 		var init_zoom, init_lat, init_lon;
 		var meta_bureau, meta_bureau_id, meta_bureau_name, meta_bureau_url;
 		var date_published, date_reviewed, date_created, date_changed, date_display;
-		var url_web, url_thumb;
-		
+		var url_web, url_thumb;		
 		
 		if (raw[i].fields) {
 		
+			map_rank = 1;
+			
 			map_unique = _.get(raw[i], 'fields.field_map_unique.und[0].value').toLowerCase();
 			map_type = _.get(raw[i], 'fields.field_map_type.und[0].value');
 			
@@ -152,7 +155,7 @@ function setData(raw) {
 			status_archive = _.get(raw[i], 'fields.field_archived.und[0].value'); 
 			status_feature = _.get(raw[i], 'fields.field_featured.und[0].value'); 
 								
-			meta_bureau_id = _.get(raw[i], 'fields.field_bureau_office.und[0].tid'); 	
+			meta_bureau_id = _.get(raw[i], 'fields.field_bureau_office.und[0].tid').toLowerCase(); 	
 			meta_bureau_name = _.get(raw[i], 'fields.field_bureau_office.und[0].value'); 
 			meta_bureau_url = _.get(raw[i], 'fields.field_bureau_office.und[0].url'); 
 			
@@ -197,13 +200,17 @@ function setData(raw) {
 			}
 			if (status_feature) {
 				map_status = 'feature';
+				map_rank--;
 			}
 			
 			//console.log('map_unique : ' + map_unique );
 			//console.log('validUnique(map_unique) : ' + validUnique(map_unique) );
 			
+			var mapJson = {};
+			
 			if (validUnique(map_unique)) {				
 
+				/*
 				console.log('map_unique : ' + map_unique );
 				console.log('map_type : ' + map_type );
 				console.log('map_desc : ' + map_desc );
@@ -216,14 +223,19 @@ function setData(raw) {
 				
 				console.log('url_web : ' + url_web );
 				console.log('url_thumb : ' + url_thumb );
+				*/
 			
-				apiJson[map_unique] = {
+				//apiJson[map_unique] = {
+				//mapJson[map_unique] = {				
+				var itemJson = {					
 					'map_id' : map_unique,
 					'map_status' : map_status,
 					'map_type' : map_type,
 					'map_title' : map_title,	
 					'map_subtitle' : map_subtitle,
 					'map_desc' : map_desc,	
+					'map_date' : date_reviewed,	
+					'map_rank' : map_rank,	
 					
 					'status' : {
 						'archive' : status_archive,
@@ -270,13 +282,15 @@ function setData(raw) {
 					}
 				};
 				
+				apiJson.push(itemJson);
+				
 				//console.log('apiJson[map_unique] : ' + JSON.stringify(apiJson[map_unique]) );				
-			}			
-			
+			}	
 			
 		}
 	}	
-	
+		
+	apiJson = _.orderBy(apiJson, ['map_rank', 'map_date', 'map_title'], ['asc', 'desc', 'asc']);
 }
 
 
@@ -284,7 +298,110 @@ function setData(raw) {
 // resp
 
 function getDataAPI(req, res) {
-	res.json(apiJson);
+	
+	//console.time("getDataAPI");
+	//var startTime = process.hrtime(); 
+	
+	var id = req.query.id;
+	
+	var query = req.query.q;	
+	var status = req.query.st;
+	var bureau = req.query.bo; 
+	
+	var order = req.query.o;	
+	
+	//console.log('query : ' + query );	
+	//console.log('order : ' + order );	
+	//console.log('id : ' + id );	
+	//console.log('status : ' + status );	
+	//console.log('bureau : ' + bureau );
+	
+	var outJson = [];
+	
+	if (id) {				
+		var keyJson = _.find(apiJson, {'map_id' : id});		
+		//console.log('keyJson : ' + JSON.stringify(keyJson) );
+		
+		if (keyJson) {
+			outJson.push(keyJson);
+		}	
+	}	
+	else if (query || status || bureau || order) {
+
+		outJson = apiJson;
+		
+		//console.log('filter : ' + JSON.stringify( _.filter(outJson, {'meta' : { 'bureau': { 'id' : bureau }}} ) ) );		
+		
+		// **********************************************************
+		// filter
+		
+		if (query) {
+			query = query.toLowerCase();
+			//console.log('query : ' + query );	
+	
+			outJson = _.filter(outJson, function(item) {	
+				var regex = new RegExp(query,'i');				
+				return regex.test(item.map_title) || regex.test(item.map_subtitle) || regex.test(item.map_desc);				
+			});			
+		}				
+		
+		if (bureau) {
+			bureau = bureau.toLowerCase();
+			//console.log('bureau : ' + bureau );
+			
+			outJson = _.filter(outJson, {'meta' : { 'bureau': { 'id' : bureau }}} ); 
+		}	
+		
+		if (status) {
+			status = status.toLowerCase();
+			//console.log('status : ' + status );
+			
+			if (status != 'all') {			
+				outJson = _.filter(outJson, {'map_status' : status} ); 
+			}
+		}		
+		
+		// **********************************************************
+		//order 
+		if (order) {		
+			//console.log('order : ' + order );
+			
+			var order_arr, order_val, order_type;
+			
+			order_arr = order.split(',');
+			order_val = order_arr[0];
+			//console.log('order_val : ' + order_val );
+			//console.log('order_arr.length : ' + order_arr.length );
+			
+			if (order_arr.length == 2) {
+				order_type = order_arr[1];
+			}
+			else {
+				order_type = 'asc';
+			}
+			//console.log(order_type);
+			
+			if ((order_val == 'title') || (order_val == 'date')) {
+			
+				if ((order_type == 'asc') || (order_type == 'desc')) {
+					outJson = _.orderBy(outJson, ['map_'+order_val, 'map_rank'], [order_type, 'asc']);
+				}
+			}			
+		}
+		else {
+			outJson = _.orderBy(outJson, ['map_rank', 'map_date', 'map_title'], ['asc', 'desc', 'asc']);
+		}
+		
+	}	
+	else {
+		outJson = apiJson;
+	}
+	
+	//var diff = process.hrtime(startTime);	
+	//console.log(diff[0] * 1000000 + diff[1] / 1000)	
+	//console.timeEnd("getDataAPI");	
+		
+	res.json(outJson);
 }
 
 function getRawAPI(req, res) {
