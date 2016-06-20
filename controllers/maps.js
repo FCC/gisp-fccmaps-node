@@ -18,6 +18,7 @@
 var http = require('http');
 var https = require('https');
 var fs = require('fs-extra');
+var _ = require('lodash');
 
 var request = require('request');
 
@@ -32,9 +33,10 @@ var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseco
 
 // **********************************************************
 
-var contentJson = [];
+var rawDataJson = [];
 var newDataJson, oldDataJson;
 
+var apiJson = {};
 
 // **********************************************************
 
@@ -56,7 +58,7 @@ function deployMap(repeat) {
 			});
 			res.on('end', function() {
 		
-				oldDataJson = contentJson;
+				oldDataJson = rawDataJson;
 				
 				var newData = data;
 				newData = newData.replace(/\\n/g, '');
@@ -69,7 +71,10 @@ function deployMap(repeat) {
 				if (JSON.stringify(newDataJson) != JSON.stringify(oldDataJson)) {
 				
 					console.log('newDataJson != oldDataJson');
-					contentJson = newDataJson;
+					rawDataJson = newDataJson;
+					
+					setData(rawDataJson);					
+					
 				}
 				else {
 					console.log('no change - newDataJson == oldDataJson');
@@ -99,11 +104,191 @@ function deployMap(repeat) {
 	}
 }
 
+function validUnique(unique){
+	var val = false;
+	
+	var regex = /^[a-z0-9-]+$/; 
+	
+	if (unique) {		
+		
+		if (regex.test(unique)) {
+	
+			val = true;
+		}
+		else {
+			console.log('unique : ' + unique );
+			console.log('regex.test(unique) : ' + regex.test(unique) );
+		}
+	}
+	return val;
+}
+
+function setData(raw) {
+	
+	console.log('\n\n setData');
+	
+	for (var i = 0; i < raw.length; i++) {
+		
+		console.log('\n setData i : ' + i );
+		
+		var map_unique, map_type, map_desc, map_title, map_subtitle, map_status;
+		var status_archive, status_feature;
+		var config_frame_height, config_frame_width, config_search_address, config_search_coordinate, config_attribution, config_zoom_max, config_zoom_min;
+		var init_zoom, init_lat, init_lon;
+		var meta_bureau, meta_bureau_id, meta_bureau_name, meta_bureau_url;
+		var date_published, date_reviewed, date_created, date_changed, date_display;
+		var url_web, url_thumb;
+		
+		
+		if (raw[i].fields) {
+		
+			map_unique = _.get(raw[i], 'fields.field_map_unique.und[0].value').toLowerCase();
+			map_type = _.get(raw[i], 'fields.field_map_type.und[0].value');
+			
+			map_title = _.get(raw[i], 'title');
+			map_subtitle = _.get(raw[i], 'fields.field_subtitle.und[0].value');
+			map_desc = _.get(raw[i], 'fields.field_description.und[0].safe_value');
+			
+			status_archive = _.get(raw[i], 'fields.field_archived.und[0].value'); 
+			status_feature = _.get(raw[i], 'fields.field_featured.und[0].value'); 
+								
+			meta_bureau_id = _.get(raw[i], 'fields.field_bureau_office.und[0].tid'); 	
+			meta_bureau_name = _.get(raw[i], 'fields.field_bureau_office.und[0].value'); 
+			meta_bureau_url = _.get(raw[i], 'fields.field_bureau_office.und[0].url'); 
+			
+			config_frame_height = _.get(raw[i], 'fields.field_frame_size.und[0].height'); 
+			config_frame_width = _.get(raw[i], 'fields.field_frame_size.und[0].width'); 
+			config_search_address = _.get(raw[i], 'fields.field_map_address_search.und[0].value'); 
+			config_search_coordinate = _.get(raw[i], 'mapOptions.fields.field_map_coordinate_search.und[0].value'); 
+			config_attribution = _.get(raw[i], 'fields.field_map_attribution.und[0].value'); 
+			config_zoom_max = _.get(raw[i], 'fields.field_map_max_zoom.und[0].value'); 
+			config_zoom_min = _.get(raw[i], 'fields.field_map_min_zoom.und[0].value'); 
+			
+			init_zoom = _.get(raw[i], 'fields.field_map_initial_zoom.und[0].value'); 
+			init_lat = _.get(raw[i], 'fields.field_map_latitude.und[0].value'); 
+			init_lon = _.get(raw[i], 'fields.field_map_longitude.und[0].value'); 
+
+			date_display = _.get(raw[i], 'fields.field_map_display_date.und[0].value'); 			
+			date_published = _.get(raw[i], 'fields.field_date.und[0].value');
+			date_reviewed = _.get(raw[i], 'fields.field_date_updated_reviewed.und[0].value');
+			date_created = _.get(raw[i], 'created');
+			date_changed = _.get(raw[i], 'changed');
+			
+			url_web = _.get(raw[i], 'webUrl');
+			url_thumb = _.get(raw[i], 'fields.field_image_thumbnail.und[0].uri');	
+			
+			if (status_archive == 1) {
+				status_archive = true;
+			}
+			else {
+				status_archive = false;
+			}
+			
+			if (status_feature == 1) {
+				status_feature = true;
+			}
+			else {
+				status_feature = false;
+			}
+			
+			map_status = 'active';
+			if (status_archive) {
+				map_status = 'archive';
+			}
+			if (status_feature) {
+				map_status = 'feature';
+			}
+			
+			//console.log('map_unique : ' + map_unique );
+			//console.log('validUnique(map_unique) : ' + validUnique(map_unique) );
+			
+			if (validUnique(map_unique)) {				
+
+				console.log('map_unique : ' + map_unique );
+				console.log('map_type : ' + map_type );
+				console.log('map_desc : ' + map_desc );
+				console.log('map_title : ' + map_title );
+				console.log('map_status : ' + map_status );
+				console.log('status_archive : ' + status_archive );
+				
+				console.log('date_created : ' + date_created );
+				console.log('date_changed : ' + date_changed );
+				
+				console.log('url_web : ' + url_web );
+				console.log('url_thumb : ' + url_thumb );
+			
+				apiJson[map_unique] = {
+					'map_id' : map_unique,
+					'map_status' : map_status,
+					'map_type' : map_type,
+					'map_title' : map_title,	
+					'map_subtitle' : map_subtitle,
+					'map_desc' : map_desc,	
+					
+					'status' : {
+						'archive' : status_archive,
+						'feature' : status_feature
+					},
+					
+					'config' : {
+						'attribution' : config_attribution,
+						'frame' : {
+							'height' : config_frame_height,
+							'width' : config_frame_width
+						},
+						'search' : {
+							'address' : config_search_address,
+							'coordinate' : config_search_coordinate
+						}
+					},
+					
+					'init' : {
+						'zoom' : init_zoom,
+						'lat' : init_lat,
+						'lon' : init_lon
+					},
+					
+					'meta' : {
+						'bureau' : {
+							'id' : meta_bureau_id, 
+							'name' : meta_bureau_name,
+							'url' : meta_bureau_url
+						}
+					},
+					
+					'date' : {
+						'published' : date_published,
+						'reviewed' : date_reviewed,						
+						'created' : date_created,
+						'changed' : date_changed,
+						'display' : date_display
+					},					
+					
+					'url' : {
+						'web' : url_web,
+						'thumb' : url_thumb
+					}
+				};
+				
+				//console.log('apiJson[map_unique] : ' + JSON.stringify(apiJson[map_unique]) );				
+			}			
+			
+			
+		}
+	}	
+	
+}
+
+
 // **********************************************************
 // resp
 
-function getContentAPI(req, res) {
-	res.json(contentJson);
+function getDataAPI(req, res) {
+	res.json(apiJson);
+}
+
+function getRawAPI(req, res) {
+	res.json(rawDataJson);
 }
 
 function pullMap(req, res) {
@@ -124,10 +309,10 @@ function pullMap(req, res) {
 
 function checkMapId(mapId) {
 console.log('check map id ' + mapId);
-	for (var i = 1; i < contentJson.length; i++) {
+	for (var i = 1; i < rawDataJson.length; i++) {
 		var map_unique = '';
-		if (contentJson[i].fields.field_map_unique && contentJson[i].fields.field_map_unique.und && contentJson[i].fields.field_map_unique.und[0].value) {
-			map_unique = contentJson[i].fields.field_map_unique.und[0].value;
+		if (rawDataJson[i].fields.field_map_unique && rawDataJson[i].fields.field_map_unique.und && rawDataJson[i].fields.field_map_unique.und[0].value) {
+			map_unique = rawDataJson[i].fields.field_map_unique.und[0].value;
 		}
 
 		if (map_unique == mapId) {
@@ -141,15 +326,15 @@ console.log('check map id ' + mapId);
 
 function getMapType(mapId) {
 	var map_type = '';
-	for (var i = 1; i < contentJson.length; i++) {
+	for (var i = 1; i < rawDataJson.length; i++) {
 		var map_unique = '';
-		if (contentJson[i].fields.field_map_unique && contentJson[i].fields.field_map_unique.und && contentJson[i].fields.field_map_unique.und[0].value) {
-			map_unique = contentJson[i].fields.field_map_unique.und[0].value;
+		if (rawDataJson[i].fields.field_map_unique && rawDataJson[i].fields.field_map_unique.und && rawDataJson[i].fields.field_map_unique.und[0].value) {
+			map_unique = rawDataJson[i].fields.field_map_unique.und[0].value;
 		}
 
 		if (map_unique == mapId) {
-			if (contentJson[i].fields.field_map_type && contentJson[i].fields.field_map_type.und && contentJson[i].fields.field_map_type.und[0].value) {
-				map_type = contentJson[i].fields.field_map_type.und[0].value;
+			if (rawDataJson[i].fields.field_map_type && rawDataJson[i].fields.field_map_type.und && rawDataJson[i].fields.field_map_type.und[0].value) {
+				map_type = rawDataJson[i].fields.field_map_type.und[0].value;
 			}
 		}
 	}
@@ -158,14 +343,14 @@ function getMapType(mapId) {
 
 function getWebUrl(mapId) {
 	var webUrl = '';
-	for (var i = 1; i < contentJson.length; i++) {
+	for (var i = 1; i < rawDataJson.length; i++) {
 		var map_unique = '';
-		if (contentJson[i].fields.field_map_unique && contentJson[i].fields.field_map_unique.und && contentJson[i].fields.field_map_unique.und[0].value) {
-			map_unique = contentJson[i].fields.field_map_unique.und[0].value;
+		if (rawDataJson[i].fields.field_map_unique && rawDataJson[i].fields.field_map_unique.und && rawDataJson[i].fields.field_map_unique.und[0].value) {
+			map_unique = rawDataJson[i].fields.field_map_unique.und[0].value;
 		}
 		if (map_unique == mapId) {
-			if (contentJson[i].webUrl) {
-				webUrl = contentJson[i].webUrl;
+			if (rawDataJson[i].webUrl) {
+				webUrl = rawDataJson[i].webUrl;
 			}
 		}
 	}
@@ -174,14 +359,14 @@ function getWebUrl(mapId) {
 
 function getThumbUrl(mapId) {
 	var thumbUrl = false;
-	for (var i = 1; i < contentJson.length; i++) {
+	for (var i = 1; i < rawDataJson.length; i++) {
 		var map_unique = '';
-		if (contentJson[i].fields.field_map_unique && contentJson[i].fields.field_map_unique.und && contentJson[i].fields.field_map_unique.und[0].value) {
-			map_unique = contentJson[i].fields.field_map_unique.und[0].value;
+		if (rawDataJson[i].fields.field_map_unique && rawDataJson[i].fields.field_map_unique.und && rawDataJson[i].fields.field_map_unique.und[0].value) {
+			map_unique = rawDataJson[i].fields.field_map_unique.und[0].value;
 		}
 		if (map_unique == mapId) {
-			if (contentJson[i].fields.field_image_thumbnail && contentJson[i].fields.field_image_thumbnail.und && contentJson[i].fields.field_image_thumbnail.und[0].uri) {
-				thumbUrl = contentJson[i].fields.field_image_thumbnail.und[0].uri;
+			if (rawDataJson[i].fields.field_image_thumbnail && rawDataJson[i].fields.field_image_thumbnail.und && rawDataJson[i].fields.field_image_thumbnail.und[0].uri) {
+				thumbUrl = rawDataJson[i].fields.field_image_thumbnail.und[0].uri;
 			}
 		}
 	}
@@ -193,7 +378,8 @@ function getThumbUrl(mapId) {
 // export
 
 module.exports.deployMap = deployMap;
-module.exports.getContentAPI = getContentAPI;
+module.exports.getDataAPI = getDataAPI;
+module.exports.getRawAPI = getRawAPI;
 module.exports.pullMap = pullMap;
 module.exports.checkMapId = checkMapId;
 module.exports.getMapType = getMapType;
