@@ -1,0 +1,203 @@
+{
+    "nid": "28002",
+    "title": "Connectivity and Health: Virginia (Phase I)",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://fcc.github.io/connect2health-map/",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "",
+            "format": "full_html",
+            "safe_value": ""
+        }],
+        "field_description": {
+            "und": [{
+                "value": "",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-connect2health-va-map.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-connect2health-va-map.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": [{
+            "value": "0"
+        }],
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2015-04-10 14:30:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/connect2health-va-map",
+                "title": "Nationwide Mobile Wireless Coverage",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect2health-va-map"
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "1630",
+                "width": "100%"
+            }]
+        },
+        "field_related_links": {
+            
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "OGC",
+                "value": "Office of the General Counsel",
+                "url": "https://www.fcc.gov/general-counsel"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "4" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "38.48" }
+            ]
+        },
+        "field_map_layer": [],
+        "field_map_legend": [],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-97.12" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    }, 
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "Connect2HealthFCC Task Force",
+        "url": "https://www.fcc.gov/tags/connect2healthfcc-task-force"
+    },{
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Health & Medical",
+        "url": "https://www.fcc.gov/tags/health-medical"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}

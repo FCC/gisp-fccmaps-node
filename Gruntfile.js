@@ -160,6 +160,7 @@ module.exports = function(grunt) {
                     './src/map_data/nbm.json',
                     './src/map_data/100pct-overlap-map.json',
                     './src/map_data/connect2healthfcc.json',
+                    './src/map_data/connect2health-va-map.json',
                     './src/map_data/residential-fixed-connections-over-200-kbps.json',
                     './src/map_data/residential-fixed-connections-3-mbps-768-kbps.json',
                     './src/map_data/number-providers-residential-fixed-connections-over-200-kbps.json',
@@ -202,7 +203,9 @@ module.exports = function(grunt) {
                     './src/map_data/study-area-boundaries.json',
                     './src/map_data/frequency-coordination-canada.json',
                     './src/map_data/section-706-fixed-broadband-deployment-map.json',
-                    './src/map_data/oklahoma-enhanced-lifeline-support.json'
+                    './src/map_data/oklahoma-enhanced-lifeline-support.json',
+                    './src/map_data/mobile-10-mbps768-kbps-deployment-map-2015-broadband-progress-report.json',
+                    './src/map_data/fixed-25-mbps3-mbps-broadband-deployment-map-2015-broadband-progress-report.json'
                 ],
                 dest: './public/content.json'
             }           

@@ -14,10 +14,10 @@
         ],
         "field_description": {
             "und": [{
-                "value": "Connect2HealthFCC is exploring the intersection of broadband, advanced technology and health and further charting the broadband future of health care – serving as an umbrella for all FCC health-oriented activities to help enable a healthier America.",
+                "value": "The Mapping Broadband Health in America tool is an interactive map created by the Connect2HealthFCC Task Force. It allows users to visualize, overlay and analyze broadband and health data at the national, state and county levels. By using the mapping tool as a starting point for looking at the broadband and health sectors, you can see the path to a more connected, healthier country.",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "Connect2HealthFCC is exploring the intersection of broadband, advanced technology and health and further charting the broadband future of health care – serving as an umbrella for all FCC health-oriented activities to help enable a healthier America.",
+                "safe_value": "The Mapping Broadband Health in America tool is an interactive map created by the Connect2HealthFCC Task Force. It allows users to visualize, overlay and analyze broadband and health data at the national, state and county levels. By using the mapping tool as a starting point for looking at the broadband and health sectors, you can see the path to a more connected, healthier country.",
                 "safe_summary": ""
             }]
         },
