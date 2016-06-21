@@ -123,14 +123,16 @@
                                 <a class="navbar-about" href="about.html">About</a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="search-filters row">
                             <div class="col-sm-3">
-                                <form class="search input-group">
+                                <div class="search input-group">
                                     <input id="txt-search" type="text" class="form-control" placeholder="Find map...">
                                     <span class="input-group-btn">
                                     <button id="btn-search" class="btn btn-default" type="button"><span class="icon icon-search"></span></button>
                                     </span>
-                                </form>
+                                </div>
+                                    <button id="btn-resetFilters" class="btn-reset btn-link" type="button">Clear all</button>
+
                             </div>
                             <div class="col-sm-9">
                                 <div class="gallery-filters row">
@@ -148,12 +150,11 @@
                                             </select>
                                             <label class="control-label" for="sel-sort">Sort:</label>
                                             <select id="sel-sort" class="form-control form-control-width-sm">
-                                                <option value="dateDesc" selected>Newest</option>
-                                                <option value="dateAsc">Oldest</option>
-                                                <option value="titleAsc">Title (A-Z)</option>
-                                                <option value="titleDesc">Title (Z-A)</option>
-                                            </select>
-                                            <button class="btn-resetFilters btn-link" type="button">Reset Filters</button>
+                                                <option data-value="date,desc" selected>Newest</option>
+                                                <option data-value="date,asc">Oldest</option>
+                                                <option data-value="title,asc">Title (A-Z)</option>
+                                                <option data-value="title,desc">Title (Z-A)</option>
+                                            </select>                                            
                                         </div>
                                     </div>
                                 </div>
@@ -185,10 +186,10 @@
                                 <p class="card__title text-overflow"><a href="{{map_id}}"><span>{{map_title}}</span></a></p>
                                 <div class="card__meta">
                                     <div class="pull-left bureau-abbr">{{meta.bureau.id}}</div>
-                                    <div class="pull-right data-date">{{date.reviewed}}</div>
+                                    <div class="pull-right data-date">{{{formatDate date.reviewed}}}</div>
                                 </div>
                                 <div class="card__body" aria-hidden="true" role="region" style="display: none;">
-                                <p class="card__subTitle text-overflow">{{map_subtitle}}</p>
+                                    <p class="card__subTitle text-overflow">{{map_subtitle}}</p>
                                     <div class="card__desc">{{{map_desc}}}</div>
                                     <a class="link-viewMore" href="{{map_id}}">View more…</a></div>
                                 <div class="card__footer">

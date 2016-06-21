@@ -8,19 +8,39 @@
         // bo = bureau
         // id = map ID
         // o = order
-        searchQuery: { 
-        	q: '', 
-	        st: 'active',
-	        bo: ''
-	    },
+        searchQuery: {
+            q: '',
+            st: 'active',
+            bo: '',
+            o: 'date,desc'
+        },
+
         init: function() {
             MapGallery.getData();
+            MapGallery.getBureauFilters();
             MapGallery.initGrid();
 
-            $('#btn-search').on('click', MapGallery.search);
-            $('#sel-filter').on('change', MapGallery.filterByBureau);
-            $('.map-status').on('click', '.btn', MapGallery.filterByStatus);
+            $('.search-filters')
+            	.on('click', '#btn-search', MapGallery.search)
+            	.on('change', '#sel-filter', MapGallery.filterByBureau)
+            	.on('click', '.map-status .btn', MapGallery.filterByStatus)
+            	.on('change', '#sel-sort', MapGallery.sortBy)
+            	.on('click', '#btn-resetFilters', MapGallery.clearFilters);
+            
+            // $('#btn-search').on('click', MapGallery.search);
+            // $('#sel-filter').on('change', MapGallery.filterByBureau);
+            // $('.map-status').on('click', '.btn', MapGallery.filterByStatus);
+            // $('#sel-sort').on('change', MapGallery.sortBy);
+            // $('#btn-resetFilters').on('click', MapGallery.clearFilters);
 
+            $('#txt-search').on('keypress', function(e) {
+                if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13)) {
+                    MapGallery.search(e);
+                    return false;
+                } else {
+                    return true;
+                }
+            });
             // add tabindex to enforce order
             $('#skip-link, header, .nav-secondary').find('a').add('.navbar-about').attr('tabindex', 10);
             $('.gallery__filterOpts').find('button, select, a').add('.gallery__numResults').attr('tabindex', 20);
@@ -59,33 +79,88 @@
             $('#map-list-holder').html('');
             MapGallery.status = $('.map-status').find('.active').attr('data-filter');
 
-            console.log(MapGallery.status);
-
-            $.ajax(MapGallery.searchAPI, {
-                complete: function() {
-                    console.log(this.url);
-                },
+            $.ajax({                
                 data: MapGallery.searchQuery,
                 dataType: 'json',
                 success: function(data) {
                     MapGallery.createMapCard(data);
+
                     MapGallery.updateResults(data.length);
-                    MapGallery.showNumResults();
-                    console.log('numResults = ' + data.length);
+                    MapGallery.showNumResults();                    
                 },
                 type: 'GET',
                 url: MapGallery.searchAPI
             });
         },
 
-        search: function(event) {
+        // populate bureau filter dropdown
+        getBureauFilters: function() {
+            var options = '';
+            var bureaus = [];
+            var bureauFilters = [];
+
+            $.ajax({
+                dataType: 'json',
+                success: createBureauList,
+                type: 'GET',
+                url: MapGallery.searchAPI
+            });
+
+            // create list of unique bureau ID's
+            function uniqueBureau(arr) {
+                var uniqueBureaus = [];
+                var dupes = {};
+
+                $.each(arr, function(i, el) {
+                    if (!dupes[el.id]) {
+                        dupes[el.id] = true;
+                        uniqueBureaus.push(el);
+                    }
+                });
+
+                // sort by alphabetical order
+                function compare(a, b) {
+                    if (a.id < b.id)
+                        return -1;
+                    if (a.id > b.id)
+                        return 1;
+                    return 0;
+                }
+
+                uniqueBureaus.sort(compare);
+
+                return uniqueBureaus;
+            }
+
+            function createBureauList(data) {
+
+                for (var i = 0; i < data.length; i++) {
+                    bureaus.push(data[i].meta.bureau);
+                }
+
+                bureauFilters = uniqueBureau(bureaus);
+
+                for (var k = 0; k < bureauFilters.length; k++) {
+                    options += '<option value="' + bureauFilters[k].id + '">' + bureauFilters[k].name + '</option>';
+                }
+
+                $('#sel-filter')
+                    .find('option:not(:first-child)').remove()
+                    .end()
+                    .find('option:first-child').after(options);
+            }
+
+        },
+
+        search: function(e) {
             MapGallery.searchQuery.q = $('#txt-search').val();
-            event.preventDefault();
+            e.preventDefault();
             MapGallery.toggleAlert('hide');
             MapGallery.getData();
         },
 
         createMapCard: function(mapData) {
+            var date = '';
             var maps = {};
             var source = $('#card-template').html();
 
@@ -94,6 +169,10 @@
                     return options.fn(this);
                 }
                 return options.inverse(this);
+            });
+
+            Handlebars.registerHelper('formatDate', function(dateReviewed, options) {
+                return dateReviewed.split(' ')[0];
             });
 
             var template = Handlebars.compile(source);
@@ -106,6 +185,8 @@
             $('.map-cards').isotope('insert', $(cardList));
             $('.map-cards').isotope('layout');
 
+            // date = $('.data-date').text().split(' ')[0];
+            // $('.data-date').text(date);
         },
 
         updateResults: function(numResults) {
@@ -120,7 +201,7 @@
 
             $('.card').removeAttr('tabindex');
 
-            // for (var i = 0; i < numResults; i++) {
+            // add tabindex to enforce tab order
             $('.map-cards').find('li').each(function(index, element) {
                 idx = idx + 10 + index;
 
@@ -131,8 +212,6 @@
                     .end()
                     .find('.link-viewMore').attr('tabindex', idx + 1);
             });
-
-
         },
 
         toggleAlert: function(isShown) {
@@ -173,39 +252,58 @@
             $('.gallery__numResults').focus();
         },
 
-        sorting: function() {
-            var selectedVal = this.value;
+        sortBy: function() {
+            var selectedVal = $(this).find(':selected').attr('data-value');
 
-            mapGallery.sortList.sortBy = mapGallery.sortOpts[selectedVal].sortBy;
-            mapGallery.sortList.sortAscending = mapGallery.sortOpts[selectedVal].sortAscending;
+            MapGallery.searchQuery.o = selectedVal;
 
-            mapGallery.locationHash();
-
+            // MapGallery.locationHash();
+            MapGallery.getData();
         },
 
         filterByBureau: function() {
             var selectedVal = this.value;
 
-            MapGallery.searchQuery.bo = selectedVal === 'all' ? '*' : '.bureau-' + selectedVal;
+            MapGallery.toggleAlert('hide');
+            MapGallery.searchQuery.bo = selectedVal === 'all' ? '' : selectedVal;
             MapGallery.getData();
         },
 
         filterByStatus: function() {
-            MapGallery.searchQuery.st = $(this).attr('data-filter');
             $('.map-status').find('.active').removeClass('active');
             $(this).addClass('active');
+
+            MapGallery.searchQuery.st = $(this).attr('data-filter');
+            MapGallery.toggleAlert('hide');
+            MapGallery.getData();
+        },
+        clearFilters: function(e) {
+            e.preventDefault();
+
+            MapGallery.toggleAlert('hide');
+
+            MapGallery.searchQuery = {
+                q: '',
+                st: 'active',
+                bo: '',
+                o: 'date,desc'
+            };
+
+            $('#txt-search').val('');
+            $('#sel-filter').find(':first-child').prop('selected', true);
+            $('#sel-sort').find(':first-child').prop('selected', true);
+
+            $('.map-status')
+                .find('.active')
+                .removeClass('active')
+                .end()
+                .find('.btn').eq(1).addClass('active');
+
+            // MapGallery.locationHash();
             MapGallery.getData();
         }
     };
 
-    $(document).ajaxStop(function() {
-
-
-        //$(window).on('hashchange', mapGallery.onHashchange);
-
-        // trigger event handler to init Isotope
-        // mapGallery.onHashchange();
-    });
-
     MapGallery.init();
+
 }(window, document, jQuery));

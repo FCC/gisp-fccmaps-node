@@ -2,9 +2,7 @@
     font-size: 13px;
 } */
 
-.search {
-    
-}
+.search {}
 
 .gallery {
     &-filters {
@@ -19,7 +17,7 @@
         }
         @media screen and (min-width: @screen-sm-min) {
             display: inline-block;
-            margin-bottom: 20px;
+            margin: 15px 0;
         }
     }
     &__filterOpts {
@@ -48,7 +46,7 @@
             }
             @media screen and (min-width: @screen-md-min) {
                 margin-bottom: 0;
-                margin-right: 0; 
+                margin-right: 0;
             }
         }
         & .form-control {
@@ -65,10 +63,10 @@
     }
 }
 
-.btn-resetFilters {
+.btn-reset {
     font-size: 12px;
+    margin-top: 5px;
     padding: 0;
-    vertical-align: middle;
 }
 
 .alert-noResults {
@@ -79,14 +77,11 @@
     clear: both;
     @media (min-width: 768px) {
         width: auto;
-    }
-    .map-cards {
-        margin-top: 20px;
-    }
-    .card {        
+    }    
+    .card {
         margin: 0 0 20px 0;
         // position: relative;
-        width: 350px;        
+        width: 350px;
         @media screen and (min-width: @screen-md-min) {
             width: 300px;
         }
@@ -110,7 +105,7 @@
         max-height: 115px;
         margin-bottom: 5px;
         overflow: hidden;
-        position: relative;        
+        position: relative;
         &:after {
             background: linear-gradient(to bottom, rgba(255, 255, 255, .25), #fff 100%);
             bottom: 0px;
@@ -185,16 +180,15 @@
 }
 
 .ribbon {
+    font-family: Helvetica, Arial, sans-serif;
     position: absolute;
     left: -5px;
-    top: -5px;    
+    top: -5px;
     overflow: hidden;
     width: 75px;
     height: 75px;
     text-align: right;
-    .data-featured & {
-        display: block;
-    }
+    display: block;
     span {
         font-size: 10px;
         font-weight: bold;
@@ -239,5 +233,4 @@
             color: #fff !important;
         }
     }
-
 }
