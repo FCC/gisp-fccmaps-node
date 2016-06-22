@@ -26,7 +26,7 @@
                 .on('click', '.map-status .btn', MapGallery.filterByStatus)
                 .on('change', '#sel-sort', MapGallery.sortBy)
                 .on('click', '#btn-resetFilters', MapGallery.clearFilters);
-            
+
             $('#txt-search').on('keypress', function(e) {
                 if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13)) {
                     MapGallery.search(e);
@@ -52,7 +52,7 @@
                     masonry: {
                         columnWidth: '.card',
                         gutter: 20
-                    },                    
+                    },
                     itemSelector: '.card',
                     transitionDuration: 0
                 })
@@ -143,9 +143,17 @@
         },
 
         search: function(e) {
-            MapGallery.searchQuery.q = $('#txt-search').val();
+            // MapGallery.searchQuery.q = $('#txt-search').val();
+
+            MapGallery.searchQuery = {
+                q: $('#txt-search').val(),
+                st: 'all',
+                o: 'date,desc',
+                bo: ''
+            };
+
             e.preventDefault();
-            MapGallery.toggleAlert('hide');            
+            MapGallery.toggleAlert('hide');
             MapGallery.locationHash();
         },
 
@@ -242,24 +250,24 @@
             var selectedVal = $(this).find(':selected').attr('data-value');
 
             MapGallery.searchQuery.o = selectedVal;
-            MapGallery.locationHash();            
+            MapGallery.locationHash();
         },
 
-        filterByBureau: function() {            
+        filterByBureau: function() {
             var selectedVal = this.value;
 
             MapGallery.toggleAlert('hide');
-            MapGallery.searchQuery.bo = selectedVal === 'all' ? '' : selectedVal;            
-            MapGallery.locationHash();            
+            MapGallery.searchQuery.bo = selectedVal === 'all' ? '' : selectedVal;
+            MapGallery.locationHash();
         },
 
-        filterByStatus: function() {            
+        filterByStatus: function() {
             $('.map-status').find('.active').removeClass('active');
             $(this).addClass('active');
 
             MapGallery.searchQuery.st = $(this).attr('data-filter');
             MapGallery.toggleAlert('hide');
-            MapGallery.locationHash();            
+            MapGallery.locationHash();
         },
 
         clearFilters: function(e) {
@@ -284,7 +292,7 @@
                 .end()
                 .find('.btn').eq(1).addClass('active');
 
-            MapGallery.locationHash();            
+            MapGallery.locationHash();
         },
 
         locationHash: function() {
@@ -297,7 +305,7 @@
             var statusHash = hash.match(/st=([^&]+)/i);
             var bureauHash = hash.match(/bo=([^&]+)/i);
             var sortHash = hash.match(/o=([^&]+)/i);
-            
+
             MapGallery.searchQuery.q = queryHash === null ? MapGallery.searchQuery.q : decodeURIComponent(queryHash[1].replace(/\+/g, '%20'));
             MapGallery.searchQuery.st = statusHash === null ? MapGallery.searchQuery.st : decodeURIComponent(statusHash[1]);
             MapGallery.searchQuery.bo = bureauHash === null ? MapGallery.searchQuery.bo : decodeURIComponent(bureauHash[1]);
@@ -307,17 +315,19 @@
         onHashchange: function() {
             MapGallery.getHashFilter();
             MapGallery.getData();
-
+console.log('onHashchange');
             $(document).ajaxStop(function() {
+            	var boVal = MapGallery.searchQuery.bo === '' ? 'all' : MapGallery.searchQuery.bo;
+
                 var searchVal = MapGallery.searchQuery.q;
                 var statusBtn = '[data-filter="' + MapGallery.searchQuery.st + '"]';
-                var bureauVal = 'option[value="' + MapGallery.searchQuery.bo + '"]';
+                var bureauVal = 'option[value="' + boVal + '"]';
                 var sortVal = 'option[data-value="' + MapGallery.searchQuery.o + '"]';
 
                 $('.map-status')
                     .find('.active')
                     .removeClass('active');
-                
+
                 $('#txt-search').val(searchVal);
                 $(statusBtn).addClass('active');
                 $('#sel-filter').find(bureauVal).prop('selected', true);
