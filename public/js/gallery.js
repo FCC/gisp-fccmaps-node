@@ -53,10 +53,9 @@
                         columnWidth: '.card',
                         gutter: 20
                     },
-                    itemSelector: '.card',
-                    transitionDuration: 0
+                    itemSelector: '.card'
                 })
-                .isotope('insert', window.allMaps)
+                // .isotope('insert', window.allMaps)
                 .on('click', '.btn-details', MapGallery.showCardDetails);
 
             $grid.imagesLoaded().progress(function() {
@@ -68,7 +67,7 @@
 
             // clear search results
             $('#map-list-holder').html('');
-            MapGallery.status = $('.map-status').find('.active').attr('data-filter');
+            // MapGallery.status = $('.map-status').find('.active').attr('data-filter');
             console.log(MapGallery.searchQuery);
             $.ajax({
                 data: MapGallery.searchQuery,
@@ -157,8 +156,7 @@
             MapGallery.locationHash();
         },
 
-        createMapCard: function(mapData) {
-            var date = '';
+        createMapCard: function(mapData) {            
             var maps = {};
             var source = $('#card-template').html();
 
@@ -180,7 +178,7 @@
 
             // update isotope with new cards
             $('.map-cards').isotope('insert', $(cardList));
-            $('.map-cards').isotope('layout');
+            // $('.map-cards').isotope('layout');
         },
 
         updateResults: function(numResults) {
@@ -226,7 +224,8 @@
 
                 thisCardBody.slideUp(function() {
                     thisCardBody.attr('aria-hidden', true);
-                    thisCardBody.css('z-index', '');
+                    // thisCard.css('z-index', '');
+                    // thisCardBody.css('z-index', '');
                     $('.map-cards').isotope('layout');
                 });
             } else {
@@ -234,10 +233,14 @@
                     .html('<span class="icon icon-caret-down"></span>Hide details')
                     .attr('aria-expanded', true);
 
-                thisCardBody.slideDown(function() {
-                    thisCardBody.attr('aria-hidden', false);
-                    thisCardBody.css('z-index', 2);
-                    $('.map-cards').isotope('layout');
+                thisCardBody.slideDown(
+                	{
+                		start: function() {
+		                    thisCardBody.attr('aria-hidden', false);
+		                    // thisCard.css('z-index', 999);
+		                    // thisCardBody.css('z-index', 999);
+		                    $('.map-cards').isotope('layout');
+		                }
                 });
             }
         },
@@ -315,7 +318,7 @@
         onHashchange: function() {
             MapGallery.getHashFilter();
             MapGallery.getData();
-console.log('onHashchange');
+
             $(document).ajaxStop(function() {
             	var boVal = MapGallery.searchQuery.bo === '' ? 'all' : MapGallery.searchQuery.bo;
 
