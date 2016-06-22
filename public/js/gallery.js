@@ -52,13 +52,7 @@
                     masonry: {
                         columnWidth: '.card',
                         gutter: 20
-                    },
-                    getSortData: {
-                        date: function(itemElem) {
-                            return Date.parse($(itemElem).find('.data-date').text());
-                        },
-                        cardTitle: '.card__title'
-                    },
+                    },                    
                     itemSelector: '.card',
                     transitionDuration: 0
                 })
@@ -259,8 +253,7 @@
             MapGallery.locationHash();            
         },
 
-        filterByStatus: function() {
-            console.log('filterByStatus');
+        filterByStatus: function() {            
             $('.map-status').find('.active').removeClass('active');
             $(this).addClass('active');
 
@@ -305,10 +298,10 @@
             var bureauHash = hash.match(/bo=([^&]+)/i);
             var sortHash = hash.match(/o=([^&]+)/i);
             
-            MapGallery.searchQuery.q = queryHash === null ? MapGallery.searchQuery.q : queryHash[1];
-            MapGallery.searchQuery.st = statusHash === null ? MapGallery.searchQuery.st : statusHash[1];
-            MapGallery.searchQuery.bo = bureauHash === null ? MapGallery.searchQuery.bo : bureauHash[1];
-            MapGallery.searchQuery.o = sortHash === null ? MapGallery.searchQuery.o : sortHash[1];
+            MapGallery.searchQuery.q = queryHash === null ? MapGallery.searchQuery.q : decodeURIComponent(queryHash[1].replace(/\+/g, '%20'));
+            MapGallery.searchQuery.st = statusHash === null ? MapGallery.searchQuery.st : decodeURIComponent(statusHash[1]);
+            MapGallery.searchQuery.bo = bureauHash === null ? MapGallery.searchQuery.bo : decodeURIComponent(bureauHash[1]);
+            MapGallery.searchQuery.o = sortHash === null ? MapGallery.searchQuery.o : decodeURIComponent(sortHash[1]);
         },
 
         onHashchange: function() {
