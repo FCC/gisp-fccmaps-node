@@ -1,4 +1,4 @@
-(function(window, document, $) {
+(function(window, document, $, Handlebars) {
     'use strict';
 
     var MapGallery = {
@@ -109,10 +109,12 @@
 
                 // sort by alphabetical order
                 function compare(a, b) {
-                    if (a.id < b.id)
-                        return -1;
-                    if (a.id > b.id)
+                    if (a.id < b.id) {
+                        return -1; 
+                    }
+                    if (a.id > b.id) {
                         return 1;
+                    }
                     return 0;
                 }
 
@@ -156,9 +158,10 @@
             MapGallery.locationHash();
         },
 
-        createMapCard: function(mapData) {            
+        createMapCard: function(mapData) {
             var maps = {};
             var source = $('#card-template').html();
+            var template, cardList;
 
             Handlebars.registerHelper('isIframe', function(map_type, options) {
                 if (map_type === 'layers') {
@@ -167,18 +170,20 @@
                 return options.inverse(this);
             });
 
-            Handlebars.registerHelper('formatDate', function(dateReviewed, options) {
+            Handlebars.registerHelper('formatDate', function(dateReviewed) {
                 return dateReviewed.split(' ')[0];
             });
 
-            var template = Handlebars.compile(source);
+            template = Handlebars.compile(source);
 
             maps.cards = mapData;
-            var cardList = template(maps);
+            cardList = template(maps);
 
             // update isotope with new cards
-            $('.map-cards').isotope('insert', $(cardList));
-            // $('.map-cards').isotope('layout');
+            $('.map-cards')
+            	.isotope('insert', $(cardList))
+                .isotope('layout');
+
         },
 
         updateResults: function(numResults) {
@@ -224,8 +229,6 @@
 
                 thisCardBody.slideUp(function() {
                     thisCardBody.attr('aria-hidden', true);
-                    // thisCard.css('z-index', '');
-                    // thisCardBody.css('z-index', '');
                     $('.map-cards').isotope('layout');
                 });
             } else {
@@ -233,14 +236,11 @@
                     .html('<span class="icon icon-caret-down"></span>Hide details')
                     .attr('aria-expanded', true);
 
-                thisCardBody.slideDown(
-                	{
-                		start: function() {
-		                    thisCardBody.attr('aria-hidden', false);
-		                    // thisCard.css('z-index', 999);
-		                    // thisCardBody.css('z-index', 999);
-		                    $('.map-cards').isotope('layout');
-		                }
+                thisCardBody.slideDown({
+                    start: function() {
+                        thisCardBody.attr('aria-hidden', false);
+                        $('.map-cards').isotope('layout');
+                    }
                 });
             }
         },
@@ -320,7 +320,7 @@
             MapGallery.getData();
 
             $(document).ajaxStop(function() {
-            	var boVal = MapGallery.searchQuery.bo === '' ? 'all' : MapGallery.searchQuery.bo;
+                var boVal = MapGallery.searchQuery.bo === '' ? 'all' : MapGallery.searchQuery.bo;
 
                 var searchVal = MapGallery.searchQuery.q;
                 var statusBtn = '[data-filter="' + MapGallery.searchQuery.st + '"]';
@@ -341,4 +341,4 @@
 
     MapGallery.init();
 
-}(window, document, jQuery));
+}(window, document, jQuery, Handlebars));
