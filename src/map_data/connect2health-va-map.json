@@ -1,25 +1,25 @@
 {
     "nid": "28002",
-    "title": "Section 706 Mobile Deployment Map",
+    "title": "Connectivity and Health: Virginia (Phase I)",
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Section-706-Mobile-Data-Deployment-Map/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/35/-97",
+    "webUrl": "https://fcc.github.io/connect2health-map/",
     "tnid": "0",
     "body": null,
     "vid": "28434",
     "fields": {
         "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "value": "",
             "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+            "safe_value": ""
         }],
         "field_description": {
             "und": [{
-                "value": "This map was created by the FCC to illustrate the Commission’s mobile deployment results found in the Eighth Broadband Progress Report, which uses data underlying the National Broadband Map, as of June 30, 2011. It shows census block areas of the United States with access to mobile services of at least 3 Mbps download and 768 kbps upload, and with and without services of at least 768 kbps download and 200 kbps upload. For more information on the Eighth Broadband Progress Report, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/</a>.",
+                "value": "",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "This map was created by the FCC to illustrate the Commission’s mobile deployment results found in the Eighth Broadband Progress Report, which uses data underlying the National Broadband Map, as of June 30, 2011. It shows census block areas of the United States with access to mobile services of at least 3 Mbps download and 768 kbps upload, and with and without services of at least 768 kbps download and 200 kbps upload. For more information on the Eighth Broadband Progress Report, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/</a>.",
+                "safe_value": "",
                 "safe_summary": ""
             }]
         },
@@ -27,8 +27,8 @@
             "und": [{
                 "fid": "3477",
                 "uid": "1798",
-                "filename": "thumb-section-706-mobile-deployment-map.png",
-                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-section-706-mobile-deployment-map.png",
+                "filename": "thumb-connect2health-va-map.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-connect2health-va-map.png",
                 "filemime": "image/png",
                 "filesize": "3695",
                 "status": "1",
@@ -73,7 +73,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2012-08-21 11:45:00",
+                "value": "2015-04-10 14:30:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -90,9 +90,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": ""
-            }]
+            
         },
         "field_featured": [
 
@@ -105,8 +103,8 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://www.fcc.gov/maps/section-706-mobile-deployment-map",
-                "title": "Section 706 Mobile Deployment Map",
+                "url": "https://www.fcc.gov/connect2health-va-map",
+                "title": "Nationwide Mobile Wireless Coverage",
                 "attributes": [
 
                 ]
@@ -114,7 +112,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "section-706-mobile-deployment-map"
+                "value": "connect2health-va-map"
             }]
         },
         "field_map_repository": [
@@ -130,18 +128,18 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
+                "height": "1630",
                 "width": "100%"
             }]
         },
         "field_related_links": {
-            "und": []
+            
         },
         "field_bureau_office": {
             "und": [{
-                "tid": "WCB",
-                "value": "Wireline Competition",
-                "url": "https://www.fcc.gov/wireline-competition"
+                "tid": "OGC",
+                "value": "Office of the General Counsel",
+                "url": "https://www.fcc.gov/general-counsel"
             }]
         },
         "field_map_address_search_": [
@@ -160,19 +158,19 @@
         ],
         "field_map_initial_zoom": {
             "und": [
-                { "value": "3" }
+                { "value": "4" }
             ]
         },
         "field_map_latitude": {
             "und": [
-                { "value": "50" }
+                { "value": "38.48" }
             ]
         },
         "field_map_layer": [],
         "field_map_legend": [],
         "field_map_longitude": {
             "und": [
-                { "value": "-105" }
+                { "value": "-97.12" }
             ]
         },
         "field_map_max_zoom": [
@@ -181,23 +179,13 @@
         "field_map_min_zoom": [
 
         ]
-    },
-    "taxonomy": [{ 
+    }, 
+    "taxonomy": [{
         "tid": "956",
         "vid": "1",
-        "name": "Broadband Progress Report",
-        "url": "https://www.fcc.gov/tags/broadband-progress-report"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Broadband Progress Reports",
-        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Broadband, Internet & IP",
-        "url": "https://www.fcc.gov/tags/broadband-internet-ip"
-    }, {
+        "name": "Connect2HealthFCC Task Force",
+        "url": "https://www.fcc.gov/tags/connect2healthfcc-task-force"
+    },{
         "tid": "956",
         "vid": "1",
         "name": "Data, Maps, Reports",
@@ -205,13 +193,13 @@
     }, { 
         "tid": "966",
         "vid": "1",
-        "name": "Maps",
-        "url": "https://www.fcc.gov/tags/maps"
+        "name": "Health & Medical",
+        "url": "https://www.fcc.gov/tags/health-medical"
     }, { 
         "tid": "966",
         "vid": "1",
-        "name": "Reports",
-        "url": "https://www.fcc.gov/tags/reports"
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

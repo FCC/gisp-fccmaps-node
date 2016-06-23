@@ -27,6 +27,7 @@ var morgan = require('morgan');
 var cors = require('cors');
 var bodyparser = require('body-parser');
 var request = require('request');
+var _ = require('lodash');
 
 var package_json = require('./package.json');
 var maps = require('./controllers/maps.js');
@@ -45,7 +46,7 @@ var configEnv = require('./config/env.json');
 
 var NODE_ENV = process.env.NODE_ENV;
 var NODE_PORT =  process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
-var CONTENT_API = configEnv[NODE_ENV].CONTENT_API || '/api.json';
+var CONTENT_API = configEnv[NODE_ENV].CONTENT_API || '/api/raw.json';
 var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
 var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
 
@@ -124,11 +125,24 @@ function checkAllowed(req, res, next) {
 // route
 
 //api routing
+app.get('/api/raw', function(req, res, next){
+	maps.getRawAPI(req, res, next);
+});
+app.get('/api/raw.json', function(req, res, next){
+	maps.getRawAPI(req, res, next);
+});
+
 app.get('/api', function(req, res, next){
-	maps.getContentAPI(req, res, next);
+	maps.getDataAPI(req, res, next);
 });
 app.get('/api.json', function(req, res, next){
-	maps.getContentAPI(req, res, next);
+	maps.getDataAPI(req, res, next);
+});
+app.get('/api/data.json', function(req, res, next){
+	maps.getDataAPI(req, res, next);
+});
+app.get('/api/content.json', function(req, res, next){
+	maps.getDataAPI(req, res, next);
 });
 
 //admin routing

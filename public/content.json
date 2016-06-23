@@ -292,31 +292,32 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
+        "tid": "1566",
         "vid": "1",
-        "name": "Maps"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
     }, {
         "tid": "1567",
         "vid": "1",
-        "name": "Connect America Fund (High Cost) - Price Cap Carriers"
+        "name": "Connect America Fund (High Cost) - Price Cap Carriers",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost-price-cap-carriers"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "1565",
         "vid": "1",
-        "name": "Universal Service"
-    }, {
-        "tid": "1566",
-        "vid": "1",
-        "name": "Connect America Fund (High Cost)"
-    }, {
-        "tid": "1565",
-        "vid": "1",
-        "name": "Universal Service"
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }
@@ -338,10 +339,10 @@
         }],
         "field_description": {
             "und": [{
-                "value": "<p><b>Note:</b> This map is no longer being updated. We plan to release a new map based on the FY16 E-rate program data collected by USAC. Please email <a href=\"mailto:E-rateDataTeam@fcc.gov\">E-rateDataTeam@fcc.gov</a> with any questions. Thank you for your patience.</p><b>School Districts</b><p>This is an interactive map that shows, by School District, the percent of public schools with fiber connectivity sized by number of students. It does not show what percent of schools within a district actually subscribe to high-speed fiber. The universe of public schools is defined using 2011-2012 NCES Public School Data available at <a href=\"http://nces.ed.gov/ccd/pubschuniv.asp\">http://nces.ed.gov/ccd/pubschuniv.asp</a>.</p><p>Connectivity status is compiled from data from the National Broadband Map (June 2013) and data submitted to the FCC in WC Docket Number 13-184 and posted at <a href=\"http://www.fcc.gov/encyclopedia/E-rate-modernization-data\">http://www.fcc.gov/encyclopedia/E-rate-modernization-data</a>. Fiber connectivity is determined from either notation of “fiber” as the specific connection technology (at any speed) or a connection speed of at least 100 Mbps.</p><b>About</b><p>When Congress passed the Telecommunications Act of 1996 authorizing the creation of the E-rate program (more formally known as the schools and libraries universal service support mechanism), only 14 percent of classrooms had access to the Internet, and most schools with access (74 percent) used dial-up connections. Today, virtually all schools and libraries have Internet access.</p><p>But learning is changing. Teachers and students want to use innovative digital learning technologies in the classroom and the Internet connects library patrons to information, jobs, and promotes life-long learning. Demand for bandwidth in schools and libraries continues to increase. In an FCC survey of E-rate recipients, nearly half of respondents reported lower speed Internet connectivity than the average American home - despite having, on average, 200 times as many users.</p><p>The FCC began updating E-rate in 2010, and on July 23, 2014, released the E-rate Modernization Order, expanding wi-fi networks in schools and libraries across America while ensuring support continues to be available for broadband connectivity to schools and libraries. In the Further Notice released in conjunction with the E-Rate Modernization Order, the Commission sought input on the program’s long-term, overall funding needs, particularly in light of general industry trends in broadband pricing and the likelihood that demand for category one services providing connectivity to school and library premises will continue to grow.</p><p>Consistent with that effort, and to better understand the current state of fiber connectivity, the FCC seeks further community engagement to refine this map as well as a companion map on connectivity to libraries, which can be found by selecting the Libraries tab on the map selector above.</p><p>We recognize that the current version of this map only identifies connectivity to public school districts. We intend to augment it with information about fiber connectivity to private and parochial schools that are eligible for E-rate support.</p><b>Community Engagement</b><p>Can you help improve the data that drives this map? The Commission has asked for comment to help identify the gap between schools’ and libraries’ current connectivity and the specific connectivity targets the Commission adopted in its E-Rate Modernization Order. Can you help by providing a district or school name that is not identified? A school’s NCES ID (found at <a href=\"http://nces.ed.gov/ccd/schoolsearch/\">http://nces.ed.gov/ccd/schoolsearch/</a>)? An individual school’s connection technology (e.g., fiber, cable, T-1, wireless) or advertised download speed?</p>",
+                "value": "<p><b>Note:</b> This map is no longer being updated. We plan to release a new map based on the FY16 E-rate program data collected by USAC. Please email <a href=\"mailto:E-rateDataTeam@fcc.gov\">E-rateDataTeam@fcc.gov</a> with any questions. Thank you for your patience.</p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p><b>Note:</b> This map is no longer being updated. We plan to release a new map based on the FY16 E-rate program data collected by USAC. Please email <a href=\"mailto:E-rateDataTeam@fcc.gov\">E-rateDataTeam@fcc.gov</a> with any questions. Thank you for your patience.</p><b>School Districts</b><p>This is an interactive map that shows, by School District, the percent of public schools with fiber connectivity sized by number of students. It does not show what percent of schools within a district actually subscribe to high-speed fiber. The universe of public schools is defined using 2011-2012 NCES Public School Data available at <a href=\"http://nces.ed.gov/ccd/pubschuniv.asp\">http://nces.ed.gov/ccd/pubschuniv.asp</a>.</p><p>Connectivity status is compiled from data from the National Broadband Map (June 2013) and data submitted to the FCC in WC Docket Number 13-184 and posted at <a href=\"http://www.fcc.gov/encyclopedia/E-rate-modernization-data\">http://www.fcc.gov/encyclopedia/E-rate-modernization-data</a>. Fiber connectivity is determined from either notation of “fiber” as the specific connection technology (at any speed) or a connection speed of at least 100 Mbps.</p><b>About</b><p>When Congress passed the Telecommunications Act of 1996 authorizing the creation of the E-rate program (more formally known as the schools and libraries universal service support mechanism), only 14 percent of classrooms had access to the Internet, and most schools with access (74 percent) used dial-up connections. Today, virtually all schools and libraries have Internet access.</p><p>But learning is changing. Teachers and students want to use innovative digital learning technologies in the classroom and the Internet connects library patrons to information, jobs, and promotes life-long learning. Demand for bandwidth in schools and libraries continues to increase. In an FCC survey of E-rate recipients, nearly half of respondents reported lower speed Internet connectivity than the average American home - despite having, on average, 200 times as many users.</p><p>The FCC began updating E-rate in 2010, and on July 23, 2014, released the E-rate Modernization Order, expanding wi-fi networks in schools and libraries across America while ensuring support continues to be available for broadband connectivity to schools and libraries. In the Further Notice released in conjunction with the E-Rate Modernization Order, the Commission sought input on the program’s long-term, overall funding needs, particularly in light of general industry trends in broadband pricing and the likelihood that demand for category one services providing connectivity to school and library premises will continue to grow.</p><p>Consistent with that effort, and to better understand the current state of fiber connectivity, the FCC seeks further community engagement to refine this map as well as a companion map on connectivity to libraries, which can be found by selecting the Libraries tab on the map selector above.</p><p>We recognize that the current version of this map only identifies connectivity to public school districts. We intend to augment it with information about fiber connectivity to private and parochial schools that are eligible for E-rate support.</p><b>Community Engagement</b><p>Can you help improve the data that drives this map? The Commission has asked for comment to help identify the gap between schools’ and libraries’ current connectivity and the specific connectivity targets the Commission adopted in its E-Rate Modernization Order. Can you help by providing a district or school name that is not identified? A school’s NCES ID (found at <a href=\"http://nces.ed.gov/ccd/schoolsearch/\">http://nces.ed.gov/ccd/schoolsearch/</a>)? An individual school’s connection technology (e.g., fiber, cable, T-1, wireless) or advertised download speed?</p>",
+                "safe_value": "<p><b>Note:</b> This map is no longer being updated. We plan to release a new map based on the FY16 E-rate program data collected by USAC. Please email <a href=\"mailto:E-rateDataTeam@fcc.gov\">E-rateDataTeam@fcc.gov</a> with any questions. Thank you for your patience.</p>",
                 "safe_summary": ""
             }]
         },
@@ -393,7 +394,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2015-06-16 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -410,9 +411,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "2016 Broadband Progress Report"
-            }]
+            
         },
         "field_featured": [
 
@@ -446,6 +445,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "1435",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -993,8 +998,14 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "630px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
-            
+
         },
         "field_bureau_office": {
             "und": [{
@@ -1382,7 +1393,7 @@
         "field_map_min_zoom": [
 
         ]
-    }, 
+    },
     "taxonomy": [{
         "tid": "956",
         "vid": "1",
@@ -4018,8 +4029,9 @@
         ],
         "field_bureau_office": {
             "und": [{
-                "tid": "WCB",
-                "value": "Wireline Competition"
+                "tid": "OSP",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/strategic-planning-%26-policy-analysis"
             }]
         },
         "field_map_address_search_": {
@@ -4847,6 +4859,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": [
 
         ],
@@ -4938,10 +4956,10 @@
         ],
         "field_description": {
             "und": [{
-                "value": "Connect2HealthFCC is exploring the intersection of broadband, advanced technology and health and further charting the broadband future of health care – serving as an umbrella for all FCC health-oriented activities to help enable a healthier America.",
+                "value": "The Mapping Broadband Health in America tool is an interactive map created by the Connect2HealthFCC Task Force. It allows users to visualize, overlay and analyze broadband and health data at the national, state and county levels. By using the mapping tool as a starting point for looking at the broadband and health sectors, you can see the path to a more connected, healthier country.",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "Connect2HealthFCC is exploring the intersection of broadband, advanced technology and health and further charting the broadband future of health care – serving as an umbrella for all FCC health-oriented activities to help enable a healthier America.",
+                "safe_value": "The Mapping Broadband Health in America tool is an interactive map created by the Connect2HealthFCC Task Force. It allows users to visualize, overlay and analyze broadband and health data at the national, state and county levels. By using the mapping tool as a starting point for looking at the broadband and health sectors, you can see the path to a more connected, healthier country.",
                 "safe_summary": ""
             }]
         },
@@ -5959,6 +5977,211 @@
     "uri": "http://10.154.68.187/api/content/179638"
 },{
     "nid": "28002",
+    "title": "Connectivity and Health: Virginia (Phase I)",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://fcc.github.io/connect2health-map/",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "",
+            "format": "full_html",
+            "safe_value": ""
+        }],
+        "field_description": {
+            "und": [{
+                "value": "",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-connect2health-va-map.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-connect2health-va-map.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2015-04-10 14:30:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/connect2health-va-map",
+                "title": "Nationwide Mobile Wireless Coverage",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "connect2health-va-map"
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "1630",
+                "width": "100%"
+            }]
+        },
+        "field_related_links": {
+            
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "OGC",
+                "value": "Office of the General Counsel",
+                "url": "https://www.fcc.gov/general-counsel"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "4" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "38.48" }
+            ]
+        },
+        "field_map_layer": [],
+        "field_map_legend": [],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-97.12" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    }, 
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "Connect2HealthFCC Task Force",
+        "url": "https://www.fcc.gov/tags/connect2healthfcc-task-force"
+    },{
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Health & Medical",
+        "url": "https://www.fcc.gov/tags/health-medical"
+    }, { 
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
     "title": "Residential Fixed Connections over 200 kbps per 1,000 Households by Census Tract",
     "created": "2015-10-20",
     "changed": "2015-12-09",
@@ -6030,7 +6253,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-21 14:30:00",
+                "value": "2016-03-30 14:30:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -6083,6 +6306,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -6434,7 +6663,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-21 21:00:00",
+                "value": "2016-03-30 21:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -6487,6 +6716,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -6838,7 +7073,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-21 21:00:00",
+                "value": "2016-03-30 21:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -7175,7 +7410,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/number-providers-residential-fixed-connections-10-1-mbps",
+    "webUrl": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-10-1-mbps",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -7206,7 +7441,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2015-09-01 21:00:00",
+                "value": "2016-03-30 21:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -7238,7 +7473,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/number-providers-residential-fixed-connections-10-1-mbps",
+                "url": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-10-1-mbps",
                 "title": "Number of Fixed Providers of Residential Internet Access Service at least 10/1 Mbps by Census Block",
                 "attributes": [
 
@@ -7665,12 +7900,18 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             
         },
         "field_bureau_office": {
             "und": [{
-                "tid": "WCB",
+                "tid": "WTB",
                 "value": "Wireless Telecommunications",
                 "url": "https://www.fcc.gov/wireless-telecommunications"
             }]
@@ -8178,6 +8419,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -9611,7 +9858,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2014-02-19 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -9664,6 +9911,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -9914,7 +10167,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2013-09-25 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -9967,6 +10220,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -10205,7 +10464,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-05-02 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -10216,12 +10475,7 @@
             "group": "Wireline Competition"
         }],
         "field_date": {
-            "und": [{
-                "value": "2016-05-26 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": [
 
@@ -10263,6 +10517,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -10506,7 +10766,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-02-15 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -10538,7 +10798,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/800-mhz-cellular-a-block-cgsas",
+                "url": "https://www.fcc.gov/maps/800-mhz-cellular-block-cgsas",
                 "title": "800 MHz Cellular – A Block CGSAs",
                 "attributes": [
 
@@ -10547,7 +10807,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "800-mhz-cellular-a-block-cgsas"
+                "value": "800-mhz-cellular-block-cgsas"
             }]
         },
         "field_map_repository": [
@@ -10559,6 +10819,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -10772,6 +11038,218 @@
 }
 ,{
     "nid": "28002",
+    "title": "800 MHz Cellular – B Block CGSAs",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.p3lhm2t9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39/-99.9887",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
+            "format": "full_html",
+            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
+        }],
+        "field_description": {
+            "und": [{
+                "value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the B Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model. Gulf of Mexico Exclusive Zone (GMEZ) not shown. See CFR47 Section 22.950 (c).",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the B Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model. Gulf of Mexico Exclusive Zone (GMEZ) not shown. See CFR47 Section 22.950 (c).",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-800-mhz-cellular-b-block-cgsas.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-800-mhz-cellular-b-block-cgsas.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": {
+            "und": [{
+                "value": "1"
+            }]
+        },
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2012-02-15 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": ""
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/800-mhz-cellular-b-block-cgsas",
+                "title": "800 MHz Cellular – B Block CGSAs",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "800-mhz-cellular-b-block-cgsas"
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
+        "field_related_links": {
+            "und": []
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WTB",
+                "value": "Wireless Telecommunications",
+                "url": "https://www.fcc.gov/wireless-telecommunications"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [],
+        "field_map_legend": [],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    },
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "800 MHz",
+        "url": "https://www.fcc.gov/tags/800-mhz-0"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Cellular",
+        "url": "https://www.fcc.gov/tags/cellular"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Wireless Services",
+        "url": "https://www.fcc.gov/tags/wireless-services"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
     "title": "Broadband Availability Hawaii",
     "created": "2015-10-20",
     "changed": "2015-12-09",
@@ -10898,6 +11376,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -11248,6 +11732,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -11596,6 +12086,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -11887,7 +12383,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-05-27 17:00:00",
+                "value": "2016-06-08 17:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -11985,6 +12481,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": [
@@ -13001,6 +13503,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -13210,6 +13718,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -13457,7 +13971,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2015-06-10 11:45:00",
+                "value": "2015-05-08 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -13510,6 +14024,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -13772,7 +14292,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-02-14 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -13825,6 +14345,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -14087,7 +14613,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-02-14 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -14140,6 +14666,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -14402,7 +14934,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-02-14 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -14455,6 +14987,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -14712,7 +15250,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-08-13 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -14765,6 +15303,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -15022,7 +15566,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2016-05-06 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -15075,6 +15619,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },        
+        "field_frame_size": {
+            "und": [{
+                "height": "640px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -15337,7 +15887,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2015-06-10 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -15354,9 +15904,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "as of Sept. 2014"
-            }]
+            
         },
         "field_featured": [
 
@@ -15390,6 +15938,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "646px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -15549,7 +16103,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -15564,12 +16118,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",
@@ -15652,7 +16206,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2014-09-29 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -15705,6 +16259,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -15864,7 +16424,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -15879,12 +16439,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",
@@ -15967,7 +16527,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2014-02-06 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -15984,9 +16544,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "as of Sept. 2014"
-            }]
+            
         },
         "field_featured": [
 
@@ -16020,6 +16578,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -16282,7 +16846,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2014-02-06 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -16299,9 +16863,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "as of Sept. 2014"
-            }]
+            
         },
         "field_featured": [
 
@@ -16335,6 +16897,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -16488,7 +17056,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2013-09-04 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -16541,6 +17109,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -16700,7 +17274,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -16710,12 +17284,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",
@@ -16798,7 +17372,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-07-26 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -16815,9 +17389,7 @@
 
         ],
         "field_subtitle": {
-            "und": [{
-                "value": "as of Sept. 2014"
-            }]
+
         },
         "field_featured": [
 
@@ -16851,6 +17423,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -17010,7 +17588,7 @@
 
         ]
     },
-    "taxonomy": [{ 
+    "taxonomy": [{
         "tid": "966",
         "vid": "1",
         "name": "Connect America Fund (High Cost)",
@@ -17020,12 +17598,12 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Universal Service ",
@@ -17212,6 +17790,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -17524,7 +18108,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-05-24 14:45:00",
+                "value": "2012-02-14 14:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -17535,12 +18119,7 @@
             "group": "Federal Communications Commission"
         }],
         "field_date": {
-            "und": [{
-                "value": "2016-03-10 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": {
             "und": [{
@@ -17561,7 +18140,7 @@
         },
         "field_map_display_date": {
             "und": [{
-                "value": "2016-03-10 00:00:00",
+                "value": "2012-02-14 00:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "America/New_York",
                 "date_type": "datetime",
@@ -17635,6 +18214,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -17974,7 +18559,7 @@
             "group": "Federal Communications Commission"
         }],
         "field_date": {
-            
+
         },
         "field_search_exclude": {
             "und": [{
@@ -18069,6 +18654,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -18168,7 +18759,7 @@
                 }]
             },
             "field_layer_query_string": {
-                
+
             },
             "field_layer_visibility": {
                 "und": [{
@@ -18226,7 +18817,7 @@
                 "und": [{
                     "value": "access_token=pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg"
                 }]
-            },            
+            },
             "field_layer_visibility": {
                 "und": [{
                     "value": "on"
@@ -18306,219 +18897,13 @@
         "vid": "1",
         "name": "Data, Maps, Reports",
         "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, { 
+    }, {
         "tid": "966",
         "vid": "1",
         "name": "Maps",
         "url": "https://www.fcc.gov/tags/maps"
     }],
     "uri": "http://10.154.68.187/api/content/178553"
-}
-,{
-    "nid": "28002",
-    "title": "800 MHz Cellular – B Block CGSAs",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
-    "type": "map",
-    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.p3lhm2t9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39/-99.9887",
-    "tnid": "0",
-    "body": null,
-    "vid": "28434",
-    "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
-        "field_description": {
-            "und": [{
-                "value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the B Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model. Gulf of Mexico Exclusive Zone (GMEZ) not shown. See CFR47 Section 22.950 (c).",
-                "summary": "",
-                "format": "full_html",
-                "safe_value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the B Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model. Gulf of Mexico Exclusive Zone (GMEZ) not shown. See CFR47 Section 22.950 (c).",
-                "safe_summary": ""
-            }]
-        },
-        "field_image_thumbnail": {
-            "und": [{
-                "fid": "3477",
-                "uid": "1798",
-                "filename": "thumb-800-mhz-cellular-b-block-cgsas.png",
-                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-800-mhz-cellular-b-block-cgsas.png",
-                "filemime": "image/png",
-                "filesize": "3695",
-                "status": "1",
-                "timestamp": "1456505550",
-                "type": "image",
-                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
-                "field_file_image_alt_text": [
-
-                ],
-                "field_file_image_title_text": [
-
-                ],
-                "field_caption": [
-
-                ],
-                "field_bo_media": [
-
-                ],
-                "rdf_mapping": [
-
-                ],
-                "metadata": {
-                    "height": 38,
-                    "width": 175
-                },
-                "alt": null,
-                "title": null,
-                "height": "38",
-                "width": "175"
-            }]
-        },
-        "field_link": [
-
-        ],
-        "field_archived": {
-            "und": [{
-                "value": "1"
-            }]
-        },
-        "field_related_content": [
-
-        ],
-        "field_date_updated_reviewed": {
-            "und": [{
-                "value": "2016-01-29 11:45:00",
-                "timezone": "America/New_York",
-                "timezone_db": "UTC",
-                "date_type": "datetime"
-            }]
-        },
-        "og_group_ref": [{
-            "nid": "1639",
-            "group": "Wireline Competition"
-        }],
-        "field_date": [
-
-        ],
-        "field_search_exclude": [
-
-        ],
-        "field_subtitle": {
-            "und": [{
-                "value": ""
-            }]
-        },
-        "field_featured": [
-
-        ],
-        "field_map_display_date": [
-
-        ],
-        "field_map_options": [
-
-        ],
-        "field_map_page_url": {
-            "und": [{
-                "url": "https://www.fcc.gov/maps/800-mhz-cellular-b-block-cgsas",
-                "title": "800 MHz Cellular – B Block CGSAs",
-                "attributes": [
-
-                ]
-            }]
-        },
-        "field_map_unique": {
-            "und": [{
-                "value": "800-mhz-cellular-b-block-cgsas"
-            }]
-        },
-        "field_map_repository": [
-
-        ],
-        "field_map_status": [
-
-        ],
-        "field_map_type": {
-            "und": [{
-                "value": "iframe"
-            }]
-        },
-        "field_related_links": {
-            "und": []
-        },
-        "field_bureau_office": {
-            "und": [{
-                "tid": "WTB",
-                "value": "Wireless Telecommunications",
-                "url": "https://www.fcc.gov/wireless-telecommunications"
-            }]
-        },
-        "field_map_address_search_": [
-
-        ],
-        "field_map_attribution": [
-
-        ],
-        "field_map_basemap": {
-            "und": [
-                { "value": "street" }
-            ]
-        },
-        "field_map_coordinate_search_": [
-
-        ],
-        "field_map_initial_zoom": {
-            "und": [
-                { "value": "3" }
-            ]
-        },
-        "field_map_latitude": {
-            "und": [
-                { "value": "50" }
-            ]
-        },
-        "field_map_layer": [],
-        "field_map_legend": [],
-        "field_map_longitude": {
-            "und": [
-                { "value": "-105" }
-            ]
-        },
-        "field_map_max_zoom": [
-
-        ],
-        "field_map_min_zoom": [
-
-        ]
-    },
-    "taxonomy": [{
-        "tid": "956",
-        "vid": "1",
-        "name": "800 MHz",
-        "url": "https://www.fcc.gov/tags/800-mhz-0"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Cellular",
-        "url": "https://www.fcc.gov/tags/cellular"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Data, Maps, Reports",
-        "url": "https://www.fcc.gov/tags/data-maps-reports"
-    }, {
-        "tid": "966",
-        "vid": "1",
-        "name": "Maps",
-        "url": "https://www.fcc.gov/tags/maps"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Wireless Services",
-        "url": "https://www.fcc.gov/tags/wireless-services"
-    }],
-    "uri": "http://10.154.68.187/api/content/28002"
 }
 ,{
     "nid": "28002",
@@ -18646,6 +19031,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -19026,6 +19417,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -19545,6 +19942,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -19998,6 +20401,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": []
         },
@@ -20325,7 +20734,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2014-02-12 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -20378,6 +20787,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -20619,19 +21034,14 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-05-27 17:00:00",
+                "value": "2016-06-08 17:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
             }]
         },
         "field_date": {
-            "und": [{
-                "value": "2016-05-27 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": {
             "und": [{
@@ -20722,6 +21132,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -21780,6 +22196,12 @@
                 "value": "iframe"
             }]
         },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
+            }]
+        },
         "field_related_links": {
             "und": [{
                 "url": "https://www.fcc.gov/engineering-technology/electromagnetic-compatibility-division/general/frequency-coordination-canada#LineA",
@@ -22733,7 +23155,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-08-21 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -22786,6 +23208,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -23178,6 +23606,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {
@@ -24058,4 +24492,434 @@
         "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/179638"
-}]
+},{
+    "nid": "28002",
+    "title": "Mobile 10 Mbps/768 Kbps Deployment Map",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.kg72le5b/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "",
+            "format": "full_html",
+            "safe_value": ""
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p>This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p>This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-mobile-10-mbps768-kbps-deployment-map-2015-broadband-progress-report.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-mobile-10-mbps768-kbps-deployment-map-2015-broadband-progress-report.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": [{
+            "value": "0"
+        }],
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2015-02-02 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "2015 Broadband Progress Report"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/mobile-10-mbps768-kbps-deployment-map-2015-broadband-progress-report",
+                "title": "Mobile 10 Mbps/768 Kbps Deployment Map",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "mobile-10-mbps768-kbps-deployment-map-2015-broadband-progress-report"
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "500",
+                "width": "100%"
+            }]
+        },
+        "field_related_links": {
+            
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [],
+        "field_map_legend": [],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    }, 
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "Broadband Progress Report",
+        "url": "https://www.fcc.gov/tags/broadband-progress-report"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Broadband Progress Reports",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Broadband, Internet & IP",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+,{
+    "nid": "28002",
+    "title": "Fixed 25 Mbps/3 Mbps Broadband Deployment Map",
+    "created": "2015-10-20",
+    "changed": "2015-12-09",
+    "type": "map",
+    "webUrl": "https://a.tiles.mapbox.com/v3/fcc.xlil4u3c/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
+    "tnid": "0",
+    "body": null,
+    "vid": "28434",
+    "fields": {
+        "field_map_embed_code": [{
+            "value": "",
+            "format": "full_html",
+            "safe_value": ""
+        }],
+        "field_description": {
+            "und": [{
+                "value": "<p>This map illustrates the Commission’s fixed broadband deployment results described in the 2015 Broadband Progress Report; it relies on data from the National Broadband Map, as of December 31, 2013. It shows which areas of the United States have access to fixed broadband services of at least 25 Mbps download and 3 Mbps upload and which do not, breaking out urban and rural areas. The map also outlines Tribal lands. Shift and zoom the map to see county level details. For more information on the data and definitions used in the map or on the 2015 Broadband Progress Report, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2015-broadband-progress-report/\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2015-broadband-progress-report/</a></p>",
+                "summary": "",
+                "format": "full_html",
+                "safe_value": "<p>This map illustrates the Commission’s fixed broadband deployment results described in the 2015 Broadband Progress Report; it relies on data from the National Broadband Map, as of December 31, 2013. It shows which areas of the United States have access to fixed broadband services of at least 25 Mbps download and 3 Mbps upload and which do not, breaking out urban and rural areas. The map also outlines Tribal lands. Shift and zoom the map to see county level details. For more information on the data and definitions used in the map or on the 2015 Broadband Progress Report, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2015-broadband-progress-report/\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2015-broadband-progress-report/</a></p>",
+                "safe_summary": ""
+            }]
+        },
+        "field_image_thumbnail": {
+            "und": [{
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-fixed-25-mbps3-mbps-broadband-deployment-map-2015-broadband-progress-report.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-fixed-25-mbps3-mbps-broadband-deployment-map-2015-broadband-progress-report.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
+            }]
+        },
+        "field_link": [
+
+        ],
+        "field_archived": [{
+            "value": "0"
+        }],
+        "field_related_content": [
+
+        ],
+        "field_date_updated_reviewed": {
+            "und": [{
+                "value": "2015-01-29 11:45:00",
+                "timezone": "America/New_York",
+                "timezone_db": "UTC",
+                "date_type": "datetime"
+            }]
+        },
+        "og_group_ref": [{
+            "nid": "1639",
+            "group": "Wireline Competition"
+        }],
+        "field_date": [
+
+        ],
+        "field_search_exclude": [
+
+        ],
+        "field_subtitle": {
+            "und": [{
+                "value": "2015 Broadband Progress Report"
+            }]
+        },
+        "field_featured": [
+
+        ],
+        "field_map_display_date": [
+
+        ],
+        "field_map_options": [
+
+        ],
+        "field_map_page_url": {
+            "und": [{
+                "url": "https://www.fcc.gov/maps/fixed-25-mbps3-mbps-broadband-deployment-map-2015-broadband-progress-report",
+                "title": "Mobile 10 Mbps/768 Kbps Deployment Map",
+                "attributes": [
+
+                ]
+            }]
+        },
+        "field_map_unique": {
+            "und": [{
+                "value": "fixed-25-mbps3-mbps-broadband-deployment-map-2015-broadband-progress-report"
+            }]
+        },
+        "field_map_repository": [
+
+        ],
+        "field_map_status": [
+
+        ],
+        "field_map_type": {
+            "und": [{
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "500",
+                "width": "100%"
+            }]
+        },
+        "field_related_links": {
+            
+        },
+        "field_bureau_office": {
+            "und": [{
+                "tid": "WCB",
+                "value": "Wireline Competition",
+                "url": "https://www.fcc.gov/wireline-competition"
+            }]
+        },
+        "field_map_address_search_": [
+
+        ],
+        "field_map_attribution": [
+
+        ],
+        "field_map_basemap": {
+            "und": [
+                { "value": "street" }
+            ]
+        },
+        "field_map_coordinate_search_": [
+
+        ],
+        "field_map_initial_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        },
+        "field_map_latitude": {
+            "und": [
+                { "value": "50" }
+            ]
+        },
+        "field_map_layer": [],
+        "field_map_legend": [],
+        "field_map_longitude": {
+            "und": [
+                { "value": "-105" }
+            ]
+        },
+        "field_map_max_zoom": [
+
+        ],
+        "field_map_min_zoom": [
+
+        ]
+    }, 
+    "taxonomy": [{
+        "tid": "956",
+        "vid": "1",
+        "name": "Broadband Progress Report",
+        "url": "https://www.fcc.gov/tags/broadband-progress-report"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Broadband Progress Reports",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Broadband, Internet & IP",
+        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Reports",
+        "url": "https://www.fcc.gov/tags/reports"
+    }],
+    "uri": "http://10.154.68.187/api/content/28002"
+}
+]

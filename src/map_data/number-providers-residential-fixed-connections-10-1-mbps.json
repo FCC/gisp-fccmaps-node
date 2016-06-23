@@ -4,7 +4,7 @@
     "created": "2015-10-20",
     "changed": "2015-12-09",
     "type": "map",
-    "webUrl": "http://10.154.68.187/number-providers-residential-fixed-connections-10-1-mbps",
+    "webUrl": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-10-1-mbps",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -35,7 +35,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2015-09-01 21:00:00",
+                "value": "2016-03-30 21:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -67,7 +67,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/number-providers-residential-fixed-connections-10-1-mbps",
+                "url": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-10-1-mbps",
                 "title": "Number of Fixed Providers of Residential Internet Access Service at least 10/1 Mbps by Census Block",
                 "attributes": [
 

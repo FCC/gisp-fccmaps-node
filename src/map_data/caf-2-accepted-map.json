@@ -287,31 +287,32 @@
         "field_map_min_zoom": [
 
         ]
-    },
+    }, 
     "taxonomy": [{
-        "tid": "966",
+        "tid": "1566",
         "vid": "1",
-        "name": "Maps"
-    }, {
-        "tid": "956",
-        "vid": "1",
-        "name": "Data, Maps, Reports"
+        "name": "Connect America Fund (High Cost)",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost"
     }, {
         "tid": "1567",
         "vid": "1",
-        "name": "Connect America Fund (High Cost) - Price Cap Carriers"
+        "name": "Connect America Fund (High Cost) - Price Cap Carriers",
+        "url": "https://www.fcc.gov/tags/connect-america-fund-high-cost-price-cap-carriers"
+    }, {
+        "tid": "956",
+        "vid": "1",
+        "name": "Data, Maps, Reports",
+        "url": "https://www.fcc.gov/tags/data-maps-reports"
+    }, {
+        "tid": "966",
+        "vid": "1",
+        "name": "Maps",
+        "url": "https://www.fcc.gov/tags/maps"
     }, {
         "tid": "1565",
         "vid": "1",
-        "name": "Universal Service"
-    }, {
-        "tid": "1566",
-        "vid": "1",
-        "name": "Connect America Fund (High Cost)"
-    }, {
-        "tid": "1565",
-        "vid": "1",
-        "name": "Universal Service"
+        "name": "Universal Service",
+        "url": "https://www.fcc.gov/tags/universal-service"
     }],
     "uri": "http://10.154.68.187/api/content/28002"
 }

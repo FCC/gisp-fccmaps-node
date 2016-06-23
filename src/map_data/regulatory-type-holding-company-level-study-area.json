@@ -71,7 +71,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-05-24 14:45:00",
+                "value": "2012-02-14 14:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -82,12 +82,7 @@
             "group": "Federal Communications Commission"
         }],
         "field_date": {
-            "und": [{
-                "value": "2016-03-10 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": {
             "und": [{
@@ -108,7 +103,7 @@
         },
         "field_map_display_date": {
             "und": [{
-                "value": "2016-03-10 00:00:00",
+                "value": "2012-02-14 00:00:00",
                 "timezone": "America/New_York",
                 "timezone_db": "America/New_York",
                 "date_type": "datetime",
@@ -182,6 +177,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {

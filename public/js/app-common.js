@@ -1,4 +1,3 @@
-
 var map;
 var layerList = [];
 var mapLayers = [];
@@ -409,7 +408,15 @@ function getMapInfo() {
     map_info_all.image_thumbnail = image_thumbnail;
 
     //link
-    var link = [];
+    var link = [];   
+
+    //map_frame_size    
+    var map_frame_size = {};
+    if (mapOptions.fields.field_frame_size && mapOptions.fields.field_frame_size.und) {
+        map_frame_size.height = mapOptions.fields.field_frame_size.und[0].height;
+        map_frame_size.width = mapOptions.fields.field_frame_size.und[0].width;        
+    }
+    map_info_all.map_frame_size = map_frame_size;
 
     //map_address_search
     var map_address_search = 'on';
@@ -716,13 +723,13 @@ function updateText() {
             embedLink = map_info_all.webUrl;
             $('.help-block').addClass('hide');
         } else {
-            embedLink = embedLink[0] + 'embed/#' + embedLink[1].slice(0,-1) + '/zoom,search,layers,attr,key';
+            embedLink = embedLink[0] + 'embed/#' + embedLink[1].replace(/\/?$/, '/') + 'zoom,search,layers,attr,key';
             $('.help-block').removeClass('hide');
         }
 
         e.preventDefault();
         $('#linkShare').slideDown();
-        $('#txt-link').val(embedLink).select();        
+        $('#txt-link').val(embedLink).select();
     });
 
     $('a[href="#bookmarkLink"]').click(function(e) {
@@ -745,115 +752,6 @@ function updateText() {
 
 }
 
-
-function updateMapList() {
-    var url = "/api.json";
-    $.ajax(url, {
-        type: "GET",
-        url: url,
-        dataType: "json",
-        success: function(data) {
-            var map_types = [];
-            var urls = [];
-            var titles = [];
-            var subtitles = [];
-            var descriptions = [];
-            var vids = [];
-            var create_tss = [];
-            var zooms = [];
-            var center_lats = [];
-            var center_lons = [];
-            var searches = [];
-            var thumbs = [];
-            var center_lats = [];
-            var center_lons = [];
-
-            for (var i = 1; i < data.length; i++) {
-                var title = '';
-                if (data[i].title) {
-                    title = data[i].title;
-                }
-                //map_type
-                var map_type = '';
-                if (data[i].fields.field_map_type && data[i].fields.field_map_type.und) {
-                    map_type = data[i].fields.field_map_type.und[0].value;
-                }
-                //url
-                var url = '';
-                if (data[i].fields.field_map_page_url && data[i].fields.field_map_page_url.und) {
-                    url = data[i].fields.field_map_page_url.und[0].url;
-                }
-                //image_thumbnail
-                var image_thumbnail = '';
-                if (data[i].fields.field_image_thumbnail && data[i].fields.field_image_thumbnail.und) {
-                    image_thumbnail = data[i].fields.field_image_thumbnail.und[0].uri;
-                }
-                //map_latitude
-                var map_latitude = '0';
-                if (data[i].fields.field_map_latitude && data[i].fields.field_map_latitude.und) {
-                    map_latitude = data[i].fields.field_map_latitude.und[0].value;
-                }
-                //map_longitude
-                var map_longitude = '0';
-                if (data[i].fields.field_map_longitude && data[i].fields.field_map_longitude.und) {
-                    map_longitude = data[i].fields.field_map_longitude.und[0].value;
-                }
-                //map_initial_zoom
-                var map_initial_zoom = '';
-                if (data[i].fields.field_map_initial_zoom && data[i].fields.field_map_initial_zoom.und) {
-                    map_initial_zoom = data[i].fields.field_map_initial_zoom.und[0].value;
-                }
-
-                if (url != "") {
-                    map_types.push(map_type);
-                    urls.push(url);
-                    titles.push(title);
-                    center_lats.push(map_latitude);
-                    center_lons.push(map_longitude);
-                    thumbs.push(image_thumbnail);
-                    zooms.push(map_initial_zoom);
-                }
-            }
-
-            function isJsonString(str) {
-                try {
-                    JSON.parse(str);
-                } catch (e) {
-                    return false;
-                }
-                return true;
-            }
-
-            var map_list_text = "";
-
-            for (var i = 0; i < urls.length; i++) {
-                isMapLayers = map_types[i] === 'layers';
-
-                if (isMapLayers) {
-                    url = urls[i].substr(urls[i].lastIndexOf('/') + 1);
-                    embedLink = url + '/embed/#' + zooms[i] + '/' + center_lats[i] + '/' + center_lons[i] + '/';
-                    url_bookmark = '/' + url + '/#' + zooms[i] + '/' + center_lats[i] + '/' + center_lons[i];
-                    thumbImg = '<iframe width="150" height="125" src="/' + embedLink + '" title="' + url.split('/')[0] + '" name="' + url.split('/')[0] + '" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0"></iframe>';
-                } else {
-                    url = urls[i];
-                    url_bookmark = url;
-                    thumbImg = '<div class="mapThumb"><img src="' + thumbs[i] + '" alt="' + titles[i] + '" class="img-responsive"></div>';
-                }
-
-
-                map_list_text += '<li><a href="' + url_bookmark + '" class="">' +
-                    thumbImg + '</iframe><p>' + titles[i] + '</p></a></li>';
-            }
-
-            $('#ul-map-list').html(map_list_text);
-
-        }
-    });
-
-
-}
-
-
 function getMapOption() {
 
     var mapId = window.location.href.replace(/.*\/\//, '').split('/')[1] || '';
@@ -872,7 +770,3 @@ function getMapOption() {
     }
 
 }
-
-
-
-

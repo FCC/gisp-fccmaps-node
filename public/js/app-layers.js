@@ -191,7 +191,7 @@ function createMap() {
 
 $(document).ready(function() {
 
-    var url = "/api.json";
+    var url = "/api/raw.json";
     $.ajax(url, {
         type: "GET",
         url: url,
@@ -199,8 +199,7 @@ $(document).ready(function() {
         success: function(data) {
             contentJson = data;
             getMapOption();
-            getMapInfo(mapOptions);
-            updateMapList();
+            getMapInfo(mapOptions);            
             updateText();
             createMap();
             createSearchFields();

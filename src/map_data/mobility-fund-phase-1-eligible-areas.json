@@ -73,7 +73,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-05-02 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -84,12 +84,7 @@
             "group": "Wireline Competition"
         }],
         "field_date": {
-            "und": [{
-                "value": "2016-05-26 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": [
 
@@ -131,6 +126,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {

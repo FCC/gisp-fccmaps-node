@@ -1,0 +1,61 @@
+.bureau-cards {
+    h2 {
+        font-size: 18px;
+        margin: 20px 0 10px;
+    }
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .25);        
+        height: 135px;        
+        margin-bottom: 15px;
+        padding: 10px 15px;
+        width: 270px;
+        .card__title {
+            font-weight: normal;            
+        }
+        .card__body {
+            border-top: none;
+            font-size: 13px;            
+            padding: 0;
+        }
+        &:last-child {             
+             text-align: center;
+        }
+    }
+
+}
+
+.card-block {
+    display: inline-block;
+    padding: 15px 0 0;
+    text-align: center;
+    width: 140px;
+    @media screen and (min-width: @screen-md-min) {
+        width: 174px;
+    }
+    
+    p {        
+        margin: 10px 0 10px;
+    }
+}
+
+.circle {    
+    background-color: #13428b;
+    border-radius: 100px;
+    display: inline-block;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    .icon {
+        color: #fff;
+        font-size: 48px;
+        line-height: 100px;
+    }
+}
+
+.promo {
+     background-color: #eee; 
+     text-align: center;
+}

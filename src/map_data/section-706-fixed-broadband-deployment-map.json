@@ -73,7 +73,7 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-01-29 11:45:00",
+                "value": "2012-08-21 11:45:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
@@ -126,6 +126,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620px",
+                "width": "100%"
             }]
         },
         "field_related_links": {

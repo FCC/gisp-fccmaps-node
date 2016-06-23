@@ -1,4 +1,5 @@
 @import "@{bootstrap-path}/less/type.less";
+
 h1,
 h1.page__title,
 .alpha {
@@ -7,6 +8,9 @@ h1.page__title,
     color: #1d2b3e;
     font-size: 3.2142857143em;
     margin: 0.667em 0;
+    @media print {
+        font-size: 24px;
+    }
 }
 
 h1.emphasis {
@@ -99,4 +103,3 @@ h4,
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: normal;
 }
-
