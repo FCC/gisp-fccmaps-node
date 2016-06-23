@@ -10,38 +10,39 @@ GIS Platform Node Webapp
 ```npm install grunt-g```
 
 5. Build client project
-    *   navigate to root directory  
+    *   Navigate to root directory.  
         ```
         cd gisp-fccmaps-node-fork
         ```  
         
-    *   install node modules  
+    *   Install node modules.  
         ```
         npm install
        ```
        
-    *   install client libraries  
+    *   Install client libraries.  
         ```
         bower install
         ```
         
-    *   build the app (HTML, LESS/CSS, JS), this will also copy the files from ```src``` to ```public\map_templates```  
+    *   Build the JSON, LESS/CSS, and JS files. This will also copy the files from ```src``` to ```public```.  
         ```
         grunt
         ```
+    *   **Note:** Do NOT edit content.json directly. Edit the individual JSON files under ```src/map_data```.
 
-    *   run the watch task to automatically run grunt everytime a file in the ```src``` folder changes  
+    *   Run the watch task to automatically run grunt everytime a file in the ```src``` folder changes.  
         ```
         grunt watch
         ```
 
         
-    *   run the app  
+    *   Run the app.  
         ```
         node app.js
         ```
         
-    *   view the app  
+    *   View the app.  
         ```
         http://localhost:6479/index.html
         ```    
