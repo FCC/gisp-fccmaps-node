@@ -145,14 +145,6 @@ app.get('/api/content.json', function(req, res, next){
 	maps.getDataAPI(req, res, next);
 });
 
-//admin routing
-app.use('/admin', function(req, res, next){		
-	checkAllowed(req, res, next);
-});
-app.get('/admin/pull', function(req, res, next){
-	maps.pullMap(req, res, next);
-});
-
 //static routing
 app.use('/', express.static(__dirname + '/public'));
 
