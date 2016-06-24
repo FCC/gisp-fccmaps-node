@@ -1,8 +1,8 @@
 {
     "nid": "28002",
     "title": "Number of Fixed Providers of Residential Internet Access Service at least 10/1 Mbps by Census Block",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-10-1-mbps",
     "tnid": "0",
@@ -24,6 +24,13 @@
             }]
         },
         "field_image_thumbnail": [],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],

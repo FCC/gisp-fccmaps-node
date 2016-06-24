@@ -6,8 +6,8 @@
 },{
     "nid": "28002",
     "title": "Connect America Fund Phase II",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://www.fcc.gov/maps/caf-2-accepted-map",
     "tnid": "0",
@@ -71,6 +71,13 @@
             "height": "256",
             "width": "256"
         }],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],
@@ -324,8 +331,8 @@
 ,{
     "nid": "28002",
     "title": "FCC E-rate Maps of Fiber Connectivity to Schools and Libraries",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/erate-map/iframe.html#4/38.82/-94.96",
     "tnid": "0",
@@ -381,6 +388,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -873,8 +887,8 @@
 ,{
     "nid": "28002",
     "title": "Residential Fixed 25 Mbps/3 Mbps Broadband Deployment",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/bpr-map-2016/iframe_main.html",
     "tnid": "0",
@@ -930,6 +944,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -1430,8 +1451,8 @@
 ,{
     "nid": "28002",
     "title": "Number of Residential Fixed Broadband Providers at 25 Mbps/3 Mbps",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-providers",
     "tnid": "0",
@@ -1453,6 +1474,13 @@
             }]
         },
         "field_image_thumbnail": [],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],
@@ -2123,8 +2151,8 @@
 ,{
     "nid": "28002",
     "title": "Residential Fixed Broadband Technology at 25 Mbps/3 Mbps",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-technology",
     "tnid": "0",
@@ -2146,6 +2174,13 @@
             }]
         },
         "field_image_thumbnail": [],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],
@@ -2986,8 +3021,8 @@
 ,{
     "nid": "28002",
     "title": "Residential Fixed Broadband by Speed",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-speed",
     "tnid": "0",
@@ -3009,6 +3044,13 @@
             }]
         },
         "field_image_thumbnail": [],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],
@@ -3849,8 +3891,8 @@
 ,{
     "nid": "179626",
     "title": "National Broadband Map",
-    "created": "2016-05-26",
-    "changed": "2016-05-26",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://10.154.68.187/reports-research/maps/national-broadband-map",
     "tnid": "0",
@@ -3904,6 +3946,13 @@
                 "title": null,
                 "height": "38",
                 "width": "333"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -4728,8 +4777,8 @@
 },{
     "nid": "28001",
     "title": "100% Overlap Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/overbuilt-map/",
     "tnid": "0",
@@ -4793,6 +4842,13 @@
                 "title": "100 Percent Overlap Map",
                 "height": "256",
                 "width": "256"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -4943,8 +4999,8 @@
 ,{
     "nid": "179638",
     "title": "Connect2HealthFCC",
-    "created": "2016-05-27",
-    "changed": "2016-05-27",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://c2hgis-web-node-dev.us-west-2.elasticbeanstalk.com/",
     "tnid": "0",
@@ -4998,6 +5054,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -5978,8 +6041,8 @@
 },{
     "nid": "28002",
     "title": "Connectivity and Health: Virginia (Phase I)",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/connect2health-map/",
     "tnid": "0",
@@ -6035,6 +6098,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -6183,8 +6253,8 @@
 ,{
     "nid": "28002",
     "title": "Residential Fixed Connections over 200 kbps per 1,000 Households by Census Tract",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/ias-map-1/index.html",
     "tnid": "0",
@@ -6240,6 +6310,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -6593,8 +6670,8 @@
 ,{
     "nid": "28002",
     "title": "Residential Fixed Connections at least 3 Mbps/768 Kbps per 1,000 Households by Census Tract",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/ias-map-2/index.html",
     "tnid": "0",
@@ -6650,6 +6727,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -7003,8 +7087,8 @@
 ,{
     "nid": "28002",
     "title": "Number of Fixed Providers of Residential Internet Access Service over 200 kbps by Census Block",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/ias-map-4/index.html",
     "tnid": "0",
@@ -7060,6 +7144,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -7407,8 +7498,8 @@
 ,{
     "nid": "28002",
     "title": "Number of Fixed Providers of Residential Internet Access Service at least 10/1 Mbps by Census Block",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-10-1-mbps",
     "tnid": "0",
@@ -7430,6 +7521,13 @@
             }]
         },
         "field_image_thumbnail": [],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],
@@ -7775,8 +7873,8 @@
 ,{
     "nid": "28002",
     "title": "Terrestrial Mobile Wireless Digital Coverage",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/mw-maps/mw18-July2015-mobile-digital-map.html",
     "tnid": "0",
@@ -7832,6 +7930,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -8296,8 +8401,8 @@
 ,{
     "nid": "28002",
     "title": "Nationwide Mobile Wireless Coverage",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/mw-maps/mw18-July2015-mobile-overall-map.html",
     "tnid": "0",
@@ -8353,6 +8458,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -8623,8 +8735,8 @@
 ,{
     "nid": "28002",
     "title": "Nationwide LTE Coverage",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://10.154.68.187/nationwide-lte-coverage-july-2015",
     "tnid": "0",
@@ -8646,6 +8758,13 @@
             }]
         },
         "field_image_thumbnail": [],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],
@@ -8908,8 +9027,8 @@
 ,{
     "nid": "179626",
     "title": "FCC AM Revitalization Channel Finder",
-    "created": "2016-05-26",
-    "changed": "2016-05-26",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://apps2.fcc.gov/amr-channel-finder/?",
     "tnid": "0",
@@ -8963,6 +9082,13 @@
                 "title": null,
                 "height": "38",
                 "width": "333"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -9786,8 +9912,8 @@
 },{
     "nid": "28002",
     "title": "Tribal Mobility Fund Phase I Eligible Areas",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.tribal-mobility-fund-phase-i-eligible-areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39.2323/-99.4922",
     "tnid": "0",
@@ -9843,6 +9969,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -10095,8 +10228,8 @@
 ,{
     "nid": "28002",
     "title": "Tribal Mobility Fund Phase I Potentially Eligible Areas",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.tribal-mobility-fund-phase-i-potentially-eligible-areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38.8226/-99.1406",
     "tnid": "0",
@@ -10152,6 +10285,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -10392,8 +10532,8 @@
 ,{
     "nid": "28002",
     "title": "Mobility Fund Phase 1 Eligible Areas",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Mobility-Fund-Phase-1-Eligible-Areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/35/-97",
     "tnid": "0",
@@ -10449,6 +10589,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -10694,8 +10841,8 @@
 ,{
     "nid": "28002",
     "title": "800 MHz Cellular – A Block CGSAs",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.800-mhz-cellular-a-block-cgsa/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39/-99.9887",
     "tnid": "0",
@@ -10751,6 +10898,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -11039,8 +11193,8 @@
 ,{
     "nid": "28002",
     "title": "800 MHz Cellular – B Block CGSAs",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.p3lhm2t9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39/-99.9887",
     "tnid": "0",
@@ -11096,6 +11250,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -11251,8 +11412,8 @@
 ,{
     "nid": "28002",
     "title": "Broadband Availability Hawaii",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Unavail_HI/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#7/19.560/-158.796",
     "tnid": "0",
@@ -11308,6 +11469,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -11605,8 +11773,8 @@
 ,{
     "nid": "28002",
     "title": "Broadband Availability Alaska",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Unavail_AK/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/63.5/-154.5",
     "tnid": "0",
@@ -11662,6 +11830,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -11959,8 +12134,8 @@
 ,{
     "nid": "28002",
     "title": "Broadband Availability",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Unavail_20111007_2/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#6/37/-96",
     "tnid": "0",
@@ -12016,6 +12191,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -12313,8 +12495,8 @@
 ,{
     "nid": "179638",
     "title": "FCC Enforcement Actions Against Pirate Radio by Location",
-    "created": "2016-05-27",
-    "changed": "2016-05-27",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/pirateaction2/index.html",
     "tnid": "0",
@@ -12368,6 +12550,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -13376,8 +13565,8 @@
 },{
     "nid": "28002",
     "title": "Section 706 Mobile Deployment Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Section-706-Mobile-Data-Deployment-Map/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/35/-97",
     "tnid": "0",
@@ -13433,6 +13622,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -13593,8 +13789,8 @@
 ,{
     "nid": "28002",
     "title": "Locations Unserved by Fixed Broadband ",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.unserved_fixed_broadband/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38.9594/-99.1406",
     "tnid": "0",
@@ -13650,6 +13846,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -13899,8 +14102,8 @@
 ,{
     "nid": "28002",
     "title": "Connect America Phase II - Final Eligible Areas Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/caf-2-final-areas-map/index.html",
     "tnid": "0",
@@ -13956,6 +14159,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -14220,8 +14430,8 @@
 ,{
     "nid": "28002",
     "title": "Total High-Cost Distributions in Rate-of-Return Study Areas",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFtotalHiCost/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
@@ -14277,6 +14487,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -14541,8 +14758,8 @@
 ,{
     "nid": "28002",
     "title": "Total Per Line USF High-Cost Distributions in Rate-of-Return Study Areas",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFperLineHiCost/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
@@ -14598,6 +14815,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -14862,8 +15086,8 @@
 ,{
     "nid": "28002",
     "title": "Net USF Received Per Voice Line",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USF_NetFlow100711/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#3/39/-100",
     "tnid": "0",
@@ -14919,6 +15143,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -15178,8 +15409,8 @@
 ,{
     "nid": "28002",
     "title": "Rural Health Care Pilot Program",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.map-pxxbakrr/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#6/39.053318106741/-105.43454272461",
     "tnid": "0",
@@ -15235,6 +15466,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -15494,8 +15732,8 @@
 ,{
     "nid": "28002",
     "title": "Alternative Connect America Cost Model (A-CAM)",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://www.broadbandmap.gov/a/swat/ror-map/index.html?v=1",
     "tnid": "0",
@@ -15551,6 +15789,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -15815,8 +16060,8 @@
 ,{
     "nid": "28002",
     "title": "Connect America Phase II - Final Eligible Areas Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/caf-2-final-map/index.html",
     "tnid": "0",
@@ -15872,6 +16117,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -16134,8 +16386,8 @@
 ,{
     "nid": "28002",
     "title": "Connect America Phase II - Initial Eligible Areas Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/cost_model_map/map_frame.html#4/38.82/-94.96",
     "tnid": "0",
@@ -16191,6 +16443,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -16455,8 +16714,8 @@
 ,{
     "nid": "28002",
     "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $52",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.l4qme7b9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
@@ -16512,6 +16771,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -16774,8 +17040,8 @@
 ,{
     "nid": "28002",
     "title": "Connect America Fund Phase II – CAM v4.0 Illustrative Map with Funding Threshold of $48",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.k02xd2t9/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
@@ -16831,6 +17097,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -16984,8 +17257,8 @@
 ,{
     "nid": "28002",
     "title": "Connect America Fund (CAF) Phase I Round Two",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.connect_america_fund_phase_I_round_two/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
@@ -17041,6 +17314,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -17300,8 +17580,8 @@
 ,{
     "nid": "28002",
     "title": "Connect America Fund (CAF) Phase I",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.CAF-Phase-1-States/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38.9594/-98.7891",
     "tnid": "0",
@@ -17357,6 +17637,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -17614,8 +17901,8 @@
 ,{
     "nid": "178553",
     "title": "Wireline Maximum Advertised Download Speed",
-    "created": "2016-03-10",
-    "changed": "2016-05-27",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.wireline-max-dl-speed-jun11/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#5/39.2323/-98.7891",
     "tnid": "0",
@@ -17669,6 +17956,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -18038,8 +18332,8 @@
 ,{
     "nid": "178553",
     "title": "Regulatory Type at the Holding Company Level by Study Area",
-    "created": "2016-03-10",
-    "changed": "2016-05-27",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFregType/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
@@ -18093,6 +18387,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -18478,8 +18779,8 @@
 ,{
     "nid": "178553",
     "title": "Connect to Compete Home Broadband Coverage Map",
-    "created": "2016-03-10",
-    "changed": "2016-05-27",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.connect2compete/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
@@ -18533,6 +18834,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -18908,8 +19216,8 @@
 ,{
     "nid": "28002",
     "title": "Terrestrial Mobile Broadband Network Coverage by Number of Providers (Census Block Level)",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-broadband-map.html",
     "tnid": "0",
@@ -18965,6 +19273,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -19294,8 +19609,8 @@
 ,{
     "nid": "28002",
     "title": "Terrestrial Mobile Wireless Digital Coverage",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-digital-map.html",
     "tnid": "0",
@@ -19351,6 +19666,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -19815,8 +20137,8 @@
 ,{
     "nid": "28002",
     "title": "Nationwide 4G Coverage",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-July2014-mobile-4G-map.html",
     "tnid": "0",
@@ -19872,6 +20194,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -20276,8 +20605,8 @@
 ,{
     "nid": "28002",
     "title": "Terrestrial Wireless Coverage by Number of Providers (Census Block)",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://wireless.fcc.gov/competition-reports/maps/mw-17/mw17-Jan2014-mobile-voice-map.html",
     "tnid": "0",
@@ -20333,6 +20662,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -20662,8 +20998,8 @@
 ,{
     "nid": "28002",
     "title": "Mobility Fund Phase 1 Potentially Eligible Areas",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.mobility-fund-phase-1-potentially-eligible-areas/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/35/-97",
     "tnid": "0",
@@ -20719,6 +21055,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -20964,7 +21307,7 @@
 ,{
     "nid": "179638",
     "title": "Study Area Boundaries",
-    "created": "2016-06-08",
+    "created": "",
     "changed": "",
     "type": "map",
     "webUrl": "https://fcc.maps.arcgis.com/apps/Minimalist/index.html?appid=9f996a35de9244c5b40ea3d412679fc2",
@@ -21019,6 +21362,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -22021,7 +22371,7 @@
 },{
     "nid": "179638",
     "title": "Frequency Coordination with Canada Below 470 MHz",
-    "created": "2016-06-08",
+    "created": "",
     "changed": "",
     "type": "map",
     "webUrl": "https://fcc.maps.arcgis.com/apps/Minimalist/index.html?appid=7ccc1f754bee4c5dae684cb0ad6c9a76",
@@ -22076,6 +22426,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -23083,8 +23440,8 @@
 },{
     "nid": "28002",
     "title": "Section 706 Fixed Broadband Deployment Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.Section-706-Fixed-Broadband-Deployment-Map/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
@@ -23140,6 +23497,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -23433,7 +23797,7 @@
 ,{
     "nid": "179638",
     "title": "Oklahoma Enhanced Lifeline Support",
-    "created": "2016-06-08",
+    "created": "",
     "changed": "",
     "type": "map",
     "webUrl": "https://fcc.maps.arcgis.com/apps/Minimalist/index.html?appid=85bc280d4be24ecd9f769482e10a96fa",
@@ -23488,6 +23852,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -24495,8 +24866,8 @@
 },{
     "nid": "28002",
     "title": "Mobile 10 Mbps/768 Kbps Deployment Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.kg72le5b/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
@@ -24552,6 +24923,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
@@ -24710,8 +25088,8 @@
 ,{
     "nid": "28002",
     "title": "Fixed 25 Mbps/3 Mbps Broadband Deployment Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.xlil4u3c/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
@@ -24767,6 +25145,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [

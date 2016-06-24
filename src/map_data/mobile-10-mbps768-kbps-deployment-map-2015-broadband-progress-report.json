@@ -1,8 +1,8 @@
 {
     "nid": "28002",
     "title": "Mobile 10 Mbps/768 Kbps Deployment Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.kg72le5b/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/38/-98",
     "tnid": "0",
@@ -58,6 +58,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [

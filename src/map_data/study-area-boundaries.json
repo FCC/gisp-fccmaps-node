@@ -1,7 +1,7 @@
 {
     "nid": "179638",
     "title": "Study Area Boundaries",
-    "created": "2016-06-08",
+    "created": "",
     "changed": "",
     "type": "map",
     "webUrl": "https://fcc.maps.arcgis.com/apps/Minimalist/index.html?appid=9f996a35de9244c5b40ea3d412679fc2",
@@ -56,6 +56,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
