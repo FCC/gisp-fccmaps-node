@@ -70,9 +70,11 @@
         "field_link": [
 
         ],
-        "field_archived": [{
-            "value": "0"
-        }],
+        "field_archived":  {
+            "und": [{
+                "value": "1"
+            }]
+        },
         "field_related_content": [
 
         ],
