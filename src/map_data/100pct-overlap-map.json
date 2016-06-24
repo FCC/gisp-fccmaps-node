@@ -1,8 +1,8 @@
 {
     "nid": "28001",
     "title": "100% Overlap Map",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://fcc.github.io/overbuilt-map/",
     "tnid": "0",
@@ -66,6 +66,13 @@
                 "title": "100 Percent Overlap Map",
                 "height": "256",
                 "width": "256"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [

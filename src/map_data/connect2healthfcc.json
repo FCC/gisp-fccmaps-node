@@ -1,8 +1,8 @@
 {
     "nid": "179638",
     "title": "Connect2HealthFCC",
-    "created": "2016-05-27",
-    "changed": "2016-05-27",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://c2hgis-web-node-dev.us-west-2.elasticbeanstalk.com/",
     "tnid": "0",
@@ -56,6 +56,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [

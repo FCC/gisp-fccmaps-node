@@ -1,8 +1,8 @@
 {
     "nid": "28002",
     "title": "Nationwide LTE Coverage",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://10.154.68.187/nationwide-lte-coverage-july-2015",
     "tnid": "0",
@@ -24,6 +24,13 @@
             }]
         },
         "field_image_thumbnail": [],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],

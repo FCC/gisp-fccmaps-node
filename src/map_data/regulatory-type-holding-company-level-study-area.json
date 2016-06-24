@@ -1,8 +1,8 @@
 {
     "nid": "178553",
     "title": "Regulatory Type at the Holding Company Level by Study Area",
-    "created": "2016-03-10",
-    "changed": "2016-05-27",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://a.tiles.mapbox.com/v3/fcc.USFregType/mm/legend,zoompan,tooltips,zoomwheel,zoombox,attribution,bwdetect,share.html#4/39/-100",
     "tnid": "0",
@@ -56,6 +56,13 @@
                 "title": null,
                 "height": "38",
                 "width": "175"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
