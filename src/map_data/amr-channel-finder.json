@@ -1,8 +1,8 @@
 {
     "nid": "179626",
     "title": "FCC AM Revitalization Channel Finder",
-    "created": "2016-05-26",
-    "changed": "2016-05-26",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "https://apps2.fcc.gov/amr-channel-finder/?",
     "tnid": "0",
@@ -56,6 +56,13 @@
                 "title": null,
                 "height": "38",
                 "width": "333"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [

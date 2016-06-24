@@ -1,8 +1,8 @@
 {
     "nid": "28002",
     "title": "Residential Fixed Broadband by Speed",
-    "created": "2015-10-20",
-    "changed": "2015-12-09",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-speed",
     "tnid": "0",
@@ -24,6 +24,13 @@
             }]
         },
         "field_image_thumbnail": [],
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
+            }]
+        },
         "field_link": [
 
         ],

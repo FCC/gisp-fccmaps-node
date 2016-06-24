@@ -1,8 +1,8 @@
 {
     "nid": "150932",
     "title": "Residential Fixed 25 Mbps/3 Mbps Broadband Deployment (2016 Broadband Progress Report)",
-    "created": "2016-01-13",
-    "changed": "2016-01-29",
+    "created": "",
+    "changed": "",
     "type": "map",
     "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-deployment",
     "tnid": "0",
@@ -68,6 +68,13 @@
                 "title": "2016 BPR Map",
                 "height": "145",
                 "width": "177"
+            }]
+        },
+        "field_thumb_initial_position": {
+            "und": [{
+                "zoom": "3",
+                "lat": "40.65",
+                "long": "-102.13"
             }]
         },
         "field_link": [
