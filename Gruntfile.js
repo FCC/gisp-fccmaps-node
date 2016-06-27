@@ -157,7 +157,7 @@ module.exports = function(grunt) {
                     './src/map_data/bpr-2016-fixed-25mbps-3mbps-providers.json',
                     './src/map_data/bpr-2016-fixed-25mbps-3mbps-technology.json',
                     './src/map_data/bpr-2016-fixed-speed.json',
-                    './src/map_data/nbm.json',
+                    //'./src/map_data/nbm.json',
                     './src/map_data/100pct-overlap-map.json',
                     './src/map_data/connect2healthfcc.json',
                     './src/map_data/connect2health-va-map.json',
