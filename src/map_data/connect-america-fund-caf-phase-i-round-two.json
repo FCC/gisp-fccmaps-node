@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map shows the areas where new broadband may be deployed as a result of the second round of Connect America Phase I. In their initial elections, price cap carriers requested over $385 million in Connect America Phase I incremental support, committing to bring broadband to over 600,000 locations that previously lacked access by 2016. Some of these carrier acceptances are contingent upon the carriers prevailing in challenges regarding whether certain census blocks are unserved. Furthermore, after providing the Commission with notice, carriers have the ability to alter deployment plans to other unserved census blocks, which could result in more or less funding being allocated to any given area. The map shows where funding has been authorized to date; the map will be updated as the FCC completes its review of the challenges.</p>",

@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map displays the rate-of-return study area boundaries and related geographic information the Wireline Competition Bureau plans to incorporate into the next version of the Alternative Connect America Cost Model (A-CAM). The map is based on the study area and boundary exchange data that were submitted to the Bureau and certified by rate-of-return carriers and certain state utility commissions. For more information, refer to <a href=\"https://www.fcc.gov/encyclopedia/study-area-boundary-data-collection\">https://www.fcc.gov/encyclopedia/study-area-boundary-data-collection</a></p><p>The process used to develop service areas for A-CAM modeling purposes is explained in an accompanying Public Notice (available in Word and PDF format). As described in the Public Notice, each service area has an aggregation point (central office or CO) associated with it. Service areas whose central office location is determined from proprietary GeoResults (GR) data are shown in cross-hatch; information on how to access those locations is described in the Public Notice. Service areas with another source for the CO location are shown as white dots on the map. A small number of CO locations were updated as explained in a subsequent Public Notice (available in Word and PDF format).</p><p>Interested parties can download the study area and service area polygons and the non-proprietary central office locations by selecting the area(s) of interest, hitting download, and selecting a format.</p>",

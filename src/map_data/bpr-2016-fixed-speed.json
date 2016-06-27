@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map shows the availability of fixed residential broadband services by speed in an area.  Enter your address to find the speed of services in your area. Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without any population are shown in white. Yellow indicates areas without residential services of at 200 kbps or above. Click each box to see the minimum top residential speed in your area.  Zoom out to see the speed of service in the neighboring areas.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",

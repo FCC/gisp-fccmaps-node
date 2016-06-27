@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "This map was created to fulfill the requirements of the Commission’s November 19 Further Notice of Proposed Rulemaking. It shows areas that are reported on the National Broadband Map as unserved by fixed broadband with advertised speeds of 3 Mbps downstream and 768 kbps upstream. The map relies on the current version of the National Broadband Map, using data as of December 31, 2011. ",

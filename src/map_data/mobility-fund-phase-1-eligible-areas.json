@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "This map shows the areas identified as eligible for Mobility Fund Phase 1 support as of September 2012. These areas are US Census blocks that lack 3G or better mobile coverage at the centroid of the block and contain road miles in any of six road categories. These blocks were identified by analyzing US Census data, January 2012 American Roamer (now called Mosaik Solutions) data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the eligible blocks, including population, road miles (S1100, S1200, S1400, S1500, S1640, and S1740 categories), and the name and number of the CMA in which the blocks are located. Further zooming in allows you to see the US Census tracts that contain these blocks. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/901/\">http://wireless.fcc.gov/auctions/901/</a>",

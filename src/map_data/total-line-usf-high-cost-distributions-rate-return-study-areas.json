@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "This map was developed by the FCC to show Total Universal Service Fund High-Cost Distributions in Rate-of-Return Study Areas. Data derived from USAC 2010 disbursement data available at <a href=\"https://apps.fcc.gov/edocs_public/attachmatch/DOC-310281A1.pdf\">https://apps.fcc.gov/edocs_public/attachmatch/DOC-310281A1.pdf</a>. Study area boundaries are derived from Tele Atlas Telecommunications Suite 2010.06",

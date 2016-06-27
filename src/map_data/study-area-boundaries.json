@@ -9,9 +9,7 @@
     "body": null,
     "vid": "187946",
     "fields": {
-        "field_map_embed_code": [
-
-        ],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "The map displays the study area boundaries submitted and certified by incumbent local exchange carriers and state commissions through May 5th, 2016. As a result of confidentiality requests, certain boundaries for Verizon and AT&T are not displayed.",

@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "This map shows participants in the FCC's Rural Health Care Pilot Program who have received commitments for funding as of November 2012. Green and Red triangles depict entities that are health care providers eligible for Pilot Program support under the Communications Act of 1934. The map also shows health care providers who are not eligible for Pilot Program support, but pay full cost to participate in Pilot Program networks. Not all locations are visible at a national scale, use the map control to zoom in to display further detail. This map was created by the FCC based on data submitted to the Universal Service Administrative Company by the Pilot participants. To learn more about the Pilot Program, visit <a href=\"http://www.fcc.gov/general/rural-health-care-pilot-program\">http://www.fcc.gov/general/rural-health-care-pilot-program</a>",

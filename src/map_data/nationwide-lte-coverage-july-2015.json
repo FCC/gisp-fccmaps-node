@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>Source: Based on July 2015 Mosaik and 2010 Census data. It is important to note that the number of service providers in a census block represent network coverage only. Network coverage does not necessarily reflect the number of service providers from which any particular individual or household in a given area may choose. Coverage calculations based on Mosaik data, while useful for measuring developments in mobile coverage, have certain limitations that likely result in an overstatement of the extent of mobile coverage.</p><p>For more information about the 18th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report-assets/\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-18/report</a>.</p>",

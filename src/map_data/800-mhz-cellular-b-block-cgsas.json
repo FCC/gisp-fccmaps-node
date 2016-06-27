@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "This map shows the Cellular Geographic Service Area (CGSA) boundaries overlaid on top of Cellular Market Areas (CMAs) for the B Block 800 MHz cellular licenses. The purpose of this map is to depict the licensed CGSAs in each CMA (as of January 11, 2012) as the FCC considers a rulemaking to revise the licensing model for cellular licensing from a site-based model to a geographic-based model. Gulf of Mexico Exclusive Zone (GMEZ) not shown. See CFR47 Section 22.950 (c).",
