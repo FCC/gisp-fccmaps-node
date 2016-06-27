@@ -464,7 +464,7 @@
         "field_frame_size": {
             "und": [{
                 "height": "1435",
-                "width": "100%"
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -1021,8 +1021,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "630px",
-                "width": "100%"
+                "height": "630",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -1459,11 +1459,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map shows the number of providers offering residential broadband services of at least 25 Mbps download and 3 Mbps upload.  Enter your address to see the number of providers that offer these residential services in your area. Click each box to in the legend to see whether the number of providers changes in your area.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Zoom out to see whether the number of providers differs in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
@@ -2159,11 +2155,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map shows whether there are providers of fixed residential services of at least 25 Mbps/3 Mbps using a specific technology in your area. Enter your address to see what technologies are available in your area.  Click each technology to see whether a specific technology is available in your area.  Areas without any population are shown in white.  Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.  Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.  Areas without population are shown without color.  Yellow indicates areas without providers of fixed residential services of at least 25 Mbps/3 Mbps.  Zoom out to see which technologies are available in the areas surrounding your address.</p><p>For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</a>.</p>",
@@ -4917,8 +4909,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": [
@@ -6176,7 +6168,7 @@
         "field_frame_size": {
             "und": [{
                 "height": "1630",
-                "width": "100%"
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -6387,8 +6379,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -6804,8 +6796,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -8007,8 +7999,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -8535,8 +8527,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -10048,8 +10040,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -10364,8 +10356,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -10668,8 +10660,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -10977,8 +10969,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -11329,8 +11321,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -11548,8 +11540,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -11909,8 +11901,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -12270,8 +12262,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -12674,8 +12666,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": [
@@ -13701,8 +13693,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -13925,8 +13917,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -14238,8 +14230,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -14566,8 +14558,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -14894,8 +14886,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -15222,8 +15214,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -15545,8 +15537,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -15868,8 +15860,8 @@
         },        
         "field_frame_size": {
             "und": [{
-                "height": "640px",
-                "width": "100%"
+                "height": "650",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -16068,11 +16060,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map identifies the areas that have been determined to be eligible for support for broadband and voice service from Phase II of the FCC’s Connect America Fund. Specifically, the map identifies areas determined by a cost model as eligible for support and which are served by a class of larger carriers called price cap carriers. These areas are shown in bright green on the map. The map displays the outputs of the final version of the Connect America Cost Model (CAM) (version 4.3) adopted for purposes of making the offer Phase II support to price cap carriers. The model calculates costs per location in all price cap carrier census blocks for the entire country. Empty areas with no color are either located in areas served by another class of carriers, called rate-of-return carriers, which are not eligible for the offer of model-based support from the Connect America Fund, but may receive support from other universal service high-cost mechanisms, and/or are reported as uninhabited.</p><p>The offer of model-based support is targeted to price cap areas that are high-cost, but not extremely high-cost. Areas on the map fall into one of five categories: eligible, ineligible because the average cost is above the extremely high-cost threshold (EHCT), ineligible because the average cost is below the funding benchmark, high-cost areas that are ineligible for other reasons, and areas not subject to the offer of support because the carrier in the area is not interested in model-based support. An area is classified as “eligible” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above the $52.50 funding benchmark but below the $198.60 EHCT, and is not served by an unsubsidized competitor, subsidized wireline competitor, or was not subject to specific types of bids in the rural broadband experiments. An area is classified as “other ineligible” if the average monthly cost-per-location is above $52.50 but below $198.60, but it is served by an unsubsidized competitor, a subsidized wireline competitor, or was removed from the offer to price cap carriers due to the rural broadband experiments. Price cap areas in Alaska, Puerto Rico, and the Virgin Islands are classified as “elected frozen” because the carriers serving these non-contiguous areas indicated that they are interested in receiving frozen Phase II support in lieu of model-based support.</p><p>When the map is zoomed in to display county boundaries, clicking on an area of the map displays additional information for that particular county. The county information provides the county name, the total number of price cap locations in the county, the total number of price cap locations that are eligible for model-based support, and the cost model-derived amount of annual Phase II support available in the county. Carriers accepting support will be required to offer broadband service to a specific number of locations across their entire service area in the state. Note that not all locations in a given county are eligible for Phase II support.</p><p>For more information about Connect America Phase II, refer to <a href=\"https://www.fcc.gov/encyclopedia/price-cap-resources\">https://www.fcc.gov/encyclopedia/price-cap-resources</a>.</p><p><a href=\"https://www.fcc.gov/maps/fcc-connect-america-phase-ii-final-eligible-areas-map\">Click here for the original version of this map</a>.</p>",
@@ -16194,8 +16182,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "646px",
-                "width": "100%"
+                "height": "646",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -16394,11 +16382,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map identifies the areas that have been initially determined to be eligible for ongoing Phase II Connect America support, which are shown in dark green on the map. The map displays the outputs of the adopted version of the Connect America Cost Model (CAM) (version 4.1.1), which calculates costs per location in all price cap carrier study areas for the entire country. Areas marked as “served” are reported as having Internet access of at least 3 Mbps downstream and 768 kbps upstream from an unsubsidized competitor. The map is based on round 8 State Broadband Initiative Data (data as of June 2013).</p><p>Areas on the map fall into one of six categories: served/above cost, served/between cost, served/below cost, unserved/above cost, unserved/between cost, and unserved/below cost. The Wireline Competition Bureau has made an initial determination that areas shown as unserved/between cost on the map are eligible for Phase II support, subject to a challenge process. An area is classified as “between cost” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above $52.50 but below $207.81. An area is classified as “unserved” if it is reported to lack service meeting the requisite speed from an unsubsidized competitor. Areas shown in grey (i.e., not falling into one of the six categories) are either located in rate-of-return study areas and/or are reported as uninhabited. The map will be updated after completion of the Phase II challenge process.</p><p>When the map is zoomed in to display census tract boundaries, clicking on an area of the map displays additional information for that particular census tract (i.e., a grouping of census blocks). The tract-based information provides the census tract number, the total number of eligible locations in the price cap portion of the census tract that are between the cost thresholds where Phase II support is provided and unserved by an unsubsidized competitor, and the cost model-derived amount of annual Phase II support to serve these between cost, unserved locations. Additionally, the displayed information separately provides the total number of locations in the price cap portion of the census tract that are unserved but are in census blocks that are “above cost” (i.e, the census block has a monthly cost-per-location, as calculated by the cost model, at or above the extremely high-cost threshold of $207.81).</p><p>UPDATE: The download feature on this map was updated on 9/29 to correct an issue that limited the number of block records returned to a maximum of 10.</p>",
@@ -16522,8 +16506,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -16848,8 +16832,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -17174,8 +17158,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -17393,8 +17377,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -17714,8 +17698,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -18088,8 +18072,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -18519,8 +18503,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -18966,8 +18950,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -19350,8 +19334,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -19743,8 +19727,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -20273,8 +20257,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -20739,8 +20723,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -21134,8 +21118,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -21486,8 +21470,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -22555,8 +22539,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -23576,8 +23560,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -23981,8 +23965,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -25003,7 +24987,7 @@
         "field_frame_size": {
             "und": [{
                 "height": "500",
-                "width": "100%"
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -25227,7 +25211,7 @@
         "field_frame_size": {
             "und": [{
                 "height": "500",
-                "width": "100%"
+                "width": ""
             }]
         },
         "field_related_links": {
