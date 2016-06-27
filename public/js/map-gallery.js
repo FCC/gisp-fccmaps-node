@@ -171,7 +171,12 @@
             });
 
             Handlebars.registerHelper('formatDate', function(dateReviewed) {
-                return dateReviewed.split(' ')[0];
+                var dateStr = dateReviewed.split(' ')[0].split('-');
+                var MM = dateStr[1];
+                var DD = dateStr[2];
+                var YYYY = dateStr[0];
+                
+                return (MM + '/' + DD + '/' + YYYY);
             });
 
             template = Handlebars.compile(source);
