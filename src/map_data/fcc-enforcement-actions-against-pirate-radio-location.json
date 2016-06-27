@@ -180,8 +180,8 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620px",
-                "width": "100%"
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": [

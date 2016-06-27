@@ -17,18 +17,18 @@
         }
         @media screen and (min-width: @screen-sm-min) {
             display: inline-block;
-            margin: 15px 0;
+            margin-top: 15px;
         }
     }
     &__filterOpts {
-        display: inline-block;
-        // float: none;
+        float: none;
         margin: 20px 0 0;
-        @media screen and (min-width: @screen-sm-min) {
-            margin-top: 0;
-        }
+        /* @media screen and (min-width: @screen-sm-min) {
+            margin-top: 15px;
+        } */
         @media screen and (min-width: @screen-md-min) {
-            // float: right;
+            float: right;
+             margin-top: 5px;
         }
         .control-label {
             font-weight: normal;
@@ -70,18 +70,14 @@
 }
 
 .alert-noResults {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-.grid-maps {
-    clear: both;
-    @media (min-width: 768px) {
-        width: auto;
-    }    
+.map-cards  {    
+     margin-top: 15px;  
     .card {
         margin: 0 0 20px 0;
-        // position: relative;
-        width: 350px;
+        width: 285px;
         @media screen and (min-width: @screen-md-min) {
             width: 300px;
         }
