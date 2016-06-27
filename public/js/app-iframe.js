@@ -16,7 +16,8 @@ function iframeSetup() {
 
         // get iframe src w/o adding it to browser history
         iFrame.contentWindow.location.replace(url);
-        iFrame.setAttribute('style', frameStyles);       
+        iFrame.setAttribute('style', frameStyles);  
+        iFrame.setAttribute('title', map_info_all.title);
     });
 }
 
