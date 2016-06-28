@@ -43,7 +43,7 @@
 
             // add tabindex to enforce order
             $('#skip-link, header, .nav-secondary').find('a').add('.navbar-about').attr('tabindex', 10);
-            $('.gallery__filterOpts').find('button, select, a').add('.gallery__numResults').attr('tabindex', 20);
+            $('.search-filters').find('input, button, select, a').add('.gallery__numResults').attr('tabindex', 20);
         },
 
         initGrid: function() {
