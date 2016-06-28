@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "This map was created by the FCC to illustrate the Commission’s mobile deployment results found in the Eighth Broadband Progress Report, which uses data underlying the National Broadband Map, as of June 30, 2011. It shows census block areas of the United States with access to mobile services of at least 3 Mbps download and 768 kbps upload, and with and without services of at least 768 kbps download and 200 kbps upload. For more information on the Eighth Broadband Progress Report, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/</a>.",

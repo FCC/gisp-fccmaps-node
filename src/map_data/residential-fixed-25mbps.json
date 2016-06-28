@@ -9,13 +9,7 @@
     "body": null,
     "vid": "157163",
     "fields": {
-        "field_map_embed_code": {
-            "und": [{
-                "value": "<p><iframe frameborder=\"0\" height=\"630\" scrolling=\"no\" src=\"https://fcc.github.io/bpr-map-2016/iframe_main.html\" width=\"950\"></iframe></p>\r\n",
-                "format": "full_html",
-                "safe_value": "<p><iframe frameborder=\"0\" height=\"630\" scrolling=\"no\" src=\"https://fcc.github.io/bpr-map-2016/iframe_main.html\" width=\"950\"></iframe></p>\n"
-            }]
-        },
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p class=\"p1\">This map shows where fixed residential broadband services of at least 25 Mbps download and 3 Mbps upload is deployed and where it is not deployed.&nbsp; Enter an address to see the list of providers that offer residential services in the census block area, each provider’s maximum advertised residential speed, and demographic data for the county associated with the Census block.&nbsp; Tribal lands and urban areas can be displayed by clicking the appropriate box in the legend.&nbsp;&nbsp;Click on the symbol in the upper left hand corner next to + and – to change the view from a street view to a satellite or a terrain view.&nbsp; Areas without population are shown without color.</p>\r\n\r\n<p class=\"p1\"><span class=\"s1\">For more information, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report\"><span class=\"s2\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2016-broadband-progress-report</span></a></span>.</p>\r\n",

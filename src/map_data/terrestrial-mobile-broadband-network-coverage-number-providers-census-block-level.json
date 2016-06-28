@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>Includes EV-DO, EV-DO REV A, WCDMA/HSPA/HSPA+, LTE, and WiMAX Netowrks. Source: Federal Communications Commission, Census, and ©Mosaik (July, 2014).</p><p>The percentages of population located in census blocks with zero, one, two, or three or more mobile wireless or mobile broadband providers represent network coverage, which does not necessarily mean that they offered service to residents in the census block. In addition, we emphasize that a provider reporting mobile wireless or mobile broadband coverage in a particular census block may not provide coverage everywhere in the census block. For both these reasons, the number of providers in a census block does not necessarily reflect the number of choices available to a particular individual or household, and does not purport to measure competition. In addition, calculations based on Mosaik data on coverage, while useful for measuring developments in mobile wireless coverage, have certain limitations that likely overstate the extent of mobile wireless and mobile broadband coverage.</p><p>For more information about the 17th Annual Mobile Wireless Competition Report, visit <a href=\"http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report-assets/index.html\">http://wireless.fcc.gov/competition-reports/mobile-wireless/mw-17/report</a></p>",

@@ -9,9 +9,7 @@
     "body": null,
     "vid": "187939",
     "fields": {
-        "field_map_embed_code": [
-
-        ],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "{ \"bureau\": \"WCB\", \"title\": \"Section-706-Mobile-Broadband\", \"description\": \"Section 706 Fixed Data Deployment Map\", \"mapcenter\": {\"latitude\": \"50\",\"longitude\":\"-105\"}, \"mapzoom\":{\"initialzoom\":\"3\", \"maxzoom\":\"15\",\"minzoom\": \"3\"}, \"basemap\": [\"street\", \"satellite\", \"terrain\"], \"scalecontrol\": \"no\", \"search\": \"yes\", \"attribution\": \"FCC Maps\", \"layers\": [ { \"title\": \"Section 706 Mobile\", \"layertype\": \"mapbox\", \"mapid\": \"fcc.Section-706-Mobile-Data-Deployment-Map\", \"checked\": \"yes\" }, { \"layertype\": \"geoserver\", \"geohost\": \"http://www.broadbandmap.gov\", \"geospace\": \"fcc\", \"layername\": \"fcc:bpr_tribal\", \"style\": \"bpr_tribal\", \"checked\": \"no\" } ], \"legends\": [ { \"legendcolor\": \"#99ff00\", \"legendtext\": \"Section 706 Fixed Data Deployment Map\" }, { \"legendcolor\": \"#999999\", \"legendtext\": \"Tribal land\" } ] }\r\n",

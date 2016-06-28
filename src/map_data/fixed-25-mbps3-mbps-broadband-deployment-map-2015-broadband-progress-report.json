@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "",
-            "format": "full_html",
-            "safe_value": ""
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map illustrates the Commission’s fixed broadband deployment results described in the 2015 Broadband Progress Report; it relies on data from the National Broadband Map, as of December 31, 2013. It shows which areas of the United States have access to fixed broadband services of at least 25 Mbps download and 3 Mbps upload and which do not, breaking out urban and rural areas. The map also outlines Tribal lands. Shift and zoom the map to see county level details. For more information on the data and definitions used in the map or on the 2015 Broadband Progress Report, visit <a href=\"https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2015-broadband-progress-report/\">https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2015-broadband-progress-report/</a></p>",

@@ -4,7 +4,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/national-broadband-map",
+    "webUrl": "http://www.broadbandmap.gov/",
     "tnid": "0",
     "body": null,
     "vid": "187924",
@@ -78,19 +78,14 @@
         ],
         "field_date_updated_reviewed": {
             "und": [{
-                "value": "2016-05-26 19:15:00",
+                "value": "2015-03-23 19:15:00",
                 "timezone": "America/New_York",
                 "timezone_db": "UTC",
                 "date_type": "datetime"
             }]
         },
         "field_date": {
-            "und": [{
-                "value": "2016-05-26 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
+            
         },
         "field_search_exclude": {
             "und": [{
@@ -105,56 +100,7 @@
                 "value": "0"
             }]
         },
-        "field_map_display_date": {
-            "und": [{
-                "value": "2016-05-26 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime",
-                "db": {
-                    "value": {
-                        "granularity": [
-                            "year",
-                            "month",
-                            "day",
-                            "hour",
-                            "minute",
-                            "second",
-                            "timezone"
-                        ],
-                        "errors": [
-
-                        ],
-                        "timeOnly": false,
-                        "dateOnly": false,
-                        "originalTime": "2016-05-26T00:00:00-04:00",
-                        "date": "2016-05-26 00:00:00.000000",
-                        "timezone_type": 3,
-                        "timezone": "America/New_York"
-                    },
-                    "value2": {
-                        "granularity": [
-                            "year",
-                            "month",
-                            "day",
-                            "hour",
-                            "minute",
-                            "second",
-                            "timezone"
-                        ],
-                        "errors": [
-
-                        ],
-                        "timeOnly": false,
-                        "dateOnly": false,
-                        "originalTime": "2016-05-26T00:00:00-04:00",
-                        "date": "2016-05-26 00:00:00.000000",
-                        "timezone_type": 3,
-                        "timezone": "America/New_York"
-                    }
-                }
-            }]
-        },
+        "field_map_display_date": {},
         "field_map_options": [
 
         ],
@@ -169,7 +115,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "http://www.broadbandmap.gov/"
+                "value": "broadbandmap"
             }]
         },
         "field_map_repository": [
@@ -180,7 +126,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "ext_window"
+                "value": "proxy"
             }]
         },
         "field_related_links": [

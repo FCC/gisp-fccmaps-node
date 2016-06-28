@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map shows the 37 States where new broadband will be deployed as a result of the first phase of the Connect America Fund. The amount of funding by State and number of locations receiving support can be show by moving your mouse over each State. The Connect America Fund aims to connect 7 million unserved rural Americans to broadband in six years, and puts the nation on a path to connect all 19 million unserved rural residents by 2020. The FCC launched this unprecedented broadband expansion last year when it reformed and modernized the Universal Service Fund, which connected rural America to the telephone network in the 20th century. The Commission created the Connect America Fund to unleash the benefits of broadband for all Americans in the 21st century. In the first phase, about $115 million of public funding will be coupled with tens of millions more in private investment to quickly expand broadband infrastructure to rural communities in every region of the nation.</p>",

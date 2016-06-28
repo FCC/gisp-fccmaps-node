@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "This map shows broadband availability in the United States. Availability is defined as at least 3 mbps download and 768 kbps upload speeds. Because of concerns with the accuracy of the data for mobile wireless broadband, this map shows only wireline technology availability. It also shows unpopulated areas. Under Available means that some, but not all, of the area identified is served by 3 Mbps down and 768 Kbps up. This map was created by the FCC.",

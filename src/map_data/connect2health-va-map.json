@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "",
-            "format": "full_html",
-            "safe_value": ""
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "",

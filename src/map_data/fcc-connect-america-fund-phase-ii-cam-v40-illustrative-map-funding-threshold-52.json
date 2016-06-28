@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>The Wireline Competition Bureau provides the following illustrative map displaying the areas that would potentially be eligible for the Connect America Fund Phase II offer of model-based support to price cap carriers, based on the output from version 4.0 of the Connect America Cost Model (CAM v4.0) (see <a href=\"http://www.fcc.gov/maps\">http://www.fcc.gov/maps</a>). The areas that are shown as eligible for the offer of model-based support are consistent with the previously posted CAM v4.0 Illustrative Results that utilize a Funding Threshold of $52. In addition to providing a visualization of the areas potentially eligible for the offer of model-based support, the map displays the areas below the Funding Threshold, above the Extremely High Cost Threshold, and areas potentially excluded from eligibility due to the presence of other providers (based on State Broadband Initiative data and FCC Form 477 data). Additional details related to the CAM v4.0 release and supporting information can be found on the fcc.gov site (see <a href=\"http://www.fcc.gov/encyclopedia/price-cap-resources\">http://www.fcc.gov/encyclopedia/price-cap-resources</a>).</p>",

@@ -716,12 +716,15 @@ function updateText() {
     $('#ul-tag-list').html(tagList);
 
     // Create Share and Embed links    
-    $('a[href="#embedLink"]').click(function(e) {
+    $('#btn-embed').click(function(e) {
         var embedLink = window.location.href.split('#');
 
         if (map_info_all.map_type === 'iframe') {
             embedLink = map_info_all.webUrl;
             $('.help-block').addClass('hide');
+        } else if (embedLink[1] === undefined) { 
+            embedLink = embedLink[0] + 'embed/#' + map_info_all.map_initial_zoom + '/' + map_info_all.map_latitude + '/' + map_info_all.map_longitude + '/zoom,search,layers,attr,key';
+            $('.help-block').removeClass('hide');
         } else {
             embedLink = embedLink[0] + 'embed/#' + embedLink[1].replace(/\/?$/, '/') + 'zoom,search,layers,attr,key';
             $('.help-block').removeClass('hide');
@@ -732,7 +735,7 @@ function updateText() {
         $('#txt-link').val(embedLink).select();
     });
 
-    $('a[href="#bookmarkLink"]').click(function(e) {
+    $('#btn-bookmark').click(function(e) {
         var bookmarkLink = window.location;
 
         e.preventDefault();

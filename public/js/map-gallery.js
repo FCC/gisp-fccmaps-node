@@ -43,7 +43,7 @@
 
             // add tabindex to enforce order
             $('#skip-link, header, .nav-secondary').find('a').add('.navbar-about').attr('tabindex', 10);
-            $('.gallery__filterOpts').find('button, select, a').add('.gallery__numResults').attr('tabindex', 20);
+            $('.search-filters').find('input, button, select, a').add('.gallery__numResults').attr('tabindex', 20);
         },
 
         initGrid: function() {
@@ -171,7 +171,12 @@
             });
 
             Handlebars.registerHelper('formatDate', function(dateReviewed) {
-                return dateReviewed.split(' ')[0];
+                var dateStr = dateReviewed.split(' ')[0].split('-');
+                var MM = dateStr[1];
+                var DD = dateStr[2];
+                var YYYY = dateStr[0];
+                
+                return (MM + '/' + DD + '/' + YYYY);
             });
 
             template = Handlebars.compile(source);

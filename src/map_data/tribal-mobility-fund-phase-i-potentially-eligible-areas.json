@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "This map shows the areas identified as potentially eligible for Tribal Mobility Fund Phase I support as of March 2013. These areas are populated US Census blocks that lack 3G or better mobile coverage at the centroid of the block. These blocks were identified by analyzing US Census data, January 2013 Mosaik Solutions data, and information submitted by third parties. Counties that contain any of these blocks are shaded light gray, and as you zoom in and mouse over these counties you will see more information on the potentially eligible areas, including the proposed bidding item, US Census tract, Tribal name, and population. For additional information visit <a href=\"http://wireless.fcc.gov/auctions/902/\">http://wireless.fcc.gov/auctions/902/</a>.",

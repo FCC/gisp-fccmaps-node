@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28433",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/overbuilt-map/\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/overbuilt-map/\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>Wireline Competition Bureau map showing rate-of-return study areas that are 100 percent overlapped by unsubsidized competitors. For more information, see <a href=\"https://apps.fcc.gov/edocs_public/attachmatch/DA-15-868A1.pdf\">https://apps.fcc.gov/edocs_public/attachmatch/DA-15-868A1.pdf</a>.</p>",

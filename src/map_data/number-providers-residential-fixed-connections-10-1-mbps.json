@@ -9,11 +9,7 @@
     "body": null,
     "vid": "28434",
     "fields": {
-        "field_map_embed_code": [{
-            "value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\r\n",
-            "format": "full_html",
-            "safe_value": "<p><iframe frameborder=\"0\" height=\"620\" scrolling=\"no\" src=\"https://fcc.github.io/caf-2-accepted-map/index.html\" width=\"920\"></iframe></p>\n"
-        }],
+        "field_map_embed_code": [],
         "field_description": {
             "und": [{
                 "value": "<p>This map shows the number of fixed providers of residential Internet access service at least 10 Mbps downstream and 1 Mbps upstream based on December 2014 <a href=\"https://www.fcc.gov/general/broadband-deployment-data-fcc-form-477\">Form 477 fixed broadband deployment data</a>. For more information, see the <a href=\"https://www.fcc.gov/reports-research/reports/internet-access-services-reports/internet-access-services-reports\">Internet Access Services Reports</a>.</p>",
