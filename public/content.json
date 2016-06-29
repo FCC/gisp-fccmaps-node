@@ -21328,10 +21328,10 @@
         ],
         "field_description": {
             "und": [{
-                "value": "<p>This map displays line A, line B, line C, and line D along the US-Canada border for frequency coordination below 470 MHz. <a href=\"https://fcc.maps.arcgis.com/home/webmap/viewer.html?webmap=feff1ec7faa845189810fd78fd65fef8\">Click here to view the full interactive map.</a></p>",
+                "value": "<p>This map displays line A, line B, line C, and line D along the US-Canada border for frequency coordination below 470 MHz. <a href=\"https://fcc.maps.arcgis.com/home/webmap/viewer.html?webmap=feff1ec7faa845189810fd78fd65fef8\">View the full interactive map.</a></p>",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p>This map displays line A, line B, line C, and line D along the US-Canada border for frequency coordination below 470 MHz. <a href=\"https://fcc.maps.arcgis.com/home/webmap/viewer.html?webmap=feff1ec7faa845189810fd78fd65fef8\">Click here to view the full interactive map.</a></p>",
+                "safe_value": "<p>This map displays line A, line B, line C, and line D along the US-Canada border for frequency coordination below 470 MHz. <a href=\"https://fcc.maps.arcgis.com/home/webmap/viewer.html?webmap=feff1ec7faa845189810fd78fd65fef8\">View the full interactive map.</a></p>",
                 "safe_summary": ""
             }]
         },
@@ -24224,7 +24224,7 @@
         "tid": "966",
         "vid": "1",
         "name": "Broadband, Internet & IP",
-        "url": "https://www.fcc.gov/tags/broadband-progress-reports"
+        "url": "https://www.fcc.gov/tags/broadband-internet-ip"
     }, {
         "tid": "966",
         "vid": "1",
