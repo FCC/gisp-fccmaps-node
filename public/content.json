@@ -430,7 +430,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/E-rate-fiber-map",
+                "url": "https://www.fcc.gov/maps/e-rate-fiber-map",
                 "title": "FCC E-rate Maps of Fiber Connectivity to Schools and Libraries",
                 "attributes": [
 
@@ -439,7 +439,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "E-rate-fiber-map"
+                "value": "e-rate-fiber-map"
             }]
         },
         "field_map_repository": [
@@ -6266,7 +6266,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/number-providers-residential-fixed-connections-over-200-kbps",
+                "url": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-over-200-kbps",
                 "title": "Number of Fixed Providers of Residential Internet Access Service over 200 kbps by Census Block",
                 "attributes": [
 
@@ -6286,7 +6286,13 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "layers"
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "600",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -6571,7 +6577,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-10-1-mbps",
+    "webUrl": "https://fcc.github.io/ias-map-6/index.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -6657,7 +6663,13 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "layers"
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "600",
+                "width": ""
             }]
         },
         "field_related_links": {

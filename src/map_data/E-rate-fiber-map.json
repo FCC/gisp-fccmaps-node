@@ -104,7 +104,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "https://www.fcc.gov/maps/E-rate-fiber-map",
+                "url": "https://www.fcc.gov/maps/e-rate-fiber-map",
                 "title": "FCC E-rate Maps of Fiber Connectivity to Schools and Libraries",
                 "attributes": [
 
@@ -113,7 +113,7 @@
         },
         "field_map_unique": {
             "und": [{
-                "value": "E-rate-fiber-map"
+                "value": "e-rate-fiber-map"
             }]
         },
         "field_map_repository": [
