@@ -19,6 +19,7 @@ var http = require('http');
 var https = require('https');
 var fs = require('fs-extra');
 var _ = require('lodash');
+var validator = require('validator');
 
 var request = require('request');
 
@@ -36,7 +37,7 @@ var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseco
 var rawDataJson = [];
 var newDataJson, oldDataJson;
 
-var apiJson = [];
+var api_json = [];
 
 // **********************************************************
 
@@ -104,8 +105,9 @@ function deployMap(repeat) {
 	}
 }
 
+// **********************************************************
 function validUnique(unique){
-	var val = false;
+	var valid = false;
 	
 	var regex = /^[a-z0-9-]+$/; 
 	
@@ -113,21 +115,24 @@ function validUnique(unique){
 		
 		if (regex.test(unique)) {
 	
-			val = true;
+			valid = true;
 		}
 		else {
 			console.log('unique : ' + unique );
 			console.log('regex.test(unique) : ' + regex.test(unique) );
 		}
 	}
-	return val;
+	return valid;
 }
 
+// **********************************************************
 function setData(raw) {
 	
 	console.log('\n\n setData');
 	
-	apiJson = [];  // reset 
+	api_json = [];  // reset 
+	
+	console.log('raw.length : ' + raw.length );
 	
 	for (var i = 0; i < raw.length; i++) {
 		
@@ -137,6 +142,7 @@ function setData(raw) {
 		var status_archive, status_feature;
 		var config_frame_height, config_frame_width, config_search_address, config_search_coordinate, config_attribution, config_zoom_max, config_zoom_min;
 		var init_zoom, init_lat, init_lon;
+		var samp_zoom, samp_lat, samp_lon;
 		var meta_bureau, meta_bureau_id, meta_bureau_name, meta_bureau_url;
 		var date_published, date_reviewed, date_created, date_changed, date_display;
 		var url_web, url_thumb;		
@@ -170,6 +176,10 @@ function setData(raw) {
 			init_zoom = _.get(raw[i], 'fields.field_map_initial_zoom.und[0].value'); 
 			init_lat = _.get(raw[i], 'fields.field_map_latitude.und[0].value'); 
 			init_lon = _.get(raw[i], 'fields.field_map_longitude.und[0].value'); 
+			
+			samp_zoom = _.get(raw[i], 'fields.field_thumb_initial_position.und[0].zoom'); 
+			samp_lat = _.get(raw[i], 'fields.field_thumb_initial_position.und[0].lat'); 
+			samp_lon = _.get(raw[i], 'fields.field_thumb_initial_position.und[0].long');
 
 			date_display = _.get(raw[i], 'fields.field_map_display_date.und[0].value'); 			
 			date_published = _.get(raw[i], 'fields.field_date.und[0].value');
@@ -205,29 +215,20 @@ function setData(raw) {
 			
 			//console.log('map_unique : ' + map_unique );
 			//console.log('validUnique(map_unique) : ' + validUnique(map_unique) );
+																
+			// **********************************************************
+			var map_json = {};
+			var item_json;
 			
-			var mapJson = {};
+			if (validUnique(map_unique)) {
 			
-			if (validUnique(map_unique)) {				
-
-				/*
-				console.log('map_unique : ' + map_unique );
-				console.log('map_type : ' + map_type );
-				console.log('map_desc : ' + map_desc );
-				console.log('map_title : ' + map_title );
-				console.log('map_status : ' + map_status );
-				console.log('status_archive : ' + status_archive );
+				console.log('\n\n map_unique : ' + map_unique );
+				//console.log('map_type : ' + map_type );				
 				
-				console.log('date_created : ' + date_created );
-				console.log('date_changed : ' + date_changed );
-				
-				console.log('url_web : ' + url_web );
-				console.log('url_thumb : ' + url_thumb );
-				*/
 			
-				//apiJson[map_unique] = {
-				//mapJson[map_unique] = {				
-				var itemJson = {					
+				//api_json[map_unique] = {
+				//map_json[map_unique] = {				
+				item_json = {					
 					'map_id' : map_unique,
 					'map_status' : map_status,
 					'map_type' : map_type,
@@ -260,6 +261,12 @@ function setData(raw) {
 						'lon' : init_lon
 					},
 					
+					'sample' : {
+						'zoom' : samp_zoom,
+						'lat' : samp_lat,
+						'lon' : samp_lon
+					},
+					
 					'meta' : {
 						'bureau' : {
 							'id' : meta_bureau_id, 
@@ -282,15 +289,155 @@ function setData(raw) {
 					}
 				};
 				
-				apiJson.push(itemJson);
+				// **********************************************************
+				// layers
+				var layer_arr, layers_json, layer_json, layer_visibility;
+			
+				layer_arr = _.get(raw[i], 'fields.field_map_layer');	
+				//console.log('\n layer_arr : ' + JSON.stringify(layer_arr) );
+						
+				if (layer_arr) {  // && (map_type == 'layers')) {
+					
+					layers_json = [];
+					layer_json;
+					
+					//console.log('layer_arr.length : ' + layer_arr.length );		
+					
+					for (var j = 0; j < layer_arr.length; j++) {
+					
+						layer_visibility = _.get(layer_arr[j], 'field_layer_visibility.und[0].value');
+						if (layer_visibility == 'on') {
+							layer_visibility = true;
+						}
+						else {
+							layer_visibility = false;
+						}
+												
+						layer_json = {
+							'domain' : _.get(layer_arr[j], 'field_layer_domain.und[0].value'), 
+							'format' : _.get(layer_arr[j], 'field_layer_format.und[0].value'),
+							'name' : _.get(layer_arr[j], 'field_layer_name.und[0].value'),
+							'opacity' : _.get(layer_arr[j], 'field_layer_opacity.und[0].value'),
+							'protocol' : _.get(layer_arr[j], 'field_layer_protocol.und[0].value'),
+							'title' : _.get(layer_arr[j], 'field_layer_title.und[0].value'),
+							'query' : _.get(layer_arr[j], 'field_layer_query_string.und[0].value'),
+							'style' : _.get(layer_arr[j], 'field_layer_style.und[0].value'),							
+							'visibile' : layer_visibility
+						};
+						layers_json.push(layer_json);
+					}
+					
+					if (layers_json) {
+						item_json.layers = layers_json;
+					}
+				}
 				
-				//console.log('apiJson[map_unique] : ' + JSON.stringify(apiJson[map_unique]) );				
+				// **********************************************************
+				// legends
+				var legend_arr, legends_json, legend_json;
+			
+				legend_arr = _.get(raw[i], 'fields.field_map_legend');	
+				//console.log('\n legend_arr : ' + JSON.stringify(legend_arr) );
+						
+				if (legend_arr) {  // && (map_type == 'layers')) {
+					
+					legends_json = [];
+					legend_json;
+					
+					//console.log('legend_arr.length : ' + legend_arr.length );		
+					
+					for (var k = 0; k < legend_arr.length; k++) {		
+												
+						legend_json = {
+							'color' : _.get(legend_arr[k], 'field_legend_color.und[0].value'), 
+							'text' : _.get(legend_arr[k], 'field_legend_text.und[0].value')							
+						};
+						legends_json.push(legend_json);
+					}
+					
+					if (legends_json) {
+						item_json.legends = legends_json;
+					}
+				}
+				
+				// **********************************************************
+				// tags
+				var tag_arr, tags_json, tag_name;
+			
+				tag_arr = _.get(raw[i], 'taxonomy');	
+				//console.log('\n tag_arr : ' + JSON.stringify(tag_arr) );
+						
+				if (tag_arr) {  // && (map_type == 'layers')) {
+					
+					tags_json = [];
+					
+					//console.log('tag_arr.length : ' + tag_arr.length );		
+					
+					for (var m = 0; m < tag_arr.length; m++) {
+					
+						tag_name = _.get(tag_arr[m], 'name');
+						
+						if ((tag_name != 'Data, Maps, Reports') && (tag_name != 'Maps') && (tag_name != 'Reports')) { // do not include generic tags
+							tags_json.push(tag_name);
+						}				
+						
+					}
+					
+					if (tags_json) {
+						item_json.tags = tags_json;
+					}
+				}
+				
+				// **********************************************************
+				// links
+				var link_arr, links_json, link_json, link_title, link_url;
+			
+				link_arr = _.get(raw[i], 'fields.field_related_links.und');	
+				console.log('\n link_arr : ' + JSON.stringify(link_arr) );
+						
+				if (link_arr) {  // && (map_type == 'layers')) {
+					
+					links_json = [];
+					link_json;
+					
+					console.log('link_arr.length : ' + link_arr.length );		
+					
+					for (var n = 0; n < link_arr.length; n++) {
+					
+						link_title = _.get(link_arr[n], 'title');
+						link_url = _.get(link_arr[n], 'url');
+						
+						link_json = {
+							'title' : link_title,
+							'url' : link_url						
+						};
+						
+						console.log('link_title : ' + link_title );	
+						console.log('link_url : ' + link_url );	
+						
+						if (link_url) {												
+							if (validator.isURL(link_url) ) {
+								links_json.push(link_json);
+							}	
+						}
+					}
+					
+					if (links_json) {
+						item_json.links = links_json;
+					}
+				}
+				
+				
+				// **********************************************************
+				api_json.push(item_json);
+				
+				//console.log('api_json[map_unique] : ' + JSON.stringify(api_json[map_unique]) );				
 			}	
 			
 		}
 	}	
 		
-	apiJson = _.orderBy(apiJson, ['map_rank', 'map_date', 'map_title'], ['asc', 'desc', 'asc']);
+	api_json = _.orderBy(api_json, ['map_rank', 'map_date', 'map_title'], ['asc', 'desc', 'asc']);
 }
 
 
@@ -308,7 +455,7 @@ function getDataAPI(req, res) {
 	var status = req.query.st;
 	var bureau = req.query.bo; 
 	
-	var order = req.query.o;	
+	var order = req.query.o;
 	
 	//console.log('query : ' + query );	
 	//console.log('order : ' + order );	
@@ -319,7 +466,7 @@ function getDataAPI(req, res) {
 	var outJson = [];
 	
 	if (id) {				
-		var keyJson = _.find(apiJson, {'map_id' : id});		
+		var keyJson = _.find(api_json, {'map_id' : id});		
 		//console.log('keyJson : ' + JSON.stringify(keyJson) );
 		
 		if (keyJson) {
@@ -328,7 +475,7 @@ function getDataAPI(req, res) {
 	}	
 	else if (query || status || bureau || order) {
 
-		outJson = apiJson;
+		outJson = api_json;
 		
 		//console.log('filter : ' + JSON.stringify( _.filter(outJson, {'meta' : { 'bureau': { 'id' : bureau }}} ) ) );		
 		
@@ -352,12 +499,22 @@ function getDataAPI(req, res) {
 			outJson = _.filter(outJson, {'meta' : { 'bureau': { 'id' : bureau }}} ); 
 		}	
 		
-		if (status) {
+		if (status) {  // active, feature, archive, all (everything), current (active & feature)
 			status = status.toLowerCase();
 			//console.log('status : ' + status );
 			
 			if (status != 'all') {			
-				outJson = _.filter(outJson, {'map_status' : status} ); 
+				//outJson = _.filter(outJson, {'map_status' : status} ); 
+				
+				outJson = _.filter(outJson, function(item) {				
+					if (status == 'current') {								
+						return item.map_status == 'active' || item.map_status == 'feature';
+					}
+					else {
+						return item.map_status == status;
+					}
+				});		
+				
 			}
 		}		
 		
@@ -394,7 +551,7 @@ function getDataAPI(req, res) {
 		
 	}	
 	else {
-		outJson = apiJson;
+		outJson = api_json;
 	}
 	
 	//var diff = process.hrtime(startTime);	
@@ -404,10 +561,12 @@ function getDataAPI(req, res) {
 	res.json(outJson);
 }
 
+// **********************************************************
 function getRawAPI(req, res) {
 	res.json(rawDataJson);
 }
 
+// **********************************************************
 function pullMap(req, res) {
 	
 	console.log('\n pullMap ');
@@ -424,70 +583,52 @@ function pullMap(req, res) {
 	}	
 }
 
+// **********************************************************
 function checkMapId(mapId) {
-console.log('check map id ' + mapId);
-	for (var i = 1; i < rawDataJson.length; i++) {
-		var map_unique = '';
-		if (rawDataJson[i].fields.field_map_unique && rawDataJson[i].fields.field_map_unique.und && rawDataJson[i].fields.field_map_unique.und[0].value) {
-			map_unique = rawDataJson[i].fields.field_map_unique.und[0].value;
-		}
-
-		if (map_unique == mapId) {
-			return true;
-		}
+	console.log('check map id ' + mapId);
 	
-	}
+	var map_json = _.find(api_json, {'map_id' : mapId});
+	
+	if ((map_json) && (map_json.map_id == mapId)) {
+		console.log('checkMapId true ');
+		return true;
+	}	
 	
 	return false;
 }
 
 function getMapType(mapId) {
 	var map_type = '';
-	for (var i = 1; i < rawDataJson.length; i++) {
-		var map_unique = '';
-		if (rawDataJson[i].fields.field_map_unique && rawDataJson[i].fields.field_map_unique.und && rawDataJson[i].fields.field_map_unique.und[0].value) {
-			map_unique = rawDataJson[i].fields.field_map_unique.und[0].value;
-		}
-
-		if (map_unique == mapId) {
-			if (rawDataJson[i].fields.field_map_type && rawDataJson[i].fields.field_map_type.und && rawDataJson[i].fields.field_map_type.und[0].value) {
-				map_type = rawDataJson[i].fields.field_map_type.und[0].value;
-			}
-		}
+	var map_json = _.find(api_json, {'map_id' : mapId});	
+	
+	if (map_json) {
+		map_type = map_json.map_type;
+		console.log('map_type : ' + map_type );
 	}
 	return map_type;
 }
 
 function getWebUrl(mapId) {
 	var webUrl = '';
-	for (var i = 1; i < rawDataJson.length; i++) {
-		var map_unique = '';
-		if (rawDataJson[i].fields.field_map_unique && rawDataJson[i].fields.field_map_unique.und && rawDataJson[i].fields.field_map_unique.und[0].value) {
-			map_unique = rawDataJson[i].fields.field_map_unique.und[0].value;
-		}
-		if (map_unique == mapId) {
-			if (rawDataJson[i].webUrl) {
-				webUrl = rawDataJson[i].webUrl;
-			}
-		}
+	var map_json = _.find(api_json, {'map_id' : mapId});	
+	
+	if (map_json) {
+		webUrl = map_json.url.web;
+		console.log('webUrl : ' + webUrl );
 	}
 	return webUrl;
 }
 
 function getThumbUrl(mapId) {
 	var thumbUrl = false;
-	for (var i = 1; i < rawDataJson.length; i++) {
-		var map_unique = '';
-		if (rawDataJson[i].fields.field_map_unique && rawDataJson[i].fields.field_map_unique.und && rawDataJson[i].fields.field_map_unique.und[0].value) {
-			map_unique = rawDataJson[i].fields.field_map_unique.und[0].value;
-		}
-		if (map_unique == mapId) {
-			if (rawDataJson[i].fields.field_image_thumbnail && rawDataJson[i].fields.field_image_thumbnail.und && rawDataJson[i].fields.field_image_thumbnail.und[0].uri) {
-				thumbUrl = rawDataJson[i].fields.field_image_thumbnail.und[0].uri;
-			}
-		}
-	}
 	
+	var map_json = _.find(api_json, {'map_id' : mapId});	
+	
+	if (map_json) {
+		thumbUrl = map_json.url.thumb;
+		console.log('thumbUrl : ' + thumbUrl );
+	}
+		
 	return thumbUrl;
 }
 

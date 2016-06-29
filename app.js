@@ -145,24 +145,19 @@ app.get('/api/content.json', function(req, res, next){
 	maps.getDataAPI(req, res, next);
 });
 
+// **********************************************************
 //static routing
 app.use('/', express.static(__dirname + '/public'));
 
+// **********************************************************
 //map thumb routing
 app.use('/:mapId/thumb', function(req, res, next){
 	
 	console.log('\n map thumb routing ' );
 
 	var mapId = req.params.mapId;  //req.url.replace(/\//g, '');	
-	console.log('mapId : ' + mapId);
-	
-	console.log('req.url : ' + req.url);
-	console.log('req.get host : ' + req.get('host'));
-	console.log('req.originalUrl : ' + req.originalUrl);
-	console.log('req.host : ' + req.host);
-	console.log('req.hostname : ' + req.hostname);
-	console.log('req.path : ' + req.path);
-	
+	console.log('mapId thumb : ' + mapId);
+		
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
 		console.log('trailing slash redirect ');		
 		res.redirect(301, req.originalUrl + '/');
@@ -188,6 +183,7 @@ app.use('/:mapId/thumb', function(req, res, next){
 	next(); 	
 });
 
+// **********************************************************
 //map embed routing
 app.use('/:mapId/embed', function(req, res, next){
 	
@@ -195,12 +191,7 @@ app.use('/:mapId/embed', function(req, res, next){
 
 	var mapId = req.params.mapId;  //req.url.replace(/\//g, '');	
 	console.log('mapId : ' + mapId);
-	
-	console.log('req.url : ' + req.url);
-	console.log('req.originalUrl : ' + req.originalUrl);
-	console.log('req.hostname : ' + req.hostname);
-	console.log('req.path : ' + req.path);
-	
+
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
 		console.log('trailing slash redirect ');		
 		res.redirect(301, req.originalUrl + '/');
@@ -254,18 +245,14 @@ app.use('/:mapId/embed', function(req, res, next){
 	next(); 	
 });
 
+// **********************************************************
 //map routing
 app.use('/:mapId', function(req, res, next){
 	
 	console.log('\n map routing ' );
 
 	var mapId = req.params.mapId;  //req.url.replace(/\//g, '');	
-	console.log('mapId : ' + mapId);
-	
-	console.log('req.url : ' + req.url);
-	console.log('req.originalUrl : ' + req.originalUrl);
-	console.log('req.hostname : ' + req.hostname);
-	console.log('req.path : ' + req.path);
+	console.log('mapId routing : ' + mapId);
 	
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
 		console.log('trailing slash redirect ');		
@@ -320,20 +307,6 @@ app.use('/:mapId', function(req, res, next){
 			serve(req, res, next);
 			return;
 			
-			//express.static(__dirname + '/public', {index: mapIndex});	
-			
-			/*
-			if (mapType == 'layers') {
-				console.log('send layers');
-				res.sendFile('map-layers.html', { root: __dirname + '/public' });
-				return;
-			}
-			else if (mapType == 'iframe') {
-				console.log('send iframe');		
-				res.sendFile('map-iframe.html', { root: __dirname + '/public' });
-				return;
-			}	
-			*/
 		}
 	}
 

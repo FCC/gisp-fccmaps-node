@@ -35,7 +35,8 @@
     "morgan": "^1.6.1",
     "node-fs-extra": "^0.8.1",
     "request": "^2.69.0",
-    "serve-static": "^1.11.1"
+    "serve-static": "^1.11.1",
+    "validator": "^5.4.0"
   },
   "devDependencies": {
     "bower": "^1.4.1",
