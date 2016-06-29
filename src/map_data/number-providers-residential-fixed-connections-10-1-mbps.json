@@ -4,7 +4,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "https://www.fcc.gov/maps/number-providers-residential-fixed-connections-10-1-mbps",
+    "webUrl": "https://fcc.github.io/ias-map-6/index.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -90,7 +90,13 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "layers"
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "600",
+                "width": ""
             }]
         },
         "field_related_links": {
