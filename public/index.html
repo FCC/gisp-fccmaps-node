@@ -160,7 +160,7 @@
                                     <div class="gallery__filterOpts">
                                         <div class="map-status btn-group btn-group-sm" role="toolbar" aria-controls="map-list-holder" aria-label="Map view options">
                                             <button type="button" class="btn btn-default" data-filter="all">All</button>
-                                            <button type="button" class="btn btn-default" data-filter="active">Current</button>
+                                            <button type="button" class="btn btn-default" data-filter="current">Current</button>
                                             <button type="button" class="btn btn-default" data-filter="feature">Featured</button>
                                             <button type="button" class="btn btn-default" data-filter="archive">Archive</button>
                                         </div>
@@ -198,7 +198,7 @@
                                 {{#if status.feature}}
                                 <div class="ribbon"><span>Featured</span></div>
                                 {{/if}} {{#isIframe map_type}}
-                                <iframe class="map-iframe" src="{{map_id}}/embed/#{{init.zoom}}/40.65/-102.13/zoom" title="{{map_title}}"></iframe>
+                                <iframe class="map-iframe" src="{{map_id}}/embed/#{{sample.zoom}}/{{sample.lat}}/{{sample.lon}}/zoom" title="{{map_title}}"></iframe>
                                 {{else}}
                                 <div class="thumbnail img-responsive">
                                     <div style="background-image: url({{ url.thumb }})" title="{{ map_title }}"></div>
