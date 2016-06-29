@@ -10,7 +10,7 @@
         // o = order
         searchQuery: {
             q: '',
-            st: 'active',
+            st: 'current',
             o: 'date,desc',
             bo: ''
         },
@@ -285,7 +285,7 @@
 
             MapGallery.searchQuery = {
                 q: '',
-                st: 'active',
+                st: 'current',
                 o: 'date,desc',
                 bo: ''
             };
