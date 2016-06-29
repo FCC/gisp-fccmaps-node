@@ -308,7 +308,7 @@ function getDataAPI(req, res) {
 	var status = req.query.st;
 	var bureau = req.query.bo; 
 	
-	var order = req.query.o;	
+	var order = req.query.o;
 	
 	//console.log('query : ' + query );	
 	//console.log('order : ' + order );	
@@ -352,12 +352,22 @@ function getDataAPI(req, res) {
 			outJson = _.filter(outJson, {'meta' : { 'bureau': { 'id' : bureau }}} ); 
 		}	
 		
-		if (status) {
+		if (status) {  // active, feature, archive, all (everything), current (active & feature)
 			status = status.toLowerCase();
 			//console.log('status : ' + status );
 			
 			if (status != 'all') {			
-				outJson = _.filter(outJson, {'map_status' : status} ); 
+				//outJson = _.filter(outJson, {'map_status' : status} ); 
+				
+				outJson = _.filter(outJson, function(item) {				
+					if (status == 'current') {								
+						return item.map_status == 'active' || item.map_status == 'feature';
+					}
+					else {
+						return item.map_status == status;
+					}
+				});		
+				
 			}
 		}		
 		
