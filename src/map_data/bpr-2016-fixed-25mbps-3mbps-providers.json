@@ -81,16 +81,19 @@
             "und": [{
                 "value": "bpr-2016-fixed-25mbps-3mbps-providers"
             }]
-        },
-        "field_map_repository": [
-
-        ],
+        },       
         "field_map_status": [
 
         ],
         "field_map_type": {
             "und": [{
                 "value": "layers"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "630",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -102,10 +105,7 @@
                 "value": "Wireline Competition",
                 "url": "https://www.fcc.gov/wireline-competition"
             }]
-        },
-        "field_map_address_search_": [
-
-        ],
+        },        
         "field_map_attribution": [
 
         ],
@@ -113,10 +113,7 @@
             "und": [
                 { "value": "street" }
             ]
-        },
-        "field_map_coordinate_search_": [
-
-        ],
+        },        
         "field_map_initial_zoom": {
             "und": [
                 { "value": "3" }
@@ -654,12 +651,16 @@
                 { "value": "-105" }
             ]
         },
-        "field_map_max_zoom": [
-
-        ],
-        "field_map_min_zoom": [
-
-        ]
+        "field_map_max_zoom": {
+            "und": [
+                { "value": "15" }
+            ]
+        },
+        "field_map_min_zoom": {
+            "und": [
+                { "value": "3" }
+            ]
+        }
     }, 
     "taxonomy": [{
         "tid": "956",
