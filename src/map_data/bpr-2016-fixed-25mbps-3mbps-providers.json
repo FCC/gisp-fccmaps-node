@@ -53,7 +53,7 @@
         ],
         "field_subtitle": {
             "und": [{
-                "value": " 2016 Broadband Progress Report"
+                "value": "2016 Broadband Progress Report"
             }]
         },
         "field_featured": [
@@ -374,9 +374,9 @@
             "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
             "field_layer_domain": {
                 "und": [{
-                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "value": "geo.fcc.gov",
                     "format": null,
-                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                    "safe_value": "geo.fcc.gov"
                 }]
             },
             "field_layer_format": {
@@ -398,7 +398,7 @@
             },
             "field_layer_protocol": {
                 "und": [{
-                    "value": "HTTP"
+                    "value": "HTTPS"
                 }]
             },
             "field_layer_title": {
@@ -425,7 +425,7 @@
             },
             "field_layer_visibility": {
                 "und": [{
-                    "value": "on"
+                    "value": "off"
                 }]
             },
             "rdf_mapping": [
@@ -440,9 +440,9 @@
             "uuid": "6efac614-2d8c-4ca0-9801-0ebb1e6bfd06",
             "field_layer_domain": {
                 "und": [{
-                    "value": "www.broadbandmap.gov/geoserver/wms",
+                    "value": "geo.fcc.gov",
                     "format": null,
-                    "safe_value": "www.broadbandmap.gov/geoserver/wms"
+                    "safe_value": "geo.fcc.gov"
                 }]
             },
             "field_layer_format": {
@@ -464,7 +464,7 @@
             },
             "field_layer_protocol": {
                 "und": [{
-                    "value": "HTTP"
+                    "value": "HTTPS"
                 }]
             },
             "field_layer_title": {
@@ -491,7 +491,7 @@
             },
             "field_layer_visibility": {
                 "und": [{
-                    "value": "on"
+                    "value": "off"
                 }]
             },
             "rdf_mapping": [

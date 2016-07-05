@@ -114,7 +114,7 @@ function createMap() {
                     title = '' + i;
                 }
 
-                mapLayer[title] = L.tileLayer.wms(map_info_all.map_layer[i].protocol + '://' + map_info_all.map_layer[i].domain, {
+                mapLayer[title] = L.tileLayer.wms(map_info_all.map_layer[i].protocol + '://' + map_info_all.map_layer[i].domain + '/wms', {
                     format: 'image/' + map_info_all.map_layer[i].format,
                     transparent: true,
                     opacity: map_info_all.map_layer[i].opacity,
