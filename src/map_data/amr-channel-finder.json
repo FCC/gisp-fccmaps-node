@@ -96,7 +96,9 @@
                 "value": "0"
             }]
         },
-        "field_map_display_date": {},
+        "field_map_display_date": [
+
+        ],
         "field_map_options": [
 
         ],
@@ -121,6 +123,12 @@
         "field_map_type": {
             "und": [{
                 "value": "proxy"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": [

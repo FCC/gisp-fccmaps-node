@@ -8,7 +8,7 @@
     "tnid": "0",
     "body": null,
     "vid": "187946",
-    "fields": {        
+    "fields": {              
         "field_description": {
             "und": [{
                 "value": "<p>This map shows the areas of Oklahoma eligible for enhanced Lifeline support.</p>",
@@ -55,13 +55,7 @@
                 "width": "175"
             }]
         },
-        "field_thumb_initial_position": {
-            "und": [{
-                "zoom": "3",
-                "lat": "40.65",
-                "long": "-102.13"
-            }]
-        },
+        "field_thumb_initial_position": {},
         "field_link": [
 
         ],
@@ -101,7 +95,10 @@
             "und": [{
                 "value": "1"
             }]
-        },        
+        },  
+        "field_map_display_date": [
+
+        ],      
         "field_map_options": [
 
         ],
@@ -149,7 +146,10 @@
         },        
         "field_map_attribution": [
 
-        ],              
+        ],   
+        "field_map_basemap": {
+
+        },           
         "field_map_initial_zoom": {
             "und": [{
                 "value": "3"
