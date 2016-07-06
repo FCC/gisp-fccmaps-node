@@ -244,6 +244,10 @@ function setData(raw) {
 					},
 					
 					'config' : {
+						'zoom': {
+							'max': config_zoom_max,
+							'min': config_zoom_min
+						},
 						'attribution' : config_attribution,
 						'frame' : {
 							'height' : config_frame_height,
@@ -314,6 +318,7 @@ function setData(raw) {
 						}
 												
 						layer_json = {
+							'type': _.get(layer_arr[j], 'field_layer_type.und[0].value'),
 							'domain' : _.get(layer_arr[j], 'field_layer_domain.und[0].value'), 
 							'format' : _.get(layer_arr[j], 'field_layer_format.und[0].value'),
 							'name' : _.get(layer_arr[j], 'field_layer_name.und[0].value'),
@@ -362,7 +367,7 @@ function setData(raw) {
 				
 				// **********************************************************
 				// tags
-				var tag_arr, tags_json, tag_name;
+				var tag_arr, tags_json, tag_name, tag_url;
 			
 				tag_arr = _.get(raw[i], 'taxonomy');	
 				//console.log('\n tag_arr : ' + JSON.stringify(tag_arr) );
@@ -376,9 +381,10 @@ function setData(raw) {
 					for (var m = 0; m < tag_arr.length; m++) {
 					
 						tag_name = _.get(tag_arr[m], 'name');
+						tag_url = _.get(tag_arr[m], 'url');
 						
 						if ((tag_name != 'Data, Maps, Reports') && (tag_name != 'Maps') && (tag_name != 'Reports')) { // do not include generic tags
-							tags_json.push(tag_name);
+							tags_json.push({name: tag_name, url: tag_url});
 						}				
 						
 					}
@@ -438,6 +444,9 @@ function setData(raw) {
 	}	
 		
 	api_json = _.orderBy(api_json, ['map_rank', 'map_date', 'map_title'], ['asc', 'desc', 'asc']);
+	
+	// console.log(api_json);
+	
 }
 
 

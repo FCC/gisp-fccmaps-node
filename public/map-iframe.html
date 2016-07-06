@@ -151,7 +151,8 @@
                     <div class="col-sm-12">
                         <div class="row-grid">
                             <div class="col-grid">
-                                <section class="docs-content">
+                                <section id="map-details" class="docs-content"></section>
+                                <script id="map-template" type="text/x-handlebars-template">
                                     <div class="pg-header">
                                         <div class="nav-breadcrumb">
                                             <ol>
@@ -161,75 +162,41 @@
                                             </ol>
                                         </div>
                                         <h1><span id="span-title"></span> <span id="span-subtitle" class="subtitle"></span></h1>
+                                        <h1>{{ map_title }} <span class="subtitle">{{ map_subtitle }}</span></h1>
                                     </div>
-                                    <div id="search-field-holder" class="hide">
-                                        <div class="search-field input-group">
-                                            <div class="search__group">
-                                                <div class="search__input">
-                                                    <div class="input-group">
-                                                        <div class="input-group-btn">
-                                                            <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span id="btn-label">Address</span> <span class="caret"></span></button>
-                                                            <ul id="input-search-switch" role="menu" class="dropdown-menu">
-                                                                <li><a href="#" data-value="loc">Street</a></li>
-                                                                <li><a href="#" data-value="latlon-decimal">Coordinates</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <input id="input-location" class="form-control ui-autocomplete-input ui-corner-all" type="search" placeholder="Enter Address" style="display: block" autocomplete="off" aria-label="Enter Address">
-                                                        <div id="input-latlon-decimal" class="form-control" type="search" placeholder="Enter Latlon decimal" style="display: none">
-                                                            <table id="table-latlon-decimal">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <label for="latitude">Latitude:</label>
-                                                                            <input id="latitude" placeholder="41.234567" style="width: 150px; height: 20px; border: solid 1px #eee">
-                                                                        </td>
-                                                                        <td width="75"></td>
-                                                                        <td>
-                                                                            <label for="longitude">Longitude:</label>
-                                                                            <input id="longitude" placeholder="-91.234567" style="width: 150px; height: 20px; border: solid 1px #eee">
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <span class="input-group-btn" id="span-location-search" style="display: table-cell">                        
-                                    <button class="btn__search btn btn-default" type="submit" id="input-loc-search" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Location Search</span></button>
-                                                        </span>
-                                                        <span class="input-group-btn" id="span-latlon-decimal-search" style="display: none">                        
-                                    <button class="btn-search btn btn-default" id="input-latlon-decimal-search" title="Decimal Latlon Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Decimal Lat/Lon Search</span></button>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="btn__groupLoc">
-                                                    <span class="input-group-btn">  
-                                <button class="btn__geoLocation btn btn-default st" title="Get Current Location" data-toggle="tooltip" data-placement="top" id="btn-geoLocation" type="button" data-original-title="Get Current Location">
-                                <span class="icon icon-location-arrow"></span><span class="sr-only">Get Current Location</span></button>
-                                                    <button class="btn__nationLocation btn btn-default st" title="Nationwide" data-toggle="tooltip" data-placement="top" id="btn-nationLocation" type="button" data-original-title="Nationwide"><span class="icon icon-globe"></span><span class="sr-only">Nationwide</span></button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <iframe class="map-iframe" src=""></iframe>
-                                    <div id="span-description"></div>
+                                    <iframe class="map-iframe" src="{{url.web}}" style="height: {{ config.frame.height }}; width: {{ config.frame.width }}"></iframe>
+                                    {{{ map_desc }}}
                                     <dl class="dl-mapMeta dl-horizontal">
-                                        <dt data-bureau>Published by:</dt>
-                                        <dd data-bureau>Bureau</dd>
-                                        <dt data-published>Published:</dt>
-                                        <dd id="dd-published" data-published></dd>
-                                        <dt data-updated>Updated:</dt>
-                                        <dd id="dd-updated" data-updated></dd>
-                                        <dt data-relatedLinks>Related:</dt>
-                                        <dd data-relatedLinks>
+                                        <dt>Published by:</dt>
+                                        <dd><a href="{{ meta.bureau.url }}">{{ meta.bureau.name }}</a></dd>
+
+                                        {{#if date.created}}
+                                        <dt>Published:</dt>
+                                        <dd>{{formatDate date.created }}</dd>
+                                        {{/if}} 
+
+                                        {{#if date.reviewed}}
+                                        <dt>Updated:</dt>
+                                        <dd>{{formatDate date.reviewed }}</dd>
+                                        {{/if}}
+
+                                        {{#if links}}
+                                        <dt>Related:</dt>
+                                        <dd>
                                             <ul class="list-unstyled">
-                                                <li><a href="#void">Related link</a></li>
+                                                {{#links}}
+                                                <li><a href="{{url}}">{{title}}</a></li>
+                                                {{/links}}
                                             </ul>
                                         </dd>
+                                        {{/if}}
+
                                         <dt>Tags:</dt>
                                         <dd>
-                                            <ul id="ul-tag-list" class="list-tags list-unstyled" aria-hidden="true">
-                                                <li class="tag"><span>Data, Maps, Reports</span></li>
-                                                <li class="tag"><span>Maps</span></li>
+                                            <ul class="list-tags list-unstyled">
+                                                {{#tags}}
+                                                <li class="tag"><a href="{{ url }}">{{ name }}</a></li>
+                                                {{/tags}}
                                             </ul>
                                         </dd>
                                         <dt>
@@ -246,7 +213,7 @@
                                             <div class='addthis_sharing_toolbox'></div>
                                         </dd>
                                     </dl>
-                                </section>
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -329,16 +296,18 @@
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <!-- <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script>
     window.jQuery.ui || document.write('<script src="js/vendor/jquery-ui.min.js"><\/script>')
-    </script>
+    </script> -->
+    <script src="/js/vendor/handlebars.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
     <script src='../js/vendor/l-hash.js'></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
-    <script src="../js/pg-common.js"></script>
-    <script src="../js/app-common.js"></script>
-    <script src="../js/app-iframe.js"></script>
+    <script src="../js/pg-common.js"></script>    
+    <script src="../js/map-template.js"></script>
+    <script>
+    </script>
 </body>
 
 </html>

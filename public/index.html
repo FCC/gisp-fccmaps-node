@@ -201,7 +201,7 @@
                                 <iframe class="map-iframe" src="{{map_id}}/embed/#{{sample.zoom}}/{{sample.lat}}/{{sample.lon}}/zoom" title="{{map_title}}"></iframe>
                                 {{else}}
                                 <div class="thumbnail img-responsive">
-                                    <div style="background-image: url({{ url.thumb }})" title="{{ map_title }}"></div>
+                                    <div style="background-image: url({{thumbImg map_id }})" title="{{ map_title }}"></div>
                                 </div>
                                 {{/isIframe}}
                                 <p class="card__title text-overflow"><a href="{{map_id}}"><span>{{map_title}}</span></a></p>

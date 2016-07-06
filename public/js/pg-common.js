@@ -56,6 +56,64 @@ var extLinks = function(e) {
 
 };
 
+// Create Share and Embed links 
+var shareLinks = {
+
+    init: function() {
+
+        $('.share-links')
+            .on('click', '#btn-bookmark', shareLinks.bookmarkLink)
+            .on('click', '#btn-embed', shareLinks.embedLink)
+            .on('click', '#btn-closeShare', shareLinks.close);
+    },
+
+    bookmarkLink: function(e) {
+        var bookmarkLink = window.location;
+
+        e.preventDefault();
+
+        $('#linkShare').slideDown();
+        $('#txt-link').val(bookmarkLink).select();
+        $('.help-block').addClass('hide');
+    },
+
+    embedLink: function(e) {
+        var url = '';
+        var embedLink = '';
+        var iFrame = $('#map-details').find('iframe');
+
+        e.preventDefault();
+
+        if (iFrame.length > 0) {
+            embedLink = iFrame.attr('src');
+            $('.help-block').addClass('hide');
+        } else {
+            url = window.location.href.split('#');
+
+            if (url[1] === undefined) { console.log(mapLayers.data.init.zoom);
+                embedLink = url[0] + 'embed/#' + mapLayers.data.init.zoom + '/' + mapLayers.data.init.lat + '/' + mapLayers.data.init.lon + '/zoom,search,layers,attr,key';
+            } else {
+                embedLink = url[0] + 'embed/#' + url[1].replace(/\/?$/, '/') + 'zoom,search,layers,attr,key';    
+            }
+            
+            $('.help-block').removeClass('hide');
+        }
+
+        $('#linkShare').slideDown();
+
+        $('#txt-link')
+            .click(function() {
+                this.select();
+            })
+            .val(embedLink).select();
+    },
+
+    close: function(e) {
+        e.preventDefault();
+        $('#linkShare').slideUp();
+    }
+};
+
 $(document).ready(function() {
     offCanvasMenu.init();
     $('body').on('click', '.link-ext', extLinks);
