@@ -30,6 +30,8 @@ var mapLayers = {
             e.preventDefault();
             $('.map-legend').show('fast');
         });
+
+        $('[data-toggle="tooltip"]').tooltip({ container: 'body', delay: { show: 200, hide: 0 } });
     },
     createMap: function() {
             var map;
@@ -88,7 +90,7 @@ var mapLayers = {
             if (mapData.layers.length > 0) {
                 for (var i = 0; i < mapData.layers.length; i++) {
                     zindex1++;
-                    console.log(mapData.layers[i].type);
+                    
                     if (mapData.layers[i].type == 'XYZ') {
 
                         var title = mapData.layers[i].title;
