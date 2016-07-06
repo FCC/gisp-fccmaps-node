@@ -170,6 +170,10 @@
                 return options.inverse(this);
             });
 
+             Handlebars.registerHelper('thumbImg', function(map_id, options) {                
+                return map_id + '/thumb';
+            });
+
             Handlebars.registerHelper('formatDate', function(dateReviewed) {
                 var dateStr = dateReviewed.split(' ')[0].split('-');
                 var MM = dateStr[1];
