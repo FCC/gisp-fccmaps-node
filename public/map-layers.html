@@ -33,13 +33,20 @@
     <link href="../css/gisp-theme.min.css" rel="stylesheet">
     <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55805b0da51f5e05"></script>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-          ga('create', 'UA-16888309-1', 'auto');
-          ga('send', 'pageview');
+    ga('create', 'UA-16888309-1', 'auto');
+    ga('send', 'pageview');
     </script>
 </head>
 
@@ -144,7 +151,8 @@
                     <div class="col-sm-12">
                         <div class="row-grid">
                             <div class="col-grid">
-                                <section class="docs-content">
+                                <section id="map-details" class="docs-content"></section>
+                                <script id="map-template" type="text/x-handlebars-template">
                                     <div class="pg-header">
                                         <div class="nav-breadcrumb">
                                             <ol>
@@ -153,9 +161,9 @@
                                                 <li><a href="../" title="Maps">Maps</a> / </li>
                                             </ol>
                                         </div>
-                                        <h1><span id="span-title"></span> <span id="span-subtitle" class="subtitle"></span></h1>
+                                        <h1>{{ map_title }} <span class="subtitle">{{ map_subtitle }}</span></h1>
                                     </div>
-                                    <div id="search-field-holder" class="hide">
+                                    <div id="search-field-holder">
                                         <div class="search-field input-group">
                                             <div class="search__group">
                                                 <div class="search__input">
@@ -167,8 +175,8 @@
                                                                 <li><a href="#" data-value="latlon-decimal">Coordinates</a></li>
                                                             </ul>
                                                         </div>
-                                                        <input id="input-location" class="form-control ui-autocomplete-input ui-corner-all" type="search" placeholder="Enter Address" style="display: block" autocomplete="off" aria-label="Enter Address">
-                                                        <div id="input-latlon-decimal" class="form-control" type="search" placeholder="Enter Latlon decimal" style="display: none">
+                                                        <input id="location-search" class="form-control ui-autocomplete-input ui-corner-all" type="search" placeholder="Enter Address" style="display: block" autocomplete="off" aria-label="Enter Address">
+                                                        <div id="coord-search" class="form-control hide" type="search" placeholder="Enter Latlon decimal">
                                                             <table id="table-latlon-decimal">
                                                                 <tbody>
                                                                     <tr>
@@ -185,11 +193,11 @@
                                                                 </tbody>
                                                             </table>
                                                         </div>
-                                                        <span class="input-group-btn" id="span-location-search" style="display: table-cell">                        
-                                    <button class="btn__search btn btn-default" type="submit" id="input-loc-search" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Location Search</span></button>
+                                                        <span class="input-group-btn" id="btn-locSearch">                        
+                                    <button class="btn__search btn btn-default" type="submit" title="Location Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Location Search</span></button>
                                                         </span>
-                                                        <span class="input-group-btn" id="span-latlon-decimal-search" style="display: none">                        
-                                    <button class="btn-search btn btn-default" id="input-latlon-decimal-search" title="Decimal Latlon Search" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Decimal Lat/Lon Search</span></button>
+                                                        <span class="input-group-btn hide" id="btn-coordSearch">                        
+                                    <button class="btn-search btn btn-default" title="Search by coordinates" data-toggle="tooltip" data-placement="top"><span class="icon icon-search"></span><span class="sr-only">Search by coordinates</span></button>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -204,34 +212,65 @@
                                         </div>
                                     </div>
                                     <div id="map-container" class="map-wrapper">
-                                        <div id="div-legend-holder"></div>
+                                    {{#if legends}}                                 
+                                            <div class="map-legend">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <td colspan="3"><span class="icon icon-list"></span> <span class="map-legend-name">Map Legend</span>
+                                                                <button id="btn-closeLegend" class="btn btn-xs pull-right"><span class="icon icon-close"></span> <span class="sr-only">Hide legend</span></button>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {{#legends}}
+                                                        <tr>
+                                                            <td>    
+                                                                <div class="key-symbol" style="{{legendType text color}}"></div>                          
+                                                            </td>
+                                                            <td>{{text}}</td>
+                                                        </tr>  
+                                                        {{/legends}}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <button id="btn-openLegend" class="btn legend__icon" title="Map Legend"><span class="icon icon-list"></span></button>
+                                       {{/if}}
                                     </div>
-                                    <div id="span-description"></div>
+                                    {{{ map_desc }}}
                                     <dl class="dl-mapMeta dl-horizontal">
-                                        <dt data-bureau>Published by:</dt>
-                                        <dd data-bureau>Bureau</dd>
-                                        <dt data-published>Published:</dt>
-                                        <dd id="dd-published" data-published></dd>
-                                        <dt data-updated>Updated:</dt>
-                                        <dd id="dd-updated" data-updated></dd>
-                                        <dt data-relatedLinks>Related:</dt>
-                                        <dd data-relatedLinks>
+                                        <dt>Published by:</dt>
+                                        <dd><a href="{{ meta.bureau.url }}">{{ meta.bureau.name }}</a></dd>
+                                        {{#if date.created}}
+                                        <dt>Published:</dt>
+                                        <dd>{{formatDate date.created }}</dd>
+                                        {{/if}} {{#if date.reviewed}}
+                                        <dt>Updated:</dt>
+                                        <dd>{{formatDate date.reviewed }}</dd>
+                                        {{/if}} {{#if links}}
+                                        <dt>Related:</dt>
+                                        <dd>
                                             <ul class="list-unstyled">
-                                                <li><a href="#void">Related link</a></li>
+                                                {{#links}}
+                                                <li><a href="{{url}}">{{title}}</a></li>
+                                                {{/links}}
                                             </ul>
                                         </dd>
+                                        {{/if}}
                                         <dt>Tags:</dt>
                                         <dd>
-                                            <ul id="ul-tag-list" class="list-tags list-unstyled" aria-hidden="true">
-                                                <li class="tag"><span>Data, Maps, Reports</span></li>
-                                                <li class="tag"><span>Maps</span></li>
+                                            <ul id="tag-list" class="list-tags list-unstyled">
+                                                {{#tags}}
+                                                <li class="tag"><a href="{{ url }}">{{ name }}</a></li>
+                                                {{/tags}}
                                             </ul>
                                         </dd>
                                         <dt>
                                             Share:
                                         </dt>
                                         <dd class="share-links">
-                                            <button id="btn-bookmark" class="btn btn-link" type="button">Bookmark</button>&nbsp;|&nbsp;<button id="btn-embed" class="btn btn-link" type="button">Embed</button>
+                                            <button id="btn-bookmark" class="btn btn-link" type="button">Bookmark</button>&nbsp;|&nbsp;
+                                            <button id="btn-embed" class="btn btn-link" type="button">Embed</button>
                                             <div id="linkShare" style="display: none;">
                                                 <span class="help-block hide">Show or hide map features with URL parameters: zoom,search,layers,attr,key (no spaces between commas)</span>
                                                 <input id="txt-link" class="form-control" type="text" aria-label="Use this link to share with others or embed in your Web site.">
@@ -240,7 +279,7 @@
                                             <div class='addthis_sharing_toolbox'></div>
                                         </dd>
                                     </dl>
-                                </section>
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -327,12 +366,14 @@
     <script>
     window.jQuery.ui || document.write('<script src="../js/vendor/jquery-ui.min.js"><\/script>')
     </script>
+    <script src="/js/vendor/handlebars.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
     <script src='../js/vendor/l-hash.js'></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
     <script src="../js/pg-common.js"></script>
-    <script src="../js/app-common.js"></script>
-    <script src="../js/app-layers.js"></script>
+    <script src="../js/map-layers.js"></script>
+    <script src="../js/map-search.js"></script>
+    <script src="../js/map-template.js"></script>
 </body>
 
 </html>

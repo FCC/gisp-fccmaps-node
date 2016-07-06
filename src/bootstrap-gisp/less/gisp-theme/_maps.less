@@ -60,7 +60,7 @@
 }
 
 .map-wrapper {
-    height: 400px;
+    height: 620px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -113,12 +113,17 @@
 }
 
 .legend__icon {
+    background-color: transparent;
     bottom: 10px;
     font-size: 16px;
     cursor: pointer;
     left: 10px;
+    padding: 0;
     position: absolute;
     z-index: 1;
+    &:focus, &:active {
+        outline: none;
+    }
 }
 
 .key-symbol {

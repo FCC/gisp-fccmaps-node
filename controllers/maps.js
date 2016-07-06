@@ -314,6 +314,7 @@ function setData(raw) {
 						}
 												
 						layer_json = {
+							'type': _.get(layer_arr[j], 'field_layer_type.und[0].value'),
 							'domain' : _.get(layer_arr[j], 'field_layer_domain.und[0].value'), 
 							'format' : _.get(layer_arr[j], 'field_layer_format.und[0].value'),
 							'name' : _.get(layer_arr[j], 'field_layer_name.und[0].value'),
@@ -440,7 +441,7 @@ function setData(raw) {
 		
 	api_json = _.orderBy(api_json, ['map_rank', 'map_date', 'map_title'], ['asc', 'desc', 'asc']);
 	
-	console.log(api_json);
+	// console.log(api_json);
 	
 }
 
