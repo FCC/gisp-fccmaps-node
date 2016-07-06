@@ -41,11 +41,10 @@ var mapLayers = {
             var center_lon = -105;
             var baseLayer = {};
             var layerControl;
-            // var geocoder;
 
             initialzoom = mapData.init.zoom;
-            maxzoom = mapData.init.maxzoom || maxzoom;
-            minzoom = mapData.init.minzoom || minzoom;
+            maxzoom = mapData.config.zoom.max || maxzoom;
+            minzoom = mapData.config.zoom.min || minzoom;
             center_lat = mapData.init.lat || center_lat;
             center_lon = mapData.init.lon || center_lon;
 

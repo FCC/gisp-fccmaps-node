@@ -244,6 +244,10 @@ function setData(raw) {
 					},
 					
 					'config' : {
+						'zoom': {
+							'max': config_zoom_max,
+							'min': config_zoom_min
+						},
 						'attribution' : config_attribution,
 						'frame' : {
 							'height' : config_frame_height,
