@@ -50,7 +50,7 @@ var mapSearch = {
         $('#latitude, #longitude').keypress(function(e) {
             var key = e.which;
 
-            if (key === 13) { console.log('lat/lon cick');
+            if (key === 13) { 
                 mapSearch.search_decimal();                
             }
         });
