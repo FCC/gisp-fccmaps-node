@@ -46,6 +46,8 @@ var mapOpts = {
             if (!mapOpts.search) {
                 $('#search-field-holder').toggleClass('hasSearch hide');
             }
+        } else {
+            $('[data-toggle="tooltip"]').tooltip({ container: 'body', delay: { show: 200, hide: 0 } });
         }
 
     }
@@ -64,7 +66,7 @@ var mapLayers = {
         //legend
         if (!mapOpts.legend) {
             $('.map-legend, .legend__icon').toggleClass('hide');
-        } 
+        }
 
         $('#btn-closeLegend').on('click', function(e) {
             e.preventDefault();
@@ -75,8 +77,7 @@ var mapLayers = {
             e.preventDefault();
             $('.map-legend').show('fast');
         });
-
-        $('[data-toggle="tooltip"]').tooltip({ container: 'body', delay: { show: 200, hide: 0 } });
+    
     },
     createMap: function() {
             var map;
