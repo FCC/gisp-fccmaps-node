@@ -108,7 +108,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/section-706-fixed-broadband-deployment-map",
+                "url": "https://www.fcc.gov/maps/section-706-fixed-broadband-deployment-map",
                 "title": "Section 706 Fixed Broadband Deployment Map",
                 "attributes": [
 

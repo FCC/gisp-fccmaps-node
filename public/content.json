@@ -637,7 +637,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-providers",
+    "webUrl": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-providers",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -700,7 +700,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/bpr-2016-fixed-25mbps-3mbps-providers",
+                "url": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-providers",
                 "title": "Number of Residential Fixed Broadband Providers at 25 Mbps/3 Mbps",
                 "attributes": [
 
@@ -2197,7 +2197,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-speed",
+    "webUrl": "https://www.fcc.gov/maps/bpr-2016-fixed-speed",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -2263,7 +2263,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/bpr-2016-fixed-speed",
+                "url": "https://www.fcc.gov/maps/bpr-2016-fixed-speed",
                 "title": "Residential Fixed Broadband by Speed",
                 "attributes": [
 
@@ -4004,7 +4004,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/residential-fixed-connections-3-mbps-768-kbps",
+                "url": "https://www.fcc.gov/maps/residential-fixed-connections-3-mbps-768-kbps",
                 "title": "Residential Fixed Connections at least 3 Mbps/768 Kbps per 1,000 Households by Census Tract",
                 "attributes": [
 
@@ -6061,7 +6061,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/nationwide-lte-coverage-july-2015",
+                "url": "https://www.fcc.gov/maps/nationwide-lte-coverage-july-2015",
                 "title": "Nationwide LTE Coverage",
                 "attributes": [
 
@@ -6565,7 +6565,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/tribal-mobility-fund-phase-i-eligible-areas",
+                "url": "https://www.fcc.gov/maps/tribal-mobility-fund-phase-i-eligible-areas",
                 "title": "Tribal Mobility Fund Phase I Eligible Areas",
                 "attributes": [
 
@@ -7177,7 +7177,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/mobility-fund-phase-1-eligible-areas",
+                "url": "https://www.fcc.gov/maps/mobility-fund-phase-1-eligible-areas",
                 "title": "Mobility Fund Phase 1 Eligible Areas",
                 "attributes": [
 
@@ -8045,7 +8045,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/broadband-availability-hawaii",
+                "url": "https://www.fcc.gov/maps/broadband-availability-hawaii",
                 "title": "Broadband Availability Hawaii",
                 "attributes": [
 
@@ -8402,7 +8402,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/broadband-availability-alaska",
+                "url": "https://www.fcc.gov/maps/broadband-availability-alaska",
                 "title": "Broadband Availability Alaska",
                 "attributes": [
 
@@ -8759,7 +8759,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/broadband-availability",
+                "url": "https://www.fcc.gov/maps/broadband-availability",
                 "title": "Broadband Availability",
                 "attributes": [
 
@@ -9610,7 +9610,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/locations-unserved-fixed-broadband",
+                "url": "https://www.fcc.gov/maps/locations-unserved-fixed-broadband",
                 "title": "Locations Unserved by Fixed Broadband ",
                 "attributes": [
 
@@ -17480,7 +17480,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/section-706-fixed-broadband-deployment-map",
+                "url": "https://www.fcc.gov/maps/section-706-fixed-broadband-deployment-map",
                 "title": "Section 706 Fixed Broadband Deployment Map",
                 "attributes": [
 

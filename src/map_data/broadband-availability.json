@@ -108,7 +108,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/broadband-availability",
+                "url": "https://www.fcc.gov/maps/broadband-availability",
                 "title": "Broadband Availability",
                 "attributes": [
 

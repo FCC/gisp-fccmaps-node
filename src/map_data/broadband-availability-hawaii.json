@@ -108,7 +108,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/broadband-availability-hawaii",
+                "url": "https://www.fcc.gov/maps/broadband-availability-hawaii",
                 "title": "Broadband Availability Hawaii",
                 "attributes": [
 
