@@ -2,8 +2,9 @@
     'use strict';
 
     var mapTemplate = {
-        dataAPI: '/api/data.json?id=' + window.location.pathname.replace(/\//g, ''),
-        
+        // dataAPI: '/api?id=' + window.location.pathname.replace(/\//g, ''),
+        dataAPI: '/api?id=' + window.location.href.replace(/.*\/\//, '').split('/')[1] || '',
+
         getData: function() {
             $.ajax({
                 dataType: 'json',
@@ -18,7 +19,7 @@
         createTemplate: function(mapData) {
             var source = $('#map-template').html();
             var template;
-            var mapType = mapData[0].map_type;                        
+            var mapType = mapData[0].map_type;
 
             Handlebars.registerHelper('formatDate', function(dateReviewed) {
                 var dateStr = dateReviewed.split(' ')[0].split('-');
@@ -29,17 +30,17 @@
                 return (MM + '/' + DD + '/' + YYYY);
             });
 
-             Handlebars.registerHelper('iframeConfig', function(frameH, frameW, options) {
+            Handlebars.registerHelper('iframeConfig', function(frameH, frameW, options) {
                 var frameHeight = '';
                 var frameWidth = '';
 
                 if (frameH !== undefined && frameH !== '') {
                     frameHeight = 'height: ' + frameH + 'px;';
-                } 
+                }
 
-                if (frameW !== undefined && frameW !== '') { 
+                if (frameW !== undefined && frameW !== '') {
                     frameWidth = 'width: ' + frameW + 'px;';
-                } 
+                }
 
                 return frameHeight + frameWidth;
             });
@@ -54,10 +55,10 @@
                 mapLayers.init();
                 mapSearch.init();
             }
-            
+
             shareLinks.init();
         }
-    };   
+    };
 
     mapTemplate.getData();
 

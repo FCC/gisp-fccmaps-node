@@ -1,4 +1,4 @@
-(function(window, document, $, Handlebars) {
+(function(window, document, $) {
     'use strict';
 
     var MapGallery = {
@@ -348,4 +348,4 @@
 
     MapGallery.init();
 
-}(window, document, jQuery, Handlebars));
+}(window, document, jQuery));
