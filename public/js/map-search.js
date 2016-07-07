@@ -104,7 +104,7 @@ var mapSearch = {
                 alert('Sorry, your current location could not be determined. \nPlease use the search box to enter your location.');
             });
         } else {
-            alert('Sorry, your current location could not be found. \nPlease use the search box to enter your location.');
+            alert('Sorry, your current location could not be determined. \nPlease use the search box to enter your location.');
         }
 
         return false;
