@@ -19,55 +19,45 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [{
-            "fid": "3214",
-            "uid": "1283",
-            "filename": "caf2-accepted.png",
-            "uri": "caf2-accepted.png",
-            "filemime": "image/png",
-            "filesize": "97120",
-            "status": "1",
-            "timestamp": "1445374537",
-            "type": "image",
-            "uuid": "41702340-ad12-468a-88df-e21fa47d8e46",
-            "field_file_image_alt_text": {
-                "und": [{
-                    "value": "CAF II Accepted Areas Map",
-                    "format": null,
-                    "safe_value": "CAF II Accepted Areas Map"
-                }]
-            },
-            "field_file_image_title_text": {
-                "und": [{
-                    "value": "CAF II Accepted Areas Map",
-                    "format": null,
-                    "safe_value": "CAF II Accepted Areas Map"
-                }]
-            },
-            "field_caption": [
-
-            ],
-            "field_bo_media": [
-
-            ],
-            "rdf_mapping": [
-
-            ],
-            "metadata": {
-                "height": 256,
-                "width": 256
-            },
-            "alt": "CAF II Accepted Areas Map",
-            "title": "CAF II Accepted Areas Map",
-            "height": "256",
-            "width": "256"
-        }],
-        "field_thumb_initial_position": {
+        "field_image_thumbnail": {
             "und": [{
-                "zoom": "4",
-                "lat": "40.65",
-                "long": "-102.13"
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-caf-2-accepted-map.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-caf-2-accepted-map.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
             }]
+        },
+        "field_thumb_initial_position": {
+            
         },
         "field_link": [
 
@@ -133,6 +123,12 @@
         "field_map_type": {
             "und": [{
                 "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
