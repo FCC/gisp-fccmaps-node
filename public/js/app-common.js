@@ -758,6 +758,8 @@ function updateText() {
 function getMapOption() {
 
     var mapId = window.location.href.replace(/.*\/\//, '').split('/')[1] || '';
+console.log(mapId);
+
     for (var i = 1; i < contentJson.length; i++) {
         var map_url = '';
         if (contentJson[i].fields.field_map_page_url && contentJson[i].fields.field_map_page_url.und && contentJson[i].fields.field_map_page_url.und[0].url) {

@@ -100,13 +100,11 @@ var mapSearch = {
 
                 mapLayers.map.setView([geo_lat, geo_lon], 14);
 
-            }, function(error) {                       
-                alert('Sorry, your current location could not be found. \nPlease use the search box to enter your location.');
-            }, {
-                timeout: 4000
+            }, function(error) {              
+                alert('Sorry, your current location could not be determined. \nPlease use the search box to enter your location.');
             });
         } else {
-            alert('Sorry, your current location could not be found. \nPlease use the search box to enter your location.');
+            alert('Sorry, your current location could not be determined. \nPlease use the search box to enter your location.');
         }
 
         return false;

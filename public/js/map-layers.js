@@ -14,12 +14,59 @@ Handlebars.registerHelper('legendType', function(legendText, legendColor, option
 
 });
 
+var mapOpts = {
+    getOpts: function() {
+        var urlHash = window.location.hash,
+            isEmbed = window.location.pathname.split('/')[2] === 'embed',
+            args = [],
+            displayOpts = '';
+
+        mapOpts.zoom = true;
+        mapOpts.attr = true;
+        mapOpts.layers = true;
+        mapOpts.legend = true;
+        mapOpts.search = true;
+
+        if (isEmbed) {
+            if (urlHash.indexOf('#') === 0) {
+                urlHash = urlHash.substr(1);
+            }
+            args = urlHash.split('/');
+
+            if (args[3] !== undefined) {
+                displayOpts = args[3].split(',');
+
+                mapOpts.zoom = displayOpts.indexOf('zoom') > -1;
+                mapOpts.attr = displayOpts.indexOf('attr') > -1;
+                mapOpts.layers = displayOpts.indexOf('layers') > -1;
+                mapOpts.legend = displayOpts.indexOf('key') > -1;
+                mapOpts.search = displayOpts.indexOf('search') > -1;
+            }
+
+            if (!mapOpts.search) {
+                $('#search-field-holder').toggleClass('hasSearch hide');
+            }
+        } else {
+            $('[data-toggle="tooltip"]').tooltip({ container: 'body', delay: { show: 200, hide: 0 } });
+        }
+
+    }
+};
+
 var mapLayers = {
     data: {},
     map: undefined,
     geocoder: undefined,
     init: function() {
+
+        mapOpts.getOpts();
+
         mapLayers.createMap();
+
+        //legend
+        if (!mapOpts.legend) {
+            $('.map-legend, .legend__icon').toggleClass('hide');
+        }
 
         $('#btn-closeLegend').on('click', function(e) {
             e.preventDefault();
@@ -30,8 +77,7 @@ var mapLayers = {
             e.preventDefault();
             $('.map-legend').show('fast');
         });
-
-        $('[data-toggle="tooltip"]').tooltip({ container: 'body', delay: { show: 200, hide: 0 } });
+    
     },
     createMap: function() {
             var map;
@@ -52,9 +98,10 @@ var mapLayers = {
 
             L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
             map = L.mapbox.map('map-container', 'fcc.k74ed5ge', {
-                    attributionControl: true,
+                    attributionControl: mapOpts.attr,
                     maxZoom: maxzoom,
-                    minZoom: minzoom
+                    minZoom: minzoom,
+                    zoomControl: mapOpts.zoom
                 })
                 .setView([center_lat, center_lon], initialzoom);
 
@@ -64,7 +111,7 @@ var mapLayers = {
             var baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
             var baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');
 
-            //default
+            //base layers
             baseLayer.Street = baseStreet.addTo(map);
             baseLayer.Satellite = baseSatellite;
             baseLayer.Terrain = baseTerrain;
@@ -90,7 +137,7 @@ var mapLayers = {
             if (mapData.layers.length > 0) {
                 for (var i = 0; i < mapData.layers.length; i++) {
                     zindex1++;
-                    
+
                     if (mapData.layers[i].type == 'XYZ') {
 
                         var title = mapData.layers[i].title;
@@ -135,11 +182,14 @@ var mapLayers = {
                 }
             }
 
-            layerControl = new L.Control.Layers(
-                baseLayer, mapLayer, {
-                    position: 'topleft'
-                }
-            ).addTo(map);
+            //layer control
+            if (mapOpts.layers) {
+                layerControl = new L.Control.Layers(
+                    baseLayer, mapLayer, {
+                        position: 'topleft'
+                    }
+                ).addTo(map);
+            }
 
             mapLayers.map = map;
 
