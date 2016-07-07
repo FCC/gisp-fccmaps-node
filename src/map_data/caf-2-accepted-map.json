@@ -4,7 +4,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "https://www.fcc.gov/maps/caf-2-accepted-map",
+    "webUrl": "https://fcc.github.io/caf-2-accepted-map/index.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -19,55 +19,45 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [{
-            "fid": "3214",
-            "uid": "1283",
-            "filename": "caf2-accepted.png",
-            "uri": "caf2-accepted.png",
-            "filemime": "image/png",
-            "filesize": "97120",
-            "status": "1",
-            "timestamp": "1445374537",
-            "type": "image",
-            "uuid": "41702340-ad12-468a-88df-e21fa47d8e46",
-            "field_file_image_alt_text": {
-                "und": [{
-                    "value": "CAF II Accepted Areas Map",
-                    "format": null,
-                    "safe_value": "CAF II Accepted Areas Map"
-                }]
-            },
-            "field_file_image_title_text": {
-                "und": [{
-                    "value": "CAF II Accepted Areas Map",
-                    "format": null,
-                    "safe_value": "CAF II Accepted Areas Map"
-                }]
-            },
-            "field_caption": [
-
-            ],
-            "field_bo_media": [
-
-            ],
-            "rdf_mapping": [
-
-            ],
-            "metadata": {
-                "height": 256,
-                "width": 256
-            },
-            "alt": "CAF II Accepted Areas Map",
-            "title": "CAF II Accepted Areas Map",
-            "height": "256",
-            "width": "256"
-        }],
-        "field_thumb_initial_position": {
+        "field_image_thumbnail": {
             "und": [{
-                "zoom": "4",
-                "lat": "40.65",
-                "long": "-102.13"
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-caf-2-accepted-map.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-caf-2-accepted-map.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
             }]
+        },
+        "field_thumb_initial_position": {
+            
         },
         "field_link": [
 
@@ -132,7 +122,13 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "layers"
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -151,138 +147,21 @@
 
         ],
         "field_map_basemap": {
-            "und": [
-                { "value": "street" }
-            ]
+            
         },
         "field_map_coordinate_search_": [
 
         ],
         "field_map_initial_zoom": {
-            "und": [
-                { "value": "4" }
-            ]
+            
         },
         "field_map_latitude": {
-            "und": [
-                { "value": "38.908" }
-            ]
+            
         },
-        "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc.0j21k0bh",
-                    "format": null,
-                    "safe_value": "fcc.0j21k0bh"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "Accepted PC Funding",
-                    "format": null,
-                    "safe_value": "Accepted PC Funding"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#83DC80",
-                    "format": null,
-                    "safe_value": "#83DC80"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Accepted PC Funding",
-                    "format": null,
-                    "safe_value": "Accepted PC Funding"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2435",
-            "revision_id": "3386",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#F2F1F0",
-                    "format": null,
-                    "safe_value": "#F2F1F0"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Areas Outside of Phase II Model-Based Support",
-                    "format": null,
-                    "safe_value": "Areas Outside of Phase II Model-Based Support"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
+        "field_map_layer": [],
+        "field_map_legend": [],
         "field_map_longitude": {
-            "und": [
-                { "value": "-94.966" }
-            ]
+            
         },
         "field_map_max_zoom": [
 

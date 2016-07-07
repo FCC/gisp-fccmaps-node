@@ -9,7 +9,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "https://www.fcc.gov/maps/caf-2-accepted-map",
+    "webUrl": "https://fcc.github.io/caf-2-accepted-map/index.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -24,55 +24,45 @@
                 "safe_summary": ""
             }]
         },
-        "field_image_thumbnail": [{
-            "fid": "3214",
-            "uid": "1283",
-            "filename": "caf2-accepted.png",
-            "uri": "caf2-accepted.png",
-            "filemime": "image/png",
-            "filesize": "97120",
-            "status": "1",
-            "timestamp": "1445374537",
-            "type": "image",
-            "uuid": "41702340-ad12-468a-88df-e21fa47d8e46",
-            "field_file_image_alt_text": {
-                "und": [{
-                    "value": "CAF II Accepted Areas Map",
-                    "format": null,
-                    "safe_value": "CAF II Accepted Areas Map"
-                }]
-            },
-            "field_file_image_title_text": {
-                "und": [{
-                    "value": "CAF II Accepted Areas Map",
-                    "format": null,
-                    "safe_value": "CAF II Accepted Areas Map"
-                }]
-            },
-            "field_caption": [
-
-            ],
-            "field_bo_media": [
-
-            ],
-            "rdf_mapping": [
-
-            ],
-            "metadata": {
-                "height": 256,
-                "width": 256
-            },
-            "alt": "CAF II Accepted Areas Map",
-            "title": "CAF II Accepted Areas Map",
-            "height": "256",
-            "width": "256"
-        }],
-        "field_thumb_initial_position": {
+        "field_image_thumbnail": {
             "und": [{
-                "zoom": "4",
-                "lat": "40.65",
-                "long": "-102.13"
+                "fid": "3477",
+                "uid": "1798",
+                "filename": "thumb-caf-2-accepted-map.png",
+                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-caf-2-accepted-map.png",
+                "filemime": "image/png",
+                "filesize": "3695",
+                "status": "1",
+                "timestamp": "1456505550",
+                "type": "image",
+                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
+                "field_file_image_alt_text": [
+
+                ],
+                "field_file_image_title_text": [
+
+                ],
+                "field_caption": [
+
+                ],
+                "field_bo_media": [
+
+                ],
+                "rdf_mapping": [
+
+                ],
+                "metadata": {
+                    "height": 38,
+                    "width": 175
+                },
+                "alt": null,
+                "title": null,
+                "height": "38",
+                "width": "175"
             }]
+        },
+        "field_thumb_initial_position": {
+            
         },
         "field_link": [
 
@@ -137,7 +127,13 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "layers"
+                "value": "iframe"
+            }]
+        },
+        "field_frame_size": {
+            "und": [{
+                "height": "620",
+                "width": ""
             }]
         },
         "field_related_links": {
@@ -156,138 +152,21 @@
 
         ],
         "field_map_basemap": {
-            "und": [
-                { "value": "street" }
-            ]
+            
         },
         "field_map_coordinate_search_": [
 
         ],
         "field_map_initial_zoom": {
-            "und": [
-                { "value": "4" }
-            ]
+            
         },
         "field_map_latitude": {
-            "und": [
-                { "value": "38.908" }
-            ]
+            
         },
-        "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc.0j21k0bh",
-                    "format": null,
-                    "safe_value": "fcc.0j21k0bh"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "Accepted PC Funding",
-                    "format": null,
-                    "safe_value": "Accepted PC Funding"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#83DC80",
-                    "format": null,
-                    "safe_value": "#83DC80"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Accepted PC Funding",
-                    "format": null,
-                    "safe_value": "Accepted PC Funding"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2435",
-            "revision_id": "3386",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#F2F1F0",
-                    "format": null,
-                    "safe_value": "#F2F1F0"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Areas Outside of Phase II Model-Based Support",
-                    "format": null,
-                    "safe_value": "Areas Outside of Phase II Model-Based Support"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
+        "field_map_layer": [],
+        "field_map_legend": [],
         "field_map_longitude": {
-            "und": [
-                { "value": "-94.966" }
-            ]
+            
         },
         "field_map_max_zoom": [
 
@@ -3397,252 +3276,6 @@
     "uri": "http://10.154.68.187/api/content/28001"
 }
 ,{
-    "nid": "179638",
-    "title": "Connect2HealthFCC",
-    "created": "",
-    "changed": "",
-    "type": "map",
-    "webUrl": "http://c2hgis-web-node-dev.us-west-2.elasticbeanstalk.com/",
-    "tnid": "0",
-    "body": null,
-    "vid": "187946",
-    "fields": {
-        "field_map_embed_code": [
-
-        ],
-        "field_description": {
-            "und": [{
-                "value": "The Mapping Broadband Health in America tool is an interactive map created by the Connect2HealthFCC Task Force. It allows users to visualize, overlay and analyze broadband and health data at the national, state and county levels. By using the mapping tool as a starting point for looking at the broadband and health sectors, you can see the path to a more connected, healthier country.",
-                "summary": "",
-                "format": "full_html",
-                "safe_value": "The Mapping Broadband Health in America tool is an interactive map created by the Connect2HealthFCC Task Force. It allows users to visualize, overlay and analyze broadband and health data at the national, state and county levels. By using the mapping tool as a starting point for looking at the broadband and health sectors, you can see the path to a more connected, healthier country.",
-                "safe_summary": ""
-            }]
-        },
-        "field_image_thumbnail": {
-            "und": [{
-                "fid": "3477",
-                "uid": "1798",
-                "filename": "thumb-c2h.png",
-                "uri": "https://fcc.github.io/gisp-fccmaps-images/thumb/thumb-c2h.png",
-                "filemime": "image/png",
-                "filesize": "3695",
-                "status": "1",
-                "timestamp": "1456505550",
-                "type": "image",
-                "uuid": "52ba8559-e844-4991-83b6-2b81456c560e",
-                "field_file_image_alt_text": [
-
-                ],
-                "field_file_image_title_text": [
-
-                ],
-                "field_caption": [
-
-                ],
-                "field_bo_media": [
-
-                ],
-                "rdf_mapping": [
-
-                ],
-                "metadata": {
-                    "height": 38,
-                    "width": 175
-                },
-                "alt": null,
-                "title": null,
-                "height": "38",
-                "width": "175"
-            }]
-        },
-        "field_thumb_initial_position": {
-            "und": [{
-                "zoom": "3",
-                "lat": "40.65",
-                "long": "-102.13"
-            }]
-        },
-        "field_link": [
-
-        ],
-        "field_archived": {
-            "und": [{
-                "value": "0"
-            }]
-        },
-        "field_related_content": [
-
-        ],
-        "field_date_updated_reviewed": {
-            "und": [{
-                "value": "2016-05-27 17:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "UTC",
-                "date_type": "datetime"
-            }]
-        },
-        "field_date": {
-            "und": [{
-                "value": "2016-05-27 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime"
-            }]
-        },
-        "field_search_exclude": {
-            "und": [{
-                "value": "0"
-            }]
-        },
-        "field_subtitle": [
-
-        ],
-        "field_featured": {
-            "und": [{
-                "value": "1"
-            }]
-        },
-        "field_map_display_date": {
-            "und": [{
-                "value": "2016-05-27 00:00:00",
-                "timezone": "America/New_York",
-                "timezone_db": "America/New_York",
-                "date_type": "datetime",
-                "db": {
-                    "value": {
-                        "granularity": [
-                            "year",
-                            "month",
-                            "day",
-                            "hour",
-                            "minute",
-                            "second",
-                            "timezone"
-                        ],
-                        "errors": [
-
-                        ],
-                        "timeOnly": false,
-                        "dateOnly": false,
-                        "originalTime": "2016-05-27T00:00:00-04:00",
-                        "date": "2016-05-27 00:00:00.000000",
-                        "timezone_type": 3,
-                        "timezone": "America/New_York"
-                    },
-                    "value2": {
-                        "granularity": [
-                            "year",
-                            "month",
-                            "day",
-                            "hour",
-                            "minute",
-                            "second",
-                            "timezone"
-                        ],
-                        "errors": [
-
-                        ],
-                        "timeOnly": false,
-                        "dateOnly": false,
-                        "originalTime": "2016-05-27T00:00:00-04:00",
-                        "date": "2016-05-27 00:00:00.000000",
-                        "timezone_type": 3,
-                        "timezone": "America/New_York"
-                    }
-                }
-            }]
-        },
-        "field_map_options": [
-
-        ],
-        "field_map_page_url": {
-            "und": [{
-                "url": "http://c2hgis-web-node-dev.us-west-2.elasticbeanstalk.com/",
-                "title": "Connect2HealthFCC",
-                "attributes": [
-
-                ]
-            }]
-        },
-        "field_map_unique": {
-            "und": [{
-                "value": "connect2health"
-            }]
-        },
-        "field_map_repository": [
-
-        ],
-        "field_map_status": [
-
-        ],
-        "field_map_type": {
-            "und": [{
-                "value": "proxy"
-            }]
-        },
-        "field_related_links": [
-
-        ],
-        "field_bureau_office": {
-            "und": [{
-                "tid": "OGC",
-                "value": "Office of the General Counsel "
-            }]
-        },
-        "field_map_address_search_": {
-            "und": [{
-                "value": "on"
-            }]
-        },
-        "field_map_attribution": [
-
-        ],
-        "field_map_basemap": {
-            "und": [{
-                "value": "Street"
-            }]
-        },
-        "field_map_coordinate_search_": {
-            "und": [{
-                "value": "on"
-            }]
-        },
-        "field_map_initial_zoom": {
-            "und": [{
-                "value": "3"
-            }]
-        },
-        "field_map_latitude": {
-            "und": [{
-                "value": "50.00"
-            }]
-        },
-        "field_map_layer": [],
-        "field_map_legend": [],
-        "field_map_longitude": {
-            "und": [{
-                "value": "-105.00"
-            }]
-        },
-        "field_map_max_zoom": {
-            "und": [{
-                "value": "15"
-            }]
-        },
-        "field_map_min_zoom": {
-            "und": [{
-                "value": "3"
-            }]
-        }
-    },
-    "taxonomy": [{
-        "tid": "527",
-        "vid": "7",
-        "name": "General Counsel"
-    }],
-    "uri": "http://10.154.68.187/api/content/179638"
-},{
     "nid": "28002",
     "title": "Connectivity and Health: Virginia (Phase I)",
     "created": "",
@@ -6783,7 +6416,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "MB",
-                "value": "Media Bureau"
+                "value": "Media"
             }]
         },        
         "field_map_attribution": [
@@ -12446,10 +12079,10 @@
         "field_map_embed_code": [],
         "field_description": {
             "und": [{
-                "value": "<p>This map identifies the areas that have been initially determined to be eligible for ongoing Phase II Connect America support, which are shown in dark green on the map. The map displays the outputs of the adopted version of the Connect America Cost Model (CAM) (version 4.1.1), which calculates costs per location in all price cap carrier study areas for the entire country. Areas marked as “served” are reported as having Internet access of at least 3 Mbps downstream and 768 kbps upstream from an unsubsidized competitor. The map is based on round 8 State Broadband Initiative Data (data as of June 2013).</p><p>Areas on the map fall into one of six categories: served/above cost, served/between cost, served/below cost, unserved/above cost, unserved/between cost, and unserved/below cost. The Wireline Competition Bureau has made an initial determination that areas shown as unserved/between cost on the map are eligible for Phase II support, subject to a challenge process. An area is classified as “between cost” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above $52.50 but below $207.81. An area is classified as “unserved” if it is reported to lack service meeting the requisite speed from an unsubsidized competitor. Areas shown in grey (i.e., not falling into one of the six categories) are either located in rate-of-return study areas and/or are reported as uninhabited. The map will be updated after completion of the Phase II challenge process.</p><p>When the map is zoomed in to display census tract boundaries, clicking on an area of the map displays additional information for that particular census tract (i.e., a grouping of census blocks). The tract-based information provides the census tract number, the total number of eligible locations in the price cap portion of the census tract that are between the cost thresholds where Phase II support is provided and unserved by an unsubsidized competitor, and the cost model-derived amount of annual Phase II support to serve these between cost, unserved locations. Additionally, the displayed information separately provides the total number of locations in the price cap portion of the census tract that are unserved but are in census blocks that are “above cost” (i.e, the census block has a monthly cost-per-location, as calculated by the cost model, at or above the extremely high-cost threshold of $207.81).</p><p>UPDATE: The download feature on this map was updated on 9/29 to correct an issue that limited the number of block records returned to a maximum of 10.</p>",
+                "value": "",
                 "summary": "",
                 "format": "full_html",
-                "safe_value": "<p>This map identifies the areas that have been initially determined to be eligible for ongoing Phase II Connect America support, which are shown in dark green on the map. The map displays the outputs of the adopted version of the Connect America Cost Model (CAM) (version 4.1.1), which calculates costs per location in all price cap carrier study areas for the entire country. Areas marked as “served” are reported as having Internet access of at least 3 Mbps downstream and 768 kbps upstream from an unsubsidized competitor. The map is based on round 8 State Broadband Initiative Data (data as of June 2013).</p><p>Areas on the map fall into one of six categories: served/above cost, served/between cost, served/below cost, unserved/above cost, unserved/between cost, and unserved/below cost. The Wireline Competition Bureau has made an initial determination that areas shown as unserved/between cost on the map are eligible for Phase II support, subject to a challenge process. An area is classified as “between cost” if the average monthly cost-per-location for that census block, as calculated by the cost model, is above $52.50 but below $207.81. An area is classified as “unserved” if it is reported to lack service meeting the requisite speed from an unsubsidized competitor. Areas shown in grey (i.e., not falling into one of the six categories) are either located in rate-of-return study areas and/or are reported as uninhabited. The map will be updated after completion of the Phase II challenge process.</p><p>When the map is zoomed in to display census tract boundaries, clicking on an area of the map displays additional information for that particular census tract (i.e., a grouping of census blocks). The tract-based information provides the census tract number, the total number of eligible locations in the price cap portion of the census tract that are between the cost thresholds where Phase II support is provided and unserved by an unsubsidized competitor, and the cost model-derived amount of annual Phase II support to serve these between cost, unserved locations. Additionally, the displayed information separately provides the total number of locations in the price cap portion of the census tract that are unserved but are in census blocks that are “above cost” (i.e, the census block has a monthly cost-per-location, as calculated by the cost model, at or above the extremely high-cost threshold of $207.81).</p><p>UPDATE: The download feature on this map was updated on 9/29 to correct an issue that limited the number of block records returned to a maximum of 10.</p>",
+                "safe_value": "",
                 "safe_summary": ""
             }]
         },
@@ -12567,7 +12200,7 @@
         },
         "field_frame_size": {
             "und": [{
-                "height": "620",
+                "height": "1500",
                 "width": ""
             }]
         },
@@ -12588,9 +12221,7 @@
 
         ],
         "field_map_basemap": {
-            "und": [
-                { "value": "street" }
-            ]
+            
         },
         "field_map_coordinate_search_": [
 
@@ -12601,125 +12232,12 @@
             ]
         },
         "field_map_latitude": {
-            "und": [
-                { "value": "38.82" }
-            ]
+            
         },
-        "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.kr8dunmi"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc.kr8dunmi",
-                    "format": null,
-                    "safe_value": "fcc.kr8dunmi"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1.0"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "Connect America Phase II - Final Eligible Areas Map",
-                    "format": null,
-                    "safe_value": "Connect America Phase II - Final Eligible Areas Map"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#ff8240",
-                    "format": null,
-                    "safe_value": "#ff8240"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Unavailable",
-                    "format": null,
-                    "safe_value": "Unavailable"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#ffe1d1",
-                    "format": null,
-                    "safe_value": "#ffe1d1"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Partially Unavailable",
-                    "format": null,
-                    "safe_value": "Partially Unavailable"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
+        "field_map_layer": [],
+        "field_map_legend": [],
         "field_map_longitude": {
-            "und": [
-                { "value": "-96.86" }
-            ]
+            
         },
         "field_map_max_zoom": [
 

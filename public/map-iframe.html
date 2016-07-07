@@ -164,7 +164,7 @@
                                         <h1><span id="span-title"></span> <span id="span-subtitle" class="subtitle"></span></h1>
                                         <h1>{{ map_title }} <span class="subtitle">{{ map_subtitle }}</span></h1>
                                     </div>
-                                    <iframe class="map-iframe" src="{{url.web}}" style="height: {{ config.frame.height }}; width: {{ config.frame.width }}"></iframe>
+                                    <iframe class="map-iframe" src="{{url.web}}" style="{{iframeConfig config.frame.height config.frame.width}}"></iframe>
                                     {{{ map_desc }}}
                                     <dl class="dl-mapMeta dl-horizontal">
                                         <dt>Published by:</dt>

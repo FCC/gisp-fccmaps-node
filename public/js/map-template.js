@@ -18,14 +18,7 @@
         createTemplate: function(mapData) {
             var source = $('#map-template').html();
             var template;
-            var mapType = mapData[0].map_type;            
-
-            /*Handlebars.registerHelper('isIframe', function(map_type, options) {
-                if (map_type === 'layers') {
-                    return options.fn(this);
-                }
-                return options.inverse(this);
-            });*/
+            var mapType = mapData[0].map_type;                        
 
             Handlebars.registerHelper('formatDate', function(dateReviewed) {
                 var dateStr = dateReviewed.split(' ')[0].split('-');
@@ -34,6 +27,21 @@
                 var YYYY = dateStr[0];
 
                 return (MM + '/' + DD + '/' + YYYY);
+            });
+
+             Handlebars.registerHelper('iframeConfig', function(frameH, frameW, options) {
+                var frameHeight = '';
+                var frameWidth = '';
+
+                if (frameH !== undefined && frameH !== '') {
+                    frameHeight = 'height: ' + frameH + 'px;';
+                } 
+
+                if (frameW !== undefined && frameW !== '') { 
+                    frameWidth = 'width: ' + frameW + 'px;';
+                } 
+
+                return frameHeight + frameWidth;
             });
 
             template = Handlebars.compile(source);

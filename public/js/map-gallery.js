@@ -54,8 +54,7 @@
                         gutter: 20
                     },
                     itemSelector: '.card'
-                })
-                // .isotope('insert', window.allMaps)
+                })                
                 .on('click', '.btn-details', MapGallery.showCardDetails);
 
             $grid.imagesLoaded().progress(function() {
@@ -67,8 +66,7 @@
 
             // clear search results
             $('#map-list-holder').html('');
-            // MapGallery.status = $('.map-status').find('.active').attr('data-filter');
-            console.log(MapGallery.searchQuery);
+            
             $.ajax({
                 data: MapGallery.searchQuery,
                 dataType: 'json',
