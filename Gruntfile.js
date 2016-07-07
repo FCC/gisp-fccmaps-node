@@ -159,7 +159,7 @@ module.exports = function(grunt) {
                     './src/map_data/bpr-2016-fixed-speed.json',
                     //'./src/map_data/nbm.json',
                     './src/map_data/100pct-overlap-map.json',
-                    './src/map_data/connect2healthfcc.json',
+                    //'./src/map_data/connect2healthfcc.json',
                     './src/map_data/connect2health-va-map.json',
                     './src/map_data/residential-fixed-connections-over-200-kbps.json',
                     './src/map_data/residential-fixed-connections-3-mbps-768-kbps.json',

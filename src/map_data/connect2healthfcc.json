@@ -4,7 +4,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "http://c2hgis-web-node-dev.us-west-2.elasticbeanstalk.com/",
+    "webUrl": "",
     "tnid": "0",
     "body": null,
     "vid": "187946",
@@ -160,7 +160,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://c2hgis-web-node-dev.us-west-2.elasticbeanstalk.com/",
+                "url": "",
                 "title": "Connect2HealthFCC",
                 "attributes": [
 
