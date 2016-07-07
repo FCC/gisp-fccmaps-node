@@ -106,7 +106,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/residential-fixed-connections-3-mbps-768-kbps",
+                "url": "https://www.fcc.gov/maps/residential-fixed-connections-3-mbps-768-kbps",
                 "title": "Residential Fixed Connections at least 3 Mbps/768 Kbps per 1,000 Households by Census Tract",
                 "attributes": [
 

@@ -4,7 +4,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "http://10.154.68.187/reports-research/maps/bpr-2016-fixed-25mbps-3mbps-providers",
+    "webUrl": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-providers",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -67,7 +67,7 @@
         ],
         "field_map_page_url": {
             "und": [{
-                "url": "http://maps.fcc.gov/bpr-2016-fixed-25mbps-3mbps-providers",
+                "url": "https://www.fcc.gov/maps/bpr-2016-fixed-25mbps-3mbps-providers",
                 "title": "Number of Residential Fixed Broadband Providers at 25 Mbps/3 Mbps",
                 "attributes": [
 
