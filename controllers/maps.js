@@ -1,6 +1,6 @@
 /*
  _______   ______   ______    .___  ___.      ___      .______     _______.
- |   ____| /      | /      |   |   \/   |     /   \     |   _  \   /       |
+|   ____| /      | /      |   |   \/   |     /   \     |   _  \   /       |
 |  |__   |  ,----'|  ,----'   |  \  /  |    /  ^  \    |  |_)  | |   (----`
 |   __|  |  |     |  |        |  |\/|  |   /  /_\  \   |   ___/   \   \    
 |  |     |  `----.|  `----.   |  |  |  |  /  _____  \  |  |   .----)   |   
@@ -29,7 +29,7 @@ var request = require('request');
 var configEnv = require('../config/env.json');
 
 var NODE_ENV = process.env.NODE_ENV;
-var CONTENT_API = configEnv[NODE_ENV].CONTENT_API || '/api.json';
+var CONTENT_API = configEnv[NODE_ENV].CONTENT_API;
 var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
 
 // **********************************************************
@@ -48,8 +48,14 @@ function deployMap(repeat) {
 		var contentProtocol = https;
 		if (CONTENT_API.indexOf('http://') == 0) {
 			contentProtocol = http;
-			//console.log('contentProtocol : http ' );
-		}		
+			console.log('contentProtocol : http ' );
+		}	
+		
+		if (NODE_ENV != 'PROD') {
+			process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+			console.log('NODE_TLS_REJECT_UNAUTHORIZED : 0 ' );
+		}
+		
 		console.log('CONTENT_API : ' + CONTENT_API);
 		
 		contentProtocol.get(CONTENT_API, function(res) {
