@@ -4,7 +4,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "https://www.fcc.gov/maps/caf-2-accepted-map",
+    "webUrl": "https://fcc.github.io/caf-2-accepted-map/index.html",
     "tnid": "0",
     "body": null,
     "vid": "28434",
@@ -132,7 +132,7 @@
         ],
         "field_map_type": {
             "und": [{
-                "value": "layers"
+                "value": "iframe"
             }]
         },
         "field_related_links": {
@@ -151,138 +151,21 @@
 
         ],
         "field_map_basemap": {
-            "und": [
-                { "value": "street" }
-            ]
+            
         },
         "field_map_coordinate_search_": [
 
         ],
         "field_map_initial_zoom": {
-            "und": [
-                { "value": "4" }
-            ]
+            
         },
         "field_map_latitude": {
-            "und": [
-                { "value": "38.908" }
-            ]
+            
         },
-        "field_map_layer": [{
-            "item_id": "2438",
-            "revision_id": "3384",
-            "field_name": "field_map_layer",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "c0d80809-4b5a-47c0-89da-a316a02fb345",
-            "field_layer_domain": {
-                "und": [{
-                    "value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh",
-                    "format": null,
-                    "safe_value": "a.tiles.mapbox.com/v4/fcc.0j21k0bh"
-                }]
-            },
-            "field_layer_format": {
-                "und": [{
-                    "value": "png"
-                }]
-            },
-            "field_layer_name": {
-                "und": [{
-                    "value": "fcc.0j21k0bh",
-                    "format": null,
-                    "safe_value": "fcc.0j21k0bh"
-                }]
-            },
-            "field_layer_opacity": {
-                "und": [{
-                    "value": "1"
-                }]
-            },
-            "field_layer_protocol": {
-                "und": [{
-                    "value": "HTTP"
-                }]
-            },
-            "field_layer_title": {
-                "und": [{
-                    "value": "Accepted PC Funding",
-                    "format": null,
-                    "safe_value": "Accepted PC Funding"
-                }]
-            },
-            "field_layer_type": {
-                "und": [{
-                    "value": "XYZ"
-                }]
-            },
-            "field_layer_query_string": {
-                "und": [{
-                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
-                }]
-            },
-            "field_layer_visibility": {
-                "und": [{
-                    "value": "on"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
-        "field_map_legend": [{
-            "item_id": "2434",
-            "revision_id": "3385",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "a1cd9bec-93b8-4a67-aaf6-a3470bac4062",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#83DC80",
-                    "format": null,
-                    "safe_value": "#83DC80"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Accepted PC Funding",
-                    "format": null,
-                    "safe_value": "Accepted PC Funding"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }, {
-            "item_id": "2435",
-            "revision_id": "3386",
-            "field_name": "field_map_legend",
-            "default_revision": "1",
-            "archived": "0",
-            "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
-            "field_legend_color": {
-                "und": [{
-                    "value": "#F2F1F0",
-                    "format": null,
-                    "safe_value": "#F2F1F0"
-                }]
-            },
-            "field_legend_text": {
-                "und": [{
-                    "value": "Areas Outside of Phase II Model-Based Support",
-                    "format": null,
-                    "safe_value": "Areas Outside of Phase II Model-Based Support"
-                }]
-            },
-            "rdf_mapping": [
-
-            ]
-        }],
+        "field_map_layer": [],
+        "field_map_legend": [],
         "field_map_longitude": {
-            "und": [
-                { "value": "-94.966" }
-            ]
+            
         },
         "field_map_max_zoom": [
 

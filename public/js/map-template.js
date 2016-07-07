@@ -36,6 +36,21 @@
                 return (MM + '/' + DD + '/' + YYYY);
             });
 
+             Handlebars.registerHelper('iframeConfig', function(frameH, frameW, options) {
+                var frameHeight = '';
+                var frameWidth = '';
+
+                if (frameH !== '') {
+                    frameHeight = 'height: ' + frameH + 'px;';
+                } 
+
+                if (frameW !== '') { 
+                    frameWidth = 'width: ' + frameW + 'px;';
+                } 
+
+                return frameHeight + frameWidth;
+            });
+
             template = Handlebars.compile(source);
 
             $('#map-details').append(template(mapData[0]));
