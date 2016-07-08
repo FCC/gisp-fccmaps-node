@@ -42,21 +42,21 @@ var api_json = [];
 // **********************************************************
 
 function deployMap(repeat) {
-	console.log('\n deployMap :  '  );
+	console.log('\n deployMap   '  );
 	try {				
 						
 		var contentProtocol = https;
 		if (CONTENT_API.indexOf('http://') == 0) {
 			contentProtocol = http;
-			console.log('contentProtocol : http ' );
+			//console.log('contentProtocol : http ' );
 		}	
 		
 		if (NODE_ENV != 'PROD') {
 			process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-			console.log('NODE_TLS_REJECT_UNAUTHORIZED : 0 ' );
+			//console.log('NODE_TLS_REJECT_UNAUTHORIZED : 0 ' );
 		}
 		
-		console.log('CONTENT_API : ' + CONTENT_API);
+		//console.log('CONTENT_API : ' + CONTENT_API);
 		
 		contentProtocol.get(CONTENT_API, function(res) {
 			var data = '';
@@ -75,18 +75,28 @@ function deployMap(repeat) {
 			
 				newDataJson = JSON.parse(newData);				
 
-				console.log('CONTENT_API data received.');
+				//console.log('CONTENT_API data received.');
 
 				if (JSON.stringify(newDataJson) != JSON.stringify(oldDataJson)) {
-				
-					console.log('newDataJson != oldDataJson');
-					rawDataJson = newDataJson;
 					
-					setData(rawDataJson);					
+					//console.log('newDataJson.length ' + newDataJson.length );
+					
+					if (newDataJson.length >= 10) { //minimum 10 maps
+					
+						//console.log('newDataJson != oldDataJson');
+						rawDataJson = newDataJson;
+						
+						setData(rawDataJson);	
+						
+						console.log('\n\n --- setData COMPLETE ---');
+					}
+					else {
+						console.log('\n\n --- bad data ---');
+					}
 					
 				}
 				else {
-					console.log('no change - newDataJson == oldDataJson');
+					console.log('\n\n --- no data change ---');
 				}		
 			});			
 		});
@@ -95,7 +105,8 @@ function deployMap(repeat) {
 			setTimeout(function() {
 				deployMap(true);
 			}, DEPLOY_INTERVAL);
-			console.log((new Date()).toString() + ' wait...');
+			
+			console.log('\n\n --- setTimeout '+ (new Date()).toString() +' ---');
 		}
 		else {
 			console.log('one time run to pull');
@@ -126,8 +137,8 @@ function validUnique(unique){
 			valid = true;
 		}
 		else {
-			console.log('unique : ' + unique );
-			console.log('regex.test(unique) : ' + regex.test(unique) );
+			//console.log('unique : ' + unique );
+			//console.log('regex.test(unique) : ' + regex.test(unique) );
 		}
 	}
 	return valid;
@@ -136,15 +147,15 @@ function validUnique(unique){
 // **********************************************************
 function setData(raw) {
 	
-	console.log('\n\n setData');
+	//console.log('\n\n setData');
 	
 	api_json = [];  // reset 
 	
-	console.log('raw.length : ' + raw.length );
+	console.log(' setData length : ' + raw.length );
 	
 	for (var i = 0; i < raw.length; i++) {
 		
-		//console.log('\n setData i : ' + i );
+		console.log('\n setData i : ' + i );
 		
 		var map_unique, map_type, map_desc, map_title, map_subtitle, map_status, map_rank;
 		var status_archive, status_feature;
@@ -156,10 +167,12 @@ function setData(raw) {
 		var url_web, url_thumb;		
 		
 		if (raw[i].fields) {
-		
+			
+			console.log('\n raw[i].fields : '  );
+			
 			map_rank = 1;
 			
-			map_unique = _.get(raw[i], 'fields.field_map_unique.und[0].value').toLowerCase();
+			map_unique = _.get(raw[i], 'fields.field_map_unique.und[0].value', '').toLowerCase();
 			map_type = _.get(raw[i], 'fields.field_map_type.und[0].value');
 			
 			map_title = _.get(raw[i], 'title');
@@ -169,7 +182,7 @@ function setData(raw) {
 			status_archive = _.get(raw[i], 'fields.field_archived.und[0].value'); 
 			status_feature = _.get(raw[i], 'fields.field_featured.und[0].value'); 
 								
-			meta_bureau_id = _.get(raw[i], 'fields.field_bureau_office.und[0].tid').toLowerCase(); 	
+			meta_bureau_id = _.get(raw[i], 'fields.field_bureau_office.und[0].tid', '').toLowerCase(); 	
 			meta_bureau_name = _.get(raw[i], 'fields.field_bureau_office.und[0].value'); 
 			meta_bureau_url = _.get(raw[i], 'fields.field_bureau_office.und[0].url'); 
 			
@@ -407,14 +420,14 @@ function setData(raw) {
 				var link_arr, links_json, link_json, link_title, link_url;
 			
 				link_arr = _.get(raw[i], 'fields.field_related_links.und');	
-				console.log('\n link_arr : ' + JSON.stringify(link_arr) );
+				//console.log('\n link_arr : ' + JSON.stringify(link_arr) );
 						
 				if (link_arr) {  // && (map_type == 'layers')) {
 					
 					links_json = [];
 					link_json;
 					
-					console.log('link_arr.length : ' + link_arr.length );		
+					//console.log('link_arr.length : ' + link_arr.length );		
 					
 					for (var n = 0; n < link_arr.length; n++) {
 					
@@ -426,8 +439,8 @@ function setData(raw) {
 							'url' : link_url						
 						};
 						
-						console.log('link_title : ' + link_title );	
-						console.log('link_url : ' + link_url );	
+						//console.log('link_title : ' + link_title );	
+						//console.log('link_url : ' + link_url );	
 						
 						if (link_url) {												
 							if (validator.isURL(link_url) ) {
@@ -443,6 +456,8 @@ function setData(raw) {
 				
 				
 				// **********************************************************
+				console.log('\n api_json.push(item_json : '  );
+				
 				api_json.push(item_json);
 				
 				//console.log('api_json[map_unique] : ' + JSON.stringify(api_json[map_unique]) );				
@@ -467,13 +482,13 @@ function getDataAPI(req, res) {
 	//var startTime = process.hrtime(); 
 	
 	var id = req.query.id;
-	console.log('getDataAPI id 1 : ' + id);
+	//console.log('getDataAPI id 1 : ' + id);
 	
 	var mapId = req.params.mapId;	
 	if (mapId) {
 		id = mapId;
 	}
-	console.log('getDataAPI id 2 : ' + id);
+	//console.log('getDataAPI id 2 : ' + id);
 	
 	var query = req.query.q;	
 	var status = req.query.st;
@@ -609,12 +624,12 @@ function pullMap(req, res) {
 
 // **********************************************************
 function checkMapId(mapId) {
-	console.log('check map id ' + mapId);
+	//console.log('check map id ' + mapId);
 	
 	var map_json = _.find(api_json, {'map_id' : mapId});
 	
 	if ((map_json) && (map_json.map_id == mapId)) {
-		console.log('checkMapId true ');
+		//console.log('checkMapId true ');
 		return true;
 	}	
 	
@@ -627,7 +642,7 @@ function getMapType(mapId) {
 	
 	if (map_json) {
 		map_type = map_json.map_type;
-		console.log('map_type : ' + map_type );
+		//console.log('map_type : ' + map_type );
 	}
 	return map_type;
 }
@@ -638,7 +653,7 @@ function getWebUrl(mapId) {
 	
 	if (map_json) {
 		webUrl = map_json.url.web;
-		console.log('webUrl : ' + webUrl );
+		//console.log('webUrl : ' + webUrl );
 	}
 	return webUrl;
 }
@@ -650,7 +665,7 @@ function getThumbUrl(mapId) {
 	
 	if (map_json) {
 		thumbUrl = map_json.url.thumb;
-		console.log('thumbUrl : ' + thumbUrl );
+		//console.log('thumbUrl : ' + thumbUrl );
 	}
 		
 	return thumbUrl;
