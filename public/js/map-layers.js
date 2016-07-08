@@ -1,13 +1,13 @@
 'use strict'
 
 Handlebars.registerHelper('legendType', function(legendText, legendColor, options) {
-    var keyImgTribal = 'background-image: url(/images/legend-thumb-slash.png)';
-    var keyImgUrban = 'background-image: url(/images/legend-thumb-dot.png)';
+    var keyImgDiag = 'background-image: url(./images/legend-thumb-slash.png)';
+    var keyImgDots = 'background-image: url(./images/legend-thumb-dot.png)';
 
-    if (legendText === 'Tribal land') {
-        return keyImgTribal;
-    } else if (legendText === 'Urban area') {
-        return keyImgUrban;
+    if (legendColor === '%diag') {
+        return keyImgDiag;
+    } else if (legendColor === '%dots') {
+        return keyImgDots;
     } else {
         return 'background-color:' + legendColor;
     }
@@ -15,14 +15,8 @@ Handlebars.registerHelper('legendType', function(legendText, legendColor, option
 });
 
 var mapOpts = {
-    getOpts: function() {
-		
-		console.log('pathname. split : '  + window.location.pathname.split('/'));
-		
-		console.log('pathname. : '  + window.location.pathname);
-		console.log('pathname.split length : '  + window.location.pathname.split('/').length);
-		console.log('pathname.split string : '  + window.location.pathname.split('/')[window.location.pathname.split('/').length-2]);
-	
+    getOpts: function() {		
+
         var urlHash = window.location.hash,
             isEmbed = window.location.pathname.split('/')[window.location.pathname.split('/').length-2] === 'embed',
             args = [],
