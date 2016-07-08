@@ -78,19 +78,18 @@ var shareLinks = {
     },
 
     embedLink: function(e) {
-        var url = '';
+        var url = window.location.href.split('#');
         var embedLink = '';
         var iFrame = $('#map-details').find('iframe');
 
-        e.preventDefault();
+        e.preventDefault();	
 
         if (iFrame.length > 0) {
-            embedLink = iFrame.attr('src');
+            embedLink = url[0] + 'embed/';
             $('.help-block').addClass('hide');
-        } else {
-            url = window.location.href.split('#');
+        } else {            
 
-            if (url[1] === undefined) { console.log(mapLayers.data.init.zoom);
+            if (url[1] === undefined) { 
                 embedLink = url[0] + 'embed/#' + mapLayers.data.init.zoom + '/' + mapLayers.data.init.lat + '/' + mapLayers.data.init.lon + '/zoom,search,layers,attr,key';
             } else {
                 embedLink = url[0] + 'embed/#' + url[1].replace(/\/?$/, '/') + 'zoom,search,layers,attr,key';    
@@ -98,7 +97,7 @@ var shareLinks = {
             
             $('.help-block').removeClass('hide');
         }
-
+		
         $('#linkShare').slideDown();
 
         $('#txt-link')

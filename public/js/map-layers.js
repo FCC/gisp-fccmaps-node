@@ -16,8 +16,15 @@ Handlebars.registerHelper('legendType', function(legendText, legendColor, option
 
 var mapOpts = {
     getOpts: function() {
+		
+		console.log('pathname. split : '  + window.location.pathname.split('/'));
+		
+		console.log('pathname. : '  + window.location.pathname);
+		console.log('pathname.split length : '  + window.location.pathname.split('/').length);
+		console.log('pathname.split string : '  + window.location.pathname.split('/')[window.location.pathname.split('/').length-2]);
+	
         var urlHash = window.location.hash,
-            isEmbed = window.location.pathname.split('/')[2] === 'embed',
+            isEmbed = window.location.pathname.split('/')[window.location.pathname.split('/').length-2] === 'embed',
             args = [],
             displayOpts = '';
 
