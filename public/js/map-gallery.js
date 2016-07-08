@@ -1,8 +1,8 @@
 (function(window, document, $) {
     'use strict';
-
+		
     var MapGallery = {
-        searchAPI: '/api.json',
+        searchAPI: './api.json',
         // q = query string
         // st = status
         // bo = bureau
