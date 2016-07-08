@@ -70,7 +70,9 @@ function deployMap(repeat) {
 				var newData = data;
 				newData = newData.replace(/\\n/g, '');
 				newData = newData.replace(/\\r/g, '');
-		
+			
+				//console.log('\n newData :  ' + JSON.stringify(newData) );
+			
 				newDataJson = JSON.parse(newData);				
 
 				console.log('CONTENT_API data received.');
@@ -465,6 +467,13 @@ function getDataAPI(req, res) {
 	//var startTime = process.hrtime(); 
 	
 	var id = req.query.id;
+	console.log('getDataAPI id 1 : ' + id);
+	
+	var mapId = req.params.mapId;	
+	if (mapId) {
+		id = mapId;
+	}
+	console.log('getDataAPI id 2 : ' + id);
 	
 	var query = req.query.q;	
 	var status = req.query.st;

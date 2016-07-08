@@ -779,9 +779,9 @@
             "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
             "field_legend_color": {
                 "und": [{
-                    "value": "#d7301f",
+                    "value": "%diag",
                     "format": null,
-                    "safe_value": "#d7301f"
+                    "safe_value": "%diag"
                 }]
             },
             "field_legend_text": {
@@ -803,9 +803,9 @@
             "uuid": "14c1ff8a-9d7d-475d-93a3-dede703101af",
             "field_legend_color": {
                 "und": [{
-                    "value": "#FFFFFF",
+                    "value": "%dots",
                     "format": null,
-                    "safe_value": "#FFFFFF"
+                    "safe_value": "%dots"
                 }]
             },
             "field_legend_text": {
