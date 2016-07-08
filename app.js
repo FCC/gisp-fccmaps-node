@@ -163,6 +163,7 @@ app.get('/:mapId/embed/api.json', function(req, res, next){
 
 // **********************************************************
 //static routing
+
 app.use('/', express.static(__dirname + '/public'));
 
 // **********************************************************
@@ -275,16 +276,7 @@ app.use('/:mapId', function(req, res, next){
 
 	var mapId = req.params.mapId;  //req.url.replace(/\//g, '');	
 	console.log('mapId routing : ' + mapId);
-	
-	console.log('req.url : ' + req.url);
-	console.log('req.originalUrl : ' + req.originalUrl);
-	console.log('req.hostname : ' + req.hostname);
-	console.log('req.path : ' + req.path);
-	console.log('req.baseUrl : ' + req.baseUrl);
-	console.log('req.get get : ' + req.get('host'));
-	console.log('req.get path : ' + req.get('path'));
-	console.log('req.path : ' + req.path);
-	
+			
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
 		console.log('trailing slash redirect ');	
 		var redUrl = PROXY_PATH + req.originalUrl + '/';

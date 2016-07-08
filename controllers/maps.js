@@ -70,7 +70,9 @@ function deployMap(repeat) {
 				var newData = data;
 				newData = newData.replace(/\\n/g, '');
 				newData = newData.replace(/\\r/g, '');
-		
+			
+				//console.log('\n newData :  ' + JSON.stringify(newData) );
+			
 				newDataJson = JSON.parse(newData);				
 
 				console.log('CONTENT_API data received.');
