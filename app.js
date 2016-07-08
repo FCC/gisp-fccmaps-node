@@ -48,12 +48,14 @@ var NODE_ENV = process.env.NODE_ENV;
 var NODE_PORT =  process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
 var CONTENT_API = configEnv[NODE_ENV].CONTENT_API;
 var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
+var PROXY_PATH = configEnv[NODE_ENV].PROXY_PATH || '/';
 var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
 
 console.log('NODE_ENV : '+ NODE_ENV );
 console.log('NODE_PORT : '+ NODE_PORT );
 console.log('CONTENT_API : '+ CONTENT_API );
 console.log('DEPLOY_INTERVAL : '+ DEPLOY_INTERVAL );
+console.log('PROXY_PATH : '+ PROXY_PATH );
 console.log('ALLOWED_IP : '+ ALLOWED_IP );
 
 // **********************************************************
@@ -145,6 +147,20 @@ app.get('/api/content.json', function(req, res, next){
 	maps.getDataAPI(req, res, next);
 });
 
+app.get('/:mapId/api', function(req, res, next){
+	maps.getDataAPI(req, res, next);	
+});
+app.get('/:mapId/api.json', function(req, res, next){
+	maps.getDataAPI(req, res, next);	
+});
+
+app.get('/:mapId/embed/api', function(req, res, next){
+	maps.getDataAPI(req, res, next);	
+});
+app.get('/:mapId/embed/api.json', function(req, res, next){
+	maps.getDataAPI(req, res, next);	
+});
+
 // **********************************************************
 //static routing
 app.use('/', express.static(__dirname + '/public'));
@@ -159,8 +175,11 @@ app.use('/:mapId/thumb', function(req, res, next){
 	console.log('mapId thumb : ' + mapId);
 		
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
-		console.log('trailing slash redirect ');		
-		res.redirect(301, req.originalUrl + '/');
+		console.log('trailing slash redirect ');	
+		var redUrl = PROXY_PATH + req.originalUrl + '/';
+		console.log('redUrl : ' + redUrl);
+		
+		res.redirect(301, redUrl);
 		return;
 	}	
 	
@@ -193,10 +212,13 @@ app.use('/:mapId/embed', function(req, res, next){
 	console.log('mapId : ' + mapId);
 
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
-		console.log('trailing slash redirect ');		
-		res.redirect(301, req.originalUrl + '/');
+		console.log('trailing slash redirect ');	
+		var redUrl = PROXY_PATH + req.originalUrl + '/';
+		console.log('redUrl : ' + redUrl);
+		
+		res.redirect(301, redUrl);
 		return;
-	}	
+	}		
 	
 	var isMap = maps.checkMapId(mapId);
 	console.log('isMap : ' + isMap);
@@ -254,9 +276,21 @@ app.use('/:mapId', function(req, res, next){
 	var mapId = req.params.mapId;  //req.url.replace(/\//g, '');	
 	console.log('mapId routing : ' + mapId);
 	
+	console.log('req.url : ' + req.url);
+	console.log('req.originalUrl : ' + req.originalUrl);
+	console.log('req.hostname : ' + req.hostname);
+	console.log('req.path : ' + req.path);
+	console.log('req.baseUrl : ' + req.baseUrl);
+	console.log('req.get get : ' + req.get('host'));
+	console.log('req.get path : ' + req.get('path'));
+	console.log('req.path : ' + req.path);
+	
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
-		console.log('trailing slash redirect ');		
-		res.redirect(301, req.originalUrl + '/');
+		console.log('trailing slash redirect ');	
+		var redUrl = PROXY_PATH + req.originalUrl + '/';
+		console.log('redUrl : ' + redUrl);
+		
+		res.redirect(301, redUrl);
 		return;
 	}	
 	
