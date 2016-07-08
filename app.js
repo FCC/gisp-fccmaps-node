@@ -271,7 +271,7 @@ app.use('/:mapId/embed', function(req, res, next){
 // **********************************************************
 //map routing
 app.use('/:mapId', function(req, res, next){
-	
+
 	//console.log('\n map routing ' );
 
 	var mapId = req.params.mapId;  //req.url.replace(/\//g, '');	
@@ -280,7 +280,7 @@ app.use('/:mapId', function(req, res, next){
 	if ((req.url == '/') && (req.originalUrl.slice(-1) != '/')) {		
 		//console.log('trailing slash redirect ');	
 		var redUrl = PROXY_PATH + req.originalUrl + '/';
-		//console.log('redUrl : ' + redUrl);
+		console.log('redUrl : ' + redUrl);
 		
 		res.redirect(301, redUrl);
 		return;
@@ -348,9 +348,16 @@ app.use(function(req, res) {
 	console.log('\n app.use file not found ' );
     console.error('404 file not found'); 
 
-    res.status(404);
+    //res.status(404);
     //res.sendFile('/public/404.html');
-	res.sendFile('404.html', { root: __dirname + '/public' });
+	//res.sendFile('404.html', { root: __dirname + '/public' });
+	
+	var app404Url = PROXY_PATH + '/404.html#'+ req.url;
+	console.log('\n app404Url : ' + app404Url );
+	
+	//res.redirect(404, app404Url);
+	res.redirect(301, app404Url);
+	
 	return;
 });
 
@@ -359,9 +366,16 @@ app.use(function(err, req, res, next) {
     console.log('\n app.use error: ' + err );
     console.error(err.stack); 
     
-    res.status(500);
+    //res.status(500);
     //res.sendFile('/public/500.html');
-	res.sendFile('500.html', { root: __dirname + '/public' });
+	//res.sendFile('500.html', { root: __dirname + '/public' });
+	
+	var app500Url = PROXY_PATH + '/500.html#'+ req.url;
+	console.log('\n app500Url : ' + app500Url );
+	
+	//res.redirect(500, app500Url);
+	res.redirect(301, app500Url);
+	
 	return;
 });
 
