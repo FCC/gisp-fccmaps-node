@@ -173,12 +173,18 @@
             });
 
             Handlebars.registerHelper('formatDate', function(dateReviewed) {
-                var dateStr = dateReviewed.split(' ')[0].split('-');
-                var MM = dateStr[1];
-                var DD = dateStr[2];
-                var YYYY = dateStr[0];
-                
-                return (MM + '/' + DD + '/' + YYYY);
+			
+				if (dateReviewed) {
+					var dateStr = dateReviewed.split(' ')[0].split('-');
+					var MM = dateStr[1];
+					var DD = dateStr[2];
+					var YYYY = dateStr[0];
+					
+					return (MM + '/' + DD + '/' + YYYY);
+				}
+				else {
+					return '';
+				}
             });
 
             template = Handlebars.compile(source);

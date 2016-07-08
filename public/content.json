@@ -3418,7 +3418,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "OGC",
-                "value": "Office of the General Counsel",
+                "value": "General Counsel",
                 "url": "https://www.fcc.gov/general-counsel"
             }]
         },
@@ -17298,7 +17298,7 @@
         "field_bureau_office": {
             "und": [{
                 "tid": "OET",
-                "value": "Office of Engineering and Technology",
+                "value": "Engineering and Technology",
                 "url": "https://www.fcc.gov/engineering-%26-technology"
             }]
         },
