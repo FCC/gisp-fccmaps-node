@@ -3,7 +3,8 @@
 
     var mapTemplate = {
         // dataAPI: '/api?id=' + window.location.pathname.replace(/\//g, ''),
-        dataAPI: '/api?id=' + window.location.href.replace(/.*\/\//, '').split('/')[1] || '',
+        //dataAPI: '/api?id=' + window.location.href.replace(/.*\/\//, '').split('/')[1] || '',
+		dataAPI: 'api.json',
 
         getData: function() {
             $.ajax({

@@ -465,6 +465,13 @@ function getDataAPI(req, res) {
 	//var startTime = process.hrtime(); 
 	
 	var id = req.query.id;
+	console.log('getDataAPI id 1 : ' + id);
+	
+	var mapId = req.params.mapId;	
+	if (mapId) {
+		id = mapId;
+	}
+	console.log('getDataAPI id 2 : ' + id);
 	
 	var query = req.query.q;	
 	var status = req.query.st;
