@@ -1,6 +1,6 @@
 (function(window, document, $) {
     'use strict';
-		
+
     var MapGallery = {
         searchAPI: './api.json',
         // q = query string
@@ -54,7 +54,7 @@
                         gutter: 20
                     },
                     itemSelector: '.card'
-                })                
+                })
                 .on('click', '.btn-details', MapGallery.showCardDetails);
 
             $grid.imagesLoaded().progress(function() {
@@ -66,17 +66,19 @@
 
             // clear search results
             $('#map-list-holder').html('');
-            
+
             $.ajax({
                 data: MapGallery.searchQuery,
                 dataType: 'json',
-                success: function(data) {
+                success: function(data) {                    
                     MapGallery.createMapCard(data);
                     MapGallery.updateResults(data.length);
                     MapGallery.showNumResults();
                 },
                 type: 'GET',
                 url: MapGallery.searchAPI
+            }).fail(function() {
+                 MapGallery.toggleAlert('show');
             });
         },
 
@@ -168,23 +170,22 @@
                 return options.inverse(this);
             });
 
-             Handlebars.registerHelper('thumbImg', function(map_id, options) {                
+            Handlebars.registerHelper('thumbImg', function(map_id, options) {
                 return map_id + '/thumb';
             });
 
             Handlebars.registerHelper('formatDate', function(dateReviewed) {
-			
-				if (dateReviewed) {
-					var dateStr = dateReviewed.split(' ')[0].split('-');
-					var MM = dateStr[1];
-					var DD = dateStr[2];
-					var YYYY = dateStr[0];
-					
-					return (MM + '/' + DD + '/' + YYYY);
-				}
-				else {
-					return '';
-				}
+
+                if (dateReviewed) {
+                    var dateStr = dateReviewed.split(' ')[0].split('-');
+                    var MM = dateStr[1];
+                    var DD = dateStr[2];
+                    var YYYY = dateStr[0];
+
+                    return (MM + '/' + DD + '/' + YYYY);
+                } else {
+                    return '';
+                }
             });
 
             template = Handlebars.compile(source);
@@ -311,8 +312,8 @@
             MapGallery.locationHash();
         },
 
-        locationHash: function() {
-            location.hash = $.param(MapGallery.searchQuery);
+        locationHash: function() {            
+            location.hash = encodeURIComponent($.param(MapGallery.searchQuery));
         },
 
         getHashFilter: function() {
