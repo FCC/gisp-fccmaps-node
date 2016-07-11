@@ -312,7 +312,7 @@
         },
 
         locationHash: function() {
-            location.hash = $.param(MapGallery.searchQuery);
+           location.hash = encodeURIComponent($.param(MapGallery.searchQuery));
         },
 
         getHashFilter: function() {
