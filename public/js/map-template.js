@@ -31,19 +31,19 @@
                 return (MM + '/' + DD + '/' + YYYY);
             });
 
-            Handlebars.registerHelper('iframeConfig', function(frameH, frameW, options) {
+            Handlebars.registerHelper('iframeConfig', function(frameH, options) {
                 var frameHeight = '';
-                var frameWidth = '';
+                // var frameWidth = '';
 
-                if (frameH !== undefined && frameH !== '') {
+                if (frameH !== undefined && frameH !== '' && frameH !== 'N/A') {
                     frameHeight = 'height: ' + frameH + 'px;';
                 }
 
-                if (frameW !== undefined && frameW !== '') {
-                    frameWidth = 'width: ' + frameW + 'px;';
-                }
+                // if (frameW !== undefined && frameW !== '' && frameW !== 'N/A') {
+                //     frameWidth = 'width: ' + frameW + 'px;';
+                // }
 
-                return frameHeight + frameWidth;
+                return frameHeight;
             });
 
             template = Handlebars.compile(source);
