@@ -406,7 +406,7 @@ function setData(raw) {
                 // links
                 var link_arr, links_json, link_json, link_title, link_url;
 
-                link_arr = _.get(raw[i], 'fields.field_related_links.und');
+                link_arr = _.get(raw[i], 'fields.field_related_links');
 
                 if (link_arr) { // && (map_type == 'layers')) {
 
