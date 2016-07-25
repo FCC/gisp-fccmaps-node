@@ -216,7 +216,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -277,7 +277,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -338,7 +338,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -399,7 +399,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -460,7 +460,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
