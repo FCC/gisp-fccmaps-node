@@ -2410,7 +2410,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -2471,7 +2471,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -2532,7 +2532,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -2593,7 +2593,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -2654,7 +2654,7 @@
             },
             "field_layer_opacity": {
                 "und": [{
-                    "value": "0.50"
+                    "value": "1.0"
                 }]
             },
             "field_layer_protocol": {
@@ -11427,7 +11427,7 @@
     "created": "",
     "changed": "",
     "type": "map",
-    "webUrl": "https://www.broadbandmap.gov/a/swat/ror-map/index.html?v=1",
+    "webUrl": "http://fcc.github.io/ror-map/",
     "tnid": "0",
     "body": null,
     "vid": "28434",

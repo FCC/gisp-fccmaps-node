@@ -106,8 +106,8 @@ var mapLayers = {
                 })
                 .setView([center_lat, center_lon], initialzoom);
 
-            var hash = L.hash(map);
-
+            var hash = L.hash(map);    
+            
             var baseStreet = L.mapbox.tileLayer('fcc.k74ed5ge');
             var baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
             var baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');

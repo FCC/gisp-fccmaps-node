@@ -89,9 +89,9 @@
 	    parseHash: L.Hash.parseHash,
 	    formatHash: L.Hash.formatHash,
 		
-		defLat: 38.82, 
-		defLon: -94.96, 
-		defZoom: 4,
+		defLat: 0, 
+		defLon: 0, 
+		defZoom: null,
 	    layer: null,
 
 	    init: function (map, defLat, defLon, defZoom) {	        		
@@ -153,7 +153,9 @@
 	        if (parsed) {
 	            this.movingMap = true;
 
-	            this.map.setView(parsed.center, parsed.zoom);
+				if (parsed.zoom !== null && (parsed.center.lng !== 0 && parsed.center.lat !== 0)) {
+					this.map.setView(parsed.center, parsed.zoom);	
+				}	            
 
 	            this.layer = parsed.layer;
 
