@@ -18,11 +18,7 @@ module.exports = function(grunt) {
         config: { version: '1.0.0'},
 
         // Watches files for changes and runs tasks based on the changed files
-        watch: {            
-            json: {
-                files: ['./src/map_data/*.json'],
-                tasks: ['concat:contentjson','copy']
-            },
+        watch: {                        
             less: {
                 files: ['./src/bootstrap-gisp/less/**/*.less'],
                 tasks: ['less', 'usebanner', 'autoprefixer', 'copy']
@@ -37,15 +33,6 @@ module.exports = function(grunt) {
                     src: [
                         '<%= paths.tmp %>',
                         '<%= paths.assets %>'                       
-                    ]
-                }]
-            },
-            delTempFolders: {
-                files: [{
-                    dot: true,
-                    src: [
-                        '<%= paths.tmp %>',
-                        './dist'                        
                     ]
                 }]
             }
@@ -142,73 +129,7 @@ module.exports = function(grunt) {
                     // 'bower_components/bootstrap/js/tab.js',
                 ],
                 dest: './public/js/vendor/bootstrap.min.js'
-            }, 
-            // content.json
-            contentjson: {
-                options: {
-                  footer: ']',
-                  separator: ','
-                },
-                src: [
-                    './src/map_data/mapdata-open.json',
-                    './src/map_data/caf-2-accepted-map.json',
-                    './src/map_data/E-rate-fiber-map.json',
-                    './src/map_data/bpr-2016-fixed-25mbps-3mbps-deployment.json',
-                    './src/map_data/bpr-2016-fixed-25mbps-3mbps-providers.json',
-                    './src/map_data/bpr-2016-fixed-25mbps-3mbps-technology.json',
-                    './src/map_data/bpr-2016-fixed-speed.json',
-                    //'./src/map_data/nbm.json',
-                    './src/map_data/100pct-overlap-map.json',
-                    //'./src/map_data/connect2healthfcc.json',
-                    './src/map_data/connect2health-va-map.json',
-                    './src/map_data/residential-fixed-connections-over-200-kbps.json',
-                    './src/map_data/residential-fixed-connections-3-mbps-768-kbps.json',
-                    './src/map_data/number-providers-residential-fixed-connections-over-200-kbps.json',
-                    './src/map_data/number-providers-residential-fixed-connections-10-1-mbps.json',
-                    './src/map_data/terrestrial-mobile-wireless-digital-coverage-july-2015.json',
-                    './src/map_data/nationwide-mobile-wireless-coverage-july-2015.json',
-                    './src/map_data/nationwide-lte-coverage-july-2015.json',
-                    './src/map_data/amr-channel-finder.json',
-                    './src/map_data/tribal-mobility-fund-phase-i-eligible-areas.json',
-                    './src/map_data/tribal-mobility-fund-phase-i-potentially-eligible-areas.json',
-                    './src/map_data/mobility-fund-phase-1-eligible-areas.json',
-                    './src/map_data/800-mhz-cellular-block-cgsas.json',
-                    './src/map_data/800-mhz-cellular-b-block-cgsas.json',
-                    './src/map_data/broadband-availability-hawaii.json',
-                    './src/map_data/broadband-availability-alaska.json',
-                    './src/map_data/broadband-availability.json',
-                    './src/map_data/fcc-enforcement-actions-against-pirate-radio-location.json',
-                    './src/map_data/section-706-mobile-deployment-map.json',
-                    './src/map_data/locations-unserved-fixed-broadband.json',
-                    './src/map_data/fcc-connect-america-phase-ii-final-eligible-areas-map.json',
-                    './src/map_data/total-high-cost-distributions-rate-return-study-areas.json',
-                    './src/map_data/total-line-usf-high-cost-distributions-rate-return-study-areas.json',
-                    './src/map_data/net-usf-received-voice-line.json',
-                    './src/map_data/rural-health-care-pilot-program.json',
-                    './src/map_data/acam-ror-sa-map.json',
-                    './src/map_data/connect-america-phase-ii-final-eligible-areas-map.json',
-                    './src/map_data/connect-america-phase-ii-initial-eligible-areas-map.json',
-                    './src/map_data/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-52.json',
-                    './src/map_data/fcc-connect-america-fund-phase-ii-cam-v40-illustrative-map-funding-threshold-48.json',
-                    './src/map_data/connect-america-fund-caf-phase-i-round-two.json',
-                    './src/map_data/connect-america-fund-caf-phase-i.json',
-                    './src/map_data/wireline-maximum-advertised-download-speed.json',
-                    './src/map_data/regulatory-type-holding-company-level-study-area.json',
-                    './src/map_data/connect-compete-home-broadband-coverage-map.json',                    
-                    './src/map_data/terrestrial-mobile-broadband-network-coverage-number-providers-census-block-level.json',
-                    './src/map_data/terrestrial-mobile-wireless-digital-coverage.json',
-                    './src/map_data/nationwide-4g-coverage.json',
-                    './src/map_data/terrestrial-wireless-coverage-number-providers.json',
-                    './src/map_data/mobility-fund-phase-1-potentially-eligible-areas.json',
-                    './src/map_data/study-area-boundaries.json',
-                    './src/map_data/frequency-coordination-canada.json',
-                    './src/map_data/section-706-fixed-broadband-deployment-map.json',
-                    './src/map_data/oklahoma-enhanced-lifeline-support.json',
-                    './src/map_data/mobile-10-mbps768-kbps-deployment-map-2015-broadband-progress-report.json',
-                    './src/map_data/fixed-25-mbps3-mbps-broadband-deployment-map-2015-broadband-progress-report.json'
-                ],
-                dest: './public/content.json'
-            }           
+            }         
         },
 
         // Add a banner to the top of the generated LESS file.
