@@ -71,8 +71,8 @@
                 data: MapGallery.searchQuery,
                 dataType: 'json',
                 success: function(data) {                    
-                    MapGallery.createMapCard(data);
-                    MapGallery.updateResults(data.length);
+                    MapGallery.createMapCard(data);                    
+                    MapGallery.updateResults();
                     MapGallery.showNumResults();
                 },
                 type: 'GET',
@@ -200,9 +200,10 @@
 
         },
 
-        updateResults: function(numResults) {
+        updateResults: function() {
             var idx = 100;
-
+            var numResults = $('.map-cards').find('.card').length;
+            
             if (numResults === 0) {
                 MapGallery.toggleAlert('show');
             }
