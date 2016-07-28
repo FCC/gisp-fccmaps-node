@@ -286,48 +286,36 @@ app.use('/:mapId', function(req, res, next){
 		return;
 	}	
 	
-	var isMap = maps.checkMapId(mapId);
-	//console.log('isMap : ' + isMap);
+	var isMap = maps.checkMapId(mapId);	
 	
 	if (isMap) {
 	
-		var mapType = maps.getMapType(mapId);
-		//console.log('mapType : ' + mapType);
+		var mapType = maps.getMapType(mapId);		
 
 		if ((mapType == 'proxy') || (mapType == 'redirect')) {
-			//console.log('proxy or redirect');
 			
 			var appUrl = maps.getWebUrl(mapId);
-			//console.log('appUrl : ' + appUrl);
 			
 			appUrl = appUrl.replace(/\?$/, '');
-			//console.log('appUrl : ' + appUrl);
 					
 			if (appUrl.slice(-1) == '/' ){
 				appUrl = appUrl.slice(0, -1);		
 			}
-			//console.log('appUrl : ' + appUrl);
 			
 			var appReqUrl = appUrl + req.url;
-			//console.log('appReqUrl : ' + appReqUrl);		
 			
-			if (mapType == "proxy") {
-				//console.log('mapType proxy pipe ');
+			if (mapType == "proxy") {				
 				req.pipe(request(appReqUrl)).pipe(res);
 				return;
 			}
-			else if (mapType == "redirect") {
-				//console.log('mapType redirect 302 ');
+			else if (mapType == "redirect") {				
 				res.redirect(302, appReqUrl);
 				return;
 			}	
 		}
 		else if ((mapType == 'layers') || (mapType == 'iframe')) {
 		
-			//console.log('layers or iframe');			
-			
 			var mapIndex = 'map-'+ mapType +'.html';
-			//console.log('mapIndex : ' + mapIndex);					
 			
 			var serve = serveStatic(__dirname + '/public', {'index': [mapIndex]});			
 			serve(req, res, next);

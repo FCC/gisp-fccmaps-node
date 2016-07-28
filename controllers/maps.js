@@ -150,7 +150,7 @@ function setData(raw) {
 
         console.log('\n setData i : ' + i);
 
-        var map_unique, map_type, map_desc, map_title, map_subtitle, map_status, map_rank;
+        var map_unique, map_type, map_options, map_desc, map_title, map_subtitle, map_status, map_rank;
         var status_archive, status_feature;
         var config_frame_height, config_frame_width, config_search_address, config_search_coordinate, config_attribution, config_zoom_max, config_zoom_min;
         var init_zoom, init_lat, init_lon;
@@ -173,6 +173,7 @@ function setData(raw) {
             map_unique = _.get(raw[i], 'fields.field_map_unique[0].value', '').toLowerCase();
 
             map_type = _.get(raw[i], 'fields.field_map_type[0].value');
+            map_options = _.get(raw[i], 'fields.field_map_options[0].value');
 
             map_title = _.get(raw[i], 'title');
             map_subtitle = _.get(raw[i], 'fields.field_subtitle[0].value');
@@ -211,6 +212,12 @@ function setData(raw) {
 
             url_thumb = _.get(raw[i], 'fields.field_image_thumbnail[0].uri');
 
+            if (map_options === 'hidden') {
+            	map_options = false;
+            } else {
+            	map_options = true;
+            }
+
             if (status_archive === 1) {
                 status_archive = true;
             } else {
@@ -244,6 +251,7 @@ function setData(raw) {
                     'map_id': map_unique,
                     'map_status': map_status,
                     'map_type': map_type,
+                    'map_options': map_options,
                     'map_title': map_title,
                     'map_subtitle': map_subtitle,
                     'map_desc': map_desc,

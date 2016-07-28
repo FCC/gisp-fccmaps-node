@@ -194,6 +194,7 @@
                         <ul id="map-list-holder" class="map-cards list-unstyled"></ul>
                         <script id="card-template" type="text/x-handlebars-template">
                             {{#each cards}}
+                            {{#if map_options}}
                             <li class="card">
                                 <div class="mapThumb-btns">
                                     <a class="btn btn-xs btn-default" href="{{ map_id }}">
@@ -223,6 +224,7 @@
                                     <button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false"><span class="icon icon-caret-right"></span>View details</button>
                                 </div>
                             </li>
+                            {{/if}}
                             {{/each}}
                         </script>
                     </div>
