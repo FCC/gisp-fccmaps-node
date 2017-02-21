@@ -66,6 +66,7 @@
 
             // clear search results
             $('#map-list-holder').html('');
+            MapGallery.toggleAlert('hide');
 
             $.ajax({
                 data: MapGallery.searchQuery,
