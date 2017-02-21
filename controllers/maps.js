@@ -490,9 +490,22 @@ function getDataAPI(req, res) {
             query = query.toLowerCase();
             //console.log('query : ' + query );	
 
+
+
             outJson = _.filter(outJson, function(item) {
-                var regex = new RegExp(query, 'i');
-                return regex.test(item.map_title) || regex.test(item.map_subtitle) || regex.test(item.map_desc);
+                var regex;
+
+                try {
+                    regex = new RegExp(query, 'i');
+
+                    var tagFound = item.tags.some(function(el) {                  
+                        return regex.test(el.name);
+                    });
+
+                    return regex.test(item.map_title) || regex.test(item.map_subtitle) || regex.test(item.map_desc) || tagFound;
+                } catch(e) {
+                    return '';
+                }                                
             });
         }
 
