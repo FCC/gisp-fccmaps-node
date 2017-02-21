@@ -29,7 +29,6 @@ GIS Platform Node Webapp
         ```
         grunt
         ```
-    *   **Note:** Do NOT edit content.json directly. Edit the individual JSON files under ```src/map_data```.
 
     *   Run the watch task to automatically run grunt everytime a file in the ```src``` folder changes.  
         ```
