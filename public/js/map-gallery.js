@@ -148,13 +148,14 @@
             // MapGallery.searchQuery.q = $('#txt-search').val();
 
             MapGallery.searchQuery = {
-                q: $('#txt-search').val(),
+                q: $('#txt-search').val().trim(),
                 st: 'all',
                 o: 'date,desc',
                 bo: ''
             };
 
             e.preventDefault();
+            $('#txt-search').val(MapGallery.searchQuery.q);
             MapGallery.toggleAlert('hide');
             MapGallery.locationHash();
         },

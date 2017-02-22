@@ -490,8 +490,6 @@ function getDataAPI(req, res) {
             query = query.toLowerCase();
             //console.log('query : ' + query );	
 
-
-
             outJson = _.filter(outJson, function(item) {
                 var regex;
 
