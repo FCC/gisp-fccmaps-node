@@ -148,7 +148,7 @@
             // MapGallery.searchQuery.q = $('#txt-search').val();
 
             MapGallery.searchQuery = {
-                q: $('#txt-search').val().trim(),
+                q: $('#txt-search').val().trim().replace(/\s\s+/g, ' '),
                 st: 'all',
                 o: 'date,desc',
                 bo: ''
