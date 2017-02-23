@@ -487,21 +487,26 @@ function getDataAPI(req, res) {
         // filter
 
         if (query) {
-            query = query.toLowerCase();
+            query = query.toLowerCase().replace(/(?=[() ])/g, '\\');
             //console.log('query : ' + query );	
 
             outJson = _.filter(outJson, function(item) {
                 var regex;
+                var tagFound = false;
 
                 try {
                     regex = new RegExp(query, 'i');
 
-                    var tagFound = item.tags.some(function(el) {                  
-                        return regex.test(el.name);
-                    });
+                    for (var i=0; i<item.tags.length; i++) {
+                        
+                        if (regex.test(item.tags[i].name)) {
+                            tagFound = true;                            
+                        }
+                    }
 
                     return regex.test(item.map_title) || regex.test(item.map_subtitle) || regex.test(item.map_desc) || tagFound;
                 } catch(e) {
+
                     return '';
                 }                                
             });
