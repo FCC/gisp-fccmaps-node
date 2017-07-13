@@ -18,7 +18,7 @@ GIS Platform Node Webapp
     *   Install node modules.  
         ```
         npm install
-       ```
+        ```
        
     *   Install client libraries.  
         ```
