@@ -345,7 +345,7 @@
             },
             "field_layer_query_string": {
                 "und": [{
-                    "value": "access_token=pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg"
+                    "value": "access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg"
                 }]
             },            
             "field_layer_visibility": {
