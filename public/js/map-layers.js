@@ -97,7 +97,7 @@ var mapLayers = {
             center_lat = mapData.init.lat || center_lat;
             center_lon = mapData.init.lon || center_lon;
 
-            L.mapbox.accessToken = 'pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
+            L.mapbox.accessToken = 'pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg';
             map = L.mapbox.map('map-container', 'fcc.k74ed5ge', {
                     attributionControl: mapOpts.attr,
                     maxZoom: maxzoom,
@@ -148,7 +148,7 @@ var mapLayers = {
 
                         var query = mapData.layers[i].query;
                         if (query === '') {
-                            query = 'access_token=pk.eyJ1IjoiY29tcHV0ZWNoIiwiYSI6InMyblMya3cifQ.P8yppesHki5qMyxTc2CNLg';
+                            query = 'access_token=pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg';
                         }
 
                         var url = '//' + mapData.layers[i].domain + '/{z}/{x}/{y}.png?' + query;
