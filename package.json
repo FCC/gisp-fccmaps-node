@@ -40,7 +40,6 @@
   },
   "devDependencies": {
     "bower": "^1.4.1",
-    "ejs": "~1.0.0",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.7.2",
     "grunt-banner": "^0.5.0",
