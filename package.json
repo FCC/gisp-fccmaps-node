@@ -4,6 +4,7 @@
   "description": "FCC GISP Maps - Node.js",
   "main": "app.js",
   "scripts": {
+    "start": "npm cache clean && npm install && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
