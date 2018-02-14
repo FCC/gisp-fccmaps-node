@@ -4,7 +4,8 @@
   "description": "FCC GISP Maps - Node.js",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm cache clean && npm install && node app.js"
   },
   "repository": {
     "type": "git",
@@ -40,7 +41,6 @@
   },
   "devDependencies": {
     "bower": "^1.4.1",
-    "ejs": "~1.0.0",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.7.2",
     "grunt-banner": "^0.5.0",
