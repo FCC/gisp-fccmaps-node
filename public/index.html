@@ -197,10 +197,17 @@
                             {{#if map_options}}
                             <li class="card">
                                 <div class="mapThumb-btns">
+                                    {{#isRedirect map_type}}
+                                    <a class="btn btn-xs btn-default" href="{{ url.web }}">
+                                        <span class="sr-only">View map</span>
+                                        <span class="icon icon-external-link-square"></span>
+                                    </a>
+                                    {{else}}
                                     <a class="btn btn-xs btn-default" href="{{ map_id }}">
                                         <span class="sr-only">View map</span>
                                         <span class="icon icon-external-link-square"></span>
                                     </a>
+                                    {{/isRedirect}}
                                 </div>
                                 {{#if status.feature}}
                                 <div class="ribbon"><span>Featured</span></div>
@@ -211,7 +218,12 @@
                                     <div style="background-image: url({{thumbImg map_id }})" title="{{ map_title }}"></div>
                                 </div>
                                 {{/isIframe}}
+
+                                {{#isRedirect map_type}}
+                                <p class="card__title text-overflow"><a href="{{url.web}}" title="{{map_title}}"><span>{{map_title}}</span></a></p>
+                                {{else}}
                                 <p class="card__title text-overflow"><a href="{{map_id}}/" title="{{map_title}}"><span>{{map_title}}</span></a></p>
+                                {{/isRedirect}}
                                 <div class="card__meta">
                                     <div class="pull-left bureau-abbr">{{meta.bureau.id}}</div>
                                     <div class="pull-right data-date">{{{formatDate date.reviewed}}}</div>
@@ -219,7 +231,11 @@
                                 <div class="card__body" aria-hidden="true" role="region" style="display: none;">
                                     <p class="card__subTitle text-overflow">{{map_subtitle}}</p>
                                     <div class="card__desc">{{{map_desc}}}</div>
+                                    {{#isRedirect map_type}}
+                                    <a class="link-viewMore" href="{{url.web}}">View more…</a></div>
+                                    {{else}}
                                     <a class="link-viewMore" href="{{map_id}}/">View more…</a></div>
+                                    {{/isRedirect}}
                                 <div class="card__footer">
                                     <button class="btn-details btn btn-link btn-xs" type="button" aria-expanded="false"><span class="icon icon-caret-right"></span>View details</button>
                                 </div>
