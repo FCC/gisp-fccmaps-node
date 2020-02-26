@@ -41,3 +41,6 @@ bower_components
 .ebextensions
 app.zip
 dist
+
+# Etc
+.idea/
