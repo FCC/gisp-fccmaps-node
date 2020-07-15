@@ -67,7 +67,7 @@
     "grunt-zip": "^0.16.2",
     "jshint-stylish": "~0.1.5",
     "load-grunt-tasks": "~0.4.0",
-    "lodash": "~2.4.1",
+    "lodash": "~4.17.19",
     "meta-remarkable": "^0.1.0",
     "nodemon": "^1.9.1",
     "time-grunt": "~0.3.1"
