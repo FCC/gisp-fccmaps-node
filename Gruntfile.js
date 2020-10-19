@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         // LESS -> CSS
         less: {
             options: {
-                paths: ['bootstrap-gisp/less', 'bower_components'],
+                paths: ['bootstrap-gisp/less'],
                 compress: true,
                 sourceMap: false
             },
@@ -84,10 +84,13 @@ module.exports = function(grunt) {
         },
 
         // Add vendor prefixed styles to CSS
-        autoprefixer: {
+        postcss: {
             options: {
-                browsers: ['> 4%', 'last 4 versions']
+                map: true
             },
+            processors: [
+                require('autoprefixer')()
+            ],
             dist: {
                 files: [{
                     expand: true,
@@ -117,8 +120,8 @@ module.exports = function(grunt) {
                 src: [
                     // 'bower_components/bootstrap/js/affix.js',
                     // 'bower_components/bootstrap/js/alert.js',
-                    'bower_components/bootstrap/js/dropdown.js',
-                    'bower_components/bootstrap/js/tooltip.js',
+                    'node_modules/bootstrap/js/dropdown.js',
+                    'node_modules/bootstrap/js/tooltip.js',
                     // 'bower_components/bootstrap/js/modal.js',
                     //'bower_components/bootstrap/js/transition.js'
                     // 'bower_components/bootstrap/js/button.js',
@@ -154,7 +157,7 @@ module.exports = function(grunt) {
                  { // fonts 
                     dot: true,
                     expand: true,
-                    cwd: 'bower_components/font-awesome/fonts',
+                    cwd: 'node_modules/font-awesome/fonts',
                     src: '**',
                     dest: '<%= paths.assets %>/fonts'
                 }]
@@ -170,7 +173,7 @@ module.exports = function(grunt) {
         // 'imagemin',
         'usebanner',
         'concat',
-        'autoprefixer',
+        'postcss',
         //'copy',
         //'clean:delTempFolders'
     ]);
