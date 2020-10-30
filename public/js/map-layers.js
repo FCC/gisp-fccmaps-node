@@ -98,7 +98,7 @@ var mapLayers = {
             center_lon = mapData.init.lon || center_lon;
 
             L.mapbox.accessToken = 'pk.eyJ1IjoiZmNjIiwiYSI6InBiaGMyLU0ifQ.LOmVYpUCFv2yWpbvxDdQNg';
-            map = L.mapbox.map('map-container', 'fcc.k74ed5ge', {
+            map = L.map('map-container', {
                     attributionControl: mapOpts.attr,
                     maxZoom: maxzoom,
                     minZoom: minzoom,
@@ -108,9 +108,9 @@ var mapLayers = {
 
             var hash = L.hash(map);    
             
-            var baseStreet = L.mapbox.tileLayer('fcc.k74ed5ge');
-            var baseSatellite = L.mapbox.tileLayer('fcc.k74d7n0g');
-            var baseTerrain = L.mapbox.tileLayer('fcc.k74cm3ol');
+            var baseStreet = L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10');
+            var baseSatellite = L.mapbox.styleLayer('mapbox://styles/mapbox/satellite-streets-v11');
+            var baseTerrain = L.mapbox.styleLayer('mapbox://styles/mapbox/outdoors-v10');
 
             //base layers
             baseLayer.Street = baseStreet.addTo(map);
