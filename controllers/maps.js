@@ -140,7 +140,7 @@ function validUnique(unique) {
 // **********************************************************
 function setData(raw) {
 
-    console.log('\n\n setData');
+    //console.log('\n\n setData');
 
     api_json = []; // reset 
 
@@ -162,111 +162,55 @@ function setData(raw) {
 
         if (raw[i].fields) {
 
-            console.log('\n raw[i].fields : ');
-            // console.log(raw[i]);
+            // console.log('\n raw[i].fields : ');
+            //console.log(raw[i]);
 
             map_rank = 1;
 
             urlProtocol = _.get(raw[i], 'webUrl', '').split('/')[0];
-            console.log(`urlProtocol= ${urlProtocol}`)
-
             urlHost = _.get(raw[i], 'webUrl', '').split('/')[2];
-            console.log(`urlHost= ${urlHost}`)
 
-            // map_unique = _.get(raw[i], 'fields.field_map_unique[0].value', '').toLowerCase();
-            map_unique = _.get(raw[i], 'fields.field_map_unique', '')//.toLowerCase();
-            console.log(`map_unique= ${map_unique}`)
+            map_unique = _.get(raw[i], 'fields.field_map_unique[0].value', '').toLowerCase();
 
-            // map_type = _.get(raw[i], 'fields.field_map_type[0].value');
-            map_type = _.get(raw[i], 'fields.field_map_type');
-            console.log(`map_type= ${map_type}`)
-
-            // map_options = _.get(raw[i], 'fields.field_map_options[0].value');
-            map_options = _.get(raw[i], 'fields.field_map_options');
-            console.log(`map_options= ${map_options}`)
+            map_type = _.get(raw[i], 'fields.field_map_type[0].value');
+            map_options = _.get(raw[i], 'fields.field_map_options[0].value');
 
             map_title = _.get(raw[i], 'title');
-            console.log(`title= ${map_title}`)
+            map_subtitle = _.get(raw[i], 'fields.field_subtitle[0].value');
+            map_desc = _.get(raw[i], 'fields.field_description[0].value');
 
-            // map_subtitle = _.get(raw[i], 'fields.field_subtitle[0].value');
-            map_subtitle = _.get(raw[i], 'fields.field_subtitle');
-            console.log(`map_subtitle= ${map_subtitle}`)
+            status_archive = parseInt(_.get(raw[i], 'fields.field_archived[0].value'));
+            status_feature = parseInt(_.get(raw[i], 'fields.field_featured[0].value'));
 
-            // map_desc = _.get(raw[i], 'fields.field_description[0].value');
-            map_desc = _.get(raw[i], 'fields.field_description');
-            console.log(`map_desc= ${map_desc}`)
+            meta_bureau_id = _.get(raw[i], 'fields.field_bureau_office[0].acronym', '').toLowerCase();
+            meta_bureau_name = _.get(raw[i], 'fields.field_bureau_office[0].name');
+            meta_bureau_url = _.get(raw[i], 'fields.field_bureau_office[0].url');
 
-            // status_archive = parseInt(_.get(raw[i], 'fields.field_archived[0].value'));
-            status_archive = parseInt(_.get(raw[i], 'fields.field_archived'));
-            console.log(`status_archive= ${status_archive}`)
-
-            // status_feature = parseInt(_.get(raw[i], 'fields.field_featured[0].value'));
-            status_feature = parseInt(_.get(raw[i], 'fields.field_featured'));
-            console.log(`status_feature= ${status_feature}`)
-
-            // meta_bureau_id = _.get(raw[i], 'fields.field_bureau_office[0].acronym', '').toLowerCase();
-            meta_bureau_id = _.get(raw[i], 'fields.field_bureau_office_category_export[0].id', '').toLowerCase();
-            console.log(`meta_bureau_id= ${meta_bureau_id}`)
-
-            // meta_bureau_name = _.get(raw[i], 'fields.field_bureau_office[0].name');
-            meta_bureau_name = _.get(raw[i], 'fields.field_bureau_office_category_export[0].title');
-            console.log(`meta_buruea_name= ${meta_bureau_name}`)
-
-            // meta_bureau_url = _.get(raw[i], 'fields.field_bureau_office[0].url');
-            meta_bureau_url = _.get(raw[i], 'fields.field_bureau_office_category_export[0].url');
-            console.log(`meta_buruea_url= ${meta_bureau_url}`)
-
-            // config_frame_height = _.get(raw[i], 'fields.field_frame_size[0].field_frame_size_height[0].value');
             config_frame_height = _.get(raw[i], 'fields.field_frame_size[0].field_frame_size_height[0].value');
-            console.log(`config_frame_height= ${config_frame_height}`)
-
-            // config_frame_width = _.get(raw[i], 'fields.field_frame_size[0].field_frame_size_width[0].value');
             config_frame_width = _.get(raw[i], 'fields.field_frame_size[0].field_frame_size_width[0].value');
-            console.log(`config_frame_width= ${config_frame_width}`)
+            // config_search_address = _.get(raw[i], 'fields.field_map_address_search.und[0].value');
+            // config_search_coordinate = _.get(raw[i], 'mapOptions.fields.field_map_coordinate_search.und[0].value');
+            // config_attribution = _.get(raw[i], 'fields.field_map_attribution[0].value');
+            config_zoom_max = _.get(raw[i], 'fields.field_map_max_zoom[0].value');
+            config_zoom_min = _.get(raw[i], 'fields.field_map_min_zoom[0].value');
 
-            // config_zoom_max = _.get(raw[i], 'fields.field_map_max_zoom[0].value');
-            config_zoom_max = _.get(raw[i], 'fields.field_map_max_zoom');
-            console.log(`config_zoom_max= ${config_zoom_max}`)
+            init_zoom = _.get(raw[i], 'fields.field_map_initial_zoom[0].value');
+            init_lat = _.get(raw[i], 'fields.field_map_latitude[0].value');
+            init_lon = _.get(raw[i], 'fields.field_map_longitude[0].value');
 
-            // config_zoom_min = _.get(raw[i], 'fields.field_map_min_zoom[0].value');
-            config_zoom_min = _.get(raw[i], 'fields.field_map_min_zoom');
-            console.log(`config_zoom_min= ${config_zoom_min}`)
-
-            // init_zoom = _.get(raw[i], 'fields.field_map_initial_zoom[0].value');
-            init_zoom = _.get(raw[i], 'fields.field_map_initial_zoom');
-            console.log(`init_zoom= ${init_zoom}`)
-
-            // init_lat = _.get(raw[i], 'fields.field_map_latitude[0].value');
-            init_lat = _.get(raw[i], 'fields.field_map_latitude');
-            console.log(`init_lat= ${init_lat}`)
-
-            // init_lon = _.get(raw[i], 'fields.field_map_longitude[0].value');
-            init_lon = _.get(raw[i], 'fields.field_map_longitude');
-            console.log(`init_lon= ${init_lon}`)
-
-            // samp_zoom = _.get(raw[i], 'fields.field_thumb_initial_position[0].field_thumb_init_position_zoom[0].value');
             samp_zoom = _.get(raw[i], 'fields.field_thumb_initial_position[0].field_thumb_init_position_zoom[0].value');
-            console.log(`smap_zoom= ${samp_zoom}`)
-
-            // samp_lat = _.get(raw[i], 'fields.field_thumb_initial_position[0].field_thumb_init_position_lat[0].value');
             samp_lat = _.get(raw[i], 'fields.field_thumb_initial_position[0].field_thumb_init_position_lat[0].value');
-            console.log(`samp_lat= ${samp_lat}`)
-
-            // samp_lon = _.get(raw[i], 'fields.field_thumb_initial_position[0].field_thumb_init_position_lon[0].value');
             samp_lon = _.get(raw[i], 'fields.field_thumb_initial_position[0].field_thumb_init_position_lon[0].value');
-            console.log(`samp_lon= ${samp_lon}`)
 
-            // date_reviewed = _.get(raw[i], 'fields.field_date_updated_reviewed[0].value');
-            date_reviewed = _.get(raw[i], 'fields.field_date_updated_reviewed');
-            console.log(`date_reviewed= ${date_reviewed}`)
+            // date_display = _.get(raw[i], 'fields.field_map_display_date.und[0].value');
+            // date_published = _.get(raw[i], 'fields.field_date.und[0].value');
+            date_reviewed = _.get(raw[i], 'fields.field_date_updated_reviewed[0].value');
+            // date_created = _.get(raw[i], 'created');
+            // date_changed = _.get(raw[i], 'changed');
 
-            // url_web = _.get(raw[i], 'fields.field_map_page_url[0].url');
-            url_web = _.get(raw[i], 'fields.field_map_page_url');
-            console.log(`url_web= ${url_web}`)
+            url_web = _.get(raw[i], 'fields.field_map_page_url[0].url');
 
-            // url_thumb = _.get(raw[i], 'fields.field_image_thumbnail[0].uri');
-            url_thumb = _.get(raw[i], 'fields.field_image_thumbnail.url');
-            console.log(`url_thumb= ${url_thumb}`)
+            url_thumb = _.get(raw[i], 'fields.field_image_thumbnail[0].uri');
 
             if (map_options === 'hidden') {
             	map_options = false;
