@@ -46,7 +46,7 @@ var configEnv = require('./config/env.json');
 
 var NODE_ENV = process.env.NODE_ENV;
 var NODE_PORT =  process.env.PORT || configEnv[NODE_ENV].NODE_PORT;
-var CONTENT_API = configEnv[NODE_ENV].CONTENT_API;
+var CONTENT_API = process.env.CONTENT_API || configEnv[NODE_ENV].CONTENT_API;
 var DEPLOY_INTERVAL = configEnv[NODE_ENV].DEPLOY_INTERVAL || 300000; //microseconds
 var PROXY_PATH = configEnv[NODE_ENV].PROXY_PATH || '';
 var ALLOWED_IP = configEnv[NODE_ENV].ALLOWED_IP || ["165.135.*", "127.0.0.1"];
