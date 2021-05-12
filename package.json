@@ -45,7 +45,7 @@
     "grunt-contrib-less": "^2.0.0",
     "jshint-stylish": "~0.1.5",
     "load-grunt-tasks": "^5.1.0",
-    "postcss": "^8.1.1",
+    "postcss": "^8.2.10",
     "time-grunt": "~0.3.1"
   }
 }
