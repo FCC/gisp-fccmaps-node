@@ -15,29 +15,15 @@
 // **********************************************************
 // require 
 
-var http = require("http");
-var https = require("https");
-var url = require('url');
 var express = require('express');
 var serveStatic = require('serve-static');
-var path = require('path');
 var fsr = require('file-stream-rotator');
 var fs = require('fs');
 var morgan = require('morgan');
 var cors = require('cors');
 var bodyparser = require('body-parser');
 var request = require('request');
-var _ = require('lodash');
-
-var package_json = require('./package.json');
 var maps = require('./controllers/maps.js');
-
-// **********************************************************
-// console start
-
-console.log('package_json.name : '+ package_json.name );
-console.log('package_json.version : '+ package_json.version );
-console.log('package_json.description : '+ package_json.description );
 
 // **********************************************************
 // config

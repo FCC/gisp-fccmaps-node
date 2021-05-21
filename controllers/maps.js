@@ -17,11 +17,8 @@
 //require
 var http = require('http');
 var https = require('https');
-var fs = require('fs-extra');
 var _ = require('lodash');
 var validator = require('validator');
-var dotenv = require('dotenv').config();
-var request = require('request');
 
 // **********************************************************
 //config
