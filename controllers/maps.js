@@ -17,11 +17,8 @@
 //require
 var http = require('http');
 var https = require('https');
-var fs = require('fs-extra');
 var _ = require('lodash');
 var validator = require('validator');
-var dotenv = require('dotenv').config();
-var request = require('request');
 
 // **********************************************************
 //config
@@ -61,6 +58,7 @@ function deployMap(repeat) {
         var contentAPI = CONTENT_API + '&rnd=' + Math.floor(Math.random() * (1000000 - 1000 + 1) + 1000);
         contentProtocol.get(contentAPI, function(res) {
             console.log('contentAPI = ' + contentAPI);
+            console.log(res);
             var data = '';
             res.on('data', function(chunk) {
                 data += chunk;
@@ -95,6 +93,8 @@ function deployMap(repeat) {
                     console.log('\n\n --- no data change ---');
                 }
             });
+        }).on('error', function(err) {
+            console.log(err);
         });
 
         if (repeat) {
